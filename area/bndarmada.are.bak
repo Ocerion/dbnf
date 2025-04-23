@@ -1,0 +1,2499 @@
+#AREA   BattleNova Destroyer Armada~
+
+
+
+#VERSION 251
+#AUTHOR Kilan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 3
+
+#RESETMSG &CThe ships engines send a slight hum throughout the ship, power coarsing through its systems.&D~
+
+#FLAGS
+21
+
+#ECONOMY 0 12500000
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#15600
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15601
+BattleNova Admiral~
+The BattleNova Admiral~
+The Admiral of the BattleNova Destroyer stares out into space.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15602
+maintenance crew member~
+A Maintenance Crew Member~
+A member of the maintenance crew is tinkering around with the ship.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(5)
+mpoload 15602
+endif
+~
+> death_prog 5~
+mpoload 15602
+~
+|
+#15603
+fleet trainer~
+The Fleet Trainer~
+The Fleet Trainer is teaching skills to anyone who wishes to learn.
+~
+~
+67109891 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15604
+door closer mob~
+The Door Closer~
+A mob is slamming doors shut all over the place. Leave him alone.
+~
+~
+75628547 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+close north
+lock north
+close south
+lock south
+~
+|
+#15606
+hologram human~
+A Human~
+A human stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15607
+hologram namek~
+A Namek~
+A namek stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15608
+hologram halfbreed~
+A Halfbreed~
+A Halfbreed stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 8000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15609
+hologram ghetti~
+A Ghetti~
+A Ghetti stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 20000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15610
+hologram android~
+An Android~
+An Android stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15611
+hologram icer~
+An Icer~
+An Icer stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 80000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15612
+hologram bio-android bioandroid~
+A Bio-Android~
+A Bio-Android stAds ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 200000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15613
+hologram saiyan~
+A Saiyan~
+A Saiyan stAds ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 400000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15614
+hologram hyper human~
+A Hyper Human~
+A Hyper Human stands ready to fight.
+~
+~
+1 0&2097152 0 C
+1 0 100 1d20+0 2d5+0
+0 800000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15615
+hologram super namek~
+A Super Namek~
+A Super Namek stands ready to fight.
+~
+~
+1 0&1024 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15616
+hologram ssj3 halfbreed~
+A Super Saiyan 3 Halfbreed~
+A Halfbreed stands ready to fight.
+~
+~
+1 0&256 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15617
+hologram insane ghetti~
+An Insane Ghetti~
+A Ghetti stands ready to fight.
+~
+~
+1 0&0&8 0 C
+1 0 100 1d20+0 2d5+0
+0 8000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15618
+hologram omega android~
+An Omega Android~
+An Android stands ready to fight.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 20000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15619
+hologram fifth 5th form icer~
+A Fifth Form Icer~
+An Icer stands ready to fight.
+~
+~
+1 0&16384 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15620
+hologram ultra perfect bio-android bioandroid~
+An Ultra Perfect Bio-Android~
+A Bio-Android stands ready to fight.
+~
+~
+1 0&16777216 0 C
+1 0 100 1d20+0 2d5+0
+0 80000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15621
+hologram ssj2 super saiyan~
+A SSJ2 Saiyan~
+A Saiyan stands ready to fight.
+~
+~
+1 0&192 0 C
+1 0 100 1d20+0 2d5+0
+0 100000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15622
+hologram extreme human~
+An Extreme Human~
+A Human stands ready to fight.
+~
+~
+1 0&0&1 0 C
+1 0 100 1d20+0 2d5+0
+0 200000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15623
+hologram mystic halfbreed~
+A Mystic Halfbreed~
+A Halfbreed stands ready to fight.
+~
+~
+1 0&0&1 0 C
+1 0 100 1d20+0 2d5+0
+0 300000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15624
+hologram ssj4 super saiyan four~
+A SSJ4 Saiyan~
+A Saiyan stands ready to fight.
+~
+~
+1 0&960 0 C
+1 0 100 1d20+0 2d5+0
+0 400000000000000
+112 112 0
+80 80 80 80 80
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15625
+hologram legendary super saiyan~
+The Legendary Super Saiyan~
+The Legendary Super Saiyan stands ready to fight.
+~
+~
+1 524288&2097216 0 C
+1 0 100 1d20+0 2d5+0
+0 500000000000000
+112 112 0
+100 100 100 100 100
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#15699
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#15600
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#15601
+turbolift sign~
+A turbolift sign~
+A sign is welded to the wall, listing the levels of the ship.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam sign~
+Levels of The BattleNova Destroyer:
+
+1) Bridge
+2) Training Deck
+3) Maintenance Deck
+4) Hangar
+
+To travel to a desired level, simply say the name of your destination.
+~
+#15602
+Engine Maintenance Key~
+Engine Maintenance Key~
+A high-tech key appears to keep an important room locked up.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#15603
+BattleCruiser Engine~
+BattleCruiser Engine~
+Some god dropped a newly created BattleCruiser Engine here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#15604
+hangarlift sign~
+A HangarLift Sign~
+A sign is welded to the side of the lift, words etched into its metal face.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam sign~
+Say &Cup&w to travel to the top of the lift.
+
+Say &Cdown&w to travel to the hangar.
+~
+#15605
+hologram combat training sign trillion~
+A Hologram Training Chamber Sign~
+A sign is welded to the wall, explaining how to use the chamber. &RREAD IT.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam sign~
+&CThis is the holographic training chamber.  In order to summon the
+level of fighter you want, just say the level.  
+
+&CI.E. &Rsay Level 1&C, &Rsay Level 2&C, and so on. 
+
+
+&CLevel 1 &z-&R   2t&W   Super Namek&D
+&CLevel 2 &z-&R   4t&W   SSJ3 Halfbreed&D
+&CLevel 3 &z-&R   8t&W   Insane Ghetti&D
+&CLevel 4 &z-&R   20t&W  Omega Android&D
+&CLevel 5 &z-&R   40t&W  5th Form Icer&D
+&CLevel 6 &z-&R   80t&W  Ultra Perfect Bio-Android&D
+&CLevel 7 &z-&R   100t&W SSJ2 Saiyan&D
+&CLevel 8 &z-&R   200t&W Extreme Human&D
+&CLevel 9 &z-&R   300t&W Mystic Halfbreed&D
+&CLevel 10 &z-&R  400t&W SSJ4 Saiyan&D
+&CLevel 11 &z-&R  500t&W Legendary Super Saiyan&D
+~
+#15606
+hologram combat training sign billion~
+Hologram Training Chamber Sign~
+A sign is welded to the wall, explaining how to use the chamber. &RREAD IT.&D~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam sign~
+&CThis is the holographic training chamber.  In order to summon the
+level of fighter you want, just say the level.  
+
+&CI.E. &Rsay Level 1&C, &Rsay Level 2&C, and so on. 
+
+&CLevel 1 &z-&R   2b&W   Human&D
+&CLevel 2 &z-&R   4b&W   Namek&D
+&CLevel 3 &z-&R   8b&W   Halfbreed&D
+&CLevel 4 &z-&R   20b&W  Ghetti&D
+&CLevel 5 &z-&R   40b&W  Android&D
+&CLevel 6 &z-&R   80b&W  Icer&D
+&CLevel 7 &z-&R   100b&W Bio-Android&D
+&CLevel 8 &z-&R   200b&W Saiyan&D
+&CLevel 9 &z-&R   300b&W Hyper Human&D
+~
+#15607
+time chamber key~
+Artificial Time Chamber Key~
+A key with a clock engraved in the side is making ticking noises.~
+~
+13 8192&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#15608
+hologram chamber key~
+Hologram Chamber Key~
+Some god dropped a newly created hologram chamber key here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#15609
+voice activated transport system cou~
+A Voice Activated Transport System~
+A voice activated transport system is mounted on a wall.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam voice~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RI want to join the Armada&D.
+~
+E
+exam transport~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RI want to join the Armada&D.
+~
+E
+exam system~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RI want to join the Armada&D.
+~
+#15610
+voice activated transport system battlenova~
+A Voice Activated Transport System~
+A voice activated transport system is mounted on a wall.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam voice~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RReturn me to CoU&D.
+~
+E
+exam transport~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RReturn me to CoU&D.
+~
+E
+exam system~
+&wWelcome to the &CBattleNova Destroyer&w Voice Activated Transport system.
+To transport yourself on board the BattleNova Destroyer, all you need to do
+is say &RReturn me to CoU&D.
+~
+#15699
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#15600
+Captains Chair~
+A monitor is displaying all the current statistics of the ship. 
+Weapons, trajectory, fuel, speed, everything about the ship is displayed
+here. Being the front of the cockpit, the person in charge of the ship
+needs but to stand here in order to command the crew to fly the ship. 
+~
+0 12&24 1
+D2
+~
+~
+0 -1 15601
+D8
+~
+~
+0 -1 15604
+D9
+~
+~
+0 -1 15603
+S
+#15601
+Command Deck~
+This section of the cockpit merely serves as a walkway between each of
+the control stations.  The Navigators Seat, Gunners Seat, Pilots Seat,
+Co-pilots Seat, and Captains Chair each has their own function in the
+flying of this behemoth of a ship.  
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15600
+D1
+~
+~
+0 -1 15604
+D2
+~
+~
+0 -1 15602
+D3
+~
+~
+0 -1 15603
+S
+#15602
+Command Deck~
+This section of the cockpit merely serves as a walkway between each of
+the control stations.  The Navigators Seat, Gunners Seat, Pilots Seat,
+Co-pilots Seat, and Captains Chair each has their own function in the
+flying of this behemoth of a ship. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15601
+D1
+~
+~
+0 -1 15606
+D2
+~
+~
+0 -1 15607
+D3
+~
+~
+0 -1 15605
+S
+#15603
+Pilot's Seat~
+Controls for piloting the ship in hyperspace and realspace are mounted
+on a small control panel.  Monitors displaying the condition of the ships
+fuel and other statistics are constantly changing due to the massive amount
+of energy required to keep the ship running. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15601
+D2
+~
+~
+0 -1 15605
+D6
+~
+~
+0 -1 15600
+S
+#15604
+Copilot's Seat~
+The copilot works in junction with the pilot in the flying of the ship. 
+The same controls found at the pilots seat can be found here as well. 
+However, due to the 'copilot' status of these controls, the pilots seat has
+more control over the ship, and more work has to be done in this seat than
+in the pilots seat. 
+~
+0 12&24 1
+D2
+~
+~
+0 -1 15606
+D3
+~
+~
+0 -1 15601
+D7
+~
+~
+0 -1 15600
+S
+#15605
+Gunners Seat~
+Targetting systems and weapon-firing controls dominate the control
+panel.  Autotracking controls and laser monitoring devices have been
+mounted on the walls, displaying the condition of the weapons, the firing
+system, and the temperature of the lasers. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15603
+D1
+~
+~
+0 -1 15602
+S
+#15606
+Navigator's Seat~
+Calculations for hyperspace travel and course plotting in realspace are
+performed here.  Complex coordinate plotting devices cover the face of the
+control panel, as calculating hyperspace jumps is extremely delicate, and
+one wrong coordinate can lead to disaster. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15604
+D3
+~
+~
+0 -1 15602
+S
+#15607
+Turbolift~
+The turbolift is solid steel, and is attached to a hydraulic lift in the
+shaft.  An electronic forceshield lines the edges of the lift so nothing
+gets caught between the shaft and the lift itself. 
+~
+0 12&24 1
+> speech_prog Bridge 1~
+mpechoat $n The turbolift hums loudly as it glides to the Bridge.
+mptransfer $n 15602
+mpat 15602 mpforce $n look
+~
+> speech_prog Training 2~
+mpechoat $n The turbolift hums loudly as it glides it's way to the Training Deck.
+mptransfer $n 15608
+mpat 15608 mpforce $n look
+~
+> speech_prog Maintenance 3~
+mpechoat $n The turbolift hums loudly as it glides its way to the Maintenance Deck.
+mptransfer $n 15625
+mpat 15625 mpforce $n look
+~
+> speech_prog Hangar 4~
+mpecho The turbolift hums loudly as it glides its way to the Hangar level.
+mptransfer $n 15655
+mpat 15655 mpforce $n look
+~
+|
+S
+#15608
+Training Check-In Station~
+A check-in booth is currently devoid of anyone keeping an eye on the
+people who enter or leave the facility.  The energy-absorbing door is
+standing wide open, allowing anyone to enter and train to their hearts
+content. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15609
+D2
+~
+~
+0 -1 15607
+S
+#15609
+Training Deck~
+A huge sign hangs down from the cieling, giving directions.
+
+  &z<- &RSparring Chamber        &W|&R        Gravity Chamber &z->&D
+
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15610
+D1
+~
+~
+0 -1 15615
+D2
+~
+~
+0 -1 15608
+D3
+~
+~
+0 -1 15616
+S
+#15610
+Training Deck~
+A huge sign hangs down from the cieling, giving directions.
+
+&z  <- &RSparring Chamber        &W|        &RGravity Chamber &z->&D
+
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15611
+D1
+~
+~
+0 -1 15617
+D2
+~
+~
+0 -1 15609
+D3
+~
+~
+0 -1 15618
+S
+#15611
+Training Deck~
+A huge sign hangs down from the cieling, giving directions.
+
+          &z<-     &RHologram Combat Training     &z->&D
+    &C2b&z-&C800b &wHolograms       &G|        &C2t&z-&C500t &wHolograms&D
+
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15612
+D1
+~
+~
+7 15608 15619
+D2
+~
+~
+0 -1 15610
+D3
+~
+~
+7 15608 15620
+S
+#15612
+Training Deck~
+A huge sign hangs down from the cieling, giving directions.
+
+&z          <-     &RArtificial Time Chamber&z     ->&D
+
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15613
+D1
+~
+~
+7 15607 15621
+D2
+~
+~
+0 -1 15611
+D3
+~
+~
+7 15607 15622
+S
+#15613
+Passageway~
+Handbars are mounted on the walls, providing support to those injured
+people who are finding it difficult to hold themselves up on their own. 
+Several handbars are on either wall, providing maximum support for anyone
+of all sizes, whether extremely short or extremely tall. The Medical Ward
+is to the north. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15614
+D2
+~
+~
+0 -1 15612
+S
+#15614
+Medical Ward~
+Sounds of life support machinery flow in from the east and west, injured
+trainee's and warriors healing their battle wounds.  Monitors displaying
+each room are mounted on the north-eastern and north-western sections of
+the wall, showing who is in each healing chamber. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15623
+D2
+~
+~
+0 -1 15613
+D3
+~
+~
+0 -1 15624
+D6
+~
+~
+33554432 -1 15623
+D7
+~
+~
+33554432 -1 15624
+S
+#15615
+Gravity Chamber~
+This room is plated entirely by the energy absorbing plates used in the
+Center of the Universe Space Station. Orange hazard paint is painted on the
+floor to outline the safest area to train in, and signs on the wall depict
+the dangers of setting the gravity too high. 
+~
+0 268435468&24 1
+D3
+~
+~
+0 -1 15609
+S
+#15616
+Sparring Chamber~
+The same energy absorbing plates used in CoU and the Gravity Rooms of
+this ship line every square inch of this chamber. The chamber itself is
+HUGE, spanning nearly a mile in diameter.  The walls shift constantly,
+adding to the difficulty of sparring. 
+~
+0 67108876&24 1
+D1
+~
+~
+0 -1 15609
+S
+#15617
+Gravity Chamber~
+This room is plated entirely by the energy absorbing plates used in the
+Center of the Universe Space Station. Orange hazard paint is painted on the
+floor to outline the safest area to train in, and signs on the wall depict
+the dangers of setting the gravity too high. 
+~
+0 268435468&24 1
+D3
+~
+~
+0 -1 15610
+S
+#15618
+Sparring Chamber~
+The same energy absorbing plates used in CoU and the Gravity Rooms of
+this ship line every square inch of this chamber. The chamber itself is
+HUGE, spanning nearly a mile in diameter.  The walls shift constantly,
+adding to the difficulty of sparring. 
+~
+0 67108876&24 1
+D1
+~
+~
+0 -1 15610
+S
+#15619
+Hologram Combat Training Chamber~
+A hologram projector is set up to display selected holograms at the
+center of the combat chamber.  Environment modifiers shift the air
+molecules around to such a density that it feels just like a real living
+being.  The holograms are projected over these dense air molecules, and the
+environment bends the dense air to follow the movement of the holograms. 
+Security measures have been implemented to allow only one hologram to be
+projected at a time. 
+
+&RShould a problem arise with your hologram, just say 'clear room' and the hologram will disappear.&D
+
+~
+0 268435724&24 1 0 0 1
+D3
+~
+~
+7 15608 15611
+> speech_prog 'Level 1'~
+if mobcount(0) == 0
+Mpmload 15615
+Mpecho &YA Super Namek shimmers into existence, suddenly becoming very real!&D
+Endif
+~
+> speech_prog 'Level 2'~
+if mobcount(0) == 0
+Mpmload 15616
+Mpecho &YA Halfbreed shimmers into existence, and explodes with into golden flame!&D
+Endif
+~
+> speech_prog 'Level 3'~
+if mobcount(0) == 0
+Mpmload 15617
+Mpecho &YA Ghetti shimmers into existence, eyes lit up with rage!&D
+Endif
+~
+> speech_prog 'Level 4'~
+if mobcount(0) == 0
+Mpmload 15618
+Mpecho &YAn Omega Android shimmers into existence, quickly calculating your chances for survival!&D
+Endif
+~
+> speech_prog 'Level 5'~
+if mobcount(0) == 0
+Mpmload 15619
+Mpecho &YAn Icer shimmers into existence, fully powered up and ready to slaughter!&D
+Endif
+~
+> speech_prog 'Level 6'~
+if mobcount(0) == 0
+Mpmload 15620
+Mpecho &YAn Ultra-Perfect Bio-Android appears, flexing it's muscles and testing it's speed!&D
+Endif
+~
+> speech_prog 'Level 7'~
+if mobcount(0) == 0
+Mpmload 15621
+Mpecho &YA Saiyan shimmers into existence, staring at you with hate-filled eyes!&D
+Endif
+~
+> speech_prog 'Level 8'~
+if mobcount(0) == 0
+Mpmload 15622
+Mpecho &YA Human phases into existence, staring you down with extreme vigilance!&D
+Endif
+~
+> speech_prog 'Level 9'~
+if mobcount(0) == 0
+Mpmload 15623
+Mpecho &YA simple Halfbreed shimmers into existence, humming with incredible power!&D
+Endif
+~
+> speech_prog 'Level 10'~
+if mobcount(0) == 0
+Mpmload 15624
+Mpecho &YThe air seems to vibrate from the incredible power of a Super Saiyan 4!&D
+Endif
+~
+> speech_prog 'Level 11'~
+if mobcount(0) == 0
+Mpmload 15625
+Mpecho &YThe Legendary Super Saiyan awakens, grinning slightly&D
+Endif
+~
+> speech_prog 'Clear room'~
+mppurge hologram
+mpecho &YThe hologram quickly fades, disappearing completely.&D
+~
+|
+S
+#15620
+Hologram Combat Training Chamber~
+A hologram projector is set up to display selected holograms at the
+center of the combat chamber. Environment modifiers shift the air molecules
+around to such a density that it feels just like a real living being. The
+holograms are projected over these dense air molecules, and the environment
+bends the dense air to follow the movement of the holograms. 
+Security measures have been implemented to allow only one hologram to be
+projected at a time. 
+
+&RShould a problem arise with your hologram, just say 'clear room' and the hologram will disappear.
+
+~
+0 67109132&24 1 0 0 1
+D1
+~
+~
+7 15608 15611
+> speech_prog 'Level 1'~
+if mobcount(15620) == 0
+Mpmload 15606
+Mpecho &YA Human shimmers into existence, preparing for a rough battle!&D
+Endif
+~
+> speech_prog 'Level 2'~
+if mobcount(15620) == 0
+Mpmload 15607
+Mpecho &YA Namek shimmers into existence, his meditation having prepared him for anything!&D
+Endif
+~
+> speech_prog 'Level 3'~
+if mobcount(15620) == 0
+Mpmload 15608
+Mpecho &YA Halfbreed shimmers into existence, cracking his knuckles!&D
+Endif
+~
+> speech_prog 'Level 4'~
+if mobcount(15620) == 0
+Mpmload 15609
+Mpecho &YA Ghetti shimmers into existence, laughing maniacally!&D
+Endif
+~
+> speech_prog 'Level 5'~
+if mobcount(15620) == 0
+Mpmload 15610
+Mpecho &YAn Android shimmers into existence, scanning your power signature!&D
+Endif
+~
+> speech_prog 'Level 6'~
+if mobcount(15620) == 0
+Mpmload 15611
+Mpecho &YAn Icer appears, pronouncing its superiority!&D
+Endif
+~
+> speech_prog 'Level 7'~
+if mobcount(15620) == 0
+Mpmload 15612
+Mpecho &YA Bio-Android shimmers into existence, craving perfection!&D
+Endif
+~
+> speech_prog 'Level 8'~
+if mobcount(15620) == 0
+Mpmload 15613
+Mpecho &YA Saiyan phases into existence, ready for a challenge!&D
+Endif
+~
+> speech_prog 'Level 9'~
+if mobcount(15620) == 0
+Mpmload 15614
+Mpecho &YA Human shimmers into existence, flexing his gigantic muscles!&D
+Endif
+~
+> speech_prog 'Clear room'~
+mppurge hologram
+mpecho &YThe hologram quickly fades, disappearing completely.&D
+~
+|
+S
+#15621
+Artificial Time Chamber~
+Motion sensors are aimed at every inch of the room to follow the
+movements of the people inside the chamber. They link to the mobile floor
+and adjust the position of the floor as the fighters move about, giving the
+room a feeling of neverending expanse until their time within the chamber
+is complete. 
+~
+0 872415244&28 1
+D3
+~
+~
+3 15607 15612
+S
+#15622
+Artificial Time Chamber~
+Motion sensors are aimed at every inch of the room to follow the
+movements of the people inside the chamber. They link to the mobile floor
+and adjust the position of the floor as the fighters move about, giving the
+room a feeling of neverending expanse until their time within the chamber
+is complete. 
+~
+0 872415244&28 1
+D1
+~
+~
+7 15607 15612
+S
+#15623
+Healing Quarters~
+Security cameras monitor the room for any trouble.  Dozens of healing
+tanks are neatly lined up for easy assessment of a persons healing process.
+A guage sits on the front of each healing tank, displaying the percentage
+of health each person is currently at. 
+~
+0 536870924&24 1
+D3
+~
+~
+0 -1 15614
+S
+#15624
+Healing Quarters~
+Security cameras monitor the room for any trouble.  Dozens of healing
+tanks are neatly lined up for easy assessment of a persons healing process.
+A guage sits on the front of each healing tank, displaying the percentage
+of health each person is currently at. 
+~
+0 536870924&24 1
+D1
+~
+~
+0 -1 15614
+S
+#15625
+Maintenance Deck~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+16777216 -1 15607
+D8
+~
+~
+0 -1 15640
+D9
+~
+~
+0 -1 15626
+S
+#15626
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D6
+~
+~
+0 -1 15625
+D9
+~
+~
+0 -1 15627
+S
+#15627
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D6
+~
+~
+0 -1 15626
+D9
+~
+~
+0 -1 15628
+S
+#15628
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D2
+~
+~
+0 -1 15629
+D6
+~
+~
+0 -1 15627
+S
+#15629
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+0 -1 15628
+D2
+~
+~
+0 -1 15630
+S
+#15630
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+0 -1 15629
+D8
+~
+~
+0 -1 15631
+S
+#15631
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D7
+~
+~
+0 -1 15630
+D8
+~
+~
+0 -1 15632
+S
+#15632
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D1
+~
+~
+0 -1 15633
+D7
+~
+~
+0 -1 15631
+S
+#15633
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+7 15602 15641
+D1
+~
+~
+0 -1 15634
+D3
+~
+~
+0 -1 15632
+S
+#15634
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D3
+~
+~
+0 -1 15633
+D6
+~
+~
+0 -1 15635
+S
+#15635
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D6
+~
+~
+0 -1 15636
+D9
+~
+~
+0 -1 15634
+S
+#15636
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+0 -1 15637
+D9
+~
+~
+0 -1 15635
+S
+#15637
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D0
+~
+~
+0 -1 15638
+D2
+~
+~
+0 -1 15636
+S
+#15638
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D2
+~
+~
+0 -1 15637
+D7
+~
+~
+0 -1 15639
+S
+#15639
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D7
+~
+~
+0 -1 15640
+D8
+~
+~
+0 -1 15638
+S
+#15640
+Maintenance Passage~
+Removable grates line the walls, protecting service ports and pipelines.
+Small maintenance bays have been left hanging open while one of the
+maintenance crew members hunts down a tool to upkeep the performance of
+every aspect of the ship. Blinking lights from the maintenance bays can be
+seen through the grates, beeping every once in a while, signifying that it
+is still working properly. 
+~
+0 8&24 1
+D7
+~
+~
+0 -1 15625
+D8
+~
+~
+0 -1 15639
+S
+#15641
+Engine Maintenance Entryway~
+This passage is extremely narrow and is designed for security purposes. 
+Should any of the electromagnetic pulses from the engine room leak out into
+the rest of the ship, it could cause severe malfunctions in all the systems
+and possibly cause the ship to either explode or implode. 
+~
+0 264&24 1 0 0 2
+D0
+~
+~
+7 15602 15642
+D2
+~
+~
+7 15602 15633
+S
+#15642
+Engine Maintenance Chamber~
+Redit desc An iron platform is set up above the ships MASSIVE engine,
+which gives off a dark blue-purple shade of light. The platform is held up
+by thick cables attached to the wall, and steel rods that protrude from the
+walls. The engine stands about fifty feet higher than the platform,
+blocking out most of the light from the equally huge light on the cieling.
+Thousands of smaller lights are lined across the rest of the room, making
+up for this. 
+~
+0 12&24 1
+D0
+~
+~
+64 -1 15650
+D1
+~
+~
+0 -1 15643
+D2
+~
+~
+7 15602 15641
+D3
+~
+~
+0 -1 15649
+S
+#15643
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15644
+D3
+~
+~
+0 -1 15642
+S
+#15644
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15645
+D2
+~
+~
+0 -1 15643
+S
+#15645
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D2
+~
+~
+0 -1 15644
+D3
+~
+~
+0 -1 15646
+S
+#15646
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15645
+D3
+~
+~
+0 -1 15647
+S
+#15647
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15646
+D2
+~
+~
+0 -1 15648
+S
+#15648
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15647
+D2
+~
+~
+0 -1 15649
+S
+#15649
+Engine Maintenance Chamber~
+An iron platform is set up above the ships MASSIVE engine, which gives
+off a dark blue-purple shade of light. The platform is held up by thick
+cables attached to the wall, and steel rods that protrude from the walls.
+The engine stands about fifty feet higher than the platform, blocking out
+most of the light from the equally huge light on the cieling. Thousands of
+smaller lights are lined across the rest of the room, making up for this. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15648
+D1
+~
+~
+0 -1 15642
+S
+#15650
+Naquadria Engine~
+A blue-purple hue of light glows brightly as the powerful engine as it
+sends energy through the ship, powering its systems. The atmosphere of the
+engine's dark glow and its lack of any other sources of light gives this
+place an appearance of extreme danger. 
+~
+0 16777228&24 1
+D2
+~
+~
+0 -1 15642
+D4
+~
+~
+0 -1 15651
+D5
+~
+~
+0 -1 15652
+> entry_prog 100~
+if race($n) == android
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, damaging you.
+mpdamage $n 15
+else
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, but do no damage. The electricity must only affect metallic objects.
+endif
+~
+|
+S
+#15651
+Naquadria Engine~
+A blue-purple hue of light glows brightly as the powerful engine as it
+sends energy through the ship, powering its systems. The atmosphere of the
+engine's dark glow and its lack of any other sources of light gives this
+place an appearance of extreme danger. 
+~
+0 16777228&24 1
+D5
+~
+~
+0 -1 15650
+> entry_prog 100~
+if race($n) == android
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, damaging you.
+mpdamage $n 15
+else
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, but do no damage. The electricity must only affect metallic objects.
+endif
+~
+|
+S
+#15652
+Naquadria Engine~
+A blue-purple hue of light glows brightly as the powerful engine as it
+sends energy through the ship, powering its systems. The atmosphere of the
+engine's dark glow and its lack of any other sources of light gives this
+place an appearance of extreme danger. 
+~
+0 16777228&24 1
+D4
+~
+~
+0 -1 15650
+D5
+~
+~
+0 -1 15653
+> entry_prog 100~
+if race($n) == android
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, damaging you.
+mpdamage $n 15
+else
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, but do no damage. The electricity must only affect metallic objects.
+endif
+~
+|
+S
+#15653
+Naquadria Engine~
+A blue-purple hue of light glows brightly as the powerful engine as it
+sends energy through the ship, powering its systems. The atmosphere of the
+engine's dark glow and its lack of any other sources of light gives this
+place an appearance of extreme danger. 
+~
+0 16777228&24 1
+D4
+~
+~
+0 -1 15652
+D5
+~
+~
+0 -1 15654
+> entry_prog 100~
+if race($n) == android
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, damaging you.
+mpdamage $n 15
+else
+mpechoat $n Bolts of electricity pass through you as you enter this section of the cylindrical engine, but do no damage. The electricity must only affect metallic objects.
+endif
+~
+|
+S
+#15654
+Naquadria Engine Maintenance Interface~
+A massive control interface that links up to the rest of the engine
+emits a loud hum, making it nearly impossible to talk in here.  Should any
+damage occur to the ship, this is where the repairs would be made.  This is
+possible by the trillions of nanotech robots that flow throughout the
+ship's electronic systems.  They work through the repairman to make optimal
+repairs to the drive, hyperdrive, and weapon systems, as well as the rest
+of the ships components. 
+~
+0 1036&24 1
+D4
+~
+~
+16777216 -1 15653
+S
+#15655
+Hangar/Pilot Deck~
+Muffled voices and fits of laughter float in from all around the hall,
+pilots chatting amongst themselves about their most recent adventures and
+newest jokes. The hum of generators, powering the water recycling filters,
+causes the floor to vibrate softly, causing a relaxing side effect on the
+legs and feet. To the north is the ships main turbolift, and to the south
+is the turbolift leading to the hangar. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15607
+D1
+~
+~
+0 -1 15666
+D2
+~
+~
+0 -1 15656
+D3
+~
+~
+0 -1 15667
+S
+#15656
+Hangar/Pilot Deck~
+Muffled voices and fits of laughter float in from all around the hall,
+pilots chatting amongst themselves about their most recent adventures and
+newest jokes. The hum of generators, powering the water recycling filters,
+causes the floor to vibrate softly, causing a relaxing side effect on the
+legs and feet. To the north is the ships main turbolift, and to the south
+is the turbolift leading to the hangar. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15655
+D1
+~
+~
+0 -1 15664
+D2
+~
+~
+0 -1 15657
+D3
+~
+~
+0 -1 15665
+S
+#15657
+Hangar/Pilot Deck~
+Muffled voices and fits of laughter float in from all around the hall,
+pilots chatting amongst themselves about their most recent adventures and
+newest jokes. The hum of generators, powering the water recycling filters,
+causes the floor to vibrate softly, causing a relaxing side effect on the
+legs and feet. To the north is the ships main turbolift, and to the south
+is the turbolift leading to the hangar. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15656
+D1
+~
+~
+0 -1 15662
+D2
+~
+~
+0 -1 15658
+D3
+~
+~
+0 -1 15663
+S
+#15658
+Hangar/Pilot Deck~
+Muffled voices and fits of laughter float in from all around the hall,
+pilots chatting amongst themselves about their most recent adventures and
+newest jokes. The hum of generators, powering the water recycling filters,
+causes the floor to vibrate softly, causing a relaxing side effect on the
+legs and feet. To the north is the ships main turbolift, and to the south
+is the turbolift leading to the hangar. 
+~
+0 12&24 1
+D0
+~
+~
+0 -1 15657
+D1
+~
+~
+0 -1 15660
+D2
+~
+~
+0 -1 15659
+D3
+~
+~
+0 -1 15661
+S
+#15659
+Hangar Turbolift~
+The turbolift is rather small, appearing to be designed for nothing
+other than transport of crewmembers and any other beings that are aboard
+the ship.  A sign hangs on a nearby wall, detailing instructions on
+operation of the elevator. 
+~
+0 12&24 1
+> speech_prog down~
+mpechoat $n The turbolift gently slides downward, stopping at the hangar.
+mptransfer $n 15668
+mpat 15668 mpforce $n look
+~
+> speech_prog up~
+mpechoat $n The turbolift gently slides upward, stopping at the top of the lift shaft.
+mptransfer $n 15658
+mpat 15658 mpforce $n look
+~
+|
+S
+#15660
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D3
+~
+~
+0 -1 15658
+S
+#15661
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15658
+S
+#15662
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D3
+~
+~
+0 -1 15657
+S
+#15663
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15657
+S
+#15664
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D3
+~
+~
+0 -1 15656
+S
+#15665
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15656
+S
+#15666
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D3
+~
+~
+0 -1 15655
+S
+#15667
+Pilot Locker Room~
+Sounds of water splattering against tile floors echoes throughout the
+locker room as showers rinse filth from the bodies of pilots. Wooden
+benches are lined up between rows of lockers, towels draped over the ends
+of a few of them.  Some locker doors stand open, posing quite a safety
+hazard. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15655
+S
+#15668
+Hangar~
+Several docking ports and magnetized landing pads are organized
+throughout the massive hangar.  Most of the pads are in use, but a few
+still remain unused.  The organization of the ships is set up to allow
+pilots to launch as quickly as possible in time of battle. 
+~
+0 12 1
+D0
+~
+~
+0 -1 15659
+D1
+~
+~
+0 -1 15669
+D3
+~
+~
+0 -1 15670
+> speech_prog 'Return me to CoU'~
+mpsleep 15
+mpechoat $n &WAfter a few moments, a bright white light rises out of the floor and completely surrounds you.&D
+mpechoaround $n &WAfter a few moments, rises from the floor and completely surrounds $n.
+mpsleep 10
+mpechoat $n &RA few moments later, you can see nothing but a blur as you are being transported to the Center of the Universe.&D
+mpechoaround $n &RA few moments later, $n disappears in a blur of motion!&D
+mptransfer $n 200
+mpat 200 mpechoaround $n &WA dot of light sparkles in the sky, striking the ground. When the light fades, $n is there!&D
+mpat 200 mpforce $n look
+~
+|
+S
+#15669
+Laser Turret~
+A holographic image projector displays a crosshair for targetting, and
+displays any objects outside within firing range. Computer switches and an
+electronic guiding system help to achieve optimum accuracy. 
+~
+0 12&24 1
+D3
+~
+~
+0 -1 15668
+S
+#15670
+Laser Turret~
+A holographic image projector displays a crosshair for targetting, and
+displays any objects outside within firing range. Computer switches and an
+electronic guiding system help to achieve optimum accuracy. 
+~
+0 12&24 1
+D1
+~
+~
+0 -1 15668
+S
+#15671
+Cockpit of 1-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers. The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath. The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them. 
+~
+0 12&24 1
+S
+#15672
+Cockpit of 2-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15673
+Cockpit of 3-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15674
+Cockpit of 4-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15675
+Cockpit of 5-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15676
+Cockpit of 6-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15677
+Cockpit of 7-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15678
+Cockpit of 8-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15679
+Cockpit of 9-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15680
+Cockpit of 10-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15681
+Cockpit of 11-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15682
+Cockpit of 12-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15683
+Cockpit of 13-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15684
+Cockpit of 14-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15685
+Cockpit of 15-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15686
+Cockpit of 16-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15687
+Cockpit of 17-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15688
+Cockpit of 18-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15689
+Cockpit of 19-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15690
+Cockpit of 20-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15691
+Cockpit of 21-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15692
+Cockpit of 22-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15693
+Cockpit of 23-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15694
+Cockpit of 24-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15695
+Cockpit of 25-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15696
+Cockpit of 26-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15697
+Cockpit of 27-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15698
+Cockpit of 28-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#15699
+Cockpit of 29-SWF~
+The control panel of the ship is extremely compact and is covered with
+dozens of lights, buttons, switches, and levers.  The seat is made of hard
+plastic and is covered with a thin layer of leather with very little
+padding underneath.  The glass casing is perfectly round and allows the
+pilot to see in a 180 degree arc, with a monitor in the upper right hand
+section displaying anything behind them.  
+~
+0 12&24 1
+S
+#0
+
+
+#RESETS
+O 0 15601 1 15607
+M 0 15601 1 15600
+M 0 15602 1 15637
+M 0 15602 1 15633
+M 0 15602 1 15629
+M 0 15602 1 15625
+M 0 15602 1 15644
+M 0 15602 1 15646
+M 0 15602 1 15648
+M 0 15602 1 15654
+O 0 15604 1 15659
+D 0 15641 0 2
+D 0 15641 2 2
+D 0 15642 2 2
+M 0 15602 1 15642
+M 0 15604 1 15641
+G 1 15602 1
+D 0 15621 3 1
+D 0 15622 1 2
+D 0 15612 1 2
+D 0 15612 3 2
+O 1 15606 1 15620
+D 0 15620 1 2
+D 0 15619 3 2
+O 0 15605 1 15619
+D 0 15611 1 2
+D 0 15611 3 2
+O 0 15610 1 15668
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

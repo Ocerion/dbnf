@@ -1,0 +1,7 @@
+>speech_prog 'kiraa rei'
+mea $n After a few seconds of waiting, a trap door slides open beneath you!
+mea $n You fall for a few seconds and crash land in a small room.
+mpechoaround $n A trap door opens up underneath $n, swallowing him up!
+mptransfer $n 264
+mpat 264 mpforce $n look
+

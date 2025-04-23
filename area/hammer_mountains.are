@@ -1,0 +1,3493 @@
+#AREA   Hammer Mountains~
+
+
+
+#VERSION 252
+#AUTHOR Veritas~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG &PA strange sensation floods your mind, an unusual presence nearby.&D~
+
+#FLAGS
+6
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#16300
+cave king bear~
+The Cave King~
+A massive bear sits here, his eyes full of rage.
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 0
+170 80 110 100 10
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> rand_prog 20~
+emote snorts.
+~
+> rand_prog 30~
+emote growls deeply, his teeth bared.
+~
+> entry_prog 85~
+growl
+~
+> death_prog 25~
+if rand(5)
+mpoload 16317
+endif
+~
+|
+#16301
+cave bear mother~
+Cave Mother~
+A larger bear sits here, eyes shut in slumber.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 10000000000
+112 112 0
+90 100 100 110 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 50~
+if rand(10)
+mpoload 16319
+endif
+~
+|
+#16302
+bear big brother~
+Big Brother~
+A fairly large adolescent bear reclines against the cave wall.
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000000
+112 112 0
+90 85 90 80 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16303
+little bear brother~
+Little Brother~
+A much younger bear plays with a bone.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2500000000
+112 112 0
+55 40 60 45 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16304
+baby sister bear~
+Baby Sister~
+A very young bear sleeps underneath a blanket of leaves.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 750000000
+112 112 0
+25 20 30 15 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16305
+rabid black panther~
+Rabid Panther~
+A massive black panther paws the ground here, its eyes wild with madness.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d8+3
+0 100000000000
+112 112 0
+155 180 180 170 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+emote paces the room, its jaws leaking saliva.
+~
+> death_prog 50~
+if rand(10)
+if rand(10)
+mpoload 16321
+endif
+endif
+~
+|
+#16306
+invis guy~
+a newly created invis guy~
+Some god abandoned a newly created invis guy here.
+~
+~
+75497475 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16307
+syd leader~
+Syd~
+A man dressed in ravish clothes sits on a small throne.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 300000000000
+112 112 0
+180 180 170 180 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if pl($n) < 1000000000000
+if rand(5)
+mpoload 16309
+endif
+endif
+~
+> fight_prog 15~
+mea $n &PSyd brings his knee up into your stomach, then proceeds to scream "Lunatic Damage!" and throttles you to the ground!&D
+mer $n &PSyd brings his knee up into $n's stomach, then proceeds to scream "Lunatic Damage!" and throttles $e to the ground!&D
+mpdamage $n 25
+~
+> greet_prog 100~
+say Why have you entered my sanctum? Is is to help?
+sigh
+~
+> speech_prog 'help?'~
+say Yes, my camp needs help. A spaceship has crashed in the area recently.
+emote rubs his chin.
+say I fear that the power held within will soon threaten our existence.
+say All we want to do is make our product from the wood in this area, nothing more.
+say Please help if you can.
+nod $n
+~
+> speech_prog 'I will'~
+bow $n
+say Thank you. Please don't tarry, the spaceship is in a valley not far from here.
+sigh
+say Please bring me back evidence of your triumph, and I will reward you.
+~
+> act_prog 'gives you &PA Bu&Wu Sh&Pell&D.'~
+if rand(25)
+mpoload 16310
+say You killed it?!?
+say Thank you! Our camp is safe once again. Please, take this as payment.
+give prism $n
+smile
+drop shell
+mppurge shell
+else
+drop shell
+mppurge shell
+endif
+~
+|
+#16308
+gilmour guard~
+Gilmour~
+A heavily armed guard stands here, his short spear at the ready.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 75000000000
+112 112 0
+100 110 90 100 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mea $n &BGilmour rocks back on one foot, his spear retracting. Suddenly, he screams "Numb Attack!" and thrusts his spear at your
+midsection!&D
+mer $n &BGilmour rocks back on one foot, his spear retracting. Suddenly, he screams "Numb Attack!" and thrusts his spear at $n's
+midsection!&D
+mpdamage $n 15
+~
+> death_prog 100~
+if pl($n) < 200000000000
+if rand(3)
+mpoload 16308
+endif
+endif
+~
+> act_prog p leaves east.~
+if ispc($n)
+mpat $n mea $n &RGilmour grabs you by the scruff of the neck and pulls you back!
+mpat $n mer $n &RGilmour grabs $n by the scruff of the neck and pulls $e back!
+mpat $n mptrans $n 16322
+mpat $n force $n look
+say Where do you think you're going huh? That room is off limits!
+mpsleep 9
+ready
+endif
+~
+> act_prog p flies east.~
+if ispc($n)
+mpat $n mea $n &RGilmour grabs you by the scruff of the neck and pulls you back!
+mpat $n mer $n &RGilmour grabs $n by the scruff of the neck and pulls $e back!
+mpat $n mptrans $n 16322
+mpat $n force $n look
+say Where do you think you're going huh? That room is off limits!
+mpsleep 9
+ready
+endif
+~
+|
+#16309
+waters guard~
+Waters~
+A tall guard leans against the wall, a long spear propped against his leg.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 0
+85 50 95 100 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mea $n &pWaters spins around, his spear becoming a flying instrument of death. He yells "Wall Breaker!" and brings the spear down on
+your head!&D
+mer $n &pWaters spins around, his spear becoming a flying instrument of death. He yells "Wall Breaker!" and brings the spear down on
+$n's head!&D
+mpdamage $n 10
+~
+> act_prog 'flies in from the east.'~
+if ispc($n)
+emote wakes up!
+say How did you get in there? You'll pay for getting past me!
+mpkill $n
+endif
+~
+> act_prog 'arrives from the east.'~
+if ispc($n)
+emote wakes up!
+say How did you get in there? You'll pay for getting past me!
+mpkill $n
+endif
+~
+> death_prog 100~
+if ispc($n)
+if pl($n) < 150000000000
+if rand(5)
+mpoload 16307
+endif
+endif
+endif
+~
+|
+#16310
+mason guard~
+Mason~
+A short, mustached guard stands here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 0
+100 90 85 95 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mea $n &GMason screams at you, his arms raising over his head. He clamps his fists together and yells "Bell Ringer!" as he brings them down on your head.&D
+mer $n &GMason screams at $n, his arms raising over his head. He clamps his fists together and yells "Bell Ringer!" as he brings them down on $n's head.&D
+mpdamage $n 10
+~
+|
+#16311
+Wright cook~
+Wright~
+The camp cook leans on the mess hall counter.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 75000000000
+112 112 0
+95 95 95 90 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(25)
+mpoload 16311
+endif
+~
+|
+#16312
+camp guard hammer~
+Camp Guard~
+A regular camp guard runs around the area, the hammer emblem on his chest.
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+0 15000000000
+112 112 0
+65 50 70 85 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+if rand(3)
+mpoload 16318
+endif
+~
+|
+#16313
+puipui alien~
+Pui Pui~
+A purple and white alien stands here, a large M on its forehead.
+~
+~
+3 0&2097152 0 C
+1 0 100 1d20+0 2d5+0
+0 500000000000
+112 112 0
+185 185 175 185 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+say I doubt your weak form will be able to handle this!
+dodon
+~
+> death_prog 3~
+if race($n) == android
+mpoload 16313
+else
+mpoload 16312
+endif
+~
+> greet_prog 100~
+laugh $n
+say You'll have to get past me before you go any further!
+grin
+~
+> act_prog 'flies north.'~
+mpat $n mea $n &RPui Pui puts his arm up and blocks your way!&D
+mpat $n mer $n &RPui Pui puts his arm up and blocks $n's way!&D
+mpat $n mptrans $n 16364
+mpat $n force $n look
+say I don't think so!
+mpsleep 9
+mpkill $n
+~
+> act_prog 'leaves north.'~
+mpat $n mea $n &RPui Pui puts his arm up and blocks your way!&D
+mpat $n mer $n &RPui Pui puts his arm up and blocks $n's way!&D
+mpat $n mptrans $n 16364
+mpat $n force $n look
+say I don't think so!
+mpsleep 9
+mpkill $n
+~
+|
+#16314
+yakon alien~
+Yakon~
+A tall, green alien stands here, two massive horns jutting out from behind its head.
+~
+~
+1 0&16777216 0 C
+1 0 100 1d20+0 2d5+0
+0 750000000000
+112 112 0
+190 185 190 200 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+emote snarls.
+~
+> death_prog 4~
+mpoload 16314
+~
+> fight_prog 15~
+say I won't fall that easily!
+kiburst
+~
+> greet_prog 100~
+say You aren't going any further!
+cackle
+~
+> act_prog 'flies up.'~
+mpat $n mea $n &RYakon laughs at your attempt to get past him.&D
+mpat $n mer $n &RYakon laughs at $n's attempt to get past him.&D
+mpat $n mptrans $n 16364
+mpat $n force $n look
+say Not yet. Face me first!
+mpsleep 9
+mpkill $n
+~
+> act_prog 'leaves up.'~
+mpat $n mea $n &RYakon laughs at your attempt to get past him.&D
+mpat $n mer $n &RYakon laughs at $n's attempt to get past him.&D
+mpat $n mptrans $n 16364
+mpat $n force $n look
+say Not yet. Face me first!
+mpsleep 9
+mpkill $n
+~
+|
+#16315
+dabura alien demon~
+Dabura~
+A pinkish demon stands here, dressed in blue with a long, flowing white cape.
+~
+~
+33 0&16777216&1 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000
+112 112 0
+210 205 205 200 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+laugh $n
+say You will not prevail.
+multi 20
+~
+> death_prog 100~
+if rand(20)
+if rand(1)
+mpoload 16315
+endif
+endif
+~
+> greet_prog 100~
+grin $n
+say How'd you get past the others?
+laugh
+say No matter, you won't continue the journey!
+~
+|
+#16316
+yamu brute~
+Yamu~
+A massive brute stands here, his eye twitching.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16317
+spopovich brute~
+Spopovich~
+A huge man is hunkered down here.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16318
+babidi~
+Babidi~
+A small yellowish alien sits here, his orange cape flowing around him.
+~
+~
+67108867 0 0 C
+51 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16319
+buu alien~
+Fat Buu~
+A short, pudgy pink alien stands here.
+~
+~
+3 524288&16777216 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000000000
+112 112 0
+200 175 220 205 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+say Meeee hungry!
+belly
+~
+> death_prog 50~
+if rand(45)
+mpoload 16322
+else
+if rand(5)
+mpoload 16316
+else
+if rand(2)
+mpoload 16320
+endif
+endif
+endif
+~
+|
+#16320
+wandering repairman repair~
+Elderly Man~
+An elderly man sits here, his back against a small cart.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+cackle
+say Welcome to my little hideaway $n, do you need anything repaired?
+~
+|
+#16321
+ranger guide~
+A Ranger~
+A well equipped man strides here.
+~
+~
+67108929 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Mum's the word, you know! Shhh...
+say I'm tracking
+~
+> speech_prog 'what'~
+say You know, sometimes saying nothing can get you outta some bad situations.
+tip $n
+~
+|
+#16499
+smoke~
+&zSmoke&D~
+&zSmoke roils throughout the area.&D
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 100~
+if mortcount(0) > 0
+if race($n) == bioandroid
+if race($n) == android
+if race($n) == icer
+mpecho &RThe smoke annoys you slightly.&D
+else
+mpecho &RYou choke on the heavy smoke!&D
+mpdamage all 2
+endif
+endif
+endif
+endif
+~
+|
+#0
+
+
+#OBJECTS
+#16300
+water~
+water~
+&xinvis water&D~
+~
+25 0 0
+1000 1000 0 0 0 0
+1 0 0
+ 0
+E
+water~
+&gYou see a long thin pipe resting on the creek bed, the water reflecting
+light along it's metal surface. Picking the pipe up, you find the metal cold to
+the touch.&D
+~
+> exa_prog 100~
+mpoload 16306 $n
+~
+|
+#16301
+cape~
+&WVeritas' &YGolden &WCape~
+Some god dropped a newly created veritas golden cape here.~
+~
+9 0 524289 32
+0 0 0 0 4000 4000
+1 0 0
+ 0
+> use_prog 100~
+MPECHO &Y$n shimmers as the golden cape finds its home.&D
+~
+|
+#16302
+Silver Bracer~
+&WSilver Bracer&D~
+Some god dropped a newly created Silver Bracer here.~
+~
+9 0 4097
+0 0 0 0 500 500
+1 0 0
+ 0
+#16303
+belt~
+&WVeritas' &YGolden &WBelt~
+Some god dropped a newly created &WVeritas' &YGolden &WBelt here.~
+~
+9 0 2049 32
+0 0 0 0 300 300
+1 0 0
+ 0
+#16304
+baldric~
+&WVeritas' Baldric~
+Some god dropped a newly created baldric here.~
+~
+15 0 2049 256
+10 0 0 0 0 0
+1 0 0
+ 0
+#16305
+sword~
+&WSword of Veritas~
+Some god dropped a newly created sword here.~
+~
+5 0 8193
+0 0 0 0 0 0
+1 0 0
+ 0
+#16306
+metal pipe~
+&zMetal Pipe&D~
+&cA long &zmetal pipe &clies here.&D~
+~
+37 0 1
+-1 0 0 0 0 0
+1 0 0
+ 0
+> pull_prog 100~
+if mobinroom(16306) == 0
+mea $n You can't do that here.
+else
+mea $n &YYou stick the pipe between the piece of metal and the door.&D
+mer $n &Y$n sticks the pipe between the piece of metal and the door.&D
+mpsleep 18
+mea $n &YAfter some effort, the piece of metal falls away and you enter the ship.&D
+mer $n &YAfter some effort, the piece of metal falls away and $n enters the ship.&D
+mptrans $n 16388
+endif
+~
+|
+#16307
+prism piece one~
+A thin prism piece~
+Some god dropped a newly created prism piece one here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if carryingvnum($n) 16308
+if carryingvnum($n) 16309
+mea $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mer $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mpforce $n dro one
+mpforce $n dro two
+mpforce $n dro three
+mpsleep 9
+mea $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in your hand, glowing faintly.&D
+mer $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in $n's hand, glowing faintly.&D
+mppurge prism
+mppurge prism
+mppurge prism
+mpoload 16310 $n
+endif
+endif
+~
+|
+#16308
+prism piece two~
+A thick prism piece~
+Some god dropped a newly created prism piece two here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if carryingvnum($n) 16307
+if carryingvnum($n) 16309
+mea $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mer $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mpforce $n dro one
+mpforce $n dro two
+mpforce $n dro three
+mpsleep 9
+mea $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in your hand, glowing faintly.&D
+mer $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in $n's hand, glowing faintly.&D
+mppurge prism
+mppurge prism
+mppurge prism
+mpoload 16310 $n
+endif
+endif
+~
+|
+#16309
+prism piece three~
+A triangular prism piece~
+Some god dropped a newly created prism piece three here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if carryingvnum($n) 16307
+if carryingvnum($n) 16308
+mea $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mer $n &YThe three pieces of the prism float into the air and come together on their own!&D
+mpforce $n dro one
+mpforce $n dro two
+mpforce $n dro three
+mpsleep 9
+mea $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in your hand, glowing faintly.&D
+mer $n &YA flash of light assaults your eyes. When you open them again, a full prism sits in $n's hand, glowing faintly.&D
+mppurge prism
+mppurge prism
+mppurge prism
+mpoload 16310 $n
+endif
+endif
+~
+|
+#16310
+prism light~
+&RA Re&Ofra&Ycti&Gng &BPri&Psm&D~
+A small prism sits here, refracting light throughout the room.~
+~
+1 0 1
+0 0 0 -1 0 0
+1 0 0
+ 100000000000
+A
+3 15
+A
+1 5
+A
+4 -5
+A
+2 5
+A
+29 2
+> wear_prog 100~
+mea $n &WA pale &Rr&Oa&Yi&Gn&Bb&po&Pw &Wof colors surrounds you as you hold the prism.&D
+mer $n &WA pale &Rr&Oa&Yi&Gn&Bb&po&Pw &Wof colors surrounds $n as $e holds the prism.&D
+~
+> remove_prog 100~
+mea $n &WThe light fades as you stop using the prism.&D
+mer $n &WThe light fades as $n stops using the prism.&D
+~
+|
+#16311
+recipe paper~
+A Recipe~
+A small piece of paper is on the ground.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+recipe~
+Camp Tacos:
+4 lbs of ground beef
+2 taco seasoning packages
+3 tomatoes
+1 tortilla per person
+
+Brown ground beef in a small saucepan, then add the seasoning with 1
+cup of water. Stir. Add 3 more cups water. Simmer for 10 minutes.
+
+Chop up the tomatoes and add them in to the beef mixture. Remove from
+heat and serve on tortilla shells with sour cream, salsa and cheese.
+
+These tacos provide a wake up from the dull, smokey life of camp!
+~
+#16312
+weighted anklet~
+&WA Weig&zhted An&Wklet&D~
+A small band of metal lies here.~
+~
+9 262144 2097153
+0 0 0 10000 25 25
+1 0 0
+ 1000000000
+A
+1 -3
+A
+4 -3
+A
+2 -9
+#16313
+titanium ankle replace~
+&zA Titaniu&Wm Ankle Repla&zcement&D~
+A small, ankle-shaped piece of metal lies here.~
+~
+9 1818624&64 2097153
+0 0 0 10000 25 25
+1 0 0
+ 1000000000
+A
+4 -10
+#16314
+tribal face mask~
+&gA Tr&Rib&Ya&Rl M&gask&D~
+&gA uniquely designed mask lies here.~
+~
+9 262144 1048577
+0 0 0 2500 375 375
+1 0 0
+ 1000000000
+A
+1 5
+A
+2 5
+A
+29 -3
+#16315
+glowing longsword sword~
+&WA Glo&wwin&Yg Long&wswo&Wrd&D~
+A longsword lies here, its blade emitting a soft white light.~
+~
+5 1 8193
+12 5 5 3 0 0
+1 0 0
+ 100000000000
+A
+1 2
+A
+2 2
+A
+3 5
+A
+4 -5
+> use_prog 100~
+mea $n &YYour eyes glint with &Rrage&Y as you wield the longsword.&D
+mer $n &Y$n's eyes glint with &Rrage&Y as $e wields the longsword.&D
+~
+|
+#16316
+majin belt~
+&PA Maj&pin Be&Plt&D~
+A wide belt lies here, a stylish M on it's buckle.~
+~
+9 2560 2049 24
+0 0 0 10000 120 120
+1 0 0
+ 1000000000
+A
+4 -5
+A
+1 -5
+> wear_prog 100~
+mea $n &wA faint &Ppinkish &waura flares up around you.&D
+mer $n &wA faint &Ppinkish &waura flares up around $n.&D
+~
+|
+#16317
+depression chip~
+&zA De&ppre&zssio&pn Ch&zip&D~
+A small, decrepit looking chip lies here.~
+~
+9 1818624&64 513
+0 0 0 40000 0 0
+1 0 0
+ 0
+A
+1 -6
+A
+2 -6
+A
+4 -6
+A
+3 -6
+> wear_prog 100~
+mpplmult $n 6
+if rand(25)
+mea $n &pYou being to cry as you install the depression chip.&D
+mer $n &p$n begins to cry as $e installs the depression chip.&D
+else
+if rand(50)
+mea $n &pYou feel like the &zworld &pis coming down around you.&D
+mer $n &p$n feels like the &zworld &pis coming down around $m.&D
+endif
+endif
+~
+> remove_prog 100~
+mpplmult $n 1
+mea $n &PYou feel your spirits lighten as you remove the chip.&D
+mer $n &P$n feels $s spirits lighten as $e removes the chip.&D
+~
+|
+#16318
+bio membrane wings~
+&GMemb&grane Wi&Gngs&D~
+A greenish set of wings lies here.~
+~
+9 1032192&64 257
+0 0 0 0 450 450
+1 0 0
+ 1000000000
+A
+1 2
+A
+2 10
+A
+4 2
+A
+3 4
+#16319
+pondera visor~
+&BA Pond&Cera Vi&Bsor&D~
+A small, blue visor lies here.~
+~
+65 262144 131073
+0 0 1 0 0 0
+1 0 0
+ 10000000
+A
+3 3
+A
+2 -2
+> wear_prog 100~
+mea $n &WThe world becomes tinted &Bblue &Wbriefly as you put the visor on.&D
+~
+|
+#16320
+underarmor armor~
+&zUn&rde&zra&rrm&zor&D~
+A set of support armor lies here.~
+~
+9 8650752 257 30
+0 0 0 0 250 250
+1 0 0
+ 500000000
+#16321
+panther eye pendant~
+&zA Pant&Oher &WEye &OPend&zant&D~
+A small animal eye on a chain lies here.~
+~
+9 1048576 5
+0 0 0 5000 0 0
+1 0 0
+ 50000000
+A
+2 2
+A
+3 2
+#16322
+buu shell~
+&PA Bu&Wu Sh&Pell&D~
+A small piece of slimy, pink shell is here.~
+~
+9 0 16385
+0 0 0 1000 0 0
+1 0 0
+ 100000000
+A
+1 2
+A
+4 5
+#16499
+buu egg~
+Buu Egg~
+&pA large, greasy egg sits atop a pedestal here.&D~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#16300
+Into the Mountains~
+Gravel and vegetation are very prominent as the ground starts to rise.
+Footpaths intertwine and wind into the foot of the mountain, most likely
+all leading to the same mountain pass. Ferns and willow-bushes make up
+most of the plant population, having dominated the on-going war for
+sunlight. Trees pop into existence, slowly growing taller the farther
+into the mountain they are.
+~
+0 0 3
+D0
+~
+~
+0 -1 16301
+D7
+~
+~
+0 -1 9212
+S
+#16301
+The Mountain Path~
+The gravel disappears and gives way to rutted, worn paths. Every shade
+of green reaches out to your eye, offsetting the clear blue of the sky.
+Crickets assault the airwaves with their symphony of clicks and chirps,
+the song already long overdrawn. A small eagle nest perches atop a failing
+tree just off of the path.
+~
+0 0 3
+D0
+~
+~
+0 -1 16302
+D2
+~
+~
+0 -1 16300
+S
+#16302
+Further Down The Path~
+The path begins to slope up at a much greater grade here, as the journey
+into the mountain itself truly begins. Huge boulders dot your vision, along
+with many smaller rocks and a multitude of vegetation. Trees slowly seem to
+get closer to the path, embracing the worn walkway like a long lost relative.
+The smell of pine and nature permeates the air. The path ends at a small rise
+of rock that has been climbed many times.
+~
+0 0 3
+D2
+~
+~
+0 -1 16301
+D4
+~
+~
+0 -1 16303
+S
+#16303
+Climbing Higher~
+Crisp air mingles with chirping birds at the top of the small climb.
+There is only a single path from this location, it's edges overgrown
+with small plants. Trees definately begin to show themselves as the
+dominant being in this area, with many shapes and sizes pushing towards
+the sky, fighting for life handed down from the sun.
+~
+0 0 3
+D1
+~
+~
+0 -1 16304
+D5
+~
+~
+0 -1 16302
+S
+#16304
+Along The Edge~
+The path curves dangerously close to a medium sized cliff here, the drop
+back down a distinct possibility. The cry of an eagle sounds out above you,
+the nearby squeaking of a small animal following shortly. A light breeze flows
+over the ground, caressing the pine cones and playing with the dust. The view
+from here is questionable, hid mostly by clouds and an unexplainable mist.
+~
+0 0 3
+D1
+~
+~
+0 -1 16305
+D3
+~
+~
+0 -1 16303
+S
+#16305
+A Curve In The Path~
+A giant boulder sits in the middle of the path, it's bulk blocking a
+straight line traverse. The path curls around either side of the huge
+piece of mountain, much like water would do in the same situation. The
+trees edge ever closer to the still prevalent edge of the cliff, their
+boughs becoming nothing but an incessant bother.
+~
+0 0 3
+D1
+~
+~
+0 -1 16306
+D3
+~
+~
+0 -1 16304
+S
+#16306
+A Parting Of Ways~
+The path in this direction ends abruptly, splitting into a T shape. A
+impenetrable wall of trees lies at the end of the path, the trunks rising
+up like the bars of a jail. The ground slopes ever up towards the top of
+the mountain, it's ascent never ending. A large cave can be seen down
+the southern section of the path.
+~
+0 0 3
+D0
+~
+~
+0 -1 16313
+D2
+~
+~
+0 -1 16307
+D3
+~
+~
+0 -1 16305
+S
+#16307
+The Cave Mouth~
+The path leads directly into the gaping mouth of a cave, the opening
+rising out of the ground. Stale air and the smell of must fills your
+nostrils, easily overpowering the pine. Small traces of claw marks line
+the ground outside of the cave, some of them fresh. A small bee's nest
+hangs off a tree next to the cave.
+~
+0 0 3
+D0
+~
+~
+0 -1 16306
+D2
+~
+~
+0 -1 16308
+S
+#16308
+Further Inside~
+Stepping inside the cave, the source of the must smell becomes quite
+obvious. The air itself seems to be injected with moisture and small
+drops of condensation litter the roof. Another smell also reveals itself
+here. The smell of death. Rotting flesh assaults your nostrils, the sickly
+sweet smell stinging at your gag reflex. The cave opens up the further
+inside you go.
+~
+0 265 0
+D0
+~
+~
+0 -1 16307
+D2
+~
+~
+0 -1 16310
+S
+#16309
+The Three Little Bears~
+A smaller room off the cave reveals what seems to be a sleeping area,
+and definately for more than one cave dweller. Pieces of tree bark and
+many grasses line the bottom of the cave, somewhat organized to keep the
+cold of the floor at bay.
+~
+0 265 0
+D1
+~
+~
+0 -1 16310
+S
+#16310
+Cave Innards~
+Darkness descends on the cave, fully consuming any light that filters
+in from outside. A few smooth, worn areas dot the cave, along with many
+more of the claw marks. A distinct pile of bones lie in one corner of the
+cave, as if pointing out the usual eating spot. Humanoid skulls are among
+the victims. The cave is quite large inside, home to either a few occupants,
+or one very large one.
+~
+0 265 0
+D0
+~
+~
+0 -1 16308
+D1
+~
+~
+0 -1 16311
+D2
+~
+~
+0 -1 16312
+D3
+~
+~
+0 -1 16309
+S
+#16311
+The Parent~
+Another sleeping chamber reveals itself, this one being a little larger
+that the other. The floor is once again lined with grasses, this time
+intermingled with small pieces of brown fur. A few spatters of dried
+blood are visible on the walls, along with a few more scattered bones.
+~
+0 265 0
+D3
+~
+~
+0 -1 16310
+S
+#16312
+The Cave King~
+A large room in the cave unfolds before you, the walls covered in
+claw marks and blood. An almost throne shaped stone sits against the far
+wall of the room. The smell of death seems to have its epicenter in this
+room, while the darkness also seems to make it's main home in this section
+of the cave.
+~
+0 265 0
+D0
+~
+~
+0 -1 16310
+S
+#16313
+Thickening Trees~
+The trees begin to almost choke off the path, their growth unchecked
+for a long time. Branches hang down over the path and moss is in the
+constant state of travel annoyance. Many pine cones litter the path,
+ever searching for their chance to spring life anew.
+~
+0 4 3
+D0
+~
+~
+0 -1 16324
+D1
+~
+~
+0 -1 16314
+D2
+~
+~
+0 -1 16306
+S
+#16314
+A Worn Path?~
+The path widens and hardens here, a product of constant usage. This
+path is very obviously a major walkway in these parts, no traces of
+nature left on it. The trees seem to be thinning out, but not out
+of nature's doing only. The smell of fuel and a very distinct wood
+smell floats in from further down the path.
+~
+0 0 3
+D1
+~
+~
+0 -1 16315
+D3
+~
+~
+0 -1 16313
+S
+#16315
+Broken Trees~
+The source of the thinning trees becomes apparent. A clearing opens
+out in front of you, but it wasn't always a clearing. Stumps line the
+ground in neat rows like grave markers, their sap bleeding out onto
+the ravaged forest floor. The hustle and bustle of loggers carry on
+their mission, oblivious to anything that isn't a chainsaw or a tree.
+~
+0 0 3
+D1
+~
+~
+0 -1 16316
+D3
+~
+~
+0 -1 16314
+S
+#16316
+A Small Clearing~
+Another clearing makes its home here, on the edge of the cutting grounds.
+There are many fire-pits scattered around the clearing, with stumps to sit
+on and crude poker sticks. The path has widened into a generic wearing of
+the ground in the entire area. A few small flagposts dot the clearing, their
+masts waving a red flag with two crossed hammers on it.
+~
+0 0 3
+D2
+~
+~
+0 -1 16317
+D3
+~
+~
+0 -1 16315
+S
+#16317
+The Camp Wall~
+A fairly long line of upright logs greets you, their tops sharpened to
+points. The flags that sparsely dotted the clearing now dominate the top
+of the wall here, as do guards. A massive wooden door bars any entrance to
+the camp, it's front plastered with the two-hammer logo also. Torch pitch
+and cooking food win the scent war here, as the pine retreats back into
+the clearing.
+~
+0 0 3
+D0
+~
+~
+0 -1 16316
+D2
+~
+~
+0 -1 16319
+S
+#16318
+A Small Mess Hall~
+A quaint mess hall stands here, its capacity for occupants almost always
+at the maximum. Sweet and spicy smells waft out the front door, along with
+shouts for seconds of whatever delectable dish is being served at the moment.
+Small wooden steps lead up to the mess hall door, which of course have the
+hammer logo on each new height.
+~
+0 0 0
+D1
+~
+~
+0 -1 16319
+S
+#16319
+Camp Entrance~
+A well organized camp lies before you, its small wooden ramparts and
+buildings a bustle of soldiers and servants. The red flag with hammer
+motif is repeated consistently throughout the camp. A large cache of
+weapons and armor is visible, seemingly out of place with the camp's
+occupants mode of dress and attitude. The armor and weapons are somewhat
+old and out of use, while the people are modernly dressed and voiced.
+~
+0 0 3
+D0
+~
+~
+0 -1 16317
+D1
+~
+~
+0 -1 16320
+D2
+~
+~
+0 -1 16322
+D3
+~
+~
+0 -1 16318
+S
+#16320
+A Small Campfire~
+Another campfire area presents itself, roasting spits resting over
+each roaring fire. The smell of roast pig and pheasent assaults your
+senses, along with a faint undertinge of ale. Hoots and hollers add
+to the already loud din of the camp, the soldiers celebrating anything
+and everything.
+~
+0 0 3
+D3
+~
+~
+0 -1 16319
+S
+#16321
+Guard Quarters~
+Another smell clearing is home to tents that are a fair amount larger
+in size that the regular tents, but not as big as the main one. From the
+attitude and look of the soldiers, these are no doubt the tents of the
+higher ranked guards and soldiers in the camp. Once again, many new and
+unique symbols share the outside of the tents with the hammers.
+~
+0 0 0
+D1
+~
+~
+0 -1 16322
+E
+symbol~
+&w*
+                               * *
+                              *   *&R***********************
+                 &W************&w*     *&Y**********************&R*****************
+      &W*****************     &w*       *&G*********************&Y*****************
+&W*************              &w*         *&B*********************&G***************
+                          &w*           *
+                         &w***************
+~
+E
+sign~
+~
+S
+#16322
+The Main Tents~
+Another clearing seems to be the home of a fair amount of tents. Each
+tent, seperated from each other by no more than a few feet, houses all
+of a soldier's equipment and living supplies. While most of the tents are
+white, there are a few that are different colors and different sizes. The
+clang of steel hitting together rings through the air as soldiers continue
+their training drills.
+~
+0 0 0
+D0
+~
+~
+0 -1 16319
+D1
+~
+~
+0 -1 16323
+D3
+~
+~
+0 -1 16321
+S
+#16323
+Ornate Tent~
+A huge, multicolored tent rises up in front of you, the very entrance
+to it bigger than the other tents. Many new symbols decorate the outside
+of it, along with the hammer logo. Six armed guards stand outside the
+front of the tent, their weapons drawn indefinately. Soothing music floats
+out from inside the tent. There is no doubt about it, this tent must be that
+of the leader of this camp.
+~
+0 0 0
+D3
+~
+~
+0 -1 16322
+E
+sign~
+&W_       _
+    ***     ***
+   *****   *****
+   ** &B@&z*   *&B@ &W**
+   *****   *****
+    ***     ***
+    *--     --*
+   *****   *****
+  |*****| |*****|
+  ******* *******
+
+
+~
+S
+#16324
+Fallen Trees~
+The trees do not only grow in number here, but in size as well. Trunks
+get wider and taller, while also growing closer together. A few roots
+poke up through the dwindling path, bursting through the earth as it
+they have been been stuck underground for millenia simply longing for
+air. The path again ends at a rock wall, this one much taller than the
+last one.
+~
+0 0 3
+D2
+~
+~
+0 -1 16313
+D4
+~
+~
+0 -1 16325
+S
+#16325
+Climbing Higher~
+The air becomes crisp as the elevation rises once more. Rock and small
+plants begin to win the war for space with the now growing sparseness of
+trees. Clouds descend and hug the ground in many places, a haven for broken
+ankles and long falls. The dirt path gives way to a mixture of gravel and
+rock, the danger factor of the climb increasing with every step.
+~
+0 0 3
+D1
+~
+~
+0 -1 16333
+D3
+~
+~
+0 -1 16326
+D5
+~
+~
+0 -1 16324
+S
+#16326
+A Cliff Wall~
+A small glimpse over the edge reveals how far down the cliff really is,
+the bottom barely able to be seen from this height. The path winds very
+close to the edge in a few spots, forced to alter its course by lost and
+confused boulders. The entire area would be unpassable in the rain or snow,
+for the slick rocks would be far too easy to slip on.
+~
+0 0 3
+D1
+~
+~
+0 -1 16325
+D3
+~
+~
+0 -1 16327
+> entry_prog 100~
+if rand(15)
+mpechoat $n &YBad weather has rendered this section unpassable. You must turn back!&D
+mpforce $n e
+endif
+~
+|
+S
+#16327
+A Log Bridge~
+The path ends at large chasm, its wide mouth spanned only by a single
+log. The chance of swinging a rope to the other side is defeated by the
+fact that the trees have retreated from this area, leaving each traveler
+to chance the simple tree trunk. The log seems stable enough, its top well
+worn by daredevils and adventurers alike. The only problem is the wind, and
+your courage.
+~
+0 0 3
+D1
+~
+~
+0 -1 16326
+D3
+~
+~
+0 -1 16328
+> entry_prog 100~
+mpechoat $n &YThe wind blows hard against your body, knocking you off balance!&D
+if con($n) < 105
+if rand(50)
+mea $n &YYou almost slip! Get it together!&D
+else
+mpecho &RYou can't hold it and slip off the log!&D
+mpdamage $n 20
+mptrans $n 16383
+mpat $n mpforce $n look
+endif
+else
+mpechoat $n &YYou quickly regain your balance and move onward.&D
+endif
+~
+|
+S
+#16328
+The Other Side Of The Chasm~
+The chasm does not look much different from this side, but the scenery
+around has changed dramatically. There are no trees in sight, and rock
+seems to have made this section of the mountain its kingdom. The path
+begins to slope down once again, cutting a swath directly through the
+mountain.
+~
+0 0 3
+D0
+~
+~
+0 -1 16329
+D1
+~
+~
+0 -1 16327
+S
+#16329
+Away From The Cliff~
+The path continues its downward slope between two rock walls, as the
+rock slowly turns a darker color. The sound of running water echoes up
+the walls, the moisture from it already able to be felt in the air. The
+air itself is beginning to cool a little more, your breath easily seen
+rising into the air like a smoke signal.
+~
+0 0 3
+D0
+~
+~
+0 -1 16330
+D2
+~
+~
+0 -1 16328
+S
+#16330
+A Way Down~
+The path abruptly ends and a small drop off here. A rock wall rises up
+a foot behind the opening, making a small opening that descends all the
+way to the ground. The opening looks big enough to shimmy down, but may
+get smaller as the journey downward continues. The origin of the water is
+definately down this opening, the sound extremely amplified by the two rock
+walls.
+~
+0 0 3
+D2
+~
+~
+0 -1 16329
+D5
+~
+~
+0 -1 16331
+S
+#16331
+Further Down The Rockface~
+The rocks squeeze in closer the farther one goes down, each side doing
+its part, reaching for the other with open arms. The sound of the running
+water is almost deafening in here, bouncing around like a small rubber ball.
+The edges of the walls are slick with moisture, making it quite a hard task
+to keep a handhold.
+~
+0 0 3
+D4
+~
+~
+0 -1 16330
+D5
+~
+~
+0 -1 16332
+> entry_prog 100~
+if rand(25)
+mpecho &YYou slip on the slick walls of rock and plummet down!&D
+mpdamage $n 15
+mptrans $n 16331
+at 16331 force $n look
+endif
+~
+|
+S
+#16332
+The Creek~
+A fair-sized creek runs at your feet, the water heading directly into
+the side of the mountain through a hole millenia in the making. The water
+is crystal clear and reflects your face like a mirror. The hole through
+which the water enters the mountain has an extremely smooth rim, having been
+worn down continually by the flow.
+~
+0 0 3
+D2
+~
+~
+0 -1 16381
+D4
+~
+~
+0 -1 16331
+S
+#16333
+Another Path~
+A new path begins here, its surface not as worn as the previous one. The
+path still continually slopes up at a slow rate, making an easy climb into
+a treadmill workout. Even though the path continually rises, the land that
+borders the path reaches for the sky at a much quicker rate, boxing the path
+in and diminishing the sun's radiance.
+~
+0 0 3
+D0
+~
+~
+0 -1 16334
+D3
+~
+~
+0 -1 16325
+S
+#16334
+Encroaching Trees~
+The land around the path continues to rise, yet trees begin to creep
+down its slope. Pine needles begin to litter the ground, the chill of
+the air bringing about their premature nose-dive from the branches. Small
+branches have also made their home on terra firma, camoflaguing themselves
+in with piles of pine needles, hoping to trip up an unwary trespasser.
+~
+0 0 3
+D0
+~
+~
+0 -1 16335
+D2
+~
+~
+0 -1 16333
+S
+#16335
+A Small Mountain Field~
+The slope declines here and the walls of rock open up onto a picturesque
+mountain clearing, complete with crowds of flowers and a lone tree in the
+middle. A break in the mountain wall lets the sun fully shine its brilliance
+onto the clearing, engulfing the flowers in life.
+~
+0 0 3
+D0
+~
+~
+0 -1 16336
+D2
+~
+~
+0 -1 16334
+S
+#16336
+A Split In The Trail~
+Another fork presents itself for your viewing pleasure, taunting you
+with each seductive direction choice. One of the paths heads down, into
+a sunny valley that is easily viewable from this height. Smoke rises from
+the center of the valley, polluting the blue sky with a sickly grey color.
+The latter path heads into the forest, its further twists and turns shrouded
+in the boughs.
+~
+0 0 3
+D1
+~
+~
+0 -1 16337
+D2
+~
+~
+0 -1 16335
+D5
+~
+~
+0 -1 16344
+S
+#16337
+Tracks~
+The treetops immediatly decline the sun's effect, dimming the light to
+a level reminiscent of twilight. Many trees have received damage to their
+bark, likely from the same culprit who's tracks litter the area. One large
+animal seems to make this area its home, and from the looks of the trees and
+scattered bones within eyeshot, defends it superbly.
+~
+0 0 3
+D1
+~
+~
+0 -1 16338
+D3
+~
+~
+0 -1 16336
+S
+#16338
+Carrion In The Boughs~
+Small rivulets of blood run down a few tree trunks here, the smell of
+rotting meat permeating the air. A look up reveals a half-eaten deer
+carcass in the branches of the trees, its neck torn out and a look of
+fear frozen in its unmoving eyes. Paw prints litter the path.
+~
+0 0 3
+D1
+~
+~
+0 -1 16339
+D3
+~
+~
+0 -1 16337
+S
+#16339
+A Trail Of Blood~
+The path takes a sharp turn, the ground littered in blood. The river of
+red makes for a macabre sight, its path uneasy and undetermined. Signs of
+a struggle are very apparent, along with very defined drag marks in the path.
+A dark cave is visible from the path, the line of blood heading right into its
+gaping maw.
+~
+0 0 3
+D2
+~
+~
+0 -1 16340
+D3
+~
+~
+0 -1 16338
+S
+#16340
+A Rock Outcropping~
+The path rises abruptly, leading up to a large rock outcropping. What
+looked like a cave from farther away, is in fact just a huge break in
+the rockface of the mountain. The overhang easily blocks out the sun,
+enveloping the opening in shadows and mystery. The small blood trail
+disappears into the black.
+~
+0 4 3
+D0
+~
+~
+0 -1 16339
+D2
+~
+~
+0 -1 16342
+S
+#16341
+Scratch Marks On The Walls~
+This section of the open rockface is most likely a sleeping area, its
+floor worn smooth and small chunks of black fur interspersed with leaves.
+Many claw marks line the inside walls of the sleeping chamber, many of
+them cutting quite deep into the stone, almost if something was trying
+to escape.
+~
+0 265 0
+D1
+~
+~
+0 -1 16342
+S
+#16342
+Rock And Bone~
+The low roof of the cave applies mental pressure from above, while the
+many piles of bones add to the sight of the apparent war-zone that is
+this animal's den. The trail of blood, now visible underneath the rock
+roof, heads off into a secluded section of the shelter.
+~
+0 265 0
+D0
+~
+~
+0 -1 16340
+D1
+~
+~
+0 -1 16343
+D3
+~
+~
+0 -1 16341
+S
+#16343
+Center Of The Carnage~
+If anything, this room seems to be the last place many animals see. The
+occupant of this cave apparently likes to have a lot of fun with its prey
+once it arrives back here, as the walls are stained to a reddish hue. Pieces
+of bone and animal are still visible, their lives ended so another could live
+on. Who knows what was going through their minds as their cunning killer played
+catch and release, whetting its appetite for death and rage.
+~
+0 265 0
+D3
+~
+~
+0 -1 16342
+S
+#16344
+A Cutback~
+The trail turns back on itself, and abruptly heads down. The trail is
+so steep that it requires you to keep and eye on your balance. For if
+you should fall, the ride down will be a steep, painful one. More green
+begins to leak back into your vision, taking back the land from the rock
+that surrounds the trail on the mountain.
+~
+0 0 3
+D2
+~
+~
+0 -1 16345
+D4
+~
+~
+0 -1 16336
+S
+#16345
+Smaller Rises~
+As the elevation drops more, the land slowly becomes dotted with small
+rises of land, reaching up as if aspiring to be their own mountains. The
+sun slowly regains its former glory, having no longer to deal with the walls
+of the mountain. The valley can almost be seen fully from here, its borders
+guarded by a multitude of trees and shrubs.
+~
+0 0 3
+D0
+~
+~
+0 -1 16344
+D2
+~
+~
+0 -1 16346
+S
+#16346
+Foothills~
+Rolling foothills are prevalant here, their small peaks inviting many
+a picnic and loving wrestle. Trees throw their shade indiscriminantly
+over the entire ocean of grass waves, the cooler areas a much welcome
+place on hot days. The path continues further in the direction of the
+valley, or back up towards the mountain.
+~
+0 0 3
+D0
+~
+~
+0 -1 16345
+D2
+~
+~
+0 -1 16347
+S
+#16347
+The Corner Of The Valley~
+The path dips a fair amount here, following the lay of the ground as it
+slopes down into the valley. The chill of the air has definately made itself
+scarce here, as moisture and warmth once again fill the air. Although the air
+is warm, it now seems to be filled with a small injection of smoke.
+~
+0 0 3
+D0
+~
+~
+0 -1 16346
+D7
+~
+~
+0 -1 16348
+S
+#16348
+The Valley Floor~
+The floor of the valley is quite flat, the ground only rising or falling
+a few feet here and there. The smoke hangs in the air, its stinging vapor
+disturbing your lungs. The source of the smoke is visible slightly from
+this location. It seems what looks like a spaceship has crashed, leaving a
+fair sized crater in the ground along with the ship itself.
+~
+0 0 3
+D0
+~
+~
+0 -1 16349
+D8
+~
+~
+0 -1 16347
+S
+#16349
+A Small Spring~
+A small body of crystal clear water makes its home under the trees here,
+most likely a home for many types of animals. The spring is likely a by
+product of the water running off the mountain, but its presence is a good
+thing for many inhabitants of this forest and valley. Even the presence of
+the smoke is somewhat lessened in the company of the mirror-like liquid.
+~
+0 0 3
+D0
+~
+~
+0 -1 16350
+D2
+~
+~
+0 -1 16348
+D3
+~
+~
+0 -1 16354
+S
+#16350
+A Wall Of Trees~
+The edge of the valley becomes very apparent here, a large wall of trees
+rising up to block your further trespassing of nature. It might be possible
+for someone to squeek through the trees, but only if they were a small child.
+The smoke seems to have lessened here, your location a little further away 
+from the ship.
+~
+0 0 3
+D2
+~
+~
+0 -1 16349
+D3
+~
+~
+0 -1 16351
+D9
+~
+~
+0 -1 16354
+S
+#16351
+A Beautiful View~
+The sky around you opens up, giving a perfect view of the peak of the
+mountain, its chiseled features glowing in the sun. Birds flock around
+it, somehow making the picture a little too perfect. The smoke returns
+in small amounts, but luckily unaffecting the line of sight to the top
+of the majestic piece of earth.
+~
+0 0 3
+D1
+~
+~
+0 -1 16350
+D2
+~
+~
+0 -1 16354
+D3
+~
+~
+0 -1 16352
+S
+#16352
+Rolling Ground~
+The rolling hills make another appearance here, stretching themselves
+into the wall of the forest. The smoke itself rolls over the ground, the
+wind blowing slightly. The ship is very visible from here, rising from the
+crater in the ground, its hull broken and slightly tarnished.
+~
+0 0 3
+D1
+~
+~
+0 -1 16351
+D2
+~
+~
+0 -1 16353
+D8
+~
+~
+0 -1 16354
+S
+#16353
+Smoke~
+The entire area here is obscured by intense smoke, the sheer thickness
+of it clogging your throat. It would be wise not to stay here for long,
+as prolonged exposure to the smoke will eventually take its toll. The door
+to the ship is visible now, the smoke readily pouring out around the edges.
+~
+0 0 3
+D0
+~
+~
+0 -1 16352
+D1
+~
+~
+0 -1 16354
+S
+#16354
+A Large Crater~
+The smoke billows out of the crater itself and the ship. There are many
+strange markings on the side of the spaceship, many obscured by scrapes
+and wreckage caused by the crash landing. The door is open a little bit,
+but is wedged closed by a large fallen piece of metal. It looks like you're
+going to need something to help you get inside.
+~
+0 0 3
+D0
+~
+~
+0 -1 16351
+D1
+~
+~
+0 -1 16349
+D3
+~
+~
+0 -1 16353
+D6
+~
+~
+0 -1 16350
+D7
+~
+~
+0 -1 16352
+S
+#16355
+Level One~
+The smoke is extremely bad here, the cause of it seemingly centered on
+this level. The floor of the ship is barely able to be seen, and the roof
+is nothing but a mass of swirling grey. Small beeping noises can be heard,
+their techinical outcries seeming almost forlorn. A small warning sign is
+apparent on the wall.
+~
+0 4 1
+D2
+~
+~
+0 -1 16356
+D3
+~
+~
+0 -1 16358
+E
+sign~
+Elevator Access Code needed to get off level one.
+Speak the EAC and the elevator will arrive.
+~
+> speech_prog 'nothing'~
+mpecho &YA small beep is heard as the elevator arrives.&D
+mea $n &YYou step aboard the elevator.&D
+mer $n &Y$n steps aboard the elevator.&D
+mptrans $n 16388
+at $n force $n look
+~
+|
+S
+#16356
+Level One~
+The smoke is extremely bad here, the cause of it seemingly centered on
+this level. The floor of the ship is barely able to be seen, and the roof
+is nothing but a mass of swirling grey. Small beeping noises can be heard,
+their sounds getting closer. Perhaps they present an answer to getting the
+smoke to subside.
+~
+0 4 1
+D0
+~
+~
+0 -1 16355
+D3
+~
+~
+0 -1 16357
+S
+#16357
+Level One~
+The beeping sounds increases significantly in this room, faint lights
+shining up through the smoke. There seem to be four lights, arranged
+in a square shape. Each button is numbered from one to four, starting
+in the top left and continuing in a clockwise formation. The origin of
+the smoke is definately this level, the sickly polluted air slowly taking
+over.
+~
+0 4 1
+D0
+~
+~
+0 -1 16358
+D1
+~
+~
+0 -1 16356
+> speech_prog '4, 2, 3, 1'~
+mpecho &YThe lights glow briefly, and a loud humming sound fills the room.&D
+mpat 16355 mppurge smoke
+mpat 16356 mppurge smoke
+mpat 16357 mppurge smoke
+mpat 16358 mppurge smoke
+mpecho &RThe smoke is sucked into the walls of the ship! The air is clear!&D
+~
+|
+S
+#16358
+Level One~
+The smoke is extremely bad here, the cause of it seemingly centered on
+this level. The floor of the ship is barely able to be seen, and the roof
+is nothing but a mass of swirling grey. Small beeping noises can be heard,
+their sounds getting closer. Perhaps they present an answer to getting the
+smoke to subside.
+~
+0 4 1
+D1
+~
+~
+0 -1 16355
+D2
+~
+~
+0 -1 16357
+S
+#16359
+Level Two~
+The second level of the ship is much the same, save a few small windows
+that let the sun filter in. The smoke failed to reach this level, as the
+air is completely free and clean. This level is also seemingly devoid
+of any sort of technology, as the elevator is the only thing that mars
+the smoothness of the walls. This room is slightly different than the rest
+on this floor, a low humming coming from the walls.
+~
+0 536870924 1
+D2
+~
+~
+0 -1 16360
+D3
+~
+~
+0 -1 16362
+S
+#16360
+Level Two~
+The second level of the ship is much the same, save a few small windows
+that let the sun filter in. The smoke failed to reach this level, as the
+air is completely free and clean. This level is also seemingly devoid
+of any sort of technology, as the elevator is the only thing that mars
+the smoothness of the walls.
+~
+0 4 1
+D0
+~
+~
+0 -1 16359
+D3
+~
+~
+0 -1 16361
+S
+#16361
+Level Two~
+The second level of the ship is much the same, save a few small windows
+that let the sun filter in. The smoke failed to reach this level, as the
+air is completely free and clean. This level is also seemingly devoid
+of any sort of technology, as the elevator is the only thing that mars
+the smoothness of the walls.
+~
+0 4 1
+D0
+~
+~
+0 -1 16362
+D1
+~
+~
+0 -1 16360
+S
+#16362
+Level Two~
+The second level of the ship is much the same, save a few small windows
+that let the sun filter in. The smoke failed to reach this level, as the
+air is completely free and clean. This level is also seemingly devoid
+of any sort of technology, as the elevator is the only thing that mars
+the smoothness of the walls.
+~
+0 4 1
+D0
+~
+~
+0 -1 16388
+D1
+~
+~
+0 -1 16359
+D2
+~
+~
+0 -1 16361
+S
+#16363
+Level Three~
+This level has a much higher roof than the first too levels, along
+with a small sitting area. Garbage and other objects litter the
+floor, the occupants of the ship not bothering to clean up their
+mess. A small table showcases a proliferation of earth maps.
+~
+0 4 1
+D0
+~
+~
+0 -1 16388
+D2
+~
+~
+0 -1 16364
+S
+#16364
+Level Three~
+This level has a much higher roof than the first too levels, along
+with a small sitting area. Garbage and other objects litter the
+floor, the occupants of the ship not bothering to clean up their
+mess. A small table showcases a proliferation of earth maps.
+~
+0 0 1
+D0
+~
+~
+0 -1 16363
+D3
+~
+~
+0 -1 16365
+S
+#16365
+Level Three~
+This level has a much higher roof than the first too levels, along
+with a small sitting area. Garbage and other objects litter the
+floor, the occupants of the ship not bothering to clean up their
+mess. A small table showcases a proliferation of earth maps.
+~
+0 4 1
+D0
+~
+~
+0 -1 16366
+D1
+~
+~
+0 -1 16364
+S
+#16366
+Level Three~
+This level has a much higher roof than the first too levels, along
+with a small sitting area. Garbage and other objects litter the
+floor, the occupants of the ship not bothering to clean up their
+mess. A small table showcases a proliferation of earth maps.
+~
+0 4 1
+D2
+~
+~
+0 -1 16365
+S
+#16367
+Level Four~
+Another look-a-like level, no different than the previous save the lack
+of tables and chairs. A low, electronic hum permeates the soundscape, its
+drone no doubt the sign of an engine room nearby. More windows allow a
+fair view at the surrounding landscape.
+~
+0 4 1
+D0
+~
+~
+0 -1 16388
+D2
+~
+~
+0 -1 16368
+D3
+~
+~
+0 -1 16370
+S
+#16368
+Level Four~
+Another look-a-like level, no different than the previous save the lack
+of tables and chairs. A low, electronic hum permeates the soundscape, its
+drone no doubt the sign of an engine room nearby. More windows allow a
+fair view at the surrounding landscape.
+~
+0 4 1
+D0
+~
+~
+0 -1 16367
+D3
+~
+~
+0 -1 16369
+S
+#16369
+Level Four~
+Another look-a-like level, no different than the previous save the lack
+of tables and chairs. A low, electronic hum permeates the soundscape, its
+drone no doubt the sign of an engine room nearby. More windows allow a
+fair view at the surrounding landscape.
+~
+0 4 1
+D0
+~
+~
+0 -1 16370
+D1
+~
+~
+0 -1 16368
+S
+#16370
+Level Four~
+Another look-a-like level, no different than the previous save the lack
+of tables and chairs. A low, electronic hum permeates the soundscape, its
+drone no doubt the sign of an engine room nearby. More windows allow a
+fair view at the surrounding landscape.
+~
+0 0 1
+D1
+~
+~
+0 -1 16367
+D2
+~
+~
+0 -1 16369
+D4
+~
+~
+0 -1 16371
+S
+#16371
+Level Five~
+The ceiling of this level is much lower, and along with the now black
+walls, sufficiently seems to squeeze the roof towards the floor. The
+windows are now absent, as is the hum of power. A few small lights dot
+the roof, along with a fair amount of small sensors.
+~
+0 4 1
+D2
+~
+~
+0 -1 16372
+D5
+~
+~
+0 -1 16370
+S
+#16372
+Level Five~
+The ceiling of this level is much lower, and along with the now black
+walls, sufficiently seems to squeeze the roof towards the floor. The
+windows are now absent, as is the hum of power. A few small lights dot
+the roof, along with a fair amount of small sensors.
+~
+0 0 1
+D0
+~
+~
+0 -1 16371
+D3
+~
+~
+0 -1 16373
+S
+#16373
+Level Five~
+The ceiling of this level is much lower, and along with the now black
+walls, sufficiently seems to squeeze the roof towards the floor. The
+windows are now absent, as is the hum of power. A few small lights dot
+the roof, along with a fair amount of small sensors.
+~
+0 4 1
+D0
+~
+~
+0 -1 16374
+D1
+~
+~
+0 -1 16372
+S
+#16374
+Level Five~
+The ceiling of this level is much lower, and along with the now black
+walls, sufficiently seems to squeeze the roof towards the floor. The
+windows are now absent, as is the hum of power. A few small lights dot
+the roof, along with a fair amount of small sensors.
+~
+0 4 1
+D2
+~
+~
+0 -1 16373
+D4
+~
+~
+0 -1 16375
+S
+#16375
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 4 1
+D2
+~
+~
+0 -1 16376
+D3
+~
+~
+0 -1 16380
+D5
+~
+~
+0 -1 16374
+S
+#16376
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 4 1
+D0
+~
+~
+0 -1 16375
+D3
+~
+~
+0 -1 16377
+S
+#16377
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 4 1
+D0
+~
+~
+0 -1 16380
+D1
+~
+~
+0 -1 16376
+D3
+~
+~
+0 -1 16378
+S
+#16378
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 0 1
+D0
+~
+~
+0 -1 16379
+D1
+~
+~
+0 -1 16377
+> entry_prog 100~
+if mobinroom(16318) == 1
+ if pl($n) < 250000000000
+ mpforce babidi say This one isn't strong enough boys. Wait for someone stronger.
+ mpforce babidi emote nods to his cohorts.
+ else
+ mpforce babidi say There we go, get him!
+ cackle
+ mpsleep 9
+mpecho Babidi's cohorts flip a small switch on the side of the ship.
+ mpsleep 9
+ mpechoat $n Thin wires appear out of the sides of the ship, and suddenly pierce your body!
+ mpecharound $n Thin wires appear out of the sides of the ship, and suddenly pierce $n's body!
+ mpforce babidi say This will hurt a bit, $n. Be prepared.
+ mpdamage $n 5
+ mpsleep 9
+ mpechoat $n The wires suddenly begin to glow. You feel some of your energy slip away from your  body.
+ mpecharound $n The wires suddenly begin to glow. You watch as some of $n's energy is drained from  $s body.
+ mpdamage $n 10
+ mpsleep 9
+mpecho The glow in the wires dims, as the energy is transferred to the egg on the pedestal.
+ mpsleep 9
+  if rand(33)
+   mpecho The egg glows briefly, then cracks open!
+   mpforce babidi say I don't need you two anymore!
+   mpecho Babidi nods towards his cohorts.
+   mppurge spopovich
+   mppurge yamu
+   mpecho Yamu and Spopovich disappear!
+   mpsleep 9
+   mppurge egg
+mpmload 16319
+   mpforce babidi say Yessss! Buu has awoken!
+   bow buu
+  else
+   mpecho The egg glows briefly, but the energy fails to open it.
+   sigh
+   mpforce babidi say Oh well, I guess we'll try again.
+  endif
+ endif
+ mppurge babidi
+endif
+~
+|
+S
+#16379
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 4 1
+D1
+~
+~
+0 -1 16380
+D2
+~
+~
+0 -1 16378
+S
+#16380
+Final Level~
+This level is definately the final one, as the roof slowly tapers up to
+a rounded point on the outside. There are no visible exits from this floor,
+save the ladder you just climbed up. A fetid smell fills the air, along with
+welcome bursts of fresh air from outside. Whether fetid or fresh, the air is
+slightly cool.
+~
+0 4 1
+D1
+~
+~
+0 -1 16375
+D2
+~
+~
+0 -1 16377
+D3
+~
+~
+0 -1 16379
+S
+#16381
+The Creek Continues~
+The creek thins slighty here, the banks reaching for each other like
+long lost relatives. Smaller plants thrive near the thin shore, trees
+being unable to take root in the condensed area. The sun glints off the
+water, flashing into your eyes with every new ripple.
+~
+0 0 3
+D0
+~
+~
+0 -1 16332
+D2
+~
+~
+0 -1 16382
+S
+#16382
+New Pollution~
+The serenity of the area is somewhat lessened due to the small pieces
+of wreckage in the creek. It seems that a few pieces of spaceship have
+found their way down the side of the mountain and into the clear, crisp
+water of the creek.
+~
+0 0 3
+D0
+~
+~
+0 -1 16381
+D9
+~
+~
+0 -1 16383
+S
+#16383
+A Bend In The Creek~
+This section of the creek has also fallen victim to ship wreckage. From
+pieces of metal, to what seems to be remains of supplies, the remnants
+of the ship are scattered everywhere. A large piece of metal interrupts
+the creek's natural flow, the new path of water slowly attacking the
+edge of the shore. The smell of fuel is very apparent.
+~
+0 0 3
+D2
+~
+~
+0 -1 16384
+D6
+~
+~
+0 -1 16382
+> act_prog 'arrives in a puff of smoke.'~
+mpecho &wSomething under the water &Cs&wh&Ci&wm&Cm&we&Cr&ws briefly.&D
+~
+> entry_prog 25~
+mpecho &wSomething under the water &Cs&wh&Ci&wm&Cm&we&Cr&ws briefly.&D
+~
+|
+S
+#16384
+Small Eddies~
+The creek begins to deepin a slight amount, with many larger rocks also
+beginning to call the water home. Eddies swirl around the rocks, a largely
+beautiful ballet of nature. A small bird's nest is visible from here, its
+outline atop a small tree a harsh juxtaposition to the bland sky.
+~
+0 0 3
+D0
+~
+~
+0 -1 16383
+D8
+~
+~
+0 -1 16385
+S
+#16385
+The Rapids~
+The creek suddenly becomes a fast flowing section of rapids. While not
+being that deep or wide, the rapids can still inflict some damage. The
+water is slightly less clear here, as the rushing water tends to kick up
+more silt and dirt from the bottom of the creek.
+~
+0 0 3
+D7
+~
+~
+0 -1 16384
+D8
+~
+~
+0 -1 16386
+> entry_prog 15~
+mea $n &RYou slip in the rapids and are swept down the creek!&D
+mer $n &R$n slips in the rapids and is swept back down the creek!&D
+mpdamage $n 5
+mptrans $n 16381
+at $n force $n look
+~
+|
+S
+#16386
+A Small Waterfall~
+A small waterfall reveals itself as the source of the creek. The crown
+of the fall isn't much more that fifteen feet from the creekbed, yet
+the water still roars loudly as it ends its journey downward. Massive
+amounts of vegetation surround the waterfall and the basin at its feet,
+largely benefitting from the constant spray of water.
+~
+0 0 3
+D1
+~
+~
+0 -1 16387
+D7
+~
+~
+0 -1 16385
+S
+#16387
+Behind The Falls~
+The sound of the falling water gives this room a weird echo effect. A
+massive amount of energy permeates this room, as if there is something
+magical about it. The area is not very large, but would be a viable use
+for shelter if the need arose.
+~
+0 538969096 3
+D3
+~
+~
+0 -1 16386
+S
+#16388
+An Unusual Elevator~
+The inside of the elevator is made from the same metal that the outside
+of the ship is. The lack of buttons or controls make this elevator seem
+useless. The only thing to mar the smoothness of the walls is a small
+opening on the wall, the hole covered in a thin mesh-like material.
+~
+0 4 0
+> act_prog 'arrives in a puff of smoke.'~
+mpforce $n look
+~
+> speech_prog one~
+mpecho &YThe elevator beeps quietly and begins its journey.&D
+mpsleep 9
+mpecho &YA low beep sounds as the elevator arrives at floor one.&D
+mptrans $n 16355
+~
+> speech_prog two~
+mpecho &YThe elevator beeps quietly and begins its journey.&D
+mpsleep 9
+mpecho &YA low beep sounds as the elevator arrives at floor two.&D
+mptrans $n 16359
+~
+> speech_prog three~
+mpecho &YThe elevator beeps quietly and begins its journey.&D
+mpsleep 9
+mpecho &YA low beep sounds as the elevator arrives at floor three.&D
+mptrans $n 16366
+~
+> speech_prog four~
+mpecho &YThe elevator beeps quietly and begins its journey.&D
+mpsleep 9
+mpecho &YA low beep sounds as the elevator arrives at floor four.&D
+mptrans $n 16367
+~
+|
+S
+#16389
+Floating in a void~
+~
+0 4 1
+S
+#16390
+Floating in a void~
+~
+0 4 1
+S
+#16391
+Floating in a void~
+~
+0 4 1
+S
+#16392
+Floating in a void~
+~
+0 4 1
+S
+#16393
+Floating in a void~
+~
+0 4 1
+S
+#16394
+Floating in a void~
+~
+0 4 1
+S
+#16395
+Floating in a void~
+~
+0 4 1
+S
+#16396
+Floating in a void~
+~
+0 4 1
+S
+#16397
+Floating in a void~
+~
+0 4 1
+S
+#16398
+Floating in a void~
+~
+0 4 1
+S
+#16399
+Floating in a void~
+~
+0 4 1
+S
+#16400
+Floating in a void~
+~
+0 4 1
+S
+#16401
+Floating in a void~
+~
+0 4 1
+S
+#16402
+Floating in a void~
+~
+0 4 1
+S
+#16403
+Floating in a void~
+~
+0 4 1
+S
+#16404
+Floating in a void~
+~
+0 4 1
+S
+#16405
+Floating in a void~
+~
+0 4 1
+S
+#16406
+Floating in a void~
+~
+0 4 1
+S
+#16407
+Floating in a void~
+~
+0 4 1
+S
+#16408
+Floating in a void~
+~
+0 4 1
+S
+#16409
+Floating in a void~
+~
+0 4 1
+S
+#16410
+Floating in a void~
+~
+0 4 1
+S
+#16411
+Floating in a void~
+~
+0 4 1
+S
+#16412
+Floating in a void~
+~
+0 4 1
+S
+#16413
+Floating in a void~
+~
+0 4 1
+S
+#16414
+Floating in a void~
+~
+0 4 1
+S
+#16415
+Floating in a void~
+~
+0 4 1
+S
+#16416
+Floating in a void~
+~
+0 4 1
+S
+#16417
+Floating in a void~
+~
+0 4 1
+S
+#16418
+Floating in a void~
+~
+0 4 1
+S
+#16419
+Floating in a void~
+~
+0 4 1
+S
+#16420
+Floating in a void~
+~
+0 4 1
+S
+#16421
+Floating in a void~
+~
+0 4 1
+S
+#16422
+Floating in a void~
+~
+0 4 1
+S
+#16423
+Floating in a void~
+~
+0 4 1
+S
+#16424
+Floating in a void~
+~
+0 4 1
+S
+#16425
+Floating in a void~
+~
+0 4 1
+S
+#16426
+Floating in a void~
+~
+0 4 1
+S
+#16427
+Floating in a void~
+~
+0 4 1
+S
+#16428
+Floating in a void~
+~
+0 4 1
+S
+#16429
+Floating in a void~
+~
+0 4 1
+S
+#16430
+Floating in a void~
+~
+0 4 1
+S
+#16431
+Floating in a void~
+~
+0 4 1
+S
+#16432
+Floating in a void~
+~
+0 4 1
+S
+#16433
+Floating in a void~
+~
+0 4 1
+S
+#16434
+Floating in a void~
+~
+0 4 1
+S
+#16435
+Floating in a void~
+~
+0 4 1
+S
+#16436
+Floating in a void~
+~
+0 4 1
+S
+#16437
+Floating in a void~
+~
+0 4 1
+S
+#16438
+Floating in a void~
+~
+0 4 1
+S
+#16439
+Floating in a void~
+~
+0 4 1
+S
+#16440
+Floating in a void~
+~
+0 4 1
+S
+#16441
+Floating in a void~
+~
+0 4 1
+S
+#16442
+Floating in a void~
+~
+0 4 1
+S
+#16443
+Floating in a void~
+~
+0 4 1
+S
+#16444
+Floating in a void~
+~
+0 4 1
+S
+#16445
+Floating in a void~
+~
+0 4 1
+S
+#16446
+Floating in a void~
+~
+0 4 1
+S
+#16447
+Floating in a void~
+~
+0 4 1
+S
+#16448
+Floating in a void~
+~
+0 4 1
+S
+#16449
+Floating in a void~
+~
+0 4 1
+S
+#16450
+Floating in a void~
+~
+0 4 1
+S
+#16451
+Floating in a void~
+~
+0 4 1
+S
+#16452
+Floating in a void~
+~
+0 4 1
+S
+#16453
+Floating in a void~
+~
+0 4 1
+S
+#16454
+Floating in a void~
+~
+0 4 1
+S
+#16455
+Floating in a void~
+~
+0 4 1
+S
+#16456
+Floating in a void~
+~
+0 4 1
+S
+#16457
+Floating in a void~
+~
+0 4 1
+S
+#16458
+Floating in a void~
+~
+0 4 1
+S
+#16459
+Floating in a void~
+~
+0 4 1
+S
+#16460
+Floating in a void~
+~
+0 4 1
+S
+#16461
+Floating in a void~
+~
+0 4 1
+S
+#16462
+Floating in a void~
+~
+0 4 1
+S
+#16463
+Floating in a void~
+~
+0 4 1
+S
+#16464
+Floating in a void~
+~
+0 4 1
+S
+#16465
+Floating in a void~
+~
+0 4 1
+S
+#16466
+Floating in a void~
+~
+0 4 1
+S
+#16467
+Floating in a void~
+~
+0 4 1
+S
+#16468
+Floating in a void~
+~
+0 4 1
+S
+#16469
+Floating in a void~
+~
+0 4 1
+S
+#16470
+Floating in a void~
+~
+0 4 1
+S
+#16471
+Floating in a void~
+~
+0 4 1
+S
+#16472
+Floating in a void~
+~
+0 4 1
+S
+#16473
+Floating in a void~
+~
+0 4 1
+S
+#16474
+Floating in a void~
+~
+0 4 1
+S
+#16475
+Floating in a void~
+~
+0 4 1
+S
+#16476
+Floating in a void~
+~
+0 4 1
+S
+#16477
+Floating in a void~
+~
+0 4 1
+S
+#16478
+Floating in a void~
+~
+0 4 1
+S
+#16479
+Floating in a void~
+~
+0 4 1
+S
+#16480
+Floating in a void~
+~
+0 4 1
+S
+#16481
+Floating in a void~
+~
+0 4 1
+S
+#16482
+Floating in a void~
+~
+0 4 1
+S
+#16483
+Floating in a void~
+~
+0 4 1
+S
+#16484
+Floating in a void~
+~
+0 4 1
+S
+#16485
+Floating in a void~
+~
+0 4 1
+S
+#16486
+Floating in a void~
+~
+0 4 1
+S
+#16487
+Floating in a void~
+~
+0 4 1
+S
+#16488
+Floating in a void~
+~
+0 4 1
+S
+#16489
+Floating in a void~
+~
+0 4 1
+S
+#16490
+Floating in a void~
+~
+0 4 1
+S
+#16491
+Floating in a void~
+~
+0 4 1
+S
+#16492
+Floating in a void~
+~
+0 4 1
+S
+#16493
+Floating in a void~
+~
+0 4 1
+S
+#16494
+Floating in a void~
+~
+0 4 1
+S
+#16495
+Floating in a void~
+~
+0 4 1
+S
+#16496
+Floating in a void~
+~
+0 4 1
+S
+#16497
+Floating in a void~
+~
+0 4 1
+S
+#16498
+Floating in a void~
+~
+0 4 1
+S
+#16499
+&zVeritas' Sanctuary&D~
+                                &w*
+                               * *
+                              *   *&R***********************
+                 &W************&w*     *&Y**********************&R*****************
+      &W*****************     &w*       *&G*********************&Y*****************
+&W*************              &w*         *&B*********************&G***************
+                          &w*           *
+                         &w***************
+&cThis is Veritas' shrine and sanctuary. A comfortable chair sits in the
+corner, in front of a large tv and a platinum Nintendo Gamecube. A stack of
+games and DVD's sit in the corner, while the walls harbor guitars every two
+feet. Pink Floyd music is never turned off here. Never.
+~
+0 -2147483644 1
+S
+#0
+
+
+#RESETS
+M 0 16300 1 16312
+M 0 16301 1 16311
+M 0 16302 1 16309
+M 0 16303 1 16309
+M 0 16304 1 16309
+M 0 16305 1 16342
+M 0 16499 1 16357
+M 0 16499 1 16355
+M 0 16499 1 16356
+M 0 16499 1 16358
+M 0 16499 1 16352
+M 0 16499 1 16353
+M 0 16499 1 16354
+O 0 16300 1 16383
+M 0 16307 1 16323
+M 0 16308 1 16322
+M 0 16309 1 16322
+M 0 16311 1 16318
+M 0 16310 1 16321
+M 0 16312 3 16320
+M 0 16312 3 16319
+M 0 16312 3 16318
+M 0 16312 2 16314
+M 0 16312 2 16315
+M 0 16312 2 16316
+M 0 16312 3 16317
+M 0 16313 1 16364
+M 0 16314 1 16370
+M 0 16315 1 16372
+M 0 16316 1 16378
+M 0 16317 1 16378
+M 0 16318 1 16378
+O 0 16499 1 16378
+M 0 16320 1 16387
+M 0 16321 1 16351
+M 0 16306 1 16354
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+ 16320    0  9  0         100   1         0 23    ; Elderly Man
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,1854 @@
+#AREA   Grand Kai's Planet~
+
+
+
+#VERSION 252
+#AUTHOR Gohan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 2
+
+#RESETMSG A group of warriors momentarily bring their sparring match before you.~
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#230000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#230001
+Pikkon~
+Pikkon~
+Pikkon the warrior is standing here before you.
+~
+~
+3 33554432&1024 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000000
+112 112 0
+95 100 140 100 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 25~
+mpechoaround $n &YPikkon slams his fists together infront of his body with his arms stretched out, he spins slowly. &W"Thunder....Flash....Attack." &YBolts of electricity shoot out then a column of fire engulfs $n&W
+mpechoat $n &YPikkon slams his fists together infront of his body with his arms stretched out, he spins slowly. &W"Thunder....Flash....Attack." &YBolts of electricity shoot out then a column of fire engulfs you.&W
+mppldamage $n 25
+~
+> fight_prog 13~
+mpechoaround $n &zPikkon holds his arms close to his body as he twirls around while creating a tornado. &W"Hyper...Tornado!" &zPikkon directs the funnel of the tornado as it engulfs &n.&W
+mpechoat $n &zPikkon holds his arms close to his body as he twirls around while creating a tornado. &W"Hyper...Tornado!" &zPikkon directs the funnel of the tornado as it engulfs you.&W
+mppldamage $n 17
+~
+> death_prog 100~
+if rand(20)
+mpoload 230001
+endif
+~
+|
+#230004
+Olibu~
+Olibu, The Warrior~
+Olibu is standing here before you smiling.
+~
+Olibu stands here before you firm as his arms are crossed, he looks at
+you with his blue eyes then smiles to ease your nerves. The wind blows his
+golden curly hair around as you can sense an emence power radiating off of
+his body. 
+~
+3 0&2097152 0 C
+1 0 100 1d20+0 2d5+0
+-1 8000000000000
+112 112 0
+70 100 80 100 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+bow
+say Welcome $n, This the Grand Kai's Planet. I am Olibu, from the Northern Quadrant..much like youself. Feel free to look around but you need a key to enter the Palace.
+wave $n
+~
+|
+#230006
+King Kai~
+King Kai~
+King Kai stands here drooling
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+7 7 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote taps the window of the car.
+say I knew HE would have one of these, they are top of the line..it's to bad I couldn't afford one.
+sigh
+~
+|
+#230008
+doorman~
+doorman~
+Doorman
+~
+~
+8388609 0 0 C
+3 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#230048
+Kai~
+The Grand Kai~
+The Grand Kai sits here on his throne, looking at the warriors with a childish glee
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+chuckle
+say So you think you have what it takes?
+hmm
+say if you believe you are ready, then good luck in the ring. After you have had your fun I will send you back to King Yamma if you wish.
+pat &n
+wave
+~
+> speech_prog p King Yemma~
+mpechoat $n &YBright beams of light appear around you as you feel a bit weird and then everything goes black.
+mptrans $n 100300
+mpat $n mpechoaround $n &YBright yellow beams slowly disappear as your vision recovers and you see your new surroundings&W
+mpat $n mpforce $n look
+~
+|
+#230056
+Olibu~
+Olibu~
+Olibu the Warrior is standing before you smiling.
+~
+Olibu stands here before you firm as his arms are crossed, he looks at
+you with his blue eyes then smiles to ease your nerves. The wind blows his
+golden curly hair around as you can sense an emence power radiating off of
+his body. 
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000000
+112 112 1
+70 100 80 100 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+'destructo disk'
+~
+> fight_prog 12~
+kamehameha
+~
+> fight_prog 15~
+'spirit ball'
+~
+> fight_prog 14~
+'dodon ray'
+~
+> death_prog 100~
+mpmload 230057
+mpecho &YOlibu weakly stands up as he is suddenly filled with a new found power.&W
+say "Let me show you the true power of fighters from the Northern Quadrant."
+mpforce 'hyper olibu' hyper
+mpgoto 999
+~
+|
+#230057
+Olibu Hyper~
+Olibu~
+Olibu the Warrior is standing before you smiling.
+~
+Olibu stands here before you firm as his arms are crossed, he looks at
+you with his blue eyes then smiles to ease your nerves. The wind blows his
+golden curly hair around as you can sense an emence power radiating off of
+his body. 
+~
+3 0&2097152 0 C
+1 0 100 1d20+0 2d5+0
+-1 12000000000000
+112 112 1
+70 100 80 100 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(5)
+mpoload 230004
+endif
+~
+> fight_prog 13~
+'multi disk' 50
+~
+> fight_prog 15~
+kamehameha
+~
+|
+#230100
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#230000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#230001
+short Weighted Training Cape~
+A Weighted Training Cape~
+A Weighted training cape lies here on the gound collecting dust~
+~
+9 0 1025 128
+0 0 0 100 700 700
+1 0 0
+ 0
+#230003
+Grand Key~
+The Grand Key~
+The Grand Key~
+~
+13 2 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#230004
+&YGolden Belt~
+&YA Golden Belt&W~
+A wide belt lies here, with a golden buckle.~
+~
+9 1 2049 128
+0 0 0 100 300 300
+1 0 0
+ 100000000000
+A
+1 5
+A
+4 -5
+A
+2 5
+#230006
+car~
+a newly created car~
+A shiny, blue convertable~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+car~
+You look as the sun shines brightly on the windows of the car but also
+notice something shinning underneath it.  As you bend over you notice it's
+an oddly shapped key and reach for it. 
+~
+> exa_prog 100~
+mpoload 230003 $n
+~
+|
+#230007
+slot~
+the slot~
+There is a slot in the wall in the shape of a sphere.~
+~
+15 0 0
+1000 0 0 0 0 0
+1 0 0
+ 0
+#230008
+sphere~
+A Bright Sphere~
+A bright sphere, laying here in the dust~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#230009
+Eye~
+Statue Eye~
+Statue Eye~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+eye~
+As you peer into the eye you can see it is almost perfectly round except
+for where the iris is supposed to be.  As you reach into it you feel a
+small round object and pry it out. 
+~
+> exa_prog 100~
+mpoload 230008 $n
+~
+|
+#230010
+sphere~
+A Bright Sphere~
+A Bright Sphere, lays here in the dust~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#230015
+microphone~
+a newly created microphone~
+A small black microphone, is here in the room.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#230100
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#230000
+Grand Kai's Planet~
+Once arriving at a very distant planet that seems higher then any other
+place in the universe.  Looking around the planet is noticeably smaller
+then the earth but still in great size compared to King Kai's planet. Many
+warriors are seen all around the planet training intensely, while some are
+standing around talking about how to advance and get an audience with this
+"Grand Kai". Battlecries are heard from fighters that have been training
+for an extended amount of time, since in the Other World..time is of no
+concern.  In the distance is a huge palace with a blue car sitting to the
+side. 
+~
+0 0 1
+D0
+~
+~
+0 -1 230001
+S
+#230001
+Grand Kai's Planet~
+Walking on the paved walkway as fighters fly around, they are in the
+middle of training as they pull off some impressive moves.  The ground is
+noticably beaten up throughout the years, a few warriors are off in the
+distance meditating peacefully under a tree.  The Palace becomes even
+larger the closer it comes, King Kai's words echo out as he complains about
+how THIS was the car he wanted but wasn't able to get it, and somehow knew
+the Grand Kai would have it. 
+~
+0 0 1
+D0
+~
+~
+0 -1 230003
+D1
+~
+~
+0 -1 230004
+D2
+~
+~
+0 -1 230000
+D3
+~
+~
+0 -1 230002
+S
+#230002
+Along the Wall~
+Fighters from different quadrants make their way along the wall and all
+over the planet.  Each quadrant has their own place on the planet as the
+fighters from the norther quadrant are training here. Parts of the wall
+have been destroyed which viewed through, fighters from the western
+quadrant are noticed as they train and their kai watches over them. 
+~
+0 0 1
+D1
+~
+~
+0 -1 230001
+S
+#230003
+Before Grand Kai's Palace~
+The doors to the Palace seem to not have been opened in some time, due
+to the fact no one is experienced enough to win an audience with the Grand
+Kai himself. Warriors are even sparring on top of the Palace and along the
+wall that extends down a good portion of the planet. King Kai continues to
+complain about how the Grand Kai's car is a lot better then the one he had.
+~
+0 1024 1
+D0
+~
+door~
+7 230003 230005
+D1
+~
+~
+0 -1 230006
+D2
+~
+~
+0 -1 230001
+S
+#230004
+Along the Wall~
+Fighters from different quadrants make their way along the wall and all
+over the planet.  Each quadrant has their own place on the planet as the
+fighters from the northern quadrant are training here, a few of them walk
+up to greet King Kai. He looks at a fighter with golden, curly hair named
+Olibu.  King Kai talks about how most superhero's are created in his image,
+due to the fact that he was a righteous fighter in his time. 
+~
+0 1028 1
+D3
+~
+~
+0 -1 230001
+S
+#230005
+Inside The Palace~
+Upon entering the huge Palace doors, is a long and brightly lit
+corridor.  The warriors that have proved their worth are able to travel
+down this long path to meet with the Grand Kai himself. Pictures of the
+Grand Kai hang on the right side as pictures of the other Kai's are aligned
+on the left side of the corridor. In the distance there is another door
+with a gigantic handles which makes you think about what's behind it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230007
+D2
+~
+~
+0 -1 230003
+S
+#230006
+Along the Palace~
+Walking along the Grand Kai's palace takes some time, but is a good way
+to get exercise.  His sky, blue car sits here in perfect condition which
+also looks like it hasn't been moved in many years. King Kai keeps running
+all around it as he continues to drool on himself while staring at the car.
+As the warriors keep training, for some reason they stay away from the car
+and the Palace as if they are to scared or nervous. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230003
+S
+#230007
+Inside the Corridor~
+The long corridor seems to never end as the walls are still lined with
+pictures of the kai's, then suddenly pictures of the warriors that have
+been trained by the Grand Kai are lining the walls. The door seems larger
+as a bright light shines from the lock on the door, but there is no key
+nearby. 
+~
+0 4 1
+D0
+~
+door~
+7 230003 230008
+D2
+~
+~
+0 -1 230005
+S
+#230008
+Central Room~
+After the doors are opened, multiple mirrors can be seen that reflect an
+extremely bright light which split into many and shine upon a massive
+object in the middle of the room. Upon closer inspection of the object, it
+is seen as a giant statue of the Grand Kai, but something seems different
+at the top. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230014
+D2
+~
+~
+0 -1 230007
+D3
+~
+~
+0 -1 230011
+D4
+~
+~
+0 -1 230009
+D6
+~
+~
+0 -1 230013
+D7
+~
+~
+0 -1 230012
+> act_prog p puts A Bright Sphere in the slot.~
+get all slot
+drop sphere
+if ovnumroom(230010) > 0
+mpopenpassage 230008 230015 0
+mpecho &YReacting to the sphere, the slot begins to glow.
+mpecho &YSlowly the entire north wall shifts, revealing
+mpecho &Ya new passage!
+get sphere
+mpjunk sphere
+else
+get sphere
+put sphere slot
+mpecho &wNothing happens. Wrong sphere, perhaps?
+endif
+~
+|
+S
+#230009
+Before the Statue~
+About the middle of the statue is here since taken off from the ground. 
+The features of the statue seem to stick out as the outfit looks different
+from the other Kai's but then somehow similar. The detail to the statue
+seems magnificent as if sculpted by the Gods themselve.  The bottom of the
+room seems kind of far away to see anything really except for the door at
+the back of the room and multiple other exits. 
+~
+0 4 1
+D4
+~
+~
+0 -1 230010
+D5
+~
+~
+0 -1 230008
+S
+#230010
+Above the Statue~
+Floating here just above the head of the statue of the Grand Kai, the
+object that was sparkling was one of the eyes. Upon a closer inspection the
+eye looks like it has recently been replaced, maybe it was broken off or
+there is a hidden meaning to it. 
+~
+0 4 1
+D5
+~
+~
+0 -1 230009
+S
+#230011
+Starting the Maze~
+After walking through the path, suddenly it is realized that there is a
+maze before you.  In order to find the right sphere to unlock the door, the
+maze must be completed or you will be stuck here for an eternity. More
+pathways are opened as the room is entered, but which one will lead in the
+correct way. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230008
+D3
+~
+~
+0 -1 230016
+S
+#230012
+Starting the Maze~
+After walking through the path, suddenly it is realized that there is a
+maze before you.  In order to find the right sphere to unlock the door, the
+maze must be completed or you will be stuck here for an eternity. More
+pathways are opened as the room is entered, but which one will lead in the
+correct way. 
+~
+0 4 1
+D7
+~
+~
+0 -1 230019
+D8
+~
+~
+0 -1 230008
+S
+#230013
+Starting the Maze~
+After walking through the path, suddenly it is realized that there is a
+maze before you.  In order to find the right sphere to unlock the door, the
+maze must be completed or you will be stuck here for an eternity. More
+pathways are opened as the room is entered, but which one will lead in the
+correct way. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230022
+D9
+~
+~
+0 -1 230008
+S
+#230014
+Starting the Maze~
+After walking through the path, suddenly it is realized that there is a
+maze before you.  In order to find the right sphere to unlock the door, the
+maze must be completed or you will be stuck here for an eternity. More
+pathways are opened as the room is entered, but which one will lead in the
+correct way. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230008
+D5
+~
+~
+0 -1 230031
+S
+#230015
+Teleporter Room~
+FINALLY the correct sphere has been found which grants access to this
+room.  The sign next to the flat object in the room states this as the
+Teleporter Room.  Once standing on it, there is a microphone next to a
+small computer that is humming.  No other instaments are found in here so
+something has to do with the microphone and the flat pad.  Next to the
+transporter is a small and worn down sign with words that are hard to make
+out. 
+~
+0 4 1
+E
+sign~
+To use this ancient room, all you have to say is "tournament" and you will be transported to your destination
+~
+> entry_prog 100~
+mpclosepassage 230015 1
+mpechoat $n The door slams shut behind you!
+mpclosepassage 230008 0
+mpat 230008 mpecho The door slams shut behind $n!
+~
+> speech_prog p tournament~
+mpechoat $n &YBright beams of light appear around you as your body feels quite light
+mptrans $n 230037
+mpat $n mpechoaround $n &YBright yellow lights quickly appear then disappear as someone is left.&W
+mpat $n mpforce $n look
+~
+|
+S
+#230016
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest.  Somewhere around here there is a sphere
+that is required to open the door in the Central Room.  Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230011
+D2
+~
+~
+0 -1 230017
+S
+#230017
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230016
+D3
+~
+~
+0 -1 230018
+S
+#230018
+Dead End~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230017
+S
+#230019
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230020
+D8
+~
+~
+0 -1 230012
+S
+#230020
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230019
+D5
+~
+~
+0 -1 230021
+S
+#230021
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230029
+D4
+~
+~
+0 -1 230020
+S
+#230022
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230023
+D2
+~
+~
+0 -1 230013
+S
+#230023
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230022
+D5
+~
+~
+0 -1 230024
+S
+#230024
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230025
+D4
+~
+~
+0 -1 230023
+S
+#230025
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230027
+D1
+~
+~
+0 -1 230024
+D2
+~
+~
+0 -1 230026
+D5
+~
+~
+0 -1 230028
+S
+#230026
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230025
+S
+#230027
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D2
+~
+~
+0 -1 230025
+S
+#230028
+Dead End~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D4
+~
+~
+0 -1 230025
+S
+#230029
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230021
+D5
+~
+~
+0 -1 230030
+S
+#230030
+Dead End~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D4
+~
+~
+0 -1 230029
+S
+#230031
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230032
+D4
+~
+~
+0 -1 230014
+S
+#230032
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D3
+~
+~
+0 -1 230031
+D5
+~
+~
+0 -1 230033
+S
+#230033
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230034
+D4
+~
+~
+0 -1 230032
+S
+#230034
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D2
+~
+~
+0 -1 230035
+D3
+~
+~
+0 -1 230033
+S
+#230035
+Into the Maze~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230034
+D4
+~
+~
+0 -1 230036
+S
+#230036
+Dead End~
+Walking though these rooms become tiring.  Looking around these rooms
+begin to look like all the rest. Somewhere around here there is a sphere
+that is required to open the door in the Central Room. Dust covers the
+floor and it's hard to see if the sphere is lying on the ground. 
+~
+0 4 1
+D5
+~
+~
+0 -1 230035
+S
+#230037
+In a Strange Room~
+Slowly the hum of the teleporter fades from memory as there is a huge
+empty area with small sphereical objects near the bottom, and some sort of
+raised platform. It seems like there are stars around in the room so the
+best image that thoes objects could be are mini planets of some sort. 
+~
+0 4 1
+D5
+~
+~
+0 -1 230038
+S
+#230038
+Floating above the Platform~
+Hovering here it is discovered that thoes planet like things are about
+the size of a house, maybe a few yards bigger.  Straight below is some sort
+of World Martial Arts Tournament Ring, but the question is why would it be
+here if everyone was dead. Hovering here it is discovered that thoes planet
+like things are about the size of a house, maybe a few yards bigger. 
+Straight below is some sort of World Martial Arts Tournament Ring, but the
+question is why would it be here if everyone was dead. A roar from below
+sounds like there is some sort of Other World Tournament taking place. 
+Maybe there are more spots open that can be filled. 
+~
+0 4 1
+D4
+~
+~
+0 -1 230037
+D5
+~
+~
+0 -1 230039
+S
+#230039
+Grassy Area~
+Upon arriving on the platform, a tall wall is noticed seperating the
+crowd from the Other World Martial Arts Tournament Ring. All the kai's
+group up as their individual quadrants begin their warm-up exercises for
+the tournamet so they can win a chance to be trained by the Grand Kai. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230040
+D4
+~
+~
+0 -1 230038
+S
+#230040
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230055
+D2
+~
+~
+0 -1 230039
+D3
+~
+~
+0 -1 230041
+S
+#230041
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230040
+D3
+~
+~
+0 -1 230042
+S
+#230042
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230043
+D1
+~
+~
+0 -1 230041
+S
+#230043
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230044
+D2
+~
+~
+0 -1 230042
+S
+#230044
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230045
+D2
+~
+~
+0 -1 230043
+S
+#230045
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230046
+D2
+~
+~
+0 -1 230044
+S
+#230046
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230047
+D2
+~
+~
+0 -1 230045
+S
+#230047
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230048
+D3
+~
+~
+0 -1 230046
+S
+#230048
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  The Grand Kai begins chuckling as
+warrior after warrior become disquallified by touching the ground outside
+or getting knocked out. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230049
+D2
+~
+~
+0 -1 230061
+D3
+~
+~
+0 -1 230047
+S
+#230049
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230050
+D3
+~
+~
+0 -1 230048
+S
+#230050
+Standing at Ringside~
+Standing here in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D2
+~
+~
+0 -1 230051
+D3
+~
+~
+0 -1 230049
+S
+#230051
+Standing at Ringside~
+Standing there in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of show their
+years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230050
+D2
+~
+~
+0 -1 230052
+S
+#230052
+Standing at Ringside~
+Standing there in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of show their
+years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230051
+D2
+~
+~
+0 -1 230053
+S
+#230053
+Standing at Ringside~
+Standing there in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of show their
+years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230052
+D2
+~
+~
+0 -1 230054
+S
+#230054
+Standing at Ringside~
+Standing there in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of show their
+years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230053
+D3
+~
+~
+0 -1 230055
+S
+#230055
+Standing at Ringside~
+Standing There in the grassy area between the wall and the Tournament
+Ring is amazing, looking around at the warriors battling kind of shows
+their years of training. Walking around the ring to get the whole view of
+everything seems to be benefitial.  A throne of some sort is sitting in
+front of the ring, maybe that's where the Grand Kai sits to watch the
+matches. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230054
+D3
+~
+~
+0 -1 230040
+S
+#230056
+Northwest Side of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  Cracks still appear in the white tiles of the ring, which shows
+that there have been many intense battles taken here. Stray energy blasts
+are seen going off in random directions as more battles take place in the
+ring. 
+~
+0 4 1
+D1
+~
+~
+0 -1 230061
+D2
+~
+~
+0 -1 230057
+D8
+~
+~
+0 -1 230060
+S
+#230057
+West Side of the Ring~
+Standing to one side of the massive ring, it is still aparent there is
+more than plenty of room to fight someone here.  At the edge of the arena,
+the floor steps down to a grassy area which stretches outward from the
+floor for a few feet. Fighters waiting for their turn to use the arena
+usually stand within this stretch of grass as they watch fighters in the
+ring go at it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230056
+D1
+~
+~
+0 -1 230060
+D2
+~
+~
+0 -1 230058
+S
+#230058
+Southwest Side of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  Cracks still appear in the white tiles of the ring, which shows
+that there have been many intense battles taken here. Stray energy blasts
+are seen going off in random directions as more battles take place in the
+ring. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230057
+D1
+~
+~
+0 -1 230059
+D6
+~
+~
+0 -1 230060
+S
+#230059
+South Side of the Ring~
+Standing to one side of the massive ring, it is still aparent there is
+more than plenty of room to fight someone here.  At the edge of the arena,
+the floor steps down to a grassy area which stretches outward from the
+floor for a few feet. Fighters waiting for their turn to use the arena
+usually stand within this stretch of grass as they watch fighters in the
+ring go at it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230060
+D1
+~
+~
+0 -1 230064
+D3
+~
+~
+0 -1 230058
+S
+#230060
+The Center of Other World Tournament Ring~
+Standing to one side of the massive ring, it is still aparent there is
+more than plenty of room to fight someone here.  At the edge of the arena,
+the floor steps down to a grassy area which stretches outward from the
+floor for a few feet. Fighters waiting for their turn to use the arena
+usually stand within this stretch of grass as they watch fighters in the
+ring go at it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230061
+D1
+~
+~
+0 -1 230063
+D2
+~
+~
+0 -1 230059
+D3
+~
+~
+0 -1 230057
+D6
+~
+~
+0 -1 230062
+D7
+~
+~
+0 -1 230056
+D8
+~
+~
+0 -1 230064
+D9
+~
+~
+0 -1 230058
+S
+#230061
+North Side of the Ring~
+Standing to one side of the massive ring, it is still aparent there is
+more than plenty of room to fight someone here.  At the edge of the arena,
+the floor steps down to a grassy area which stretches outward from the
+floor for a few feet. Fighters waiting for their turn to use the arena
+usually stand within this stretch of grass as they watch fighters in the
+ring go at it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230048
+D1
+~
+~
+0 -1 230062
+D2
+~
+~
+0 -1 230060
+D3
+~
+~
+0 -1 230056
+S
+#230062
+Northeast Side of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  Cracks still appear in the white tiles of the ring, which shows
+that there have been many intense battles taken here. Stray energy blasts
+are seen going off in random directions as more battles take place in the
+ring. 
+~
+0 4 1
+D2
+~
+~
+0 -1 230063
+D3
+~
+~
+0 -1 230061
+D9
+~
+~
+0 -1 230060
+S
+#230063
+East Side of the Ring~
+Standing to one side of the massive ring, it is still aparent there is
+more than plenty of room to fight someone here.  At the edge of the arena,
+the floor steps down to a grassy area which stretches outward from the
+floor for a few feet. Fighters waiting for their turn to use the arena
+usually stand within this stretch of grass as they watch fighters in the
+ring go at it. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230062
+D2
+~
+~
+0 -1 230064
+D3
+~
+~
+0 -1 230060
+S
+#230064
+Southeast Side of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  Cracks still appear in the white tiles of the ring, which shows
+that there have been many intense battles taken here. Stray energy blasts
+are seen going off in random directions as more battles take place in the
+ring. 
+~
+0 4 1
+D0
+~
+~
+0 -1 230063
+D3
+~
+~
+0 -1 230059
+D7
+~
+~
+0 -1 230060
+S
+#230065
+Floating in a void~
+~
+0 4 1
+S
+#230066
+Floating in a void~
+~
+0 4 1
+S
+#230067
+Floating in a void~
+~
+0 4 1
+S
+#230068
+Floating in a void~
+~
+0 4 1
+S
+#230069
+Floating in a void~
+~
+0 4 1
+S
+#230070
+Floating in a void~
+~
+0 4 1
+S
+#230071
+Floating in a void~
+~
+0 4 1
+S
+#230072
+Floating in a void~
+~
+0 4 1
+S
+#230073
+Floating in a void~
+~
+0 4 1
+S
+#230074
+Floating in a void~
+~
+0 4 1
+S
+#230075
+Floating in a void~
+~
+0 4 1
+S
+#230076
+Floating in a void~
+~
+0 4 1
+S
+#230077
+Floating in a void~
+~
+0 4 1
+S
+#230078
+Floating in a void~
+~
+0 4 1
+S
+#230079
+Floating in a void~
+~
+0 4 1
+S
+#230080
+Floating in a void~
+~
+0 4 1
+S
+#230081
+Floating in a void~
+~
+0 4 1
+S
+#230082
+Floating in a void~
+~
+0 4 1
+S
+#230083
+Floating in a void~
+~
+0 4 1
+S
+#230084
+Floating in a void~
+~
+0 4 1
+S
+#230085
+Floating in a void~
+~
+0 4 1
+S
+#230086
+Floating in a void~
+~
+0 4 1
+S
+#230087
+Floating in a void~
+~
+0 4 1
+S
+#230088
+Floating in a void~
+~
+0 4 1
+S
+#230089
+Floating in a void~
+~
+0 4 1
+S
+#230090
+Floating in a void~
+~
+0 4 1
+S
+#230091
+Floating in a void~
+~
+0 4 1
+S
+#230092
+Floating in a void~
+~
+0 4 1
+S
+#230093
+Floating in a void~
+~
+0 4 1
+S
+#230094
+Floating in a void~
+~
+0 4 1
+S
+#230095
+Floating in a void~
+~
+0 4 1
+S
+#230096
+Floating in a void~
+~
+0 4 1
+S
+#230097
+Floating in a void~
+~
+0 4 1
+S
+#230098
+Floating in a void~
+~
+0 4 1
+S
+#230099
+Floating in a void~
+~
+0 4 1
+S
+#230100
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 230006 1 230006
+O 1 230006 1 230006
+M 1 230004 1 230004
+G 1 230004 1
+M 1 230001 1 230003
+D 0 230003 0 2
+D 0 230007 0 2
+O 1 230008 1 230017
+O 1 230008 1 230014
+O 1 230008 1 230033
+O 1 230008 1 230019
+O 1 230008 1 230029
+O 1 230008 1 230022
+O 1 230008 1 230024
+O 1 230008 1 230028
+O 1 230007 1 230008
+O 1 230010 1 230036
+O 1 230009 1 230010
+M 1 230048 1 230048
+O 1 230015 1 230015
+M 1 230056 1 230058
+M 1 230001 1 230060
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

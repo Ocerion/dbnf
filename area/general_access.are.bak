@@ -1,0 +1,1180 @@
+#AREA   CoU Space Station - General Access~
+
+
+
+#VERSION 251
+#AUTHOR Kilan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 3
+
+#RESETMSG Highly advanced machinery warps space-time as they manipulate several energy signatures.~
+
+#FLAGS
+1
+
+#ECONOMY 0 51200481
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#6000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#6001
+cou center universe general access guard~
+The CoU General Access Guard~
+The CoU Space Station: General Access guard monitors everyone entering the space station.
+~
+~
+67239939 0 0 C
+1 0 100 1d20+0 2d5+0
+0 500000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#6002
+item research repair expert~
+An Item Research and Repair Expert~
+A supergeek is here, analyzing items with massive image-enhancing eyeglasses.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#6199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#6000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#6199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#6000
+CoU Space Station Energy Detection Center~
+The Center of the Universe was first built using extremely advanced
+technology, which has now become common among other space-travel vessels. 
+The entire space station was designed to mask any power signatures within the
+space station.  Recently, technology advanced even further, and scientists
+figured out how to make certain areas immune to the signature masking. 
+This room is the first prototype of this new technology. 
+~
+0 8 1
+D0
+~
+~
+0 -1 206
+D1
+~
+~
+0 -1 6001
+D3
+~
+~
+0 -1 6002
+> speech_prog 'Council business'~
+if council($n) == NC
+mpechoat $n &GNewbie Council business... processing.
+mpechoat $n &GConfirmed. Transferring to the Intro to DBI...
+mpechoaround $n &GA computer hums loudly as $n is teleported away.&D
+mptransfer $n 7001
+mpat 7001 mpforce $n look
+mpat 7001 mpechoat $n &GDone.&D
+mpat 7001 mpechoaround $n &G$n appears in a computerized blaze of light, eager to help all newcomers.&D
+endif
+~
+|
+S
+#6001
+Object Research Facility~
+Dozens of analysis and examination machines are neatly lined up on the
+stainless steel counters in this research lab.  The room is constantly
+being sterilized by an automated machine that passes through every thirty
+minutes.  The analysis machines hum loudly as they scan items, determining
+every aspect about them. 
+~
+0 4 1
+D3
+~
+~
+0 -1 6000
+S
+#6002
+&wEmergency Medical Care Facility~
+&WThis place is extremely sterile, as every precaution to keep injured
+people safe from infectious disease has been taken.  An emergency surgery
+crew is on constant standby in case someone comes in with wounds that are
+more severe than usual.  High-tech healing tables are lined up against a
+wall, with synthetic stem-cell DNA injection devices places above them in
+order to speed the healing process.  Not surprisingly, the discharge rate
+for this facility is surprisingly quick, usually the same day the patients
+arrive.  &D 
+~
+0 536871940 1
+D1
+~
+~
+0 -1 6000
+S
+#6003
+Floating in a void~
+~
+0 4 1
+S
+#6004
+Floating in a void~
+~
+0 4 1
+S
+#6005
+Floating in a void~
+~
+0 4 1
+S
+#6006
+Floating in a void~
+~
+0 4 1
+S
+#6007
+Floating in a void~
+~
+0 4 1
+S
+#6008
+Floating in a void~
+~
+0 4 1
+S
+#6009
+Floating in a void~
+~
+0 4 1
+S
+#6010
+Floating in a void~
+~
+0 4 1
+S
+#6011
+Floating in a void~
+~
+0 4 1
+S
+#6012
+Floating in a void~
+~
+0 4 1
+S
+#6013
+Floating in a void~
+~
+0 4 1
+S
+#6014
+Floating in a void~
+~
+0 4 1
+S
+#6015
+Floating in a void~
+~
+0 4 1
+S
+#6016
+Floating in a void~
+~
+0 4 1
+S
+#6017
+Floating in a void~
+~
+0 4 1
+S
+#6018
+Floating in a void~
+~
+0 4 1
+S
+#6019
+Floating in a void~
+~
+0 4 1
+S
+#6020
+Floating in a void~
+~
+0 4 1
+S
+#6021
+Floating in a void~
+~
+0 4 1
+S
+#6022
+Floating in a void~
+~
+0 4 1
+S
+#6023
+Floating in a void~
+~
+0 4 1
+S
+#6024
+Floating in a void~
+~
+0 4 1
+S
+#6025
+Floating in a void~
+~
+0 4 1
+S
+#6026
+Floating in a void~
+~
+0 4 1
+S
+#6027
+Floating in a void~
+~
+0 4 1
+S
+#6028
+Floating in a void~
+~
+0 4 1
+S
+#6029
+Floating in a void~
+~
+0 4 1
+S
+#6030
+Floating in a void~
+~
+0 4 1
+S
+#6031
+Floating in a void~
+~
+0 4 1
+S
+#6032
+Floating in a void~
+~
+0 4 1
+S
+#6033
+Floating in a void~
+~
+0 4 1
+S
+#6034
+Floating in a void~
+~
+0 4 1
+S
+#6035
+Floating in a void~
+~
+0 4 1
+S
+#6036
+Floating in a void~
+~
+0 4 1
+S
+#6037
+Floating in a void~
+~
+0 4 1
+S
+#6038
+Floating in a void~
+~
+0 4 1
+S
+#6039
+Floating in a void~
+~
+0 4 1
+S
+#6040
+Floating in a void~
+~
+0 4 1
+S
+#6041
+Floating in a void~
+~
+0 4 1
+S
+#6042
+Floating in a void~
+~
+0 4 1
+S
+#6043
+Floating in a void~
+~
+0 4 1
+S
+#6044
+Floating in a void~
+~
+0 4 1
+S
+#6045
+Floating in a void~
+~
+0 4 1
+S
+#6046
+Floating in a void~
+~
+0 4 1
+S
+#6047
+Floating in a void~
+~
+0 4 1
+S
+#6048
+Floating in a void~
+~
+0 4 1
+S
+#6049
+Floating in a void~
+~
+0 4 1
+S
+#6050
+Floating in a void~
+~
+0 4 1
+S
+#6051
+Floating in a void~
+~
+0 4 1
+S
+#6052
+Floating in a void~
+~
+0 4 1
+S
+#6053
+Floating in a void~
+~
+0 4 1
+S
+#6054
+Floating in a void~
+~
+0 4 1
+S
+#6055
+Floating in a void~
+~
+0 4 1
+S
+#6056
+Floating in a void~
+~
+0 4 1
+S
+#6057
+Floating in a void~
+~
+0 4 1
+S
+#6058
+Floating in a void~
+~
+0 4 1
+S
+#6059
+Floating in a void~
+~
+0 4 1
+S
+#6060
+Floating in a void~
+~
+0 4 1
+S
+#6061
+Floating in a void~
+~
+0 4 1
+S
+#6062
+Floating in a void~
+~
+0 4 1
+S
+#6063
+Floating in a void~
+~
+0 4 1
+S
+#6064
+Floating in a void~
+~
+0 4 1
+S
+#6065
+Floating in a void~
+~
+0 4 1
+S
+#6066
+Floating in a void~
+~
+0 4 1
+S
+#6067
+Floating in a void~
+~
+0 4 1
+S
+#6068
+Floating in a void~
+~
+0 4 1
+S
+#6069
+Floating in a void~
+~
+0 4 1
+S
+#6070
+Floating in a void~
+~
+0 4 1
+S
+#6071
+Floating in a void~
+~
+0 4 1
+S
+#6072
+Floating in a void~
+~
+0 4 1
+S
+#6073
+Floating in a void~
+~
+0 4 1
+S
+#6074
+Floating in a void~
+~
+0 4 1
+S
+#6075
+Floating in a void~
+~
+0 4 1
+S
+#6076
+Floating in a void~
+~
+0 4 1
+S
+#6077
+Floating in a void~
+~
+0 4 1
+S
+#6078
+Floating in a void~
+~
+0 4 1
+S
+#6079
+Floating in a void~
+~
+0 4 1
+S
+#6080
+Floating in a void~
+~
+0 4 1
+S
+#6081
+Floating in a void~
+~
+0 4 1
+S
+#6082
+Floating in a void~
+~
+0 4 1
+S
+#6083
+Floating in a void~
+~
+0 4 1
+S
+#6084
+Floating in a void~
+~
+0 4 1
+S
+#6085
+Floating in a void~
+~
+0 4 1
+S
+#6086
+Floating in a void~
+~
+0 4 1
+S
+#6087
+Floating in a void~
+~
+0 4 1
+S
+#6088
+Floating in a void~
+~
+0 4 1
+S
+#6089
+Floating in a void~
+~
+0 4 1
+S
+#6090
+Floating in a void~
+~
+0 4 1
+S
+#6091
+Floating in a void~
+~
+0 4 1
+S
+#6092
+Floating in a void~
+~
+0 4 1
+S
+#6093
+Floating in a void~
+~
+0 4 1
+S
+#6094
+Floating in a void~
+~
+0 4 1
+S
+#6095
+Floating in a void~
+~
+0 4 1
+S
+#6096
+Floating in a void~
+~
+0 4 1
+S
+#6097
+Floating in a void~
+~
+0 4 1
+S
+#6098
+Floating in a void~
+~
+0 4 1
+S
+#6099
+Floating in a void~
+~
+0 4 1
+S
+#6100
+Floating in a void~
+~
+0 4 1
+S
+#6101
+Floating in a void~
+~
+0 4 1
+S
+#6102
+Floating in a void~
+~
+0 4 1
+S
+#6103
+Floating in a void~
+~
+0 4 1
+S
+#6104
+Floating in a void~
+~
+0 4 1
+S
+#6105
+Floating in a void~
+~
+0 4 1
+S
+#6106
+Floating in a void~
+~
+0 4 1
+S
+#6107
+Floating in a void~
+~
+0 4 1
+S
+#6108
+Floating in a void~
+~
+0 4 1
+S
+#6109
+Floating in a void~
+~
+0 4 1
+S
+#6110
+Floating in a void~
+~
+0 4 1
+S
+#6111
+Floating in a void~
+~
+0 4 1
+S
+#6112
+Floating in a void~
+~
+0 4 1
+S
+#6113
+Floating in a void~
+~
+0 4 1
+S
+#6114
+Floating in a void~
+~
+0 4 1
+S
+#6115
+Floating in a void~
+~
+0 4 1
+S
+#6116
+Floating in a void~
+~
+0 4 1
+S
+#6117
+Floating in a void~
+~
+0 4 1
+S
+#6118
+Floating in a void~
+~
+0 4 1
+S
+#6119
+Floating in a void~
+~
+0 4 1
+S
+#6120
+Floating in a void~
+~
+0 4 1
+S
+#6121
+Floating in a void~
+~
+0 4 1
+S
+#6122
+Floating in a void~
+~
+0 4 1
+S
+#6123
+Floating in a void~
+~
+0 4 1
+S
+#6124
+Floating in a void~
+~
+0 4 1
+S
+#6125
+Floating in a void~
+~
+0 4 1
+S
+#6126
+Floating in a void~
+~
+0 4 1
+S
+#6127
+Floating in a void~
+~
+0 4 1
+S
+#6128
+Floating in a void~
+~
+0 4 1
+S
+#6129
+Floating in a void~
+~
+0 4 1
+S
+#6130
+Floating in a void~
+~
+0 4 1
+S
+#6131
+Floating in a void~
+~
+0 4 1
+S
+#6132
+Floating in a void~
+~
+0 4 1
+S
+#6133
+Floating in a void~
+~
+0 4 1
+S
+#6134
+Floating in a void~
+~
+0 4 1
+S
+#6135
+Floating in a void~
+~
+0 4 1
+S
+#6136
+Floating in a void~
+~
+0 4 1
+S
+#6137
+Floating in a void~
+~
+0 4 1
+S
+#6138
+Floating in a void~
+~
+0 4 1
+S
+#6139
+Floating in a void~
+~
+0 4 1
+S
+#6140
+Floating in a void~
+~
+0 4 1
+S
+#6141
+Floating in a void~
+~
+0 4 1
+S
+#6142
+Floating in a void~
+~
+0 4 1
+S
+#6143
+Floating in a void~
+~
+0 4 1
+S
+#6144
+Floating in a void~
+~
+0 4 1
+S
+#6145
+Floating in a void~
+~
+0 4 1
+S
+#6146
+Floating in a void~
+~
+0 4 1
+S
+#6147
+Floating in a void~
+~
+0 4 1
+S
+#6148
+Floating in a void~
+~
+0 4 1
+S
+#6149
+Floating in a void~
+~
+0 4 1
+S
+#6150
+Floating in a void~
+~
+0 4 1
+S
+#6151
+Floating in a void~
+~
+0 4 1
+S
+#6152
+Floating in a void~
+~
+0 4 1
+S
+#6153
+Floating in a void~
+~
+0 4 1
+S
+#6154
+Floating in a void~
+~
+0 4 1
+S
+#6155
+Floating in a void~
+~
+0 4 1
+S
+#6156
+Floating in a void~
+~
+0 4 1
+S
+#6157
+Floating in a void~
+~
+0 4 1
+S
+#6158
+Floating in a void~
+~
+0 4 1
+S
+#6159
+Floating in a void~
+~
+0 4 1
+S
+#6160
+Floating in a void~
+~
+0 4 1
+S
+#6161
+Floating in a void~
+~
+0 4 1
+S
+#6162
+Floating in a void~
+~
+0 4 1
+S
+#6163
+Floating in a void~
+~
+0 4 1
+S
+#6164
+Floating in a void~
+~
+0 4 1
+S
+#6165
+Floating in a void~
+~
+0 4 1
+S
+#6166
+Floating in a void~
+~
+0 4 1
+S
+#6167
+Floating in a void~
+~
+0 4 1
+S
+#6168
+Floating in a void~
+~
+0 4 1
+S
+#6169
+Floating in a void~
+~
+0 4 1
+S
+#6170
+Floating in a void~
+~
+0 4 1
+S
+#6171
+Floating in a void~
+~
+0 4 1
+S
+#6172
+Floating in a void~
+~
+0 4 1
+S
+#6173
+Floating in a void~
+~
+0 4 1
+S
+#6174
+Floating in a void~
+~
+0 4 1
+S
+#6175
+Floating in a void~
+~
+0 4 1
+S
+#6176
+Floating in a void~
+~
+0 4 1
+S
+#6177
+Floating in a void~
+~
+0 4 1
+S
+#6178
+Floating in a void~
+~
+0 4 1
+S
+#6179
+Floating in a void~
+~
+0 4 1
+S
+#6180
+Floating in a void~
+~
+0 4 1
+S
+#6181
+Floating in a void~
+~
+0 4 1
+S
+#6182
+Floating in a void~
+~
+0 4 1
+S
+#6183
+Floating in a void~
+~
+0 4 1
+S
+#6184
+Floating in a void~
+~
+0 4 1
+S
+#6185
+Floating in a void~
+~
+0 4 1
+S
+#6186
+Floating in a void~
+~
+0 4 1
+S
+#6187
+Floating in a void~
+~
+0 4 1
+S
+#6188
+Floating in a void~
+~
+0 4 1
+S
+#6189
+Floating in a void~
+~
+0 4 1
+S
+#6190
+Floating in a void~
+~
+0 4 1
+S
+#6191
+Floating in a void~
+~
+0 4 1
+S
+#6192
+Floating in a void~
+~
+0 4 1
+S
+#6193
+Floating in a void~
+~
+0 4 1
+S
+#6194
+Floating in a void~
+~
+0 4 1
+S
+#6195
+Floating in a void~
+~
+0 4 1
+S
+#6196
+Floating in a void~
+~
+0 4 1
+S
+#6197
+Floating in a void~
+~
+0 4 1
+S
+#6198
+Floating in a void~
+~
+0 4 1
+S
+#6199
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 6001 1 6000
+M 0 227 1 6002
+M 0 6002 1 6001
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+ 6002    9  0  0           1   1         0 23    ; An Item Research and Repair Expert
+0
+
+
+#SPECIALS
+S
+
+
+#$

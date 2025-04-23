@@ -1,0 +1,5261 @@
+#AREA   Hydia~
+
+
+
+#VERSION 252
+#AUTHOR Talling~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 10
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#300000
+hydian child~
+a hydian child~
+A Hydian child runs here, with flowers in his hair.
+~
+~
+1 0 900 C
+1 0 100 1d20+0 2d5+0
+300 100000000000
+112 112 0
+65 100 100 50 10
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpecho &PA hydian child points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n&P A hydian child charges the blast and fires it at you! &Y'Pansy Cannon!'&W
+Mpechoat $n &PThe ball of energy smashes into you knocking you back.&W
+Mer $n &PA hydian child charges the blast and fires it at $n! &Y'Pansy Cannon!' &PThe ball of energy smashes into $n knocking them back.&W
+Mppldamage $n 15
+else
+Mpecho &PA hydian child points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n &PA hydian child charges the blast and fires it at you! &Y'Pansy Cannon!'&P You quickly knock the energy attack aside.&D
+Mer $n &PA hydian child charges the blast and firest it at $n! &Y'Pansy Cannon!' &P$n quickly knocks the blast aside.&W
+endif
+~
+|
+#300001
+Zarbon~
+Zarbon~
+Zarbon, Lord of the Hydians, sits on his throne here, vainly staring at himself in a mirror.
+~
+~
+16777219 0 -500 C
+1 0 100 1d20+0 2d5+0
+5000 8000000000000
+112 112 0
+250 150 250 150 0
+0 0 0 0 0
+12 12 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 25~
+destructive wave
+~
+> death_prog 100~
+if rand(3)
+mpoload 300047
+Say Ha, don't think just because you beat me, that you won!
+emote raises two fingers to his forehead, then suddenly blinks out of existence.
+else
+Say Ha, don't think just because you beat me, that you won!
+emote raises two fingers to his forehead, then suddenly blinks out of existence.
+endif
+~
+> fight_prog 15~
+if rand(85)
+Mpecho &RZarbon puts his hands in front of his chest as he begins to&W
+Mpecho &Rglow with a red energy.&W
+Mpechoat $n &RZarbon pushes his arms foward as the light reaches a&W
+Mpechoat $n &Rblinding level. &Y'Rose Cannon!' &RA giant beam fires from his hands englufing you.&W
+Mpechoaround $n &RZarbon pushes his arms foward as the light reaches a blinding level. &Y'Rose Cannon!' &RA giant beam of energy fires from his outstretched hands engulfing $n.&W
+Mppldamage $n 45 &R[45]&D
+else
+mpecho &RZarbon puts his hands in front of his chest as he begins to glow with a red energy.&W
+mpechoat $n &RZarbon yells out &Y'Rose Cannon!' &Rand fires a giant beam from his hands, but it explodes before it reaches you!&W
+mpechoaround $n &RZarbon yells out &Y'Rose Cannon!' &Rand fires a giant beam from his hands, but it explodes before it reaches $n!&W
+endif
+~
+|
+#300002
+Hydian Royal Guard~
+A Hydian Royal Guard~
+A Hydian Royal Guard stands here at rigid attention.
+~
+~
+3 0 250 C
+1 0 100 1d20+0 2d5+0
+900 750000000
+112 112 0
+90 90 110 100 0
+0 0 0 0 0
+12 12 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+if rand(65)
+mpecho &OA Hydian Royal Guard crosses his arms in front of his chest, as he begins to glow with gold energy.&W
+Mpechoat $n &OA Hydian Royal Guard moves towards you with suprising speed, suddenly fading from view.&W
+Mpechoat $n &Ofrom all around, you hear: &Y'Hidden Dandelion!' &Oas you are bombarded with gold energy from all sides.&W
+Mpechoaround $n &OA Hydian Royal Guard moves towards $n with suprising speed, suddenly fading from view.&W
+mpechoaround $n &OFrom all around you hear: &Y"Hidden Dandelion!' &Oas $n is is bombarded with gold energy from all sides.&W
+Mppldamage $n 20 &O[20]&D
+else
+mpecho &OA Hydian Royal Guard crosses his arms in front of his chest, as he begins to glow with gold energy.&W
+Mpechoat $n &OA Hydian Royal Guard moves towards you with suprising speed, suddenly fading from view.&W
+Mpechoat $n &OYou notice movement out of the corner of your eye, as you step to the side narrowly avoiding the attack!&W
+Mpechoaround $n &OA Hydian Royal Guard moves towards $n with suprising speed, suddenly fading from view.&W
+Mpechoaround $n &O $n suddenly steps to the side, quickly avoiding the attack!&W
+endif
+~
+|
+#300003
+Deranged Artist~
+a deranged artist~
+A deranged artist is running back and forth staring at paintings.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 20~
+if rand(50)
+if rand(50)
+hrm
+else
+say Indeed, this must be it, yes, yes.
+endif
+else
+if rand(50)
+mumble
+else
+say Hmm, indeed it must be the painting...
+endif
+endif
+~
+|
+#300004
+A Vain Royal~
+a vain royal~
+A vain royal wanders around with his nose in the air.
+~
+~
+1 0 -100 C
+1 0 100 1d20+0 2d5+0
+1000 500000000000
+112 112 1
+75 75 75 75 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+say Tsk. Get OUT of my way, you peasant!
+~
+> fight_prog 15~
+if rand(60)
+Mpecho &PA vain royal points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n &PA vain royal charges the blast and fires it at you! &Y'Pansy Cannon!'&W
+Mpechoat $n &PThe ball of energy smashes into knocking you back.&W
+Mer $n &P A vain royal charges the blast and fires it at $n! &Y'Pansy Cannon!'&P The ball of energy smashes into $n knocking them back.&W
+Mppldamage $n 15 &P[15]&D
+else
+Mpecho &PA vain royal points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n &PA vain royal charges the blast and fires it at you! &Y'Pansy Cannon!'&P You quickly knock the energy attack aside.&W
+Mer $n &PA vain royal charges the blast and firest it at $n! &Y'Pansy Cannon!' &P$n quickly knocks the blast aside.&W
+endif
+~
+|
+#300005
+Spoiled Child~
+A Spoiled Child~
+A Spoiled Child sits here playing with some sort of toy.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000000
+112 112 0
+50 50 100 50 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+energy ball
+~
+> rand_prog 5~
+say I know you like my Action Figure, but you can't have it!
+~
+> death_prog 100~
+if rand(5)
+say Fine, take it! I don't want it anymore!
+cry
+mpoload 300005
+endif
+~
+|
+#300006
+A Hydian Hammerhead~
+A Hammerhead~
+A Hydian Hammerhead swims in here, looking for fresh prey.
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 250000000000
+112 112 0
+75 20 75 50 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#300007
+Hydian Jaguar~
+a hydian jaguar~
+A sleek black cat, prowls around here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 350000000000
+112 112 0
+75 20 100 75 0
+0 0 0 0 0
+28 28 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#300008
+Newbie Instructor~
+a newbie instructor~
+An Acadamy Professor stands here, ready to give instructions
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+5 5 5 5 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 7~
+Say Welcome, I'm here to train you how to be a real warrior. 
+~
+> death_prog 100~
+death_prog 100
+if rand(100)
+say Excellent! Your getting better! Come again!
+recho &CA Newbie Instructor stands up and wipes the dirt of his knees.
+mpmload 300008
+endif
+~
+> rand_prog 7~
+Say If you would like me to tell you my POWER, then just SAY so. 
+~
+> speech_prog p power~
+nod
+report
+~
+|
+#300009
+Intermediate Instructor~
+an intermediate instructor~
+An Acadamy Professor stands here, flexing his muscles.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 7~
+Say Well come on, if you think you an handle THIS!
+flex
+~
+> death_prog 100~
+if rand(100)
+say Bah! You just got lucky! Try that Again!
+mpmload 300009
+endif
+~
+> rand_prog 7~
+Are you sure you can handle my POWER?  If your unsure then just ask.  
+~
+> speech_prog p power~
+flex
+report
+say Hot stuff, huh?
+flex
+~
+|
+#300010
+Advanced Instructor~
+an advanced instructor~
+An Acadamy Professor stands here, ready to test your skill.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 3000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 7~
+say If you can beat me then you will be ready for the real world.
+nod
+ready
+~
+> death_prog 100~
+addif (100)
+say Hmph, not too bad, do you want to attempt that again?
+ready
+mpmload 300010
+~
+> rand_prog 7~
+say If you are unsure of your skills be sure to ask me about my POWER.
+~
+> speech_prog p power~
+smile
+report
+say it's always good to know your enemy!
+~
+|
+#300011
+Dario~
+Dario~
+Dario wanders around his shop twirling his mustache.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+400 10 10 10 10
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300012
+Acadamy Sensai~
+the Acadamy Sensai~
+The Acadamy Sensai stands here, ready to show you a few moves.
+~
+~
+67109889 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300013
+Julia~
+Julia~
+Julie stands here, hammering some armor.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300014
+Barry~
+Barry~
+Barry is here, checking his stock.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+500 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+cough
+~
+|
+#300015
+Lisa~
+Lisa~
+Lisa is here, stitching some clothes.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+400 10 10 110 10
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300016
+Crystal~
+Crystal~
+Crystal stands here, sparkling with jewelry
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+400 10 10 10 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300017
+old hydian man~
+An old Hydian man~
+A short old man stands here, leaning on a cane.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> entry_prog 100~
+if (100)
+say Ah welcome to my humble hut, please rest here, adventurer.
+cackle
+endif
+~
+|
+#300018
+Hydian Cave Giant~
+A Cave Giant~
+A deformed Giant is here, his huge bulk taking up most of the cavern
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000000
+112 112 0
+400 30 150 300 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpechoaround $n &OA Cave Giant grabs $n in his giant fist, smashing them into a wall repeatedly, then throws them back to the ground.&W
+Mpechoat $n &OA Cave Giant grabs you in his giant fist, smashing you into a wall repeatedly, then throws you back to the ground.&W
+mppldamage $n 35
+else
+Mpechoat $n &OA Cave Giant attempts to grab you, but misses.&W
+Mpechoaround $n &OA Cave Giant attempts to grab $n, but misses.&W
+endif
+~
+> greet_prog ~
+roar
+~
+|
+#300019
+hydian outcast~
+A hydian outcast~
+A hydian is here, staring around madly.
+~
+~
+33 0&0&16777216 -700 C
+1 0 100 1d20+0 2d5+0
+1000 3000000000000
+112 112 1
+115 107 107 115 0
+0 0 0 0 0
+12 12 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpecho &CA hydian outcast points both hands out palm foward, as he gathers energy into them.&W
+Mpechoat $n &CAs the energy reaches it's peak A hydian outcast yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the smash into you, sending you reeling.&W
+Mpechoaround $n &CAs the energy reaches it's peak A hydian outcast yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the smash into $n, sending them reeling.&W
+Mppldamage $n 25 &C[25]&D
+else
+Mpecho &CA hydian outcast points both hands out palm foward, as he gathers energy into them.&W
+Mpechoat $n &CAs the energy reaches it's peak A hydian outcast yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the fly right over your head!&W
+Mpechoaround $n &CAs the energy reaches it's peak A hydian outcast yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the fly right over $n's head!&W
+endif
+~
+> fight_prog 15~
+if rand(75)
+if rand(3)
+mpechoat $n &YA hydian outcast points his finger at you, as a small speck of energy forms on it. He fires the blast at you as he yells out; '&WThorn Buster!&Y' The beam flies right into your chest piercing your heart!&D
+mpechoaround $n &YA hydian outcast points his finger at $n, as a small speck of energy forms on it. He fires the blast at $n as he yells out; '&WThorn Buster!&Y' The beam flies right into them piercing their heart!&D
+Mppldamage $n 999999 &R[999,999]&D
+else
+mpechoat $n &YA hydian outcast points his finger at you, as a small speck of energy forms on it. He fires the blast at you as he yells out; '&WThorn Buster!&Y' The beam flies right into you, piercing your shoulder.&D
+mpechoaround $n &YA hydian outcast points his finger at $n, as a small speck of energy forms on it. He fires the blast at $n as he yells out; '&WThorn Buster!&Y' The beam flies right into $n, piercing their shoulder.&D
+mppldamage $n 20 &Y[20]&D
+endif
+else
+mpechoat $n &YA hydian outcast points his finger at you, as a small speck of energy forms on it. He fires the blast at you as he yells out; '&WThorn Buster!&Y' The beam flies towards you but barely misses.&D
+mpechoaround $n &YA hydian outcast points his finger at $n, as a small speck of energy forms on it. He fires the blast at $n as he yells out; '&WThorn Buster!&Y' The beam flies at them but barely misses.&D
+endif
+~
+|
+#300020
+hydian giant worm~
+a giant worm~
+A huge wormlike creature thrashes it's way through the forest.
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000000
+112 112 0
+150 50 100 150 0
+0 0 0 0 0
+8 8 0 0 1 1 1
+0 0 65536 0 0 0 0 0
+> fight_prog 10~
+if rand(50)
+Mpechoat $n &gA giant worm slams you with it's tail, knocking you into a nearby tree.&W
+Mpechoaround $n &gA giant worm slams $n with it's tail, knocking them into a nearby tree.&W
+mppldamage $n 15
+else
+Mpechoat $n &gA giant worm swings it's tail at you, but you jump out of the way.&W
+Mpechoaround $n &gA giant worm swings it's tail at $n, but they jump out of the way.&W
+endif
+~
+|
+#300021
+trent giant hydian~
+A Trent~
+A giant tree stands here, it's eyes glowing white....
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000000000000
+112 112 0
+200 50 75 130 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 12~
+if rand(60)
+Mpechoat $n &gA trent raises it's foot, slamming it down on you with a sickening crunch!&W
+Mpechoaround $n &gA trent raises it's foot, slamming it down on $n with a sickening crunch!&W
+mppldamage $n 25
+else
+mpechoat $n &gA trent raises it's foot, attempting to slam it on you, but you quickly dodge to the side.&W
+Mpechoaround $n &gA trent raises it's foot, attempting to slam it on $n, but they quickly dodge to the side.&W
+endif
+~
+> fight_prog 20~
+if rand(65)
+Mpechoat $n &GA trent whips a vine around your ankle, flinging you into nearby greenery.&W
+Mpechoaround $n &G $I whips a vine around $n's ankle, flinging them into nearby greenery.&D
+Mppldamage $n 15 &G[15]&D
+else
+Mpechoat $n &GA trent whips a vine at your ankle, but misses.&W
+Mpechoaround $n &GA trent whips a vine at $n's ankle, but misses.&W
+endif
+~
+|
+#300022
+soldier hydian~
+A hydian soldier~
+A hydian soldier patrols here, looking for any rebels.
+~
+~
+1 0 500 C
+1 0 100 1d20+0 2d5+0
+600 650000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+if rand(65)
+Mpecho &CA hydian soldier points both hands out palm foward, as he gathers energy into them.&W
+Mpechoat $n &CAs the energy reaches it's peak A hydian soldier yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the smash into you, sending you reeling.&W
+Mpechoaround $n &CAs the energy reaches it's peak A hydian soldier yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the smash into $n, sending them reeling.&W
+Mppldamage $n 25
+else
+Mpecho &CA hydian soldier points both hands out palm foward, as he gathers energy into them.&W
+Mpechoat $n &CAs the energy reaches it's peak A hydian soldier yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the fly right over your head!
+Mpechoaround $n &CAs the energy reaches it's peak A hydian soldier yells out; &Y'Twin Lily!' &CHe fires two beams of energy as the fly right over $n's head!&W
+endif
+~
+|
+#300023
+cultist~
+Besaba's Slave, Amoeba~
+A robed cultist is here, sacrificing a small child.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 3000000000000
+112 112 0
+100 100 100 100 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+kamehameha
+~
+> fight_prog 10~
+dodon ray
+~
+> fight_prog 10~
+trap ball
+~
+> greet_prog 100~
+if ispc($n)
+gasp
+mpsleep 9
+say What are you doing here?
+mpsleep 9
+cackle
+mpsleep 9
+Say Did you come here to play?
+mpsleep 9
+Say Then let's play!
+mpsleep 9
+if MortCount() > 0
+if isfight($n)
+else
+mpecho $I suddenly leaps at you and attacks!
+mpkill $n
+endif
+endif
+endif
+~
+> fight_prog 35~
+gallic gun
+~
+|
+#300024
+citizen hydian common~
+A hydian commoner~
+A hydian man walks around here, heading to work
+~
+~
+1 0 500 C
+1 0 100 1d20+0 2d5+0
+500 400000000000
+112 112 1
+90 90 75 90 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpecho &PA hydian commoner points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n &PA hydian commoner charges the blast and fires it at you! &Y'Pansy Cannon!'&W
+Mpechoat $n &PThe ball of energy smashes into you knocking you back.&W
+Mer $n &PA hydian commoner charges the blast and fires it at $n! &Y'Pansy Cannon!' &PThe ball of energy smashes into $n knocking them back.&W
+Mppldamage $n 15
+else
+Mpecho &PA hydian commoner points his arm palm out, focusing pink energy into it.&W
+Mpechoat $n &PA hydian commoner charges the blast and fires it at you! &Y'Pansy Cannon!' &PYou quickly knock the energy attack aside.&W
+Mer $n &PA hydian commoner charges the blast and firest it at $n! &Y'Pansy Cannon!' &P$n quickly knocks the blast aside.&W
+endif
+~
+|
+#300025
+manager apartment~
+an apartment manager~
+A balding, fat hydian is sitting here eating cheetos.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750000000000
+112 112 0
+100 75 45 65 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+'energy ball'
+~
+> death_prog 100~
+if rand(100)
+mpoload 300028
+endif
+~
+|
+#300026
+citizen hydian woman~
+A hydian woman~
+A female hydian citizen walks here, brushing her hair.
+~
+~
+1 0 500 C
+1 0 100 1d20+0 2d5+0
+500 450000000000
+112 112 2
+90 75 90 75 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpecho &PA hydian woman poinst her arm palm out, focusing pink energy into it.&W
+Mpechoat $n&P A hydian woman charges the blast and fires it at you! &Y'Pansy Cannon!'&W
+Mpechoat $n &PThe ball of energy smashes into you knocking you back.&W
+Mer $n &PA hydian woman charges the blast and fires it at $n! &Y'Pansy Cannon!' &PThe ball of energy smashes into $n knocking them back.&W
+Mppldamage $n 15
+else
+Mpecho &PA hydian woman points her arm palm out, focusing pink energy into it.&W
+Mpechoat &P$n A hydian woman charges the blast and fires it at you! &Y'Pansy Cannon!' &PYou quickly knock the energy attack aside.&W
+Mer $n &PA hydian woman charges the blast and firest it at $n! &Y'Pansy Cannon!' &P$n quickly knocks the blast aside.&W
+endif
+~
+|
+#300027
+nurse hydian~
+A acadamy nurse~
+An acadamy nurse stands here, tending to the wounded.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300028
+student store clerk~
+a student store clerk~
+A bored student stands behind the counter, checking people out.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+400 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300029
+zed gardner~
+Zed~
+A gardner is here, tending to the plants
+~
+~
+1 0 300 C
+1 0 100 1d20+0 2d5+0
+300 400000000000
+112 112 0
+110 50 75 75 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+'destructive wave'
+~
+> death_prog 100~
+if rand (5)
+mpoload 300027
+end if
+~
+|
+#300030
+seagull bird~
+A seagull~
+A stark white bird is flying here, trying to catch fish.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000000
+112 112 0
+40 40 110 50 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300031
+teen hydian~
+A hydian teenager~
+A disgruntled teen wanders the streets.
+~
+~
+1 0 400 C
+1 0 100 1d20+0 2d5+0
+800 450000000000
+112 112 1
+75 75 90 100 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 12~
+'energy ball'
+~
+|
+#300032
+A stray poodle~
+a stray poodle~
+A stray poodle wanders the street, looking for food
+~
+~
+1 0 100 C
+1 0 100 1d20+0 2d5+0
+100 150000000000
+112 112 0
+25 25 50 25 0
+0 0 0 0 0
+29 29 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+if rand(65)
+Mpechoat $n &GA poodle violently launches at your ankle, nipping.&W
+mpechoaround $n &GA poodle violently launches at $n's ankle, nipping.&W
+mppldamage $n 10
+else
+Mpechoat $n &GA poddle violently attempts to bite you, but you kick it away.&W
+mpechoaround $n &GA poodle violently attempts to bite $n, but they kick it away.&W
+endif
+~
+|
+#300033
+small dog chihuahua~
+A small Chihuahua~
+A small dog wearing a sweater wanders the streets.
+~
+~
+1 0 -100 C
+1 0 100 1d20+0 2d5+0
+100 150000000000
+112 112 0
+25 25 50 25 0
+0 0 0 0 0
+29 29 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300034
+ruffian teen~
+A ruffian~
+A teenager wanders here, looking to cause trouble.
+~
+~
+1 0 -400 C
+1 0 100 1d20+0 2d5+0
+1000 750000000000
+112 112 1
+100 55 75 75 0
+0 0 0 0 0
+12 12 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300036
+grotesque zarbon hydian~
+a newly created grotesque zarbon hydian~
+Zarbon is here, ready to do battle.                                        &P*Zarbon is bulging with grotesque power.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 46000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> wear_prog 100~
+mea $n &RAs you wear the collar, thunderous metal guitars burst forth from the heavens, proclaiming you to be the ultimate rock god!&D
+mer $n &RAs $n wears the collar, a brilliant light shines from the heavens themselves as someone proclaims $n to be the ultimate rock god!&D
+~
+|
+#300037
+monkey spider~
+A spider monkey~
+A strange monkey is here, hanging from his tail.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+500 1000000000000
+112 112 0
+70 20 100 50 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+if rand(40)
+Mpecho &O$I quickly climbs into the tree disappearing for a few seconds.&d
+Mpechoat $n &OIt suddenly reappears, with a large coconut in it's hands. It throws the coconut at you and smacks you in the head. &W[15]&d
+Mpechoaround $n &OIt suddenly reappears, with a large coconut in it's hands. It throws the coconut at $n and smacks $m in the head. &W[15]&d
+mpdamage $n 15
+else
+Mpecho &O$I quickly climbs into the tree, disappearing for a few seconds.&d
+Mpechoat $n &OIt suddenly reappears, with a large coconut in it's hands. It throws the coconut at you, but you swiftly dodge. &W[0]&d
+Mpechoaround $n &OIt suddenly reappears, with a large coconut in it's hands. It throws the coconut at $n, but $e dodges. &W[0]&d
+mpdamage $n 15
+endif
+~
+|
+#300038
+roc baby bird~
+A baby roc~
+A large bird is here, it's feathers not even fully developed.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+550 1500000000000
+112 112 0
+80 20 110 70 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+if rand(45)
+Mpechoat $n &C$I gives a loud screech that throws you back into a nearby tree by the sheer force of it. [20]&D
+Mpechoaround $n &C$I gives a loud screech that throws $n back into a nearby tree by the sheer force of it. [20]&D
+mpdamage $n 20
+else
+Mpecho &C$I opens it's mouth to screech, but chokes instead.&D
+endif
+~
+|
+#300039
+roc adult bird~
+An Adult Roc~
+A giant bird is here, looking around with hunger in it's eyes.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+800 250000000000000
+112 112 0
+110 30 125 90 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+if rand(45)
+Mpechoat $n $I &Cgives a loud screech that throws you back into a nearby tree by the sheer force of it. [20]&D
+Mpechoaround $n &C$I gives a loud screech that throws $n back into a nearby tree by the sheer force of it. [20]&D
+mpdamage $n 20
+else
+Mpecho &C$I opens it's mouth to screech, but chokes instead.&D
+endif
+~
+|
+#300040
+grass maneating~
+Hunter's Grass~
+The grass in this area is swaying strangely.
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+500 2000000000000
+112 112 0
+100 50 100 75 10
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#300041
+roc mother bird~
+A Mother Roc~
+A gigantic bird is here, hovering above her nest.
+~
+~
+35 524288 0 C
+1 0 100 1d20+0 2d5+0
+2000 3000000000000
+112 112 2
+110 50 150 100 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+if rand(45)
+Mpechoat $n &C$I gives a loud screech that throws you back into a nearby tree by the sheer force of it. [20]&D
+Mpechoaround $n &C$I gives a loud screech that throws $n back into a nearby tree by the sheer force of it. [20]&D
+mpdamage $n 20
+else
+Mpecho &C$I opens her mouth to screech, but chokes instead.&D
+endif
+~
+|
+#300042
+shadow manservant~
+&zA Shadow Manservant&D~
+&zA shadowy creature is here, waiting to serve it's lord.&D
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if ispc($n)
+mpecho &zA Shadow Manservant looks to you as you enter. It speaks, it's voice a harsh whisper; '&CWelcome, How may I assist you?&z'&D
+~
+|
+#300043
+wyvern cave ~
+A Cave Wyvern~
+A giant dragon-like creature is here.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+500 3000000000000
+112 112 0
+160 35 150 110 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300044
+shangrin fish~
+A Shangrin~
+A strange fish-man is here, patrolling the aquaduct.
+~
+~
+1 0 -300 C
+1 0 100 1d20+0 2d5+0
+300 2000000000
+112 112 0
+110 20 100 130 0
+0 0 0 0 0
+64 64 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+if rand(65)
+Mpecho &C$I rears it's head back, swallowing a huge amount of air.&D
+Mpechoat $n &C$I throws it's head foward spitting a large stream of water at you. [20]&D
+Mpechoaround $n &C$I throws it's head foward spitting a large stream of water at $n. [20]&D
+mppldamage $n 20
+else
+Mpecho &C$I rears it's head back, swallowing a huge amount of air.&D
+Mpechoat $n &C$I throws it's head foward, but chokes.&D
+Mpechoaround $n &C$I throws it's head foward, but chokes.&D
+endif
+~
+|
+#300100
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#300199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#300000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300001
+Dark Oblivion~
+&zDark &rOblivion&D~
+&zDark &rOblivion &zlays here, daring you to wield its might.&D~
+~
+5 8388608 8193
+0 4 5 1 0 0
+1 0 0
+ 0
+A
+3 5
+A
+2 5
+A
+1 10
+A
+4 10
+#300004
+Besaba's Slave Collar~
+&RBesaba's &PSlave Collar&D~
+A spiked collar lies here, bristling with pure attitude.~
+~
+9 8388608 5
+0 0 0 300 0 0
+1 0 0
+ 0
+A
+29 5
+A
+3 5
+A
+4 5
+A
+2 5
+A
+3 5
+> wear_prog 100~
+mea $n &RAs you wear the collar, thunderous metal guitars burst forth from the heavens, proclaiming you to be the ultimate rock god!&D
+mer $n &RAs $n wears the collar, a brilliant light shines from the heavens themselves as someone proclaims $n to be the ultimate rock god!&D
+~
+|
+#300005
+Besaba Action Figure~
+&zA &RBesaba &GAction Figure&D~
+A Besaba Action figure sits here, with fully posable limbs!~
+~
+18 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+3 3
+A
+1 5
+A
+2 5
+A
+4 1
+A
+29 1
+> wear_prog 100~
+mea $n &BH&War&RdC&Wor&Be P&Wri&Rde!&D
+mer $n &BH&War&RdC&Wor&Be P&Wri&Rde!&D
+mpforce $n kaiokenalot
+~
+|
+#300006
+a painting button~
+a painting button~
+&x.~
+~
+39 0&2048 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpopenpassage 300004 300005 1
+mpechoat $n Suddenly the floor flips up throwing you to the east!
+mpechoaround $n as $n pushes a button, they are thrown suddenly to the east as the floor flips up and seems to throw them through the painting!
+mpforce $n e
+mpclosepassage 300004 1
+mpat $i pull button
+~
+|
+#300007
+An Altar~
+An Altar~
+An Altar sits here with blood and wax all over it.~
+~
+13 0&2048 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300008
+A Royal's Shirt~
+&PA Royal's Shirt&D~
+A silk shirt sits here, folded nice and neat.~
+~
+9 1572864 9 4
+0 0 0 0 25 25
+2 330000 33000
+ 4000000000
+A
+2 4
+A
+3 1
+A
+4 1
+#300009
+Noble Leggings~
+&PNoble Leggings&D~
+A pair of tights lies here, crumpled on the floor~
+~
+9 1572864 33 6
+0 0 0 0 25 25
+3 350000 35000
+ 4000000000
+A
+3 2
+A
+2 3
+A
+1 1
+> wear_prog 100~
+Mpechoat $n As you put on the leggings you feel that you are better then everyone else, and you instinctivly raise your nose into the air.
+Mer $n AS $e puts on the leggings, $e raises $s nose into the air, and gets a haughty attitude.
+~
+|
+#300010
+Crystal Hairpin~
+&CA Crystal Hairpin&D~
+A hairpin twinkles in the light here.~
+~
+9 1703936 17
+0 0 0 0 125 125
+1 500000 10000
+ 4000000000
+A
+2 3
+A
+1 2
+A
+3 4
+#300011
+Fancy Gloves~
+&pFancy Gloves&D~
+A comfortable pair of gloves lies on the floor.~
+~
+9 0 129 24
+0 0 0 0 25 25
+1 180000 25000
+ 4000000000
+A
+2 2
+A
+1 2
+#300012
+Tailored Coat~
+&PA Tailored Coat&D~
+A fancy coat is tossed onto the ground here.~
+~
+9 1572864 1025 64
+0 0 0 0 175 175
+1 500000 50000
+ 4000000000
+A
+2 3
+A
+3 1
+A
+4 4
+#300013
+Hydian Body Armor~
+&PHydian Expandable Body Armor&D~
+&PPurple &Gand &OGold &Gbody armor lies here.~
+~
+9 0 9 48
+0 0 0 0 900 900
+20 500000 50000
+ 3500000000
+A
+4 5
+A
+2 3
+> wear_prog 100~
+Mpechoat $n As your fit the armor onto your body, it shapes and conforms itself to your figure.
+~
+|
+#300014
+A Royal Cape~
+&PA Royal Cape&D~
+A Lavender cape is tossed into a corner~
+~
+9 0 5
+0 0 0 0 50 50
+5 250000 25000
+ 4000000000
+A
+2 4
+#300015
+Hydian Battle Gauntlets~
+&YHydian Battle Gauntlets&D~
+&YGold &Ogauntlets lie here in the dust&D~
+~
+9 0 129
+0 0 0 0 190 190
+5 300000 30000
+ 3000000000
+A
+1 3
+A
+4 3
+#300016
+Hydian Battle Boots~
+&YHydian Battle Boots&D~
+A pair of &Ygold &Oboots sits here.~
+~
+9 0 65
+0 0 0 0 190 190
+1 450000 45000
+ 3000000000
+A
+2 5
+A
+3 3
+#300017
+Belt Pouch~
+&OA Belt Pouch&D~
+A small pouch lies here, bulging to the seams.~
+~
+15 4194304 2049 64
+35 0 0 0 10 10
+1 75000 7500
+ 0
+#300018
+oversized diamond ring~
+&wAn Oversized &WDiamond &wRing&D~
+&Oa diamond &Wsparkles &Oon the floor&D~
+~
+9 0 3
+0 0 0 0 15 15
+1 750000 75000
+ 5000000000
+A
+1 3
+A
+2 2
+A
+3 1
+A
+4 1
+A
+29 2
+#300019
+dragon tail ring~
+&RA Dragontail &YRing&D~
+&wA &YGold &wand &RRuby &wring shaped like a dragon's tail lies here.&D~
+~
+9 8388608 3
+0 0 0 0 25 25
+10 750000 75000
+ 3500000000
+A
+1 9
+#300020
+Crystal Bangel~
+&wA &CCrystal &wBangel&D~
+A shiny bangel lies on the floor.~
+~
+9 0 4097
+0 0 0 0 125 125
+1 550000 55000
+ 5000000000
+A
+3 3
+A
+4 3
+#300021
+humanoid skull~
+A humanoid skull~
+A humanoid skull lies here, collecting dust.~
+~
+15 8388608 0
+35 0 0 0 0 0
+1 0 30
+ 0
+#300022
+Crystal Brooch~
+&CA Crystal Brooch&D~
+A brooch lies here on the floor, sparkling~
+~
+9 0 513
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+4 2
+A
+2 2
+A
+1 2
+A
+3 2
+A
+29 1
+#300023
+corpse child small~
+A small child's corpse~
+A small child's corpse lies here, waiting to be sacrificed.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> sac_prog 100~
+if rand (3)
+mpechoat $n As you sacrifice the corpse of a small child, you hear the sounds of a guitar playing. Suddenly there is a blinding flash, as your vision returns an odd collar is lying on the ground.
+mpoload 300004
+endif
+~
+|
+#300024
+light crystal beacon~
+&Ca crystal beacon&w~
+A small cylinder of crystal lies on the ground, flashing.~
+~
+1 1 16385
+0 0 75 0 0 0
+1 125 12
+ 0
+#300025
+hydian common scouter~
+a common hydian scouter~
+A small object lies on the ground, beeping.~
+~
+65 270336 131073
+0 0 1000000000 0 0 0
+1 25000 2500
+ 1000000
+#300026
+elite scouter hydian~
+an elite hydian scouter~
+A well crafted scouter lies on the ground, beeping.~
+~
+65 270336 131073
+0 0 2147483647 0 0 0
+1 80000 8000
+ 1000000000
+#300027
+advanced scouter hydian~
+an advanced hydian scouter~
+An impressive looking scouter lies here, beeping.~
+~
+65 270336 131073
+0 0 2000000000 0 0 0
+1 55000 5500
+ 100000000
+#300028
+key roof hydia~
+Roof Key~
+A small gold key lies here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#300029
+statue hydian~
+A statue of a hydian~
+&OA statue of some former Hydian ruler is planted in the middle of town square.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300030
+freshman armor~
+Freshman Class Armor~
+A weak looking set of armor lies here, ignored by it's owner.~
+~
+9 8192 1025
+0 0 0 0 200 200
+10 2000 200
+ 100
+#300031
+sophomore armor~
+Sophomore Class Armor~
+Some slightly used armor lies here, abandon by it's owner.~
+~
+9 0 1025
+0 0 0 0 350 350
+20 8000 800
+ 5000
+#300032
+junior armor~
+Junior Class Armor~
+Strong looking armor is sitting in the corner.~
+~
+9 8192 1025
+0 0 0 0 1000 1000
+30 25000 2500
+ 50000
+#300033
+senior armor~
+Senior Class Armor~
+A strong looking set of armor, is neatly polished here.~
+~
+9 0 9
+0 0 0 0 1500 1500
+50 55000 5500
+ 100000
+#300034
+shirt hydia u~
+An &PHU &WT-shirt&w~
+A crumpled black t-shirt is lying here.~
+~
+9 0 9 4
+0 0 0 0 75 75
+1 100 10
+ 100
+#300035
+pants cargo~
+a pair of cargo pants~
+A pair of khaki pants lie here.~
+~
+9 0 33 8
+0 0 0 0 100 100
+2 200 20
+ 100
+#300036
+sign float~
+a floating sign~
+A sign floats here with flashing words on it.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300037
+shears garden~
+Gardening Shears~
+A sharp set of shears lie on the ground.~
+~
+5 8192 8193
+0 3 3 0 0 0
+10 0 0
+ 0
+#300038
+nest giant roc~
+A roc's nest~
+A huge nest made from whole trees is here, taking up most of the clearing.~
+~
+15 0 0
+15 0 0 0 0 0
+1 0 0
+ 0
+#300039
+aura stolen shadow~
+&zS&pt&zo&pl&ze&pn &zA&pu&zr&pa &zo&pf &zS&ph&za&p&zd&po&zw&ps&D~
+&zThe shadows are long in the corner of this room.&D~
+~
+9 8651265 1025 128
+0 0 0 0 500 500
+1 0 0
+ 10000000000
+A
+1 10
+A
+2 10
+A
+4 10
+A
+3 10
+> wear_prog 100~
+mpecho &zThe shadows in the area crawl about $n, covering $m in an aura of darkness.&D
+~
+|
+#300040
+soul lost~
+&zA Lost Soul&D~
+A lost soul floats aimlessly here, trying to get to the Afterlife.~
+~
+1 1 16385
+0 0 -1 0 0 0
+1 0 0
+ 0
+#300041
+demon shadow armor~
+&rDemon &zS&ph&za&pd&zo&pw &wArmor&D~
+&zThe shadows seem to have formed spiked evil looking armor.&D~
+~
+9 512 9 112
+0 0 0 0 1000 1000
+1 0 0
+ 10000000000
+A
+4 8
+A
+1 5
+A
+2 3
+A
+3 3
+> wear_prog 100~
+mpecho As $n places the shadowy breastplate about $s body, spikes shoot up from the shoulders and along the chest to give it a wicked appearance.
+~
+|
+#300042
+shadow throne~
+&zA Throne of Shadow&D~
+&zA large throne sits here, blending in with the shadows.&D~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300043
+pedistal crystal ball~
+A Crystal Pedistal~
+&wA large pedistal is here, with a crystal ball on top.&D~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300045
+shadow cape~
+&zA S&ph&za&pd&zo&pw &zCape&D~
+&zA long piece of cloth seems to blend in with the shadows here.&D~
+~
+9 0 524289
+0 0 0 0 0 0
+1 0 0
+ 10000000000
+A
+3 8
+A
+2 8
+#300046
+dice gambling lucky~
+&PL&Yu&Cc&Wk&Gy &wGambling Dice&D~
+A pair of dice is lying on the floor, someone rolled snake eyes.~
+~
+9 0 16385
+0 0 0 0 0 0
+1 500000 50000
+ 10000000000
+A
+29 10
+#300047
+tiara royal zarbon~
+&PZarbon's Royal Tiara&D~
+A very expensive looking tiara has been discarded here.~
+~
+9 8388608 17
+0 0 0 0 250 250
+1 0 0
+ 0
+A
+3 8
+A
+2 6
+A
+29 2
+#300100
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#300199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#300000
+Throne Room~
+A long red carpet runs along the center of the floor, leading to a giant
+throne in the shape of a rose, it is made of ruby that seems to glow from
+the neon lights in the room.  Along either wall rests an emblem with a
+picture of a rose on it, the kingdoms symbol. 
+~
+0 2097164 0
+D2
+~
+~
+3 -1 300001
+S
+#300001
+Grand Hall~
+A long corridor leading to the throne room of the Hydian king.  The
+walls are lined with gorgeous tapestries, depicting the former Hydian
+rulers.  The most recent one is torn for some odd reason.  Closer
+inspection is blocked by the guards standing in the way.  
+~
+0 12 0
+D0
+~
+~
+3 -1 300000
+D2
+~
+~
+0 -1 300002
+S
+#300002
+The Top of the Stairs.~
+The top of a grand staircase, below the staircase is the crystal floor
+shining brilliantly, and above is a giant stained glass window showing the
+first Hydian king.  The carpet underfoot is made of plush red velvet and
+feels good to the touch.  
+~
+0 12 0
+D0
+~
+~
+0 -1 300001
+D1
+~
+~
+0 -1 300015
+D3
+~
+~
+0 -1 300013
+D5
+~
+~
+0 -1 300003
+S
+#300003
+&CCrystal Hall&D~
+The fabled Crystal Hall, known throughout Hydia for it's unmatched
+beauty.  It would seem that it got it's name from the fact that the floor
+is made entirly from some sort of crystal, it is polished to a reflective
+smoothness and shine, the reflection of any who pass by can be seen.  
+~
+0 12 0
+D1
+~
+~
+0 -1 300004
+D2
+~
+~
+0 -1 300036
+D3
+~
+~
+0 -1 300006
+D4
+~
+~
+0 -1 300002
+S
+#300004
+Artist's Gallery~
+This room seems dedicated to art.  Paintings line the walls, and statues
+seem to be placed in some sort of planned order along the floor.  Hydian
+nobles and art lovers come to this place often to view the paintings. 
+~
+0 12 0
+D3
+~
+~
+0 -1 300003
+E
+painting~
+A Hydian king bows down to an unknown Icer in this painting, they stand
+upon a torn battlefield, with the Icer obviously the victor, closer
+inspection reveals a small button at the bottom of the painting, it is the
+same color as the wood so it wasn't very noticable.  
+~
+> act_prog prog p pushes the button~
+~
+|
+S
+#300005
+Stairs!~
+The painting has opened up to a secret staircase.  The light from paint
+room reveals enough that it is obvious there is no light below.  The stairs
+swirl down in a spiral descent. 
+~
+0 12 0
+D3
+~
+~
+0 -1 300004
+D5
+~
+~
+0 -1 300038
+S
+#300006
+A long hall~
+A long plain hall, adorned by random paintings, it seems this is the
+residential area of the palace, as people are coming and going to different
+directions. 
+~
+0 12 0
+D0
+~
+~
+0 -1 300007
+D1
+~
+~
+0 -1 300003
+D2
+~
+~
+0 -1 300008
+S
+#300007
+A long hall~
+A long plain hall, adorned by random paintings, it seems this is the
+residential area of the palace, as people are coming and going to different
+directions. 
+~
+0 12 0
+D1
+~
+~
+1 -1 300010
+D2
+~
+~
+0 -1 300006
+D3
+~
+~
+1 -1 300011
+S
+#300008
+A long hall~
+A long plain hall, adorned by random paintings, it seems this is the
+residential area of the palace, as people are coming and going to different
+directions. 
+~
+0 12 0
+D0
+~
+~
+0 -1 300006
+D1
+~
+~
+1 -1 300012
+D3
+~
+~
+1 -1 300009
+S
+#300009
+A Luxurious Room~
+This room is filled with all sorts of things to pleasure and pamper, the
+royals and nobles that frequent the palace.  An oversized bed stuffed with
+some sort of feathers takes up the left wall, while a large and comfy
+looking chair sits in front of a painting easle. 
+~
+0 12 0
+D1
+~
+~
+1 -1 300008
+S
+#300010
+Royal Chambers~
+A fully furnished room, obviously made to pamper the royalty.  This room
+is decked out with comfortable chairs, big screen televisions, even
+transporters for the room service staff. 
+~
+0 12 1
+D3
+~
+~
+1 -1 300007
+S
+#300011
+Lush Surroundings~
+Wow.  Talk about being pampered!  This room has everything a spoiled
+royal could ever want, and then some!  A large bed takes up half of the
+room, while a large table set out with a poker set sits in the center. 
+~
+0 12 1
+D1
+~
+~
+1 -1 300007
+S
+#300012
+In the Lap of Luxury~
+This room is composed of all that is luxurious.  Plush chairs, couches
+and other lounge items sit around here.  The walls are made out of pure
+ebony and it gives the rest of the room a rich look.  If anything, this
+room must have cost millions.  In the center of the room is a seventy-eight
+inch television, adding to the money that was needed for this room's decor.
+~
+0 12 1
+D3
+~
+~
+1 -1 300008
+S
+#300013
+Second Floor-Balcony~
+This balcony overlooks the crystal hall on the first floor.  The walls
+are a brilliant oak, brough t to a shine.  The floor is made of plush red
+velvet that offsets the wall just perfectly.  The handrail is made of oak
+and gold, and is quite smooth.  Many Hydian nobles come through here on
+both business and pleasure. 
+~
+0 12 1
+D1
+~
+~
+0 -1 300002
+D3
+~
+~
+1 -1 300014
+S
+#300014
+Second Floor-Western Terrace~
+This terrace overlooks the royal pond of Castle Hydia, the view from
+here is majestic and breathtaking.  Below the pond is a crystal blue and
+seems to just reflect the light of both sun and moon. 
+~
+0 4 1
+D1
+~
+~
+1 -1 300013
+D5
+~
+~
+64 -1 300018
+S
+#300015
+Second Floor-Balcony~
+This balcony overlooks the crystal hall on the first floor.  The walls
+are a brilliant oak, brough t to a shine.  The floor is made of plush red
+velvet that offsets the wall just perfectly.  The handrail is made of oak
+and gold, and is quite smooth.  Many Hydian nobles come through here on
+both business and pleasure. 
+~
+0 12 1
+D1
+~
+~
+0 -1 300016
+D3
+~
+~
+0 -1 300002
+S
+#300016
+Second Floor-Eastern Terrace~
+This terrace overlooks the rich vegetation of the castle's royal
+gardens.  The deep greens and vibrant yellows of the garden are even more
+breath taking from this height.  Below the growl of jungle beasts can be
+heard. 
+~
+0 4 1
+D3
+~
+~
+0 -1 300015
+D5
+~
+~
+64 -1 300017
+S
+#300017
+&GIn the Garden&D~
+This patch of the gardens is right next to the eastern wall of the
+castle.  Ivy climbs up the side, and above a terrace of some sort can be
+seen.  Sounds of running water can be heard to the south. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300035
+D2
+~
+~
+0 -1 300033
+D4
+~
+~
+64 -1 300016
+S
+#300018
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300053
+D1
+~
+~
+0 -1 300050
+D2
+~
+~
+0 -1 300024
+D4
+~
+~
+64 -1 300014
+D5
+~
+~
+0 -1 300019
+S
+#300019
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D0
+~
+~
+0 -1 300054
+D1
+~
+~
+0 -1 300048
+D2
+~
+~
+0 -1 300020
+D4
+~
+~
+0 -1 300018
+S
+#300020
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D0
+~
+~
+0 -1 300019
+D1
+~
+~
+0 -1 300047
+D2
+~
+~
+0 -1 300021
+D4
+~
+~
+0 -1 300024
+S
+#300021
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish. 
+~
+0 4 8
+D0
+~
+~
+0 -1 300020
+D1
+~
+~
+0 -1 300052
+D2
+~
+~
+0 -1 300022
+D4
+~
+~
+0 -1 300023
+S
+#300022
+&BWaist Deep in the Royal Pond~
+A small trail leads into the royal pond, continuing foward will result
+in submersion.  The bright blue water is frigid to the touch, despite the
+reflection of the sun. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300021
+D2
+~
+~
+0 -1 300026
+S
+#300023
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300024
+D1
+~
+~
+0 -1 300051
+D2
+~
+~
+0 -1 300022
+D5
+~
+~
+0 -1 300021
+S
+#300024
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300018
+D1
+~
+~
+0 -1 300049
+D2
+~
+~
+0 -1 300023
+D5
+~
+~
+0 -1 300020
+S
+#300025
+Floating in a void~
+~
+0 4 1
+S
+#300026
+&OOn the Shore of the Royal Pond~
+The pathway has faded off, and has been replaced with dirt and grass. 
+To the north is they castle's royal pond, it is clear and beautiful despite
+the overshadowing of the castle. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300022
+D1
+~
+~
+0 -1 300027
+S
+#300027
+&OOn the Shore of the Royal Pond~
+The pathway has faded off, and has been replaced with dirt and grass. 
+To the north is they castle's royal pond, it is clear and beautiful despite
+the overshadowing of the castle. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300028
+D3
+~
+~
+0 -1 300026
+S
+#300028
+&OOn the Shore of the Royal Pond~
+The pathway has faded off, and has been replaced with dirt and grass. 
+To the north is they castle's royal pond, it is clear and beautiful despite
+the overshadowing of the castle. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300029
+D3
+~
+~
+0 -1 300027
+S
+#300029
+Pathway to the Palace~
+The pathway to the palace is made of some sort of cobblers stone, it is
+a bright mix of colors.  Yellows, reds, browns, greens, and even some blue
+is mixed into these stones.  The castle looms to the north, a mighty titan
+amongst the smaller buildings of the city. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300036
+D1
+~
+~
+0 -1 300030
+D2
+~
+~
+0 -1 300061
+D3
+~
+~
+0 -1 300028
+S
+#300030
+&GEntering the Garden&D~
+The path towards the palace trails off into lush grass and rich
+vegetation.  This is the entrance to the palace's garden.  Above is rich
+foilage and bright fruit, and all around is brilliant flowers and appealing
+vegetables. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300031
+D3
+~
+~
+0 -1 300029
+S
+#300031
+&GIn the Garden&D~
+The royal gardens; bright flowers and rich foilage are all around.  The
+intoxicating smell of wild flowers is abundant here, and the sounds of
+wildlife can be heard all around. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300032
+D3
+~
+~
+0 -1 300030
+S
+#300032
+&GIn the Garden&D~
+This must be the hunting grounds of a wild beast, as there are bones of
+small animals strewn about, and some of the foilage and flowers have been
+trampled down.  A small bed of some sort is made in near the base of a
+tree, using trampled grass and a leaf for water collection 
+~
+0 4 1
+D1
+~
+~
+0 -1 300033
+D3
+~
+~
+0 -1 300031
+S
+#300033
+&GIn the Garden&D~
+The vegetation is much thicker here, probably due to the spring that is
+bubbling to the south.  The bright red of a rose bush can be seen to the
+east, and sounds of a large creature can be heard to the west. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300017
+D1
+~
+~
+0 -1 300037
+D3
+~
+~
+0 -1 300032
+S
+#300034
+&GIn the Garden&D~
+A hedge wall runs along the eastern wall and comes to a stop at the bank
+of a bubbling brook.  The brook flows towards the west but it seems
+impossible to find out where the source is.  The wall is covered with many
+different flowers, and is a mural of color. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300035
+D3
+~
+~
+0 -1 300033
+S
+#300035
+&GIn the Garden&D~
+There is a hedge wall made of some sort of bush that is covering the
+eastern wall.  It extends to the northern wall and runs to the west.  To
+the west the wall of the castle can be seen. 
+~
+0 4 1
+D2
+~
+~
+0 -1 300034
+D3
+~
+~
+0 -1 300017
+S
+#300036
+The Palace Doors~
+Here stands a pair of mighty metal doors, colored a deep rose red.  The
+doors stand about fifteen feet in hieght, dwarfing even the largest of
+visitors.  Both doors are guarded by a pair of Hydian guards, intent on not
+letting any rabble into the castle. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300003
+D2
+~
+~
+0 -1 300029
+S
+#300037
+&gIn the Garden~
+~
+0 4 1
+D3
+~
+~
+0 -1 300033
+S
+#300038
+&zDescending the Stairs.~
+Dark shadows flicker across the stairs, the descent is slippery and the
+stairs are crumbling.  The sound of odd chanting can be heard off in the
+distance. 
+~
+0 13 0
+D4
+~
+~
+0 -1 300005
+D5
+~
+~
+0 -1 300039
+S
+#300039
+&zA Dark Hall~
+The room is small and square, the stairs going up are along the eastern
+wall and there is a small metal ladder going down in the center of the
+room.  A large iron door is closed to the north. 
+~
+0 13 0
+D0
+~
+~
+7 300005 300040
+D4
+~
+~
+0 -1 300038
+D5
+~
+~
+0 -1 300041
+S
+#300040
+&zA Shrine?&D~
+A shrine to some dark god is built here.  Blood is caked on the side,
+and fresher blood runs down the front of the altar, dripping from the
+corpse of a hydian child. torches line the wall, giving this room eerie
+shadows. 
+~
+0 13 0
+D2
+~
+~
+7 300005 300039
+S
+#300041
+&OA Rusty Ladder~
+A rusty ladder barely clings to the wall, descending into the dark
+descents.  The path above doesn't seem to provide any better options. 
+~
+0 13 0
+D4
+~
+~
+0 -1 300039
+D5
+~
+~
+0 -1 300042
+S
+#300042
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  A rusty ladder is
+here leading up into dark depths.  The walls are made of some sort of
+stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D3
+~
+~
+0 -1 300044
+D4
+~
+~
+0 -1 300041
+D6
+~
+~
+0 -1 300043
+S
+#300043
+&BCurve in the Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D0
+~
+~
+0 -1 300057
+D9
+~
+~
+0 -1 300042
+S
+#300044
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D1
+~
+~
+0 -1 300042
+D3
+~
+~
+0 -1 300045
+S
+#300045
+&B Entering the Castle Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+A small grating can be seen above, this is where the water is pouring from.
+~
+0 13 0
+D0
+~
+~
+0 -1 300060
+D1
+~
+~
+0 -1 300044
+D4
+~
+~
+1 -1 300046
+S
+#300046
+&bUnder the Castle&D~
+The water seems to lead under the castle, a small grating is below.  The
+water seems to be drainig out of that.  The walls of the castle are worn
+smooth from the constant flow of water. 
+~
+0 5 8
+D3
+~
+~
+0 -1 300047
+D5
+~
+~
+1 -1 300045
+S
+#300047
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  A small opening can be seen to the
+east, just large enough for a person to swim through. 
+~
+0 4 8
+D0
+~
+~
+0 -1 300048
+D1
+~
+~
+0 -1 300046
+D2
+~
+~
+0 -1 300052
+D3
+~
+~
+0 -1 300020
+D4
+~
+~
+0 -1 300049
+S
+#300048
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D0
+~
+~
+0 -1 300055
+D2
+~
+~
+0 -1 300047
+D3
+~
+~
+0 -1 300019
+D4
+~
+~
+0 -1 300050
+S
+#300049
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300050
+D2
+~
+~
+0 -1 300051
+D3
+~
+~
+0 -1 300024
+D5
+~
+~
+0 -1 300047
+S
+#300050
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300056
+D2
+~
+~
+0 -1 300049
+D3
+~
+~
+0 -1 300018
+D5
+~
+~
+0 -1 300048
+S
+#300051
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 300049
+D3
+~
+~
+0 -1 300023
+D5
+~
+~
+0 -1 300052
+S
+#300052
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D0
+~
+~
+0 -1 300047
+D3
+~
+~
+0 -1 300021
+D4
+~
+~
+0 -1 300051
+S
+#300053
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D1
+~
+~
+0 -1 300056
+D2
+~
+~
+0 -1 300018
+D5
+~
+~
+0 -1 300054
+S
+#300054
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D1
+~
+~
+0 -1 300055
+D2
+~
+~
+0 -1 300019
+D4
+~
+~
+0 -1 300053
+S
+#300055
+&bBelow the Royal Pond&D~
+Freezing water!  Murky shadows swim all around, as the mud from the
+ground sucks up anything trying to walk on it.  Blue-green algea floats
+lazily by, being eaten by random fish.  
+~
+0 4 8
+D2
+~
+~
+0 -1 300048
+D3
+~
+~
+0 -1 300054
+D4
+~
+~
+0 -1 300056
+S
+#300056
+&CFloating above the Royal Pond&D~
+Crystal clear water is churning softly in the wind below.  The sun
+reflecting off of it.  Small shadows can be seen swimming under the water. 
+A soft breeze flows across the water. 
+~
+0 16777220 9
+D2
+~
+~
+0 -1 300050
+D3
+~
+~
+0 -1 300053
+D5
+~
+~
+0 -1 300055
+S
+#300057
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D2
+~
+~
+0 -1 300043
+D3
+~
+~
+0 -1 300058
+S
+#300058
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D1
+~
+~
+0 -1 300057
+D3
+~
+~
+0 -1 300059
+S
+#300059
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D1
+~
+~
+0 -1 300058
+D9
+~
+~
+0 -1 300060
+S
+#300060
+&BThe Aquaducts~
+Water runs through here, ankle deep, and chilling.  The walls are made
+of some sort of stone, and are worn smooth by the constant rush of water. 
+~
+0 13 0
+D2
+~
+~
+0 -1 300045
+D6
+~
+~
+0 -1 300059
+S
+#300061
+&PCherry Blossoms&D~
+The pathway from the city has led into a rich forest of what look to be
+Earth's cherry blossom trees.  The trees are bright pink and still vibrant.
+The pathway is covered with the beautiful petals that have blown from the
+trees. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300029
+D2
+~
+~
+0 -1 300062
+S
+#300062
+A Cobblestone Path~
+A cobblestone walkway leads into a grove of cherry blossoms.  Beyond
+that the castle can be seen in stark contrast to the sky.  Children run
+around here, only to be turned away by the guards. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300061
+D2
+~
+~
+0 -1 300063
+S
+#300063
+Intersection of &PRoyal Way &Wand &RRose Street&D~
+This is the intersection of Royal way and Rose street.  This is probably
+the busiest street in the city, with the castle to the north and the royal
+academy off to the east.  The large portion of the city is to the south. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300062
+D1
+~
+~
+0 -1 300064
+D2
+~
+~
+0 -1 300107
+D3
+~
+~
+0 -1 300080
+S
+#300064
+&RRose Street&D~
+Neon street lights are along the side walk as, hydian citizens walk to
+or from thier daily routines.  The buzz of the city can be heard all
+around.  
+~
+0 0 1
+D1
+~
+~
+0 -1 300066
+D3
+~
+~
+0 -1 300063
+S
+#300065
+Before the &PHydian Royal Acadamy~
+The hydian royal acadamy looms up here, a giant building amongst the
+smaller houses to the south.  Many odd sounds can be heard from the inside;
+grunting, slamming, and explosions can all be heard. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300067
+D2
+~
+~
+0 -1 300066
+S
+#300066
+&RRose Street&D~
+Rose street intersects with the path into the hydian royal acadamy. 
+Students can be seen heading to or from class, or just lounging about
+enjoying the shade the trees provide. The sounds of fighting can be heard
+from within the building as the martial arts dojo is in the first section. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300065
+D1
+~
+~
+0 -1 300078
+D3
+~
+~
+0 -1 300064
+S
+#300067
+Entrance to the &PHydian Royal Acadamy~
+Eletronic doors are here, admitting anyone who approaches.  It would
+seem the doors have little purpose other then to keep out the elements, as
+this building is open all day, every day.  Many freshmen head in with a
+look of fear, hearing the sounds of beating within the walls. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300068
+D2
+~
+~
+0 -1 300065
+S
+#300068
+&PRoyal Acadamy&W - &CMain Lobby~
+The main hall of the royal acadmy, polished marble lines the floor and
+thick oak is for the walls, the passing students can be seen in the shine
+of the floor.  To the east is a well used hospital wing, and to the west is
+a student store.  North leads to the battle areas for new students to train
+in the martial arts. 
+~
+0 12 0
+D0
+~
+~
+0 -1 300071
+D1
+~
+~
+1 -1 300070
+D2
+~
+~
+0 -1 300067
+D3
+~
+~
+1 -1 300069
+S
+#300069
+&PRoyal Acadamy &W- &CStudent Store~
+All sorts of merchandise is in this store, ranging from battle armor to
+text books and t-shirts.  This store has everything an aspiring student can
+use.  Although the attendant doesn't look terribly enthusiastic. 
+~
+0 12 0
+D1
+~
+~
+1 -1 300068
+S
+#300070
+&PRoyal Acadamy&W - &CNurse's Office~
+This room is unbearable sterile, white walls, white floor, even the
+nurse is wearing white.  The beds have white sheets, and the sun coming
+through the windows seems to be white.  The floor has a sad effect of
+squeaking when walked upon.  Hurt hydian students lie upon beds,
+recovering, but a few still remain for new arrivals. 
+~
+0 536870916 0
+D3
+~
+~
+1 -1 300068
+S
+#300071
+&PRoyal Acadamy&W - &CBefore the Grand Staircase~
+Marble floors lead to a beautifully carved staircase that leads to the
+upper floor of the school.  Halls lead off to the east and west, to varying
+sectors of the acadamy.  A sign floats here, for new students. 
+~
+0 4 0
+D1
+~
+~
+0 -1 300072
+D2
+~
+~
+0 -1 300068
+D3
+~
+~
+0 -1 300074
+D4
+~
+~
+0 -1 300076
+E
+look sign~
+&YWelcome to the Hydian Royal Acadamy!
+
+Beginning Training Area -------->WEST
+
+EAST<-----------Intermediate Training Area
+
+Upstairs: Advanced Training Area
+~
+S
+#300072
+&PRoyal Acadamy&W - &CHall to the Beginning Training Area~
+The long hall ends with a small door leading north, the door itself
+seems unassuming, written in bold white paint on the door says: Beginning
+Training Hall!  Enter only if your ready to challenge yourself!  
+~
+0 12 0
+D0
+~
+~
+0 -1 300073
+D3
+~
+~
+0 -1 300071
+S
+#300073
+&PRoyal Acadamy&W - &CBeginning Training Area~
+This room seems similar in design to the traditional Earth style dojo,
+the walls appear to be made of bamboo, while the floor is covered in straw
+mats.  A single man stands in the center of the room, waiting for an
+opponent. 
+~
+0 12 0
+D2
+~
+~
+0 -1 300072
+S
+#300074
+&PRoyal Acadamy&W - &CHall to the Intermediate Training Area~
+He long hall ends with a small door leading north, the door itself seems
+unassuming, written in bold white paint on the door says: Intermediate
+Training Hall!  Enter only if your ready to challenge yourself!  
+~
+0 12 0
+D0
+~
+~
+0 -1 300075
+D1
+~
+~
+0 -1 300071
+S
+#300075
+&PRoyal Acadamy&W - &CIntermediate Training Area~
+This room seems similar in design to the traditional Earth style dojo,
+the walls appear to be made of bamboo, while the floor is covered in straw
+mats.  A single man stands in the center of the room, waiting for an
+opponent.  
+~
+0 12 0
+D2
+~
+~
+0 -1 300074
+S
+#300076
+&PRoyal Acadamy&W - &CHall to the Advanced Training Area~
+He long hall ends with a small door leading north, the door itself seems
+unassuming, written in bold white paint on the door says: Advanced Training
+Hall!  Enter only if your ready to challenge yourself!  To the east and
+west are two small doors, one metal the other oak. 
+~
+0 12 0
+D0
+~
+~
+0 -1 300077
+D1
+~
+~
+0 -1 300085
+D3
+~
+~
+0 -1 300086
+D5
+~
+~
+0 -1 300071
+S
+#300077
+&PRoyal Acadamy&W - &CAdvanced Training Area~
+This room seems similar in design to the traditional Earth style dojo,
+the walls appear to be made of bamboo, while the floor is covered in straw
+mats.  A single man stands in the center of the room, waiting for an
+opponent.  
+~
+0 12 0
+D2
+~
+~
+0 -1 300076
+S
+#300078
+&RRose Street&D~
+Neon street lights are along the side walk as, hydian citizens walk to
+or from thier daily routines.  The buzz of the city can be heard all
+around.  
+~
+0 4 1
+D1
+~
+~
+0 -1 300079
+D3
+~
+~
+0 -1 300066
+S
+#300079
+Corner of &RRose Street &Wand &CLily Street~
+The residential area leads into the acadamy zone here.  Many hydian
+teens can be seen heading to classes or heading back home.  Most though,
+are just slacking and lying about. 
+~
+0 4 1
+D2
+~
+~
+0 -1 300109
+D3
+~
+~
+0 -1 300078
+S
+#300080
+&RRose Street&D~
+Neon street lights are along the side walk as, hydian citizens walk to
+or from thier daily routines.  The buzz of the city can be heard all
+around. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300063
+D3
+~
+~
+0 -1 300081
+S
+#300081
+&RRose Street&D~
+Hydian soldiers patrol this area, looking for rebels.  To the south a
+large neon sign says: Dario's Shoppe.  A few cherry blossoms from the grove
+have found thier way to this street and float lazily around. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300080
+D2
+~
+~
+0 -1 300084
+D3
+~
+~
+0 -1 300082
+S
+#300082
+&RRose Street&D~
+Red brick lies along the street, giving this area it's name.  A street
+light flikers, threatening to go out at any moment, while bugs flock to it
+like a moth to a..........light.... 
+~
+0 4 1
+D1
+~
+~
+0 -1 300081
+D3
+~
+~
+0 -1 300083
+S
+#300083
+Corner of &RRose Street&W and &YDandelion Way&D~
+The connection of Rose Street and Dandelion way, tall buildings are all
+around, and to the north the palace lake can be seen through the buildings.
+~
+0 4 1
+D1
+~
+~
+0 -1 300082
+D2
+~
+~
+0 -1 300087
+S
+#300084
+&CDario's Equipment Shoppe~
+Armor of various styles lines the walls, while gauntlets and other
+accessories are displayed in glass cases.  The shop owner is here, looking
+over his merchandise. 
+~
+0 12 0
+D0
+~
+~
+0 -1 300081
+S
+#300085
+&PRoyal Acadamy &W- &CTraining Professor~
+A small room, covered in metal plating, so to absorb the brunt of all
+attacks sent it's way.  Many scorch marks are along the walls and quite a
+few dents.  A man stands in the center of the room, waiting for the
+oppurtunity to show off his moves. 
+~
+0 12 0
+D3
+~
+~
+0 -1 300076
+S
+#300086
+&PRoyal Acadamy &W- &CGravity Enhancement Room~
+A large computer aligns the northern wall, with many buttons and
+flashing screens.  The room itself is made of some sort of lightweight
+metal, to keep it from collapsing in on itself when the gravity is
+enhanced.  Although there are still a few dents in th floor from a few
+students who went a bit to high. 
+~
+0 268435468 0
+D1
+~
+~
+0 -1 300076
+S
+#300087
+&YDandelion Way&D~
+Tall buildings line this street giving it a constant overcast look. 
+This street being so close to the city wall is not often used and so, is in
+much disrepair. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300083
+D2
+~
+~
+0 -1 300088
+S
+#300088
+&YDandelion Way&D~
+Tall buildings line this street giving it a constant overcast look. 
+This street being so close to the city wall is not often used and so, is in
+much disrepair. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300087
+D2
+~
+~
+0 -1 300089
+S
+#300089
+&YDandelion Way&D~
+Tall buildings line this street giving it a constant overcast look. 
+This street being so close to the city wall is not often used and so, is in
+much disrepair. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300088
+D2
+~
+~
+0 -1 300090
+S
+#300090
+Intersection of &YDandelion Way&W and Magnolia Avenue&D~
+This is where Dandelion Way meets Magnolia Avenue, which is thought of
+as the city's main street, as it runs all the way through the town square. 
+It seems to get more travel then the rest of Dandelion Way. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300089
+D1
+~
+~
+0 -1 300108
+D2
+~
+~
+0 -1 300091
+S
+#300091
+&YDandelion Way&D~
+Tall buildings line this street giving it a constant overcast look. 
+This street being so close to the city wall is not often used and so, is in
+much disrepair. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300090
+D2
+~
+~
+0 -1 300092
+S
+#300092
+&YDandelion Way&D~
+Tall buildings line this street giving it a constant overcast look. 
+This street being so close to the city wall is not often used and so, is in
+much disrepair.  To the east a shop actually seems to be open for business.
+~
+0 4 1
+D0
+~
+~
+0 -1 300091
+D1
+~
+~
+0 -1 300094
+D2
+~
+~
+0 -1 300093
+S
+#300093
+Corner of &YDandelion Way&W and&P Cherry Blossom Avenue&D~
+This is the avenue where two streets connect, the dilapitated Dandelion
+Way connects with the well used and upkept Cherry Blossom Avenue.  The
+southern wall of the city looms up greatly here, blocking out almost all
+natural light. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300092
+D1
+~
+~
+0 -1 300095
+S
+#300094
+&CJulia's Repair-em-cheap!~
+This shop seems to be filled to the brim with odd machines.  Everything
+from sewing machines to armor repairing machines.  The sound of mechanics
+is loud and constant.  The owner of this shop is a small girl no more then
+fifteen years old.  Yet she wields her hammer with an assurance that most
+older people wouldn't have. 
+~
+0 4 0
+D3
+~
+~
+0 -1 300092
+S
+#300095
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300096
+D3
+~
+~
+0 -1 300093
+S
+#300096
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300097
+D3
+~
+~
+0 -1 300095
+S
+#300097
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. A large gate is to the south, it is opened to visitors
+but is heavily guarded. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300098
+D2
+~
+~
+0 -1 300126
+D3
+~
+~
+0 -1 300096
+S
+#300098
+Intersection of &PCherry Blossom Avenue &Wand &PRoyal Way&D~
+Cherry Blossom avenue intersects with Royal Way here, this street leads
+straight north into the castle, it is one of the busiest streets as it also
+connects with the town square.  Many people are trying to pass through this
+small intersection. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300100
+D1
+~
+~
+0 -1 300099
+D3
+~
+~
+0 -1 300097
+S
+#300099
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 4 1
+D1
+~
+~
+0 -1 300117
+D3
+~
+~
+0 -1 300098
+S
+#300100
+&PRoyal Avenue~
+This street leads straight north to the castle, a few soldiers travel
+along it's path keeping peace, and watching for rebels.  Neon lights give
+this street an eery glow even during the day. 
+~
+0 4 1
+D0
+~
+~
+0 -1 300103
+D2
+~
+~
+0 -1 300098
+S
+#300101
+Magnolia Avenue~
+Tall buildings overshadow this buys street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300103
+D3
+~
+~
+0 -1 300102
+S
+#300102
+Magnolia Avenue~
+Tall buildings overshadow this buys street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300101
+D3
+~
+~
+0 -1 300108
+S
+#300103
+Town Square~
+This section of town has had all the streets circled around it, a large
+square area is made of red clay, and planted right in the center of
+Magnolia Avenue and Royal Way.  Many citizens sit around and chat,
+overshadowed by a giant statue of a former hydian ruler. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300104
+D2
+~
+~
+0 -1 300100
+D3
+~
+~
+0 -1 300101
+D6
+~
+~
+0 -1 300120
+S
+#300104
+&PRoyal Way~
+This street leads straight north to the castle, a few soldiers travel
+along it's path keeping peace, and watching for rebels.  Neon lights give
+this street an eery glow even during the day. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300105
+D2
+~
+~
+0 -1 300103
+S
+#300105
+&PRoyal Way~
+This street leads straight north to the castle, a few soldiers travel
+along it's path keeping peace, and watching for rebels.  Neon lights give
+this street an eery glow even during the day. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300106
+D1
+~
+~
+0 -1 300123
+D2
+~
+~
+0 -1 300104
+S
+#300106
+&PRoyal Way~
+This street leads straight north to the castle, a few soldiers travel
+along it's path keeping peace, and watching for rebels.  Neon lights give
+this street an eery glow even during the day. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300107
+D2
+~
+~
+0 -1 300105
+S
+#300107
+&PRoyal Way~
+This street leads straight north to the castle, a few soldiers travel
+along it's path keeping peace, and watching for rebels.  Neon lights give
+this street an eery glow even during the day. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300063
+D2
+~
+~
+0 -1 300106
+S
+#300108
+Magnolia Avenue~
+Tall buildings overshadow this buys street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300102
+D3
+~
+~
+0 -1 300090
+S
+#300109
+&CLily Street&D~
+Lily street is the residential section of the city, and as such is one
+of the cleanest looking streets.  There are many neatly cut yards, all with
+immaculate gardens, huge trees bear fresh fruit, and many hydian citizens
+are seen in thier houses. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300079
+D2
+~
+~
+0 -1 300110
+S
+#300110
+&CLily Street&D~
+Lily street is the residential section of the city, and as such is one
+of the cleanest looking streets.  There are many neatly cut yards, all with
+immaculate gardens, huge trees bear fresh fruit, and many hydian citizens
+are seen in thier houses. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300109
+D2
+~
+~
+0 -1 300111
+S
+#300111
+&CLily Street&D~
+Lily street is the residential section of the city, and as such is one
+of the cleanest looking streets.  There are many neatly cut yards, all with
+immaculate gardens, huge trees bear fresh fruit, and many hydian citizens
+are seen in thier houses. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300110
+D2
+~
+~
+0 -1 300112
+D3
+~
+~
+0 -1 300121
+S
+#300112
+Intersection of &CLily Street &Wand Magnolia Avenue~
+A turbocar has run into a house here, the hustle and bustle of the city
+seems to be unaffected by it, and most citizens are just ignoring the
+flaming wreckage.  A few people give it a glance but hurry on thier way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300111
+D2
+~
+~
+0 -1 300113
+D3
+~
+~
+0 -1 300118
+S
+#300113
+&CLily Street&D~
+Lily street is the residential section of the city, and as such is one
+of the cleanest looking streets.  There are many neatly cut yards, all with
+immaculate gardens, huge trees bear fresh fruit, and many hydian citizens
+are seen in thier houses. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300112
+D2
+~
+~
+0 -1 300114
+S
+#300114
+&CLily Street&D~
+Lily street is the residential section of the city, and as such is one
+of the cleanest looking streets.  There are many neatly cut yards, all with
+immaculate gardens, huge trees bear fresh fruit, and many hydian citizens
+are seen in thier houses. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300113
+D2
+~
+~
+0 -1 300115
+S
+#300115
+Corner of &PCherry Blossom Avenue &Wand &CLily Street&D~
+This intersection leads to the residential section of the city, most of
+the middle class citizens are coming and going here.  Many hydian workers
+are heading to the spaceport or to the local shops for jobs. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300114
+D1
+~
+~
+0 -1 300124
+D3
+~
+~
+0 -1 300116
+S
+#300116
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300115
+D3
+~
+~
+0 -1 300117
+S
+#300117
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 0 1
+D0
+~
+~
+0 -1 300122
+D1
+~
+~
+0 -1 300116
+D3
+~
+~
+0 -1 300099
+S
+#300118
+Magnolia Avenue~
+Tall buildings overshadow this buys street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300112
+D3
+~
+~
+0 -1 300119
+S
+#300119
+Magnolia Avenue~
+Tall buildings overshadow this busy street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300118
+D3
+~
+~
+0 -1 300120
+S
+#300120
+Magnolia Avenue~
+Tall buildings overshadow this buys street, hydian citizens walk
+together in herds, heading to thier daily routines.  Special Hydian made
+cars nearly run down pedestrians in an attempt to be the first to the stop
+light. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300119
+D9
+~
+~
+0 -1 300103
+S
+#300121
+&pThe Wilted Petal~
+This shop seems to be made to attract bugs and rodents.  The lighting is
+quite dim and the smell is of mold and old boxes.  The shop owner seems to
+be quite comfortable in these surroundings.  The shop has no windows in
+which to let in the light of day. 
+~
+0 12 0
+D1
+~
+~
+0 -1 300111
+S
+#300122
+&GLisa Tailor~
+A small shop, crowded with many clothes racks, the back wall has a door
+leading to the storage section of the shop.  Many purples and pinks seem to
+be the main color here, and a lot of it is really frilly. 
+~
+0 12 0
+D2
+~
+~
+0 -1 300117
+S
+#300123
+&CCrystal's Jewelry&D~
+This shop is extremly bright, the strong overhead lights seem to reflect
+off of the jewelry and cast a massive prism effect though out the shop and
+into the nearby street.  The shop owner seems to be made of a multitude of
+color, as she is wearing almost as much jewelry as she is selling.  The
+display cases are lined with thousands of different jewels and accessories.
+~
+0 12 0
+D3
+~
+~
+0 -1 300105
+S
+#300124
+&PCherry Blossom Avenue&D~
+This street runs along the southern wall of the city, connecting to the
+main gate.  It is highly used and thus also overpopulated.  Many loud roars
+can be heard from the south along with crashing, as if trees were being
+uprooted and thrown. 
+~
+0 0 1
+D1
+~
+~
+0 -1 300125
+D3
+~
+~
+0 -1 300115
+S
+#300125
+&YHydian Spaceport&D~
+They hydian spaceport is one of the main sources of jobs on this planet,
+and as such is gigantic.  Many hydian middle class citizens are working
+here, doing manual labor, such as cleaning the ships or carrying baggage.
+Many ships can be seen flying into space, and a large platform in the
+center is saved for the homeworld transport ship. 
+~
+0 4 1
+D3
+~
+~
+0 -1 300124
+S
+#300126
+Entering &RRose City~
+A giant wall stand to the north, blocking all entrance into the city
+except through the gates.  Several Hydian soldiers guard the gate to detour
+any would-be rebels from entering the city.  To the south a large forest is
+visible. 
+~
+0 4 2
+D0
+~
+~
+0 -1 300097
+D2
+~
+~
+0 -1 300127
+S
+#300127
+Path to civilization~
+The dirt path leading from the forest has begun to turn into a paved
+path.  A large wall can be seen to the north as the last of the trees
+decline.  Sounds of the hustle and bustle of civilization can be heard even
+from here. 
+~
+0 0 2
+D0
+~
+~
+0 -1 300126
+D2
+~
+~
+0 -1 300128
+S
+#300128
+Leaving the woods~
+This area seems to be a neutral zone, between the advanced wilds of the
+city and the primitive wilds of the forest.  Very few travelers are seen
+here, as this area is still mostly unprotected and any number of strange
+beasts can appear. 
+~
+0 0 2
+D0
+~
+~
+0 -1 300127
+D2
+~
+~
+0 -1 300129
+S
+#300129
+&GThinning Trees&D~
+As the trees begin the thin out, A city can be seen to the north.  The
+dirt path that is here is quickly turning into a paved pathway.  Rock walls
+rise on either side as the path leads deeper into a vally.  The wilds of
+the forest are being replaced with well cut shrubs and flowers on both
+sides of the path, and a few hedges overhanging it. 
+~
+0 4 3
+D0
+~
+~
+0 -1 300128
+D2
+~
+~
+0 -1 300130
+S
+#300130
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh. 
+~
+0 0 3
+D0
+~
+~
+0 -1 300129
+D8
+~
+~
+0 -1 300131
+S
+#300131
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around. Small brush crunches underfoot,
+and the smell of rain is still fresh. 
+~
+0 0 3
+D0
+~
+~
+0 -1 300132
+D6
+~
+~
+0 -1 300133
+D7
+~
+~
+0 -1 300130
+S
+#300132
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D1
+~
+~
+0 -1 300133
+D2
+~
+~
+0 -1 300131
+S
+#300133
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D3
+~
+~
+0 -1 300132
+D6
+~
+~
+0 -1 300134
+D9
+~
+~
+0 -1 300131
+S
+#300134
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D0
+~
+~
+0 -1 300135
+D9
+~
+~
+0 -1 300133
+S
+#300135
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D1
+~
+~
+0 -1 300136
+D2
+~
+~
+0 -1 300134
+S
+#300136
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D1
+~
+~
+0 -1 300137
+D3
+~
+~
+0 -1 300135
+S
+#300137
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 4 3
+D1
+~
+~
+0 -1 300139
+D3
+~
+~
+0 -1 300136
+D8
+~
+~
+0 -1 300138
+S
+#300138
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300145
+D7
+~
+~
+0 -1 300137
+D9
+~
+~
+0 -1 300140
+S
+#300139
+&GHydian Woods~
+The woods are dark and damp, the sound of small animals can be heard
+from all around.  Chittering and chirping.  The sound of rustling can be
+heard overhead as small shapes dart around.  Small brush crunches
+underfoot, and the smell of rain is still fresh.  
+~
+0 0 3
+D3
+~
+~
+0 -1 300137
+S
+#300140
+&GHydian Woods&D~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D6
+~
+~
+0 -1 300138
+S
+#300141
+&gHydian Forest~
+~
+0 0 3
+D3
+~
+~
+0 -1 300138
+D6
+~
+~
+0 -1 300142
+S
+#300142
+&gHydian Forest~
+~
+0 0 3
+D0
+~
+~
+0 -1 300144
+D1
+~
+~
+0 -1 300143
+D9
+~
+~
+0 -1 300141
+S
+#300143
+&gHydian Forest~
+~
+0 0 3
+D3
+~
+~
+0 -1 300142
+S
+#300144
+&gHydian Forest~
+~
+0 0 3
+D2
+~
+~
+0 -1 300142
+S
+#300145
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D2
+~
+~
+0 -1 300146
+D3
+~
+~
+0 -1 300138
+S
+#300146
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D0
+~
+~
+0 -1 300145
+D3
+~
+~
+0 -1 300147
+S
+#300147
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300146
+D3
+~
+~
+0 -1 300149
+D9
+~
+~
+0 -1 300148
+S
+#300148
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D3
+~
+~
+0 -1 300150
+D6
+~
+~
+0 -1 300147
+S
+#300149
+&GHydian Woods~
+This part of the forest seems to be alive in some way.  The trees move
+with an eery rythm, and strange sounds can be heard from all around.  The
+wind is howling softlly through the branches of the trees, giving the
+effect of whispering. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300147
+S
+#300150
+&GHydian Woods~
+This small clearing seems to be quite peaceful.  The sounds of crashing
+can be heard to the west, but it does not seem to be getting any closer. 
+To the east the howling wind can still be heard, and the occasional flash
+of white rushes through the trees.  To the north is a cheery looking cabin,
+white smoke billows out from the chimeny. 
+~
+0 4 3
+D0
+~
+~
+3 -1 300151
+D1
+~
+~
+0 -1 300148
+D3
+~
+~
+0 -1 300152
+S
+#300151
+&OA Hut in the Woods~
+The warm air of the cabin is obvious as soon as the door is opened.  A
+bright fire burns merrily in the fireplace on the northern wall.  A few
+small beds line the western wall, along with a window overlooking the
+western section of forest.  A small table is here, laden with foods of
+varying sorts.  Truly this place has all the comforts of home. 
+~
+0 536870924 0
+D2
+~
+~
+3 -1 300150
+S
+#300152
+&GHydian Woods~
+This section of forest seems to be part of a warzone.  Several trees
+seem to have chunks missing out of them, and even more are knocked flat. 
+Giant shadows can be seen flying overhead as the sound of crashing trees
+rebounds through out the forest. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300150
+D9
+~
+~
+0 -1 300153
+S
+#300153
+&GHydian Woods~
+This section of forest seems to be part of a warzone.  Several trees
+seem to have chunks missing out of them, and even more are knocked flat. 
+Giant shadows can be seen flying overhead as the sound of crashing trees
+rebounds through out the forest. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300159
+D3
+~
+~
+0 -1 300154
+D6
+~
+~
+0 -1 300152
+S
+#300154
+&GHydian Woods~
+This area seems to be strangely quiet and all but free of the smaller
+wildlife.  The normal chirping and chittering is gone, replaced with the
+sound of the wind only.  The grass seems to be swaying and
+possibly.....moving. 
+~
+0 0 3
+D1
+~
+~
+0 -1 300153
+D3
+~
+~
+0 -1 300157
+D7
+~
+~
+0 -1 300155
+S
+#300155
+&GPath to a Nest~
+The trees in this area seem to be pushed towards the east from some
+powerful wind.  To the west is a large clearing where a giant nest can be
+seen even from here.  Sounds of squacking can be heard carried on the wind.
+Random shiney objects litter the path towards the nest, almost marking a
+trail. 
+~
+0 0 3
+D3
+~
+~
+0 -1 300156
+D8
+~
+~
+0 -1 300154
+S
+#300156
+&GA Huge Nest&D~
+This clearing has been made by the trees being blown down from a strong
+wind from above.  The trees were then taken and placed into the center in a
+giant nest, twice the size of a normal house.  The nest seems to be filled
+with different sparkling objects, 
+~
+0 4 3
+D1
+~
+~
+0 -1 300155
+S
+#300157
+&GHydian Woods~
+This area seems to be strangely quiet and all but free of the smaller
+wildlife.  The normal chirping and chittering is gone, replaced with the
+sound of the wind only.  The grass seems to be swaying and
+possibly.....moving.  
+~
+0 0 3
+D1
+~
+~
+0 -1 300154
+D2
+~
+~
+0 -1 300158
+S
+#300158
+&GHydian Woods~
+This area seems to be strangely quiet and all but free of the smaller
+wildlife.  The normal chirping and chittering is gone, replaced with the
+sound of the wind only.  The grass seems to be swaying and
+possibly.....moving.  
+~
+0 0 3
+D0
+~
+~
+0 -1 300157
+S
+#300159
+&GHydian Woods~
+This section of forest seems to be part of a warzone.  Several trees
+seem to have chunks missing out of them, and even more are knocked flat. 
+Giant shadows can be seen flying overhead as the sound of crashing trees
+rebounds through out the forest. 
+~
+0 0 3
+D2
+~
+~
+0 -1 300160
+D3
+~
+~
+0 -1 300153
+S
+#300160
+&GHydian Woods~
+This section of forest seems to be part of a warzone.  Several trees
+seem to have chunks missing out of them, and even more are knocked flat. 
+Giant shadows can be seen flying overhead as the sound of crashing trees
+rebounds through out the forest.  An overpowering stench is coming from a
+large cave to the south.  Several blood trails lead into the cave, and the
+sound of cackling can be heard from within. 
+~
+0 0 3
+D0
+~
+~
+0 -1 300159
+D1
+~
+~
+0 -1 300161
+D2
+~
+~
+0 -1 300162
+S
+#300161
+&GHydian Woods~
+This section of forest seems to be part of a warzone.  Several trees
+seem to have chunks missing out of them, and even more are knocked flat. 
+Giant shadows can be seen flying overhead as the sound of crashing trees
+rebounds through out the forest. 
+~
+0 0 3
+D3
+~
+~
+0 -1 300160
+S
+#300162
+&zA Cave Opening&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away. 
+~
+0 13 0
+D0
+~
+~
+0 -1 300160
+D2
+~
+~
+0 -1 300163
+S
+#300163
+&zA Cave in the Woods&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away.  
+~
+0 9 0
+D0
+~
+~
+0 -1 300162
+D1
+~
+~
+0 -1 300164
+D2
+~
+~
+0 -1 300166
+D8
+~
+~
+0 -1 300165
+S
+#300164
+&zA Cave in the Woods&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away.  
+~
+0 9 0
+D2
+~
+~
+0 -1 300165
+D3
+~
+~
+0 -1 300163
+S
+#300165
+&zA Cave in the Woods&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away.  
+~
+0 9 0
+D0
+~
+~
+0 -1 300164
+D1
+~
+~
+0 -1 300166
+D7
+~
+~
+0 -1 300163
+S
+#300166
+&zA Cave in the Woods&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away.  
+~
+0 9 0
+D0
+~
+~
+0 -1 300163
+D3
+~
+~
+0 -1 300165
+D8
+~
+~
+0 -1 300167
+S
+#300167
+&zA Cave in the Woods&D~
+The pungent smell of death is overpowering upon entering the cave. 
+Several small bones are littered around, it is impossible to tell what kind
+of animal they belong too.  The sound of cackling can be heard echoing
+through out the cave.  A strange slamming sound can be heard from a long
+distance away.  
+~
+0 9 0
+D5
+~
+~
+0 -1 300168
+D7
+~
+~
+0 -1 300166
+S
+#300168
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it. The smell of death is even
+stronger here, as if the source was close. 
+~
+0 9 0
+D0
+~
+~
+0 -1 300169
+D4
+~
+~
+0 -1 300167
+S
+#300169
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it.  The smell of death is even
+stronger here, as if the source was close.  
+~
+0 9 0
+D2
+~
+~
+0 -1 300168
+D6
+~
+~
+0 -1 300170
+S
+#300170
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it.  The smell of death is even
+stronger here, as if the source was close.  
+~
+0 9 0
+D0
+~
+~
+0 -1 300170
+D1
+~
+~
+0 -1 300171
+D2
+~
+~
+0 -1 300170
+D3
+~
+~
+0 -1 300170
+D6
+~
+~
+0 -1 300170
+D7
+~
+~
+0 -1 300170
+D8
+~
+~
+0 -1 300170
+D9
+~
+~
+0 -1 300169
+S
+#300171
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it.  The smell of death is even
+stronger here, as if the source was close.  
+~
+0 9 0
+D0
+~
+~
+0 -1 300172
+D1
+~
+~
+0 -1 300171
+D2
+~
+~
+0 -1 300171
+D3
+~
+~
+0 -1 300170
+D6
+~
+~
+0 -1 300191
+D7
+~
+~
+0 -1 300171
+D8
+~
+~
+0 -1 300171
+D9
+~
+~
+0 -1 300171
+S
+#300172
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it.  The smell of death is even
+stronger here, as if the source was close.  
+~
+0 13 0
+D0
+~
+~
+0 -1 300173
+D2
+~
+~
+0 -1 300171
+S
+#300173
+&zA Large Cavern&D~
+This large cavern seems to be man made, the walls are beaten smooth as
+if they were hit several times.  The ceiling is uneven and fairly low, as
+if something had hit it from below in an attempt to raise it.  This seems
+to be the center of the stench as this room is littered with bones of every
+shape and size.  One of the skulls seems to shine slightly. 
+~
+0 2097161 0
+D2
+~
+~
+0 -1 300172
+S
+#300174
+&zTalling's S&pa&zn&pc&zt&pu&za&pr&zy&D~
+This room seems to be in the center of a large shadow.  A huge throne
+lines what should be the northern wall.  In the center of the room is a
+huge glowing crystal ball, images of Earth flash on it.  Shadowy figures
+dart in and out, bringing different things to the Lord of this area. 
+~
+0 12 0
+E
+ball~
+As you look at the crystal ball, pictures of the happenings of Earth
+flash by.  A powerful Super Saiyan fights with a vicious Bio-android, while
+other warriors watch. Suddenly the picture changes and a strange man with a
+huge afro is showing off for television cameras. 
+~
+E
+throne~
+As you look at the throne, you can almost see someone in the shadows it
+casts.  As the shadows shift it seems that a pair of eyes appears, and
+seems to be looking right at you. 
+~
+S
+#300175
+A Highrise Apartment - 2nd Floor~
+~
+0 8 0
+D0
+~
+~
+0 -1 300180
+D1
+~
+~
+0 -1 300181
+D3
+~
+~
+0 -1 300182
+D4
+~
+~
+0 -1 300176
+D5
+~
+~
+0 -1 300174
+S
+#300176
+A Highrise Apartment - 3rd Floor~
+~
+0 8 0
+D0
+~
+~
+0 -1 300183
+D1
+~
+~
+0 -1 300184
+D3
+~
+~
+0 -1 300185
+D4
+~
+~
+0 -1 300186
+D5
+~
+~
+0 -1 300175
+S
+#300177
+Apartment 1-A~
+~
+0 0 1
+D2
+~
+~
+0 -1 300174
+S
+#300178
+Apartment 1-B~
+~
+0 0 1
+D3
+~
+~
+0 -1 300174
+S
+#300179
+Apartment 1-C~
+~
+0 0 1
+D1
+~
+~
+0 -1 300174
+S
+#300180
+Apartment 2-A~
+~
+0 0 1
+D2
+~
+~
+0 -1 300175
+S
+#300181
+Apartment 2-B~
+~
+0 0 1
+D3
+~
+~
+0 -1 300175
+S
+#300182
+Apartment 2-C~
+~
+0 0 1
+D1
+~
+~
+0 -1 300175
+S
+#300183
+Apartment 3-A~
+~
+0 0 1
+D2
+~
+~
+0 -1 300176
+S
+#300184
+Apartment 3-B~
+~
+0 0 1
+D3
+~
+~
+0 -1 300176
+S
+#300185
+Apartment 3-C~
+~
+0 0 1
+D1
+~
+~
+0 -1 300176
+S
+#300186
+A Highrise Apartment - 4th Floor~
+~
+0 0 1
+D0
+~
+~
+0 -1 300187
+D1
+~
+~
+0 -1 300188
+D3
+~
+~
+0 -1 300189
+D4
+~
+~
+7 300028 300190
+D5
+~
+~
+0 -1 300176
+S
+#300187
+Apartment 4-A~
+~
+0 0 1
+D2
+~
+~
+0 -1 300186
+S
+#300188
+Apartment 4-B~
+~
+0 0 1
+D3
+~
+~
+0 -1 300186
+S
+#300189
+Apartment 4-C~
+~
+0 0 1
+D1
+~
+~
+0 -1 300186
+S
+#300190
+On the Roof~
+~
+0 0 1
+D5
+~
+~
+4 -1 300186
+S
+#300191
+&zDeeper in the Cave&D~
+The darkness is almost inpenitrable.  The meager light cannot seem to
+light even the closest of walls, as if they were made of darkness itself. 
+The onyx of the cave can be heard crunching from all around, as though
+several things were walking all over it.  The smell of death is even
+stronger here, as if the source was close.  
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 300191
+D1
+~
+~
+0 -1 300170
+D2
+~
+~
+0 -1 300191
+D3
+~
+~
+0 -1 300191
+D6
+~
+~
+0 -1 300191
+D7
+~
+~
+0 -1 300191
+D8
+~
+~
+0 -1 300191
+D9
+~
+~
+0 -1 300171
+S
+#300199
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 300002 1 300001
+M 1 300002 1 300001
+D 0 300001 0 1
+M 1 300001 1 300000
+D 0 300000 2 1
+M 1 300004 1 300013
+D 0 300013 3 0
+M 1 300004 1 300015
+M 1 300002 1 300003
+M 1 300002 1 300003
+O 1 300006 1 300004
+M 1 300004 1 300007
+D 0 300007 1 0
+D 0 300007 3 0
+M 1 300004 1 300010
+D 0 300010 3 0
+M 1 300004 1 300012
+D 0 300012 3 0
+M 1 300005 1 300009
+D 0 300009 1 0
+M 1 300002 1 300036
+M 1 300002 1 300036
+M 1 300007 1 300031
+M 1 300029 1 300033
+M 1 300030 1 300018
+M 1 300030 1 300056
+M 1 300030 1 300049
+M 1 300006 1 300021
+M 1 300006 1 300019
+M 1 300006 1 300055
+M 1 300006 1 300047
+M 1 300024 1 300061
+M 1 300022 1 300061
+M 1 300024 1 300063
+M 1 300026 1 300063
+M 1 300032 1 300064
+M 1 300024 1 300064
+M 1 300000 1 300064
+M 1 300000 1 300066
+M 1 300026 1 300066
+M 1 300024 1 300066
+M 1 300033 1 300066
+M 1 300032 1 300078
+M 1 300022 1 300078
+M 1 300031 1 300080
+M 1 300026 1 300080
+M 1 300034 1 300081
+M 1 300032 1 300081
+M 1 300024 1 300081
+M 1 300034 1 300081
+M 1 300033 1 300082
+M 1 300024 1 300082
+M 1 300026 1 300082
+M 1 300000 1 300082
+M 1 300022 1 300083
+M 1 300022 1 300083
+M 1 300024 1 300088
+M 1 300000 1 300088
+M 1 300032 1 300088
+M 1 300026 1 300091
+M 1 300022 1 300091
+M 1 300032 1 300091
+M 1 300034 1 300095
+M 1 300031 1 300095
+M 1 300022 1 300097
+M 1 300022 1 300097
+M 1 300022 1 300117
+M 1 300024 1 300117
+M 1 300026 1 300117
+M 1 300032 1 300115
+M 1 300034 1 300115
+M 1 300033 1 300114
+M 1 300024 1 300113
+M 1 300026 1 300113
+M 1 300000 1 300113
+M 1 300034 1 300111
+M 1 300031 1 300111
+M 1 300022 1 300109
+M 1 300026 1 300109
+M 1 300000 1 300109
+M 1 300000 1 300118
+M 1 300022 1 300118
+M 1 300032 1 300118
+M 1 300022 1 300119
+M 1 300022 1 300119
+M 1 300031 1 300103
+M 1 300022 1 300103
+M 1 300024 1 300103
+M 1 300026 1 300103
+M 1 300000 1 300103
+M 1 300034 1 300103
+M 1 300032 1 300105
+M 1 300033 1 300105
+M 1 300034 1 300105
+M 1 300022 1 300106
+M 1 300034 1 300106
+M 1 300033 1 300106
+M 1 300026 1 300107
+M 1 300032 1 300107
+M 1 300026 1 300107
+M 1 300034 1 300102
+M 1 300024 1 300102
+M 1 300002 1 300126
+M 1 300002 1 300126
+M 1 300037 1 300130
+M 1 300038 1 300130
+M 1 300037 1 300132
+M 1 300037 1 300132
+M 1 300038 1 300133
+M 1 300037 1 300135
+M 1 300037 1 300137
+M 1 300039 1 300139
+M 1 300021 1 300138
+M 1 300021 1 300140
+M 1 300039 1 300145
+M 1 300021 1 300145
+M 1 300021 1 300147
+M 1 300039 1 300149
+M 1 300017 1 300151
+D 0 300151 2 1
+D 0 300150 0 1
+M 1 300020 1 300152
+M 1 300020 1 300153
+M 1 300020 1 300153
+M 1 300039 1 300159
+M 1 300020 1 300160
+M 1 300039 1 300160
+M 1 300040 1 300154
+M 1 300039 1 300154
+M 1 300040 1 300157
+M 1 300040 1 300158
+M 1 300020 1 300158
+M 1 300041 1 300156
+O 1 300038 1 300156
+P 0 300018 1 0
+M 1 300019 1 300163
+M 1 300043 1 300165
+M 1 300019 1 300165
+M 1 300043 1 300166
+M 1 300019 1 300166
+M 1 300019 1 300168
+M 1 300019 1 300170
+M 1 300019 1 300171
+M 1 300019 1 300191
+M 1 300043 1 300191
+M 1 300018 1 300173
+O 1 300021 1 300173
+P 0 300022 1 0
+D 0 300039 0 2
+M 1 300023 1 300040
+O 1 300007 1 300040
+O 1 300023 1 300040
+D 0 300040 2 2
+M 1 300044 1 300058
+M 1 300044 1 300060
+M 1 300044 1 300043
+M 1 300044 1 300044
+M 1 300044 1 300045
+D 0 300045 4 0
+S
+
+
+#SHOPS
+ 300011    0  0  0  0  0   100  90         0 23    ; Dario
+ 300014    0  0  0  0  0   100  90         0 23    ; Barry
+ 300015    9  5  1  0  0   100  35         0 23    ; Lisa
+ 300016    0  0  0  0  0   100  90         0 23    ; Crystal
+ 300028    0  0  0  0  0   100  90         0 23    ; a student store clerk
+0
+
+
+#REPAIRS
+ 300012    0  0  0         100   1         0 23    ; the Acadamy Sensai
+ 300013    0  0  0         100   1         0 23    ; Julia
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,2610 @@
+#AREA   Introduction To DBI~
+
+
+
+#VERSION 252
+#AUTHOR Celeste~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 1
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#7000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#7002
+namek dummy~
+Namek training dummy~
+A Namek training dummy is propped up here.
+~
+~
+67 0 0 C
+2 0 100 1d20+0 2d5+0
+0 50
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7002
+~
+|
+#7003
+icer dummy~
+An Icer dummy~
+An icer dummy has been left here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 300
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7003
+~
+|
+#7004
+name noob trans mob~
+A Man is here.~
+A dark robed man is resting here, snickering softly at you.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog $n is a Human 100~
+if race($n) == Human
+mptrans $n 7028
+endif
+~
+|
+#7005
+Icer Warrior~
+An Icer warrior~
+An Icer warrior is here to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 3
+0 0 0 0 0 0 4 0
+> death_prog 100~
+mpmload 7005
+~
+|
+#7006
+Saiyan Warrior~
+A Saiyan warrior~
+A Saiyan warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+energy ball
+~
+> death_prog 100~
+mpmload 7006
+~
+|
+#7007
+Namek Warrior~
+A Namek warrior~
+A Namek warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+energy ball
+~
+> death_prog 100~
+mpmload 7007
+~
+|
+#7008
+Human Warrior~
+A Human warrior~
+A Human warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7008
+~
+|
+#7009
+Halfbreed Warrior~
+Halfbreed warrior~
+A Halfbreed warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+energy ball
+~
+> death_prog 100~
+mpmload 7009
+~
+|
+#7010
+Android Warrior~
+An Android warrior~
+An Android warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+energy ball
+~
+> death_prog 100~
+mpmload 7010
+~
+|
+#7011
+Bio warrior~
+A Bio-Android warrior~
+A Bio-Android warrior is here, waiting to train you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 60~
+uppercut
+~
+> death_prog 100~
+mpmload 7011
+~
+|
+#7020
+Common Saiyan Invader~
+A Common Saiyan Invader~
+A Common Saiyan Invader is here in full uniform.
+~
+~
+1 524416&65536 -1000 C
+1 0 100 1d20+0 2d5+0
+0 2000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 5000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7020
+  else
+    mpecho 
+    mpmload 7020 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7020
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7021
+Third Class Saiyan Invader~
+A Third Class Saiyan Invader~
+A Third Class Saiyan Invader is here in full uniform.
+~
+~
+1 524416&65536 -1000 C
+1 0 100 1d20+0 2d5+0
+0 20000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 50000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7021
+  else
+    mpecho 
+    mpmload 7021 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7021
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7022
+Second Class Saiyan Invader~
+A Second Class Saiyan Invader~
+A Second Class Saiyan Invader is here in full uniform.
+~
+~
+1 524416&64 -1000 C
+1 0 100 1d20+0 2d5+0
+0 200000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 500000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7022
+  else
+    mpecho 
+    mpmload 7022 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7022
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7023
+First Class Saiyan Invader~
+A First Class Saiyan Invader~
+A First Class Saiyan Invader is here in full uniform.
+~
+~
+1 524416&192 -1000 C
+1 0 100 1d20+0 2d5+0
+0 2000000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 5000000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7023
+  else
+    mpecho 
+    mpmload 7023 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7023
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7024
+Elite Saiyan Invader~
+An Elite Saiyan Invader~
+An Elite Saiyan Invader is here in full uniform.
+~
+~
+1 524416&448 -1000 C
+1 0 100 1d20+0 2d5+0
+0 20000000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 50000000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7024
+  else
+    mpecho 
+    mpmload 7024 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7024
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7025
+Prince Vegeta Invader~
+Prince Vegeta~
+Prince Vegeta is invading the planet at full force.
+~
+~
+1 524416&960 -1000 C
+1 0 100 1d20+0 2d5+0
+0 2000000000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 5000000000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7025
+  else
+    mpecho 
+    mpmload 7025 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7025
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7026
+King Vegeta Invader~
+King Vegeta~
+King Vegeta is commanding his armies to destroy everything in sight.
+~
+~
+1 524416&960 -1000 C
+1 0 100 1d20+0 2d5+0
+0 20000000000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+big
+big
+~
+> death_prog 100~
+if pl($n) < 50000000000000
+  if rand(10)
+    mez }WThe Saiyan Invader has been defeated by $n!
+    mpoload 7026
+  else
+    mpecho 
+    mpmload 7026 
+    mpecho &WThe Saiyan invader gets back to his feet, now stronger!
+  endif
+else
+  mpecho &WThe Saiyan Invader was TOTALLY ANNHILATED! $n was far too strong!
+  mpmload 7026
+endif
+~
+> greet_prog 100~
+if ispc($n)
+sa You and all the inhabitants of this planet will die!
+mpkill $n
+endif
+~
+|
+#7027
+Saiyan Invasion Kit (Easy)~
+a newly created Saiyan Invasion Kit (Easy)~
+Saiyan Invasion Kit &W(Easy)&D
+~
+~
+2097155 2 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+~
+> rand_prog 50~
+sa KILL ME NOW AND RELEASE THE INVASION!
+~
+|
+#7028
+Saiyan Invasion Kit (Medium)~
+a newly created Saiyan Invasion Kit (Medium)~
+Saiyan Invasion Kit &W(Medium)&D
+~
+~
+2097155 2 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7025
+~
+> rand_prog 50~
+sa KILL ME NOW AND RELEASE THE INVASION!
+~
+|
+#7029
+Saiyan Invasion Kit (Hard)~
+a newly created Saiyan Invasion Kit (Hard)~
+Saiyan Invasion Kit &W(HARD)&D
+~
+~
+2097155 2 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7020
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7021
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7022
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7023
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7024
+mpmload 7025
+mpmload 7026
+~
+> rand_prog 50~
+sa KILL ME NOW AND RELEASE THE INVASION!
+~
+|
+#7050
+ghetti warrior~
+A Ghetti Warrior~
+A Ghetti warrior is standing here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5 500
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+8 8 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+energy ball
+~
+|
+#7099
+Newbie Best Friend~
+The Newbie's Best Friend~
+The Newbie's Best Friend is befriending anyone who passes by.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if council ($n) == NC
+say Oh, and who's this? You seem too experienced to be new here.... oh well. Want some equipment?
+else
+say Hey, buddy! How are ya! Let's see if there's anything I can help ya with... I always try to help out my best buddies!
+gasp
+sigh
+say Oh, dear me. I'm jumping to conclusions again. Do you want some equipment?
+blush
+endif
+~
+> speech_prog yes~
+if council($n) == NC
+say Ah, a member of the famed Newbie Council. Here you go, I'll let you help out the little tykes.
+mpoload 7051
+give shirt $n
+mpoload 7052
+give pants $n
+mpoload 7053
+give boots $n
+mpoload 7054
+give belt $n
+mpoload 7055
+give gloves $n
+mpoload 7056
+give armor $n
+else
+say You do?! Yay! I get to help out my bestest buddy! Let me see what I have for you, pal! Oh my, this is such fun!
+emote rummages through a haversack full of clothing.
+say Ah, here we go!
+if carryingvnum($n) 7051
+ say You already have the cotton shirt... don't need that! Ha ha! 
+ else
+ mpoload 7051
+ say Here buddy! Have this shirt!
+ give shirt $n
+ mpforce $n wear shirt
+endif
+if carryingvnum($n) 7052
+ say You already have the pants! You definitely don't need that!
+ else
+ mpoload 7052
+ say Here buddy! Have these pants!
+ give pants $n
+ mpforce $n wear pants
+endif
+if carryingvnum($n) 7053
+ say You already have those boots! Nice boots, eh?
+ else
+ mpoload 7053
+ say Here buddy! These boots are awesome!!
+ give boots $n
+ mpforce $n wear boots
+endif
+if carryingvnum($n) 7054
+ say You already have my old belt!
+ else
+ mpoload 7054
+ say Here buddy! Have my old belt! Take care of it though, it's old!
+ give belt $n
+ mpforce $n wear belt
+endif
+if carryingvnum($n) 7055
+ say You already have those fashionable gloves! Aren't they cool!?
+ else
+ mpoload 7055
+ say Here buddy! These gloves are all the rage!
+ give gloves $n
+ mpforce $n wear gloves
+endif
+if carryingvnum($n) 7056
+ say You already have that killer body armor! You're lucky you have me as a friend! That armor is nearly impossible to find!
+ else
+ mpoload 7056
+ say Here buddy! Have this rare body armor!
+ give armor $n
+ mpforce $n wear armor
+endif
+endif
+~
+|
+#7100
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 0
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#7000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#7002
+Celeste boom stick~
+&zC&peleste's &YBOOM! &zS&ptick~
+A long thin stick is laying here... Don't you want to bash someone with it?~
+&Y Pheer teh &GBOOMIGR &Y steck!~
+5 131 16385
+0 100 100 0 0 0
+1 0 0
+ 0
+> wear_prog 100~
+mpecho &YPheer teh &B1337 &GBOTTIG &YSteck!
+~
+|
+#7003
+&G Green candy!~
+&GGreen Candy&d~
+A piece of candy is here, growing mold.~
+~
+19 0&256 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+> use_prog 100~
+if council($n) == NC
+mpechoat $n &GAh, the perks of being a Newbie Council member. Free candy. Yum.&D
+else
+mea $n You choke on the Green candy and start to feel dizzy!
+mer $n $n chokes on some candy, and stumbles around.
+if ovnumhere(7003) == 0
+if ovnumhere(7004) == 1
+mea $n You see your surroundings shift, and change!
+mpechoat $n &GSignalling your birth into the DBI family, &wA &zDragonBall:&WInfinity&w Pendant&G appears!
+mpoload 620 $n
+mer $n $n Suddenly vanishes
+mptrans $n 200
+else 
+mea &R Nothing Happens! &BPerhaps you missed something?
+mea $n You feel like a fool for wasting candy!
+mer $n $n feels like a fool, and breaks into tears!
+endif
+endif
+endif
+~
+|
+#7004
+box~
+&GA box full of green candy&d~
+&G A box full of green candy has been left here.~
+~
+8 0 0
+0 0 0 0 0 0
+16960 0 0
+ 0
+#7005
+The Shield of The Coward~
+&WT&whe &WS&whield &Wo&wf &WT&whe &WC&woward&D~
+A sad looking shield lays here~
+~
+9 0 16385 1
+0 0 0 0 0 0
+10 0 0
+ -1
+A
+29 -10
+> wear_prog 100~
+mea $n Like a true yellow bellied coward you hide behind your shield. What a disgrace you are!
+mer $n Like a true yellow bellied coward $n hides behind $s shield. What a disgrace $e is!
+~
+> rand_prog 1~
+mea $n &YYOU ARE A COWARD! SHAME ON YOU!
+mer $n &Y$n is such a coward, $m being in the same room as you is an insult to your honour!
+~
+|
+#7020
+Common Saiyan Tail~
+A Common Saiyan Invader's Tail~
+A Common Saiyan Invader's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7021
+Third Class Saiyan Tail~
+A Third Class Invader's Tail~
+A Third Class Invader's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7022
+Second Class Saiyan Tail~
+A Second Class Invader's Tail~
+A Second Class Invader's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7023
+First Class Saiyan Tail~
+A First Class Invader's Tail~
+A First Class Invader's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7024
+Elite Saiyan Tail~
+An Elite Invader's Tail~
+An Elite Invader's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7025
+Prince Vegeta Tail~
+Prince Vegeta's Tail~
+Prince Vegeta's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7026
+King Vegeta Tail~
+King Vegeta's Tail~
+King Vegeta's Tail~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#7050
+Orb of Legendary Power~
+&WOrb of Legendary Power&D~
+A bright orb lays on the ground here~
+~
+1 1 1
+0 0 -1 0 0 0
+1 0 0
+ 0
+A
+1 5
+A
+2 5
+A
+4 5
+A
+29 5
+A
+3 5
+> wear_prog 100~
+mea $n &WA white glow radiates from the Orb of Legendary Power, and slowly surrounds you.
+mer $n &WA white glow radiates from the Orb of Legendary Power, and slowly surrounds $n.
+~
+> rand_prog 1~
+mpecho &WThe Orb of Legendary Power pulsates and glows giving light to the area.
+~
+|
+#7051
+cotton shirt~
+A Cotton Shirt~
+A soft cotton shirt provides little protection.~
+~
+9 0&260 9
+0 0 0 0 350 350
+1 0 0
+ 0
+#7052
+cotton pants~
+Cotton Pants~
+A pair of cotton pants provides little protection.~
+~
+9 0&260 33
+0 0 0 0 275 275
+1 0 0
+ 0
+#7053
+steel toed boots~
+Steel-toed Boots~
+A pair of boots has a steel toe.~
+~
+9 0&260 65
+0 0 0 0 100 100
+1 0 0
+ 0
+#7054
+leather belt~
+A Leather Belt~
+A leather belt is highly decorative.~
+~
+9 0&260 2049
+0 0 0 0 100 100
+1 0 0
+ 0
+#7055
+leather gloves~
+Leather Gloves~
+Leather gloves protect hands from damage.~
+~
+9 0&4 129
+0 0 0 0 100 100
+1 0 0
+ 0
+#7056
+fighter body armor~
+Body Armor~
+Body Armor provides little protection.~
+~
+9 0&260 1025
+0 0 0 0 500 500
+1 0 0
+ 0
+#7099
+Celeste throne~
+Celeste's throne of ice~
+&zCeleste's throne of &CIce&z is here, placed in the center of the room.~
+~
+12 28 1
+0 0 1 1 1000000 0
+10000 0 0
+ 0
+#7100
+Celeste's House Key~
+Celeste's House Key~
+Some god dropped a newly created Celeste's House Key here.~
+~
+8 0 16385
+7100 0 0 0 0 0
+1 0 0
+ 1
+#0
+
+
+#ROOMS
+#7000
+Floating in a void~
+~
+0 1073741828 1
+S
+#7001
+Welcome to DragonBall: Infinity~
+DragonBall: Infinity is a MUD, For those of you who have not played a
+MUD before, head NORTH.  For those that have played muds, and wish to go
+through the training program for DragonBall: Infinity, also head NORTH.  If
+you have played DragonBall: Infinity before, and do not wish to go through
+the training again, head SOUTH.  Power, advancing in the game, and how to
+survive.  
+
+Choose your direction now.
+
+&RIf you are new here, go north.&D
+
+&RIf you require assistance, ask for Newbie Council help via the &Gnewbie&R
+channel.&D 
+~
+0 4 1
+D0
+~
+~
+0 -1 7003
+D2
+~
+~
+0 -1 7002
+S
+#7002
+A quick end.~
+The quick and easy way out for now it seems, take a piece of candy on
+your way out into the world of DragonBall: Infinity.  It will tide you over
+for the time being. If you have changed your mind and want to take the
+tutorial, then go NORTH.  This is the last chance you will have to do this.
+
+To leave the area without training do the following:
+
+EAT candy.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 7001
+> entry_prog 100~
+if carryingvnum($n) == 7003
+snicker
+else
+mpmset $n full 0
+mpoload 7003
+give candy $n
+endif
+~
+|
+S
+#7003
+Help files!~
+The first thing we will learn is about the help files.  Start off with
+HELP START.  From there you can see the other basic help files. When in
+doubt, try a help file, if you still haven't got an answer then you should
+ask the other players useing CHANNELS.  Channels will be discussed in the
+next room, for now, back to help files.  Looking at the following list of
+files will get you off to a good start, and will also give you a basic feel
+for the gameplay. 
+
+&BLook at the following help files for a good begining.
+----------------------------------------------------
+&RHelp Start
+Help Rules
+Help Names
+Help Score
+Help Channels
+Help Bio
+&D&wHelp Botting
+
+
+To get to the next area, What TRIGGERS are allowed to be used?
+&BHint: use Say <answer>
+
+~
+0 4 1
+D2
+~
+~
+0 -1 7001
+> speech_prog none 100~
+mea $n You're right! You are NOT allowed to use ANY triggers of ANY kind!
+mptrans $n 7004
+~
+|
+S
+#7004
+Channels!~
+The use of channels is key to any MUD, or game in general.  It keeps you
+in contact with the rest of the player and is a good source of help if you
+find yourself stuck.  
+
+To talk to people in the same room as you, use the SAY command.
+&R Example:
+&C SAY <insert message here>
+
+&YTo talk to people not in the same room, or area there are global 
+channels to help with that.  Help Channels gives a list of the channels,
+and what each one is used for.  
+
+&R See HELP CHANNELS
+&D&D
+&g Continue UP to learn combat training.
+
+~
+0 4 1
+D2
+~
+~
+0 -1 7003
+D4
+~
+~
+0 -1 7005
+S
+#7005
+Combat training!~
+You will need to learn to defend yourself in this world, and here we
+will begin that training.  Use the KILL command to start a fight with an
+enemy. Your POWERLEVEL will determine how much of a chance you stand
+against your oponent.  Your skills and and stats will also play a big part
+in battles to come, once you learn them. 
+
+Off to the east is a training ground for new players, to test there skills in combat. PL : 50
+
+Off to the west, is another training area, but more difficult then the one to the east.  PL : 300
+
+When you have finished combat training, leave UP
+
+&RDO NOT MOVE ONWARD UNTIL YOU HAVE REACHED A POWER LEVEL OF AT LEAST 500.&d
+
+~
+0 4 1
+D1
+~
+~
+0 -1 7006
+D3
+~
+~
+0 -1 7007
+D4
+~
+~
+0 -1 7008
+D5
+~
+~
+0 -1 7004
+S
+#7006
+Easy training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 7009
+D3
+~
+~
+0 -1 7005
+S
+#7007
+Stronger training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 7005
+D3
+~
+~
+0 -1 7011
+> entry_prog 100~
+if pl($n) < 225
+mpechoat $n &RYou are too weak to use this newbie training wing. Use the one to the east first.&D
+mpforce $n east
+endif
+~
+|
+S
+#7008
+The End of training!~
+You have finally completed your training, and know the basics of the MUD
+now, for any more questions refer to the help files, or use the QUESTION
+channel. Return down to continue more combat training, or go over any of
+the training again, or head north, to finish your training. 
+
+
+&R Continue NORTH where you will learn about your race.
+
+~
+0 4 1
+D0
+~
+~
+0 -1 7048
+D5
+~
+~
+0 -1 7005
+> entry_prog 100~
+if pl($n) < 500
+mpechoat $n &RYou are too weak to move on yet. Attain at least 500 powerlevel first.&D
+mpforce $n down
+endif
+~
+|
+S
+#7009
+Easy training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 4 1
+D1
+~
+~
+0 -1 7010
+D3
+~
+~
+0 -1 7006
+S
+#7010
+Easy training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 4 1
+D3
+~
+~
+0 -1 7009
+S
+#7011
+Stronger training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 4 1
+D1
+~
+~
+0 -1 7007
+D3
+~
+~
+0 -1 7012
+S
+#7012
+Stronger training ground.~
+So, you want to learn combat training, well here is the start.  Simply
+type KILL DUMMY and you kill as many as you like. 
+~
+0 4 1
+D1
+~
+~
+0 -1 7011
+S
+#7013
+So, you're an Icer!~
+The Icer homeworld is a bleak planet, whose harsh conditions have given
+birth to a heartless race of survivors.  Fighting against extinction for
+millions of years, the Icers have grown strong both physically and
+mentally.  The cruel inhabitants of this world have learned how to control
+the strange workings of their alien bodies, to transform into ever stronger
+warriors.  Most Icers leave their homeworld as soon as possible, much
+happier to conquer a more habitable planet, and make it their own. 
+
+See Also: &WTRANSFORMATIONS EYEBEAM FINGERBEAM DD DDD DB TAILATTACK
+
+
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7017
+D1
+~
+~
+0 -1 7016
+D3
+~
+~
+0 -1 7015
+D5
+~
+~
+2048 -1 7014
+> entry_prog 100~
+mpecho &RPLEASE take note that DBS and Saga are FILTERED WORDS here, due to the Administration trying to shy away from all that is Saga. Please do not bypass these filtered words.&D
+mpecho &RWe don't like silencing newbies. It makes us feel bad.&D
+~
+|
+S
+#7014
+&R You're falling...~
+&W With a sickening crunch you land, strangly enough you are still alive.
+
+
+
+~
+0 16777228 1
+D5
+~
+~
+2048 -1 200
+S
+#7015
+Icer training grounds!~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own. 
+~
+0 12 1
+D1
+~
+~
+0 -1 7013
+S
+#7016
+Icer training grounds!~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7013
+S
+#7017
+Icer training grounds!~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 12 1
+D2
+~
+~
+0 -1 7013
+S
+#7018
+So, you're a Saiyan!~
+A brutal, primitive people, the Saiya-jins were a race of bandits on
+Planet Plant.  Their long-time rivals, the Tsufuru-jin, managed to keep the
+physically strong race in check with their technology.  However, the
+Saiya-jins took over the planet when Plant had its first full moon in a
+very long time.  The planet was renamed Vegeta, and the Saiya-jins adopted
+Tsufuru-jin machines for themselves.  Ignorance brought the downfall of
+their race when they refused to heed Bardock's warning about Freezer. Their
+homeworld was smashed to bits, and only a handful of Saiya-jins survived. 
+All members of their race (even halfbreeds) possess the ability to become
+an Oozaru, though few reach the level of Super Saiyan. 
+
+See Also:  &WOOZARU TAIL SSJ KAIOKEN KAMEHAMEHA FF BB GG BBK USSJ SPIRITBOMB
+
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7020
+D1
+~
+~
+0 -1 7021
+D2
+~
+~
+0 -1 7022
+D3
+~
+~
+0 -1 7019
+D5
+~
+~
+2048 -1 7014
+S
+#7019
+Saiyan training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7018
+S
+#7020
+Saiyan training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D2
+~
+~
+0 -1 7018
+S
+#7021
+Saiyan training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7018
+S
+#7022
+Saiyan training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7018
+S
+#7023
+So, you're a Namek!~
+A race of warriors and healers that hail from Planet Namek, they are best
+known for their strange green bodies.  They are able to manipulate their
+forms in magnificent ways.  Nameks can stretch their arms to attack enemies
+from far away, or even split themselves into two identical fighters.  They
+can regenerate severed limbs with ease, and thus heal at an increased rate.
+When Nameks recover the ancient knowledge of their brethren, the most powerful
+of them become Super Nameks.
+
+See Also: &WEYEBEAM MASENKO SBC PRESERVATION SN KIHEAL GROWTH GIANTSIZE
+              SPLITFORM HSC HG MAKOSEN
+
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7025
+D1
+~
+~
+0 -1 7026
+D2
+~
+~
+0 -1 7027
+D3
+~
+~
+0 -1 7024
+D5
+~
+~
+2048 -1 7014
+S
+#7024
+Namek training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7023
+S
+#7025
+Namek training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D2
+~
+~
+0 -1 7023
+S
+#7026
+Namek training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7023
+S
+#7027
+Namek training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7023
+S
+#7028
+So, you're a Human!~
+Humans are classifed as almost anything originating on the planet Earth.
+Usually what would be a strange race to us - like Tien's, Chaozu's, or
+the many animal people - is considered to be a Human in the different
+series.  Humans are thought to be the most varied because of this, coming
+from many different backgrounds and walks of life.  They may not be the
+most powerful race at the beginning, but they have many quirks that give
+them advantages.
+See Also: &W HEART KAIOKEN HYPER KAMEHAMEHA DD TRIBEAM SOLARFLARE
+           MULTIDISK DR SB EXTREME
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7032
+D1
+~
+~
+0 -1 7029
+D2
+~
+~
+0 -1 7030
+D3
+~
+~
+0 -1 7031
+D5
+~
+~
+2048 -1 7014
+S
+#7029
+Human training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7028
+S
+#7030
+Human training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7028
+S
+#7031
+Human training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7028
+S
+#7032
+Human training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D2
+~
+~
+0 -1 7028
+S
+#7033
+So, you're a Halfbreed!~
+Halfbreeds are not a simple mix of just any two races. They are, more
+specifically, half Human and half Saiyan. Halfbreeds, for the most part,
+live on Earth. Like Saiyans they are born with a monkey tail. Also, like
+their Saiyan parents, they have the ability to become a Super Saiyan.
+They also transform into giant beasts known as Oozaru, though this
+is only possible if their tails are still attached during a full
+moon. Rumor has it that halfbreeds are incapable of attaining as high
+a level of Super Saiyan. Though this is hard to prove, since so few
+attain such unheard-of power.
+
+See Also: &W OOZARU TAIL KAIOKEN SSJ MASENKO KAMEHAMEHA BA BUSTER USSJ
+
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7034
+D1
+~
+~
+0 -1 7035
+D2
+~
+~
+0 -1 7036
+D3
+~
+~
+0 -1 7037
+D5
+~
+~
+2048 -1 7014
+S
+#7034
+Halfbreed training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 12 1
+D2
+~
+~
+0 -1 7033
+S
+#7035
+Halfbreed training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7033
+S
+#7036
+Halfbreed training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7033
+S
+#7037
+Halfbreed training grounds.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7033
+S
+#7038
+So, you're an Android!~
+Androids are modified humans made by Dr.  Gero.  Due to their creator
+they had evil intentions - at least Androids 17 and 18 did.  Another
+(Android 16) was good, but he wasn't finished.  In the game this bears no
+restriction, with all alignments being available to you.  As opposed to
+having Ki energy like other fighters, Androids just have one big power
+source inside them.  The downside to this is a lack of Ki dependent moves
+such as Final Flash and Instant Transmission.  However, it does mean that
+physical attacks pack more punch. 
+
+See Also: &WUPGRADE UPPERCUT EYEBEAM ABSORB ROCKETPUNCH SELFDESTRUCT
+          ELECTRICSHIELD CHIPS HELLSFLASH KIABSORB FINGERBEAM SSDBOMBER
+
+&RTo leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7039
+D1
+~
+~
+0 -1 7040
+D2
+~
+~
+0 -1 7041
+D3
+~
+~
+0 -1 7042
+D5
+~
+~
+2048 -1 7014
+S
+#7039
+Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D2
+~
+~
+0 -1 7038
+S
+#7040
+Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7038
+S
+#7041
+Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7038
+S
+#7042
+Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7038
+S
+#7043
+So, you're a Bio-Android!~
+Another of Dr. Geros creations.  All bio-androids start out like a blank slate.
+All that they have been programmed with are some basic fighting techniques and
+the knowledge that to become the perfect being they must use their powerful
+tail to absorb their victims.
+
+Bio-androids do not learn like the other races.  They must absorb knowledge
+from their victims.  When a bio-android absorbs someone learn what their
+victim knew.  This is how a bio-android learns skills and abilities.  They
+can learn almost all the skills and abilities that the other races have.
+The only things they can't learn are racial transformations and the other
+races most powerful attacks.  Most skills and abilities will be learned
+by killing other players, how ever the basic skills can be absorbed from
+some mobs.
+
+
+While fighting, bio-androids don't gain very much power level because they
+were not created to become stronger by fighting.  At the end of each fight
+bio-androids will absorb their victims and gain the power level that wasn't
+gotten by combat.  As more and more victims are absorbed the more takes on
+the abilities of those races.  Even to the point that they can begin to
+gain power level at the same rate as other races.
+
+Bio-androids are one of the best pk races, if not the best.
+
+See Also:  &WPERFECTION UPPERCUT KIBURST
+
+&R To leave, simply go DOWN.
+
+~
+0 536870924 1
+D0
+~
+~
+0 -1 7044
+D1
+~
+~
+0 -1 7045
+D2
+~
+~
+0 -1 7046
+D3
+~
+~
+0 -1 7047
+D5
+~
+~
+2048 -1 7014
+S
+#7044
+Bio-Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D2
+~
+~
+0 -1 7043
+S
+#7045
+Bio-Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D3
+~
+~
+0 -1 7043
+S
+#7046
+Bio-Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D0
+~
+~
+0 -1 7043
+S
+#7047
+Bio-Android training grounds~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+~
+0 12 1
+D1
+~
+~
+0 -1 7043
+S
+#7048
+&YYour mind gets foggy!~
+             &zA dark robed man jumps out at you from the shadows!
+
+
+~
+0 12 1
+D2
+~
+~
+2048 -1 7008
+> entry_prog 100~
+if council($n) == NC
+mpechoat $n &GThe DBI staff thanks you for your assistance.&D
+else
+mea $n  Your Journey begins now!
+mpechoat $n &GSignalling your birth into the DBI family, &wA &zDragonBall:&WInfinity&w Pendant&G appears!
+mpoload 620 $n
+endif
+~
+> entry_prog 100~
+if council($n) == NC
+else
+mea $n &RA tired old man laughs, before kicking you in the head.
+mea $n &GThe old man laughs again, as you get knocked out!
+mea $n &BYou awaken to find yourself somewhere else.. surrounded by people who look just like you!
+endif
+~
+> entry_prog 100~
+if council($n) == NC
+mpechoat $n Please state the race name of the training area you wish to visit.
+mpechoat $n Example: saying Android would transfer you to the Android training area.
+else
+if race($n) == Icer
+  mer $n $n is a Icer
+  mpforce $n say Icer
+  mptrans $n 7013
+endif
+if race($n) == Saiyan
+  mer $n $n is a Saiyan
+  mpforce $n say Saiyan
+  mptrans $n 7018
+endif
+if race($n) == Namek
+  mer $n $n is a Namek
+  mpforce $n say Namek
+  mptrans $n 7023
+endif
+if race($n) == Human
+  mer $n $n is a Human
+  mpforce $n say Human
+  mptrans $n 7028
+endif
+if race($n) == Halfbreed
+  mer $n $n is a Halfbreed
+  mpforce $n say Halfbreed
+  mptrans $n 7033
+endif
+if race($n) == Android
+  mer $n $n is a Android
+  mpforce $n say Android
+  mptrans $n 7038
+endif
+if race($n) == Bio-Android
+  mer $n $n is a Bio-Android
+  mpforce $n say Bio-Android
+  mptrans $n 7043
+endif
+if race($n) == Ghetti
+ mer $n $n is a Ghetti
+ mpforce $n say Ghetti
+ mptrans $n 7050
+endif
+if race ($n) == Hydian
+ mer $n $n is a Hydian
+ mpforce $n say Hydian
+ mptrans $n 7050
+endif
+if race ($n) == Demon
+ mer $n $n is a Demon
+ mpforce $n say Demon
+ mptrans $n 7050
+endif
+if race ($n) == Kaio
+ mer $n $n is a Kaio
+ mpforce $n say Kaio
+ mptrans $n 7050
+endif
+endif
+~
+> speech_prog Saiyan~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7018
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7018 mpforce $n look
+endif
+~
+> speech_prog human~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7028
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7028 mpforce $n look
+endif
+~
+> speech_prog halfbreed~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7033
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7033 mpforce $n look
+endif
+~
+> speech_prog namek~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7023
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7023 mpforce $n look
+endif
+~
+> speech_prog icer~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7013
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7013 mpforce $n look
+endif
+~
+> speech_prog android~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7038
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7038 mpforce $n look
+endif
+~
+> speech_prog bio-android~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7043
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7043 mpforce $n look
+endif
+~
+> speech_prog ghetti~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7050
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7050 mpforce $n look
+endif
+~
+> speech_prog demon~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7050
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7050 mpforce $n look
+endif
+~
+> speech_prog hydian~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7050
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7050 mpforce $n look
+endif
+~
+> speech_prog kaio~
+if council($n) == NC
+mpechoat $n You disappear in a flash of light!
+mptransfer $n 7050
+mpat $n mpechoaround $n $n appears in a flash of light!
+mpat 7050 mpforce $n look
+endif
+~
+|
+S
+#7049
+Floating in a void~
+~
+0 12 1
+S
+#7050
+So, you're a Ghetti~
+The race that the villain Garlic Jr.  Is from.  This race never really
+played a big role in the world of Dragonball until they turned everyone
+into zombies with the Blackwater Mist.  The race is a strange one, they
+don't get their power by usual means, they become angry to the point of
+insanity in which their bodies grow in size.  They have also been known to
+create weapons out of their own flesh, as well as use large amounts of ki
+for quick blast attacks.  They definitley have the potential to become one
+of the bigger forces in the universe.  
+
+&W See Also: ANGER RAGE INSANITY BELLYBLAST OBLITERATIONCANNON MOUTHBLAST
+ENERGYBEAM BONESWORD &D 
+
+&RTo leave, simply type 'Down'&D
+
+
+&RNOTE:
+&RALL NEW RACES WILL GO HERE FOR NOW UNTIL WE CAN ADD THE INFORMATION FOR
+&RTHEM.  PLEASE BE PATIENT NEW PLAYERS AND THE INFORMATION WILL BE ADDED.
+~
+0 12 1
+D0
+~
+~
+0 -1 7051
+D1
+~
+~
+0 -1 7053
+D2
+~
+~
+0 -1 7055
+D3
+~
+~
+0 -1 7057
+D5
+~
+~
+2048 -1 7014
+D6
+~
+~
+0 -1 7052
+D7
+~
+~
+0 -1 7058
+D8
+~
+~
+0 -1 7054
+D9
+~
+~
+0 -1 7056
+S
+#7051
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D2
+~
+~
+0 -1 7050
+S
+#7052
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D9
+~
+~
+0 -1 7050
+S
+#7053
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D3
+~
+~
+0 -1 7050
+S
+#7054
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D7
+~
+~
+0 -1 7050
+S
+#7055
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D0
+~
+~
+0 -1 7050
+S
+#7056
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D6
+~
+~
+0 -1 7050
+S
+#7057
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D1
+~
+~
+0 -1 7050
+S
+#7058
+Ghetti Slaughtering fields.~
+So, you wish to continue your training, well here you will fight your
+own species, learn what you can from them before venturing into the real
+world, this is the last step before your on your own.  
+
+~
+0 4 1
+D8
+~
+~
+0 -1 7050
+S
+#7059
+Ghetti Slaughtering fields.~
+~
+0 4 1
+S
+#7060
+Floating in a void~
+~
+0 4 1
+S
+#7061
+Floating in a void~
+~
+0 4 1
+S
+#7062
+Floating in a void~
+~
+0 4 1
+S
+#7063
+Floating in a void~
+~
+0 4 1
+S
+#7064
+Floating in a void~
+~
+0 4 1
+S
+#7065
+Floating in a void~
+~
+0 4 1
+S
+#7066
+Floating in a void~
+~
+0 4 1
+S
+#7067
+Floating in a void~
+~
+0 4 1
+S
+#7068
+Floating in a void~
+~
+0 4 1
+S
+#7069
+Floating in a void~
+~
+0 4 1
+S
+#7070
+Floating in a void~
+~
+0 4 1
+S
+#7071
+Floating in a void~
+~
+0 4 1
+S
+#7072
+Floating in a void~
+~
+0 4 1
+S
+#7073
+Floating in a void~
+~
+0 4 1
+S
+#7074
+Floating in a void~
+~
+0 4 1
+S
+#7075
+Floating in a void~
+~
+0 4 1
+S
+#7076
+Floating in a void~
+~
+0 4 1
+S
+#7077
+Floating in a void~
+~
+0 4 1
+S
+#7078
+Floating in a void~
+~
+0 4 1
+S
+#7079
+Floating in a void~
+~
+0 4 1
+S
+#7080
+Floating in a void~
+~
+0 4 1
+S
+#7081
+Floating in a void~
+~
+0 4 1
+S
+#7082
+Floating in a void~
+~
+0 4 1
+S
+#7083
+Floating in a void~
+~
+0 4 1
+S
+#7084
+Floating in a void~
+~
+0 4 1
+S
+#7085
+Floating in a void~
+~
+0 4 1
+S
+#7086
+Floating in a void~
+~
+0 4 1
+S
+#7087
+Floating in a void~
+~
+0 4 1
+S
+#7088
+Floating in a void~
+~
+0 4 1
+S
+#7089
+Floating in a void~
+~
+0 4 1
+S
+#7090
+Floating in a void~
+~
+0 4 1
+S
+#7091
+Floating in a void~
+~
+0 4 1
+S
+#7092
+Floating in a void~
+~
+0 4 1
+S
+#7093
+Floating in a void~
+~
+0 4 1
+S
+#7094
+Floating in a void~
+~
+0 4 1
+S
+#7095
+Floating in a void~
+~
+0 4 1
+S
+#7096
+Floating in a void~
+~
+0 4 1
+S
+#7097
+Floating in a void~
+~
+0 4 1
+S
+#7098
+Floating in a void~
+~
+0 4 1
+S
+#7099
+Floating in a void~
+~
+0 4 1
+S
+#7100
+&zC&weleste's &zS&wanctuary&D~
+&zBefore you stands a throne of &cIce&z glistening shards hang down from
+it as you wonder if its owner's heart is just as cold.  Looking around you
+see dark drab around the room, only a single eerie light comes in through
+the roof, an involuntary shiver runs through you.  Suddenly you hear a
+slight smirking sound, as the thrown shifts, only to reveal somone sitting
+in it!  
+~
+0 3146764 0
+S
+#0
+
+
+#RESETS
+O 0 7004 1 7002
+O 0 7099 1 7100
+M 1 7004 1 7048
+M 0 7002 1 7006
+M 0 7002 1 7009
+M 0 7002 1 7010
+M 0 7003 1 7007
+M 0 7003 1 7011
+M 0 7003 1 7012
+M 0 7005 1 7015
+M 0 7005 1 7017
+M 0 7005 1 7016
+M 0 7006 1 7019
+M 0 7006 1 7020
+M 0 7006 1 7021
+M 0 7006 1 7022
+M 0 7007 1 7024
+M 0 7007 1 7025
+M 0 7007 1 7026
+M 0 7007 1 7027
+M 0 7008 1 7031
+M 0 7008 1 7032
+M 0 7008 1 7029
+M 0 7008 1 7030
+M 0 7009 1 7037
+M 0 7009 1 7034
+M 0 7009 1 7035
+M 0 7009 1 7036
+M 0 7010 1 7042
+M 0 7010 1 7039
+M 0 7010 1 7040
+M 0 7010 1 7041
+M 0 7011 1 7047
+M 0 7011 1 7044
+M 0 7011 1 7045
+M 0 7011 1 7046
+M 0 7099 1 7002
+M 0 7099 1 7003
+M 0 7050 1 7053
+M 0 7050 1 7051
+M 0 7050 1 7057
+M 0 7050 1 7055
+M 0 7050 1 7054
+M 0 7050 1 7052
+M 0 7050 1 7058
+M 0 7050 1 7056
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

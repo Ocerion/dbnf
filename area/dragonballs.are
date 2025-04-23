@@ -1,0 +1,1684 @@
+#AREA   DragonBalls~
+
+
+
+#VERSION 252
+#AUTHOR Kilan~
+
+#RANGES
+51 65 51 65
+$
+
+#PLANET 1
+
+#FLAGS
+21
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#101
+eternal dragon shenron~
+Earths Eternal Dragon, Shenron~
+A massive dragon hovers menacingly in the pitch black sky.
+~
+~
+67 67633280 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'The immortals say no.'~
+mpecho &CEarths Eternal Dragon, Shenron sighs loudly, saying 'Your wish... cannot be granted...'
+~
+> rand_prog 5~
+mpecho &CEarths Eternal Dragon, Shenron growls loudly, stating 'I grow impatient... hurry up with your wish.'
+~
+> speech_prog 'The wish has been granted.'~
+mpecho &CEarths Eternal Dragon, Shenron roars slowly, 'Your wish has be granted... Now I leave to rest...'
+say Farewell.
+~
+> speech_prog 'The immortals say yes.'~
+mpecho &wEarths Eternal Dragon, Shenron hmm's very loudly, shaking the ground with the soundwaves from his voice.
+mpecho &CEarths Eternal Dragon, Shenron roars 'Your wish... shall be granted...'
+mpecho &RShenron's eyes momentarily glow a bright red as he uses his energy to grant the wish.&D
+~
+|
+#102
+Wish Management Mob~
+The Wish Management Mob~
+The Wish Management Mob is assisting the immortals with extremely complex tasks.
+~
+~
+75497539 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'Farewell.'~
+mpechozone &YShenron glows a bright yellow, his power having been used up granting the wish.
+mpsleep 9
+mpechozone &YShenron's body explodes into seven groups of energy particles, which all instantly enter the confines of the DragonBalls.
+mppurge shenron
+mpsleep 9
+mpechozone &YThe DragonBalls lift from the ground and hover high into the air, their bright yellow glow beginning to glow even brighter.
+mpsleep 18
+mpechozone &YThe DragonBalls begin to twirl in a circle, quickly gaining momentum. Suddenly, they rocket even further into the sky, stopping abruptly at an extremely high elevation.
+mpsleep 18
+mpechozone &YThe DragonBalls dart away from each other in 7 separate directions, turning to stone in their flight, slowly recharging for their next use.
+mppurge dragonballs
+mpsleep 27
+mpechozone &zThe pitch black sky fades, returning the beauty of the clouds and the sun to your vision.
+~
+> speech_prog 'I summon you forth, Shenron!'~
+mpforce $n drop all.dragonball
+mppurge one
+mppurge two
+mppurge three
+mppurge four
+mppurge five
+mppurge six
+mppurge seven
+mpoload 108
+mpechozone &zThe sky suddenly turns a midnight black. The sun, stars, and moon are completely eclipsed from view.
+mpsleep 18
+mpecho &YThe DragonBalls fall into the ground and begin to pulse, a bright glow emanating from each ball.
+mpsleep 36
+mpecho &YThe DragonBalls pulse brightly.
+mpsleep 36
+mpecho &YThe DragonBalls pulsing begins to pick up speed.
+mpsleep 27
+mpecho &YThe DragonBalls pulse and glow extremely quickly, the pulse picking up even more speed.
+mpsleep 18
+mpecho &YThe DragonBalls pulse rapidly.
+mpsleep 9
+mpecho &YThe DragonBalls pulse so rapidly that they appear to be constantly glowing!
+mpechozone &YSuddenly, a massive streak of yellow energy rockets out of the DragonBalls, shooting towards the sky!
+mpechozone &RMassive bolts of supercharged energy arc out from the dragon-shaped apparition, but fade before they can do any damage to anything.
+mpmload 103
+mpsleep 63
+mpechozone &YThe huge, glowing dragon-shaped apparition that is Shenron quickly fades its light, revealing the massive Dragon of the DragonBalls, &GShenron&Y!
+mppurge shenron
+mpmload 101
+mpecho &CEarths Eternal Dragon, Shenron says in a deep, booming voice 'You have awakened me from my rest. Ask me your wish so that I may grant it.
+~
+|
+#103
+glowing summoning shenron~
+Glowing Shenron~
+A rapidly growing beam of energy in the shape of a dragon is taking over the sky.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#104
+resetz0r d00dwak~
+a newly created reset management mob~
+Some god abandoned a newly created reset management mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#111
+namek wish management mob~
+Porunga's Wish Management Mob~
+Porunga's Wish Management Mob is extremely busy
+~
+~
+8519747 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'I summon you forth, Porunga!'~
+mpforce $n drop all.dragonball
+mppurge one
+mppurge two
+mppurge three
+mppurge four
+mppurge five
+mppurge six
+mppurge seven
+mpoload 118
+mpechozone &zThe sky suddenly turns a midnight black. The sun, stars, and moon are completely eclipsed from view.
+mpsleep 18
+mpecho &YThe DragonBalls fall into the ground and begin to pulse, a bright glow emanating from each ball.
+mpsleep 36
+mpecho &YThe DragonBalls glow pulses brightly.
+mpsleep 36
+mpecho &YThe DragonBalls pulsing begins to pick up speed.
+mpsleep 27
+mpecho &YThe DragonBalls pulse and glow extremely quickly, the pulse picking up even more speed.
+mpsleep 18
+mpecho &YThe DragonBalls pulse rapidly.
+mpsleep 9
+mpecho &YThe DragonBalls pulse so rapidly that they appear to be constantly glowing!
+mpechozone &YSuddenly, a massive streak of yellow energy rockets out of the DragonBalls, shooting towards the sky!
+mpechozone &RThe yellow energy morphs to form the shape of a gigantic, musclebound dragon!
+mpmload 113
+mpsleep 63
+mpechozone &YThe huge, musclebound behemoth of an apparition quickly fades, revealing the &GNamekian Dragon God of Dreams&Y, &gPorunga&Y!&D
+mppurge Porunga
+mpmload 112
+mpecho &CNamekian Dragon God of Dreams, Porunga says in a deep, booming voice 'You who have summoned me... I shall grant you 3 wishes... tell them to me now.'
+~
+> speech_prog 'Farewell.'~
+mpechozone &YPorunga glows a bright yellow, his power having been used up granting the wish.
+mpsleep 9
+mpechozone &YPorunga's body explodes into seven groups of energy particles, which all instantly enter the confines of the DragonBalls.
+mpsleep 9
+mpechozone &YThe DragonBalls lift from the ground and hover high into the air, their bright yellow glow beginning to glow even brighter.
+mpsleep 18
+mpechozone &YThe DragonBalls begin to twirl in a circle, quickly gaining momentum. Suddenly, they rocket even further into the sky, stopping abruptly at an extremely high elevation.
+mpsleep 18
+mpechozone &YThe DragonBalls dart away from each other in 7 separate directions, turning to stone in their flight, slowly recharging for their next use.
+mppurge dragonballs
+mppurge Porunga
+~
+|
+#112
+namekian dragon god of dreams porunga~
+Namekian God of Dreams, Porunga~
+The Namekian Dragon God of Dreams, Porunga invades the sky.
+~
+~
+1073872963 524416&33554432 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 7~
+mpecho &CNamekian Dragon God of Dreams, Porunga growls loudly, stating 'Please try to hurry with your wishes... I don't wish to be here all day.'
+~
+> speech_prog 'The immortals say no.'~
+mpecho &CNamekian Dragon God of Dreams, Porunga sighs loudly, bellowing 'Your wish shall not be granted.'
+~
+> speech_prog 'The immortals say yes.'~
+mpecho &wNamekian Dragon God of Dreams, Porunga hmm's very loudly, shaking the ground with the soundwaves from his voice.
+mpecho &CNamekian Dragon God of Dreams, Porunga roars 'Your wish... shall be granted...'
+mpecho &RPorunga's eyes momentarily glow a bright red as he uses his energy to grant the wish.&D
+~
+> speech_prog 'The wishes have been granted.'~
+mpecho &CNamekian Dragon God of Dreams, Porunga roars slowly, 'Your wishes have been granted... Now I leave to rest...'
+say Farewell.
+~
+> speech_prog 'Wish granted.'~
+mpecho &CNamekian Dragon God of Dreams, Porunga roars slowly, 'Your wish has been granted... What is your next wish?'&D
+~
+|
+#113
+glowing summoning porunga~
+Glowing Porunga~
+A huge yellow beam of dragon-shaped energy is taking over the sky.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#121
+ultima wish management mob~
+The Black Star Wish Management Mob~
+The Black Star Wish Management Mob is extremely busy.
+~
+~
+92405827 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'I summon you forth, Ultima Shenron!'~
+mpforce $n drop all.dragonball
+mppurge one
+mppurge two
+mppurge three
+mppurge four
+mppurge five
+mppurge six
+mppurge seven
+mpoload 128
+mpechozone &zThe sky suddenly turns a midnight black. The sun, stars, and moon are completely eclipsed from view.
+mpsleep 18
+mpecho &YThe Black Star DragonBalls fall into the ground and begin to pulse, a bright glow emanating from each ball.
+mpsleep 36
+mpecho &YThe Black Star DragonBalls glow brightly, pulsing slowly.
+mpsleep 36
+mpecho &YThe Black Star DragonBalls pulsing begins to pick up speed.
+mpsleep 27
+mpecho &YThe Black Star DragonBalls pulse and glow extremely quickly, the pulse picking up even more speed.
+mpsleep 18
+mpecho &YThe Black Star DragonBalls glow brightens to extreme measures as The Black Star DragonBalls pulse wildly, nearly blinding you.
+mpsleep 9
+mpecho &YThe Black Star DragonBalls pulse so rapidly that they appear to be constantly glowing!
+mpsleep 9
+mpechozone &RSuddenly, a massive streak of red energy rockets out of The Black Star DragonBalls, shooting towards the sky!
+mpechozone &R&UA loud rumbling spans throughout the area as the power of the dragon threatens to tear the planet apart!&D
+mpmload 122
+mpsleep 63
+mpechozone &YThe huge, glowing dragon-shaped apparition fades completely, leaving the area completely dark for a moment. Suddenly, a bright flash erupts from the darkness, revealing a massive red dragon.
+mpechozone &RUltima Shenron has been summoned!
+mppurge Shenron
+mpmload 123
+mpecho &CThe Ultimate Dragon, Ultima Shenron says in a deep, booming voice 'You have awakened me from my rest. Ask me your wish so that I may grant it.
+~
+> speech_prog 'Farewell.'~
+mpsleep 9
+mppurge shenron
+mpechozone &YUltima Shenron glows a bright yellow, his power having been used up granting the wish.
+mpsleep 9
+mpechozone &YUltima Shenron's body explodes into seven groups of energy particles, which all instantly enter the confines of The Black Star DragonBalls.
+mpsleep 9
+mpechozone &YThe Black Star DragonBalls lift from the ground and hover high into the air, their bright yellow glow beginning to glow even brighter.
+mpsleep 18
+mpechozone &YThe Black Star DragonBalls begin to twirl in a circle, quickly gaining momentum. Suddenly, they rocket even further into the sky, stopping abruptly at an extremely high elevation.
+mpsleep 18
+mpechozone &YThe Black Star DragonBalls dart away from each other in 7 separate directions, scattering about the universe!
+mpechozone &R&UA voice echoes in the wake of the DragonBalls: The area in which the wish was made will be destroyed in one hour if the dragonballs are not recollected!&D
+mppurge dragonballs
+~
+|
+#122
+glowing ultima shenron~
+Glowing Ultima Shenron~
+A huge, red, glowing dragon-shaped apparition is taking over the sky.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#123
+ultima shenron~
+Ultima Shenron~
+The Black Star Dragon, Ultima Shenron is dominating the sky.
+~
+~
+1073872963 101187712 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 7~
+mpecho &CThe Ultimate Dragon, Ultima Shenron growls loudly, stating 'Hurry with your wish... I will not stay here all day.'
+~
+> speech_prog 'The immortals say no.'~
+mpecho &CThe Ultimate Dragon, Ultima Shenron sighs loudly, saying 'Your wish... cannot be granted...'
+~
+> speech_prog 'The immortals say yes.'~
+mpecho &wThe Ultimate Dragon, Ultima Shenron hmm's very loudly, shaking the ground with the soundwaves from his voice.
+mpecho &CThe Ultimate Dragon, Ultima Shenron roars 'Your wish... shall be granted...'
+mpecho &RUltima Shenron's eyes momentarily glow a bright red as he uses his energy to grant the wish.&D
+~
+> speech_prog 'The wish has been granted.'~
+mpecho &CThe Ultimate Dragon, Ultima Shenron roars slowly, 'Your wish has be granted... Now I leave to rest...'
+say Farewell.
+~
+|
+#131
+syn shenron~
+Syn Shenron~
+A gigantic white dragon seeks to destroy all life.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+0 7000000000000
+112 112 0
+400 400 250 400 10
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#132
+haze shenron~
+Haze Shenron~
+A fat green dragon is polluting the air.
+~
+~
+1073741825 524416&16777216 0 C
+1 0 100 1d20+0 2d5+0
+0 6000000000000
+112 112 0
+375 375 375 375 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpjunk armor
+if pl($n) <= 18000000000000
+  if rand(10)
+   mpecho &zHaze Shenron screams loudly, then explodes into a massive cloud of smog. The cloud draws all pollution toward it, cleaning the polluted air Haze Shenron left behind!&D
+   mpechozone &wHaze Shenron has fallen! The Two Star DragonBall has been reclaimed!
+   mpoload 132
+  else
+   mpecho &zHaze Shenron pulls all the pollution in the air toward him and absorbs it into his body, replenishing himself. &C"This world is too polluted! I'll never die!"&D
+   mpmload 132
+   mpforce 2.haze mpoload 198
+   mpforce 2.haze wear armor
+  endif
+else
+   mpechoat $n &COHaze Shenron belches up a thick layer of smog and blows it toward you. The smog drains your power and recharges Haze Shenron!&D
+   mpechoaround $n &COHaze Shenron belches up a thick layer of smog and blows it toward $n. The smog drains $s power and recharges Haze Shenron!&D
+   mpmload 132
+   mpforce 2.haze mpoload 198
+   mpforce 2.haze wear armor
+endif
+~
+> fight_prog 15~
+finishing buster
+~
+> fight_prog 18~
+final flash
+~
+> fight_prog 10~
+'big bang kamehameha'
+~
+> fight_prog 14~
+'death ball'
+~
+> fight_prog 25~
+mpecho &WHaze Shenron takes a deep breath, his entire body expanding to contain the air he inhales.&D
+mpechoat $n &zHaze Shenron quickly jumps forward and roars in your face, thick black clouds of polluted air engulfing you!&D
+mpechoaround $n &zHaze Shenron quickly jumps forward and roars in $n's face, thick black clouds of polluted air engulfing $n!&D
+if rand(50)
+mpechoat $n &RYou scream, in excruciating pain, as the smog drains you of your power!&D[35]
+mpechoaround $n &RFrom within the cloud, $n screams in excruciating pain as the smog drains $m of $s power!&D[35]
+mpdamage $n 35
+else
+mpechoat $n &YJust as the smog begins to drain you of your power, you power up and use your energy to blow the smog away!&D[5]
+mpechoaround $n &YJust as the smog begins to drain $n of $s power, $e powers up and uses $s energy to blow the smog away!&D[5]
+mpdamage $n 5
+endif
+~
+|
+#133
+eis shenron~
+Eis Shenron~
+A skinny, blue dragon is freezing everything he touches.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000000000
+112 112 0
+350 350 350 350 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 100~
+mpechoat $n &CEis Shenron kneels down and touches his finger to a patch of ice, which instantly turns into a gelatinous goo.
+mpechoat $n &CHe stands up and flings the gooey ice at your eyes, blinding you!
+mpmset $n affectedby blindness
+~
+|
+#134
+nuova shenron~
+Nuova Shenron~
+A bright orange dragon burns everything in sight.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000000
+112 112 0
+325 325 325 325 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#135
+rage shenron~
+Rage Shenron~
+A pink dragon is electrocuting everything with his power-absorbing slime.
+~
+~
+16777217 128&8192 -1000 C
+1 0 30 1d20+0 2d5+0
+0 3000000000000
+112 112 0
+300 300 300 300 0
+0 0 0 0 0
+30 30 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+finishing buster
+~
+> fight_prog 10~
+final flash
+~
+> fight_prog 5~
+'big bang kamehameha'
+~
+> fight_prog 12~
+ki burst
+~
+> fight_prog 25~
+mpechoat $n &RA glob of slime drips off of Rage Shenron's body. Rage Shenron picks it up and hurls it at you, aiming directly for your face!
+mpechoaround $n &RA glob of slime drips off of Rage Shenron's body. Rage Shenron picks it up and hurls it at $n, aiming directly for $s face!
+if rand(50)
+mpechoat $n &RThe slime smashes into you, instantly sending jolts of powerful electricity through your body. A large amount of power is quickly drained from your body, feeding and recharging Rage Shenron.
+mpechoaround $n &RThe slime collides with $n, bolts of electricity arcing between $s fingers as the slime electrocutes $m, draining $s power.
+mpdamage $n 15
+mprestore rage 15
+else
+mpechoat $n &BYou quickly tilt your head to the side, the slime barely passing by you.
+mpechoaround $n &B$n tilts his head to the side, the slime barely missing $m.
+endif
+~
+> death_prog 100~
+mpjunk armor
+if pl($n) <= 9000000000000
+  if rand(10)
+   mpecho &zRage Shenron falls to the ground. &C"You... you've beaten me... How...?"&D
+   mpechozone &wRage Shenron has fallen! The Five Star DragonBall has been reclaimed!&D
+   mpoload 135
+  else
+   mpecho &zRage Shenron charges his electric slime, fully healing himself. &C"Don't you get it? You can't beat me!"&D
+   mpmload 135
+   mpforce 2.rage mpoload 198
+   mpforce 2.rage wear armor
+  endif
+else
+   mpecho &CRage Shenron feeds off of $n's power, healing himself! $n is too strong!&D
+   mpmload 135
+   mpforce 2.rage mpoload 198
+   mpforce 2.rage wear armor
+endif
+~
+> fight_prog 20~
+mpecho &WRage Shenron tenses his muscles, causing electricity to arc about his entire body.&D
+mpecho &WRage Shenron looks upward, pointing both arms to the sky.&D &C'Dragon Thunder!'&D
+mpecho &BA massive wave of lightning flows upward into Rage Shenrons arms, then jolts out of his fingertips into the sky.&D
+if rand(50)
+mpechoat $n &wA powerful bolt of lightning strikes the top of your head, burning your hair and cooking your flesh!&D
+mpechoaround $n &wA powerful bolt of lightning strikes the top of $n's head, burning $s hair and cooking $s flesh!&D
+mpdamage $n 25
+else
+mpechoat $n &WA bright flash warns you to move as quickly as possible, allowing you to just barely dodge Rage Shenron's attack!
+mpechoaround $n &WA bright flash warns brightens the area. $n quickly dives to the side just as a massive bolt of lightning strikes the ground where $e was standing!&D
+endif
+~
+|
+#136
+oceanus shenron~
+Oceanus Shenron~
+A blue female dragon is summoning typhoons and hurricanes.
+~
+~
+1073741825 268959872 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000000000
+112 112 2
+275 275 275 275 0
+0 0 0 0 0
+30 30 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpjunk armor
+if pl($n) <= 6000000000000
+  if rand(10)
+   mpecho &zOceanus Shenron explodes into a shower of miniscule water particles, leaving a &Rr&Oa&Yi&Gn&Bb&Co&pw&z in the sky.&D
+   mpechozone &wOceanus Shenron has fallen! The Six Star DragonBall has been reclaimed!
+   mpoload 136
+  else
+   mpecho &zOceanus Shenron uses the &Wwind&z and &Bwater vapors &zin the air to heal herself. &C"You can't win!"&D
+   mpmload 136
+   mpforce 2.oceanus mpoload 198
+   mpforce 2.oceanus wear armor
+  endif
+else
+   mpecho &COceanus Shenron is knocked back, but lands in a small pond! The water replenishes her! $n is hitting too hard!
+   mpmload 136
+   mpforce 2.oceanus mpoload 198
+   mpforce 2.oceanus wear armor
+endif
+~
+> fight_prog 20~
+mpecho &BOceanus Shenron calls all of the clouds in the sky to do her bidding, creating a massive spinning funnel of water. &C"Typhoon Obliteration!"&D
+mpechoat $n &BTorrents of water and hail thrash your body, leaving you broken, bruised, and bleeding!&D
+mpechoaround $n &BTorrents of water and hail thrash $n's body, leaving $m broken, bruised, and bleeding!&D
+mppldamage $n 21
+~
+> fight_prog 12~
+mpecho &WOceanus Shenron raises her arms to the sky, palms facing upward.
+mpecho &WA large ball of water quickly forms, spikes of ice sticking out of every inch of liquid. &C"Water Bomb!"&D
+mpechoat $n &wOceanus Shenron flings her arms downward, the water bomb dropping out of the sky and colliding soundly with your chest. [32]&D
+mpechoaround $n &wOceanus Shenron flings her arms downward, the water bomb dropping out of the sky and colliding soundly with $n's chest. [32]&D
+mppldamage $n 32
+~
+> fight_prog 15~
+mpecho &COceanus Shenron closes her eyes and exhales softly. A mist forms around her, an evil cackle echoing throughout the area.
+mpecho &CThe mist separates itself from Oceanus Shenron and takes the shape of Princess Oto. &W"Oto Spirit Cannon!"
+mpechoat $n &zOceanus Shenron reaches into the depths of her evil ways and summons the energy to launch the Oto Spirit Cannon at you!
+mpechoat $n &wThe spirit of Princess Oto, tainted by evil, charges at you and merges with your body. The evil taint of the spirit wreaks havoc on you from the inside out!&D [18]
+mpechoaround $n &wThe spirit of Princess Oto, tainted by evil, charges at $n and merges with $s body. The evil taint of the spirit wreaks havoc on $n from the inside out!&D [18]
+mppldamage $n 18
+~
+> fight_prog 18~
+mpecho &WOceanus Shenron begins to spin around at an extremely fast speed.
+mpecho &W A large tornado soon begins to whirl around her, sending small rocks and other objects flying. &C"Wind Razor!"
+mpechoat $n &WOceanus Shenron splits the tornado into thousands of miniature cyclones and flings them all at you!
+mpechoat $n &WThe fast-moving wind cuts into your skin like a thousand razor blades!&D
+mpechoaround $n &WOceanus Shenron splits the tornado into thousands of miniature cyclones and flings them all at $n!
+mpechoaround $n &WThe fast-moving wind cuts into $n's skin like a thousand razor blades!&D
+mppldamage $n 20
+~
+> fight_prog 25~
+mpecho &WOceanus Shenron draws two big circles in the air, small sideways tornados forming in the center of each one.&D
+mpecho &WShe crosses her arms, and in doing so the two tornados merge into one fairly large whirlwind. &C"Whirlwind Spin!"&D
+mpechoat $n &WOceanus Shenron thrusts her arms forward, sending the twister straight at you!&D
+mpechoaround $n &WOceanus Shenron thrusts her arms forward, sending the twister straight at $n!&D
+if rand(75)
+mpechoat $n &BThe twister crashes into you, powerful gale-force winds wreaking havoc on your body!&D[30]
+mpechoaround $n &BThe twister crashes into $n, strong winds nearly tearing $m apart!&D[30]
+mpdamage $n 30
+else
+mpechoat $n &wYou cross your arms and brace yourself for impact. The whirlwind crashes into your arms, ripping huge gashes in your arms!&D[10]
+mpechoaround $n &w$n crosses $s arms and braces for impact. The whirlwind connects with $s arms, tearing huge gashes in $n's arms!&D[10]
+mpdamage $n 10
+endif
+~
+|
+#137
+naturon shenron~
+Naturon Shenron~
+An ugly purple dragon is destroying the planet with his powerful earthquakes.
+~
+~
+1073741825 524416&4194304 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000
+112 112 0
+250 250 250 250 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mpechoat $n &pNaturon Shenron &Odives underground and masks his power signature, giving you an extreme disadvantage in the battle.&D
+mpechoaround $n &pNaturon Shenron &Odives underground and masks his power signature, giving $n an extreme disadvantage in the battle.&D
+mpgoto 666
+mpsleep 27
+mpgoto $n
+mpechoat $n &OSuddenly, the ground begins to tremble. New mountains rise from the ground, completely surrounding you.&D
+mpechoat $n &OThe ground beneath your feet caves in, dragging you down while the mountains crumble and collapse on top of you.&D
+mpechoaround $n &OSuddenly, the ground begins to tremble. New mountains rise from the ground, completely surrounding $n.&D
+mpechoaround $n &OThe ground beneath $n's feet caves in, dragging $m down while the mountains crumble and collapse on top of $m.&D
+mppldamage $n 25
+mpkill $n
+~
+> fight_prog 15~
+mpechoat $n &pNaturon Shenron &Cleaps high into the air and lands on top of you. He absorbs you into his gut, and absorbs all of your combat knowledge!&D
+mpechoat $n &RHe ejects you from his body and quickly uses one of your own attacks against you!&D
+mpechoaround $n &pNaturon Shenron &Cleaps high into the air and lands on top of $n. He absorbs $n into his gut, and absorbs all of $s combat knowledge!&D
+mpechoaround $n &RHe ejects $n from his body and quickly uses one of $n's own attacks against $m!&D
+if race($n) == saiyan
+ if rand(50)
+  'big bang kamehameha'
+ else
+  'final flash'
+ endif
+endif
+if race($n) == android
+ if rand(50)
+  'ssd bomber'
+ else
+  'hells flash'
+ endif
+endif
+if race($n) == halfbreed
+ if rand(50)
+  'finishing buster'
+ else
+  'burning attack'
+ endif
+endif
+if race($n) == human
+ if rand(50)
+  'dodon ray'
+ else
+  'multi disk' 40
+ endif
+endif
+if race($n) == icer
+ if rand(50)
+  'death ball'
+ else
+  'scattered finger beam' 50
+ endif
+endif
+if race($n) == namek
+ if rand(50)
+  'heaven-splitter cannon'
+ else
+  'hellzone grenade' 50
+ endif
+endif
+if race($n) == bio-android
+ 'ki burst'
+endif
+if race($n) == ghetti
+ if rand(50)
+  'belly blast'
+ else
+  'obliteration cannon'
+ endif
+endif
+~
+> fight_prog 18~
+mpechoat $n &pNaturon Shenron&z grabs you by the head and shoves you halfway into his absorbant belly.&D
+mpechoat $n &pNaturon Shenron&z sends powerful seismic waves through your body, shaking your organs and shattering bones!&D
+mpechoaround $n &pNaturon Shenron&z grabs $n by the head and shoves $m halfway into his absorbant belly.&D
+mpechoaround $n &pNaturon Shenron&z sends powerful seismic waves through $n's body, shaking $s organs and shattering bones!&D
+mppldamage $n 30 
+~
+> fight_prog 21~
+mpechoat $n &pNaturon Shenron&Y kicks you face first into the ground, then leaps hundreds of feet into the air. &w[2]&D
+mpechoaround $n &pNaturon Shenron&Y kicks $n face first into the ground, then leaps hundreds of feet into the air. &w[2]&D
+mpdamage $n 2
+say I hope you like your planet! You're about to get a VERY personal tour!
+mpechoat $n &pNaturon Shenron&O dives back down to the Earth, crashing head-first into your back.&w[4]&D
+mpechoaround $n &pNaturon Shenron&O dives back down to the Earth, crashing head-first into $n's back.&w[4]&D
+mpdamage $n 4
+mpechoat $n &OUsing his velocity, &pNaturon Shenron&O forcefully shoves you underground as rocks, metal ores, and other hard earthly substances tear into your body.&w[8]&D
+mpechoaround $n &OUsing his velocity, &pNaturon Shenron&O forcefully shoves $n underground as rocks, metal ores, and other hard earthly substances tear into $s body.&w[8]&D
+mpdamage $n 8
+mpechoat $n &OFinally, &pNaturon Shenron&O turns upward and drives you out of the ground, launching huge chunks of earth into the air all around you. You land, bleeding, bruised, and broken - unfortunately, it's not over yet.
+mpechoaround $n &OFinally, &pNaturon Shenron&O and $n explode out of the ground, launching huge chunks of earth into the air all around them. $n lands, bleeding, bruised, and broken, &pNaturon Shenron&O preparing for the final attack of his technique.
+mpechoat $n &OThe chunks of earth and rock crash into your injured body, crushing you nearly beyond recognition. &w[5]
+mpechoaround $n &OThe chunks of earth and rock crash into $n's injured body, crushing $m nearly beyond recognition. &w[5]
+mpdamage &n 5
+mpechoat $n &pNaturon Shenron&R seemingly appears out of nowhere, jackhammering straight into the small of your back, creating a gigantic crater in the ground as the sound of shattering bones fills the air. &w[11]&D
+mpechoaround $n &pNaturon Shenron&R seemingly appears out of nowhere, jackhammering straight into the small of your back, creating a gigantic crater in the ground as the sound of shattering bones fills the air. &w[11]&D
+mpdamage $n 11
+~
+> death_prog 100~
+mpjunk armor
+if pl($n) <= 3000000000000
+  if rand(10)
+   mpecho &ONaturon Shenron crashes to the ground, unable to use his powers any more. His body disintegrates and melds with the Earth.&D
+   mpechozone &wNaturon Shenron has fallen! The Seven Star DragonBall has been reclaimed!
+   mpoload 137
+  else
+   mpecho &zNaturon Shenron sinks into the ground beneath him, gripping his wounds. He quickly reappears, &wfully healed from the minerals in the earth!&D
+   mpmload 137
+   mpforce 2.naturon mpoload 198
+   mpforce 2.naturon wear armor
+  endif
+else
+   mpecho &pNaturon Shenron absorbs you into his body and drains you of your energy, restoring himself!
+   mpmload 137
+   mpforce 2.naturon mpoload 198
+   mpforce 2.naturon wear armor
+endif
+~
+|
+#138
+omega shenron~
+Omega Shenron~
+A huge white dragon is fully powered up, eager to kill.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+0 20000000000000
+112 112 0
+500 500 500 500 0
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#139
+earths evil eternal dragon shadow shenron~
+Earths Evil Eternal Dragon, Shadow Shenron~
+Shadow Shenron is absorbing all the good energy in the universe.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#101
+one star dragon ball shenron~
+&OOne Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with a single red star in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#102
+two star dragon ball shenron~
+&OTwo Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with two red stars inside glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#103
+three star dragon ball shenron~
+&OThree Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with three red stars inside glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#104
+four star dragon ball shenron~
+&OFour Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with four stars inside glints in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#105
+five star dragon ball shenron~
+&OFive Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with five stars inside glints in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#106
+six star dragon ball shenron~
+&OSix Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with six stars inside glints in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#107
+seven star dragon ball shenron~
+&OSeven Star DragonBall&Y(&z>&GShenron&z<&Y)&D~
+An orange ball with seven stars inside glints in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#108
+seven earth dragonballs~
+&OThe Seven Earth DragonBalls&D~
+The seven dragonballs are glowing brightly, maintaining Shenron's summoning.~
+~
+13 1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#111
+one star dragon ball porunga~
+&OOne Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with a single red star glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#112
+two star dragon ball porunga~
+&OTwo Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with two red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#113
+three star dragon ball porunga~
+&OThree Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with three red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#114
+four star dragon ball porunga~
+&OFour Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with four red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#115
+five star dragon ball porunga~
+&OFive Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with five red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#116
+six star dragon ball porunga~
+&OSix Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with six red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#117
+seven star dragon ball porunga~
+&OSeven Star DragonBall&Y(&z>&gPorunga&z<&Y)&D~
+A huge orange ball with seven red stars glints in the sunlight.~
+~
+13 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#118
+seven namek dragon balls~
+&OThe Seven Namek DragonBalls&D~
+The seven Namek DragonBalls are maintaining Porunga's presence.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#121
+one star black dragon ball~
+&OOne Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with a single black star in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#122
+two star black dragon ball~
+&OTwo Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with two black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#123
+three star black dragon ball~
+&OThree Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with three black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#124
+four star black  dragon ball~
+&OFour Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with four black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#125
+five star black dragon ball~
+&OFive Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with five black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#126
+six star black dragon ball~
+&OSix Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with six black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#127
+seven star black dragon ball~
+&OSeven Star DragonBall&Y(&r>&zBlack Star&r<&Y)&D~
+An orange ball with seven black stars in the center glints brightly in the sunlight.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#128
+seven glowing black star dragon balls~
+&OThe Seven Black Star DragonBalls&D~
+The seven Black Star DragonBalls are glowing bright red, maintaining Ultima Shenrons presence.~
+~
+13 1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#129
+peaceful resting black dragon balls~
+The Black Star DragonBall Case~
+A decorative box sits on a pedestal, the DragonBalls within resting peacefully.~
+~
+13 0&1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#131
+one star shadow dragon ball~
+&zOne Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with a single dark red star in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#132
+two star shadow dragon ball~
+&zTwo Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with two dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#133
+three star shadow dragon ball~
+&zThree Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with three dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#134
+four star shadow dragon ball~
+&zFour Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with four dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#135
+five star shadow dragon ball~
+&zFive Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with five dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#136
+six star shadow dragon ball~
+&zSix Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with six dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#137
+seven star shadow dragon ball~
+&zSeven Star Dragonball&Y(&z>&rShadow&z<&Y)&D~
+A black ball with seven dark red stars in the center glows with an evil aura.~
+~
+8 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#138
+seven glowing shadow dragon balls~
+&zThe Seven Shadow DragonBalls&D~
+The seven Shadow DragonBalls absorb all light into their evil aura, powering Shadow Shenron.~
+~
+13 1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#197
+power pole~
+&RPower Pole&D~
+A small red staff is encased in its sheath.~
+~
+5 0 8193
+12 4 5 0 0 0
+1 850000 85000
+ 0
+A
+1 3
+A
+2 5
+A
+3 2
+> wear_prog 100~
+mpforce $n say Power Pole, Extend!
+mpechoat $n &RThe miniature staff suddenly extends, growing to fit your height!
+mpechoaround $n &RThe miniature staff suddenly extends, growing to fit $n's height!
+~
+> remove_prog 100~
+mpforce $n say Power Pole, Retract!
+mpecho &RThe miniature staff shrinks back down to its original size.
+~
+|
+#198
+dragon armor shenron~
+Armor of the Shadow Dragons~
+A piece of armor covered in dragon scales is extremely protective.~
+~
+9 0 9
+0 0 0 0 5000 5000
+1 0 0
+ 0
+#199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#100
+Floating in a void~
+~
+0 4 1
+S
+#101
+Floating in a void~
+~
+0 4 1
+S
+#102
+Floating in a void~
+~
+0 4 1
+S
+#103
+Floating in a void~
+~
+0 4 1
+S
+#104
+Floating in a void~
+~
+0 4 1
+S
+#105
+Floating in a void~
+~
+0 4 1
+S
+#106
+Floating in a void~
+~
+0 4 1
+S
+#107
+Floating in a void~
+~
+0 4 1
+S
+#108
+Floating in a void~
+~
+0 4 1
+S
+#109
+Floating in a void~
+~
+0 4 1
+S
+#110
+Floating in a void~
+~
+0 4 1
+S
+#111
+Floating in a void~
+~
+0 4 1
+S
+#112
+Floating in a void~
+~
+0 4 1
+S
+#113
+Floating in a void~
+~
+0 4 1
+S
+#114
+Floating in a void~
+~
+0 4 1
+S
+#115
+Floating in a void~
+~
+0 4 1
+S
+#116
+Floating in a void~
+~
+0 4 1
+S
+#117
+Floating in a void~
+~
+0 4 1
+S
+#118
+Floating in a void~
+~
+0 4 1
+S
+#119
+Floating in a void~
+~
+0 4 1
+S
+#120
+Floating in a void~
+~
+0 4 1
+S
+#121
+Floating in a void~
+~
+0 4 1
+S
+#122
+Floating in a void~
+~
+0 4 1
+S
+#123
+Floating in a void~
+~
+0 4 1
+S
+#124
+Floating in a void~
+~
+0 4 1
+S
+#125
+Floating in a void~
+~
+0 4 1
+S
+#126
+Floating in a void~
+~
+0 4 1
+S
+#127
+Floating in a void~
+~
+0 4 1
+S
+#128
+Floating in a void~
+~
+0 4 1
+S
+#129
+Floating in a void~
+~
+0 4 1
+S
+#130
+Floating in a void~
+~
+0 4 1
+S
+#131
+Floating in a void~
+~
+0 4 1
+S
+#132
+Floating in a void~
+~
+0 4 1
+S
+#133
+Floating in a void~
+~
+0 4 1
+S
+#134
+Floating in a void~
+~
+0 4 1
+S
+#135
+Floating in a void~
+~
+0 4 1
+S
+#136
+Floating in a void~
+~
+0 4 1
+S
+#137
+Floating in a void~
+~
+0 4 1
+S
+#138
+Floating in a void~
+~
+0 4 1
+S
+#139
+Floating in a void~
+~
+0 4 1
+S
+#140
+Floating in a void~
+~
+0 4 1
+S
+#141
+Floating in a void~
+~
+0 4 1
+S
+#142
+Floating in a void~
+~
+0 4 1
+S
+#143
+Floating in a void~
+~
+0 4 1
+S
+#144
+Floating in a void~
+~
+0 4 1
+S
+#145
+Floating in a void~
+~
+0 4 1
+S
+#146
+Floating in a void~
+~
+0 4 1
+S
+#147
+Floating in a void~
+~
+0 4 1
+S
+#148
+Floating in a void~
+~
+0 4 1
+S
+#149
+Floating in a void~
+~
+0 4 1
+S
+#150
+Floating in a void~
+~
+0 4 1
+S
+#151
+Floating in a void~
+~
+0 4 1
+S
+#152
+Floating in a void~
+~
+0 4 1
+S
+#153
+Floating in a void~
+~
+0 4 1
+S
+#154
+Floating in a void~
+~
+0 4 1
+S
+#155
+Floating in a void~
+~
+0 4 1
+S
+#156
+Floating in a void~
+~
+0 4 1
+S
+#157
+Floating in a void~
+~
+0 4 1
+S
+#158
+Floating in a void~
+~
+0 4 1
+S
+#159
+Floating in a void~
+~
+0 4 1
+S
+#160
+Floating in a void~
+~
+0 4 1
+S
+#161
+Floating in a void~
+~
+0 4 1
+S
+#162
+Floating in a void~
+~
+0 4 1
+S
+#163
+Floating in a void~
+~
+0 4 1
+S
+#164
+Floating in a void~
+~
+0 4 1
+S
+#165
+Floating in a void~
+~
+0 4 1
+S
+#166
+Floating in a void~
+~
+0 4 1
+S
+#167
+Floating in a void~
+~
+0 4 1
+S
+#168
+Floating in a void~
+~
+0 4 1
+S
+#169
+Floating in a void~
+~
+0 4 1
+S
+#170
+Floating in a void~
+~
+0 4 1
+S
+#171
+Floating in a void~
+~
+0 4 1
+S
+#172
+Floating in a void~
+~
+0 4 1
+S
+#173
+Floating in a void~
+~
+0 4 1
+S
+#174
+Floating in a void~
+~
+0 4 1
+S
+#175
+Floating in a void~
+~
+0 4 1
+S
+#176
+Floating in a void~
+~
+0 4 1
+S
+#177
+Floating in a void~
+~
+0 4 1
+S
+#178
+Floating in a void~
+~
+0 4 1
+S
+#179
+Floating in a void~
+~
+0 4 1
+S
+#180
+Floating in a void~
+~
+0 4 1
+S
+#181
+Floating in a void~
+~
+0 4 1
+S
+#182
+Floating in a void~
+~
+0 4 1
+S
+#183
+Floating in a void~
+~
+0 4 1
+S
+#184
+Floating in a void~
+~
+0 4 1
+S
+#185
+Floating in a void~
+~
+0 4 1
+S
+#186
+Floating in a void~
+~
+0 4 1
+S
+#187
+Floating in a void~
+~
+0 4 1
+S
+#188
+Floating in a void~
+~
+0 4 1
+S
+#189
+Floating in a void~
+~
+0 4 1
+S
+#190
+Floating in a void~
+~
+0 4 1
+S
+#191
+Floating in a void~
+~
+0 4 1
+S
+#192
+Floating in a void~
+~
+0 4 1
+S
+#193
+Floating in a void~
+~
+0 4 1
+S
+#194
+Floating in a void~
+~
+0 4 1
+S
+#195
+Floating in a void~
+~
+0 4 1
+S
+#196
+Floating in a void~
+~
+0 4 1
+S
+#197
+Floating in a void~
+~
+0 4 1
+S
+#198
+Floating in a void~
+~
+0 4 1
+S
+#199
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 104 1 100
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

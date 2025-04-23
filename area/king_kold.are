@@ -1,0 +1,1638 @@
+#AREA   King Colds Ship~
+
+#AUTHOR Eckerad~
+
+#RANGES
+0 0 0 0
+$
+
+#RESETMSG The ship trembles under your feet King kold must be mad.....~
+
+#FLAGS
+1 3
+
+#ECONOMY 0 7751745
+
+#MOBILES
+#170000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1073741825 0 0 S
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#170001
+King Cold~
+King Cold~
+King Cold is found sitting on his throne.
+~
+~
+1073741825 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#170002
+Eckerad Mob~
+Goku~
+&b(&RAdmin&b)&P Goku is teh r0x0r of teh lifz0r is here before you
+~
+~
+1073741825 0 0 S
+55 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#170003
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1073741825 0 0 S
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+#0
+
+
+#OBJECTS
+#170000
+Icerian Battle Armor~
+a newly created Icerian Battle Armor~
+Some god dropped a newly created Icerian Battle Armor here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#170000
+Universal Transporter Room~
+In this room a shading of a blue light fillst he place completly as a
+humming sound can be heard afar. On the northern wall there are many small
+dials are sticking out of it. The temptation of pushing one of them seems
+close to impossible A computer here seems to be waiting for your command.
+ 
+To leave the ship just say &C'down'&c.
+~
+0 1036 0
+D1
+Ships corridor~
+~
+16777216 -1 170001
+> speech_prog 'transport' 100~
+mptransfer $n 170028
+~
+> speech_prog 'down' 100~
+if ispc($n)
+mpechoat $n The floor panel begins to move down taking you out of the ship.
+mpechoaround $n You watch $n ride the elevator down out of the ship.
+mptransfer $n 170028
+mpat 3 force $n look
+endif
+~
+|
+S
+#170001
+Ships corridor~
+There is a brightly lit cooridor that just has a big  bright lights. The
+light is very bright. There is  nothing of any importance except a door at
+the end and  a sign that says "Elevator". There is a dim blue  blinking
+light can be seen in the north, but not much  else. Also a low humming
+noise can be heard from the  south it almosts sounds like someone working.
+There is  just about nothing except that elevator, the dim blue  light,
+and that small humming noise. There is a sign  here it states "Visitors
+head south for help and  information. All others head up the elevator". 
+~
+0 8 0
+D0
+~
+~
+0 -1 170002
+D2
+Middle lobby~
+~
+0 -1 170003
+D3
+Universal Transporter room~
+~
+0 -1 170000
+S
+#170002
+Elevator~
+Once entering the elevator it appears to become alive with energy, the 
+elevator is shaped like a sphere, and the floor is made of a strange metal. 
+The only source of light in the elevator is the sphere itself. There is a 
+voice command box on the panel next to the door. 
+ 
+Type &C'look list'&c to view the floors of the ship.
+~
+0 1036 0
+D2
+Ships corridor~
+~
+0 -1 170001
+E
+look list~
+(&Y1&w)say "&Bsection one&w" to Training area.
+(&Y2&w)say "&Bsection two&w" to Middle lobby.
+(&Y3&w)say "&Bsection three&w" to shop, trainer, regen area.~
+> speech_prog "section three" 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170010
+mpat 3 force $n look
+endif
+~
+> speech_prog 'section one' 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170016
+mpat 3 force $n look
+endif
+~
+> entry_prog 100~
+~
+|
+S
+#170003
+Middle lobby~
+This is the middle lobby it’s  the largest room of King Kold’s ship,  
+two fighters sits on two chairs here they seems to be giving tips to 
+one another  aside from that this room have a blue tiled floor.  A big 
+bright ball can be seen  on the ceiling that brighten the room, and a sign 
+that's been place on the wall.  the north is back to the ships corridor and 
+to the south a corner is there.  In the room a red carpet it rolled out 
+to the east must me some place important.
+~
+0 8 0
+D0
+Ships corridor~
+~
+0 -1 170001
+D2
+A corner~
+~
+0 -1 170004
+D3
+Small hallway~
+~
+0 -1 170007
+S
+#170004
+A corner~
+There is a corner here. It seems to have no importance  what so ever. It
+seems that there is no use being here.  To the east there is an airlock
+room that seems to be  tightly shut. The door is made of thick steel and a
+ little keypad with numbers on it. On the console is a  little slot that
+looks like it is used for keycards.  There looks to be a gravity training
+room on the other  side, but it's nearly impossible to get through that 
+door. To the north there is a busy lobby filled with  all kinds of people
+in suites. There is a big golden  desk that is imprinted with the words
+"Information  Center". There is a woman sitting behind the desk  smiling
+freakishly. The room has lots of fine trim and  thick coloumns line the
+way. There are two huge doors  both with a golden archway, and big double
+doors. To  the south there is something that looks like the window  of a
+spaceship. Visible through the window there are  people on board. They are
+sitting in rows inside the  ship. There are two huge guards standing at
+the shuttle  door. They are not moving at all they are just looking 
+straight forward. This room has no windows except to  that shuttle, but
+yet there is an odd, soothing breeze.  
+~
+0 8 0
+D0
+Middle lobby~
+~
+0 -1 170003
+D1
+Ships airlock room~
+~
+33 -1 170005
+E
+closet~
+You place both of your hands on the door as you look inside the closet
+it fills with cleanin items.~
+S
+#170005
+Ships airlock room~
+this is the ships airlock room, as the door closes behind you the gravity
+in this room decreases there's an onboard computer in this room that release
+pressure here make it comfortable for you incase u want to go outside. to 
+the west is back to the corridor to the east is the technical room and to
+the south is outside the ship.
+~
+0 8 0
+D1
+Thechnical room~
+~
+37 -1 170006
+D3
+A corner~
+~
+33 -1 170004
+S
+#170006
+Tech Lab~
+this is an empty room Inside of the ship there is all kinds of computers.
+It  looks like they are doing experiments on gagets. On one  side they
+have something that looks like an arm guard,  and on the other side
+something that looks like a chest  plate. The arm plate fires off a huge
+energy ball at  the chest plate, and as it makes contact with the chest 
+plate it is absorbed. These are only two of the many  various gadgets in
+the room. There are Icers everywhere  guarding all the test equipment, but
+there are even  more guarding the door on the other end. There are big 
+words over that door that says "Authorized Personel  Only, All Others Will
+Be Terminated". 
+~
+0 8 0 0 0 7006
+D3
+Ships airlock room~
+~
+33 -1 170005
+D6
+~
+~
+0 -1 170067
+S
+#170007
+Small hallway~
+THere is a small hallway that is completely empty. To the east is a small
+lobby filled with all kinds of people. There seems to be alot of comotion
+in there, to there west there is a guard pacing around the room watching
+all that moves.
+~
+0 8 0
+D1
+Middle lobby~
+~
+0 0 170003
+D3
+Guards room~
+~
+0 0 170008
+S
+#170008
+Guards room~
+This room looks like a typical guards room there's a monitor on the north 
+wall and there's two guards stands here by the west door guarding it.
+
+~
+0 8 0
+D1
+Small hallway~
+~
+0 -1 170007
+D3
+~
+~
+0 -1 170052
+S
+#170009
+King Kold control room~
+You entered this as you look around in your eyes this control room doesn't 
+appear to be a normal spaceship control room. In the middle of the room you 
+see a huge throne chair glued to the floor as king kold sit in it with his big 
+glass of You look around theres little mutants everywhere and some appear to
+be human.
+~
+0 12 0
+S
+#170010
+Elevator~
+Once entering the elevator it appears to become alive with energy, the 
+elevator is shaped like a sphere, and the floor is made of a strange metal. 
+The only source of light in the elevator is the sphere itself. There is a 
+voice command box on the panel next to the door. 
+
+~
+0 1036 0
+D8
+Lower lobby~
+~
+0 0 170011
+E
+look list~
+(&Y1&w)say "&Bsection one&w" to Training area.
+(&Y2&w)say "&Bsection two&w" to Middle lobby.
+(&Y3&w)say "&Bsection three&w" to shop, trainer, regen area.~
+> speech_prog 'section two' 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170002
+mpat 3 force $n look
+endif
+~
+> speech_prog 'section one' 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170016
+mpat 3 force $n look
+endif
+~
+|
+S
+#170011
+Lower lobby~
+This happens to be lobby  around  people can be seen talking to each
+other in a corner and to the north you see an trainer room  to the south 
+you also a regen room in case you ever get wounded and to the west there's 
+an armor shop. Across the armor shop is a sparring room and northeast is 
+back to the elevator.
+
+
+~
+0 0 0
+D0
+Trainer~
+~
+0 0 170012
+D1
+Sparring room~
+~
+0 0 170015
+D2
+Regen room~
+~
+0 0 170014
+D3
+Armor shop~
+~
+0 0 170013
+D7
+~
+~
+0 0 170010
+S
+#170012
+Icer Trainer~
+You look about the completely simple white room and see in the center 
+sitting down a trainer. On the walls sit many combat gears. You look back
+to the trainer and he gives you a slight smirk. 
+
+~
+0 0 0
+D2
+Lower lobby~
+~
+0 0 170011
+S
+#170013
+Armor shop~
+About the room rows of items is lined up against the walls but as you to
+touch the items the armor shopkeeper sits behinds a clear glass wall.
+Looking at the shop keeper eyeing you as you look about you begin to 
+think its safe to assume you need to speak to him. This room is very 
+well light and has a few cameras on the wall moving back and forth watching 
+every movement of you. When you look down you see there is a brown rug 
+on the ground.
+~
+0 0 0
+D1
+Lower lobby~
+~
+0 0 170011
+S
+#170014
+Regen room~
+You walk into this room and see many small pods with people in them. It
+seems these pods are where you go to heal your wounds. You see as a
+persons cut closes up as they are in the tube itself. A light shines from
+these pods as they are on many scientist stands here and watching the pods
+making sure nothing happens while the people sit in them. 
+~
+0 1028 0
+D0
+Lower lobby~
+~
+0 0 170011
+S
+#170015
+Sparring room~
+You enter a room with grey padded floor with brown walls. The room
+is quite large in size it can hold a lot of people in it. The floor under
+your feet is padded enough so if you fall it will not hurt so much. But
+that probably is the less of your worries after seeing some of the people
+already dying sparring in here. 
+
+~
+0 65676 0
+D3
+Lower lobby~
+~
+0 0 170011
+S
+#170016
+Elevator~
+Once entering the elevator it appears to become alive with energy, the 
+elevator is shaped like a sphere, and the floor is made of a strange metal. 
+The only source of light in the elevator is the sphere itself. There is a 
+voice command box on the panel next to the door. 
+~
+0 1032 0
+D0
+Entering Hologram area~
+~
+0 0 170017
+E
+look list~
+(&Y1&w)say "&Bsection one&w" to Training area.
+(&Y2&w)say "&Bsection two&w" to Middle lobby.
+(&Y3&w)say "&Bsection three&w" to shop, trainer, regen area.~
+> speech_prog 100~
+section two
+if ispc($n)
+mptransfer $n 203
+endif
+section one
+if ispc($n)
+mptransfer $n 212
+mpecho An electronic voice emits from the command box, it starts to hum and
+crackle , it is quite hard to make out.
+Finally the voice is more recognizable as it blares through the intercom, "Type
+look list to see the list of each section
+of the ~
+> speech_prog 'section three' 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170010
+mpat 170010 force $n look
+endif
+~
+> speech_prog 'section two' 100~
+if ispc($n)
+mpechoat $n You are suddenly enclosed in a white aura! Seconds later, you
+mpechoat $n disappear in a flash of blinding light!
+mpechoaround $n $n is suddenly enclosed in a white aura! Seconds later, they
+mpechoaround $n disappear in a flash of blinding light!
+mptransfer $n 170002
+mpat 3 force $n look
+endif
+~
+|
+S
+#170017
+Entering Battle Arena~
+This room has a gray double door that will leads into the holograms 
+rooms. From here screaming can be heard and other sounds that can catch
+a fighters interest. walking a bit forward, the double doors open and 
+through them not much can be seen from here until walking into the next 
+room. But the room seems darker and harder to see.
+~
+0 8 0
+D0
+~
+~
+0 -1 170018
+D2
+Elevator~
+~
+0 0 170016
+S
+#170018
+Icerian Battle Arena~
+In the middle of the room the first level hologram can be seen as it 
+already loaded and ready to go for combat. The surroundings look like 
+outside except for the two exits that  leads out to the east and to
+the south of the large room. The ground here resemble the dark brown dirt
+that's outside, the sky above is gray and fill with dark clouds.  
+~
+0 0 0
+D0
+~
+~
+0 -1 170019
+D2
+~
+~
+0 -1 170017
+S
+#170019
+Icerian Battle Arena~
+Just as the other room before the surroundings are just the same. But 
+the cold breeze and smoke is much more in the air. About the surroundings 
+puffs of dust coming as the wind blows more hard and stronger. the hologram
+stands still as the wind whistle  around.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 170020
+D2
+~
+~
+0 -1 170018
+S
+#170020
+Icerian Battle Arena~
+The climate of this room gets harsher by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+~
+0 0 0
+D1
+~
+~
+0 -1 170021
+D2
+~
+~
+0 -1 170019
+S
+#170021
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D1
+~
+~
+0 -1 170022
+D3
+~
+~
+0 -1 170020
+S
+#170022
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D1
+~
+~
+0 -1 170023
+D3
+~
+~
+0 -1 170021
+S
+#170023
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D1
+~
+~
+0 -1 170024
+D3
+~
+~
+0 -1 170022
+S
+#170024
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D2
+~
+~
+0 -1 170025
+D3
+~
+~
+0 -1 170023
+S
+#170025
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D0
+~
+~
+0 -1 170024
+D2
+~
+~
+0 -1 170026
+S
+#170026
+Icerian Battle Arena~
+The air in this room get hard to breath by the moment. The wind blows much
+worse and colder. More debris moves about the area and the dark grey sky,
+it makes the sun worse to peak through. The dust flows from the ground from
+the large craters below. 
+
+
+~
+0 0 0
+D0
+~
+~
+0 -1 170025
+D3
+~
+~
+0 -1 170027
+S
+#170027
+Icerian Battle Arena~
+This room is the final room of the training simulater  that's  in this large 
+complex. Its very hard to see and all there is  the sound of the wind blowing. 
+The sky is completely dark and the ground is rocky with dark ashy dirt
+on it. The little light that show but that doesn't give much help to seeing
+about the area. This room will complete the training of the hologram series.
+~
+0 4 0
+D1
+~
+~
+0 -1 170026
+D3
+~
+~
+0 -1 170039
+S
+#170028
+Approaching a Ship~
+While making it further through the mountains, a large open field steals
+the  attention of anything that draws near it. A Massive spaceship rests
+in the very center of the abyss. The hatch would appear to be open, as
+there seems to be some sort of elevator  on it that leads into the ship
+itself.  
+ 
+To enter the ship just say &C'up'&c.
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 170030
+> speech_prog 'up' 100~
+if ispc($n)
+mpechoat $n The floor panel begins to move upwards bringing you into the ship.
+mpechoaround $n You watch $n ride the elevator up into the ship.
+mptransfer $n 170000
+mpat 3 force $n look
+endif
+~
+|
+S
+#170029
+Void~
+~
+0 1073741828 1
+S
+#170030
+Surreal Mountain Side~
+There is a big open plain with a huge mountain at one  end. There are
+little chunks of mountains scattered  through out the plain. There is a
+huge creater in the  middle of the plain. The creater has to be at least
+one  hundred feet deep and five hundred feet wide. There is  a small head
+in the center of the hole that is made of  half metal. There is wreckage
+of a spaceship with  bodies laying all around it. There are two signs one
+by  the wreckage and one by the creater. Then one by the  ship reads "This
+is where Icerias pride was slain along  with the great King Cold". The one
+by the creater reads  "This is where the Icerian Lord Frieza was brutally 
+murdered while fighting a Super Saiya-Jin". There is a  very cool breeze
+sweeping across the plain, and the  shadow of the mountain covers
+everything except the crater.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170028
+D3
+~
+~
+0 -1 170031
+S
+#170031
+Desert Plains~
+There is a wide open plain here. There is sand everywhere blowing around. There is a bunch of desert as far as the eye can see. There is big scorpions and snakes dueling each other over food. Way off an oasis can be seen. There appears to be someone ther
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170030
+D3
+~
+~
+0 -1 170032
+S
+#170032
+1235~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170031
+D3
+~
+~
+0 -1 170033
+S
+#170033
+Sandy Mount~
+The ground here is very sandy and hard to walk on. There are humgongus
+reptile here ready to strike. It is hard to see through the rough storm
+that is to the north. All that can be scene is a large object to the east.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170032
+D5
+~
+~
+0 -1 170034
+S
+#170034
+Climbing up the Rock Wall~
+About halfway up the side of the mountain there are bird nests, and small
+ledges that could be used as grips.  Birds are circling around the top of
+the ledge, and they seem ready to attack. Off to the west there is a large
+mountain terrain, to the southwest there is a dune with a swirling hole
+sucking every thing up in the middle of it, and to the far west there
+seems to be a mountain made of sand that seems to be storming. This would
+be a very dangerous place to fall . Lets keep moving.
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 170033
+D5
+~
+~
+0 -1 170035
+S
+#170035
+Desert Wall~
+Mountains line the horizon on all sides of a vast desert. There are very
+tall mountains everywhere, and all kinds of snakes and scorpions in the
+desert area. To the west a sandy mountain can be seen, to the east a wall
+of rock that looks climbable, and to the south is a dune that is full of
+sand and reptiles. This place seems very well deserted.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 170036
+D4
+~
+~
+0 -1 170034
+S
+#170036
+Sand Dune~
+All around is sand. There is about a mile of sand. At the very center there
+is a swirling section of sand sucking everything in, There are all kinds
+of reptiles around the area prepared to attack. To the north there is a
+region of mountains, northeast is a long rock wall ready to be climbed,
+and to the northwest there is a huge mountain of sand that looks very,
+very dangerous. 
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170035
+S
+#170037
+1240~
+~
+0 1073741828 1
+S
+#170038
+Icerian Battle Arena~
+~
+0 1073741828 1
+S
+#170039
+Icerian Battle Arena~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170027
+D3
+~
+~
+0 -1 170040
+S
+#170040
+Icerian Battle Arena~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170039
+D3
+~
+~
+0 -1 170041
+S
+#170041
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170042
+D1
+~
+~
+0 -1 170040
+S
+#170042
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170043
+D2
+~
+~
+0 -1 170041
+S
+#170043
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170044
+D2
+~
+~
+0 -1 170042
+S
+#170044
+Icerian Battle Arena~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170045
+D2
+~
+~
+0 -1 170043
+S
+#170045
+Icerian Battle Arena~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170046
+D3
+~
+~
+0 -1 170044
+S
+#170046
+Icerian Battle Arena~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170047
+D3
+~
+~
+0 -1 170045
+S
+#170047
+Icerian Battle Arena~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 170048
+D3
+~
+~
+0 -1 170046
+S
+#170048
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170047
+D2
+~
+~
+0 -1 170049
+S
+#170049
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170048
+D3
+~
+~
+0 -1 170050
+S
+#170050
+Icerian Battle Arena~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170051
+D1
+~
+~
+0 -1 170049
+S
+#170051
+Icerian Battle Arena~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 170050
+S
+#170052
+Junction~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 170054
+D1
+~
+~
+0 -1 170008
+D2
+~
+~
+0 -1 170053
+S
+#170053
+Southern Tunnel~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 170052
+D9
+~
+~
+0 -1 170060
+S
+#170054
+North Tunnel~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 170052
+D7
+~
+~
+0 -1 170055
+S
+#170055
+Northern Tunnel~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 170056
+D8
+~
+~
+0 -1 170054
+S
+#170056
+Guards Hallway~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170055
+D3
+~
+~
+0 -1 170057
+S
+#170057
+Guards Hallway~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170056
+D3
+~
+~
+0 -1 170058
+S
+#170058
+Floating in a void~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170057
+D9
+~
+~
+0 -1 170064
+S
+#170059
+Floating in a void~
+~
+0 1073741828 1
+S
+#170060
+Southern Guard Hallway~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 170061
+D6
+~
+~
+0 -1 170053
+S
+#170061
+Floating in a void~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170060
+D3
+~
+~
+0 -1 170062
+S
+#170062
+Guard Hallway~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170061
+D3
+~
+~
+0 -1 170063
+S
+#170063
+Southern Junction Nw~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170062
+D7
+~
+~
+0 -1 170064
+S
+#170064
+Before King Colds Room~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 170065
+D6
+~
+~
+0 -1 170058
+D8
+~
+~
+0 -1 170063
+S
+#170065
+King Colds Throne Room~
+There is a big room with an icy cold breeze. It is  heavily guarded by
+Iceria's pride. The entire room is  made of  ice except for the throne.
+The throne is made  of stone with a nice leather material that looks very 
+comfortable. There are more Icers guarding the throne  than there are
+guarding the door. There is a huge  golden nameplate overtop of the throne
+that reads "The  Great King Cold". There sitting one the throne a tall 
+bulky Icer sitting there looking like a huge monster  capable of mass
+destruction. He seems to be watching  all the visitors closely while
+signaling for more  guards. A sign twenty feet in front of the throne a 
+sign reads "Suspicious looking visitors will be closely  watched. If any
+of the visitors do anything to upset  King Cold they will be terminated".
+Maybe it's time to leave...
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170064
+S
+#170066
+King Colds Throne Room~
+There is a big room with an icy cold breeze. It is  heavily guarded by
+Iceria's pride. The entire room is  made of  ice except for the throne.
+The throne is made  of stone with a nice leather material that looks very 
+comfortable. There are more Icers guarding the throne  than there are
+guarding the door. There is a huge  golden nameplate overtop of the throne
+that reads "The  Great King Cold". In little small letters underneath  the
+name it states "Killed In Action". Another sheet of  icy breeze sweeps
+through the room.
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 170064
+S
+#170067
+Floating in a void~
+~
+0 1073741828 1
+D6
+~
+~
+0 -1 170068
+D9
+~
+~
+0 -1 170006
+S
+#170068
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170069
+D9
+~
+~
+0 -1 170067
+S
+#170069
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170070
+D2
+~
+~
+0 -1 170068
+S
+#170070
+Floating in a void~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 170069
+D6
+~
+~
+0 -1 170071
+S
+#170071
+Floating in a void~
+~
+0 1073741824 1
+D6
+~
+~
+0 -1 170072
+D9
+~
+~
+0 -1 170070
+S
+#170072
+Floating in a void~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170073
+D9
+~
+~
+0 -1 170071
+S
+#170073
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170074
+D3
+~
+~
+0 -1 170072
+S
+#170074
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170075
+D2
+~
+~
+0 -1 170073
+S
+#170075
+Floating in a void~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 170076
+D2
+~
+~
+0 -1 170074
+S
+#170076
+Before a ladder~
+There is a long corridor with birhgt lights linning the hall. there are
+guards at each end watching the doors talking and laughing with each
+other. There are also guards walking up and down the hall watching all the
+visitors. There are sounds of technology to the north. There is a big door
+to the north with the words "Engine Room" imprinted on it.
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 170075
+D5
+~
+~
+0 -1 170077
+S
+#170077
+Floating in a void~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 170076
+D5
+~
+~
+0 -1 170078
+S
+#170078
+Floating in a void~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 170077
+D5
+~
+~
+0 -1 170079
+S
+#170079
+Floating in a void~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 170078
+D5
+~
+~
+0 -1 170080
+S
+#170080
+Floating in a void~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 170079
+D5
+~
+~
+0 -1 170081
+S
+#170081
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 170082
+D4
+~
+~
+0 -1 170080
+S
+#170082
+Floating in a void~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 170081
+D6
+~
+~
+0 -1 170084
+D7
+~
+~
+0 -1 170083
+S
+#170083
+Engine Room~
+~
+0 1073741824 1
+D8
+~
+~
+0 -1 170082
+S
+#170084
+Repair Bay~
+~
+0 1073741824 1
+D9
+~
+~
+0 -1 170082
+S
+#170085
+Floating in a void~
+~
+0 1073741828 1
+S
+#170086
+Floating in a void~
+~
+0 1073741828 1
+S
+#170087
+Floating in a void~
+~
+0 1073741828 1
+S
+#170088
+Floating in a void~
+~
+0 1073741828 1
+S
+#170089
+BufTest1~
+[Level 50]
+[Level 50]
+avtalk      comment     induct      make        outcast     
+[Level 51]
+:           
+authorize   bamfin      bamfout     goto        holylight   immtalk     
+regoto      wizhelp     
+[Level 52]
+ghost       invis       iscore      incognito   
+[Level 53]
+gwhere      retran      transfer    
+[Level 54]
+bodybag     fixchar     khistory    
+litterbug   makeclan    mfind       minvoke     muse        newbieset   
+noemote     notell      notitle     ofind       oinvoke     peace       
+qpset       qpstat      restore     setclan     showclan    sober       
+strip       saveall     superbless  
+[Level 55]
+at          instaroom   loadarea    
+mcreate     mpedit      mpstat      mset        mstat       newzones    
+oredit      ocreate     opedit      opstat      ostat       oset        
+rat         rdelete     redit       reset       rlist       rpedit      
+rpstat      rset        rstat       rgrub       savearea    vnums       
+[Level 56]
+atobj       hell        ocopy       ooedit      odelete     olist       
+omenu       orange      owhere      ogrub       silence       
+[Level 57]
+aset        
+astat       force       makerepair  makeshop    mdelete     mlist       
+mmenu       mrange      mwhere      omedit      repairset   repairshops 
+repairstat  shops       shopset     shopstat    
+[Level 58]
+boards      bset        
+bstat       makeboard   memory      recho       return      switch      
+showweather setweather  showlayers  
+[Level 59]
+aassign     ban         dmesg       
+echo        gfighting   hedit       hset        last        makedeity   
+nohelps     oldslay     sedit       slookup     sset        setdeity    
+showdeity   scatter     strew       unhell      unsilence   vsearch     
+zones       
+[Level 60]
+coinduct    cooutcast   fixed       immhost     log         
+makewizlist project     restoretime wizlock   
+[Level 61]
+bestowarea  foldarea    
+installarea instazone   setboot     vassign     
+[Level 62]
+allow       deny        
+disconnect  freeze      grub        ipcompare   pardon      pcrename    
+sla         snoop       users       warn        
+[Level 63]
+bestow      checkvnums  
+diagnose    delay       elevate     immortalize loadup      mortalize   
+nuisance    purge       restrict    retire      showcouncil trust       
+unnuisance  watch       
+[Level 64]
+advance     cmenu       cedit       cset        
+info        makecouncil noresolve   reserve     setcouncil  showclass   
+setclass    showrace    setrace     unfoldarea  
+[Level 65]
+balzhur     cmdtable    
+copyover    colorize    destro      destroy     for         forceclose  
+formpass    fquit       lowpurge    makeslay    mapout      ooc         
+order       oldscore    rank        reboo       reboot      rreset      
+setslay     showslay    shutdow     shutdown    slay        slaydestroy 
+think       timecmd
+~
+0 1073741828 1
+S
+#170090
+The Pathway to Goku's Mind...~
+Appearing in such a place causes a moment of confusion before the feel
+of gravity slips away, giving off the feeling of helplesness only to follow
+with a sudden realization that you're not in 'Kansas' anymore. Strange
+pulses of light emit from the far distances, like shooting stars, passing
+by in all distances. Amist the center of the vast void would be a mirror,
+plain and true. Upon closer inspection, it looks shattered, yet together
+like a puzzle, completed like a life-long ordeal. Glimpses of light run
+through the cracks, sealing it together to form a single pane of glass,
+only to shatter at the slightest touch...
+~
+0 1073741838 1
+D0
+~
+~
+0 -1 170090
+D1
+~
+~
+0 -1 170090
+D2
+~
+~
+0 -1 170090
+D3
+~
+~
+0 -1 170090
+D4
+~
+~
+0 -1 170090
+D5
+~
+~
+0 -1 170090
+D6
+~
+~
+0 -1 170090
+D7
+~
+~
+0 -1 170090
+D8
+~
+~
+0 -1 170090
+D9
+~
+~
+0 -1 170090
+> speech_prog 'limbo' 100~
+mptransfer $n 2
+~
+|
+S
+#0
+
+
+#RESETS
+M 0 170001 1 170065
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$
