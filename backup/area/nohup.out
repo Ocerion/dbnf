@@ -1,0 +1,2560 @@
+Sun Sep  6 14:17:29 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 14:17:29 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 14:17:29 2020 :: Loading commands
+Sun Sep  6 14:17:29 2020 :: Loading sysdata configuration...
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 14:17:29 2020 :: Loading socials
+Sun Sep  6 14:17:29 2020 :: Loading skill table
+Sun Sep  6 14:17:29 2020 :: Sorting skill table...
+Sun Sep  6 14:17:29 2020 :: Remapping slots to sns
+Sun Sep  6 14:17:29 2020 :: Loading classes
+Sun Sep  6 14:17:29 2020 :: Loading races
+Sun Sep  6 14:17:29 2020 :: Loading herb table
+Sun Sep  6 14:17:29 2020 :: Loading tongues
+Sun Sep  6 14:17:29 2020 :: Making wizlist
+Sun Sep  6 14:17:29 2020 :: Building wizinfo
+Sun Sep  6 14:17:29 2020 :: Initializing request pipe
+Sun Sep  6 14:17:29 2020 :: Initializing random number generator
+Sun Sep  6 14:17:29 2020 :: Setting time and weather
+Sun Sep  6 14:17:29 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill chou kamehameha not found.
+ASSIGN_GSN: Skill teleport kamehameha not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super kamehameha not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 14:17:29 2020 :: Loading DNS cache...
+Sun Sep  6 14:17:29 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 14:17:29 2020 :: Fixing exits
+Sun Sep  6 14:17:29 2020 :: Loading economy
+Sun Sep  6 14:17:29 2020 :: Initializing economy
+Sun Sep  6 14:17:29 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 14:17:29 2020 :: Loading buildlist
+Sun Sep  6 14:17:29 2020 :: ../gods/Ocerion
+Sun Sep  6 14:17:29 2020 :: Loading boards
+Sun Sep  6 14:17:29 2020 :: Loading Global Boards
+Sun Sep  6 14:17:29 2020 :: Loading clans
+Sun Sep  6 14:17:29 2020 :: Loading clans...
+Sun Sep  6 14:17:29 2020 :: $
+Sun Sep  6 14:17:29 2020 :: Loading alliance data
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 14:17:29 2020 ::  Done clans 
+Sun Sep  6 14:17:29 2020 :: Loading deities
+Sun Sep  6 14:17:29 2020 :: Loading deities...
+Sun Sep  6 14:17:29 2020 :: $
+Sun Sep  6 14:17:29 2020 ::  Done deities 
+Sun Sep  6 14:17:29 2020 :: Loading councils
+Sun Sep  6 14:17:29 2020 :: Loading councils...
+Sun Sep  6 14:17:29 2020 :: hoi.council
+Sun Sep  6 14:17:29 2020 :: newbiecouncil
+Sun Sep  6 14:17:29 2020 :: $
+Sun Sep  6 14:17:29 2020 ::  Done councils 
+Sun Sep  6 14:17:29 2020 :: Loading watches
+Sun Sep  6 14:17:29 2020 :: Loading bans
+Sun Sep  6 14:17:29 2020 :: Done.
+Sun Sep  6 14:17:29 2020 :: Loading reserved names
+Sun Sep  6 14:17:29 2020 :: Loading auth namelist
+Sun Sep  6 14:17:29 2020 :: Loading censored words
+Sun Sep  6 14:17:29 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 14:17:29 2020 :: Checking player files....
+Sun Sep  6 14:17:29 2020 :: Checking corpses....
+Sun Sep  6 14:17:29 2020 :: Loading corpses
+Sun Sep  6 14:17:29 2020 :: Loading space
+Sun Sep  6 14:17:29 2020 :: Loading space...
+Sun Sep  6 14:17:29 2020 ::  Done starsystems 
+Sun Sep  6 14:17:29 2020 :: Loading ships
+Sun Sep  6 14:17:29 2020 :: Loading ships...
+Sun Sep  6 14:17:29 2020 ::  Done ships 
+Sun Sep  6 14:17:29 2020 :: Loading governments
+Sun Sep  6 14:17:29 2020 :: Loading planets...
+Sun Sep  6 14:17:29 2020 :: earth.planet
+Sun Sep  6 14:17:29 2020 :: cou.planet
+Sun Sep  6 14:17:29 2020 :: vegeta.planet
+Sun Sep  6 14:17:29 2020 :: namek.planet
+Sun Sep  6 14:17:29 2020 :: furiza.planet
+Sun Sep  6 14:17:29 2020 :: fakenamek.planet
+Sun Sep  6 14:17:29 2020 :: $
+Sun Sep  6 14:17:29 2020 ::  Done planets 
+Sun Sep  6 14:17:29 2020 :: Loading Immortal Hosts
+Sun Sep  6 14:17:29 2020 :: Done.
+Sun Sep  6 14:17:29 2020 :: Loading Projects
+Sun Sep  6 14:17:29 2020 :: Loading Morphs
+Sun Sep  6 14:17:29 2020 :: Optimizing Morphs.
+Sun Sep  6 14:17:29 2020 :: Done.
+Sun Sep  6 14:17:29 2020 :: Loading storerooms
+Sun Sep  6 14:17:29 2020 :: Loading Colors
+Sun Sep  6 14:17:29 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:29 2020 :: Loading changes
+Sun Sep  6 14:17:29 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 14:17:29 2020 :: Loading hiscore tables
+Sun Sep  6 14:17:29 2020 :: Initializing socket
+Sun Sep  6 14:17:29 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Sun Sep  6 14:17:39 2020 :: Starting compression for descriptor 7
+Sun Sep  6 14:17:39 2020 :: Preloading player data for: Ocerion (2K)
+Sun Sep  6 14:17:40 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 14:17:40 2020 :: Ocerion@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 14:17:42 2020 :: Log Ocerion: hotboot
+Sun Sep  6 14:17:42 2020 :: Hotboot initiated by Ocerion.
+Sun Sep  6 14:17:42 2020 :: Saving modified area files...
+Sun Sep  6 14:17:42 2020 :: Saving player files and connection states....
+Sun Sep  6 14:17:42 2020 :: Stopping compression for descriptor 7
+Sun Sep  6 14:17:42 2020 :: Executing hotboot....
+Sun Sep  6 14:17:42 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 14:17:42 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 14:17:42 2020 :: Loading commands
+Sun Sep  6 14:17:42 2020 :: Loading sysdata configuration...
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 14:17:42 2020 :: Loading socials
+Sun Sep  6 14:17:42 2020 :: Loading skill table
+Sun Sep  6 14:17:42 2020 :: Sorting skill table...
+Sun Sep  6 14:17:42 2020 :: Remapping slots to sns
+Sun Sep  6 14:17:42 2020 :: Loading classes
+Sun Sep  6 14:17:42 2020 :: Loading races
+Sun Sep  6 14:17:42 2020 :: Loading herb table
+Sun Sep  6 14:17:42 2020 :: Loading tongues
+Sun Sep  6 14:17:42 2020 :: Making wizlist
+Sun Sep  6 14:17:42 2020 :: Building wizinfo
+Sun Sep  6 14:17:42 2020 :: Initializing request pipe
+Sun Sep  6 14:17:42 2020 :: Initializing random number generator
+Sun Sep  6 14:17:42 2020 :: Setting time and weather
+Sun Sep  6 14:17:42 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill chou kamehameha not found.
+ASSIGN_GSN: Skill teleport kamehameha not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super kamehameha not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 14:17:42 2020 :: Loading DNS cache...
+Sun Sep  6 14:17:42 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 14:17:42 2020 :: Fixing exits
+Sun Sep  6 14:17:42 2020 :: Loading economy
+Sun Sep  6 14:17:42 2020 :: Initializing economy
+Sun Sep  6 14:17:42 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 14:17:42 2020 :: Loading buildlist
+Sun Sep  6 14:17:42 2020 :: ../gods/Ocerion
+Sun Sep  6 14:17:42 2020 :: Loading boards
+Sun Sep  6 14:17:42 2020 :: Loading Global Boards
+Sun Sep  6 14:17:42 2020 :: Loading clans
+Sun Sep  6 14:17:42 2020 :: Loading clans...
+Sun Sep  6 14:17:42 2020 :: $
+Sun Sep  6 14:17:42 2020 :: Loading alliance data
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 14:17:42 2020 ::  Done clans 
+Sun Sep  6 14:17:42 2020 :: Loading deities
+Sun Sep  6 14:17:42 2020 :: Loading deities...
+Sun Sep  6 14:17:42 2020 :: $
+Sun Sep  6 14:17:42 2020 ::  Done deities 
+Sun Sep  6 14:17:42 2020 :: Loading councils
+Sun Sep  6 14:17:42 2020 :: Loading councils...
+Sun Sep  6 14:17:42 2020 :: hoi.council
+Sun Sep  6 14:17:42 2020 :: newbiecouncil
+Sun Sep  6 14:17:42 2020 :: $
+Sun Sep  6 14:17:42 2020 ::  Done councils 
+Sun Sep  6 14:17:42 2020 :: Loading watches
+Sun Sep  6 14:17:42 2020 :: Loading bans
+Sun Sep  6 14:17:42 2020 :: Done.
+Sun Sep  6 14:17:42 2020 :: Loading reserved names
+Sun Sep  6 14:17:42 2020 :: Loading auth namelist
+Sun Sep  6 14:17:42 2020 :: Loading censored words
+Sun Sep  6 14:17:42 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 14:17:42 2020 :: Checking player files....
+Sun Sep  6 14:17:42 2020 :: Checking corpses....
+Sun Sep  6 14:17:42 2020 :: Loading corpses
+Sun Sep  6 14:17:42 2020 :: Loading space
+Sun Sep  6 14:17:42 2020 :: Loading space...
+Sun Sep  6 14:17:42 2020 ::  Done starsystems 
+Sun Sep  6 14:17:42 2020 :: Loading ships
+Sun Sep  6 14:17:42 2020 :: Loading ships...
+Sun Sep  6 14:17:42 2020 ::  Done ships 
+Sun Sep  6 14:17:42 2020 :: Loading governments
+Sun Sep  6 14:17:42 2020 :: Loading planets...
+Sun Sep  6 14:17:42 2020 :: earth.planet
+Sun Sep  6 14:17:42 2020 :: cou.planet
+Sun Sep  6 14:17:42 2020 :: vegeta.planet
+Sun Sep  6 14:17:42 2020 :: namek.planet
+Sun Sep  6 14:17:42 2020 :: furiza.planet
+Sun Sep  6 14:17:42 2020 :: fakenamek.planet
+Sun Sep  6 14:17:42 2020 :: $
+Sun Sep  6 14:17:42 2020 ::  Done planets 
+Sun Sep  6 14:17:42 2020 :: Loading Immortal Hosts
+Sun Sep  6 14:17:42 2020 :: Done.
+Sun Sep  6 14:17:42 2020 :: Loading Projects
+Sun Sep  6 14:17:42 2020 :: Loading Morphs
+Sun Sep  6 14:17:42 2020 :: Optimizing Morphs.
+Sun Sep  6 14:17:42 2020 :: Done.
+Sun Sep  6 14:17:42 2020 :: Loading storerooms
+Sun Sep  6 14:17:42 2020 :: Loading Colors
+Sun Sep  6 14:17:42 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:17:42 2020 :: Loading changes
+Sun Sep  6 14:17:42 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 14:17:42 2020 :: Initiating hotboot recovery.
+Sun Sep  6 14:17:42 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 14:17:42 2020 :: Hotboot recovery complete.
+Sun Sep  6 14:17:42 2020 :: Loading hiscore tables
+Sun Sep  6 14:17:42 2020 :: Initializing socket
+Sun Sep  6 14:17:42 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Sun Sep  6 14:18:03 2020 :: Starting compression for descriptor 9
+Sun Sep  6 14:18:03 2020 :: Preloading player data for: Vyktor (1K)
+Sun Sep  6 14:18:05 2020 :: Loading player data for: Vyktor (1K)
+Sun Sep  6 14:18:05 2020 :: Vyktor@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 14:20:04 2020 :: Log Ocerion: hotboot
+Sun Sep  6 14:20:04 2020 :: Hotboot initiated by Ocerion.
+Sun Sep  6 14:20:04 2020 :: Saving modified area files...
+Sun Sep  6 14:20:04 2020 :: Saving player files and connection states....
+Sun Sep  6 14:20:04 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:20:04 2020 :: Executing hotboot....
+Sun Sep  6 14:20:04 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 14:20:04 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 14:20:04 2020 :: Loading commands
+Sun Sep  6 14:20:04 2020 :: Loading sysdata configuration...
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 14:20:04 2020 :: Loading socials
+Sun Sep  6 14:20:04 2020 :: Loading skill table
+Sun Sep  6 14:20:04 2020 :: Sorting skill table...
+Sun Sep  6 14:20:04 2020 :: Remapping slots to sns
+Sun Sep  6 14:20:04 2020 :: Loading classes
+Sun Sep  6 14:20:04 2020 :: Loading races
+Sun Sep  6 14:20:04 2020 :: Loading herb table
+Sun Sep  6 14:20:04 2020 :: Loading tongues
+Sun Sep  6 14:20:04 2020 :: Making wizlist
+Sun Sep  6 14:20:04 2020 :: Building wizinfo
+Sun Sep  6 14:20:04 2020 :: Initializing request pipe
+Sun Sep  6 14:20:04 2020 :: Initializing random number generator
+Sun Sep  6 14:20:04 2020 :: Setting time and weather
+Sun Sep  6 14:20:04 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill chou kamehameha not found.
+ASSIGN_GSN: Skill teleport kamehameha not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super kamehameha not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 14:20:04 2020 :: Loading DNS cache...
+Sun Sep  6 14:20:04 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+cou.are       : Rooms:   200 - 367   Objs:   200 - 399   Mobs:   200 - 399
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 14:20:04 2020 :: Fixing exits
+Sun Sep  6 14:20:04 2020 :: Loading economy
+Sun Sep  6 14:20:04 2020 :: Initializing economy
+Sun Sep  6 14:20:04 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 14:20:04 2020 :: Loading buildlist
+Sun Sep  6 14:20:04 2020 :: ../gods/Ocerion
+Sun Sep  6 14:20:04 2020 :: Loading boards
+Sun Sep  6 14:20:04 2020 :: Loading Global Boards
+Sun Sep  6 14:20:04 2020 :: Loading clans
+Sun Sep  6 14:20:04 2020 :: Loading clans...
+Sun Sep  6 14:20:04 2020 :: $
+Sun Sep  6 14:20:04 2020 :: Loading alliance data
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 14:20:04 2020 ::  Done clans 
+Sun Sep  6 14:20:04 2020 :: Loading deities
+Sun Sep  6 14:20:04 2020 :: Loading deities...
+Sun Sep  6 14:20:04 2020 :: $
+Sun Sep  6 14:20:04 2020 ::  Done deities 
+Sun Sep  6 14:20:04 2020 :: Loading councils
+Sun Sep  6 14:20:04 2020 :: Loading councils...
+Sun Sep  6 14:20:04 2020 :: hoi.council
+Sun Sep  6 14:20:04 2020 :: newbiecouncil
+Sun Sep  6 14:20:04 2020 :: $
+Sun Sep  6 14:20:04 2020 ::  Done councils 
+Sun Sep  6 14:20:04 2020 :: Loading watches
+Sun Sep  6 14:20:04 2020 :: Loading bans
+Sun Sep  6 14:20:04 2020 :: Done.
+Sun Sep  6 14:20:04 2020 :: Loading reserved names
+Sun Sep  6 14:20:04 2020 :: Loading auth namelist
+Sun Sep  6 14:20:04 2020 :: Loading censored words
+Sun Sep  6 14:20:04 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 14:20:04 2020 :: Checking player files....
+Sun Sep  6 14:20:04 2020 :: Checking corpses....
+Sun Sep  6 14:20:04 2020 :: Loading corpses
+Sun Sep  6 14:20:04 2020 :: Loading space
+Sun Sep  6 14:20:04 2020 :: Loading space...
+Sun Sep  6 14:20:04 2020 ::  Done starsystems 
+Sun Sep  6 14:20:04 2020 :: Loading ships
+Sun Sep  6 14:20:04 2020 :: Loading ships...
+Sun Sep  6 14:20:04 2020 ::  Done ships 
+Sun Sep  6 14:20:04 2020 :: Loading governments
+Sun Sep  6 14:20:04 2020 :: Loading planets...
+Sun Sep  6 14:20:04 2020 :: earth.planet
+Sun Sep  6 14:20:04 2020 :: cou.planet
+Sun Sep  6 14:20:04 2020 :: vegeta.planet
+Sun Sep  6 14:20:04 2020 :: namek.planet
+Sun Sep  6 14:20:04 2020 :: furiza.planet
+Sun Sep  6 14:20:04 2020 :: fakenamek.planet
+Sun Sep  6 14:20:04 2020 :: $
+Sun Sep  6 14:20:04 2020 ::  Done planets 
+Sun Sep  6 14:20:04 2020 :: Loading Immortal Hosts
+Sun Sep  6 14:20:04 2020 :: Done.
+Sun Sep  6 14:20:04 2020 :: Loading Projects
+Sun Sep  6 14:20:04 2020 :: Loading Morphs
+Sun Sep  6 14:20:04 2020 :: Optimizing Morphs.
+Sun Sep  6 14:20:04 2020 :: Done.
+Sun Sep  6 14:20:04 2020 :: Loading storerooms
+Sun Sep  6 14:20:04 2020 :: Loading Colors
+Sun Sep  6 14:20:04 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:20:04 2020 :: Loading changes
+Sun Sep  6 14:20:04 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 14:20:04 2020 :: Initiating hotboot recovery.
+Sun Sep  6 14:20:04 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 14:20:04 2020 :: Loading player data for: Vyktor (1K)
+Sun Sep  6 14:20:04 2020 :: Hotboot recovery complete.
+Sun Sep  6 14:20:04 2020 :: Loading hiscore tables
+Sun Sep  6 14:20:04 2020 :: Initializing socket
+Sun Sep  6 14:20:04 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Sun Sep  6 14:23:02 2020 :: Log invis card dropper: mpoload 100729
+Resetting: intro.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: bunny_forest.are
+Resetting: namek.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: cou.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Sun Sep  6 14:27:09 2020 :: [*****] BUG: room_is_dark: NULL pRoomIndex
+Resetting: intro.are
+Resetting: sewers.are
+Sun Sep  6 14:28:26 2020 :: Log invis fused wiring dropper: mpoload 100731
+Resetting: kames_lookout.are
+Resetting: rabbit_gang.are
+Sun Sep  6 14:29:04 2020 :: Log Ocerion: shutdown mud now
+Sun Sep  6 14:29:07 2020 :: Log Ocerion: reboot mud now
+Sun Sep  6 14:29:07 2020 :: Normal termination of game.
+Sun Sep  6 14:40:12 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 14:40:12 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 14:40:12 2020 :: Loading commands
+Sun Sep  6 14:40:12 2020 :: Loading sysdata configuration...
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 14:40:12 2020 :: Loading socials
+Sun Sep  6 14:40:12 2020 :: Loading skill table
+Sun Sep  6 14:40:12 2020 :: Sorting skill table...
+Sun Sep  6 14:40:12 2020 :: Remapping slots to sns
+Sun Sep  6 14:40:12 2020 :: Loading classes
+Sun Sep  6 14:40:12 2020 :: Loading races
+Sun Sep  6 14:40:12 2020 :: Loading herb table
+Sun Sep  6 14:40:12 2020 :: Loading tongues
+Sun Sep  6 14:40:12 2020 :: Making wizlist
+Sun Sep  6 14:40:12 2020 :: Building wizinfo
+Sun Sep  6 14:40:12 2020 :: Initializing request pipe
+Sun Sep  6 14:40:12 2020 :: Initializing random number generator
+Sun Sep  6 14:40:12 2020 :: Setting time and weather
+Sun Sep  6 14:40:12 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 14:40:12 2020 :: Loading DNS cache...
+Sun Sep  6 14:40:12 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+cou.are       : Rooms:   200 - 367   Objs:   200 - 399   Mobs:   200 - 399
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 14:40:12 2020 :: Fixing exits
+Sun Sep  6 14:40:12 2020 :: Loading economy
+Sun Sep  6 14:40:12 2020 :: Initializing economy
+Sun Sep  6 14:40:12 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 14:40:12 2020 :: Loading buildlist
+Sun Sep  6 14:40:12 2020 :: ../gods/Ocerion
+Sun Sep  6 14:40:12 2020 :: Loading boards
+Sun Sep  6 14:40:12 2020 :: Loading Global Boards
+Sun Sep  6 14:40:12 2020 :: Loading clans
+Sun Sep  6 14:40:12 2020 :: Loading clans...
+Sun Sep  6 14:40:12 2020 :: $
+Sun Sep  6 14:40:12 2020 :: Loading alliance data
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 14:40:12 2020 ::  Done clans 
+Sun Sep  6 14:40:12 2020 :: Loading deities
+Sun Sep  6 14:40:12 2020 :: Loading deities...
+Sun Sep  6 14:40:12 2020 :: $
+Sun Sep  6 14:40:12 2020 ::  Done deities 
+Sun Sep  6 14:40:12 2020 :: Loading councils
+Sun Sep  6 14:40:12 2020 :: Loading councils...
+Sun Sep  6 14:40:12 2020 :: hoi.council
+Sun Sep  6 14:40:12 2020 :: newbiecouncil
+Sun Sep  6 14:40:12 2020 :: $
+Sun Sep  6 14:40:12 2020 ::  Done councils 
+Sun Sep  6 14:40:12 2020 :: Loading watches
+Sun Sep  6 14:40:12 2020 :: Loading bans
+Sun Sep  6 14:40:12 2020 :: Done.
+Sun Sep  6 14:40:12 2020 :: Loading reserved names
+Sun Sep  6 14:40:12 2020 :: Loading auth namelist
+Sun Sep  6 14:40:12 2020 :: Loading censored words
+Sun Sep  6 14:40:12 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 14:40:12 2020 :: Checking player files....
+Sun Sep  6 14:40:12 2020 :: Checking corpses....
+Sun Sep  6 14:40:12 2020 :: Loading corpses
+Sun Sep  6 14:40:12 2020 :: Loading space
+Sun Sep  6 14:40:12 2020 :: Loading space...
+Sun Sep  6 14:40:12 2020 ::  Done starsystems 
+Sun Sep  6 14:40:12 2020 :: Loading ships
+Sun Sep  6 14:40:12 2020 :: Loading ships...
+Sun Sep  6 14:40:12 2020 ::  Done ships 
+Sun Sep  6 14:40:12 2020 :: Loading governments
+Sun Sep  6 14:40:12 2020 :: Loading planets...
+Sun Sep  6 14:40:12 2020 :: earth.planet
+Sun Sep  6 14:40:12 2020 :: cou.planet
+Sun Sep  6 14:40:12 2020 :: vegeta.planet
+Sun Sep  6 14:40:12 2020 :: namek.planet
+Sun Sep  6 14:40:12 2020 :: furiza.planet
+Sun Sep  6 14:40:12 2020 :: fakenamek.planet
+Sun Sep  6 14:40:12 2020 :: $
+Sun Sep  6 14:40:12 2020 ::  Done planets 
+Sun Sep  6 14:40:12 2020 :: Loading Immortal Hosts
+Sun Sep  6 14:40:12 2020 :: Done.
+Sun Sep  6 14:40:12 2020 :: Loading Projects
+Sun Sep  6 14:40:12 2020 :: Loading Morphs
+Sun Sep  6 14:40:12 2020 :: Optimizing Morphs.
+Sun Sep  6 14:40:12 2020 :: Done.
+Sun Sep  6 14:40:12 2020 :: Loading storerooms
+Sun Sep  6 14:40:12 2020 :: Loading Colors
+Sun Sep  6 14:40:12 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:40:12 2020 :: Loading changes
+Sun Sep  6 14:40:12 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 14:40:12 2020 :: Loading hiscore tables
+Sun Sep  6 14:40:12 2020 :: Initializing socket
+Sun Sep  6 14:40:12 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Sun Sep  6 14:40:24 2020 :: Starting compression for descriptor 7
+Sun Sep  6 14:40:24 2020 :: Preloading player data for: Ocerion (2K)
+Sun Sep  6 14:40:24 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 14:40:24 2020 :: Ocerion@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 14:40:34 2020 :: Starting compression for descriptor 8
+Sun Sep  6 14:40:34 2020 :: Preloading player data for: Vyktor (1K)
+Sun Sep  6 14:40:35 2020 :: Loading player data for: Vyktor (1K)
+Sun Sep  6 14:40:35 2020 :: Vyktor@127.0.0.1((pipe_breaking)) has connected.
+Resetting: intro.are
+Sun Sep  6 14:41:36 2020 :: Log Ocerion: cedit autotrain create
+Sun Sep  6 14:41:43 2020 :: Log Ocerion: cedit autotrain level 0
+Sun Sep  6 14:41:46 2020 :: Log Ocerion: cedit save cmdtable
+Resetting: rabbit_gang.are
+Resetting: intro.are
+Resetting: sewers.are
+Resetting: satancity.are
+Sun Sep  6 14:43:12 2020 :: Log invis card dropper: mpoload 100729
+Resetting: namek.are
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: cou.are
+Resetting: rabbit_gang.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Sun Sep  6 14:49:25 2020 :: Starting compression for descriptor 9
+Resetting: intro.are
+Resetting: big_gete.are
+Resetting: spaceships.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: snake_way.are
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:50:21 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: sanitarium.are
+Sun Sep  6 14:50:25 2020 :: Tyrant@127.0.0.1 new Demon Demon.
+Sun Sep  6 14:50:44 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:50:44 2020 :: Tyrant has quit (Room 100).
+Sun Sep  6 14:50:50 2020 :: Starting compression for descriptor 9
+Sun Sep  6 14:50:50 2020 :: Preloading player data for: Tyrant (1K)
+Sun Sep  6 14:50:51 2020 :: Loading player data for: Tyrant (1K)
+Sun Sep  6 14:50:51 2020 :: Tyrant@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 14:50:57 2020 :: Tyrant deleting self from site 127.0.0.1
+Sun Sep  6 14:50:57 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:50:57 2020 :: Tyrant deleted self, pfile stored in backup directory.
+Sun Sep  6 14:50:59 2020 :: Starting compression for descriptor 9
+Sun Sep  6 14:51:01 2020 :: Preloading player data for: Tyrant (1K)
+Sun Sep  6 14:51:03 2020 :: Preloading player data for: Tyrant (1K)
+Sun Sep  6 14:51:05 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:51:07 2020 :: Starting compression for descriptor 9
+Sun Sep  6 14:51:07 2020 :: Preloading player data for: Tyrant (1K)
+Sun Sep  6 14:51:08 2020 :: Loading player data for: Tyrant (1K)
+Sun Sep  6 14:51:08 2020 :: Tyrant@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 14:51:15 2020 :: Log Ocerion: destroy tyrant
+Sun Sep  6 14:51:15 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:51:21 2020 :: Starting compression for descriptor 9
+Sun Sep  6 14:51:22 2020 :: Preloading player data for: Tyrant (1K)
+Sun Sep  6 14:51:26 2020 :: Log Ocerion: destroy tyrant
+Resetting: intro.are
+Resetting: afterlife.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: sewers.are
+Resetting: mount_areukk.are
+Sun Sep  6 14:51:28 2020 :: Log Ocerion: destroy tyrant
+Sun Sep  6 14:51:29 2020 :: Log Ocerion: destroy tyrant
+Sun Sep  6 14:51:32 2020 :: EOF encountered on read.
+Sun Sep  6 14:51:32 2020 :: Stopping compression for descriptor 9
+Sun Sep  6 14:51:37 2020 :: Log Ocerion: loadup tyrant
+Sun Sep  6 14:51:37 2020 :: Loading player data for: Tyrant (1K)
+Sun Sep  6 14:51:40 2020 :: Log Ocerion: destroy tyrant
+Sun Sep  6 14:51:44 2020 :: Log Ocerion: destroy tyrant
+Sun Sep  6 14:51:48 2020 :: Log Ocerion: loadup tyrant
+Sun Sep  6 14:51:48 2020 :: Loading player data for: Tyrant (1K)
+Sun Sep  6 14:51:56 2020 :: Log Ocerion: slay tyrant
+Sun Sep  6 14:52:04 2020 :: Log Ocerion: destroy tyrant
+Resetting: ims.are
+Resetting: cou.are
+Resetting: roshis_island.are
+Sun Sep  6 14:52:46 2020 :: Log Ocerion: hotboot
+Sun Sep  6 14:52:46 2020 :: Hotboot initiated by Ocerion.
+Sun Sep  6 14:52:46 2020 :: Saving modified area files...
+Sun Sep  6 14:52:46 2020 :: Saving player files and connection states....
+Sun Sep  6 14:52:46 2020 :: Stopping compression for descriptor 7
+Sun Sep  6 14:52:46 2020 :: Stopping compression for descriptor 8
+Sun Sep  6 14:52:46 2020 :: Executing hotboot....
+Sun Sep  6 14:52:46 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 14:52:46 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 14:52:46 2020 :: Loading commands
+Sun Sep  6 14:52:46 2020 :: Loading sysdata configuration...
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 14:52:46 2020 :: Loading socials
+Sun Sep  6 14:52:46 2020 :: Loading skill table
+Sun Sep  6 14:52:46 2020 :: Sorting skill table...
+Sun Sep  6 14:52:46 2020 :: Remapping slots to sns
+Sun Sep  6 14:52:46 2020 :: Loading classes
+Sun Sep  6 14:52:46 2020 :: Loading races
+Sun Sep  6 14:52:46 2020 :: Loading herb table
+Sun Sep  6 14:52:46 2020 :: Loading tongues
+Sun Sep  6 14:52:46 2020 :: Making wizlist
+Sun Sep  6 14:52:46 2020 :: Building wizinfo
+Sun Sep  6 14:52:46 2020 :: Initializing request pipe
+Sun Sep  6 14:52:46 2020 :: Initializing random number generator
+Sun Sep  6 14:52:46 2020 :: Setting time and weather
+Sun Sep  6 14:52:46 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 14:52:46 2020 :: Loading DNS cache...
+Sun Sep  6 14:52:46 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+cou.are       : Rooms:   200 - 367   Objs:   200 - 399   Mobs:   200 - 399
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 14:52:46 2020 :: Fixing exits
+Sun Sep  6 14:52:46 2020 :: Loading economy
+Sun Sep  6 14:52:46 2020 :: Initializing economy
+Sun Sep  6 14:52:46 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 14:52:46 2020 :: Loading buildlist
+Sun Sep  6 14:52:46 2020 :: ../gods/Ocerion
+Sun Sep  6 14:52:46 2020 :: Loading boards
+Sun Sep  6 14:52:46 2020 :: Loading Global Boards
+Sun Sep  6 14:52:46 2020 :: Loading clans
+Sun Sep  6 14:52:46 2020 :: Loading clans...
+Sun Sep  6 14:52:46 2020 :: $
+Sun Sep  6 14:52:46 2020 :: Loading alliance data
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 14:52:46 2020 ::  Done clans 
+Sun Sep  6 14:52:46 2020 :: Loading deities
+Sun Sep  6 14:52:46 2020 :: Loading deities...
+Sun Sep  6 14:52:46 2020 :: $
+Sun Sep  6 14:52:46 2020 ::  Done deities 
+Sun Sep  6 14:52:46 2020 :: Loading councils
+Sun Sep  6 14:52:46 2020 :: Loading councils...
+Sun Sep  6 14:52:46 2020 :: hoi.council
+Sun Sep  6 14:52:46 2020 :: newbiecouncil
+Sun Sep  6 14:52:46 2020 :: $
+Sun Sep  6 14:52:46 2020 ::  Done councils 
+Sun Sep  6 14:52:46 2020 :: Loading watches
+Sun Sep  6 14:52:46 2020 :: Loading bans
+Sun Sep  6 14:52:46 2020 :: Done.
+Sun Sep  6 14:52:46 2020 :: Loading reserved names
+Sun Sep  6 14:52:46 2020 :: Loading auth namelist
+Sun Sep  6 14:52:46 2020 :: Loading censored words
+Sun Sep  6 14:52:46 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 14:52:46 2020 :: Checking player files....
+Sun Sep  6 14:52:46 2020 :: Checking corpses....
+Sun Sep  6 14:52:46 2020 :: Loading corpses
+Corpse -> ../corpses/Tyrant
+Sun Sep  6 14:52:46 2020 :: Loading space
+Sun Sep  6 14:52:46 2020 :: Loading space...
+Sun Sep  6 14:52:46 2020 ::  Done starsystems 
+Sun Sep  6 14:52:46 2020 :: Loading ships
+Sun Sep  6 14:52:46 2020 :: Loading ships...
+Sun Sep  6 14:52:46 2020 ::  Done ships 
+Sun Sep  6 14:52:46 2020 :: Loading governments
+Sun Sep  6 14:52:46 2020 :: Loading planets...
+Sun Sep  6 14:52:46 2020 :: earth.planet
+Sun Sep  6 14:52:46 2020 :: cou.planet
+Sun Sep  6 14:52:46 2020 :: vegeta.planet
+Sun Sep  6 14:52:46 2020 :: namek.planet
+Sun Sep  6 14:52:46 2020 :: furiza.planet
+Sun Sep  6 14:52:46 2020 :: fakenamek.planet
+Sun Sep  6 14:52:46 2020 :: $
+Sun Sep  6 14:52:46 2020 ::  Done planets 
+Sun Sep  6 14:52:46 2020 :: Loading Immortal Hosts
+Sun Sep  6 14:52:46 2020 :: Done.
+Sun Sep  6 14:52:46 2020 :: Loading Projects
+Sun Sep  6 14:52:46 2020 :: Loading Morphs
+Sun Sep  6 14:52:46 2020 :: Optimizing Morphs.
+Sun Sep  6 14:52:46 2020 :: Done.
+Sun Sep  6 14:52:46 2020 :: Loading storerooms
+Sun Sep  6 14:52:46 2020 :: Loading Colors
+Sun Sep  6 14:52:46 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 14:52:46 2020 :: Loading changes
+Sun Sep  6 14:52:46 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 14:52:46 2020 :: Initiating hotboot recovery.
+Sun Sep  6 14:52:46 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 14:52:46 2020 :: Loading player data for: Vyktor (2K)
+Sun Sep  6 14:52:46 2020 :: Hotboot recovery complete.
+Sun Sep  6 14:52:46 2020 :: Loading hiscore tables
+Sun Sep  6 14:52:46 2020 :: Initializing socket
+Sun Sep  6 14:52:46 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Resetting: intro.are
+Sun Sep  6 14:53:37 2020 :: EOF encountered on read.
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: intro.are
+Sun Sep  6 14:56:02 2020 :: Log invis card dropper: mpoload 100729
+Resetting: namek.are
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: cou.are
+Resetting: rabbit_gang.are
+Resetting: north_42_sector.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: big_gete.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: soltari_city.are
+Resetting: sanitarium.are
+Resetting: intro.are
+Resetting: south_city.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: fake_namek.are
+Resetting: western_desert.are
+Sun Sep  6 15:04:22 2020 :: EOF encountered on read.
+Sun Sep  6 15:04:22 2020 :: Closing link to Ocerion.
+Sun Sep  6 15:04:22 2020 :: EOF encountered on read.
+Sun Sep  6 15:04:22 2020 :: Closing link to Vyktor.
+Sun Sep  6 15:07:15 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 15:07:15 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 15:07:15 2020 :: Loading commands
+Sun Sep  6 15:07:15 2020 :: Loading sysdata configuration...
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 15:07:15 2020 :: Loading socials
+Sun Sep  6 15:07:15 2020 :: Loading skill table
+Sun Sep  6 15:07:15 2020 :: Sorting skill table...
+Sun Sep  6 15:07:15 2020 :: Remapping slots to sns
+Sun Sep  6 15:07:15 2020 :: Loading classes
+Sun Sep  6 15:07:15 2020 :: Loading races
+Sun Sep  6 15:07:15 2020 :: Loading herb table
+Sun Sep  6 15:07:15 2020 :: Loading tongues
+Sun Sep  6 15:07:15 2020 :: Making wizlist
+Sun Sep  6 15:07:15 2020 :: Building wizinfo
+Sun Sep  6 15:07:15 2020 :: Initializing request pipe
+Sun Sep  6 15:07:15 2020 :: Initializing random number generator
+Sun Sep  6 15:07:15 2020 :: Setting time and weather
+Sun Sep  6 15:07:15 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 15:07:15 2020 :: Loading DNS cache...
+Sun Sep  6 15:07:15 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+cou.are       : Rooms:   200 - 367   Objs:   200 - 399   Mobs:   200 - 399
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 15:07:15 2020 :: Fixing exits
+Sun Sep  6 15:07:15 2020 :: Loading economy
+Sun Sep  6 15:07:15 2020 :: Initializing economy
+Sun Sep  6 15:07:15 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 15:07:15 2020 :: Loading buildlist
+Sun Sep  6 15:07:15 2020 :: ../gods/Ocerion
+Sun Sep  6 15:07:15 2020 :: Loading boards
+Sun Sep  6 15:07:15 2020 :: Loading Global Boards
+Sun Sep  6 15:07:15 2020 :: Loading clans
+Sun Sep  6 15:07:15 2020 :: Loading clans...
+Sun Sep  6 15:07:15 2020 :: $
+Sun Sep  6 15:07:15 2020 :: Loading alliance data
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 15:07:15 2020 ::  Done clans 
+Sun Sep  6 15:07:15 2020 :: Loading deities
+Sun Sep  6 15:07:15 2020 :: Loading deities...
+Sun Sep  6 15:07:15 2020 :: $
+Sun Sep  6 15:07:15 2020 ::  Done deities 
+Sun Sep  6 15:07:15 2020 :: Loading councils
+Sun Sep  6 15:07:15 2020 :: Loading councils...
+Sun Sep  6 15:07:15 2020 :: hoi.council
+Sun Sep  6 15:07:15 2020 :: newbiecouncil
+Sun Sep  6 15:07:15 2020 :: $
+Sun Sep  6 15:07:15 2020 ::  Done councils 
+Sun Sep  6 15:07:15 2020 :: Loading watches
+Sun Sep  6 15:07:15 2020 :: Loading bans
+Sun Sep  6 15:07:15 2020 :: Done.
+Sun Sep  6 15:07:15 2020 :: Loading reserved names
+Sun Sep  6 15:07:15 2020 :: Loading auth namelist
+Sun Sep  6 15:07:15 2020 :: Loading censored words
+Sun Sep  6 15:07:15 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 15:07:15 2020 :: Checking player files....
+Sun Sep  6 15:07:15 2020 :: Checking corpses....
+Sun Sep  6 15:07:15 2020 :: Loading corpses
+Corpse -> ../corpses/Tyrant
+Sun Sep  6 15:07:15 2020 :: Loading space
+Sun Sep  6 15:07:15 2020 :: Loading space...
+Sun Sep  6 15:07:15 2020 ::  Done starsystems 
+Sun Sep  6 15:07:15 2020 :: Loading ships
+Sun Sep  6 15:07:15 2020 :: Loading ships...
+Sun Sep  6 15:07:15 2020 ::  Done ships 
+Sun Sep  6 15:07:15 2020 :: Loading governments
+Sun Sep  6 15:07:15 2020 :: Loading planets...
+Sun Sep  6 15:07:15 2020 :: earth.planet
+Sun Sep  6 15:07:15 2020 :: cou.planet
+Sun Sep  6 15:07:15 2020 :: vegeta.planet
+Sun Sep  6 15:07:15 2020 :: namek.planet
+Sun Sep  6 15:07:15 2020 :: furiza.planet
+Sun Sep  6 15:07:15 2020 :: fakenamek.planet
+Sun Sep  6 15:07:15 2020 :: $
+Sun Sep  6 15:07:15 2020 ::  Done planets 
+Sun Sep  6 15:07:15 2020 :: Loading Immortal Hosts
+Sun Sep  6 15:07:15 2020 :: Done.
+Sun Sep  6 15:07:15 2020 :: Loading Projects
+Sun Sep  6 15:07:15 2020 :: Loading Morphs
+Sun Sep  6 15:07:15 2020 :: Optimizing Morphs.
+Sun Sep  6 15:07:15 2020 :: Done.
+Sun Sep  6 15:07:15 2020 :: Loading storerooms
+Sun Sep  6 15:07:15 2020 :: Loading Colors
+Sun Sep  6 15:07:15 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:07:15 2020 :: Loading changes
+Sun Sep  6 15:07:15 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 15:07:15 2020 :: Loading hiscore tables
+Sun Sep  6 15:07:15 2020 :: Initializing socket
+Sun Sep  6 15:07:15 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Sun Sep  6 15:07:30 2020 :: Starting compression for descriptor 7
+Sun Sep  6 15:07:30 2020 :: Preloading player data for: Ocerion (2K)
+Sun Sep  6 15:07:31 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 15:07:31 2020 :: Ocerion@127.0.0.1((pipe_breaking)) has connected.
+Sun Sep  6 15:08:28 2020 :: Log Ocerion: hotboot
+Sun Sep  6 15:08:28 2020 :: Hotboot initiated by Ocerion.
+Sun Sep  6 15:08:28 2020 :: Saving modified area files...
+Sun Sep  6 15:08:28 2020 :: Saving player files and connection states....
+Sun Sep  6 15:08:28 2020 :: Stopping compression for descriptor 7
+Sun Sep  6 15:08:28 2020 :: Executing hotboot....
+Sun Sep  6 15:08:28 2020 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Sun Sep  6 15:08:28 2020 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sun Sep  6 15:08:28 2020 :: Loading commands
+Sun Sep  6 15:08:28 2020 :: Loading sysdata configuration...
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Sun Sep  6 15:08:28 2020 :: Loading socials
+Sun Sep  6 15:08:28 2020 :: Loading skill table
+Sun Sep  6 15:08:28 2020 :: Sorting skill table...
+Sun Sep  6 15:08:28 2020 :: Remapping slots to sns
+Sun Sep  6 15:08:28 2020 :: Loading classes
+Sun Sep  6 15:08:28 2020 :: Loading races
+Sun Sep  6 15:08:28 2020 :: Loading herb table
+Sun Sep  6 15:08:28 2020 :: Loading tongues
+Sun Sep  6 15:08:28 2020 :: Making wizlist
+Sun Sep  6 15:08:28 2020 :: Building wizinfo
+Sun Sep  6 15:08:28 2020 :: Initializing request pipe
+Sun Sep  6 15:08:28 2020 :: Initializing random number generator
+Sun Sep  6 15:08:28 2020 :: Setting time and weather
+Sun Sep  6 15:08:28 2020 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t4 not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill omega not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill inner will not found.
+ASSIGN_GSN: Skill mecha evolution not found.
+ASSIGN_GSN: Skill ancient evolution not found.
+ASSIGN_GSN: Skill flare not found.
+ASSIGN_GSN: Skill antimatter bomb not found.
+ASSIGN_GSN: Skill gust not found.
+ASSIGN_GSN: Skill buffet not found.
+ASSIGN_GSN: Skill dragon fire not found.
+ASSIGN_GSN: Skill neurotoxic gas not found.
+ASSIGN_GSN: Skill dragon thunder not found.
+ASSIGN_GSN: Skill whirlwind spin not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill photon absorb not found.
+ASSIGN_GSN: Skill x buster not found.
+ASSIGN_GSN: Skill z saber not found.
+ASSIGN_GSN: Skill leaf shield not found.
+ASSIGN_GSN: Skill giga attack L1 not found.
+ASSIGN_GSN: Skill giga attack L2 not found.
+ASSIGN_GSN: Skill twin slasher not found.
+ASSIGN_GSN: Skill frost tower not found.
+ASSIGN_GSN: Skill ground hunter not found.
+ASSIGN_GSN: Skill aiming laser not found.
+ASSIGN_GSN: Skill active form not found.
+ASSIGN_GSN: Skill power form not found.
+ASSIGN_GSN: Skill proto form not found.
+ASSIGN_GSN: Skill omega form not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Sun Sep  6 15:08:28 2020 :: Loading DNS cache...
+Sun Sep  6 15:08:28 2020 :: Reading in area files...
+(help.are)
+limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
+ims.are       : Rooms:   600 - 999   Objs:   600 - 999   Mobs:   600 - 999
+cou3.are      : Rooms:  6000 - 7999  Objs:  6000 - 7999  Mobs:  6000 - 7999
+cou.are       : Rooms:   200 - 367   Objs:   200 - 399   Mobs:   200 - 399
+gods.are      : Rooms:  1200 - 1399  Objs:  1200 - 1399  Mobs:  1200 - 1399
+intro.are     : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+spaceships.are: Rooms:  1000 - 1199  Objs:  1000 - 1199  Mobs:  1000 - 1199
+afterlife.are : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+FShip.are     : Rooms:  3000 - 3099  Objs:  3000 - 3099  Mobs:  3000 - 3099
+kames_lookout.are: Rooms:  2000 - 2124  Objs:  2000 - 2009  Mobs:  2000 - 2007
+roshis_island.are: Rooms:  2125 - 2167  Objs:  2010 - 2016  Mobs:  2008 - 2018
+basement.are  : Rooms: 100700 - 100799 Objs: 100700 - 100799 Mobs: 100700 - 100799
+geros_lab.are : Rooms:  2300 - 2399  Objs:  2300 - 2399  Mobs:  2300 - 2399
+south_city.are: Rooms:  9000 - 9099  Objs:  9000 - 9099  Mobs:  9000 - 9099
+bunny_forest.are: Rooms:  9100 - 9199  Objs:  9100 - 9199  Mobs:  9100 - 9199
+rabbit_gang.are: Rooms:  9200 - 9299  Objs:  9200 - 9299  Mobs:  9200 - 9299
+test.are      : Rooms: 10000 - 10099 Objs: 10000 - 10099 Mobs: 10000 - 10099
+namek.are     : Rooms:  5000 - 5099  Objs:  5000 - 5025  Mobs:  5000 - 5097
+sewers.are    : Rooms:  5500 - 5599  Objs:  5500 - 5599  Mobs:  5500 - 5599
+big_gete.are  : Rooms: 100000 - 100299 Objs: 100000 - 100299 Mobs: 100000 - 100299
+north_42_sector.are: Rooms: 50000 - 50199 Objs: 50000 - 50199 Mobs: 50000 - 50199
+satancity.are : Rooms:  3700 - 3999  Objs:  3700 - 3999  Mobs:  3700 - 3999
+soltari_city.are: Rooms: 60000 - 60199 Objs: 60000 - 60199 Mobs: 60000 - 60199
+fake_namek.are: Rooms: 40000 - 40099 Objs: 40000 - 40099 Mobs: 40000 - 40055
+nativlon_island.are: Rooms: 20000 - 20299 Objs: 20000 - 20269 Mobs: 20000 - 20299
+western_desert.are: Rooms: 70000 - 70199 Objs: 70000 - 70199 Mobs: 70000 - 70199
+capsule_corp.are: Rooms: 110000 - 110299 Objs: 110000 - 110299 Mobs: 110000 - 110299
+mount_areukk.are: Rooms: 150000 - 150299 Objs: 150000 - 150299 Mobs: 150000 - 150299
+snake_way.are : Rooms: 100300 - 100499 Objs: 100300 - 100499 Mobs: 100300 - 100499
+megaplex.are  : Rooms:  4000 - 4499  Objs:  4000 - 4499  Mobs:  4497 - 4499
+sanitarium.are: Rooms: 210000 - 210099 Objs: 210000 - 210099 Mobs: 210000 - 210099
+Sun Sep  6 15:08:28 2020 :: Fixing exits
+Sun Sep  6 15:08:28 2020 :: Loading economy
+Sun Sep  6 15:08:28 2020 :: Initializing economy
+Sun Sep  6 15:08:28 2020 :: Resetting areas
+Resetting: limbo.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: roshis_island.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: fake_namek.are
+Resetting: nativlon_island.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: megaplex.are
+Resetting: sanitarium.are
+Sun Sep  6 15:08:28 2020 :: Loading buildlist
+Sun Sep  6 15:08:28 2020 :: ../gods/Ocerion
+Sun Sep  6 15:08:28 2020 :: Loading boards
+Sun Sep  6 15:08:28 2020 :: Loading Global Boards
+Sun Sep  6 15:08:28 2020 :: Loading clans
+Sun Sep  6 15:08:28 2020 :: Loading clans...
+Sun Sep  6 15:08:28 2020 :: $
+Sun Sep  6 15:08:28 2020 :: Loading alliance data
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Cannot open alliance list for reading
+Sun Sep  6 15:08:28 2020 ::  Done clans 
+Sun Sep  6 15:08:28 2020 :: Loading deities
+Sun Sep  6 15:08:28 2020 :: Loading deities...
+Sun Sep  6 15:08:28 2020 :: $
+Sun Sep  6 15:08:28 2020 ::  Done deities 
+Sun Sep  6 15:08:28 2020 :: Loading councils
+Sun Sep  6 15:08:28 2020 :: Loading councils...
+Sun Sep  6 15:08:28 2020 :: hoi.council
+Sun Sep  6 15:08:28 2020 :: newbiecouncil
+Sun Sep  6 15:08:28 2020 :: $
+Sun Sep  6 15:08:28 2020 ::  Done councils 
+Sun Sep  6 15:08:28 2020 :: Loading watches
+Sun Sep  6 15:08:28 2020 :: Loading bans
+Sun Sep  6 15:08:28 2020 :: Done.
+Sun Sep  6 15:08:28 2020 :: Loading reserved names
+Sun Sep  6 15:08:28 2020 :: Loading auth namelist
+Sun Sep  6 15:08:28 2020 :: Loading censored words
+Sun Sep  6 15:08:28 2020 :: Updating rare/unique item counts.....
+Sun Sep  6 15:08:28 2020 :: Checking player files....
+Sun Sep  6 15:08:28 2020 :: Checking corpses....
+Sun Sep  6 15:08:28 2020 :: Loading corpses
+Corpse -> ../corpses/Tyrant
+Sun Sep  6 15:08:28 2020 :: Loading space
+Sun Sep  6 15:08:28 2020 :: Loading space...
+Sun Sep  6 15:08:28 2020 ::  Done starsystems 
+Sun Sep  6 15:08:28 2020 :: Loading ships
+Sun Sep  6 15:08:28 2020 :: Loading ships...
+Sun Sep  6 15:08:28 2020 ::  Done ships 
+Sun Sep  6 15:08:28 2020 :: Loading governments
+Sun Sep  6 15:08:28 2020 :: Loading planets...
+Sun Sep  6 15:08:28 2020 :: earth.planet
+Sun Sep  6 15:08:28 2020 :: cou.planet
+Sun Sep  6 15:08:28 2020 :: vegeta.planet
+Sun Sep  6 15:08:28 2020 :: namek.planet
+Sun Sep  6 15:08:28 2020 :: furiza.planet
+Sun Sep  6 15:08:28 2020 :: fakenamek.planet
+Sun Sep  6 15:08:28 2020 :: $
+Sun Sep  6 15:08:28 2020 ::  Done planets 
+Sun Sep  6 15:08:28 2020 :: Loading Immortal Hosts
+Sun Sep  6 15:08:28 2020 :: Done.
+Sun Sep  6 15:08:28 2020 :: Loading Projects
+Sun Sep  6 15:08:28 2020 :: Loading Morphs
+Sun Sep  6 15:08:28 2020 :: Optimizing Morphs.
+Sun Sep  6 15:08:28 2020 :: Done.
+Sun Sep  6 15:08:28 2020 :: Loading storerooms
+Sun Sep  6 15:08:28 2020 :: Loading Colors
+Sun Sep  6 15:08:28 2020 :: Loading Housing System, Home Accessories Data, and Home Auctioning System
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Fread_accessories: Accessory doesn't exist
+Sun Sep  6 15:08:28 2020 :: Loading changes
+Sun Sep  6 15:08:28 2020 :: [*****] BUG: Could not open Changes File for reading.
+Sun Sep  6 15:08:28 2020 :: Initiating hotboot recovery.
+Sun Sep  6 15:08:28 2020 :: Loading player data for: Ocerion (2K)
+Sun Sep  6 15:08:28 2020 :: Hotboot recovery complete.
+Sun Sep  6 15:08:28 2020 :: Loading hiscore tables
+Sun Sep  6 15:08:28 2020 :: Initializing socket
+Sun Sep  6 15:08:28 2020 :: DragonBall Saga ready at address DESKTOP-C3A2E67 on port 3000.
+Resetting: intro.are
+Sun Sep  6 15:10:00 2020 :: Starting compression for descriptor 9
+Sun Sep  6 15:10:00 2020 :: Preloading player data for: Vyktor (2K)
+Sun Sep  6 15:10:02 2020 :: Loading player data for: Vyktor (2K)
+Sun Sep  6 15:10:02 2020 :: Vyktor@127.0.0.1((pipe_breaking)) has connected.
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Sun Sep  6 15:11:26 2020 :: Log invis card dropper: mpoload 100729
+Resetting: intro.are
+Resetting: satancity.are
+Resetting: bunny_forest.are
+Resetting: namek.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: intro.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: big_gete.are
+Sun Sep  6 15:16:36 2020 :: Log Ocerion: restore all
+Resetting: intro.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: soltari_city.are
+Resetting: capsule_corp.are
+Resetting: snake_way.are
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:17:23 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: satancity.are
+Resetting: western_desert.are
+Resetting: sanitarium.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: afterlife.are
+Resetting: test.are
+Resetting: fake_namek.are
+Resetting: mount_areukk.are
+Resetting: intro.are
+Resetting: roshis_island.are
+Resetting: kames_lookout.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: intro.are
+Resetting: namek.are
+Resetting: satancity.are
+Resetting: bunny_forest.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: big_gete.are
+Resetting: FShip.are
+Resetting: sewers.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: satancity.are
+Resetting: namek.are
+Resetting: megaplex.are
+Sun Sep  6 15:28:57 2020 :: Log invis fused wiring dropper: mpoload 100731
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: soltari_city.are
+Resetting: kames_lookout.are
+Resetting: basement.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: western_desert.are
+Resetting: capsule_corp.are
+Resetting: sanitarium.are
+Resetting: ims.are
+Resetting: intro.are
+Resetting: satancity.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:31:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: gods.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: afterlife.are
+Resetting: roshis_island.are
+Resetting: test.are
+Resetting: big_gete.are
+Resetting: satancity.are
+Resetting: fake_namek.are
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: nativlon_island.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: namek.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: bunny_forest.are
+Resetting: sewers.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: satancity.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: soltari_city.are
+Resetting: intro.are
+Resetting: basement.are
+Resetting: big_gete.are
+Resetting: capsule_corp.are
+Resetting: ims.are
+Resetting: gods.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: western_desert.are
+Resetting: snake_way.are
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:44:08 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: sanitarium.are
+Resetting: intro.are
+Resetting: FShip.are
+Resetting: satancity.are
+Resetting: mount_areukk.are
+Resetting: kames_lookout.are
+Resetting: bunny_forest.are
+Resetting: north_42_sector.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: afterlife.are
+Resetting: sewers.are
+Resetting: fake_namek.are
+Resetting: megaplex.are
+Resetting: cou3.are
+Resetting: cou.are
+Resetting: roshis_island.are
+Resetting: rabbit_gang.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: test.are
+Resetting: namek.are
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: big_gete.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: geros_lab.are
+Resetting: limbo.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: soltari_city.are
+Resetting: cou.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: basement.are
+Resetting: south_city.are
+Resetting: capsule_corp.are
+Resetting: namek.are
+Resetting: western_desert.are
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: satancity.are
+Resetting: mount_areukk.are
+Resetting: ims.are
+Resetting: afterlife.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: fake_namek.are
+Resetting: snake_way.are
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 15:59:49 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: sanitarium.are
+Resetting: cou3.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: roshis_island.are
+Resetting: big_gete.are
+Resetting: intro.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: namek.are
+Resetting: satancity.are
+Resetting: nativlon_island.are
+Resetting: cou.are
+Resetting: rabbit_gang.are
+Resetting: test.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Sun Sep  6 16:04:58 2020 :: Log invis fused wiring dropper: mpoload 100731
+Resetting: intro.are
+Resetting: bunny_forest.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: capsule_corp.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: namek.are
+Resetting: basement.are
+Resetting: bunny_forest.are
+Resetting: sewers.are
+Resetting: soltari_city.are
+Resetting: mount_areukk.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: satancity.are
+Resetting: megaplex.are
+Resetting: afterlife.are
+Resetting: kames_lookout.are
+Resetting: big_gete.are
+Resetting: north_42_sector.are
+Resetting: western_desert.are
+Resetting: intro.are
+Resetting: snake_way.are
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:12:32 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: sanitarium.are
+Resetting: ims.are
+Resetting: cou3.are
+Resetting: roshis_island.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: fake_namek.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: bunny_forest.are
+Resetting: intro.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: cou.are
+Resetting: test.are
+Resetting: intro.are
+Resetting: rabbit_gang.are
+Resetting: FShip.are
+Resetting: kames_lookout.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: geros_lab.are
+Resetting: south_city.are
+Resetting: bunny_forest.are
+Resetting: namek.are
+Resetting: big_gete.are
+Resetting: capsule_corp.are
+Resetting: gods.are
+Resetting: intro.are
+Resetting: afterlife.are
+Resetting: basement.are
+Resetting: rabbit_gang.are
+Resetting: soltari_city.are
+Resetting: mount_areukk.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: roshis_island.are
+Resetting: snake_way.are
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:24:53 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: sanitarium.are
+Resetting: cou3.are
+Resetting: bunny_forest.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: western_desert.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: fake_namek.are
+Resetting: ims.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Resetting: intro.are
+Resetting: kames_lookout.are
+Resetting: rabbit_gang.are
+Resetting: big_gete.are
+Resetting: megaplex.are
+Resetting: cou.are
+Resetting: intro.are
+Resetting: satancity.are
+Resetting: geros_lab.are
+Resetting: bunny_forest.are
+Resetting: namek.are
+Resetting: sewers.are
+Resetting: nativlon_island.are
+Resetting: intro.are
+Resetting: test.are
+Resetting: capsule_corp.are
+Sun Sep  6 16:33:23 2020 :: Log Ocerion: sset fakemoon mana 100
+Resetting: afterlife.are
+Resetting: south_city.are
+Resetting: rabbit_gang.are
+Sun Sep  6 16:33:47 2020 :: Log Ocerion: sset 'final flash' mana 500
+Resetting: intro.are
+Resetting: sewers.are
+Resetting: north_42_sector.are
+Resetting: satancity.are
+Sun Sep  6 16:34:28 2020 :: Log Ocerion: sset 'teleport kamehameha' mana 2000
+Sun Sep  6 16:35:14 2020 :: Log Ocerion: sset 'super kamehameha' mana 2000
+Sun Sep  6 16:35:25 2020 :: Log Ocerion: sset 'chou kamehameha' mana 4000
+Sun Sep  6 16:35:38 2020 :: Log Ocerion: sset 'teleport kamehameha' mana 7000
+Resetting: gods.are
+Resetting: FShip.are
+Resetting: soltari_city.are
+Sun Sep  6 16:35:53 2020 :: Log Ocerion: sset 'final shine' mana 10000
+Sun Sep  6 16:35:57 2020 :: Log Ocerion: sset save
+Sun Sep  6 16:36:01 2020 :: Log Ocerion: sset save skill table
+Resetting: cou3.are
+Resetting: intro.are
+Resetting: basement.are
+Resetting: bunny_forest.are
+Resetting: mount_areukk.are
+Resetting: snake_way.are
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(snake sword big) not being carried by ch(snake girl royal guard)
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Sun Sep  6 16:36:59 2020 :: [*****] BUG: equip_char: obj(sword dancer snake) not being carried by ch(sword dancer snake girl)
+Resetting: cou.are
+Resetting: kames_lookout.are
+Resetting: rabbit_gang.are
+Resetting: namek.are
+Resetting: western_desert.are
+Resetting: ims.are
+Resetting: intro.are
+Resetting: spaceships.are
+Resetting: roshis_island.are
+Resetting: sewers.are
+Resetting: satancity.are
+Resetting: sanitarium.are
+Sun Sep  6 16:39:20 2020 :: Log Ocerion: force all save
+Sun Sep  6 16:39:23 2020 :: Log Ocerion: reboot mud
+Sun Sep  6 16:39:26 2020 :: Log Ocerion: reboot mud now
+Sun Sep  6 16:39:26 2020 :: Normal termination of game.
