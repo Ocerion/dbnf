@@ -1,0 +1,2464 @@
+#AREA   Zetsuei's Tomb~
+
+
+
+#VERSION 252
+#AUTHOR Ranmyaku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 7
+
+#FLAGS
+5
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100800
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#100801
+tomb guard~
+An icerian tomb guard~
+A large, rough looking icerian tomb guard grunts nearby
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 10000000000
+112 112 0
+90 10 90 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Haha..
+laugh $n
+say You are indeed puny..and weak no doubt..If you dont want to die..read the sign.
+chortle
+~
+> act_prog 'gives you A pair of heated boots.'~
+say Hrm..Puny fighter give tomb guard nice present. Take this..
+emote tosses an orb towards you.
+mpoload 100805
+give crystal $n
+mpjunk boots
+~
+|
+#100802
+distraught man~
+A distraught-looking man~
+A frantically worried looking man is running around in circles nearby
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+100 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Somebody stole my bloody caskets..Why would somebody steal..
+say Okay okay..You!
+point $n
+say Which casket would you chose? Dino-hide? Leather? or Metal?
+~
+> speech_prog 'Dino-hide'~
+say For the sin of greed, You shall recieve..
+emote outstretches his hand and a small glowing ball slams into you, it's warm and oddly refreshing
+mpdamage $n 25
+~
+> speech_prog 'Leather'~
+say Wise choice..Yes indeed..a very wise choice..You are willing to hazard your fondest posession to see Zetsuei..
+emote laughs and becomes composed and proud as he snaps his fingers!
+mptransfer $n 100812
+~
+> speech_prog 'Metal'~
+say Tsk..Many a man of Furiza desire..heat!
+laugh $n
+mptransfer $n 220002
+~
+> act_prog 'gives you A leather casket.'~
+say Thanks, though it's useless without my other two caskets..Please take this for your trouble
+mpoload 100804
+give heated $n
+say Perhaps somebody who gets cold alot would like it?
+mpjunk casket
+~
+|
+#100803
+sphinx woman~
+A woman-headed sphinx~
+A large lion body with the head of a woman purs idly between the pillars
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Purr..I'm the first of many sphinx you'll meet..Purrr..
+wink
+say If you wish for an explanation..say the word..if you wish to leave the sphinx domain..say home..
+purr
+~
+> speech_prog 'home'~
+mptransfer $n 100802
+mpechoat $n The sphinx blows a kiss and suddenly in a swirl of snow, you're outside the pyramid!
+~
+> speech_prog 'explanation'~
+say Very well. There are different varieties of us sphinx, each with a different head of colour, I'm the nice one..
+giggle
+say My brothers and sisters will want the answers to riddles in order for you to get items, and to get other places.
+say Good luck..Purrr..I'm glad I was your first..purr
+~
+|
+#100804
+sphinx man~
+A male-headed sphinx~
+A large roughly furred lion with the head of a man chortles nearby
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'I want a riddle'~
+say Riddle..Let us see.."Numbers numbers all over my face and yet you wont see 13 any place. What am I? A.."
+chortle
+~
+> speech_prog 'Clock'~
+say Very good!..and yet I lied. Please accept this transport back as value to the sum of 30,000 zeni..
+mptransfer $n 100819
+~
+> greet_prog 100~
+say Puurr..For 30K zeni...Rar..Answer me a riddle..
+~
+|
+#100805
+icer~
+An icer~
+An icer leaps from wall to wall across the ledge here
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+3000 100000000000
+112 112 0
+100 10 250 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 1048696 0 0 0 0
+> death_prog 100~
+if rand(10)
+if rand(10)
+mpoload 100806
+endif
+endif
+~
+|
+#100806
+sphinx goat~
+A goat-headed sphinx~
+A petite framed lion with a goats head sits contemptously nearby
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I hold two riddles for one a trip and one for a prize..which would you like?
+say Baaahh..
+~
+> speech_prog 'Prize'~
+say Very well, What mammal walks on four legs, two legs and finally with three legs?
+~
+> speech_prog 'man'~
+say Very clever, you are. Indeed..very smart..Very well, I offer you the prize of..knowledge
+say Baaahhh
+say If you kill my speediest friend enough, you may get something nice..
+~
+> speech_prog 'trip'~
+say Okay..let me think of a riddle..
+hmm
+say What word begins with 'e' and ends with 'e' but only contains one letter?
+~
+> speech_prog 'envelope'~
+say What..wrong..wait..How the heck did you get that!?..Very well..
+say Bah..bah...BAAAAAAAAAHH!
+mptransfer $n 100824
+~
+|
+#100807
+sphinx woman crimson~
+A crimson sphinx~
+A beautiful coated crimson female sphinx is rested on a slab here
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 80~
+say Purrrr..Why hello..Do you know somebody missing a casket? I'll gladly..give you one..purrr
+say Provided you answer me a question..of course..
+wink
+giggle
+~
+> speech_prog 'I will'~
+say Heehee..Purrr...Good good!
+say You must always keep this, because nobody else wants it. This is your..
+raise
+~
+> speech_prog 'temper'~
+say You should stay with me awhile..oh well..Here you are..
+mpoload 100803
+drop casket
+~
+|
+#100808
+frostblade icer~
+Frost Blade~
+An icer with large spikes protruding from his body meditates solemnly here
+~
+~
+1 0&16384 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000000
+112 112 0
+50 10 50 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+say Ki Slash!
+emote holds his hands together as if wielding an enormous blade and motions a mock slice through the air, as though reality is sliced the air is marked and many places fall into pieces.&W[15]&D
+mpdamage $n 15
+~
+> greet_prog 100~
+say Greetings, I am Frost Blade. I chose to rest here because a swordsman such as myself requires solitude.
+meditate
+~
+> death_prog 100~
+if rand(1)
+mpoload 100807
+endif
+~
+|
+#100809
+frozen edge icer~
+Frozen Edge~
+An icer with a long lean body and lengthy tail is here doing push-ups
+~
+~
+1 128&8192 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000
+112 112 0
+110 10 85 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(10)
+if rand(10)
+if rand(10)
+mpoload 100808
+endif
+endif
+endif
+~
+> greet_prog 100~
+say RAR! I kicked all thier asses..The gore..The applause..Muwhahaha!
+~
+|
+#100810
+Ice Wind icer~
+Ice Wind~
+An icer stands here looking extremely prideful and daring
+~
+~
+1 0&2048 0 C
+1 0 100 1d20+0 2d5+0
+-1 7000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say You go there!..Squadron A..Charge!!..Squadron B flank 'em! - Fire the destruction disks!
+blink
+say Wait..I'm here now..No assassin can get me!
+~
+> death_prog 100~
+if rand(1)
+mpoload 100809
+endif
+~
+|
+#100811
+Tainted Blizzard icer~
+Tainted Blizzard~
+A burly icer covered in scars stalks around scowling
+~
+~
+1 0&2048 -1000 C
+1 0 100 1d20+0 2d5+0
+2450 25000000000
+112 112 0
+115 10 80 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 4 0
+> greet_prog 100~
+say Outcast..Tainted..They sent me here to stay...How dare they call me Tainted..I'll kill them all!
+roar
+~
+> death_prog 100~
+~
+> death_prog 5~
+mpoload 100810
+~
+> death_prog 10~
+emote screams in rage, "They may have contained me but you will not control me!", he flips up in and lunges forward!
+~
+|
+#100812
+green goat sphinx~
+A green goat-headed sphinx~
+A goat-headed sphinx with an oddly coloured green coat of fure is here
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Baahh..I'm offering you one chance..to return to the temple entrance
+say Bahh..But baahh..You dont want it..do you?
+~
+> speech_prog 'Yes'~
+say Aren't we a wussy one? Baahh..
+mpechoat $n The goat-headed sphinx rams into your gut and you suddenly vanish!
+mptransfer $n 100804
+~
+|
+#100813
+blue man sphinx~
+A blue man-headed sphinx~
+A lion with wierd blue fur and a man's head strolls around growling
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say You need to know how to get to the prophet..dont you?
+cackle
+say Answer me a riddle and the password is yours!
+~
+> speech_prog 'Riddle me'~
+say Your choice..
+say Before Mt. Everest was discovered, what was the tallest mountain in the world?
+hmm
+say Think think think
+~
+> speech_prog 'Mt. Everest'~
+mpechoat $n &CThe blue man-headed sphinx says 'The prophets password is but a simple, Please tell me the prophecy.'
+~
+|
+#100814
+icer guardian large~
+An icerian guardian~
+An extremely muscular looking icer in full armor paces here
+~
+~
+3 268435456 0 C
+1 0 100 1d20+0 2d5+0
+4000 175000000000
+112 112 0
+140 10 20 10 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 4 0
+#100815
+prophet~
+An icerian prophet~
+A young and yet sagely looking icer sits silently in the center of the room with his eyes closed
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote suddenly convulses, opening his eyes they glow crimson and he twitches nervously.
+say I must tell you the prophecy..but if I do..I shall transport you back to a familiar friend!
+say Ask and you shall recieve it.
+~
+> speech_prog 'Please tell me the prophecy.'~
+say The man of the lamba shall be joined by one from each race when the planet Furiza threatens Earth.
+twitch
+say Aahh...I see the lambda, a great icer and an android named Aku..Aku..R..Ahh
+emote closes his eye and begins breathing heavily, he whips at the air with his long tail and you disappear!
+mptransfer $n 100807
+~
+|
+#100816
+sphinx golden man~
+A golden male sphinx~
+A beautiful golden sphinx with the head of a man prances nearby
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+1000 1000000000
+112 112 0
+70 10 500 10 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I'm the most agile of all my brothers and sisters..and unlike them I dont waste time with riddles!
+strut
+say C'mon!..ROOOOAAAR!
+~
+> fight_prog 10~
+'tail attack'
+~
+> death_prog 100~
+if rand(1)
+if rand(20)
+mpoload 100813
+endif
+endif
+~
+|
+#100817
+sphinx woman silver~
+A silver female sphinx~
+A radiant silver coated sphinx with a womans head is here
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Purr..I've got no riddle for you, and I shall not foolishly engage you in combat..purr
+yawn
+say I have long for since forgotten the touch of coldest snow..perhaps you could bring me some?
+raise
+~
+> act_prog 'gives you Peak Snow.'~
+say Ooo..You are generous..Purrr..The way to the tomb of Zetsuei is clouded..
+mpjunk snow
+~
+|
+#100818
+sphinx copper goat~
+A copper goat sphinx~
+A lion with a rustic copper fur and the head of a goat is here
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Baaah..The next so many rooms you find will be tests..mostly riddles of course!
+hmm
+say If you wish to return home, tell me so. For the others shall not give you a chance!
+say To recieve your advancement riddle, say riddle
+~
+> speech_prog 'home'~
+say Very well..I shall place you at the Pyramids entrance for it is safest near the abrasive guards.
+kneel
+mpechoat $n &CShards of crystal break off from the wall and engulf you, they leak away and you are at the entrance!
+mptransfer $n 100807
+~
+> speech_prog 'riddle'~
+say Okay then. A good riddle..If a man falls down a set of stairs, what will he always fall against?
+~
+> speech_prog 'his will'~
+say WHAT!? You cheated..Very well..Crystaline Teleportation!
+mptransfer $n 100875
+~
+|
+#100819
+shifting sphinx~
+A sphinx~
+A large sphinx whose head continually shifts into various forms prances nearby
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I'll cut straight to the point!
+say There is something, that is nothing. But it has a name. It joins our walks, it joins our talks, it plays in every game. What is it?
+raise
+~
+> speech_prog 'shadow'~
+say To the test of ability with you..Sphinx Translocation!
+mptransfer $n 100877
+~
+|
+#100820
+ice icer polygon~
+An ice polygon~
+An ice polygon shaped after an icer dashes around here
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+0 150000000000
+112 112 0
+70 10 150 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+'finger beam'
+~
+> death_prog 100~
+mpecho The polygon shatters for two seconds before the shards come back together!
+mpmload 100820
+if rand(20)
+mpecho &CAn ice polygon says 'Congratulations..You may continue to the next test!'
+mptransfer $n 100879
+endif
+~
+|
+#100821
+man spirit sphinx~
+A sphinx spirit~
+A large spirit of the greatest sphinx rests ominously on the disc
+~
+~
+67108865 128 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'growing older'~
+say Correct. Onward, you shall go.
+mpechoat $n You are swept away in an icy haze of freezing clouds!
+mptransfer $n 100880
+~
+> rand_prog 20~
+say What is everyone in the world doing at the same time?
+say Two words..think carefully
+~
+|
+#100822
+Zetsuei~
+Zetsuei~
+A calm, collect icer strolls around nearby
+~
+~
+3 128&16384 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000000
+112 112 0
+125 10 120 10 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote doesn't flinch, turn his head or ever blink as he sense you enter. "Ah greetings..I'm glad a worthy warrior has finally found me.."
+say Me and my greatest warriors were placed here for either greatness or shame. Perhaps you can fight me and guess?
+~
+> fight_prog 10~
+'death ball'
+say I wont lose after all these years of training!
+~
+> fight_prog 15~
+'finger beam'
+say You wont beat me!
+~
+> death_prog 100~
+if rand(1)
+if rand(20)
+mpoload 100814
+endif
+endif
+~
+|
+#100899
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100802
+sign~
+A warning sign~
+A large sign with red bold writing has been pierced into the ground here~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam~
+Test
+~
+E
+sign~
+Be fore-warned oh little warriors of no strength!
+
+ You are now entering the tomb of Zetsui, the planet Furiza's most
+ ruthless warrior and close to one of the strongest. His political
+ and martial arts genius knew no bounds. To ensure his form is left
+ unseen by unworthy eyes, traps have been installed.
+ -&RENTER AT OWN RISK&D-
+~
+#100803
+casket leather~
+A leather casket~
+A large casket made of some sort of leather stands on the ground here~
+~
+8 0&260 1
+0 0 0 0 0 0
+56 20000 2000
+ 0
+#100804
+heated boots~
+A pair of heated boots~
+Some large leather boots with heated metal plates on have been discarded~
+~
+8 0&260 1
+0 0 0 0 0 0
+30 5506 550
+ 0
+#100805
+crystal orb key sphere~
+A crystal sphere~
+A beautifully crafted orb that has not a single piece of dirt on it has been discarded here~
+~
+18 0&260 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100806
+shards necklace~
+A necklace of shards~
+A piece of string holding many crystal shards together lies on the ground~
+~
+9 0 5 1
+0 0 0 0 50 50
+10 0 0
+ 0
+A
+3 5
+#100807
+icerian metal face mask~
+&zM&we&Wta-Ma&ws&zk&D~
+A round metal plate is shifting shape on the ground here~
+~
+9 0 1048577
+0 0 0 0 375 375
+7 0 0
+ 100000000
+E
+exam~
+This mask is made from an ultra-thin metal which is designed to
+mould itself to the shape of it's users face, especially useful
+for icers when they transform though it is widely believe that the
+icers secrete this metal themselves.
+~
+A
+3 -3
+A
+4 5
+> wear_prog 100~
+mpechoat $n The mask hugs your face as it moulds into the correct shape.
+~
+|
+#100808
+black custom scouter~
+A black, spiked scouter~
+A small black lensed scouter with a spike motif lies on the ground nearby~
+~
+65 0 131073
+2147483647 0 0 0 50 50
+1 0 0
+ 0
+#100809
+gloves steel techno~
+A pair of Techno-Gloves~
+A pair of gloves covered in circuitry and wires lie on the ground~
+~
+9 0 129 127
+0 0 0 0 190 190
+5 0 0
+ 1000000000
+#100810
+shackles~
+A laser shackle~
+A shackle with a tiny beeping light is on the ground here~
+~
+9 0 2097153
+0 0 0 0 25 25
+5 2000 200
+ 0
+> wear_prog 100~
+if iswearing(100810)
+mpechoat $n A laser shoots from shackle to shackle and they bound together, though the laser varies in length.
+endif
+~
+|
+#100811
+crystal sign~
+A crystal sign~
+A crystal sign with glowing red lettering protrudes from the ice-floor here~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam sign~
+If you thought the worst had already been gone from the upper floors
+then you're in for a rude awakening, puny warrior.
+~
+#100812
+peak snow~
+Peak Snow~
+A small clump of snow is just about reachable from here~
+~
+8 0&260 16385 1
+0 0 0 0 0 0
+2 0 0
+ 0
+#100813
+sphinx claw~
+A Sphinx Claw~
+A large lion like claw made off gold with jewel encrusted points lies on the ground here~
+~
+5 0 8193
+0 2 4 0 0 0
+10 0 0
+ 0
+#100814
+Zetsuei Honour~
+&PZ&wet&Ws&pue&wi's &WH&Pono&pu&Wr&D~
+A small orb rolls back and for on the ground nearby~
+~
+9 1 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+3 7
+A
+1 5
+A
+2 2
+#100899
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#100800
+Frozen Tundra~
+ Soft white snow has fallen on the landscape like a giant tissue
+covering everything in a gentle blanket. The place seems calm
+and eeriely quiet for a place on the infamous planet Furiza land
+of the icers. A gleaming almost glass like pyramid can be seen
+in all it's shining glory.
+~
+0 0 1
+D0
+~
+~
+0 -1 100802
+D6
+~
+~
+0 -1 100801
+D9
+~
+~
+0 -1 100883
+S
+#100801
+Snowy Landing Pad~
+ There is a large docking bay here with the black doors frozen open
+and icles hanging down from about. In red writing is, "Caution :
+Turbocar Crossing". Like most things in the surrounding area the
+docking area is covered in snow.
+~
+0 0 1
+D9
+~
+~
+0 -1 100800
+S
+#100802
+Outside the ice Pyramid~
+ Looming overhead is a massive glassy ice pyramid made out of glazed
+ice blocks. It shimmers like a large crystal, most of the ice is
+tissued in snow and looks extremely slippery though there is a path
+between the blocks into the pyramid itself and the ice surrounding it
+looks good enough to skate on!
+~
+0 4 1
+D0
+~
+~
+0 -1 100807
+D1
+~
+~
+0 -1 100803
+D2
+~
+~
+0 -1 100800
+D3
+~
+~
+0 -1 100804
+S
+#100803
+Sleek Blocks~
+ The glossy ice blocks making up the pyramid have been smoothly
+made, carved into six perfect squares and making up symmetrical
+cubes then frozen strongly together. A path of milky snow trails
+up along one column of ice blocks towards the crystally peak.
+~
+0 4 1
+D3
+~
+~
+0 -1 100802
+D4
+~
+~
+0 -1 100805
+S
+#100804
+Unblemished Pyramid~
+ The pallid iceblocks are as closely cut as diamonds and make up
+the smooth pyramid. The gentle fall of snow only adds to the calm
+feeling of tranquility of the whole area, some rough looking tomb
+guards can be seen at the entrance from this western angle.
+~
+0 4 1
+D1
+~
+~
+0 -1 100802
+D7
+~
+~
+0 -1 100847
+S
+#100805
+Immaculate Iceblocks~
+ The pyramids stainless ice blocks continue to ascend toward the
+now sharp looking point that is, the peak. Without the thinning
+layer of snow the ice blocks would most likely be extremely slippery.
+There are no footprints in the snow.
+~
+0 4 1
+D3
+~
+~
+0 -1 100806
+D5
+~
+~
+0 -1 100803
+S
+#100806
+Edge of a block~
+ The pure snow seems to not go quite to the peak afterall
+and the blocks here mark the corner and edge of one side
+of the glassy pyramid.
+~
+0 4 1
+D1
+~
+~
+0 -1 100805
+S
+#100807
+Tomb Entrance~
+ There are two large metal held torches alit with crackling flames
+of navy and cyan-blue, infront of each torch is a guard. Similar
+but smaller versions of the torches, also with navy flames line th
+-e walls within the pyramids. Not much snow has been wind driven
+into the pyramid making it's long entrance corridor very suspicious
+looking.
+~
+0 4 1
+D0
+~
+~
+0 -1 100808
+D2
+~
+~
+0 -1 100802
+S
+#100808
+Into the Pyramid~
+ Crackling navy flames lick at the shadows on the walls here but
+they dont seem to give off heat, just light, perhaps they are
+some evolved form of ki manipulation. The walls are somehow made
+of thin sheets of an odd looking material, this unknown material
+is certainly not ice even though from the outside the pyramid
+is clearly made of ice block.
+~
+0 12 1
+D0
+~
+~
+0 -1 100809
+D2
+~
+~
+0 -1 100807
+S
+#100809
+Entrance Corridor~
+ The wierd flames here are illuminated the walls odd looking
+hieroglyphics depicting great battles of gore and splendor
+and of course some symbols which look to represent a tall
+bright blue triangle surrounded by cat like creatures.
+~
+0 12 1
+D0
+~
+~
+0 -1 100810
+D2
+~
+~
+0 -1 100808
+S
+#100810
+Entrance Hall~
+ This is a grand entracne hall, it's filled with the blue flame ki
+torches and the walls are gleaming sheets of ice or glass or perhaps
+even crystal. The strangest thing about this room are the glistening
+puddles on the floor, if they are water, then the walls must be ice
+but such puddles weren't evident anywhere else.
+~
+0 12 1
+D0
+~
+~
+0 -1 100811
+D2
+~
+~
+0 -1 100809
+S
+#100811
+Crossroads~
+ A corridor from the almost majestic entrance hall leads a long way
+north before abruptly haults at a large rectangular table with three
+caskets on it, one of leather, one of dinosaur hide and one of a wierd
+looking metal. Each has an inscription above it on the wall:
+Dino-hide's :- "Whoever choses me shall get what he or she deserves"
+Leather's :- "Whoever choses me shall hazard all he has"
+Shiny Metal's :- "Whoever choses me shall gain the desire of many"
+~
+0 12 1
+D2
+~
+~
+0 -1 100810
+S
+#100812
+Eerie Corridor~
+ A variety of noises comes from down the corridor/tunnel including
+a femenine screech, a goat like noise and a roaring sound. Nonsense
+has been scribbled on the otherwise spotless glassy walls here. There
+seems to be no way back to the pyramids entrance from here.
+~
+0 8 1
+D1
+~
+~
+0 -1 100814
+D6
+~
+~
+0 -1 100813
+D7
+~
+~
+0 -1 100815
+S
+#100813
+Treasure Room~
+ Piles and piles of zeni coins and zeni notes as far as the eye can
+see fill the room from top to bottom, bags of gold and even a few
+zeni printing plates are scattered around but all of it is surrounded
+by unbreakable transparent boxes.
+~
+0 12 1
+D9
+~
+~
+0 -1 100812
+S
+#100814
+Pillars~
+ Large ice pillars with blue flames of ki actually contained within
+them keep this room together. Though the pillars may have been hastily
+erect because some are leaning inwards and others seem shorter and yet
+the room looks a perfect cube none the less.
+~
+0 12 1
+D3
+~
+~
+0 -1 100812
+S
+#100815
+Arrows!~
+ This long corridor protrudes upward and onward considerably far
+with lots of small holes in them on either side right up along
+the corridor. Small flames dance within the icy glass like ceiling
+itself illuminating the whole room.
+~
+0 12 1
+D1
+~
+~
+0 -1 100816
+D8
+~
+~
+0 -1 100812
+> entry_prog 50~
+mpecho An arrow zips across from one whole into another!
+mpechoat $n An arrow zooms across the tunnel and scratches you!
+mpechoaround $n An arrow manages to scratch $n!
+mpdamage $n 5
+~
+> rand_prog 10~
+mpecho An arrow zips across from one whole into another!
+mpechoat $n An arrow zooms across the tunnel and scratches you!
+mpechoaround $n An arrow manages to scratch $n!
+mpdamage $n 5
+~
+|
+S
+#100816
+Duck and Cover~
+ This room is very similar to last only there are now arrows
+streaming back and for and whistling through the air without
+any pre warning or slow shots. The arrows fly in perfect unison
+and precision always coming straight from one hole and into
+another without a single hitch.
+~
+0 12 1
+D3
+~
+~
+0 -1 100815
+D6
+~
+~
+0 -1 100817
+> entry_prog 100~
+mpecho An barrage of arrows zips across from one whole into another!
+mpechoat $n An arrow zooms across the tunnel and cuts into your chest!
+mpdamage $n 10
+mpechoaround $n A wave of arrows manages to hit $n!
+~
+|
+S
+#100817
+Crossroads~
+ The tunnel of arrows leads to a room of mirrors which seems to
+splits into many paths though which direction is very hard to
+tell because of the reflections and tricks of the mirror, each
+mirror is about a foot wide and eight foot long.
+~
+0 12 1
+D0
+~
+~
+0 -1 100818
+D1
+~
+~
+0 -1 100817
+D3
+~
+~
+0 -1 100819
+D4
+~
+~
+2057 -1 100840
+D5
+~
+~
+2048 -1 100845
+D6
+~
+~
+0 -1 100828
+D7
+~
+~
+0 -1 100821
+D9
+~
+~
+0 -1 100816
+> entry_prog 25~
+mpechoat $n Ouch! Was that a ladder you just walked into!?. There's nothing there.
+~
+> entry_prog 15~
+mpechoat $n Whoa! Almost fell into the hole..wait..there's no hole there! Hahaha..
+~
+|
+S
+#100818
+Into a mirror~
+ A massive mirror screens the path here, it almost looks like it
+could be walked down and yet to the touch it is still just a mirror
+cold and smooth glass just like the ice in the past area's of the
+pyramid.
+~
+0 12 1
+D2
+~
+~
+0 -1 100817
+S
+#100819
+Into a mirror~
+ A massive mirror screens the path here, it almost looks like it
+could be walked down and yet to the touch it is still just a mirror
+hot and ragged, almost like it wasn't a mirror, certainly not cold
+like the ice making up the pyramid.
+~
+0 12 1
+D1
+~
+~
+0 -1 100817
+D3
+~
+~
+2048 -1 100820
+S
+#100820
+Treasure Room~
+ This glorious room sparkles at every corner with piles of beautiful,
+gleaming zeny, filled to the brim with it. Most of it's zeni at least
+in other parts of the row weapons and jewel encrusted armor is hidden
+beneath the piles. Resting on top of it is a large man-headed sphinx.
+~
+0 12 1
+S
+#100821
+Slippery Ledge~
+ This ledge here is made of thick ice and covered in slow freezing
+water making it extremely slippery but able to hold the weight of
+those daring enough to cross it. Below nothing but fire can be seen
+licking at the ice.
+~
+0 12 1
+D0
+~
+~
+0 -1 100822
+D8
+~
+~
+0 -1 100817
+> rand_prog 20~
+mpechoat $n Flames lash at you from under the ice and you fall..an icy slide throws you left and right!
+mpdamage $n 10
+mptransfer $n 100819
+~
+|
+S
+#100822
+Middle of the Ledge~
+ The slippery and perilous ledge continues northbound but the path
+here is obstructed by a large icer bouncing from wall to wall with
+tremendous speed and an almost cat like grace and agile body.
+~
+0 12 1
+D0
+~
+~
+0 -1 100823
+D2
+~
+~
+0 -1 100821
+S
+#100823
+Dead End~
+ The slippery ledge and all it's dangerous walking has only let
+straight into another sheet of glass like ice. Though it's not
+melting it stills seems oddly different to the others within the
+pyramid.
+~
+0 12 1
+D2
+~
+~
+0 -1 100822
+S
+#100824
+Ancient Training Room~
+ This room has no gravity controls, no robots or any kind of the
+modern training technology that trains this centuries greatest. It
+has only straw dummies, sacks of sand hanging from the cieling and
+for some reason wooden poles protruding from the icy walls in odd
+patterns.
+~
+0 12 1
+D0
+~
+~
+0 -1 100825
+S
+#100825
+Dummies~
+ The crudely made dummies are straw filled sacks with targets painted
+in red where there the bodies 'power points' are. It's rooms like
+this that helped lead the icerian race to become one of the universes
+most efficient killers.
+~
+0 12 1
+D2
+~
+~
+0 -1 100824
+D8
+~
+~
+0 -1 100826
+S
+#100826
+Poles~
+ The poles are coming out from the ice and stretch out from
+roughly two feet as wide as six feet where as some seem propelled
+in and out from the ice, perhaps by steam? - some of the ice
+is slowly melting. These poles may have been some form of training
+agility and reflexes.
+~
+0 12 1
+D0
+~
+~
+0 -1 100827
+D3
+~
+~
+0 -1 100824
+D7
+~
+~
+0 -1 100825
+S
+#100827
+Ice Doors~
+ In the coldest corner of the icy training room is this large
+door, it's not ice but some sort of thick glass. In the very
+center is a vertical split and in the middle of this parting is
+a deep indent almost like half a spherical object could fit in.
+~
+0 12 1
+D0
+~
+glass-doors~
+1 100805 100829
+D2
+~
+~
+0 -1 100826
+S
+#100828
+Another sphinx~
+ This room is made up of six identical mirrors held within
+silver frames. Hovering in the middle of these cubic room
+of mirrors is a makeshift sacrifical slab with a sphinx
+on it, this sphinx has the head of a woman but her fur is
+crimson rather then the usual orange lion fur.
+~
+0 12 1
+D9
+~
+~
+0 -1 100817
+S
+#100829
+Around a hole~
+ With the help of a fancy the key the glass doors opened and lead
+into, a hole. The room of course is made of the same ice and glass
+as the rest of the pyramid but the hole seems to be plated with
+a non-transparent material, so the only way to see down.
+~
+0 8 1
+D0
+~
+~
+0 -1 100831
+D1
+~
+~
+0 -1 100830
+D2
+~
+glass-doors~
+1 100805 100827
+D6
+~
+~
+0 -1 100839
+S
+#100830
+West to the Hole~
+ The walls here shine with the icy glimmer of the outer pyramid and
+looking down the hole it's hard to tell how far is stretches though
+it can be seen there are familiar blue ki torches aligned along the
+circular odd walls.
+~
+0 12 1
+D3
+~
+~
+0 -1 100829
+S
+#100831
+Above the hole~
+ From directly above the hole it can seen stretching a long way
+down based on the small navy and cyan ki bubbles dotted in the
+vertical tunnel. Though these ki bubbles are numerous they seem
+to give off very little light.
+~
+0 4 1
+D2
+~
+~
+0 -1 100829
+D5
+~
+~
+0 -1 100832
+> entry_prog 100~
+if isaffected($n) flying
+mpechoat $n The hole looks deep!
+else
+mpechoat $n Ah crud! You cant fly in time and fall down the hole!
+mpdamage $n 35
+mptransfer $n 100833
+endif
+~
+|
+S
+#100832
+Half-way~
+ The ki bubbles begin to swirl with dark energies and whizz around
+the tunnel eratically making the light in the room change from
+very good to poor and the bottom almost impossible to see from
+here!.
+~
+0 4 1
+D4
+~
+~
+0 -1 100831
+D5
+~
+~
+0 -1 100833
+S
+#100833
+Bottom of the hole~
+ As the navy ki bubble filled tunnel ends at a seven foot drop into
+an unknown room, familiar flooring of an ice like material can be
+seen glistening below and the familiar sounds of the sphinx all over
+the pyramid can be heard.
+~
+0 4 1
+D4
+~
+~
+0 -1 100832
+D5
+~
+~
+0 -1 100834
+S
+#100834
+Hall of the Fallen~
+ This large chilly room is filled with concrete coffins and
+thick steel laced lids. Scraped into the far ice wall are
+the words, "Tombs of the Great - May not be dead". As odd
+as this seems, the ki signatures in here are distinctly fluxuating
+and come from random coffins.
+~
+0 0 1
+D0
+~
+~
+0 -1 100838
+D1
+~
+~
+0 -1 100835
+D2
+~
+~
+0 -1 100837
+D3
+~
+~
+0 -1 100836
+D4
+~
+~
+0 -1 100833
+S
+#100835
+Frozen Edge's Tomb~
+ A suit of armor frozen within a block of ice rests behind this
+warriors coffin. An enormous plaque fixed to the ice by steel
+pegs reads; "Frozen of the Edge war clan, Champion of the Icerian
+Pit Fighting Arena's for Six consecutive decades". The coffin
+lid is in perfect condition.
+~
+0 12 1
+D3
+~
+~
+0 -1 100834
+S
+#100836
+Tainted Blizzards Tomb~
+ For this tomb there is no comemorative plaque, no item or weapon of
+the warrior has been frozen in honour of a great leader, warrior or
+servant to the Icerian's infamous empire. There is simply a crudely
+made coffin with "Blizzard" scrawled roughly on it.
+~
+0 12 1
+D1
+~
+~
+0 -1 100834
+S
+#100837
+Icewinds Tomb~
+ A large potrait of an icer standing within fire and piles of corpses
+and motioning towards a squadron of icers hangs over this tombs coffin,
+this coffins lid has been smashed into pieces some of which are
+embedded within the walls nearby.
+~
+0 12 1
+D0
+~
+~
+0 -1 100834
+S
+#100838
+Frostblades Tomb~
+ Next to his large coffin is an equally as large block of ice and
+within a neon blade with a bone handle and skull decorated pommel.
+The coffin lid is slightly lifted and a horrible smell drifts around
+the area.
+~
+0 4 1
+D2
+~
+~
+0 -1 100834
+S
+#100839
+An offer~
+ This room is completely empty it's like stepping through a door
+into another dimension. A void of emptiness, nothing but white as
+far as the eye can see except roaming merrily around is that's right
+another sphinx!
+~
+0 12 1
+D9
+~
+~
+0 -1 100829
+S
+#100840
+Crystal Room~
+ The invisible ladder leads up into this wide room, it's made of the
+same icy material as the others and yet on further inspection it
+gleams a thousand times more as dazzling as some kind of diamond or
+more likely like some kind of crystal.
+~
+0 12 1
+D5
+~
+~
+9 -1 100817
+D6
+~
+~
+0 -1 100842
+D9
+~
+~
+0 -1 100841
+S
+#100841
+Crystalline Orniments~
+ Within a painted circle are many objects made of the same sparkling
+crystal as the room, these items include a table and chair. The table
+has crystal glasses, a crystal makeshift book and many other smaller
+items. Each is magically fixed to where it is. Shame, they look
+valuable.
+~
+0 12 1
+D6
+~
+~
+0 -1 100840
+S
+#100842
+Prophet's Door~
+ The crystal rooms shiniest corner and the wall is nothing more
+than a large door with, "Beg for it and you shall recieve it"
+written on it. There is a large horizontal split in this door
+where it will undoubtedly open if one can guess what the
+message means.
+~
+0 12 1
+D9
+~
+~
+0 -1 100840
+> speech_prog 'Please tell me the prophecy.'~
+mpechoat $n The doors slide vertically open and the prophets room can be seen. A mysterious force draws you in.
+mptransfer $n 100843
+~
+|
+S
+#100843
+Prophets Guardians Room~
+ Before the prophets much large room is this room which is crampt
+because of the large icer pacing the few feet the room allows walking
+in. The rooms shape is wierd in that on either side it slopes all the
+way down to a few inches. The icer here doesn't look to happy but the
+misty adjoining room looks slightly more welcoming.
+~
+0 12 1
+D0
+~
+~
+0 -1 100844
+S
+#100844
+Misty Room~
+ This crystal rooms magnificent gleam is camoflauged beneath clouds
+of mist eeriely floating around and clinging to the walls and cieling,
+in the dead center of the large mist filled room is a young icer who
+seems in a deep trance.
+~
+0 12 1
+D2
+~
+~
+0 -1 100843
+S
+#100845
+Icy Corridor~
+ The secret tunnel downward has descended straight into a sub-tunnel
+made of freezing cold ice. The temprature here feels easily ten degrees
+below zero or even less. The corridor is lit by familiar small flames
+of navy and cyan ki energies.
+~
+0 12 1
+D0
+~
+~
+0 -1 100846
+D4
+~
+~
+0 -1 100817
+S
+#100846
+Freezing Journey~
+ The sub-zero temprature corridor continues onward, and by looking
+at the ki flames crackling cheerfully along the walls it could go
+on for a long time. The walls unlike the other ice walls in the
+pyramid aren't melting even slightly and seem more like the crystal
+ones.
+~
+0 12 1
+D0
+~
+~
+0 -1 100854
+D2
+~
+~
+0 -1 100845
+S
+#100847
+Atop an Ice Block~
+ This large cubic ice block is almost like a very miniature ice
+skating ring, it's extremely slippery and it seems the only
+way up has the same slippery blocks and now snow to help it
+to be more climbable.
+~
+0 12 1
+D6
+~
+~
+0 -1 100848
+D8
+~
+~
+0 -1 100804
+> rand_prog 5~
+mpechoat $n You slip on the ice and scathe you're elbow!
+mpdamage $n 5
+~
+|
+S
+#100848
+Another Ice Block~
+ As the pyramid is made of ice blocks, the way up is suprisingly
+over and across slippery..that's right, ice blocks. There is no
+snow on this side due to the direction of the wind and so the
+journey to the peak is going to be very difficult.
+~
+0 12 1
+D3
+~
+~
+0 -1 100849
+D9
+~
+~
+0 -1 100847
+> entry_prog 5~
+mpechoat $n You slip and skid left and right falling and falling!
+mptransfer $n 100807
+~
+|
+S
+#100849
+Slippery Cubes~
+ Snows has managed to land here and somehow turned to slush making
+a slippery block of ice all the more slippery. It's a long way up
+to the pyramids peak and could take awhile even for an experienced
+ice climber..with equipment.
+~
+0 12 1
+D1
+~
+~
+0 -1 100848
+D7
+~
+~
+0 -1 100850
+> entry_prog 30~
+mpechoat $n Oh no..The slushy snow has made you slip and down you go!
+mptransfer $n 100807
+~
+|
+S
+#100850
+Corner Block~
+ This ice block marks the edge of this face on the large gleaming
+ice pyramid. Falling off here could be extremely hazardous to ones
+health as one way down is straight to the ground without many ice
+blocks blocking the fall.
+~
+0 12 1
+D4
+~
+~
+0 -1 100851
+D8
+~
+~
+0 -1 100849
+S
+#100851
+Bigger Ice Blocks~
+ The ice blocks on the upper half of the pyramid have become thinner
+and yet taller so they are much harder to climb infact with the ice
+blocks chisselled into a slope it may be impossible to attempt to
+climb the pyramid further.
+~
+0 12 1
+D4
+~
+~
+64 -1 100852
+D5
+~
+~
+0 -1 100850
+> entry_prog 50~
+mpechoat $n This is the slipperiest ice block yet, and who are you to conquer it? One slip and you're rolling down the pyramid, landing before a guards feet.
+mptransfer $n 100807
+~
+|
+S
+#100852
+Nearing the Peak~
+ The pyramids sharp peak can be seen from his sloping row of ice
+blocks, the temprature this far up is absolutely freezing and
+the clouds seem to drift ever slowly towards the top of the
+pyramid.
+~
+0 12 1
+D4
+~
+~
+64 -1 100853
+D5
+~
+~
+0 -1 100851
+S
+#100853
+Peak~
+ Finally the pyramid of ice becomes narrower and narrower until it
+reaches it's long sharp peak which reflects the little light the
+dark clouds let in. Surrounding the small blocks near the peak is
+a strange looking snow that's white and yet doesn't look extremely
+pure like the rest falling from the sky.
+~
+0 12 1
+D5
+~
+~
+0 -1 100852
+S
+#100854
+Frostbitten Tunnel~
+ On and on the ki bubbles continue and not an end to the frosty
+corridor is in sight. The temprature is still dipping ever so
+slightly as the lengthy corridor carries on forward soon it'll
+be too cold to walk onward if it continues to get colder.
+~
+0 12 1
+D2
+~
+~
+0 -1 100846
+D3
+~
+~
+0 -1 100855
+D6
+~
+~
+0 -1 100856
+S
+#100855
+Isolation~
+ A brief turn in the corridor has lead directly into some sort of
+void, as far as the eye can see in every direction is nothing but
+an emptiness of black. Even a single solitary echo becomes a loud
+noise which booms and echoes throughout the void.
+~
+0 12 1
+D1
+~
+~
+0 -1 100854
+S
+#100856
+Fork in the Tunnel~
+ The extremely freezing corridor splits several ways here, each is
+a similar icy tunnel with it's own set of ki flame bubbles to light
+the way. There is no indication to as where each path could lead or
+visual aid to help see down the long corridors.
+~
+0 12 1
+D0
+~
+~
+0 -1 100871
+D6
+~
+~
+0 -1 100857
+D8
+~
+~
+0 -1 100872
+D9
+~
+~
+0 -1 100854
+S
+#100857
+Hazy Corridor~
+ This corridor of ice is much like the prior corridor, it's made in
+an identical way and is equally as chilling. Though an eerie mist
+creeps down the corridor making the small light of the ki bubbles
+become hazy blotches within the clouds of mist drifting down.
+~
+0 12 1
+D1
+~
+~
+0 -1 100858
+D9
+~
+~
+0 -1 100856
+S
+#100858
+Misty Walk~
+ The haze corrior continues onward with the mist making impaired
+vision a common obstacle. The mist smells funny, infact it's an
+almost hypnotic smell and wofts all around the straight corridor
+and shows no relent as it travels and clings everywhere.
+~
+0 12 1
+D3
+~
+~
+0 -1 100857
+D6
+~
+~
+0 -1 100859
+> entry_prog 35~
+mpforce $n sleep
+~
+> rand_prog 30~
+mpechoat $n You've been exposed to the mist too long and it sends you into a deep sleep!
+mpforce $n sleep
+~
+|
+S
+#100859
+Entrance~
+ The mist envelopes the door way here and so cloaks the rooms
+content from view, though what it visible is the fact the door
+way actually lacks a door and is accessible without any kind
+of tool or equipment.
+~
+0 12 1
+D0
+~
+~
+0 -1 100860
+D9
+~
+~
+0 -1 100858
+S
+#100860
+Frozen Warriors~
+ This room seems to be the source of the mist though here it seems
+more like fog because it's mainly crawling along the ground, it's
+seeping from large blocks of ice. These blocks of ice seem to be
+holding warriors within them, all of these warriors of course are
+icerian.
+~
+0 4 1
+D0
+~
+~
+0 -1 100861
+D2
+~
+~
+0 -1 100859
+D3
+~
+~
+0 -1 100862
+D6
+~
+~
+0 -1 100866
+S
+#100861
+Mortality Alcove~
+ The three most menacing icers in the whole room of deceased fighters
+are frozen within the wall here, they are all wearing full icerian
+armor complete with decorative medals and royal capes. Each one also
+has a weapon in hand or is in a martial artists stance.
+~
+0 4 1
+D2
+~
+~
+0 -1 100860
+S
+#100862
+Hall of the Departed~
+ The ice blocks for the warriors here are almost like pillars, some
+of the warriors were as tall as eight-ten foot and as wide as they
+were burly, and so the now departed warriors frozen with ice blocks
+big enough to support them. Here are the less decorated warriors,
+though each is just as grim as any of the officers.
+~
+0 4 1
+D0
+~
+~
+0 -1 100863
+D1
+~
+~
+0 -1 100860
+D3
+~
+~
+0 -1 100864
+D7
+~
+~
+0 -1 100865
+S
+#100863
+Amongst the Lost~
+ The ice blocks here are massive and equally so are the blood-
+curdling warriors held within them. As more of the bodies are
+visible it's easier to see why the icerian empires large
+armies were so feared by all other races, even the saiyans.
+~
+0 4 1
+D2
+~
+~
+0 -1 100862
+S
+#100864
+Largest Ice Grave~
+ The largest ice block in all the eerie, mist secreting graves stands
+tall here. Within it is an icer, this warrior is more easily described
+as a pillar than the large block is. The icer stands an amazing eleven
+feet tall and has grossly oversized muscles.
+~
+0 4 1
+D1
+~
+~
+0 -1 100862
+S
+#100865
+Slab of the Lifeless~
+ The final of the large, heavily built icers is in this corner
+and he's the most intimidating of all the bulky warriors. His
+body has been disfigured and is saturated in large scars and
+alarming mark.
+~
+0 4 1
+D8
+~
+~
+0 -1 100862
+S
+#100866
+Minacious Deceased~
+ These frozen warriors look alot more lithe-framed than the others
+frozen within the other blocks, the majority of the frightening
+brigade of fearsome looking inanimate icers are holding blades and
+wearing the icerians more flexible and less durable armor.
+~
+0 4 1
+D0
+~
+~
+0 -1 100869
+D1
+~
+~
+0 -1 100870
+D2
+~
+~
+0 -1 100867
+D3
+~
+~
+0 -1 100868
+D9
+~
+~
+0 -1 100860
+S
+#100867
+Looming Figures~
+ Within these blocks are the icerians sword masters who served
+under Frozen Blade in one of the many wars fought against the
+planet Furiza. Each one wielding thier own amazingly crafted
+blade.
+~
+0 4 1
+D0
+~
+~
+0 -1 100866
+S
+#100868
+Threatening Block~
+ A large ice block here resembles those making up the pyramid
+this is most likely because the icer held within it is crouched
+with his arms held out and his feet spread apart, a long rapier
+like blade is in his clench hand.
+~
+0 4 1
+D1
+~
+~
+0 -1 100866
+S
+#100869
+Fiendish Icer~
+ The icer standing within this icy transparent tomb is holding
+no weapon but instead the midget icer has his arms folded over
+a smooth chest and his eyes closed. The head has been tilted
+upward in an indignant manner.
+~
+0 4 1
+D2
+~
+~
+0 -1 100866
+S
+#100870
+Abominable Icerian~
+ This icer isn't in a graceful or proud composure nor is he holding
+a fancy sword, he's as small framed as the others but holding a large
+steel hammer. 
+~
+0 4 1
+D3
+~
+~
+0 -1 100866
+S
+#100871
+Sphinx Room~
+ This room has potraits of all the sphinx and is filled with
+ornaments depicting sphinx, some show a man cowering before
+a sphinx holding his head, undoubtedly an unsolvable riddle
+has been asked. 
+~
+0 4 1
+D2
+~
+~
+0 -1 100856
+S
+#100872
+Clouded Tunnel~
+ It's not misty and it's not dank fog, it seems to be a mass of
+something that's formed a cloud and now drifts laggingly around
+the long tunnel. The tunnel descends slowly at a low angle into
+the ki bubble filled darkness.
+~
+0 4 1
+D1
+~
+~
+0 -1 100873
+D7
+~
+~
+0 -1 100856
+S
+#100873
+Clouded Corridor~
+ The cloud here is thinning and drifting around even slower, any
+slower in fact and it wouldn't be moving at all. There is a
+room noticable only a few feet away, though what's in the room
+is shrouded in a familiar cloud.
+~
+0 4 1
+D2
+~
+~
+0 -1 100874
+D3
+~
+~
+0 -1 100872
+S
+#100874
+First Obstacle~
+ Like other rooms within the pyramid, this room is made of either
+very finely carved ice or a sparkling crystal like material. A
+massive red number one has been painted in a fancy design, other
+than this large number the room is pretty much empty..oh yeah
+and there's a sphinx.
+~
+0 4 1
+S
+#100875
+Balcony~
+ A marble balcony some how floats above an ice filled room, the
+marble on the balcony is of the finest quality and the railing is
+made of an equally fine marble and mahogany like wood. There is
+a ladder leading down toward the ice.
+~
+0 4 1
+D5
+~
+~
+0 -1 100876
+S
+#100876
+Iced Pond~
+ The ice floor here is completely different to all the other ice in
+the whole freezing pyramid. It looks as though it was once unclean
+water that froze instead of finely chiselled blocks and rooms, and
+it definately isn't the fine crystal of previous rooms.
+~
+0 4 1
+D4
+~
+~
+0 -1 100875
+S
+#100877
+Within a sphere~
+ This room, the test of ability, as the sphinx called it is a
+large sphere with no inner-gravity. Taking full advantage of
+the lack of weight one has here are small transparent ice polygons
+of icers, they dash around at great speeds.
+~
+0 4 1
+D6
+~
+~
+0 -1 100878
+S
+#100878
+Spherical Arena~
+ The icy dome like, top half of the massive sphere is as cold and
+lacks all gravity just like the rest of arena. The ice warriors
+still dash around and kick off from wall to wall here, some sparring
+viciously as they pass each other.
+~
+0 4 1
+D9
+~
+~
+0 -1 100877
+S
+#100879
+Crystal Disc~
+ This test is located on top of a massive disc of crystal, this flat
+platform is wide, long and still two dimension. It supports weight
+effortlessly and is suspended within another void of nothingness
+just empty blackness and a large crystal disc.
+~
+0 4 1
+S
+#100880
+Fairytale Hallways~
+ This hallway is truly like a young girls fairytale, not at all like
+one would imagine leading up to the legendary warrior, Zetsuei. There
+is a large red royal carpet leading down the hall and the ki bubbles
+are held within golden torches fixed to the walls of pure ice.
+~
+0 4 1
+D3
+~
+~
+0 -1 100881
+S
+#100881
+Majestic Corridor~
+ The ceremonious carpet leads down the corridor down the icy
+corridor and towards the most widely known icers infamous
+tomb.
+~
+0 12 1
+D1
+~
+~
+0 -1 100880
+D3
+~
+~
+0 -1 100882
+S
+#100882
+Zetsuei's Tomb~
+ And after all the riddles, tests and walking the pyramids purpose
+is here. The room where Zetsuei's body is kept and the reason this
+place was made so tantalizingly difficult to get through. The room
+sparkles like a thousand diamonds, or a hundred stars. The temprature
+is well below freezing point and there is a large steel slab in
+the center of the room.
+~
+0 12 1
+D1
+~
+~
+0 -1 100881
+S
+#100883
+An ice wall~
+ A massive sheet of ice makes a mock wall here though it's
+averagely high and could be flown over. It's extremely wide
+and seems to stretch towards the pyramid visible through the
+snow in the background.
+~
+0 4 1
+D4
+~
+~
+64 -1 100884
+D6
+~
+~
+0 -1 100800
+S
+#100884
+Storm Clouds~
+ Large, thick black storm clouds that look ready to pour a
+blizzard down on the unsuspecting ground below encircle the
+area moving slowly with the planets axis. The clouds make
+vision impaired and are grouped together here.
+~
+0 4 1
+D1
+~
+~
+64 -1 100885
+D5
+~
+~
+0 -1 100883
+S
+#100885
+Clouds and a Slope~
+ The clouds lead right into a snowy slope here, the slope
+descends almost vertically downwards. The clouds though
+as thick here as they are in the west towards the Furiza
+tundra plains aren't as grouped together.
+~
+0 4 1
+D3
+~
+~
+0 -1 100884
+D5
+~
+~
+0 -1 150001
+S
+#100886
+Floating in a void~
+~
+0 4 1
+S
+#100887
+Floating in a void~
+~
+0 4 1
+S
+#100888
+Floating in a void~
+~
+0 4 1
+S
+#100889
+Floating in a void~
+~
+0 4 1
+S
+#100890
+Floating in a void~
+~
+0 4 1
+S
+#100891
+Floating in a void~
+~
+0 4 1
+S
+#100892
+Floating in a void~
+~
+0 4 1
+S
+#100893
+Floating in a void~
+~
+0 4 1
+S
+#100894
+Floating in a void~
+~
+0 4 1
+S
+#100895
+Floating in a void~
+~
+0 4 1
+S
+#100896
+Floating in a void~
+~
+0 4 1
+S
+#100897
+Floating in a void~
+~
+0 4 1
+S
+#100898
+Floating in a void~
+~
+0 4 1
+S
+#100899
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 100801 1 100807
+M 1 100801 1 100807
+O 1 100802 1 100807
+M 1 100802 1 100811
+M 1 100803 1 100814
+M 1 100804 1 100820
+M 1 100805 1 100822
+M 1 100806 1 100823
+M 1 100807 1 100828
+M 1 100808 1 100838
+M 1 100809 1 100835
+M 1 100810 1 100837
+M 1 100811 1 100836
+M 1 100812 1 100839
+M 1 100813 1 100841
+M 1 100814 1 100843
+M 1 100815 1 100844
+O 1 100812 1 100853
+M 1 100816 1 100855
+M 1 100817 1 100871
+M 1 100818 1 100874
+M 1 100819 1 100876
+M 1 100820 1 100878
+M 1 100820 1 100878
+M 1 100820 1 100878
+M 1 100820 1 100877
+M 1 100821 1 100879
+M 1 100822 1 100882
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

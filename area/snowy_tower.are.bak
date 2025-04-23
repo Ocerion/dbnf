@@ -1,0 +1,3117 @@
+#AREA   Muscle Tower/Snowy Village~
+
+
+
+#VERSION 251
+#AUTHOR Goten~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG Sounds of officers barking orders at his subordinates echoes throughout the general area.~
+
+#FLAGS
+4
+
+#ECONOMY 0 5236713
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#200003
+red ribbon army guard~
+A Red Ribbon Army Guard~
+A Red Ribbon Army guard wanders his post.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200004
+Red Ribbon Army Soldier~
+A Red Ribbon Army Soldier~
+A Red Ribbon Army soldier stands here, surveying the base's surroundings.
+~
+~
+33 524288 -1 C
+1 0 100 20d20+0 15d5+0
+150 200000000
+112 112 0
+20 35 45 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Die Intruder!
+~
+> fight_prog 50~
+kamehameha
+~
+> fight_prog 45 ~
+'energy ball'
+~
+> fight_prog 35~
+~
+|
+#200005
+The RRA Repairman~
+RRA Repairman~
+A man stands in this tent looking annoyed. He looks at you waiting to repair your items.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100 ~
+say Meh. What do you want repaired? I'm Busy.
+l
+~
+|
+#200006
+Wild Animal~
+A Wild Animal~
+A ferocious wild animal is here, gnashing it's teeth in your direction.
+~
+~
+33 0 0 C
+1 0 20 20d20+0 2d5+0
+400 400000000
+112 112 0
+45 45 35 50 0
+0 0 0 0 0
+70 70 0 0 1 1 3
+0 0 0 0 0 0 1073 0
+#200009
+A Tower Guard~
+A Tower Guard~
+A Tower Guard stands here, keeping an eye out for all intruders.
+~
+~
+35 524288&32 -1 C
+1 0 100 10d20+0 10d5+0
+400 2000000000
+112 112 0
+28 30 25 25 10
+0 0 0 0 0
+1 1 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+kamehameha
+~
+> fight_prog 25~
+'destructive wave'
+~
+|
+#200010
+Tower Guard~
+A Tower Guard~
+A Tower Guard stands here, keeping an eye out for all intruders.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1200000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 45~
+solar flare
+~
+> fight_prog 55~
+kamehameha
+~
+> greet_prog 100~
+say What are you doing here? You'll never get past us!!
+~
+> greet_prog 100~
+~
+|
+#200011
+A Tower Guard~
+A Tower Guard~
+A taller and more muscular Guard stands here watching for intruders.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200012
+Tower Guard~
+A Tower Guard~
+A muscular Guard stands here, looking suspiciously of everyone who passes.
+~
+~
+35 524288&32 -1 C
+1 0 100 1d20+0 2d5+0
+500 2100000000
+112 112 0
+35 10 35 40 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 45~
+'energy ball'
+~
+> greet_prog 100~
+say Muscle Tower is off limits to weaklings like you!
+~
+> fight_prog 25~
+kamehameha
+~
+|
+#200014
+Commander Red~
+Commander Red~
+Commander Red is here, glaring a hole through you.
+~
+~
+33 524288&2097152 0 C
+1 0 15 1d20+0 2d5+0
+0 5000000000
+112 112 0
+35 45 45 45 0
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+solar flare
+~
+> fight_prog 25~
+scatter shot
+~
+> fight_prog 25~
+'destructive wave'
+~
+> fight_prog 28~
+kamehameha
+~
+> greet_prog 50~
+say &O The guards past here are 5-10bil powerlevel. &g Just thought I'd let you know.
+~
+> death_prog 25~
+mpoload 200018
+~
+|
+#200015
+Tower Guard~
+A Tower Guard~
+A Tower Guard is here, his eyes moving up and down the corridor
+~
+~
+1 524288&0&1 -1 C
+1 0 100 1d20+0 2d5+0
+800 6000000000
+112 112 1
+25 35 20 30 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say You got this far but NO MORE! Die Now!
+~
+> fight_prog 35~
+'destructive wave'
+~
+|
+#200016
+Eighter~
+Eighter~
+An android resembling Frankenstein sits heer, daydreaming
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 80~
+say &GGeneral White is up there on level 5. &RAll his soldiers are very powerful. I wish you luck.
+~
+|
+#200018
+Head RRA Soldier~
+A Head RRA Soldier ~
+A Soldier with an RRA seal and many medals sewn on his uniform stands here, an important Muscle Tower figure
+~
+~
+1 524288&0&1 0 C
+1 0 100 1d20+0 2d5+0
+1000 8500000000
+112 112 0
+40 30 10 40 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+'destructive wave'
+~
+> fight_prog 21~
+kamehameha
+~
+> death_prog 4~
+mpoload 200001
+~
+|
+#200019
+General White~
+General White~
+General White, leader of the Red Ribbon Army, is here amazed you have made it to the top of his tower.
+~
+This man looks very young, despite the many years he has spent leading
+the Red Ribbon Army.  He is dressed in uniform, this uniform that of a very
+high ranking official.  And he has a cigar that sticks out of his mouth,
+puffing back the smoke every few min This man stands here taller than you
+and also a bit more muscular.  He wears a uniform, the way it was designed,
+was intended for a very high ranking official. The general has a cigar in
+his mouth from which, he inhales smoke from every few minutes.  Other than
+the obvious sense of power coming from him, if you look closely you'll
+realize he is alone.  The rank of General must be a lonely place.  
+~
+33 524288&0&1 0 C
+1 0 100 1d20+0 2d5+0
+2500 10000000000
+112 112 0
+55 66 40 45 0
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 30~
+'destructive wave'
+~
+> fight_prog 20~
+kamehameha
+~
+> death_prog 5~
+mpoload 200005
+~
+|
+#200020
+Shopkeeper~
+A Shopkeeper~
+The Snowy Village Wares Shopkeeper stands behind the counter, waiting to help you with your purchase.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200021
+Ninja Assassin~
+A Ninja Assassin~
+A Ninja stands here, Looking at you coldly, ready to do battle with you
+~
+~
+33 524288&2097152 0 C
+1 0 100 1d20+0 2d5+0
+600 2000000000
+112 112 0
+25 35 10 30 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Feel the wrath of the Red Ribbon Army Ninjas
+~
+> fight_prog 45~
+kamehameha
+~
+> fight_prog 65~
+'energy ball'
+~
+> fight_prog 35~
+dodon ray
+~
+|
+#200022
+Shop Employee~
+A Shop Employee~
+A young teen sits behind the counter here, watching tv and awaiting your purchase.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 200
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200023
+RRA Official~
+A RRA Official~
+A RRA Official stands at attention here, Blocking your entry to the Village
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200024
+RRA Official ~
+A RRA Official~
+A RRA official runs about, searching for the dragonball.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000
+112 112 0
+32 25 10 30 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say So you're looking for the Dragonball as well. Well forget about it, it belongs to the Red Ribbon Army!
+~
+> fight_prog 25~
+kamehameha
+~
+|
+#200025
+RRA Search Unit~
+RRA Search Unit~
+A small machine scoots around here, beeps and other noises coming from it.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3500000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 50~
+mpmload 200025
+mea $n The machine's power fades as it shuts down, then suddenly comes back to life, surviving on it's back up power.
+mer $n The machine's power fades out and dies quickly, then suddenly the machines eye begin to glow as the android recharges on it's back up power.
+~
+|
+#200026
+RRA Search Team Member~
+RRA Search Team Member~
+Standing and moving continually, a Search team member keeps an eye out for the Dragonball.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+500 3000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+'energy ball'
+kamehameha
+~
+|
+#200027
+Search Unit v1.4~
+Search Unit v1.4~
+A droid is here moving around in different directions, in search of the dragonball.
+~
+~
+1 0 2 C
+1 0 100 1d20+0 2d5+0
+600 5000000000
+112 112 0
+50 35 39 40 0
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+ssd bomber
+~
+|
+#200028
+RRA Reject~
+RRA Reject~
+A man in casual wear looks out of place here as he joins in the search.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+400 1000000000
+112 112 0
+18 20 10 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200029
+RRA Overseer~
+Overseer~
+A Man is walking about, Surveying the other's progress.
+~
+~
+1 0&32 0 C
+1 0 100 1d20+0 2d5+0
+500 4000000000
+112 112 0
+25 25 30 32 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200030
+Insane Animal~
+An insane animal~
+A animal ravages close by, foam dripping from it's mouth.
+~
+~
+33 524288 0 C
+1 0 100 1d20+0 2d5+0
+60 3000000000
+112 112 0
+45 45 45 45 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#200031
+Forest Ranger ~
+Forest Ranger~
+The forest ranger patrols this spot, Keeping an eye out for poachers.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+450 4500000000
+112 112 1
+24 25 30 15 0
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 48 0
+#200040
+Beta Android 1~
+Beta Test Android 1~
+The beta test android stands upright in this corridor, looking rather unfinished.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000
+112 112 0
+100 250 150 100 20
+0 0 0 0 0
+0 0 0 0 17 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+ssd bomber
+~
+> fight_prog 65~
+hells
+~
+> greet_prog 100~
+smirk
+~
+> death_prog 20~
+mpmload 200040
+mea $n &GThe android shuts down, it's power completely drained, &Ror so you believe, &Gas suddenly the android springs back to life ready for another fight.
+mer $n The Android is Reborn!
+~
+|
+#200041
+Advanced Beta Test Android~
+Advanced Beta Test Android~
+Here in the corridor, A more technologically advanced and more carefully built android is standing.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+450 100000000000
+112 112 1
+150 250 150 150 20
+0 0 0 0 0
+4 4 0 0 17 1 3
+0 0 0 0 0 0 0 0
+> death_prog 20~
+mpmload 200041
+mea $n &WFalling to the ground, this android looks done and done. You turn away and go to walk out. &gYou sense a power in the room again and see him standing laughing at you.
+~
+> fight_prog 45~
+'ssd bomber'
+~
+> fight_prog 75~
+uppercut
+energy
+uppercut
+~
+> fight_prog 50~
+hells
+~
+|
+#200042
+Functional Beta Android~
+A Functional Beta Android~
+Slim looking, and of medium-good quality, A functional Android waits here to be tested.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+950 400000000000
+112 112 0
+200 300 250 200 30
+0 0 0 0 0
+4 4 0 0 16 1 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+laugh
+~
+> death_prog 20~
+mpmload 200042
+mea $n Smoke rises from the corpse of the android as he appears defeated. He springs back to life, repairing himself from parts from around the facility.
+mer $n &r The android dies and oil spurts from it's ears. Not dead completely though, Next minute the android is standing, rebuilt from the corridor walls.
+~
+> fight_prog 40~
+'ssd bomber'
+~
+> fight_prog 55~
+hells
+~
+> fight_prog 70~
+uppercut
+energy
+uppercut
+~
+|
+#200043
+Android #25~
+Android #25~
+A much more hi-tech and muscular looking android walks the corridor, looking for a fight.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+950 800000000000
+112 112 0
+250 350 350 250 500
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 20~
+mpmload 200043
+mea $n &pAndroid #25 screams horribly as his form shuts down and he hunches over. He starts to fall apart then quickly, is rebuilt and smirks in your general direction.
+mer $n &pAndroid #25 screams horribly as his body shuts down and he hunches over. He starts to fall apart, but is quickly rebuilt.
+
+~
+> fight_prog 40~
+'ssd bomber'
+~
+> fight_prog 55~
+hells
+~
+> fight_prog 75~
+uppercut
+energy
+uppercut
+~
+|
+#200044
+Android #28~
+Android #28~
+Life-like and very similar to a human, Android #28 leans up against the corridor wall here.
+~
+~
+1 524288 -1 C
+1 0 100 1d20+0 2d5+0
+750 1500000000000
+112 112 0
+350 350 350 300 500
+0 0 0 0 0
+4 4 0 0 17 1 0
+0 0 0 0 0 0 263168 2
+> greet_prog 100~
+glare $n
+~
+> death_prog 20~
+mpmload 200044
+mea $n &R#28 falls to the ground in a heap, sparks flying in all directions, smoke filling the air as he dies. &YAlas, when all is clear, he is standing again a completely remade Android.
+mer $n &YWith a final blow, the machine collapses. Suddenly it remakes itself, a new Android #28, from his own broken parts.
+~
+> fight_prog 40~
+'ssd bomber'
+~
+> fight_prog 55~
+hells
+~
+> fight_prog 75~
+uppercut
+energy
+uppercut
+~
+|
+#200045
+Android #32~
+Android #32~
+True to form, shape, and appearance this android looks almost human.
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+550 3000000000000
+112 112 0
+350 350 350 350 500
+0 0 0 0 0
+4 4 0 0 17 1 4
+0 0 0 0 0 0 48 0
+> greet_prog 100~
+laugh $n
+moan $n
+~
+> death_prog 20~
+mpmload 200045
+mea $n &PFalling apart from your beating the android nearly dies, but his body reverts back to fully functional and he's ready to attack you again!
+mer $n The android dies and suddenly comes back for a second round.
+~
+> fight_prog 40~
+'ssd bomber'
+~
+> fight_prog 55~
+hells
+~
+> fight_prog 75~
+uppercut
+energy
+uppercut
+energy
+~
+|
+#200046
+King Android v1.9~
+King Android v1.9~
+A very large, very muscular human like figure towers over you, his eyes staring through you. He looks very powerful. 
+~
+~
+1073741825 524416 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000000000
+112 112 0
+300 350 350 300 40
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say &YYou look weak! Come..Fight me!
+growl $n
+ready $n
+~
+> death_prog 20~
+mea $n King Android screams in pain, his sleek metal body tearing almost completely in half as you deliver the final blow. King android looks up at you and laughs, He's fully repaired himself!
+mer $n King Android's power fades and he goes limp, his power fizzling and dying in a show of sparks. King Android laughs menancingly as he is fully repaired, ready to fight once again.
+mpmload 200046
+~
+> fight_prog 40~
+'ssd bomber'
+~
+> fight_prog 55~
+hells
+~
+> fight_prog 75~
+uppercut
+energy
+uppercut
+kick
+energy
+~
+|
+#200199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#200000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#200001
+Teh PowAH~
+&RT&Ye&Rh &pP&Ro&Ww&GAH&D~
+Teh Powah rests here emanating PowAH~
+~
+9 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+1 2
+A
+3 2
+A
+4 2
+A
+29 2
+#200005
+Red Ribbon Army Uniform~
+Red Ribbon Army Uniform~
+A Uniform with the letters RRA sewn onto it lies here~
+~
+9 0 9 1
+0 0 0 0 500 500
+1 0 0
+ 0
+A
+2 4
+A
+4 2
+A
+1 -2
+A
+29 -1
+A
+3 2
+#200018
+Red Ribbon Army Cap~
+Red Ribbon Army Cap~
+A cap with a red bow on the side is lying here.~
+~
+9 0&4 17
+0 0 0 0 150 150
+1 0 0
+ 0
+A
+29 1
+A
+3 1
+#200019
+village door key~
+Door key~
+A normal sized key rests here on the floor~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#200020
+Forest Rations~
+&YForest Rations~
+Some god dropped a newly created Forest Rations here.~
+~
+19 8192 1
+0 0 0 0 0 0
+1 300 30
+ 0
+#200045
+RRA Keychain~
+RRA Keychain~
+Some god dropped a newly created RRA Keychain here.~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#200199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#200000
+Path in the Desert~
+Here, stretched out before you, lays a path that spans for at least a
+few metres.The heat in this part of the desert is not as bad, but still
+slightly unbearable. The path itself looks small, maybe wide enough for one
+or two people.  Walking further north will take you further down the path,
+or go south to leave the path. 
+~
+0 0 10
+D0
+~
+~
+0 -1 200001
+D1
+~
+~
+0 -1 70092
+S
+#200001
+Further down the Path~
+The sand on this part of the path is soft under your feet.  The path
+here seems to have started to thin out and a faint noise comes from further
+north The path has slightly widened and it is definitely easier to move on
+this much larger part of the path.  The imprint of many footprints, though
+overlapping and mildly faded, can be noticed here There must be a large
+group of people congregating further north. 
+~
+0 0 10
+D0
+~
+~
+0 -1 200002
+D2
+~
+~
+0 -1 200000
+S
+#200002
+Blocked Entry~
+This part of the path is blocked.  Looking up you see two soldiers,
+dressed in unison, and carrying high power weapons.  They are hiding
+something beyond here though what it is is unknown Thier eyes are fixed on
+you watching your every move, almost as if they try to stare a hole right
+through you.  A patch on thier uniform reads RRA, but youre not sure what
+that stands for.  Looks like you'll have to fight them to get by or you
+could always leave. 
+~
+0 4 10
+D0
+~
+~
+0 -1 200003
+D2
+~
+~
+0 -1 200001
+S
+#200003
+&RRed &WRibbon &RArmy &WBase &gMain Entrance~
+Entering through the massive gate, immediately your ears are drawn to
+the noises around you.  Trucks with covered hoods and armoured cars drive
+along this large opening in the desert.  People walk all around here, the
+letters RR sewn, what looks to be proudly, on their clothing.  Guns in hand
+and some walking in single file, this place looks like your run of the mill
+Army Base. Buildings and some houses are spread about here.  If you look
+far to the east you can almost make out a tall free standing tower, much
+larger than the buildings here. 
+~
+0 4 10
+D0
+~
+~
+0 -1 200004
+D2
+~
+~
+0 -1 200002
+S
+#200004
+A Well Guarded Tent~
+Sneaking around this place would definately be difficult, the number of
+guards and soldiers walking in every direction.  Two tall soldiers happen
+to have taken post at either side of a very large tent. What could be
+inside is unknown.  Maybe exploring would be beneficial, though the guards
+might have something to say about that.  
+~
+0 4 10
+D0
+~
+~
+0 -1 200006
+D1
+~
+~
+0 -1 200005
+D2
+~
+~
+0 -1 200003
+S
+#200005
+Inside The Large Tent~
+Exploring happened to be very beneficial indeed.  The tent is much
+larger inside than what it lead on from the outside, and judging from the
+rolled up magazines with models of women on the cover, some one may think
+this tent belonged to a much older man.  In fact a man, very tall in height
+and looking middle aged, stands at the far end of the tent sorting through
+papers and mumbling under his breath.  Judging from the obscenities coming
+from his mouth he seems angry.  
+~
+0 4 0
+D3
+~
+~
+0 -1 200004
+S
+#200006
+Ambush!~
+Well you go into the tent you pay the price.  As the saying goes revenge
+is a dish best served cold but you got yours piping hot.  Guards Crowd
+around you and they're not wanting to make friends.  Guess you'll have to
+fight your way out of this one.  If you survive there is safety southwest
+from here.  
+~
+0 4 10
+D2
+~
+~
+0 -1 200004
+D9
+~
+~
+0 -1 200007
+S
+#200007
+Leaving The Army~
+The fight is far behind you and hopefully you didn't get too many people
+angry with you.  Praise the lord there is a way out of this base if you go
+west.  The hustle and bustle can still be heard as well as the large alarm
+that was sounded after those guards tried to kill you. Guards scurry around
+and cars and dogs search the area, not knowing that you are leaving the
+base.  Maybe you should make haste before you get jumped again. 
+~
+0 4 10
+D3
+~
+~
+0 -1 200008
+D6
+~
+~
+0 -1 200006
+S
+#200008
+A Well-Worn Path~
+There you got away from all the evil army dudes.  Finally.  I guess you
+could breathe a breath of fresh air...  For now.  A long path stretches
+here before you begging you to walk it.  Well hey the worst is over right. 
+Sure the heat sucks but nobody is trying to kill you.  The path looks as
+though it stretches for about 4 kilometeres, but then again, that could
+just be the heat playing tricks on your poor old, battered head.  However
+long this path is It looks like you go down it or go back and face the
+army. 
+~
+0 4 10
+D1
+~
+~
+0 -1 200007
+D3
+~
+~
+0 -1 200009
+S
+#200009
+Wild Animals!~
+Just if your luck couldn't get any worse you happen upon a wild animal. 
+The animal appears to hate you, so much for first impressions, and probably
+wants to eat you or some horrible thing.  Attacking you before you realize
+what's happening it seems you are locked in another fight to the death. 
+Better win cause dying always sucks. 
+~
+0 4 10
+D1
+~
+~
+0 -1 200008
+D3
+~
+~
+0 -1 200010
+S
+#200010
+Walk to the Tower~
+The tower you have been seeing is now clearer and looking much larger. From guessing you could think the tower consisted of 6 large floors. 
+The shape of the tower you are headed towards gives the impression the rooms in fact can't be that large. The oval shape gives that away almost immediately.
+Getting closer to your destination, who knows what lies ahead, or in that tower.
+~
+0 4 10
+D1
+~
+~
+0 -1 200009
+D3
+~
+~
+0 -1 200011
+S
+#200011
+This Way to Muscle Tower~
+You are now no more then a metre from the entrance. The door is oddly very small, big enough to let 1 person in at a time, which is odd.
+This tower really doesn't live up to any of the expectations you might have had but then again, you'll have to make that decision when you step inside.
+~
+0 4 10
+D1
+~
+~
+0 -1 200010
+D7
+~
+~
+0 -1 200012
+S
+#200012
+Entrance To Muscle Tower~
+You are finally at the entrance of the tower.  So much hype but it'll
+pay off.  Seeing the tower up close makes you strain your neck for a good
+view of the top. You can choose to enter the building and explore further,
+or go back and forget it.  But if you choose to walk away now you could
+miss an interesting trek to the very top. 
+~
+0 4 10
+D0
+~
+~
+0 -1 200013
+D8
+~
+~
+0 -1 200011
+S
+#200013
+&BWelcome to Muscle Tower&D~
+Well unbelievable could be one way to describe the inside of this tower.
+Unbelievable in the sense that despite its oval shape the rooms inside are
+much wider and larger. The building's main floor looks like it could house
+many people.  Also the amount of people in this tower is crazy. Guards are
+everywhere.  And a whole lot of rooms enter and exit each other.  You could
+easily get lost here.  But no going back now.  You're here and you must get
+to the top. 
+~
+0 4 1
+D0
+~
+~
+0 -1 200014
+D2
+~
+~
+0 -1 200012
+D3
+~
+~
+0 -1 200015
+> entry_prog 100~
+mpecho A voice booms loudly over the speakers in the tower. &R"Attention all Muscle Tower personnel - we have recieved a distress call from our posts outside the tower. Any intruders entering the tower must be killed on sight.
+mpecho &R Solders with a powerlevel of 500 million will man the first floor. Soldiers with a powerlevel of 15 billion will man the top floor. All other soldiers will man the floors in between in order of weakest to strongest."
+~
+|
+S
+#200014
+Guard Room~
+~
+0 4 0
+D0
+~
+~
+0 -1 200016
+D2
+~
+~
+0 -1 200013
+S
+#200015
+Guard Room~
+You walk into this room and are amazed at its plainness.  Not only are
+the walls a boring color of light blue but the solitary light that
+illuminates this room flickers making it difficult for anyone to read or do
+anything that requires the use of light. There is a small table below the
+light and 3 uniformed guards sit at it.  They seem to be very tight in a
+game of cards, though what game you can't figure out. They seem to be
+trying to keep an eye out for trespassers and get this game done as well.  
+~
+0 4 1
+D1
+~
+~
+0 -1 200013
+S
+#200016
+Up to Floor 2~
+~
+0 4 0
+D2
+~
+~
+0 -1 200014
+D4
+~
+~
+0 -1 200017
+S
+#200017
+Guard Room~
+Ya you guessed another boring room.  This one also has guards but the
+lights work much better here.  Instead of playing cards these guards seem
+to be drinking coffee and laughing about something, though you imagine it
+can't be that hilarious. The room is devoid of interesting objects, save
+for the picture of a man beside a tank and with a very distinguished
+uniform on.  Whoever he is, he sure looks like a powerful man. 
+~
+0 4 0
+D1
+~
+~
+0 -1 200018
+D5
+~
+~
+0 -1 200016
+S
+#200018
+Guard Room~
+You walk into this room and are amazed at its plainness.  Not only are
+the walls a boring color of light blue but the solitary light that
+illuminates this room flickers making it difficult for anyone to read or do
+anything that requires the use of light.  There is a small table below the
+light and 3 uniformed guards sit at it.  They seem to be very tight in a
+game of cards, though what game you can't figure out.  They seem to be
+trying to keep an eye out for trespassers and get this game done as well.  
+~
+0 4 0
+D2
+~
+~
+0 -1 200019
+D3
+~
+~
+0 -1 200017
+S
+#200019
+Up to Floor 3~
+Moving on up!  Wasn't that a song?  You're definitely moving on up, up
+Muscle Tower anyway.  The plainness of the tower is still sickeningly
+boring and the lack of pictures or any thing interesting is just plain
+ridiculous. Guards have lined almost every entrance of this tower and, as
+you get closer to the top you just can't help but think there will be more
+to come.  Well at least there's no way to go but up from here. 
+~
+0 4 0
+D0
+~
+~
+0 -1 200018
+D4
+~
+~
+0 -1 200020
+S
+#200020
+Guard Room~
+You walk into this room and are amazed at its plainness.  Not only are
+the walls a boring color of light blue but the solitary light that
+illuminates this room flickers making it difficult for anyone to read or do
+anything that requires the use of light. There is a small table below the
+light and 3 uniformed guards sit at it.  They seem to be very tight in a
+game of cards, though what game you can't figure out. They seem to be
+trying to keep an eye out for trespassers and get this game done as well.  
+~
+0 4 1
+D0
+~
+~
+0 -1 200021
+D5
+~
+~
+0 -1 200019
+S
+#200021
+Ninja Attack~
+This room is wide and large, spanning a far distance.  The room looks
+like an outside garden.  There is nicely trimmed grass and the air is fresh
+and warm.  This room must be simulated, the only possible explanation for
+such beauty in this tower. The gravity is also very heavy, but nothing too
+extreme.  Possibly 10g's at the most.  A Ninja stands in the far corner of
+this sim room and looks at you, glaring.  He doesn't look formidable at
+all, that is until 4 identicals of himself appear beside him all glaring at
+you in the same hateful way.  Looks like the party just got happening. 
+~
+0 4 0
+D2
+~
+~
+0 -1 200020
+D3
+~
+~
+0 -1 200022
+S
+#200022
+Office of Commander Red~
+You step into a large office.  Wow talk about material possession, this
+office has lush carpet, a nice look of the area around the tower, and
+inside everything looks like it's high class. Pictures are mounted on the
+walls here, some black and white, depicting the old days of the Red Ribbon
+Army.  A tall man can be seen with a beard that hugs his face, in some of
+the colored pictures this beard is a dark red-orange.  Other pictures show
+old battles and raids that this army has done.  What mean people they are. 
+You can smell the odor of cigars the obvious evidence of someone is in the
+room other than you.  The man from the pictures moves over to where you are
+and snarls at you, obviously angered by your intrusion.  The name Commander
+Red is on his uniform and he looks plenty powerful. 
+~
+0 4 0
+D1
+~
+~
+0 -1 200021
+D4
+~
+~
+0 -1 200023
+S
+#200023
+Floor 4 ~
+This is the Fourth Floor of Muscle Tower.  It is almost identical to the
+rooms that house the guards the only difference is that this happens to be
+a hallway. Plain as the other parts of this tower, the beginning of floor 4
+also has guards and they look more powerful than previous guards you might
+have fought.  So close to the top victory is so within reach. 
+~
+0 4 0
+D2
+~
+~
+0 -1 200024
+D5
+~
+~
+0 -1 200022
+S
+#200024
+Strange Corridor~
+You are in a corridor now.  This place is totally dark.  You can't even
+see your hands in front of you.  It would be easy to get lost here, as you
+fumble for a light switch or any other source of light. Hope you find a way
+out and don't get lost.  I believe no one would want to get lost in Muscle
+Tower. 
+~
+0 5 1
+D0
+~
+~
+0 -1 200023
+D1
+~
+~
+0 -1 200025
+S
+#200025
+House of Eighter~
+Getting out of the darkness and finally finding some heavily lit rooms
+is a godsend.  This room has smallness to it despite the large man standing
+in the middle of it. He very closely resembles the Frankenstein monsters
+you see on the old horror movies but, he looks harmless. He just sits here
+in his room daydreaming, but of what you can only imagine.  On him the tag
+Android #8 is stamped and you realize that he looks very life like, or you
+would have thought so had you not read the tag.  He doesn't notice you he
+just keeps on daydreaming and seemingly oblivious to his surroundings 
+~
+0 4 1
+D3
+~
+~
+0 -1 200024
+D4
+~
+~
+0 -1 200026
+S
+#200026
+Top of the Tower~
+Well this is it you've climbed fought and probably died, trying to get
+to this place and now you look at you.  Joe Cool. Of course now that you
+are here you will have to fight General White and you know he has to be a
+helluva bit stronger than anything you've faced so far.  High ranking
+soldiers are here but seem to be paying no attention to you.  Just by the
+way they differ from the other Soldiers and Guards you can guess The
+General means business.  Well go on he's waiting for you. 
+~
+0 4 0
+D5
+~
+~
+0 -1 200025
+D7
+~
+~
+0 -1 200027
+S
+#200027
+General White's Quarters~
+Here he is, the man, the myth, The General.  He looks just like he
+should, dressed in modern army gear and camouflage clothing, with a uniform
+with the letters RRA sewn on the front. He seems to look vaguely surprised
+you made it this far and a slight smile is pasted to his otherwise snarling
+mouth.  You can see this man runs it all as there are tv sets all over this
+office and on them, people are walking and on others there are feeds of
+soldiers in other countries performing RRA work.  General White rushes over
+to you and attacks you, catching you totally off guard. 
+~
+0 4 1
+D3
+~
+~
+0 -1 200028
+D8
+~
+~
+0 -1 200026
+S
+#200028
+Muscle Tower Ceiling~
+The view here at the very top is beautiful, even more beautiful since
+the fact that you are finally outside and free.  You have conquered Muscle
+Tower and this is like a reward.  Looking down, and all around you you can
+see trees that stretch for miles and in the distance a small little
+village.  It seems very close to the Tower and you almost think you can
+make out uniformed guard running around the village and hollering out
+commands at it's citizens.  Just when you thought your relation with the
+Red Ribbon Army were over here you go again, now apparently to rescue the
+citizens of Snowy Village. 
+~
+0 4 1
+D1
+~
+~
+0 -1 200027
+D5
+~
+~
+0 -1 200029
+S
+#200029
+Floating down beside Muscle Tower~
+The cold air hits your body and makes you shiver a bit as you float to
+the ground.  Looking back up to the tower the urge to go back and totally
+destroy it creeps into your mind.  You have no time for that however, for
+as you get closer to the ground more adventure is out there to be had and
+lots more people to greet and punish.  The ground is still a few feet ahead
+but this is relaxing, almost making you want to float longer. 
+~
+0 4 9
+D4
+~
+~
+0 -1 200028
+D5
+~
+~
+0 -1 200030
+S
+#200030
+Floating Down Beside Muscle Tower~
+The ground looks closer now and you can make out a path going into the
+village from this height.  The forest, which backrounds the village nicely,
+takes up most of the backdrop.  The village is shaded by these trees, or
+atleast it looks that way from where you're flying.  For the moment though
+relaxing seems a good thing to be doing. 
+~
+0 4 9
+D4
+~
+~
+0 -1 200029
+D5
+~
+~
+0 -1 200031
+S
+#200031
+Nearing the Ground~
+Anticipation.  Withing a few inches of the ground that descent seemed
+almost over too quickly.  The path can be seen clearly and the village is
+indeed hidden by the treetops of the forest.  The village looks fairly big
+from being so close to the ground but it could be smaller once you are
+there.  You'll have to see.  As you land on the ground you're new
+adventures start.  The sun beats down on your shoulders as you head down
+the path. 
+~
+0 4 9
+D4
+~
+~
+0 -1 200030
+D5
+~
+~
+0 -1 200032
+S
+#200032
+On the beaten path~
+Well you're out of the air.  This path is very short but also very wide,
+a sure sign people use it often. There are distant noises that can be heard
+coming from the village and you can almost guarantee they are from Red
+Ribbon Army officials.  In Fact there are 2 of them ahead standing in the
+entrance to the peaceful village. They seem to be blocking anyone from
+leaving, or entering for that matter, but for what reason is unknown. 
+~
+0 4 1
+D0
+~
+~
+0 -1 200033
+D4
+~
+~
+0 -1 200031
+S
+#200033
+Walking the Yellow Brick Path~
+You get closer to the entrance and the guards haven't noticed you yet,
+that could be a good thing or a bad thing, depending on the mood they are
+in. You have concluded they are from The Red Ribbon Army and now it puzzles
+you to think what they would want in this particular village. They still
+seem to be blocking anyone from leaving, or entering for that matter, but
+for what reason is unknown. 
+~
+0 4 1
+D0
+~
+~
+0 -1 200034
+D2
+~
+~
+0 -1 200032
+S
+#200034
+Confrontation~
+You get closer and the guards are a lot taller than what they looked
+like from far away.  It seems they don't notice you, and they can hold an
+attention stance very well. .  It would almost seem they have been trained
+from birth to be an Official in this army.  They hardly move even after
+your many taunts and pokes.  You see a door behind them.  That door most
+likely leads into the village.  How you will get through that door is
+another thing.  These guards look like they have strict orders, and are not
+about to defy thosefor much. 
+~
+0 4 1
+D0
+~
+~
+1 -1 200035
+D2
+~
+~
+0 -1 200033
+S
+#200035
+Entering Snowy Village~
+The village looks cozy.  A friendly feeling is here, like everyone
+welcomes you.  As you walk through the village you notice shops and small
+houses some cottages and a large church. This small location has the
+necessities to run a community and it looks to be doing quite well.  Well
+not well the past few weeks, since the Army got involved. Officials are
+everywhere, questioning the residents and even barging into some of their
+homes and searching wildly for random items of value.  They handle the kind
+citizens roughly and it is just unbearable to see such dislike here.  What
+they are searching for is still a mystery but the further you go you may
+learn more. 
+~
+0 4 1
+D0
+~
+~
+0 -1 200036
+D2
+~
+~
+0 -1 200034
+S
+#200036
+Heart of Snowy Village~
+You walk past a few of the houses and other attraction this small
+community has to offer, and suddenly find yourself in front of a small
+mall.  The mall consists of a few shops and other businesses. The signs in
+the windows have all disappeared however and are replaced with huge signs
+reading "Under New Management".  Most likely the army has also taken over
+the shops in this quiet peaceful village. Whatever they are looking for
+must be very important. 
+~
+0 4 1
+D0
+~
+~
+0 -1 200039
+D1
+~
+~
+0 -1 200038
+D2
+~
+~
+0 -1 200035
+D3
+~
+~
+0 -1 200037
+S
+#200037
+Wares Shop~
+~
+0 4 0
+D1
+~
+~
+0 -1 200036
+S
+#200038
+Blackmarket Foods~
+~
+0 4 0
+D3
+~
+~
+0 -1 200036
+S
+#200039
+The Bustling Village~
+This part of the village is noticeably the more active and busy.  People
+run around and talk to each other on the corner, share laughs and talk
+about their days.  Well that would be what would be happening here if the
+officials weren't invading.  Despite the overtake business is as usual. 
+The citizens have no choice but to work and do their business here because
+there is no place else for them to go.  Until this raid is over, It seems
+things around Snowy Village won't be "business as usual". 
+~
+0 4 1
+D0
+~
+~
+0 -1 200040
+D2
+~
+~
+0 -1 200036
+D3
+~
+~
+0 -1 200042
+S
+#200040
+Coming upon a cottage~
+~
+0 4 1
+D0
+~
+~
+1 -1 200041
+D2
+~
+~
+0 -1 200039
+S
+#200041
+Inside the Cottage~
+~
+0 12 0
+D2
+~
+~
+1 -1 200040
+S
+#200042
+Village Square~
+~
+0 4 1
+D1
+~
+~
+0 -1 200039
+D3
+~
+~
+0 -1 200043
+S
+#200043
+More commotion~
+~
+0 4 1
+D1
+~
+~
+0 -1 200042
+D2
+~
+~
+0 -1 200044
+S
+#200044
+Leaving Snowy Village~
+The small village fades from view and yet another path is laid before
+you.  This path is much shorter than any path you have thus traveled, and
+that makes for a nice short walk to your next destination.  The outline of
+a forest is very clear and it doesn't look like a few bushes and shrubs,
+these trees can be seen clearly, even from the ground.  If you choose to go
+in there you better hope you don't get lost. 
+~
+0 4 2
+D0
+~
+~
+0 -1 200043
+D2
+~
+~
+0 -1 200045
+S
+#200045
+Path to a large forest~
+The entrance to the forest is here.  It's nothing fancy just basically
+two of the much taller trees set apart from each other forming a sort of a
+entrance here. The sounds of many animals are heard from inside the forest
+and the noises are almost in sync as well.  From what you can see the
+forest looks like a dangerous place for the inexperienced traveler, and
+even so, an experienced traveler may also have difficulty. 
+~
+0 4 3
+D0
+~
+~
+0 -1 200044
+D2
+~
+~
+0 -1 200046
+S
+#200046
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D0
+~
+~
+0 -1 200045
+D1
+~
+~
+0 -1 200047
+S
+#200047
+In The Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D0
+~
+~
+0 -1 200048
+D3
+~
+~
+0 -1 200046
+S
+#200048
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D2
+~
+~
+0 -1 200047
+D8
+~
+~
+0 -1 200049
+S
+#200049
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D1
+~
+~
+0 -1 200050
+D2
+~
+~
+0 -1 200051
+D7
+~
+~
+0 -1 200048
+S
+#200050
+In the Forest~
+This part of the forest is very different from the rest, partly because
+of all the decaying and rotted out trees here.  You should feel uneasy, as
+these trees look very old and on top of that, look very fragile.  One could
+fall at a moments notice and then you'd be in trouble. 
+~
+0 4 3
+D3
+~
+~
+0 -1 200049
+> entry_prog 25~
+mpdamage $n 35
+mea $n You stumble into this room and try to regain your balance, as you do you are FLATTENED by a falling tree! Ouch!!!!
+~
+|
+S
+#200051
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D0
+~
+~
+0 -1 200049
+D8
+~
+~
+0 -1 200053
+D9
+~
+~
+0 -1 200052
+S
+#200052
+In the Forest~
+~
+0 4 3
+D6
+~
+~
+0 -1 200051
+S
+#200053
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D1
+~
+~
+0 -1 200054
+D6
+~
+~
+0 -1 200055
+D7
+~
+~
+0 -1 200051
+D8
+~
+~
+0 -1 200056
+> entry_prog 100~
+~
+|
+S
+#200054
+In the Forest~
+A dead endgreat.  The last thing you'd need now is to get lost in here. 
+Well atleast you can go back west and try to figure out a different route. 
+~
+0 4 3
+D3
+~
+~
+0 -1 200053
+> entry_prog 25~
+mea $n Another dead end...How fun. As you walk to go back a random Trap catches your foot! SLICING your leg open cleanly.
+mpdamage $n 15
+~
+|
+S
+#200055
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here. Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D8
+~
+~
+0 -1 200057
+D9
+~
+~
+0 -1 200053
+S
+#200056
+In the Forest~
+~
+0 4 3
+D6
+~
+~
+0 -1 200057
+D7
+~
+~
+0 -1 200053
+S
+#200057
+In the Forest~
+~
+0 4 3
+D2
+~
+~
+0 -1 200058
+D7
+~
+~
+0 -1 200055
+D9
+~
+~
+0 -1 200056
+S
+#200058
+In the Forest~
+~
+0 4 3
+D0
+~
+~
+0 -1 200057
+D1
+~
+~
+0 -1 200059
+S
+#200059
+In the Forest~
+~
+0 4 3
+D2
+~
+~
+0 -1 200060
+D3
+~
+~
+0 -1 200058
+S
+#200060
+In the Forest~
+~
+0 4 3
+D0
+~
+~
+0 -1 200059
+D3
+~
+~
+0 -1 200061
+S
+#200061
+In the Forest~
+~
+0 4 3
+D1
+~
+~
+0 -1 200060
+D3
+~
+~
+0 -1 200062
+S
+#200062
+In the Forest~
+~
+0 4 3
+D1
+~
+~
+0 -1 200061
+D9
+~
+~
+0 -1 200063
+S
+#200063
+In the Forest~
+~
+0 4 3
+D1
+~
+~
+0 -1 200065
+D2
+~
+~
+0 -1 200064
+D6
+~
+~
+0 -1 200062
+S
+#200064
+In the Forest~
+~
+0 4 3
+D0
+~
+~
+0 -1 200063
+D8
+~
+~
+0 -1 200066
+S
+#200065
+In the Forest~
+This forest is definitely what it looks like, wide and spanning far. 
+You are standing in a mass of trees and dirt paths in every direction, and
+it can only get more confusing from here.  Trees surround you at every turn
+and the air, which is a nice change from that of the base, is fresh. 
+However long it takes you to get out of here is up to you, but there are
+definitely adventures to be had within this forest. 
+~
+0 4 3
+D3
+~
+~
+0 -1 200063
+S
+#200066
+In the Forest~
+~
+0 4 3
+D0
+~
+~
+0 -1 200067
+D7
+~
+~
+0 -1 200064
+S
+#200067
+Buildings in the Forest?~
+~
+0 4 3
+D1
+~
+~
+0 -1 200070
+D2
+~
+~
+0 -1 200066
+D6
+~
+~
+0 -1 200069
+S
+#200068
+Floating in a void~
+~
+0 4 3
+S
+#200069
+Thinning of the Forest~
+~
+0 4 3
+D9
+~
+~
+0 -1 200067
+S
+#200070
+Entrance of the building~
+~
+0 4 3
+D1
+~
+~
+0 -1 200071
+D3
+~
+~
+0 -1 200067
+S
+#200071
+Level one~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200072
+D3
+~
+~
+0 -1 200070
+S
+#200072
+Level one~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200073
+D3
+~
+~
+0 -1 200071
+S
+#200073
+Level one~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200074
+D3
+~
+~
+0 -1 200072
+S
+#200074
+End of level one~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200073
+D9
+~
+~
+1 -1 200075
+S
+#200075
+Start of Level two~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200076
+D6
+~
+~
+1 -1 200074
+S
+#200076
+Level two~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200075
+D3
+~
+~
+0 -1 200077
+S
+#200077
+Level two~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200076
+D3
+~
+~
+0 -1 200078
+S
+#200078
+Level two~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200077
+D3
+~
+~
+0 -1 200079
+S
+#200079
+End of Level two~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200078
+D8
+~
+~
+1 -1 200080
+S
+#200080
+Start of Level three~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200081
+D7
+~
+~
+1 -1 200079
+S
+#200081
+Level three~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200082
+D3
+~
+~
+0 -1 200080
+S
+#200082
+Level three~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200083
+D3
+~
+~
+0 -1 200081
+S
+#200083
+Level three~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200084
+D3
+~
+~
+0 -1 200082
+S
+#200084
+End of Level three~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200083
+D9
+~
+~
+1 -1 200085
+S
+#200085
+Start of Level four~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200086
+D6
+~
+~
+0 -1 200084
+S
+#200086
+Level four~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200085
+D3
+~
+~
+0 -1 200087
+S
+#200087
+Level four~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200086
+D3
+~
+~
+0 -1 200088
+S
+#200088
+Level four~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200087
+D3
+~
+~
+0 -1 200089
+S
+#200089
+End of Level four~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200088
+D8
+~
+~
+1 -1 200090
+S
+#200090
+Start of Level five~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200091
+D7
+~
+~
+1 -1 200089
+S
+#200091
+Level five~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200092
+D3
+~
+~
+0 -1 200090
+S
+#200092
+Level five~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200093
+D3
+~
+~
+0 -1 200091
+S
+#200093
+Level five~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200094
+D3
+~
+~
+0 -1 200092
+S
+#200094
+End of Level five~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200093
+D9
+~
+~
+1 -1 200095
+S
+#200095
+Final level~
+~
+0 12 0 0 0 1000
+D3
+~
+~
+0 -1 200096
+D6
+~
+~
+1 -1 200094
+S
+#200096
+Final level~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200095
+D3
+~
+~
+0 -1 200097
+S
+#200097
+Final level~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200096
+D3
+~
+~
+0 -1 200098
+S
+#200098
+Final level~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200097
+D3
+~
+~
+0 -1 200099
+S
+#200099
+Final level~
+~
+0 12 0 0 0 1000
+D1
+~
+~
+0 -1 200098
+D5
+~
+~
+1 -1 200100
+S
+#200100
+Big Boss Man~
+~
+0 12 0 0 0 1000
+D4
+~
+~
+1 -1 200099
+D5
+~
+~
+0 -1 200199
+S
+#200101
+Floating in a void~
+~
+0 4 1
+S
+#200102
+Floating in a void~
+~
+0 4 1
+S
+#200103
+Floating in a void~
+~
+0 4 1
+S
+#200104
+Floating in a void~
+~
+0 4 1
+S
+#200105
+Floating in a void~
+~
+0 4 1
+S
+#200106
+Floating in a void~
+~
+0 4 1
+S
+#200107
+Floating in a void~
+~
+0 4 1
+S
+#200108
+Floating in a void~
+~
+0 4 1
+S
+#200109
+Floating in a void~
+~
+0 4 1
+S
+#200110
+Floating in a void~
+~
+0 4 1
+S
+#200111
+Floating in a void~
+~
+0 4 1
+S
+#200112
+Floating in a void~
+~
+0 4 1
+S
+#200113
+Floating in a void~
+~
+0 4 1
+S
+#200114
+Floating in a void~
+~
+0 4 1
+S
+#200115
+Floating in a void~
+~
+0 4 1
+S
+#200116
+Floating in a void~
+~
+0 4 1
+S
+#200117
+Floating in a void~
+~
+0 4 1
+S
+#200118
+Floating in a void~
+~
+0 4 1
+S
+#200119
+Floating in a void~
+~
+0 4 1
+S
+#200120
+Floating in a void~
+~
+0 4 1
+S
+#200121
+Floating in a void~
+~
+0 4 1
+S
+#200122
+Floating in a void~
+~
+0 4 1
+S
+#200123
+Floating in a void~
+~
+0 4 1
+S
+#200124
+Floating in a void~
+~
+0 4 1
+S
+#200125
+Floating in a void~
+~
+0 4 1
+S
+#200126
+Floating in a void~
+~
+0 4 1
+S
+#200127
+Floating in a void~
+~
+0 4 1
+S
+#200128
+Floating in a void~
+~
+0 4 1
+S
+#200129
+Floating in a void~
+~
+0 4 1
+S
+#200130
+Floating in a void~
+~
+0 4 1
+S
+#200131
+Floating in a void~
+~
+0 4 1
+S
+#200132
+Floating in a void~
+~
+0 4 1
+S
+#200133
+Floating in a void~
+~
+0 4 1
+S
+#200134
+Floating in a void~
+~
+0 4 1
+S
+#200135
+Floating in a void~
+~
+0 4 1
+S
+#200136
+Floating in a void~
+~
+0 4 1
+S
+#200137
+Floating in a void~
+~
+0 4 1
+S
+#200138
+Floating in a void~
+~
+0 4 1
+S
+#200139
+Floating in a void~
+~
+0 4 1
+S
+#200140
+Floating in a void~
+~
+0 4 1
+S
+#200141
+Floating in a void~
+~
+0 4 1
+S
+#200142
+Floating in a void~
+~
+0 4 1
+S
+#200143
+Floating in a void~
+~
+0 4 1
+S
+#200144
+Floating in a void~
+~
+0 4 1
+S
+#200145
+Floating in a void~
+~
+0 4 1
+S
+#200146
+Floating in a void~
+~
+0 4 1
+S
+#200147
+Floating in a void~
+~
+0 4 1
+S
+#200148
+Floating in a void~
+~
+0 4 1
+S
+#200149
+Floating in a void~
+~
+0 4 1
+S
+#200150
+Floating in a void~
+~
+0 4 1
+S
+#200151
+Floating in a void~
+~
+0 4 1
+S
+#200152
+Floating in a void~
+~
+0 4 1
+S
+#200153
+Floating in a void~
+~
+0 4 1
+S
+#200154
+Floating in a void~
+~
+0 4 1
+S
+#200155
+Floating in a void~
+~
+0 4 1
+S
+#200156
+Floating in a void~
+~
+0 4 1
+S
+#200157
+Floating in a void~
+~
+0 4 1
+S
+#200158
+Floating in a void~
+~
+0 4 1
+S
+#200159
+Floating in a void~
+~
+0 4 1
+S
+#200160
+Floating in a void~
+~
+0 4 1
+S
+#200161
+Floating in a void~
+~
+0 4 1
+S
+#200162
+Floating in a void~
+~
+0 4 1
+S
+#200163
+Floating in a void~
+~
+0 4 1
+S
+#200164
+Floating in a void~
+~
+0 4 1
+S
+#200165
+Floating in a void~
+~
+0 4 1
+S
+#200166
+Floating in a void~
+~
+0 4 1
+S
+#200167
+Floating in a void~
+~
+0 4 1
+S
+#200168
+Floating in a void~
+~
+0 4 1
+S
+#200169
+Floating in a void~
+~
+0 4 1
+S
+#200170
+Floating in a void~
+~
+0 4 1
+S
+#200171
+Floating in a void~
+~
+0 4 1
+S
+#200172
+Floating in a void~
+~
+0 4 1
+S
+#200173
+Floating in a void~
+~
+0 4 1
+S
+#200174
+Floating in a void~
+~
+0 4 1
+S
+#200175
+Floating in a void~
+~
+0 4 1
+S
+#200176
+Floating in a void~
+~
+0 4 1
+S
+#200177
+Floating in a void~
+~
+0 4 1
+S
+#200178
+Floating in a void~
+~
+0 4 1
+S
+#200179
+Floating in a void~
+~
+0 4 1
+S
+#200180
+Floating in a void~
+~
+0 4 1
+S
+#200181
+Floating in a void~
+~
+0 4 1
+S
+#200182
+Floating in a void~
+~
+0 4 1
+S
+#200183
+Floating in a void~
+~
+0 4 1
+S
+#200184
+Floating in a void~
+~
+0 4 1
+S
+#200185
+Floating in a void~
+~
+0 4 1
+S
+#200186
+Floating in a void~
+~
+0 4 1
+S
+#200187
+Floating in a void~
+~
+0 4 1
+S
+#200188
+Floating in a void~
+~
+0 4 1
+S
+#200189
+Floating in a void~
+~
+0 4 1
+S
+#200190
+Floating in a void~
+~
+0 4 1
+S
+#200191
+Floating in a void~
+~
+0 4 1
+S
+#200192
+Floating in a void~
+~
+0 4 1
+S
+#200193
+Floating in a void~
+~
+0 4 1
+S
+#200194
+Floating in a void~
+~
+0 4 1
+S
+#200195
+Floating in a void~
+~
+0 4 1
+S
+#200196
+Floating in a void~
+~
+0 4 1
+S
+#200197
+Floating in a void~
+~
+0 4 1
+S
+#200198
+Floating in a void~
+~
+0 4 1
+S
+#200199
+Teh End~
+~
+0 4 1
+D4
+~
+~
+0 -1 200100
+S
+#0
+
+
+#RESETS
+M 0 200021 1 200021
+M 0 200021 1 200021
+M 0 200021 1 200021
+M 0 200021 1 200021
+M 0 200021 1 200021
+M 0 200006 1 200009
+M 0 200005 1 200005
+M 0 200004 1 200006
+M 0 200004 1 200006
+M 0 200009 1 200015
+M 0 200009 1 200015
+M 0 200009 1 200015
+M 0 200009 1 200014
+M 0 200009 1 200014
+M 0 200009 1 200014
+M 0 200009 1 200020
+M 0 200010 1 200020
+M 0 200009 1 200016
+M 0 200009 1 200016
+M 0 200009 1 200016
+M 0 200012 1 200018
+M 0 200012 1 200018
+M 0 200012 1 200018
+M 0 200012 1 200019
+M 0 200012 1 200019
+M 0 200014 1 200022
+M 0 200015 1 200023
+M 0 200015 1 200023
+M 0 200015 1 200023
+M 0 200018 1 200026
+M 0 200018 1 200026
+M 0 200019 1 200027
+M 0 200004 1 200002
+M 0 200004 1 200002
+M 0 200016 1 200025
+M 0 200012 1 200017
+M 0 200012 1 200017
+M 0 200012 1 200017
+M 0 200020 1 200037
+M 0 200023 1 200034
+M 0 200023 1 200034
+M 0 200022 1 200038
+M 0 200024 1 200036
+M 0 200024 1 200036
+M 0 200025 1 200042
+M 0 200024 1 200042
+M 0 200024 1 200043
+M 0 200026 1 200047
+M 0 200027 1 200047
+M 0 200028 1 200048
+M 0 200029 1 200048
+M 0 200027 1 200049
+M 0 200027 1 200049
+M 0 200029 1 200051
+M 0 200030 1 200053
+M 0 200025 1 200056
+M 0 200025 1 200056
+M 0 200028 1 200056
+M 0 200031 1 200057
+M 0 200040 1 200071
+M 0 200040 1 200072
+M 0 200040 1 200073
+M 0 200040 1 200074
+M 0 200041 1 200076
+M 0 200041 1 200077
+M 0 200041 1 200078
+M 0 200041 1 200079
+M 0 200025 1 200058
+M 0 200029 1 200058
+M 0 200027 1 200059
+M 0 200027 1 200059
+M 0 200025 1 200066
+M 0 200029 1 200066
+M 0 200027 1 200066
+M 0 200026 1 200063
+M 0 200028 1 200063
+M 0 200030 1 200064
+M 0 200026 1 200064
+M 0 200028 1 200064
+M 0 200042 1 200081
+M 0 200042 1 200082
+M 0 200042 1 200083
+M 0 200042 1 200084
+M 0 200043 1 200085
+M 0 200043 1 200086
+M 0 200043 1 200087
+M 0 200043 1 200088
+M 0 200043 1 200089
+M 0 200041 1 200075
+M 0 200042 1 200080
+M 0 200044 1 200091
+M 0 200044 1 200092
+M 0 200044 1 200093
+M 0 200044 1 200094
+M 0 200045 1 200095
+M 0 200045 1 200096
+M 0 200045 1 200097
+M 0 200045 1 200098
+M 0 200045 1 200099
+M 0 200046 1 200100
+M 0 200044 1 200090
+S
+
+
+#SHOPS
+ 200020    0  0  0  0  0   100  90         0 23    ; A Shopkeeper
+ 200022    0  0  0  0  0   100  90         0 23    ; A Shop Employee
+0
+
+
+#REPAIRS
+ 200005    0  9  0         100   1         0 23    ; RRA Repairman
+0
+
+
+#SPECIALS
+S
+
+
+#$

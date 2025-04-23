@@ -1,0 +1,9714 @@
+#AREA   North City~
+
+
+
+#VERSION 252
+#AUTHOR Hao~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG The sounds of the city and the ocean waves can be heard in the distance~
+
+#FLAGS
+0 10
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#160301
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160302
+human citizen male~
+A Human Citizen ~
+A human man walks down the street, going about his business.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 500000
+112 112 1
+15 15 15 15 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructo
+~
+> fight_prog 40~
+destructo
+~
+|
+#160303
+human citizen female~
+A Human Citizen ~
+A human woman strolls along, doing errands.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 500000
+112 112 2
+10 20 20 10 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160304
+saiyan citizen male~
+A Saiyan Citizen ~
+A saiyan citizen of North City walks along, heading to work.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1250000
+112 112 1
+20 15 15 20 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kame
+~
+|
+#160305
+android citizen male~
+An Android Citizen ~
+An android citizen flies down the road freely.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 1
+20 20 15 15 12
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'rocket punch'
+~
+|
+#160306
+human tourist male~
+A Fat Tourist~
+A fat tourist walks around, taking pictures of everything.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 300000
+112 112 1
+15 12 12 15 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+punch
+punch
+~
+> greet_prog 5~
+if race($n) == icer
+ say Oh! An ICER!! Can I get your picture!?
+ mea $n &wBefore you can answer, the pudgy man begins taking countless pictures of you.
+ mer $n &wBefore $n has a chance to speak, the pudgy man begins taking countless pictures.
+else
+ Say Oh, you mind if I have a picture!?
+ mpe &wBefore $n can answer, the crazed tourist begins taking snapshot after snapshot of $m.
+endif
+~
+> fight_prog 50~
+kick
+kick
+~
+> fight_prog 50~
+masenko
+~
+|
+#160307
+human tourist female~
+A Female Tourist~
+A female tourist strolls up and down the street, buying souvaniers.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 300000
+112 112 2
+12 15 15 12 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160308
+namek tourist~
+A Namekian Tourist~
+A flower-shirted, green Namekian tourist wanders around the city.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 600000
+112 112 0
+10 20 15 10 8
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160309
+old tourist couple~
+An Old Couple~
+An old couple makes their way around the city, taking pictures and buying things.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 400000
+112 112 0
+20 20 20 20 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &wAn old woman whacks you with her purse!&D
+mppldamage $n 3
+~
+> fight_prog 45~
+mea $n &wAn old man hits you with his cane!&D
+mppldamage $n 3
+~
+|
+#160310
+human businessman~
+A Human Businessman~
+A horizontally-inclined businessman slowly walks to work.
+~
+~
+1 0 -100 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 1
+10 20 10 20 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructo
+~
+> greet_prog 5~
+if age($n) <= 18
+ emote peers at $n
+ say I'm watching you, hoodlum!
+endif
+~
+> entry_prog 5~
+emote beats his chest as he begins to hack and cough violently.
+say Shouldn't have eaten all that shrimp at the last board meeting...
+~
+> rand_prog 10~
+mpe &wA Human Businessman's cellphone rings.
+say Yello? Uh-huh. Yes. No. No. Yes. Of course not. Hold and see if it rises, otherwise drop it. Alright. See you tonight dear...
+~
+|
+#160311
+halfbreed businessman~
+A Halfbreed Businessman~
+An inexperienced young halfbreed businessman walks around sheepily.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 1
+20 20 20 15 12
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+masenko
+~
+> entry_prog 100~
+emote trips on something and runs right into you!
+say Oh, Pardon me, excuse me, sorry...
+emote stumbles off on his way.
+~
+> rand_prog 5~
+if rand(50)
+ hm
+ say Oh, was it on 506th or 605th..?
+else
+ emote mummbles something under his breath.
+ say Wait... are we in north or south city!?
+endif
+~
+|
+#160312
+android businessman~
+An Android Businessman~
+A muscular looking android businessman walks hastily down the street.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000
+112 112 1
+20 20 20 20 12
+0 0 0 0 0
+4 4 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+emote taps his right ear, and puts his finger in it.
+say Hello? Yes. Good. I'll be right there. No, don't do that. Yes, fire him. What? No, I asked for...
+~
+> fight_prog 50~
+uppercut
+uppercut
+~
+> fight_prog 50~
+rocket
+~
+> fight_prog 80~
+absorb
+~
+|
+#160313
+human politician male~
+A Politician~
+An old, suited politician carries his briefcase down the road.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000
+112 112 1
+20 20 20 20 12
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> rand_prog 3~
+emote glances around as he pulls a small brown bottle from his suit.
+emote uncaps the bottle and takes a long shot of vodka.
+~
+> fight_prog 50~
+destructo
+~
+> fight_prog 50~
+kame
+~
+|
+#160314
+human punk male~
+A Male Punk~
+A chain-clad teenage punk wanders the streets, looking for trouble.
+~
+~
+1 0 -250 C
+1 0 100 1d20+0 2d5+0
+0 5000000
+112 112 1
+20 20 20 20 12
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructo
+~
+> fight_prog 50~
+kame
+~
+|
+#160315
+saiyan punk male~
+A Saiyan Punk~
+A tough looking Saiyan punk leans against a wall.
+~
+~
+1 0 -250 C
+1 0 100 1d20+0 2d5+0
+0 12500000
+112 112 1
+25 20 25 25 12
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#160316
+halfbreed punk male~
+A Halfbreed Punk~
+A young halfbreed speeds around on a skateboard.
+~
+~
+1 0 -250 C
+1 0 100 1d20+0 2d5+0
+0 7500000
+112 112 1
+20 20 25 20 12
+0 0 0 0 0
+2 2 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#160318
+human student male~
+A Male Student~
+A male student makes his way to school.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 1
+15 15 15 15 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+punch
+kick
+~
+|
+#160319
+human student female~
+A Female Student~
+A female student walks and talks with her friends on the sidewalk.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 2
+10 15 20 15 12
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kick
+kick
+~
+|
+#160320
+halfbreed student male~
+A Halfbreed Student~
+A halfbreed student walks to school, his eyes fixed on a magazine.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 1
+15 15 15 15 12
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+masenko
+~
+|
+#160321
+halfbreed student female~
+A female halfbreed wanders around, looking for the bus stop.~
+A female halfreed wanders around, looking for the bus stop.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 2
+10 15 20 15 12
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+masenko
+~
+|
+#160322
+human jock~
+A Jock~
+A muscular jock walks around the city, laughing it up with his buddies.
+~
+~
+1 0 -50 C
+1 0 100 1d20+0 2d5+0
+0 10000000
+112 112 1
+20 10 20 20 12
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+punch
+~
+> greet_prog 10~
+if sex($n) == 2
+ say Hey there, $n.
+ wink
+else
+ say What are you looking at, punk!?
+ peer $n
+endif
+~
+|
+#160323
+human hobo male~
+A Human Hobo~
+A homeless human man begs at the street corner.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000
+112 112 1
+15 15 15 15 12
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructo
+~
+> greet_prog 25~
+say Spare some zeni, $n?
+~
+|
+#160324
+saiyan hobo male~
+A Saiyan Hobo~
+A homeless saiyan collects trash in the gutters.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 25000000
+112 112 1
+40 20 20 20 12
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kame
+~
+> greet_prog 10~
+if ispc($n)
+say Gimme some zeni or I'll kill ya!
+mpsleep 10
+if rand(20)
+ say TOO LATE!!
+ mpkill $n
+else
+ say Ah, yer not worth my time...
+endif
+endif
+~
+|
+#160325
+human sailor~
+A Human Sailor~
+A human sailor prepares for his next trip.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 12000000
+112 112 1
+20 20 20 20 12
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kame
+~
+|
+#160326
+saiyan sailor~
+A Saiyan Sailor~
+A saiyan sailor loads a ship for sailing.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 30000000
+112 112 1
+40 20 20 20 12
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kame
+~
+|
+#160327
+namek sailor~
+A Namekian Sailor~
+A namekian sailor prepares a ship for launch.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 24000000
+112 112 0
+20 25 25 20 12
+0 0 0 0 0
+3 3 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+spec
+~
+|
+#160340
+blue bow soldier~
+A Blue-Bow Soldier~
+A standard soldier for the Blue-Bow Army patrols the beach.
+~
+~
+1 0 700 C
+1 0 100 1d20+0 2d5+0
+0 1000000000
+112 112 1
+60 60 60 60 20
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+dodon
+~
+> fight_prog 50~
+'solar flare'
+tri-beam
+~
+> rand_prog 3~
+say Join the army, they said. It'll be fun, they said...
+spit
+~
+|
+#160341
+blue bow android~
+A Blue Bow Android~
+An Android for the Blue Bow Army stands here, preparing to fight.
+~
+~
+1 0 700 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 1
+100 100 100 100 20
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'rocket punch'
+~
+> fight_prog 50~
+'hells flash'
+~
+|
+#160342
+blue bow General green~
+General Green~
+General Green, of the Blue Bow Army, stands at the table, speaking in a hushed manner.
+~
+~
+3 128&0&1 700 C
+1 0 100 1d20+0 2d5+0
+0 9000000000000
+112 112 1
+200 225 160 200 22
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 160578
+~
+> fight_prog 14~
+mpsleep 6
+grin
+mpsleep 6
+mpe &YGeneral Green clasps his hands together above his head and fires an&D
+mpe &Yenormous blast at the sky!&D
+mpsleep 24
+if hps($n) >= 1
+mea $n &YSuddenly, bolts of ki begin to rain down on you!&D
+mer $n &YSuddenly, bolts of ki begin to rain down on $n!&D
+mpsleep 4
+if hps($n) >= 1
+if rand(50)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+mpsleep 4
+if hps($n) >= 1
+if rand(66)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+mpsleep 4
+if hps($n) >= 1
+if rand(75)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+mpsleep 4
+if hps($n) >= 1
+if rand(66)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+mpsleep 4
+if hps($n) >= 1
+if rand(75)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+mpsleep 4
+if hps($n) >= 1
+if rand(66)
+ mea $n &YYou are struck by a bolt of ki!&D
+ mppldamage $n 12
+else
+ mea $n &YYou dodge a bolt of ki!&D
+endif
+endif
+endif
+~
+> fight_prog 40~
+'kamehameha'
+~
+> fight_prog 50~
+'solar flare'
+'multi-disk' 29
+~
+> fight_prog 50~
+kick
+kick
+kick
+kick
+~
+> death_prog 1~
+mpoload 160536
+~
+|
+#160343
+blue bow captain 1321~
+Android 1321~
+An Android Captain for the Blue Bow army converses with the other officials.
+~
+~
+3 128 700 C
+1 0 100 1d20+0 2d5+0
+0 400000000000
+112 112 1
+120 120 120 120 20
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpe &RClenching his chest, sparks flying and oil leaking from his wounds, the&D
+mpe &Randroid grins one last time before self destructing, frying him and&D
+mer $n &R$n in the process!&D
+mea $n &Ryou in the process!&D
+mpslay $n
+~
+> fight_prog 25~
+'uppercut'
+'absorb'
+~
+> fight_prog 33~
+'hells flash'
+~
+> fight_prog 40~
+mea $n &wAndroid 1321 runs at you with a flying kick!&D
+mer $n &wAndroid 1321 runs at $n with a flying kick!&D
+mpsleep 10
+if hps($n) >= 1
+ if rand(66)
+  mea $n &wYou are kicked backwards by Android 1321's kick!&D
+  mer $n &w$n is kicked backwards by Android 1321's kick!&D
+  mppldamage $n 16
+  if hps($n) >= 1
+   mptrans $n 160407
+mpsleep 12
+   mpat $n mpe &BA flash of light and a rush of energy erupts from the east, engulfing 
+   mpat $n mea $n &Byou in a blaze of energy!&D
+   mpat $n mer $n &B$n in a blaze of energy!&d
+   mpat $n mppldamage $n 50
+  endif
+ else
+  mea $n &wAndroid 1321's kick misses you!&D
+  mer $n &wAndroid 1321's kick misses $n!&D
+ endif
+endif
+~
+> death_prog 1~
+mpoload 160537
+~
+|
+#160345
+blue bow soldier saiyan~
+A Saiyan Soldier~
+A Saiyan for the blue-bow army keeps watch.
+~
+~
+1 0&64 600 C
+1 0 100 1d20+0 2d5+0
+0 8000000000
+112 112 1
+100 100 100 100 20
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+big
+~
+> fight_prog 50~
+final
+~
+|
+#160400
+drunk bar patron~
+A Drunk Bar Patron~
+A drunken bar patron slouches over his drink.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+500 1000000
+112 112 1
+20 10 20 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 4~
+hiccup
+~
+> rand_prog 5~
+drool self
+~
+> rand_prog 3~
+say MAybE I shouLD-*HIC* sHouldn'hTh HhavE drr-runK So M-MMuCcH...
+~
+|
+#160401
+crime lord bek~
+Bek~
+A dark figure sits behind the shadows, smoking.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5000 100000000
+112 112 1
+40 60 40 60 0
+0 0 0 0 0
+4 4 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'rocket punch'
+~
+> fight_prog 50~
+'hells flash'
+~
+> rand_prog 1~
+emote puts his cigarette into an ash tray.
+mpsleep 8
+emote pulls out a cigarette, lights it, and begins smoking.
+~
+|
+#160402
+mobster~
+A Mobster~
+A dangerous looking mobster sits at the table, smoking and watching the gamblers.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+2000 50000000
+112 112 1
+35 35 35 35 0
+0 0 0 0 0
+4 4 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+'rocket punch'
+~
+> fight_prog 80~
+'uppercut'
+~
+> rand_prog 1~
+emote puffs on his cigarette, peering around the room through the smoke.
+~
+|
+#160403
+factory worker~
+A Factory Worker~
+A factory worker sits here, on his lunch break.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+500 700000
+112 112 1
+20 10 20 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'punch'
+~
+|
+#160404
+legislator~
+A Legislator~
+A suited legislator sits and one of the desks, doing absolutely nothing.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+emote punches a big rubber stamp into some red ink.
+mpsleep 16
+emote stares off into nothing as he begins stamping his desk, and some of the papers on it.
+~
+> rand_prog 1~
+mpe &wA paper football comes flying in from the other room, landing on a desk.
+mpsleep 8
+emote picks up the football and flicks it into another room.
+~
+> fight_prog 50~
+'destructo disk'
+~
+|
+#160405
+mayor bolstrom~
+Mayor Bolstrom~
+Mayor Bolstrom sits at his desk, head in hands, being bored.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+5000 4000000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+emote takes one of the documents from his desk and makes a paper airplane out of it.
+mpsleep 16
+emote tosses the airplane towards his trash can, missing it, as it falls amidst a dozen others.
+~
+> rand_prog 1~
+emote picks up a book, and glances around above it.
+mpsleep 8
+emote begins scanning the book with bizzarre enthusiasm.
+mpsleep 8
+mpe &wthe book slides down and falls off the desk, revealing the Mayor's new issue of 'Skin'...
+~
+> rand_prog 1~
+emote pulls a bottle of beer out of his desk.
+mpsleep 8
+emote takes a long pull of the stuff before stuffing it back in his desk.
+~
+> fight_prog 10~
+mea $n &wBolstrom pulls out a pistol from his suite, and aims it right at you!
+mer $n &wBolstrom pulls out a pistol from his suite, and aims it right at $n!
+mpsleep 8
+if rand(40)
+ mea $n &wBolstrom pulls the trigger, the shot echoing around the room as you are killed instantly!
+ mea $n &wBolstrom pulls the trigger, the shot echoing around the room as $n is killed instantly!
+ mpslay $n
+else
+ mea $n &wBolstrom pulls the trigger, the shot ringing in your ear, but missing you entirely!
+ mer $n &wBolstrom pulls the trigger, the shot ringing in your ear, but missing you entirely!
+endif
+~
+|
+#160406
+drunk pirate~
+A Drunken Pirate~
+A drunken pirate sways around here, singing drinking songs.
+~
+The pirate in his natural habitat; the bar.  This merry man sits here,
+drinking beer and singing bar songs, and getting into the occasional fight.
+From his swaying motion and his sweaty apperance, he is obviously already
+quite drunk. 
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+1000 5000000000
+112 112 1
+100 60 100 100 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'big bang'
+~
+> fight_prog 50~
+'big bang kamehameha'
+mpedit 160406 add fight 60
+emote drunkenly sways from left to right before stabalizing again.
+~
+> rand_prog 5~
+hiccup
+~
+> rand_prog 3~
+drool self
+~
+> rand_prog 5~
+say A huNthddrEd boThTLes oFf BbeAr on thhE wA-A-aALL, yada yaDayadA...
+mpsleep 16
+say TaKe onE DOwn, ppaSsth It-tth aArOund...
+hiccup
+mpsleep 16
+say A HundhReed boTTHleS OF BEer on ThHEE walL!!...
+~
+|
+#160445
+cyborg mercenary tao~
+Tao~
+A half android, half human man stands on the pier, looking out at the horizon.
+~
+The first thing you notice about this man is the back of his long,
+purple fighting gi, which reads &W"Kill You!"  &w.  He wears large black
+pants and a black shirt under the gi, and simple black shoes on his feet. 
+His hair is long and braided, ending in a purple bow.  His face is
+half-machine, his eyes two glowing red lights, and his ears two cylindrical
+protrusions.  Finally, his left hand is missing, replaced by a metal stub. 
+~
+3 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 15000000000000
+112 112 1
+247 299 273 200 40
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 160577
+~
+> rand_prog 1~
+hrm
+~
+> fight_prog 10~
+mpe &RTao's hands detatch at the wrist as his eyes glow red and his body explodes in&D
+mpe &Ra brilliant red aura. &W"HELLFIRE CANNON!!"&R shouts Tao, thrusting his arms&D
+mpe &Rforward as a raging blast of energy erupts from his whole aura, flying right&D 
+mea $n &Rinto you!&D
+mer $n &RInto $n!&D
+mppldamage $n 40
+~
+> fight_prog 33~
+mpsleep 4
+'dodon ray'
+mpsleep 4
+'dodon ray'
+~
+> death_prog 99~
+mpjunk 'kill you gi'
+~
+> fight_prog 40~
+mpe &wA shiny metal dagger shoots out of Tao's left hand, as he dashes up to&D
+mea $n &wyou. Tao makes several quick stabbing motions at you, before jumping&D
+mer $n &w$n. Tao makes several quick stabbing motions at $m, before jumping&D
+mpe &wbackwards, flipping in the air.&D
+mppldamage $n 4
+mppldamage $n 2
+mppldamage $n 4
+mppldamage $n 2
+mppldamage $n 3
+mppldamage $n 1
+~
+> fight_prog 50~
+'ssd bomber'
+~
+|
+#160500
+pirate~
+A Pirate~
+A pirate walks through the stronghold, peering around.
+~
+He looks about like all the others here.  Dirty, smelly, sweaty, drunk. 
+He wanders the stronghold, getting ready for raids, preparing to join one,
+or getting drunk at the stronghold bar. 
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 1500000000
+112 112 1
+50 50 50 50 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructo
+destructo
+~
+> rand_prog 5~
+arg
+~
+> greet_prog 5~
+arg $n
+~
+|
+#160501
+fat pirate~
+A Fat Pirate~
+A fat pirate sloths around, with a hook for a hand and a donut lanced through it.
+~
+This short, fat pirate is even dirtier than the others around here. 
+With a stereotypical wooden leg and hook-hand, he wanders around the
+stronghold, eatting donuts and North City cheese. 
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 2500000000
+112 112 1
+60 50 25 60 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+desctructo
+~
+> fight_prog 50~
+'spirit ball'
+~
+> rand_prog 5~
+burp
+~
+> greet_prog 5~
+arg $n
+~
+|
+#160502
+tall pirate~
+A Tall Pirate~
+A tall, thin pirate stands here, brandishing his cutlass.
+~
+With a half-mouthed grin, this tall figure strides along the stronghold
+halls, doing whatever it is the pirates do around here.  Unlike many of the
+others around, this one seems to have all of his limbs, and looks ready to
+keep it that way with the cutlas he carries at his side. 
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 5000000000
+112 112 1
+40 50 70 40 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+destructive
+~
+> fight_prog 50~
+'multi disk' 19
+~
+> rand_prog 5~
+arg
+~
+> greet_prog 5~
+arg $n
+~
+|
+#160503
+muscular pirate~
+A Muscular Pirate~
+A short, tan, muscular pirate leans against a wall on his peg leg.
+~
+This towering pirate represents everything it is to be a pirate.  He has
+muscles, and weapons.  He's also dirty and smells bad.  Chances are, if
+he's a pirate, he's also drunk, making him only more dangerous. 
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 15000000000
+112 112 1
+100 50 50 100 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+dodon
+~
+> fight_prog 16~
+mea $n &GA Muscular Pirate swings his peg leg up to you, grasping a handle as a *click* noise
+mea $n &Gis heard. Thousands of yellow energy bolts race out of the barrel, peppering all
+mea $n &Gover your body. [15]&D
+mer $n &GA Muscular Pirate swings his peg leg up to $n, grasping a handle as a *click* noise
+mer $n &Gis heard. Thousands of yellow energy bolts race out of the barrel, peppering all
+mer $n &Gover $n's body. [15]&D
+mpdamage $n 15
+~
+> rand_prog 5~
+grunt
+~
+> rand_prog 5~
+arg
+~
+> greet_prog 10~
+spit
+arg $n
+~
+|
+#160504
+pirate dock worker~
+A Pirate Dockworker~
+A dockworker goes about his business unloading things.
+~
+~
+16777217 0 -400 C
+1 0 100 1d20+0 2d5+0
+0 10000000000
+112 112 1
+100 40 60 50 15
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 60~
+'galic gun'
+~
+|
+#160505
+pirate crewman human~
+A Pirate Crewman~
+A human pirate lies about, awaiting the next voyage.
+~
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 100000000000
+112 112 1
+100 100 100 100 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+dodon
+~
+> fight_prog 50~
+'solar flare'
+tri-beam
+~
+> rand_prog 5~
+arg
+~
+> greet_prog 5~
+arg $n
+~
+|
+#160506
+pirate crewman saiyan~
+A Pirate Crewman ~
+A saiyan pirate lingers around the ship, awaiting launch.
+~
+With nothing left to do, this pirate crewman simply waits for the ship
+to launch.  Though a bit cleaner looking than the ones in the stronghold,
+he also has many more scars, indicating him quite the seasoned sailor. 
+~
+16777217 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 500000000000
+112 112 1
+100 100 100 100 15
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+bigbang
+~
+> fight_prog 50~
+'final flash'
+~
+> rand_prog 5~
+arg
+~
+> greet_prog 5~
+arg $n
+~
+|
+#160507
+pirate captain saiyan~
+A Pirate Captain~
+A regal looking pirate captain sits at his desk, drawing arcs and lines on a map.
+~
+~
+16777219 0 -600 C
+1 0 100 1d20+0 2d5+0
+0 1100000000000
+112 112 1
+120 120 120 120 15
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+bigbang
+~
+> fight_prog 50~
+'big bang kamehameha'
+~
+|
+#160508
+pirate captain human~
+A Pirate Captain~
+A pirate ship's captain stands here, overseeing the others.
+~
+Overseeing the rest of the shipyard at the head of the ship, this pirate
+captain seems to be preparing for a voyage.  The few scattered captains
+around the stronghold all look fairly similar, wearing rich and fluffy
+clothes and poofy pirate hats.  This particular man happens to be a saiyan,
+as is evident by his swaying monkey tail. 
+~
+16777219 0 -600 C
+1 0 100 1d20+0 2d5+0
+0 900000000000
+112 112 1
+100 125 100 125 15
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+dodon
+dodon
+~
+> fight_prog 50~
+'multi disk' 29
+~
+|
+#160515
+blue beard pirate~
+Blue Beard~
+The legendary pirate Blue Beard sits at the head of the stronghold, looking bored.
+~
+Many a yarn has been pulled about the man you see before you.  His
+dastardly plunderings and pillagings are known world-wide, giving him quite
+a legendary reputation.  But rather than wrestling alligators, demolishing
+buildings with his teeth, and swashbuckling through a dozen robotic ninjas,
+he sits here, head in hands, at the head of the stronghold, doing all the
+official-type things needed to run the place.  Like a lion at the zoo, he
+looks very bored, and quite displeased. 
+~
+3 128&2097152 -500 C
+1 0 100 1d20+0 2d5+0
+0 10000000000000
+112 112 1
+200 200 200 200 0
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpsleep 2
+emote pulls his head out of his levered hands and looks up
+mpsleep 6
+if pl($n) < 8000000000000
+ hrm
+ emote rests his head back in his hands
+else
+ if pl($n) <= 25000000000000
+  if inroom($n) == 160537
+   mpe  &C'Aha!' says Blue Beard, drawing his laser cutlas, 'at last, a worthy opponent!'&D
+   mpkill $n
+  endif
+ else
+  if inroom($n) == 160537
+   emote slowly diverts his gaze to a red button at his right side, then pushes it with a loud *BZZP*
+   mea $n &RA trap door opens beneath you!&D
+   mer $n &RA trap door opens beneath $n!&D
+   mptransfer $n 160500
+  endif
+ endif
+endif
+~
+> rand_prog 5~
+yawn
+~
+> fight_prog 60~
+'dodon ray'
+~
+> fight_prog 50~
+mpsleep 4
+mpe &zBlue Beard closes his eyes, his aura fading away slowly. After a few&D
+mpe &zmoments, his aura bursts back into life and his body flickers in and&D
+mpe &zout of sight, seperating into two distinct forms!&D
+mpsleep 14
+if hps($n) >= 1
+mea $n &CThe forms dash into the air on either side of you, their hands cupped
+mer $n &CThe forms dash into the air on either side of $n, their hands cupped
+mpe &Cat their sides. Energy begins charging in their hands, as they chant in
+mpe &Cunison &W'Ka...Me...Ha...Me...'&C With a twist, they fire their blasts at
+mea $n &Cyou together, with a loud &W'HA!!'&C, their combined force decimating you!
+mer $n &C$n together, with a loud &W'HA!!'&C, their combined force decimating $m!
+mppldamage $n 22
+mppldamage $n 22
+endif
+~
+> death_prog 100~
+if rand(1)
+ if rand(90)
+  mpjunk 'blue beard laser cutlas'
+ endif
+else
+ mpjunk 'blue beard laser cutlas'
+endif
+~
+|
+#160530
+water demon issui~
+Issui~
+A small, scaley imp floats cross-armed in the middle of the storm.
+~
+What a peculiar little man.  Floating at a good two feet tall and
+covered in blue scales, this self-proclaimed 'water demon' looks pretty
+harmless.  His ears look like webbed fins, and his head is round and shiny.
+His clothes are poofy and range in shades of blue, looking almost namekian.
+~
+3 524288 -1000 C
+43 0 100 1d20+0 2d5+0
+0 100000000
+112 112 1
+50 60 60 50 0
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+'eye beam'
+~
+> greet_prog 100~
+hrm
+say What are YOU looking at!? Haven't you ever seen a WATER DEMON before!!??
+emote grits his teeth in frustration.
+~
+> death_prog 100~
+say You won't defeat me THAT easily!! 
+mpe &BWith that, Issui plunges into the swirling ocean below. Before you can move, a 
+mpe &Bhuge wave crashes onto you and forces you down after him!&D
+if mobinarea(160531) < 1
+ mpat 160424 mpmload 160531
+endif
+mpforce 'utility mob' unlock whirlpool
+mpforce 'utility mob' open whirlpool
+mpforce $n d
+mpforce 'utility mob' close whirlpool
+mpforce 'utility mob' lock whirlpool
+~
+> fight_prog 50~
+'special beam cannon'
+~
+|
+#160531
+water demon issui~
+Issui~
+Issui, the water demon, floats scowling in the water.
+~
+Alright, so he's not harmless.  Even angrier than before, he floats now
+amidst the raging ocean waters, contorted by the storm and only further
+blown about by Issui's vengeful power. 
+~
+3 524288 -1000 C
+43 0 100 1d20+0 2d5+0
+0 225000000
+112 112 1
+60 80 80 60 0
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpsleep 8
+say Back for more!? Then plunge into the endless darkness of the ocean! You're on MY turf now!!
+mpsleep 6
+mpkill $n
+~
+> fight_prog 50~
+'special beam cannon'
+~
+> fight_prog 20~
+mea $n &BA huge blue aura flares up around Issui as he lunges into you!&D
+mppldamage $n 20
+~
+> death_prog 100~
+emote coughs up a thin red trail of blood.
+say You...you're stronger than I thought...but you are still no match...for me...
+emote hacks and coughs.
+mpe &BIssui shoots up out of the ocean and into the clouds far above with 
+mpe &Bamazing speed, the force of the rising water taking you with him!&D
+if mobinarea(160532) < 1
+ mpat 160425 mpmload 160532
+endif
+mpforce 'utility mob' unlock storm
+mpforce 'utility mob' open storm
+mpforce $n u
+mpforce 'utility mob' close storm
+mpforce 'utility mob' lock storm
+~
+|
+#160532
+water demon issui~
+Issui~
+The same short, angry little demon Issui floats amidst the powerful storm.
+~
+Holy cow!  It's almost impossible that this lumbering giant was once
+that short imp Issui, but sure enough, he looks and talks the same (not to
+mention he's the only one around, and Issui certainly didn't leave), save
+of course for his newly acquired strength. 
+~
+3 524416&2097152 -1000 C
+1 0 100 1d20+0 2d5+0
+0 500000000
+112 112 1
+100 80 80 100 0
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+hrm
+mpsleep 12
+say Now...to reveal my TRUE form!!
+mpsleep 6
+mpe &WWith that last word, Issui's body is completely engulfed in white 
+mpe &Wflames. When the flames subside, Issui has changed completely into a
+mpe &Whuge, muscled beast of frightening power.&D
+mpsleep 12
+say HA HA HA!!! What do you think!? I'll bet you're thinking you are about to die, and you're ABSOLUTELY RIGHT!!
+mpsleep 6
+mpkill $n
+~
+> fight_prog 50~
+'special beam cannon'
+~
+> fight_prog 50~
+'heaven'
+~
+> death_prog 100~
+say This...this can't be..! Even in my most powerful form!!
+say NO!! Damn you, this can't be!!
+say I'll be back..I'll destroy you..if I have to destroy all of HELL to get back to you!!!
+mpe &wIn one last shout, Issui's body explodes in a blue ball of energy.
+if rand(1)
+ mpoload 160500 $n
+ mpforce $n inv
+endif
+mptransfer $n 160420
+~
+|
+#160550
+prototype x android~
+Prototype X~
+A busted looking android sits, twitching and staring into nothing.
+~
+This cryptic figure, from it's busted appearance, seems to have come
+down from whatever it was that crashed here.  Or maybe it itself crashed
+here?  Whatever the case, the android has short black hair, and looks like
+a young human adult, perhaps even in the late teens.  It's rather hard to
+tell, though, as much of it's artificial skin has been torn off, revealing
+a sparking complexity of circuitry. 
+~
+1073741827 128 0 C
+1 0 100 1d20+0 2d5+0
+65000 50000000000000
+112 112 1
+250 500 250 400 32
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mea $n &wThe android turns it's head slowly, gazing up at you.
+mer $n &wThe android turns it's head slowly, gazing up at $n.
+mpe &CPrototype X says, in a metallic voice, 'T-Target hostile-ile-ile. En-
+mpe &CEn-Engaging nn-now.&D
+if pl($n) >= 50000000000000
+ if pl($n) <= 1000000000000000
+  mpmirror $n
+ else
+  mpmset self pl 1000000000000000
+ endif
+else
+ mpmset self pl 50000000000000
+mpkill $n
+~
+|
+#160590
+bert pirate shopkeeper~
+Scurvy Bert~
+A portly looking pirate stands behind the counter, polishing a metal hook.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160591
+peter pirate shopkeeper~
+Peg-Leg Pete~
+A slick pirate stands behind the counter, leaning on his wooden peg of a leg.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+500 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160592
+book store owner~
+The Store Owner~
+The store owner sits behind the counter, reading one of her books.
+~
+~
+83886083 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+500 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160593
+factory owner~
+The Factory Owner~
+The factory owner sits at his desk, filling out paperwork and dealing with employees.
+~
+~
+83886083 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160594
+factory manager~
+The Factory Manager~
+The factory manager is here, keeping his eye on the employees.
+~
+~
+83886083 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote looks you up and down with one eye.
+say Ok, you look like an able person.
+say If yer lookin' fer some extra zenni, we could use an extra hand here.
+say Just git in there and start workin'; yer pay'll be automatic.
+~
+|
+#160595
+cheese cashier~
+A Cheese-Store Cashier~
+The cashier sits behind the counter, watching something on a small TV.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1337
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160596
+honest john pawn shop barkeeper~
+Honest John~
+Honest John stands behind the counter, cleaning a glass and chatting with patrons.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+500 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> time_prog 1 100~
+if ovnuminv(160340)
+ mpjunk 'torn boots'
+endif
+if rand(75)
+ mpat 160595 get 'torn boots'
+endif
+~
+> time_prog 3 100~
+if ovnuminv(160341)
+ mpjunk 'golden sleeves'
+endif
+if rand(50)
+ mpat 160595 get 'golden sleeves'
+endif
+~
+> time_prog 6 100~
+if ovnuminv(160342)
+ mpjunk 'cloth scraps'
+endif
+if rand(20)
+ mpat 160595 get 'cloth scraps'
+endif
+~
+> time_prog 9 100~
+if ovnuminv(160343)
+ mpjunk 'ages ring of'
+endif
+if rand(1)
+ mpat 160595 get 'ages ring of'
+endif
+~
+> time_prog 11 100~
+if ovnuminv(160344)
+ mpjunk 'leather jacket'
+endif
+if rand(60)
+ mpat 160595 get 'leather jacket'
+endif
+~
+> time_prog 13 100~
+if ovnuminv(160345)
+ mpjunk 'heavy chain'
+endif
+if rand(40)
+ mpat 160595 get 'heavy chain'
+endif
+~
+> time_prog 15 100~
+if ovnuminv(160346)
+ mpjunk 'lucky socks'
+endif
+if rand(20)
+ mpat 160595 get 'lucky socks'
+endif
+~
+> time_prog 18 100~
+if ovnuminv(160347)
+ mpjunk 'heavy anchor'
+endif
+if rand(33)
+ mpat 160595 get 'heavy anchor'
+endif
+~
+> time_prog 20 100~
+if ovnuminv(160348)
+ mpjunk 'rusty earring'
+endif
+if rand(60)
+ mpat 160595 get 'rusty earring'
+endif
+~
+> time_prog 21 100~
+if ovnuminv(160349)
+ mpjunk 'military medal unreadable'
+endif
+if rand(50)
+ mpat 160595 get 'military medal unreadable'
+endif
+~
+> time_prog 23 100~
+if ovnuminv(160350)
+ mpjunk 'seaweed shirt'
+endif
+if rand(10)
+ mpat 160595 get 'seaweed shirt'
+endif
+~
+|
+#160597
+haos random quest object dropper~
+Hao's Random Quest Object Dropper(tm)~
+Hao's Random Quest Object Dropper(tm) stands here, dropping quest objects randomly(tm).
+~
+~
+27262979 0 0 C
+48 0 1000 1d20+0 2d5+0
+2147483647 1337000000000000
+112 112 0
+125 500 125 125 500
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> time_prog 3 6~
+if ovnumroom(160571) == 0
+ mpoload 160571
+ drop shard
+endif
+~
+> time_prog 7 6~
+if ovnumroom(160572) == 0
+ mpoload 160572
+ drop shard
+endif
+~
+> time_prog 11 6~
+if ovnumroom(160573) == 0
+ mpoload 160573
+ drop shard
+endif
+~
+> time_prog 15 6~
+if ovnumroom(160574) == 0
+ mpoload 160574
+ drop shard
+endif
+~
+> time_prog 19 6~
+if ovnumroom(160575) == 0
+ mpoload 160575
+ drop shard
+endif
+~
+> time_prog 23 6~
+if ovnumroom(160576) == 0
+ mpoload 160576
+ drop shard
+endif
+~
+|
+#160598
+casino attendant~
+The Casino Attendant~
+The casino attendant is here, watching the gamblers and handing out chips.
+~
+~
+85983235 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160599
+utility mob~
+Hao's Utility Mob~
+Hao's utility mob is here, doing all sorts of meaningless tasks.
+~
+~
+27262979 0 0 C
+35 0 1000 1d20+0 2d5+0
+2147483647 1337000000000000
+112 112 0
+125 500 125 125 500
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#160600
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#160301
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160302
+skeleton key~
+A Skeleton Key~
+What? You shouldn't be looking at this! HAX!!!~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 48
+#160304
+tank~
+A Tank~
+A blue-bow army tank is perched in the sand, it's massive barrel pointing towards the ocean.~
+~
+13 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+#160305
+lever homogenizer~
+the lever~
+A huge lever sticks out of the wall next to the homogenizer.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> push_prog 100~
+if ispc($n)
+ mea $n &wYou can't push that!
+ mpforce 'utility mob' pull lever
+endif
+~
+> pull_prog 100~
+if ispc($n)
+ if wearingvnum($n) 160420
+  if wearingvnum($n) 160421
+   if wearingvnum($n) 160422
+    if wearingvnum($n) 160423
+     if wearingvnum($n) 160424
+      if rand(85)
+       mea $n As you pull the lever, a huge mass of cheese falls into the homogenizer.
+       mea $n &YYou get 400 zeni for your work!&D
+       mpforce 'utility mob' mpwithdraw 400
+       mpforce 'utility mob' give 400 zeni $n
+      else
+       mpe A strange, rock-like object shoots out of the homogenizer!
+       mpdamage $n 49
+      endif
+      mpdelay $n 2
+     else
+      mea $n You must be wearing full safety equipment to operate this machine!
+     endif
+    else
+     mea $n You must be wearing full safety equipment to operate this machine!
+    endif
+   else
+    mea $n You must be wearing full safety equipment to operate this machine!
+   endif
+  else
+   mea $n You must be wearing full safety equipment to operate this machine!
+  endif
+ else
+  mea $n You must be wearing full safety equipment to operate this machine!
+ endif
+else
+ mea $n You must be wearing full safety equipment to operate this machine!
+endif
+mpforce 'utility mob' pull button
+~
+|
+#160306
+button homogenizer~
+the button~
+An enourmous homogenization machine whirs and hisses here, with a shiny red button on it's front.~
+~
+39 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> pull_prog 100~
+if ispc($n)
+ mea $n &wYou can't pull that!&D
+ mpforce 'utility mob' push button
+endif
+~
+> push_prog 100~
+if ispc($n)
+ if wearingvnum($n) 160420
+  if wearingvnum($n) 160421
+   if wearingvnum($n) 160422
+    if wearingvnum($n) 160423
+     if wearingvnum($n) 160424
+      if rand(85)
+       mea $n As you pull the lever, a huge mass of cheese falls into the homogenizer.
+       mea $n &YYou get 400 zeni for your work!&D
+       mpforce 'utility mob' mpwithdraw 400
+       mpforce 'utility mob' give 400 zeni $n
+      else
+       mpe A strange, rock-like object shoots out of the homogenizer!
+       mpdamage $n 49
+      endif
+      mpdelay $n 2
+     else
+      mea $n You must be wearing full safety equipment to operate this machine!
+     endif
+    else
+     mea $n You must be wearing full safety equipment to operate this machine!
+    endif
+   else
+    mea $n You must be wearing full safety equipment to operate this machine!
+   endif
+  else
+   mea $n You must be wearing full safety equipment to operate this machine!
+  endif
+ else
+  mea $n You must be wearing full safety equipment to operate this machine!
+ endif
+else
+ mea $n You must be wearing full safety equipment to operate this machine!
+endif
+mpforce 'utility mob' pull button
+~
+|
+#160307
+button oven~
+the button~
+Heavy-duty, industrial-strength cheese ovens line the walls of the room.~
+~
+39 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> push_prog 100~
+if wearingvnum($n) 160422
+ if wearingvnum($n) 160424
+  if rand(85)
+   mea $n &YYou get 350 zeni for your work!&Y
+   mpforce 'utility mob' mpwithdraw 350
+   mpforce 'utility mob' give 350 zeni $n
+  else
+   mpe Smoke billows out of one of the ovens before it spontaneously explodes!
+   mpdamage $n 49
+  endif
+  mpdelay $n 2
+ else
+  mea $n You must be wearing safety gloves and goggles to operate this machine!
+ endif
+else
+ mea $n You must be wearing safety gloves and goggles to operate this machine!
+endif
+mpforce 'utility mob' pull button
+~
+|
+#160308
+lever handle grinder~
+the lever~
+A big, loud, rusty electric cheese grinder sits in a corner, with a rusty handle at it's side.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 100
+> pull_prog 100~
+if wearingvnum($n) 160423
+ if rand(85)
+  mea $n &YYou get 300 zeni for your work!&D
+  mpforce 'utility mob' mpwithdraw 300
+  mpforce 'utility mob' give 300 zeni $n
+ else
+  mpe The grinder gets caught on something, and begins to shake and roar violently!
+  mpe Finally, the grinder manages to get free, shooting stray cheeses and nails all over the place!
+  mpdamage $n 49
+ endif
+ mpdelay $n 2
+else
+ mea $n You need to be wearing earphones to operate this machine!
+endif
+mpforce 'utility mob' push lever
+~
+|
+#160309
+lever handle mixer~
+the lever~
+A huge cheese mixer sits in the middle of the room, a large handle at it's side.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> pull_prog 100~
+if rand(85)
+ mea $n &YYou get 250 zeni for your work!&D
+ mpforce 'utility mob' mpwithdraw 250
+ mpforce 'utility mob' give 250 zeni $n
+else
+ mpe The mixer begins to shake violently, spilling molten cheese all over!
+ mpdamage $n 49
+endif
+mpforce 'utility mob' push lever
+mpdelay $n 2
+~
+|
+#160310
+sign~
+A Sign~
+A sign hangs along the northern wall.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+sign~
+A simple, but well crafted wooden sign.  There aren't any ropes or nails
+visible, leading one to believe it is affixed to the wall on the back.  It
+reads:
+
+"These be the Pirate caves. Venture forth at ye own risk."
+
+~
+> push_prog 100~
+mea $n The northern wall suddenly spins around, throwing you into another
+mea $n room!
+mptransfer $n 160525
+mpforce 'utility mob' pull sign
+~
+|
+#160311
+rock button~
+A Rock~
+A rock sticks out of the floor here, quite out of place among the others.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+rock button~
+This rock stands out on many levels.  It's not smooth like the rest of
+the rocks in the caves, it's standing right in the middle of the room
+rather than against the walls, and it's a completely different color; a
+light brown compared to the grey that makes up everything else. 
+~
+> push_prog 100~
+mea $n In an instant, the floor gives out under you and a huge rock falls from
+mea $n the ceiling, pushing you down into a hole!
+mpforce 'utility mob' unlock trap
+mpforce 'utility mob' open trap
+mpforce $n d
+mpat 160503 mpforce 'utility mob' close trap
+mpat 160503 mpforce 'utility mob' lock trap
+mpat 160503 mpforce 'utility mob' pull rock
+~
+|
+#160312
+lever slot machine 1k 1000~
+A 1,000 Zeni Slot Machine~
+A 1,000 zeni slot machine flashes and shines in the casino lights.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> pull_prog 16~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3000
+mpforce 'casino attendant' give 4000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* * 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w* ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w* 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w* - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+
+~
+> pull_prog 20~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w- - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3000
+mpforce 'casino attendant' give 4000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- - !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w- * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+~
+> pull_prog 25~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3000
+mpforce 'casino attendant' give 4000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w- 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+~
+> pull_prog 33~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4500 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3500
+mpforce 'casino attendant' give 4500 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w7 - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w7 * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w7 ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+~
+> pull_prog 50~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w! ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4500 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3500
+mpforce 'casino attendant' give 4500 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w! ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3000
+mpforce 'casino attendant' give 4000 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! ! -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w! - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+~
+> pull_prog 99~
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4500 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3500
+mpforce 'casino attendant' give 4500 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- - @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 4500 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 3500
+mpforce 'casino attendant' give 4500 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 7 *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 1000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 1000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 1k
+~
+> pull_prog 100~
+if rand(1)
+if goldamt($n) >= 1000
+mpforce $n give 1000 zeni 'casino attendant'
+mea $n &w __E__
+mea $n &w|&B^w@ @ @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &BYOU WON THE JACKPOT!!!&D
+mea $n &YYou win 100000 zeni!
+mpforce 'casino attendant' mpwithdraw 99000
+mpforce 'casino attendant' give 100000 zeni $n
+else
+mea $n &BYOU WON THE JACKPOT!!!...except you don't have enough zeni to even 
+PLAY!! Haha, tough luck!&D
+endif
+mpforce 'casino attendant' push 1k
+else
+mea $n &wThe machine jams!&D
+endif
+~
+|
+#160313
+lever slot machine 10k 10000~
+A 10,000 Zeni Slot Machine~
+A 10,000 zeni slot machine flashes and shines in the casino lights.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> pull_prog 16~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 40000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 30000
+mpforce 'casino attendant' give 40000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* * 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w* ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w* 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w* - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 20~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w- - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 40000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 30000
+mpforce 'casino attendant' give 40000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- - !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w- * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 25~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 40000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 30000
+mpforce 'casino attendant' give 40000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w- 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 33~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 45000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 35000
+mpforce 'casino attendant' give 45000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w7 - -^x&W|&R |&D
+mea $n &W|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w7 * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w7 ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 50~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w! ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 45000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 35000
+mpforce 'casino attendant' give 45000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w! ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 40000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 30000
+mpforce 'casino attendant' give 40000 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! ! -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w! - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 99~
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 45000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 35000
+mpforce 'casino attendant' give 45000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- - @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 45000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 35000
+mpforce 'casino attendant' give 45000 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 7 *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 10000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 10000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 10K
+~
+> pull_prog 100~
+if rand(1)
+if goldamt($n) >= 10000
+mpforce $n give 10000 zeni 'casino attendant'
+mea $n &w __E__
+mea $n &w|&B^w@ @ @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &BYOU WON THE JACKPOT!!!&D
+mea $n &YYou win 1000000 zeni!
+mpforce 'casino attendant' mpwithdraw 990000
+mpforce 'casino attendant' give 1000000 zeni $n
+else
+mea $n &BYOU WON THE JACKPOT!!!...except you don't have enough zeni to even 
+PLAY!! Haha, tough luck!&D
+endif
+mpforce 'casino attendant' push 10K
+else
+mea $n &wThe machine jams!&D
+endif
+~
+|
+#160314
+lever slot machine 100k 100000~
+A 100,000 Zeni Slot Machine~
+A 100,000 zeni slot machine flashes and shines in the casino lights.~
+~
+37 0 0
+0 0 0 0 0 0
+1337 0 0
+ 0
+> pull_prog 16~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 400000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 300000
+mpforce 'casino attendant' give 400000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* * 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w* ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w* 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w* - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 20~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w- - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 400000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 300000
+mpforce 'casino attendant' give 400000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w* ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w* - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- - !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w- * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 25~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 400000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 300000
+mpforce 'casino attendant' give 400000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w- 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w- * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w- 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 33~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w7 7 @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 450000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 350000
+mpforce 'casino attendant' give 450000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w7 - -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w7 * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w7 ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w7 ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 50~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w! ! @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 450000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 350000
+mpforce 'casino attendant' give 450000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w! ! !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 400000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 300000
+mpforce 'casino attendant' give 400000 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! ! -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! 7 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w! - 7^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! * -^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 99~
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+if rand(16)
+mea $n &w __E__
+mea $n &w|&B^w* * @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 450000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 350000
+mpforce 'casino attendant' give 450000 zeni $n
+else
+if rand(20)
+mea $n &w __E__
+mea $n &w|&B^w- - @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &YYou win 450000 zeni!!&D
+mpforce 'casino attendant' mpwithdraw 350000
+mpforce 'casino attendant' give 450000 zeni $n
+else
+if rand(25)
+mea $n &w __E__
+mea $n &w|&B^w! 7 !^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(33)
+mea $n &w __E__
+mea $n &w|&B^w! * *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+if rand(50)
+mea $n &w __E__
+mea $n &w|&B^w7 7 *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+else
+mea $n &w __E__
+mea $n &w|&B^w! ! *^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &RYou lose 100000 zeni!!&D
+endif
+endif
+endif
+endif
+endif
+else
+mea $n &RYou need at least 100000 zeni to use this machine!&D
+endif
+mpforce 'casino attendant' push 100k
+~
+> pull_prog 100~
+if rand(1)
+if goldamt($n) >= 100000
+mpforce $n give 100000 zeni 'casino attendant'
+mea $n &w __E__
+mea $n &w|&B^w@ @ @^x&W|&R |&D
+mea $n &w|_____|&R-&Wo&D
+mea $n &BYOU WON THE JACKPOT!!!&D
+mea $n &YYou win 5000000 zeni!
+mpforce 'casino attendant' mpwithdraw 4900000
+mpforce 'casino attendant' give 5000000 zeni $n
+else
+mea $n &BYOU WON THE JACKPOT!!!...except you don't have enough zeni to even 
+PLAY!! Haha, tough luck!&D
+endif
+mpforce 'casino attendant' push 100k
+else
+mea $n &wThe machine jams!&D
+endif
+~
+|
+#160315
+sign~
+A Sign~
+A sign is here, explaining the use of the slot machines.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+sign~
+To operate the slot machines, simply pull the lever.  For the 1k zeni
+slot machine, 'pull 1k'.  For 10k, 'pull 10k' etc.  The number indicates
+how much zeni the machine takes.  All three machines have the same odds and
+winnings.  
+
+Please keep in mind that these machines are old.  If a lever is stuck down,
+simply push it back up and continue playing.  Thanks!  
+
+     North City Casino Manager.
+~
+#160325
+beer glass~
+&OA Glass of Beer&D~
+A glass of beer lies on the floor here.~
+~
+17 0 1
+2 2 1 0 0 0
+1 50 5
+ 0
+#160326
+beer bottle~
+&OA Bottle of Beer&D~
+A bottle of beer lies on the floor here.~
+~
+17 0 1
+9 9 1 0 0 0
+2 150 15
+ 0
+#160327
+beer keg~
+&OA Keg of Beer&D~
+A keg of beer lies on the floor here.~
+~
+17 0 1
+80 80 1 0 0 0
+10 1000 100
+ 0
+#160328
+ale glass~
+A Glass of Ale~
+A glass of ale lies on the floor here.~
+~
+17 0 1
+2 2 3 0 0 0
+1 100 10
+ 0
+#160329
+whiskey shot~
+A Shot of Whiskey~
+A shot of whiskey lies on the floor here.~
+~
+17 0 1
+1 1 5 0 0 0
+1 25 2
+ 0
+#160330
+john's special~
+The Honest John Special~
+A glass of glowing green slime lies on the floor here.~
+~
+17 8192 1
+3 3 9 0 0 0
+1 350 35
+ 0
+> use_prog 100~
+mea $n &GAs soon as you start to down the disgusting liquid in this glass, you&D
+mea $n &Gfall unconscious!&D
+mer $n &G$n starts to drink an odd glowing, green liquid from a glass.&D
+mer $n &G$n is knocked out cold at the first sip!&D
+mprestore $n 100
+mpdamage $n 101
+~
+|
+#160340
+torn boots~
+&OA Pair of Torn, Dirty Boots&D~
+A pair of torn, dirty boots lie here.~
+~
+9 0 65 96
+0 0 0 1000 100 100
+2 15000 1500
+ 100000
+A
+4 1
+#160341
+golden sleeves~
+&YGo&Ol&Yde&On &YSl&Oe&Yev&Oe&Ys&D~
+A pair of intricately carved, golden tubes lie in the dust.~
+~
+9 8388608 257 30
+0 0 0 0 250 250
+5 325000 32500
+ 100000000
+A
+3 2
+#160342
+cloth scraps~
+&WS&wcr&Wa&zp&Ws o&wf &zC&Wlo&wt&zh~
+A pile of torn cloth scraps lie here in a heap.~
+~
+9 0 1321 8
+0 0 0 -5000 100 100
+1 500000 50000
+ 1000000000
+A
+2 14
+A
+4 -7
+#160343
+nega ages ring of~
+&WR&wi&zn&Wg &wo&zf &WA&wg&ze&Ws~
+An archaic band engraved with gold writing rests on the ground.~
+~
+9 0 3
+0 0 0 50000 0 0
+1 3250000 325000
+ 0
+A
+1 -20
+A
+2 -20
+A
+3 -20
+A
+4 -20
+#160344
+leather jacket~
+&zA Leather Jacket&D~
+A shiny black leather jacket lies in the dust.~
+~
+9 0 1025 64
+0 0 0 0 175 175
+5 125000 12500
+ 200000
+A
+1 2
+#160345
+heavy chain~
+&wA Heavy Chain&D~
+A long, heavy iron chain lies here in a heap.~
+~
+9 8388608 257 128
+0 0 0 5000 0 0
+10 450000 45000
+ 1500000
+A
+2 -20
+A
+2 20
+A
+4 15
+#160346
+lucky socks~
+&WLucky T&Rub&We Socks&D~
+A pair of ordinary tube socks lie here.~
+~
+9 0 65 24
+0 0 0 0 1 1
+1 100000 10000
+ 10000
+A
+29 1
+#160347
+heavy anchor~
+&zA He&wav&zy A&wnc&zho&wr&D~
+A huge metal anchor sits here.~
+~
+9 8388608 540673
+0 0 0 20000 0 0
+100 250000 25000
+ 1000000
+A
+2 -20
+A
+1 -10
+> wear_prog 100~
+mea $n &zYou heave the enormous thing onto your back!&D
+mer $n &z$n heaves the enormous anchor onto his back!&D
+~
+|
+#160348
+rusty earring~
+&OA R&Yu&Os&wt&zy &YE&Oa&wr&Or&wi&Yn&Og&D~
+A rusty earring lies on the ground here.~
+~
+9 8388608 65537
+0 0 0 0 50 50
+1 165125 16512
+ 1000000
+A
+4 5
+#160349
+military medal unreadable~
+&YAn &OU&Ynre&Oada&Yble &OM&Yedal&D~
+A faded, unreadable gold military medal shines here.~
+~
+9 8388608 9 128
+0 0 0 -10000 0 0
+1 215000 21500
+ 10000000
+A
+1 2
+A
+2 1
+A
+3 2
+A
+4 1
+#160350
+seaweed shirt~
+&GA &CS&ge&Ga&Cw&ge&Ge&gd &GS&Ch&Gi&gr&Gt&D~
+A tangled, wet mess of seaweed, strewn into a shirt lies here.~
+~
+9 0 9 126
+0 0 0 0 1400 1400
+1 600000 60000
+ 500000000
+A
+2 8
+A
+4 7
+#160380
+cheddar cheese~
+&YCheddar Cheese&D~
+A block of cheddar cheese sits in the dirt here.~
+~
+19 8192 1
+0 0 0 0 0 0
+1 12000 1200
+ 0
+> use_prog 100~
+mea $n &YAhh...the powah of cheese.
+mer $n &Y$n selfishly gobbles down some cheese.&D
+mprestore $n 10
+~
+|
+#160381
+mozzarella cheese~
+&WMozzarella Cheese&D~
+A block of mozzarella cheese sits in the dirt here.~
+~
+19 0 1
+0 0 0 0 0 0
+1 8000 800
+ 0
+> use_prog 100~
+mea $n &YAhh...the powah of cheese.
+mer $n &Y$n selfishly gobbles down some cheese.&D
+mprestore $n 6
+~
+|
+#160382
+swiss cheese~
+&WS&ww&Wi&ws&Ws &WC&wh&We&we&Wse&D~
+A block of swiss cheese sits in the dirt here.~
+~
+19 0 1
+0 0 0 0 0 0
+1 4000 400
+ 0
+> use_prog 100~
+mea $n &YAhh...the powah of cheese.
+mer $n &Y$n selfishly gobbles down some cheese.&D
+mprestore $n 4
+~
+|
+#160385
+cheese shirt~
+&YAn &W'&YI &O<3 &YC&Oh&Ye&Oe&Ys&Oe&W' &YT-Shirt&D~
+A yellow t-shirt sits in the dirt here.~
+~
+9 0 9 4
+0 0 0 0 75 75
+1 100000 10000
+ 10000000
+A
+1 3
+A
+2 3
+A
+3 -6
+> wear_prog 100~
+mea $n &YAs you wear the shirt, suddenly your mind is filled with nothing but
+mea $n &Ythoughts of cheese, and you can't help but drool.&D
+mer $n &YAs soon as $n wears the shirt, $e seems to go completely mindless and
+mer $n &Yzombified. Is that..drool?&D
+~
+|
+#160398
+bottiger bomb~
+&RThe Bottiger Bomb&D~
+A big, shiny red and black ball with a long sparking fuse sits here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+mpsleep 8
+mpechozone &RUpon recieving the Bottiger Bomb, $n just stands there like an idiot!
+mpsleep 10
+mpechozone &RThe fuse on the bomb goes down, as $n continues to stand there, totally
+mpechozone &Rstupified. Gee, if he weren't BOTTING, he might actually be able to
+mpechozone &Ravoid BLOWING UP!! That n00b.
+mpsleep 8
+mpechozone &RFlaming pieces of $n's flesh rain down after the bomb goes off, utterly
+mpechozone &Rvaporizing $n, but leaving everyone else completely unharmed.&D
+mpdamage $n 666
+at $n mptransfer $n 8
+~
+|
+#160399
+typo finder badge fake~
+&YA &CTypo &Yfinder badge&D~
+A nifty little badge is sitting on the ground.~
+~
+9 0 9
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+3 1
+A
+29 1
+> get_prog 100~
+mpe &RAs $n gets the badge, it begins glowing red strangely...
+mpsleep 8
+mpe &RSuddenly, the badge shouts: "$n! YOU SUCK!! MWUAHAHAHA NOW I'LL EXPLODE"
+mpsleep 8
+mpe &R10...
+mpsleep 8
+mpe &R9...
+mpsleep 8
+mpe &R8...
+mpsleep 8
+mpe &R7654321 ZERO!!!
+mpe &R$n is vaporized instantly by the exploding badge!
+mpforce $n drop badge
+mpforce $n sac badge
+~
+|
+#160400
+book~
+&wTaking &RPunches &YFor Dummies&D~
+A big yellow book lies on the ground.~
+~
+9 0 16385
+0 0 0 0 1 1
+1 5000 500
+ 5000
+A
+4 1
+#160401
+book~
+&cPoly&w-&gAstro&w-&zDimensional &bPhysics &YFor Dummies&D~
+A big yellow book lies on the ground.~
+~
+9 0 16385
+0 0 0 0 1 1
+1 8000 800
+ 5000
+A
+3 1
+#160402
+book~
+&RBeating &OPeople &wUp &YFor Dummies&D~
+A big yellow book lies on the ground.~
+~
+9 0 16385
+0 0 0 0 1 1
+1 10000 1000
+ 10000
+A
+1 2
+A
+2 2
+#160403
+book~
+&RMac &POSX &YFor Dummies&D~
+A thin yellow book lies on the ground.~
+~
+9 0 16385
+0 0 0 0 1 1
+1 3 0
+ 6
+A
+3 -5
+A
+29 -2
+#160420
+hard hat~
+&YA Hardhat&D~
+A shiny yellow hardhat lies in the dust.~
+~
+9 8388608 17
+0 0 0 0 100 100
+1 50000 5000
+ 100000
+#160421
+yellow jumpsuit~
+&YA Jumpsuit&D~
+A crumpled, yellow jumpsuit lies in a heap.~
+~
+9 0 1025
+0 0 0 0 500 500
+1 100000 10000
+ 100000
+#160422
+safety goggles~
+Safety Goggles~
+A pair of thick plastic safety goggles lie in the dirt.~
+~
+9 0 131073
+0 0 0 0 25 25
+1 25000 2500
+ 100000
+A
+2 -2
+#160423
+earphones~
+Earphones~
+A pair of thick, industrial earphones lie in the dirt.~
+~
+9 0 65537
+0 0 0 0 50 50
+1 25000 2500
+ 100000
+A
+3 -2
+#160424
+safety gloves~
+&YSafety Gloves&D~
+A pair of tough, stiff safety gloves lie in the dirt.~
+~
+9 0 129
+0 0 0 0 50 50
+1 25000 2500
+ 100000
+#160450
+table~
+A Table~
+A round, wooden table sits here.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160451
+chair~
+A Chair~
+Pulled up against one of the tables, a wooden chair sits here.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160452
+broken chair~
+A Broken Chair~
+A wooden chair lies broken in pieces on the floor.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160453
+broken table~
+A Broken Table~
+Lying on it's side, a wooden table is cracked and splintered.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160455
+traffic light~
+A Traffic Light~
+A traffic light hangs above the intersection.~
+~
+12 0 0
+1 0 0 0 0 0
+1 0 0
+ 0
+> greet_prog 100~
+if rand(33)
+ if rand(33)
+  mea $n &GThe light turns green as soon as you enter.&D
+ else
+  mea $n &GThe light is green.&D
+ endif
+else
+if rand(50)
+ if rand(33)
+  mea $n &YThe light turns yellow as soon as you enter.&D
+ else
+  mea $n &YThe light is yellow.&D
+ endif
+else
+ if rand(33)
+  mea $n &RThe light turns red as soon as you enter.&D
+ else
+  mea $n &RThe light is red.&D
+ endif
+endif
+endif
+~
+|
+#160457
+mayors desk~
+The Mayor's Desk~
+The mayor's desk sits in the middle of his office, a number of papers piled on it.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160458
+desk cluster~
+A Cluster of Desks~
+A cluster of desks sit in the middle of the room.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160459
+box~
+A Stack of Boxes~
+A huge pile of boxes are stacked against a wall.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160460
+papers~
+A Pile of Papers~
+Papers cover every inch of the floor here, and part of the walls, too!~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160461
+smokey table~
+A Smokey Table~
+A smokey round table is fixed to the floor, surrounded by a long bench in the shape of a 'C'.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160462
+bar counter~
+A Bar Counter~
+A shiny black bar counter seperates the patrons and the bartender.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160463
+stool~
+A Bar Stool~
+A tall bar stool is pushed up against the counter~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160465
+picnic table~
+A Steel Picnic Table~
+A simple steel picnic table sits in the middle of the room.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160470
+white box~
+A White Box~
+&wA small, featureless white box sits here&D~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+'white box'~
+The box is a cube about 6" across, and is completely white and smooth. 
+Though it doesn't look very heavy, it certainly must be, as no amount of
+force can seem to budge it. 
+~
+> exa_prog 40~
+mea $n &wUpon closer inspection, you just barely notice a faint &ppurple&w aura surrounding the box. When you look again, however, it is gone.
+~
+|
+#160500
+aura water~
+&WA&Cn &BA&Cu&Wra o&Cf Wa&Bte&Wr&D~
+&BA puddle of water.&D~
+~
+9 65 1025 128
+0 0 0 0 250 250
+1 1000000 100000
+ 100000000
+A
+1 5
+A
+2 10
+A
+3 5
+A
+4 5
+> wear_prog 100~
+mea $n &CWater bubbles up from the ground at your feet and swirls up around you!
+mer $n &CWater bubbles up from the ground at $n's feet and swirls up around $m!
+~
+> remove_prog 100~
+mea $n &CThe water surrounding you vaporizes into the air.&D
+mer $n &CThe water surrounding $n vaporizes into the air.&D
+~
+|
+#160501
+pirate bandana~
+A Piratey &RBandana&D~
+A piratey looking strip of cloth lies in the dirt.~
+~
+9 0 17
+0 0 0 0 25 25
+1 80000 8000
+ 10000000
+A
+1 4
+A
+4 4
+#160502
+pirate bandana~
+A Piratey &BBandana&D~
+A piratey looking strip of cloth lies in the dirt.~
+~
+9 0 17
+0 0 0 0 25 25
+1 80000 8000
+ 10000000
+A
+1 4
+A
+4 4
+#160503
+pirate bandana~
+A Piratey &zBandana&D~
+A piratey looking strip of cloth lies in the dirt.~
+~
+9 0 17
+0 0 0 0 25 25
+1 80000 8000
+ 10000000
+A
+1 4
+A
+4 4
+#160504
+pirate hat~
+&zA Triangular Pirate Hat&D~
+A black, triangular hat lies in the dust.~
+~
+9 0 17
+0 0 0 0 75 75
+2 200000 20000
+ 45000000
+A
+1 3
+A
+2 1
+A
+3 1
+A
+4 3
+#160505
+feathered pirate hat~
+&zA &cFeathered &zPirate Hat&D~
+A large black hat with a cyan feather has lost it's owner.~
+~
+9 0 17
+0 0 0 0 125 125
+4 350000 35000
+ 100000000
+A
+1 4
+A
+2 2
+A
+3 1
+A
+4 4
+#160506
+feathered pirate hat~
+&zA &pFeathered &zPirate Hat&D~
+A large black hat with a purple feather has lost it's owner.~
+~
+9 0 17
+0 0 0 0 125 125
+4 350000 35000
+ 100000000
+A
+1 4
+A
+2 2
+A
+3 1
+A
+4 4
+#160507
+feathered pirate hat~
+&zA &rFeathered &zPirate Hat&D~
+A large black hat with a crimson feather has lost it's owner.~
+~
+9 0 17
+0 0 0 0 125 125
+4 350000 35000
+ 100000000
+A
+1 4
+A
+2 2
+A
+3 1
+A
+4 4
+#160508
+eyepatch~
+&zAn Eyepatch&D~
+A small cloth eyepatch has been left here.~
+~
+9 0 131073
+0 0 0 0 25 25
+1 25000 2500
+ 10000000
+A
+29 -2
+A
+3 3
+#160509
+poofy pants~
+&zPoofy Pants&D~
+A poofy pair of black pants collect dust on the ground.~
+~
+9 0 33 8
+0 0 0 0 115 115
+2 100000 10000
+ 10000000
+A
+1 3
+A
+2 3
+#160510
+brown wool pants~
+&OWool Pants&D~
+A pair of fuzzy brown pants lie in the dirt.~
+~
+9 0 33 8
+0 0 0 0 125 125
+6 500000 50000
+ 50000000
+A
+1 5
+A
+2 3
+A
+4 3
+#160511
+ruffled shirt~
+&WA Ruffled Shirt&D~
+A ruffled white shirt is lying in the dirt.~
+~
+9 0 9 4
+0 0 0 0 50 50
+2 100000 10000
+ 25000000
+A
+2 2
+A
+4 5
+#160512
+pirate coat~
+&wA &zPi&Ora&Wte &wC&zo&Oa&Wt&D~
+A finely sewn, piratey coat lies here.~
+~
+9 0 1025 120
+0 0 0 0 425 425
+4 1000000 100000
+ 100000000
+A
+1 2
+A
+2 2
+A
+3 2
+A
+4 3
+#160513
+leather boots~
+&OLeather Boots&D~
+A pair of dark brown leather boots lie in the dust.~
+~
+9 0 65 96
+0 0 0 0 140 140
+2 100000 10000
+ 1000000
+A
+4 3
+#160514
+hook cuff~
+A Hook Cuff~
+A cup-shaped iron cuff lies in the dust.~
+~
+9 8396800 129
+0 0 0 0 150 150
+1 70000 7000
+ 100
+A
+12 -2
+> remove_prog 100~
+mpforce $n remove 'hook'
+~
+|
+#160515
+rusty iron hook~
+&WA &ORusty &wIron &WHook&D~
+A rusty iron hook lies in the dust.~
+~
+5 8388608 8193
+0 1 5 5 0 0
+1 50000 5000
+ 1000000
+A
+2 -15
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+else
+ mpforce $n remove 'rusty iron hook'
+ mea $n &wYou must be wearing a cuff to wear that!&D
+endif
+~
+|
+#160516
+iron hook~
+&WAn &wIron &WHook&D~
+An iron hook lies in the dust.~
+~
+5 8388608 8193
+0 1 5 5 0 0
+1 200000 20000
+ 10000000
+A
+2 -15
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+else
+ mpforce $n remove 'iron hook'
+ mea $n &wYou must be wearing a cuff to wear that!&D
+endif
+~
+|
+#160517
+steel hook~
+&WA &wS&Wt&we&We&wl &WHook&D~
+A steel hook glints in the dust.~
+~
+5 8388608 8193
+0 2 7 5 0 0
+1 350000 35000
+ 50000000
+A
+2 -15
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+else
+ mpforce $n remove 'steel hook'
+ mea $n &wYou must be wearing a cuff to wear that!&D
+endif
+~
+|
+#160518
+laser hook cylinder~
+&WA &RL&ra&zs&re&Rr &WHook&D~
+A small metal cylinder lies in the dust.~
+~
+5 8388608 8193
+0 3 4 5 0 0
+1 1100000 110000
+ 100000000
+A
+2 -10
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+ mpe &RA red hook-shaped bolt of energy shoots out from the metal cylinder!&D
+else
+ mpforce $n remove 'laser hook cylinder'
+ mea $n &wYou must be wearing a cuff to wear that!&D
+endif
+~
+|
+#160519
+laser hook cylinder~
+&WA &CL&ca&zs&ce&Cr &WHook&D~
+A small metal cylinder lies in the dust.~
+~
+5 8388608 8193
+0 3 4 5 0 0
+1 1100000 110000
+ 100000000
+A
+2 -10
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+ mpe &CA blue hook-shaped bolt of energy shoots out from the metal cylinder!&D
+else
+ mpforce $n remove 'laser hook cylinder'
+ mea $n &wYou must be wearing a cuff to wear that!
+endif
+~
+|
+#160520
+laser hook cylinder~
+&WA &YL&Oa&zs&Oe&Yr &WHook&D~
+A small metal cylinder lies in the dust.~
+~
+5 8388608 8193
+0 3 4 5 0 0
+1 1100000 110000
+ 100000000
+A
+2 -10
+> wear_prog 100~
+if wearingvnum($n) 160514
+ mpe &W*CLICK*&D
+ mpe &YA yellow hook-shaped bolt of energy shoots out from the metal cylinder!&D
+else
+ mpforce $n remove 'laser hook cylinder'
+ mea $n &wYou must be wearing a cuff to wear that!
+endif
+~
+|
+#160525
+blue beard laser cutlas~
+&wBlue Beard's &BL&base&Br &wC&zutla&ws&D~
+A sleek, metallic sword handle gleams in the dust.~
+~
+5 8388608 8193
+0 3 5 2 0 0
+1 0 0
+ 0
+A
+3 2
+A
+2 1
+> wear_prog 100~
+mea $n &BA blue-crescent blade of energy streams from the handle as you hold it.&D
+mer $n &BA blue-crescent blade of energy streams from the handls as $n holds it.&D
+~
+|
+#160535
+kill you gi~
+&PA "&WKill You!&P" Fighting Gi&D~
+A long purple gi lies in the dust.~
+~
+9 0 9 8
+0 0 0 0 250 250
+1 0 0
+ 0
+A
+1 3
+A
+2 2
+A
+3 1
+#160536
+general's armband~
+&BA General's Armband&D~
+A blue armband with the letters 'BB' set in a white bow lies here.~
+~
+9 655360&64 1 32
+0 0 0 0 25 25
+1 0 0
+ 0
+A
+1 1
+A
+2 1
+#160537
+hydrolic strength enhancer~
+&wHydrolic Strength Enhancer&D~
+A pair of long, metallic tubes lie here, wires snaking out of their ends.~
+~
+9 770048&64 1 1
+0 0 0 -5000 0 0
+1 0 0
+ 0
+A
+1 20
+A
+2 10
+A
+4 -10
+A
+11 -19999
+#160550
+chaos headband~
+&PC&pha&zos &PH&pead&zband&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 17
+0 0 0 0 150 150
+1 0 0
+ 2500000000000
+A
+3 4
+> remove_prog 100~
+if wearingvnum($n) 160553
+ mpforce $n remove 'chaos eye'
+endif
+~
+|
+#160551
+chaos mask~
+&PC&pha&zos &PM&pa&zsk&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 1048577
+0 0 0 0 400 400
+1 0 0
+ 2500000000000
+A
+3 2
+> remove_prog 100~
+if wearingvnum($n) 160553
+ mpforce $n remove 'chaos eye'
+endif
+~
+|
+#160552
+chaos earrings~
+&PC&pha&zos &PE&parr&zings&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 65537
+0 0 0 0 100 100
+1 0 0
+ 2500000000000
+A
+3 1
+> remove_prog 100~
+if wearingvnum($n) 160553
+ mpforce $n remove 'chaos eye'
+endif
+~
+|
+#160553
+chaos eye~
+&PE&py&ze &Po&zf &PC&pha&zos&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 131073
+0 0 0 0 50 50
+1 0 0
+ 2500000000000
+A
+3 1
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+> wear_prog 100~
+if wearingvnum($n) 160550
+ if wearingvnum($n) 160551
+  if wearingvnum($n) 160552
+  else
+   mpforce $n remove 'chaos eye'
+  endif
+ else
+  mpforce $n remove 'chaos eye'
+ endif
+else
+ mpforce $n remove 'chaos eye'
+endif
+~
+|
+#160554
+chaos necklace~
+&PC&pha&zos &PN&peck&zlace&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 5
+0 0 0 0 25 25
+1 0 0
+ 2500000000000
+A
+3 1
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160555
+chaos gi~
+&PC&pha&zos &PG&zi&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 9
+0 0 0 0 1800 1800
+1 0 0
+ 2500000000000
+A
+1 23
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+> wear_prog 100~
+if wearingvnum($n) 160556
+ if wearingvnum($n) 160563
+ else
+  mpforce $n remove 'chaos gi'
+ endif
+else
+ mpforce $n remove 'chaos gi'
+endif
+~
+|
+#160556
+chaos sleeves~
+&PC&pha&zos &PS&plee&zves&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 257
+0 0 0 0 400 400
+1 0 0
+ 2500000000000
+A
+1 25
+> remove_prog 100~
+if wearingvnum($n) 160555
+ mpforce $n remove 'chaos gi'
+endif
+~
+> wear_prog 100~
+if wearingvnum($n) 160560
+else
+ mpforce $n remove 'chaos sleeves'
+endif
+~
+|
+#160557
+chaos bag~
+&PC&pha&zos &PB&pa&zg&D~
+A pile of shadowy mess lies here.~
+~
+15 2753 524289
+0 50 0 0 0 0
+1 0 0
+ 2500000000000
+A
+1 10
+A
+4 2
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160558
+chaos aura~
+&PC&pha&zos &PA&pu&zra&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 1025
+0 0 0 0 4000 4000
+1 0 0
+ 2500000000000
+A
+1 100
+A
+2 10
+A
+3 10
+A
+4 10
+> wear_prog 100~
+if wearingvnum($n) 160553
+ if wearingvnum($n) 160554
+  if wearingvnum($n) 160555
+   if wearingvnum($n) 160556
+    if wearingvnum($n) 160559
+     if wearingvnum($n) 160561
+      if wearingvnum($n) 160552
+       if wearingvnum($n) 160564
+       else
+        mpforce $n remove 'chaos aura'
+       endif
+      else
+       mpforce $n remove 'chaos aura'
+      endif
+     else
+      mpforce $n remove 'chaos aura'
+     endif
+    else
+     mpforce $n remove 'chaos aura'
+    endif
+   else
+    mpforce $n remove 'chaos aura'
+   endif
+  else
+   mpforce $n remove 'chaos aura'
+  endif
+ else
+  mpforce $n remove 'chaos aura'
+ endif
+else
+mpforce $n remove 'chaos aura'
+endif
+~
+|
+#160559
+chaos bracelet~
+&PC&pha&zos &PB&prac&zelet&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 4097
+0 0 0 0 25 25
+1 0 0
+ 2500000000000
+A
+1 5
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160560
+chaos gauntlets~
+&PC&pha&zos &PG&paunt&zlets&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 129
+0 0 0 0 180 180
+1 0 0
+ 2500000000000
+A
+1 15
+> remove_prog 100~
+if wearingvnum($n) 160556
+ mpforce $n remove 'chaos sleeves'
+endif
+~
+|
+#160561
+chaos ring~
+&PC&pha&zos &PR&pi&zng&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 3
+0 0 0 0 15 15
+1 0 0
+ 2500000000000
+A
+1 2
+A
+2 1
+A
+4 1
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160562
+chaos belt~
+&PC&pha&zos &PB&pe&zlt&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 2049
+0 0 0 0 155 155
+1 0 0
+ 2500000000000
+A
+1 2
+A
+4 4
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160563
+chaos pants~
+&PC&pha&zos &PP&pan&zts&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 33
+0 0 0 0 480 480
+1 0 0
+ 2500000000000
+A
+1 10
+A
+2 3
+> remove_prog 100~
+if wearingvnum($n) 160555
+ mpforce $n remove 'chaos gi'
+endif
+~
+> wear_prog 100~
+if wearingvnum($n) 160565
+else
+ mpforce $n remove 'chaos pants'
+endif
+~
+|
+#160564
+chaos anklet~
+&PC&pha&zos &PA&pnk&zlet&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 2097153
+0 0 0 0 15 15
+1 0 0
+ 2500000000000
+A
+2 1
+A
+4 1
+> remove_prog 100~
+if wearingvnum($n) 160558
+ mpforce $n remove 'chaos aura'
+endif
+if wearingvnum($n) 160566
+ mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160565
+chaos shoes~
+&PC&pha&zos &PS&pho&zes&D~
+A pile of shadowy mess lies here.~
+~
+9 2753 65
+0 0 0 0 125 125
+1 0 0
+ 2500000000000
+A
+1 1
+A
+2 3
+> remove_prog 100~
+if wearingvnum($n) 160563
+ mpforce $n remove 'chaos pants'
+endif
+~
+|
+#160566
+chaos sword~
+&PC&pha&zos &PS&pwo&zrd&D~
+A pile of shadowy mess lies here.~
+~
+5 2753 8193
+0 6 3 1 0 0
+1 0 0
+ 2500000000000
+> wear_prog 100~
+if wearingvnum($n) 160553
+ if wearingvnum($n) 160554
+  if wearingvnum($n) 160555
+   if wearingvnum($n) 160556
+    if wearingvnum($n) 160559
+     if wearingvnum($n) 160561
+      if wearingvnum($n) 160552
+       if wearingvnum($n) 160564
+       else
+        mpforce $n remove 'chaos sword'
+       endif
+      else
+       mpforce $n remove 'chaos sword'
+      endif
+     else
+      mpforce $n remove 'chaos sword'
+     endif
+    else
+     mpforce $n remove 'chaos sword'
+    endif
+   else
+    mpforce $n remove 'chaos sword'
+   endif
+  else
+   mpforce $n remove 'chaos sword'
+  endif
+ else
+  mpforce $n remove 'chaos sword'
+ endif
+else
+mpforce $n remove 'chaos sword'
+endif
+~
+|
+#160570
+chaos shard 10~
+&PC&pha&zos &PS&pha&zrd &P10&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 1000000 1000000
+ 0
+#160571
+chaos shard 1~
+&PC&pha&zos &PS&pha&zrd &P1&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160572
+chaos shard 2~
+&PC&pha&zos &PS&pha&zrd &P2&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160573
+chaos shard 3~
+&PC&pha&zos &PS&pha&zrd &P3&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160574
+chaos shard 4~
+&PC&pha&zos &PS&pha&zrd &P4&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160575
+chaos shard 5~
+&PC&pha&zos &PS&pha&zrd &P5&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160576
+chaos shard 6~
+&PC&pha&zos &PS&pha&zrd &P6&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160577
+chaos shard 7~
+&PC&pha&zos &PS&pha&zrd &P7&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160578
+chaos shard 8~
+&PC&pha&zos &PS&pha&zrd &P8&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160579
+chaos shard 9~
+&PC&pha&zos &PS&pha&zrd &P9&D~
+A deep, dark purple crystal shard shines in the dust.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160599
+test~
+a newly created test~
+Some god dropped a newly created test here.~
+~
+9 8388864 9
+0 0 0 0 9000 9000
+1 0 0
+ 0
+#160600
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#160301
+Floating in a void~
+~
+0 4 1
+S
+#160302
+North City - A Beachside Road~
+This is a long stretch of empty country road, running between the hills
+in the south and the ocean to the north.  Lusch green trees line the road,
+which has recently been paved, giving it a very dark and smooth look, as
+well as permeating the smell of tar throughout the area. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160303
+S
+#160303
+A Beachside Road~
+This long stretch of gently curving road hugs the rocky terrain forming
+to the south, and offers a pristine view of the northern ocean.  Few trees
+can be seen growing here, as the rocky ground of the southern hills and the
+sand of the northern beach does little to support plant life in general. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160304
+D3
+~
+~
+0 -1 160302
+S
+#160304
+A Short Tunnel~
+A tunnel has been constructed here, allowing passage through a massive
+sheer cliff jutting into the ocean to the north.  The tunnel is just as
+plain as any other one might imagine; curved concrete with flourescent
+lights dotting the top of the arch. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160305
+D3
+~
+~
+0 -1 160303
+S
+#160305
+Highway Overpass~
+The road here is wider than to the west, accomodating the extra traffic
+generated by the nearby highway on- and off-ramps.  To the east, the hustle
+and bustle of city life can be heard, and the sound of water traffic can be
+heard in the distance. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160306
+D3
+~
+~
+0 -1 160304
+S
+#160306
+Corner of Swiss and Cheddar~
+This is just about the busiest intersection in all of North City. 
+Tourists and other vehicles coming in from the highway to the west,
+industrial shipments to the northern piers, as well as the busy toing and
+froing standard to all roads in this tireless city make for quite a noisy
+and hectic scene. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160311
+D1
+~
+~
+0 -1 160307
+D2
+~
+~
+0 -1 160318
+D3
+~
+~
+16777216 -1 160305
+S
+#160307
+Cheddar Street~
+Cheddar street spans across North City's northern border - the ocean. 
+It winds and curves along it's path, very much unlike all the other roads
+in the city, and perhaps for that reason the road is in much better shape
+than the others. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160308
+D3
+~
+~
+0 -1 160306
+S
+#160308
+Cheddar Street~
+Cheddar street spans across North City's northern border - the ocean. 
+It winds and curves along it's path, very much unlike all the other roads
+in the city, and perhaps for that reason the road is in much better shape
+than the others. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160309
+D2
+~
+~
+16777216 -1 160385
+D3
+~
+~
+0 -1 160307
+S
+#160309
+Cheddar Street~
+Cheddar street spans across North City's northern border - the ocean. 
+It winds and curves along it's path, very much unlike all the other roads
+in the city, and perhaps for that reason the road is in much better shape
+than the others. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160310
+D3
+~
+~
+0 -1 160308
+S
+#160310
+Intersection of Parmesan and Cheddar~
+This is about as plain an intersection as you are likely to find in this
+city.  The gently curving lanes of Cheddar Street and the sheer averageness
+of Permesan Stret make for what you would expect an intersection to look
+like, for once. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160326
+D3
+~
+~
+0 -1 160309
+D8
+~
+~
+0 -1 160327
+S
+#160311
+The Boardwalk~
+Being located right on the shores of the Northern Ocean, it is no
+surprise that North City has an extensive port located within it's borders.
+Extending out to the east and west, with a total of four major piers
+branching off of it, the boardwalk is truly a tribute to it's great city. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160314
+D1
+~
+~
+0 -1 160312
+D2
+~
+~
+16777216 -1 160306
+D3
+~
+~
+0 -1 160438
+S
+#160312
+The Boardwalk~
+Several small stalls are set up around this part of the boardwalk,
+selling mostly food, fishing and boating supplies.  The wooden planks that
+make up the boardwalk are old and creaky, the incoming industrial liners
+are loud and dirty, and for these reasons tourists generall appreciate the
+Northern Ocean from a distance. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160313
+D3
+~
+~
+0 -1 160311
+S
+#160313
+The Boardwalk~
+The boardwalk is quiet here.  With the brunt of the stalls and shops on
+the boardwalk located to the west, only the pier to the north attracts any
+people. And even then, the pier contains only private vessels, and few
+people own boats to actually sail them, prefering simply to talk about
+them, making this the most widely talked about part of the boardwalk while
+also being the least traveled. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160316
+D3
+~
+~
+0 -1 160312
+S
+#160314
+A Pier~
+All along the pier are small ramps leading to the various boats docked
+here.  All manner of sea-faring vessel can be seen here, from private
+yachts to small industrial freighters, and many people scurry about loading
+and unloading one thing or another. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160315
+D2
+~
+~
+0 -1 160311
+S
+#160315
+A Pier~
+All along the pier are small ramps leading to the various boats docked
+here.  All manner of sea-faring vessel can be seen here, from private
+yachts to small industrial freighters, and many people scurry about loading
+and unloading one thing or another.  
+~
+0 0 1
+D2
+~
+~
+0 -1 160314
+S
+#160316
+A Pier~
+All along the pier are small ramps leading to the various boats docked
+here.  This sector handles in private vessels and, not surprisingly, few
+people actually come here to use them, prefering simply to talk instead. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160317
+D2
+~
+~
+0 -1 160313
+S
+#160317
+A Pier~
+All along the pier are small ramps leading to the various boats docked
+here.  This sector handles in private vessels and, not surprisingly, few
+people actually come here to use them, prefering simply to talk instead. 
+At the end of the pier here, the seemingly endless expanse of water known
+as the Northern Ocean can be seen in full force. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160316
+S
+#160318
+Swiss Street~
+Swiss street is about the oldest one in the city - and it shows.  This
+sad strip of road is covered in a myriad of cracks and potholes.  For this
+reason, few people actually choose to drive on it for very long, and for
+that reason, many of the shadier people in town can be seen about here. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160306
+D2
+~
+~
+0 -1 160319
+S
+#160319
+Swiss Street~
+Swiss street is about the oldest one in the city - and it shows.  This
+sad strip of road is covered in a myriad of cracks and potholes.  For this
+reason, few people actually choose to drive on it for very long, and for
+that reason, many of the shadier people in town can be seen about here. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160318
+D2
+~
+~
+0 -1 160320
+S
+#160320
+Intersection of Swiss and Gouda~
+With the North City Casino just east of this intersection, it only makes
+sense that traffic would be a nightmare here.  Gouda Street is busy anway,
+and with the bad condition Swiss Street is in, it isn't uncommon for a
+drunk to come careening through after hitting some pothole, making this
+intersection all the more chaotic. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160319
+D1
+~
+~
+0 -1 160321
+D2
+~
+~
+0 -1 160333
+> rand_prog 100~
+~
+|
+S
+#160321
+Gouda Street~
+Gouda Street is something of a 'main' street in North City.  Running
+strait through the heart of the city, and passing in front of major places
+like the North City Casino to the south, and the North City Cheese Factory
+further east, it is easily the most traveled road, and coincidentally, the
+most held up and repaired. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160322
+D2
+~
+~
+16777216 -1 160364
+D3
+~
+~
+0 -1 160320
+S
+#160322
+Gouda Street~
+Gouda Street is something of a 'main' street in North City.  Running
+strait through the heart of the city, and passing in front of major places
+like the North City Casino to the west, and the North City Cheese Factory
+further east, it is easily the most traveled road, and coincidentally, the
+most held up and repaired. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160323
+D3
+~
+~
+0 -1 160321
+S
+#160323
+Gouda Street~
+Gouda Street is something of a 'main' street in North City.  Running
+strait through the heart of the city, and passing in front of major places
+like the North City Casino to the west, and the North City Cheese Factory
+to the east, it is easily the most traveled road, and coincidentally, the
+most held up and repaired.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160324
+D3
+~
+~
+0 -1 160322
+S
+#160324
+Intersection of Parmesan and Gouda~
+As the centermost intersection in the western half of the city, the
+traffic here is, not surprisingly, bad.  Horns wail and tires squeel as
+workers and consumers try to navigate the chaos of the city streets. The
+North City Cheese Factory is located just east of this intersection, and a
+bit down Gouda to the west, the North City Casino stands. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160325
+D1
+~
+~
+0 -1 160330
+D2
+~
+~
+0 -1 160337
+D3
+~
+~
+0 -1 160323
+S
+#160325
+Parmesan Street~
+Parmesan Street is quite ordinary as far as streets go.  Though it runs
+directly through the center of western North City, it is only moderately
+worn, and traffic is neither terrible nor nonexistant through this
+pleasantly average sector. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160326
+D2
+~
+~
+0 -1 160324
+S
+#160326
+Parmesan Street~
+Parmesan Street is quite ordinary as far as streets go.  Though it runs
+directly through the center of western North City, it is only moderately
+worn, and traffic is neither terrible nor nonexistant through this
+pleasantly average sector. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160310
+D2
+~
+~
+0 -1 160325
+S
+#160327
+Cheddar Street~
+Cheddar street spans across North City's northern border - the ocean. 
+It winds and curves along it's path, very much unlike all the other roads
+in the city, and perhaps for that reason the road is in much better shape
+than the others. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160328
+D2
+~
+~
+16777216 -1 160392
+D7
+~
+~
+0 -1 160310
+S
+#160328
+Cheddar Street~
+Cheddar street spans across North City's northern border - the ocean. 
+It winds and curves along it's path, very much unlike all the other roads
+in the city, and perhaps for that reason the road is in much better shape
+than the others. 
+~
+0 0 1
+D3
+~
+~
+0 -1 160327
+D8
+~
+~
+0 -1 160329
+S
+#160329
+Corner of Mozzarella and Cheddar~
+Here, Cheddar and Mozzarella Street meet at the northeastern corner of
+western North City.  And despite this stunning geographical incredibility,
+there is little of interest here, apart from the Northern Ocean to, who
+could guess, the North. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160332
+D7
+~
+~
+0 -1 160328
+S
+#160330
+Gouda Street~
+Gouda Street is something of a 'main' street in North City.  Running
+strait through the heart of the city, and passing in front of major places
+like the North City Casino to the west, and the North City Cheese Factory
+directly south, it is easily the most traveled road, and coincidentally,
+the most held up and repaired.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160331
+D2
+~
+~
+16777216 -1 160375
+D3
+~
+~
+0 -1 160324
+S
+#160331
+Gouda Street~
+Gouda Street is something of a 'main' street in North City.  Running
+strait through the heart of the city, and passing in front of major places
+like the North City Casino far to the west, and the North City Cheese
+Factory just southwest, it is easily the most traveled road, and
+coincidentally, the most held up and repaired.  
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160393
+D1
+~
+~
+0 -1 160332
+D3
+~
+~
+0 -1 160330
+S
+#160332
+Intersection of Mozzarella and Gouda~
+This intersection, like few in North City aren't, is quite heavy in
+traffic.  With the main link between the western and eastern halves of the
+city coming in right here, and with Gouda Street running right through the
+center of the western half, the combination is noisy, slow, and hectic. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160329
+D1
+~
+~
+0 -1 160350
+D2
+~
+~
+0 -1 160349
+D3
+~
+~
+0 -1 160331
+S
+#160333
+Swiss Street~
+Swiss street is about the oldest one in the city - and it shows.  This
+sad strip of road is covered in a myriad of cracks and potholes.  For this
+reason, few people actually choose to drive on it for very long, and for
+that reason, many of the shadier people in town can be seen about here. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160320
+D2
+~
+~
+0 -1 160334
+S
+#160334
+Swiss Street~
+Swiss street is about the oldest one in the city - and it shows.  This
+sad strip of road is covered in a myriad of cracks and potholes.  For this
+reason, few people actually choose to drive on it for very long, and for
+that reason, many of the shadier people in town can be seen about here. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160333
+D2
+~
+~
+0 -1 160335
+S
+#160335
+Swiss Street~
+Swiss street is about the oldest one in the city - and it shows.  This
+sad strip of road is covered in a myriad of cracks and potholes.  For this
+reason, few people actually choose to drive on it for very long, and for
+that reason, many of the shadier people in town can be seen about here. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160334
+D2
+~
+~
+0 -1 160336
+S
+#160336
+Corner of Swiss and Romano~
+Here, the desolate and crumbling lanes of Swiss Street end, and the
+chaos that is Romano Street begins.  Being the center of business in the
+city, it is terribly busy during rush hour, and as such, so is this corner.
+~
+0 0 1
+D0
+~
+~
+0 -1 160335
+D1
+~
+~
+0 -1 160343
+S
+#160337
+Parmesan Street~
+Parmesan Street is quite ordinary as far as streets go.  Though it runs
+directly through the center of western North City, it is only moderately
+worn, and traffic is neither terrible nor nonexistant through this
+pleasantly average sector. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160324
+D2
+~
+~
+0 -1 160338
+S
+#160338
+Parmesan Street~
+Parmesan Street is quite ordinary as far as streets go.  Though it runs
+directly through the center of western North City, it is only moderately
+worn, and traffic is neither terrible nor nonexistant through this
+pleasantly average sector. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160337
+D2
+~
+~
+0 -1 160339
+S
+#160339
+Parmesan Street~
+Parmesan Street is quite ordinary as far as streets go.  Though it runs
+directly through the center of western North City, it is only moderately
+worn, and traffic is neither terrible nor nonexistant through this
+pleasantly average sector. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160338
+D2
+~
+~
+0 -1 160340
+S
+#160340
+Intersection of Parmesan and Romano~
+Traffic is scarcely higher here compared to it's respective streets,
+except during rush hour.  With the majority of businesses located on Romano
+Street, this is of course expected.  There is nothing of serious interest
+located around this intersection, save for the intersection of Parmesan and
+Gouda farther north, which happens to be located at the center of western
+North City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160339
+D1
+~
+~
+0 -1 160344
+D3
+~
+~
+0 -1 160341
+S
+#160341
+Romano Street~
+Romano is the southernmost major street in the city.  Many businesses
+are directed off of this street, and as such, rush hour hits hardest along
+here.  But aside from that, things are relatively ordinary here, and there
+are few other things of serious interest around. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160370
+D1
+~
+~
+0 -1 160340
+D3
+~
+~
+0 -1 160342
+S
+#160342
+Romano Street~
+Romano is the southernmost major street in the city.  Many businesses
+are directed off of this street, and as such, rush hour hits hardest along
+here.  But aside from that, things are relatively ordinary here, and there
+are few other things of serious interest around.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160341
+D3
+~
+~
+0 -1 160343
+S
+#160343
+Romano Street~
+Romano is the southernmost major street in the city.  Many businesses
+are directed off of this street, and as such, rush hour hits hardest along
+here.  But aside from that, things are relatively ordinary here, and there
+are few other things of serious interest around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160342
+D3
+~
+~
+0 -1 160336
+S
+#160344
+Romano Street~
+Romano is the southernmost major street in the city.  Many businesses
+are directed off of this street, and as such, rush hour hits hardest along
+here.  But aside from that, things are relatively ordinary here, and there
+are few other things of serious interest around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160345
+D3
+~
+~
+0 -1 160340
+S
+#160345
+Romano Street~
+Romano is the southernmost major street in the city.  Many businesses
+are directed off of this street, and as such, rush hour hits hardest along
+here.  But aside from that, things are relatively ordinary here, and there
+are few other things of serious interest around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160346
+D3
+~
+~
+0 -1 160344
+S
+#160346
+Corner of Mozzarella and Romano~
+At this point, Romano and Mozzarella meet and branch off in their
+respective directions.  The traffic is heavy here, with Mozzarella being
+being the main link between the eastern half of the city, and Romano
+Street, which happens to the major center for business in the city. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160347
+D3
+~
+~
+0 -1 160345
+S
+#160347
+Mozzarella Street~
+Mozzarella Street runs along the western bank of what once was a small
+stream running through the city.  Years of industrialization, however, as
+well as other natural forces, have dried up the stream, leaving a barren
+strip of dirt, sand and rock running up between western and eastern North
+City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160348
+D2
+~
+~
+0 -1 160346
+S
+#160348
+Mozzarella Street~
+Mozzarella Street runs along the western bank of what once was a small
+stream running through the city.  Years of industrialization, however, as
+well as other natural forces, have dried up the stream, leaving a barren
+strip of dirt, sand and rock running up between western and eastern North
+City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160349
+D2
+~
+~
+0 -1 160347
+S
+#160349
+Mozzarella Street~
+Mozzarella Street runs along the western bank of what once was a small
+stream running through the city.  Years of industrialization, however, as
+well as other natural forces, have dried up the stream, leaving a barren
+strip of dirt, sand and rock running up between western and eastern North
+City.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160332
+D2
+~
+~
+0 -1 160348
+S
+#160350
+A Bridge~
+This simple causeway connects east and west North City over the small
+stream running between them.  The stream below actually seems to be dried
+up now, indicating that this bridge must have been made some time ago. 
+Nevertheless, it is the sole link between the two halves, and to replace it
+with a normal road would cause havoc within the city. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160351
+D3
+~
+~
+0 -1 160332
+S
+#160351
+A Bridge~
+This simple causeway connects east and west North City over the small
+stream running between them.  The stream below actually seems to be dried
+up now, indicating that this bridge must have been made some time ago. 
+Nevertheless, it is the sole link between the two halves, and to replace it
+with a normal road would cause havoc within the city. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160352
+D3
+~
+~
+0 -1 160350
+S
+#160352
+Provolone Street~
+The eastern half of North City is quite a different scene from the west.
+Few buildings span higher than two stories, and there is a tree on every
+street corner.  Needless to say, the majority of the residential sector is
+located here, and for good reason.  To the east, the sandy shores of the
+Northern Ocean are open to the public, and this street continues to the
+south. 
+~
+0 0 1
+D1
+~
+~
+16777216 -1 160400
+D2
+~
+~
+0 -1 160353
+D3
+~
+~
+0 -1 160351
+S
+#160353
+Provolone Street~
+Provolone Street is the largest street on the east side and,
+coincidentally, the nearest to the west side.  It is from here that the
+impossible mess of sweeping suburban roads and ways extend to all corners
+of residential North City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160352
+D2
+~
+~
+0 -1 160354
+S
+#160354
+Intersection of Provolone and Colby~
+The constant rhythme of small suburban roads is broken here, with Colby
+Street branching off to the east.  Colby is another major street on the
+east side, and leads strait to North City High School. Traffic is
+pleasantly mild here, with people driving in no particular order and going
+to no specific location; quite unlike any west-side counterpart. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160353
+D1
+~
+~
+0 -1 160361
+D2
+~
+~
+0 -1 160355
+S
+#160355
+Provolone Street~
+Provolone Street is the largest street on the east side and,
+coincidentally, the nearest to the west side.  It is from here that the
+impossible mess of sweeping suburban roads and ways extend to all corners
+of residential North City.
+~
+0 0 1
+D0
+~
+~
+0 -1 160354
+D2
+~
+~
+0 -1 160356
+S
+#160356
+Provolone Street~
+Provolone Street is the largest street on the east side and,
+coincidentally, the nearest to the west side.  It is from here that the
+impossible mess of sweeping suburban roads and ways extend to all corners
+of residential North City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160355
+D2
+~
+~
+0 -1 160357
+S
+#160357
+Begining of Chevre Court~
+Chevre Court is where people who have more money than they know what to
+do with spend the money they DO know what to do with.  Huge, well-kept
+lawns sweep out in front of every silver mansion, and dozens of shiny,
+luxury hovercars are lined up in every mile-long driveway.  Needless to
+say, few people are actually seen out enjoying these things, and those that
+are greet everyone with the same characteristicly snobby look. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160356
+D8
+~
+~
+0 -1 160358
+D9
+~
+~
+0 -1 160360
+S
+#160358
+Chevre Court~
+Chevre Court is where people who have more money than they know what to
+do with spend the money they DO know what to do with.  Huge, well-kept
+lawns sweep out in front of every silver mansion, and dozens of shiny,
+luxury hovercars are lined up in every mile-long driveway.  Needless to
+say, few people are actually seen out enjoying these things, and those that
+are greet everyone with the same characteristicly snobby look. 
+~
+0 0 1
+D7
+~
+~
+0 -1 160357
+D9
+~
+~
+0 -1 160359
+S
+#160359
+Chevre Court~
+Chevre Court is where people who have more money than they know what to
+do with spend the money they DO know what to do with.  Huge, well-kept
+lawns sweep out in front of every silver mansion, and dozens of shiny,
+luxury hovercars are lined up in every mile-long driveway.  Needless to
+say, few people are actually seen out enjoying these things, and those that
+are greet everyone with the same characteristicly snobby look. 
+~
+0 0 1
+D6
+~
+~
+0 -1 160358
+D7
+~
+~
+0 -1 160360
+S
+#160360
+Chevre Court~
+Chevre Court is where people who have more money than they know what to
+do with spend the money they DO know what to do with.  Huge, well-kept
+lawns sweep out in front of every silver mansion, and dozens of shiny,
+luxury hovercars are lined up in every mile-long driveway.  Needless to
+say, few people are actually seen out enjoying these things, and those that
+are greet everyone with the same characteristicly snobby look. 
+~
+0 0 1
+D6
+~
+~
+0 -1 160357
+D8
+~
+~
+0 -1 160359
+S
+#160361
+Colby Way~
+Colby is a semi-large street running through the center of residential
+North City. All around, students are walking to school, citizens are
+walking their pets, and cars pull in and out of driveways and smaller
+streets... about as average and dull a scene as you'll find in North City. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160362
+D3
+~
+~
+0 -1 160354
+S
+#160362
+Colby Way~
+Colby is a semi-large street running through the center of residential
+North City. All around, students are walking to school, citizens are
+walking their pets, and cars pull in and out of driveways and smaller
+streets... about as average and dull a scene as you'll find in North City. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160363
+D3
+~
+~
+0 -1 160361
+S
+#160363
+End of Colby Way~
+Colby ends here in a smaller circular road, surrounding a small park.  A
+few streets branch off of various parts of the road, and at the head of the
+street the local High School stands. Other than that, though, this is still
+a very quiet and dull corner of the world, as is most of this half of the
+city. 
+~
+0 0 1
+D3
+~
+~
+0 -1 160362
+S
+#160364
+North City Casino~
+The air is thick with smoke and the smell of cheap beer.  The thick
+cloud of fog covering the area is lit by dozens of flashing lights and neon
+signs scattered across the establishment, giving the whole place a very
+nauseating feel.  And somehow, the place is still packed with avid and
+addicted gamblers. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160321
+D1
+~
+~
+0 -1 160365
+D2
+~
+~
+0 -1 160366
+S
+#160365
+A Small Bar~
+This small bar is just as thick with smoke as the rest of the casino.  A
+number of people are crowded around counter getting drunk, while those that
+already are take up the floor or one of the slot machines. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160364
+S
+#160366
+North City Casino~
+A number of tables are scattered around the room here, each surrounded
+by people playing different card games.  In the other room, flashing lights
+and ringing bells intone the rows of slot machines present, and smoke here
+seems to be particularly strong. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160364
+D1
+~
+~
+0 -1 160368
+D2
+~
+~
+0 -1 160367
+S
+#160367
+A Smokey Table~
+This table seems to be one of the major sources of smoke throughout the
+entire casino, and as such the thickness of the stuff here is staggering. 
+Glasses of beer are placed on the edges of the circular table, and a
+well-used ashtray sits at it's center. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160366
+S
+#160368
+Slot Room~
+Three rows of slot machines take up this entire section of the casino. 
+Most of the slot-goers seem to be completely mindless, and few seem like
+they wouldn't be otherwise. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160366
+S
+#160369
+Floating in a void~
+~
+0 4 0
+S
+#160370
+Corner Book Store~
+This little store seems pretty quiet.  Three rows of bookshelves and a
+few rotating stands make up the majority of the store, and a small counter
+at the entrance seems to be the extent of the 'administrative' part.  From
+Dr.  Seuss to Shakespeare, every manner of theme is indiscriminantly
+represented on these few shelves; quite and impressive selection for such a
+small store. 
+~
+0 0 0
+D2
+~
+~
+0 -1 160341
+S
+#160371
+Inside of a Tank~
+The space here is fairly cramped, and one must maneuver carefully to fit
+anywhere with remote comfort.  Covering the control panel are dozens of
+buttons and flashing lights.  A central joystick seems to control the tanks
+movement, as it is currently locked from movement, but other than that
+nothing is immediately understandable. 
+~
+0 0 0
+D10
+~
+tank hatch~
+264200 -1 160403
+S
+#160372
+Inside of a Tank~
+The space here is fairly cramped, and one must maneuver carefully to fit
+anywhere with remote comfort.  Covering the control panel are dozens of
+buttons and flashing lights.  A central joystick seems to control the tanks
+movement, as it is currently locked from movement, but other than that
+nothing is immediately understandable. 
+~
+0 0 0
+D10
+~
+tank hatch~
+264200 -1 160400
+S
+#160373
+Inside of a Tank~
+The space here is fairly cramped, and one must maneuver carefully to fit
+anywhere with remote comfort.  Covering the control panel are dozens of
+buttons and flashing lights.  A central joystick seems to control the tanks
+movement, as it is currently locked from movement, but other than that
+nothing is immediately understandable. 
+~
+0 0 0
+D10
+~
+tank hatch~
+264200 -1 160405
+S
+#160374
+Floating in a void~
+~
+0 4 0
+S
+#160375
+Cheese Factory~
+The smell of cheese and the sound of heavy machinery fill the air in
+this noisy factory.  Everywhere people are pushing buttons, pulling levers,
+moving boxes, or otherwise scurrying about.  To the east, row after row of
+huge industrial cheese ovens fill the room, and a wide hallway pans out to
+the south leading to other parts of the building. 
+~
+0 0 0
+D0
+~
+~
+16777216 -1 160330
+D1
+~
+~
+0 -1 160376
+D2
+~
+~
+0 -1 160377
+S
+#160376
+Baking Room~
+This room is huge, and filled with dozens of mammoth cheese ovens. 
+Pipes pump liquid cheese every which way through the room and everywhere
+workers and pushing buttons or moving boxes. A spiral steel staircase leads
+up from a corner into the upper level, and the factory entrance lies to the
+west. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160375
+D4
+~
+~
+0 -1 160381
+S
+#160377
+Cheese Factory~
+This crowded hallway is where finished cheeses are taken to be shipped
+all over the world.  Two large openings to the west lead out into the
+parking lot, where trucks go to pick up the cheese, and to the east is yet
+another machine used to actually make the cheese. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160375
+D1
+~
+~
+0 -1 160378
+D2
+~
+~
+0 -1 160379
+S
+#160378
+Grinding Room~
+This is possibly the loudest room in the entire factory.  Raw cheese and
+other ingredients are constantly being fed to a gargantuan steel monster in
+the corner of the room, which seems to be the source of all this noise. 
+Once the cheese is fed to this huge grinder, it gets carried off to the
+ovens to the north, and everywhere workers are hauling the stuff around. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160377
+S
+#160379
+Cheese Factory~
+A few steel picnic tables take up most of the space at the end of the
+hallway here, indicating that this must be where the workers go to eat
+their lunches. Aside from those tables, though, this area is no different
+from any other in the factory; the smell of cheese is heavy in the air, and
+the noise generated by the various machines here is only nearly tolerable. 
+~
+0 536871936 0
+D0
+~
+~
+0 -1 160377
+D1
+~
+~
+0 -1 160380
+S
+#160380
+Mixing Room~
+This is the final stage in cheese production.  Here, giant vats of
+different kinds of cheese and other ingredients are added together and
+combined to form new kinds of cheese.  The process seems simple enough, but
+the machine hardly seems so; dozens of flashing lights and shiny red
+buttons dot it's exterior, and the noises it produces are some of the most
+strange one could ever hear. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160379
+S
+#160381
+Upper Level~
+This small room is much calmer than the rest of the factory.  The
+factory owner makes his office in the room to the east, and the
+homogenization machine is located in the room to the south. The entire
+north-western wall of the room is made of glass, allowing different members
+of the factory administration to oversee production. 
+~
+0 0 0
+D1
+~
+~
+0 -1 160382
+D2
+~
+~
+0 -1 160383
+D5
+~
+~
+0 -1 160376
+S
+#160382
+Manager's Office~
+Much like the rest of the factory, this room has bare steel walls and
+ceiling, and is lit by a solitary hanging light bulb.  In the center is a
+small steel desk, with several papers and folders piled on top of it. 
+Other than that, the room is fairly empty. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160381
+S
+#160383
+Homogenization Room~
+Despite having two control mechanisms, unlike the other machines in the
+factory, the Homogenizer is really quit simple to operate, and there are
+fewer workers here than there are anywhere else in the factory. Raw
+materials are pumped into the homogenizers huge steel vat, and
+then...well...&Usomething&D&g happens, and raw cheese is pumped back out to
+other parts of the factory. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160381
+S
+#160384
+Floating in a void~
+~
+0 4 0
+S
+#160385
+Capitol Building - The State Circuit~
+This is one office of the State legislative circuit.  Very little work
+is actually done here, it seems.  Every paper that comes here is simply
+handed to the office to the west.  Few of these papers are actually even
+looked at, and when they do, they are always denied and thrown out into
+storage. 
+~
+0 0 0
+D0
+~
+~
+16777216 -1 160308
+D1
+~
+~
+0 -1 160387
+D2
+~
+~
+0 -1 160390
+D3
+~
+~
+0 -1 160386
+S
+#160386
+The State Circuit~
+This is one office of the State legislative circuit.  Very little work
+is actually done here, it seems.  Every paper that comes here is simply
+handed to the office to the south.  Few of these papers are actually even
+looked at, and when they do, they are always denied and thrown out into
+storage. 
+~
+0 0 0
+D1
+~
+~
+0 -1 160385
+D2
+~
+~
+0 -1 160388
+S
+#160387
+Storage Room~
+This room is a nightmare.  Stacks upon stacks upon boxes of stacks of
+papers literally block any view of the floor, or the walls, or even the
+ceiling!  The papers themselves are all typed out in 3-pt.  Font, which is
+impossible to make out enough without the big red 'DENIED' that seems to
+plague them all.  Not to mention the only light here seems to be coming
+from the various paper fires scattered throughout this legal jungle. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160385
+S
+#160388
+The State Circuit~
+This is one office of the State legislative circuit.  Very little work
+is actually done here, it seems.  Every paper that comes here is simply
+handed to the office to the east.  Few of these papers are actually even
+looked at, and when they do, they are always denied and thrown out into
+storage. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160386
+D1
+~
+~
+0 -1 160390
+S
+#160389
+Mayor's Office~
+Everything here seems to be made out of some expensive leather. 
+Bookshelves line the walls, and a big wooden desk sits in the middle of the
+red carpeted floor.  It would all seem very impressive and fancy, indeed,
+if not for the terrible state everything seems to be in.  A doughnut box
+hangs off of the desk in the middle, and custard stains cover every few
+inches of the carpet.  Many books seem to be missing and out of place on
+the shelves, with several scattered on the floor or on top of the shelves
+themselves.  Finally, an open issue of 'Skin' lies in the middle of the
+desk, rather conspicuously 'hidden' within the pages of a much more
+official looking document. 
+~
+0 0 0
+D3
+~
+~
+0 -1 160390
+S
+#160390
+The State Circuit~
+This is one office of the State legislative circuit.  Very little work
+is actually done here, it seems.  Every paper that comes here is simply
+handed to the office to the north.  Few of these papers are actually even
+looked at, and when they do, they are always denied and thrown out into
+storage. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160385
+D1
+~
+~
+0 -1 160389
+D3
+~
+~
+0 -1 160388
+S
+#160391
+Floating in a void~
+~
+0 4 0
+S
+#160392
+Cheese World~
+North City has always been famous for cheese, what with having the
+foremost producer of cheese in the world located within it's borders and
+all.  So it only seems natural that something like this would also exist
+here.  Cheese World is where tourists and other outsiders come to get their
+fill of famous North City cheese (as the citizens are all quite sick of
+it). 
+~
+0 0 0
+D0
+~
+~
+16777216 -1 160327
+D1
+~
+~
+0 -1 160393
+S
+#160393
+Cheese World~
+North City has always been famous for cheese, what with having the
+foremost producer of cheese in the world located within it's borders and
+all.  So it only seems natural that something like this would also exist
+here.  Cheese World is where tourists and other outsiders come to get their
+fill of famous North City cheese (as the citizens are all quite sick of
+it).  
+~
+0 0 0
+D2
+~
+~
+16777216 -1 160331
+D3
+~
+~
+0 -1 160392
+S
+#160394
+Floating in a void~
+~
+0 4 1
+S
+#160395
+Floating in a void~
+~
+0 4 1
+S
+#160396
+Floating in a void~
+~
+0 4 1
+S
+#160397
+Floating in a void~
+~
+0 4 1
+S
+#160398
+Floating in a void~
+~
+0 4 1
+S
+#160399
+Floating in a void~
+~
+0 4 1
+S
+#160400
+A Sandy Beach~
+The sandy beaches of the Northern Ocean would be a beautiful sight, with
+it's sparkling sands and it's gently rolling dunes, and the lusch greenery
+behind it all...however, the Blue Bow Army's presence here shatters any
+vision of beauty or enjoyment one could find here. Tanks are perched along
+the sands and soldiers patrol every path - obviously stirred up about
+something big to disrupt such a major place in such a major city.
+~
+0 0 2
+D0
+~
+~
+16777280 -1 160409
+D1
+~
+~
+0 -1 160401
+D3
+~
+~
+16777216 -1 160352
+D10
+~
+tank hatch~
+16910344 -1 160372
+S
+#160401
+A Sandy Beach~
+The sand all around is completely untouched, save for the uniform line
+of military grade boot tracks stretching all across the sandy shoreline. 
+To the east and west, tanks are perched in the sand, and to the south a
+small tent has been set up for the generals and captains to converse. 
+~
+0 0 2
+D0
+~
+~
+16777280 -1 160410
+D1
+~
+~
+0 -1 160402
+D2
+~
+~
+0 -1 160407
+D3
+~
+~
+0 -1 160400
+S
+#160402
+A Sandy Beach~
+The sand all around is completely untouched, save for the uniform line
+of military grade boot tracks stretching all across the sandy shoreline. 
+To the east and west, tanks are perched in the sand, and to the south a
+small tent has been set up for the generals and captains to converse. 
+~
+0 0 2
+D0
+~
+~
+16777280 -1 160411
+D1
+~
+~
+0 -1 160403
+D3
+~
+~
+0 -1 160401
+S
+#160403
+A Sandy Beach~
+The shoreline here takes a sharp curve southward from it's normal
+strait flow. The sound is nearly untouched here, save for the uniform 
+military grade boot tracks following the shores curve, and the tank 
+tracks leading to the massive vehicle perched here.
+~
+0 0 2
+D0
+~
+~
+16777280 -1 160412
+D3
+~
+~
+0 -1 160402
+D8
+~
+~
+0 -1 160404
+D10
+~
+tank hatch~
+16910344 -1 160371
+S
+#160404
+A Sandy Beach~
+The sand is coarser here, small rocks and broken shells mixed in with
+it, and several small patches of grass dot this area of the beach. Boot
+tracks line up uniformly along the soldier's patrol routes. To the
+south is a small storage shed, and to the east is the end of the Blue
+Bow patrol line.
+~
+0 0 2
+D1
+~
+~
+0 -1 160405
+D2
+~
+~
+0 -1 160406
+D7
+~
+~
+0 -1 160403
+S
+#160405
+A Sandy Beach~
+This spot marks the end of the Blue Bow soldier patrol line. A massive
+tank is perched in front of a small patch of random footprints, at the
+end of the long uniform line stretching all across the beach. The
+public beach stretches several feet beyond this point, drawing
+questions over the army's decision to stop here, as well as bringing up
+the question of why they're here in the first place!
+~
+0 0 2
+D3
+~
+~
+0 -1 160404
+D10
+~
+tank hatch~
+16910344 -1 160373
+S
+#160406
+A Supply Shed~
+This small wooden shed has been converted for use by the Blue Bow army.
+Several guns and boxes of amunition are stacked up here, putting stress
+on the old wooden boards that make the thing up.
+~
+0 0 0
+D0
+~
+~
+0 -1 160404
+S
+#160407
+A Large Tent~
+This is a large, brown canvas tent pitched on the edge of the beach.
+Small clumps of grass are scattered along the ground, and the sand is
+very course. A few maps and other papers are pinned to the walls, but
+otherwise, nothing of interest can be immediately found here. On the
+other side of the tent, a large table is set up.
+~
+0 0 0
+D0
+~
+~
+0 -1 160401
+D1
+~
+~
+0 -1 160408
+S
+#160408
+A Large Tent~
+This is a large, brown canvas tent pitched on the edge of the beach. In
+the middle of the bare sand and grass floor stands a plain wooden
+table, with several different papers and maps displayed on it, and like
+papers are pinned all along the canvas wall.
+~
+0 0 0
+D3
+~
+~
+0 -1 160407
+> speech_prog invoke!~
+mpmload 160343
+mpmload 160343
+mpmload 160343
+mpmload 160343
+mpmload 160343
+~
+|
+S
+#160409
+Over the Ocean~
+&BThe water below is calm, and only a gently ocean breeze wisps through
+the area.  The beach stretches out to the south, and to the north, the
+water starts getting violent as a storm slowly sets in.&D 
+~
+0 0 7
+D0
+~
+~
+64 -1 160413
+D1
+~
+~
+0 -1 160410
+D2
+~
+~
+0 -1 160400
+S
+#160410
+Over the Ocean~
+&BThe water below is calm, and only a gently ocean breeze wisps through
+the area.  The beach stretches out to the south, and to the north, the
+water starts getting violent as a storm slowly sets in.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160414
+D1
+~
+~
+0 -1 160411
+D2
+~
+~
+0 -1 160401
+D3
+~
+~
+0 -1 160409
+S
+#160411
+Over the Ocean~
+&BThe water below is calm, and only a gently ocean breeze wisps through
+the area.  The beach stretches out to the south, and to the north, the
+water starts getting violent as a storm slowly sets in.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160415
+D1
+~
+~
+0 -1 160412
+D2
+~
+~
+0 -1 160402
+D3
+~
+~
+0 -1 160410
+S
+#160412
+Over the Ocean~
+&BThe water below is calm, and only a gently ocean breeze wisps through
+the area.  The beach stretches out to the south, and to the north, the
+water starts getting violent as a storm slowly sets in.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160416
+D2
+~
+~
+0 -1 160403
+D3
+~
+~
+0 -1 160411
+S
+#160413
+Rough Waters~
+&BThe water below is starting to get rough here, as small waves rise up
+and crash back into the salty ocean.  The wind is usually calm, but strong
+gusts push past every once in a while.  To the south, the water looks
+calmer, and the beach can be seen on the horizon.  The storm seems to be
+strongest to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160426
+D1
+~
+~
+0 -1 160414
+D2
+~
+~
+0 -1 160409
+S
+#160414
+Rough Waters~
+&BThe water below is starting to get rough here, as small waves rise up
+and crash back into the salty ocean.  The wind is usually calm, but strong
+gusts push past every once in a while.  To the south, the water looks
+calmer, and the beach can be seen on the horizon.  The storm seems to be
+strongest to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160427
+D1
+~
+~
+0 -1 160415
+D2
+~
+~
+0 -1 160410
+D3
+~
+~
+0 -1 160413
+S
+#160415
+Rough Waters~
+&BThe water below is starting to get rough here, as small waves rise up
+and crash back into the salty ocean.  The wind is usually calm, but strong
+gusts push past every once in a while.  To the south, the water looks
+calmer, and the beach can be seen on the horizon.  The storm seems to be
+strongest to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160428
+D1
+~
+~
+0 -1 160416
+D2
+~
+~
+0 -1 160411
+D3
+~
+~
+0 -1 160414
+S
+#160416
+Rough Waters~
+&BThe water below is starting to get rough here, as small waves rise up
+and crash back into the salty ocean.  The wind is usually calm, but strong
+gusts push past every once in a while.  To the south, the water looks
+calmer, and the beach can be seen on the horizon.  The storm seems to be
+strongest to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160429
+D2
+~
+~
+0 -1 160412
+D3
+~
+~
+0 -1 160415
+S
+#160417
+Floating in a void~
+~
+0 4 7
+S
+#160418
+Floating in a void~
+~
+0 4 7
+S
+#160419
+Floating in a void~
+~
+0 4 7
+S
+#160420
+Eye of the Storm~
+&zThe wind whips around this area with the strongest force, spinning so
+powerfully that it's impossible to get out of it!  The water below is
+contorted so as to produce a small whirlpool, and the clear sky can be seen
+through the clouds epicenter.&D 
+~
+0 2097152 7
+D1
+~
+~
+0 -1 160421
+D2
+~
+~
+0 -1 160423
+D5
+~
+whirlpool~
+2063 160302 160424
+D10
+~
+~
+264192 -1 160432
+> death_prog 100~
+if isnpc($n)
+ mppurge $n
+endif
+~
+> leave_prog 100~
+mpsleep 1
+if inroom($n) == 160432
+ if dex($n) >= 120
+  if rand(75)
+   mpat $n mea $n &BYou break free of the storm with little trouble.&D
+  else
+   mpat $n mea $n &BYou narrowly fail to break free of the storm!&D
+   mpat $n mpforce $n e
+  endif
+ else
+  if rand(25)
+   mpat $n mea $n &BYou narrowly manage to free yourself from the storm!&D
+  else    
+   mpat $n mea $n &BTry as you might, the storm is just too powerful for you to escape!&D
+   mpat $n mpforce $n e
+  endif
+ endif
+endif
+~
+|
+S
+#160421
+Eye of the Storm~
+&zThe wind whips around this area with the strongest force, spinning so
+powerfully that it's impossible to get out of it!  The water below is
+contorted so as to produce a small whirlpool, and the clear sky can be seen
+through the clouds epicenter.&D 
+~
+0 2097152 7
+D2
+~
+~
+0 -1 160422
+D3
+~
+~
+0 -1 160420
+D10
+~
+~
+264192 -1 160433
+> leave_prog 100~
+mpsleep 1
+if inroom($n) == 160433
+ if dex($n) >= 120
+  if rand(75)
+   mpat $n mea $n &BYou break free of the storm with little trouble.&D
+  else
+   mpat $n mea $n &BYou narrowly fail to break free of the storm!&D
+   mpat $n mpforce $n w
+  endif
+ else
+  if rand(25)
+   mpat $n mea $n &BYou narrowly manage to free yourself from the storm!&D
+  else    
+   mpat $n mea $n &BTry as you might, the storm is just too powerful for you to escape!&D
+   mpat $n mpforce $n w
+  endif
+ endif
+endif
+~
+|
+S
+#160422
+Eye of the Storm~
+&zThe wind whips around this area with the strongest force, spinning so
+powerfully that it's impossible to get out of it!  The water below is
+contorted so as to produce a small whirlpool, and the clear sky can be seen
+through the clouds epicenter.&D 
+~
+0 2097152 7
+D0
+~
+~
+0 -1 160421
+D3
+~
+~
+0 -1 160423
+D10
+~
+~
+264192 -1 160431
+> leave_prog 100~
+mpsleep 1
+if inroom($n) == 160431
+ if dex($n) >= 120
+  if rand(75)
+   mpat $n mea $n &BYou break free of the storm with little trouble.&D
+  else
+   mpat $n mea $n &BYou narrowly fail to break free of the storm!&D
+   mpat $n mpforce $n w
+  endif
+ else
+  if rand(25)
+   mpat $n mea $n &BYou narrowly manage to free yourself from the storm!&D
+  else    
+   mpat $n mea $n &BTry as you might, the storm is just too powerful for you to escape!&D
+   mpat $n mpforce $n w
+  endif
+ endif
+endif
+~
+|
+S
+#160423
+Eye of the Storm~
+&zThe wind whips around this area with the strongest force, spinning so
+powerfully that it's impossible to get out of it!  The water below is
+contorted so as to produce a small whirlpool, and the clear sky can be seen
+through the clouds epicenter.&D 
+~
+0 2097152 7
+D0
+~
+~
+0 -1 160420
+D1
+~
+~
+0 -1 160422
+D10
+~
+~
+264192 -1 160430
+> leave_prog 100~
+mpsleep 1
+if inroom($n) == 160430
+ if dex($n) >= 120
+  if rand(75)
+   mpat $n mea $n &BYou break free of the storm with little trouble.&D
+  else
+   mpat $n mea $n &BYou narrowly fail to break free of the storm!&D
+   mpat $n mpforce $n e
+  endif
+ else
+  if rand(25)
+   mpat $n mea $n &BYou narrowly manage to free yourself from the storm!&D
+  else    
+   mpat $n mea $n &BTry as you might, the storm is just too powerful for you to escape!&D
+   mpat $n mpforce $n e
+  endif
+ endif
+endif
+~
+|
+S
+#160424
+Whirlpool~
+&bThe water is constantly swirling around you in a giant whirlpool.  The
+wind and the rain beat ferociously around, and the dark storm clouds above
+spin slowly around the shared center of the whirlpool.&D
+~
+0 2097152 7
+D4
+~
+storm~
+2057 160302 160425
+D10
+~
+~
+264192 -1 160420
+> death_prog 100~
+if isnpc($n)
+ mppurge $n
+endif
+~
+|
+S
+#160425
+Above the Storm~
+&WThe wind is very calm up here, quit unlike the violent gusts below. 
+Clouds swirl around just beneath you, and lightning flashes every few
+seconds across the dark cloud tops.&D 
+~
+0 2097152 7
+D10
+~
+~
+264200 -1 160420
+> death_prog 100~
+if isnpc($n)
+ mppurge $n
+endif
+~
+|
+S
+#160426
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the northeast, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160430
+D1
+~
+~
+0 -1 160427
+D2
+~
+~
+0 -1 160413
+D3
+~
+~
+0 -1 160429
+S
+#160427
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the north, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160423
+D1
+~
+~
+0 -1 160428
+D2
+~
+~
+0 -1 160414
+D3
+~
+~
+0 -1 160426
+S
+#160428
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the north, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160422
+D1
+~
+~
+0 -1 160429
+D2
+~
+~
+0 -1 160415
+D3
+~
+~
+0 -1 160427
+S
+#160429
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the northwest, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160431
+D1
+~
+~
+0 -1 160426
+D2
+~
+~
+0 -1 160416
+D3
+~
+~
+0 -1 160428
+S
+#160430
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the east, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160432
+D1
+~
+~
+0 -1 160423
+D2
+~
+~
+0 -1 160426
+D3
+~
+~
+0 -1 160431
+S
+#160431
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the west, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160433
+D1
+~
+~
+0 -1 160430
+D2
+~
+~
+0 -1 160429
+D3
+~
+~
+0 -1 160422
+S
+#160432
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the east, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160434
+D1
+~
+~
+0 -1 160420
+D2
+~
+~
+0 -1 160430
+D3
+~
+~
+0 -1 160433
+S
+#160433
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the west, indicating the center of the storm.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160437
+D1
+~
+~
+0 -1 160432
+D2
+~
+~
+0 -1 160431
+D3
+~
+~
+0 -1 160421
+S
+#160434
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the southeast, indicating the center of the storm, and a small dark
+island can be seen to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160502
+D1
+~
+~
+0 -1 160435
+D2
+~
+~
+0 -1 160432
+D3
+~
+~
+0 -1 160437
+S
+#160435
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the south, indicating the center of the storm, and a small dark island
+can be seen to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160500
+D1
+~
+~
+0 -1 160436
+D2
+~
+~
+0 -1 160420
+D3
+~
+~
+0 -1 160434
+S
+#160436
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the south, indicating the center of the storm, and a small dark island
+can be seen to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160501
+D1
+~
+~
+0 -1 160437
+D2
+~
+~
+0 -1 160421
+D3
+~
+~
+0 -1 160435
+S
+#160437
+In the Storm~
+&BMonstrous waves rise up and crash in a huge spray of water all around.
+The constant winds are violent and whipping, blasting misty water with
+almost painful force. The spinning storm clouds seem to focus on the area
+to the southwest, indicating the center of the storm, and a small dark
+island can be seen to the north.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160499
+D1
+~
+~
+0 -1 160434
+D2
+~
+~
+0 -1 160433
+D3
+~
+~
+0 -1 160436
+S
+#160438
+The Boardwalk~
+This is a fairly noisy section of the boardwalk.  The big industrial
+liners are handled at the massive pier to the west, which extends twice as
+long as any other.  Dockworkers and semitrucks all move along here, getting
+to their respective ships. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160311
+D3
+~
+~
+0 -1 160439
+S
+#160439
+A Pier~
+This is the largest pier in North City, running twice as long as any
+other.  Industrial freighters and other ships are constantly moving in and
+out, being loaded and unloaded, making this the noisiest and busiest part
+of the pier. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160440
+D1
+~
+~
+0 -1 160438
+D2
+~
+~
+0 -1 160442
+S
+#160440
+A Pier~
+This is the largest pier in North City, running twice as long as any
+other.  Industrial freighters and other ships are constantly moving in and
+out, being loaded and unloaded, making this the noisiest and busiest part
+of the pier. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160441
+D2
+~
+~
+0 -1 160439
+S
+#160441
+A Pier~
+This is the largest pier in North City, running twice as long as any
+other.  Industrial freighters and other ships are constantly moving in and
+out, being loaded and unloaded, making this the noisiest and busiest part
+of the pier. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160440
+S
+#160442
+A Pier~
+This is the largest pier in North City, running twice as long as any
+other.  Industrial freighters and other ships are constantly moving in and
+out, being loaded and unloaded, making this the noisiest and busiest part
+of the pier. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160439
+D2
+~
+~
+0 -1 160443
+S
+#160443
+A Pier~
+This is the largest pier in North City, running twice as long as any
+other.  Industrial freighters and other ships are constantly moving in and
+out, being loaded and unloaded, making this the noisiest and busiest part
+of the pier. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160442
+S
+#160444
+Floating in a void~
+~
+0 4 1
+S
+#160445
+Floating in a void~
+~
+0 4 1
+S
+#160446
+Floating in a void~
+~
+0 4 1
+S
+#160447
+Floating in a void~
+~
+0 4 1
+S
+#160448
+Floating in a void~
+~
+0 4 1
+S
+#160449
+Floating in a void~
+~
+0 4 1
+S
+#160450
+Floating in a void~
+~
+0 4 1
+S
+#160451
+Floating in a void~
+~
+0 4 1
+S
+#160452
+Floating in a void~
+~
+0 4 1
+S
+#160453
+Floating in a void~
+~
+0 4 1
+S
+#160454
+Floating in a void~
+~
+0 4 1
+S
+#160455
+Floating in a void~
+~
+0 4 1
+S
+#160456
+Floating in a void~
+~
+0 4 1
+S
+#160457
+Floating in a void~
+~
+0 4 1
+S
+#160458
+Floating in a void~
+~
+0 4 1
+S
+#160459
+Floating in a void~
+~
+0 4 1
+S
+#160460
+Floating in a void~
+~
+0 4 1
+S
+#160461
+Floating in a void~
+~
+0 4 1
+S
+#160462
+Floating in a void~
+~
+0 4 1
+S
+#160463
+Floating in a void~
+~
+0 4 1
+S
+#160464
+Floating in a void~
+~
+0 4 1
+S
+#160465
+Floating in a void~
+~
+0 4 1
+S
+#160466
+Floating in a void~
+~
+0 4 1
+S
+#160467
+Floating in a void~
+~
+0 4 1
+S
+#160468
+Floating in a void~
+~
+0 4 1
+S
+#160469
+Floating in a void~
+~
+0 4 1
+S
+#160470
+Floating in a void~
+~
+0 4 1
+S
+#160471
+Floating in a void~
+~
+0 4 1
+S
+#160472
+Floating in a void~
+~
+0 4 1
+S
+#160473
+Floating in a void~
+~
+0 4 1
+S
+#160474
+Floating in a void~
+~
+0 4 1
+S
+#160475
+Floating in a void~
+~
+0 4 1
+S
+#160476
+Floating in a void~
+~
+0 4 1
+S
+#160477
+Floating in a void~
+~
+0 4 1
+S
+#160478
+Floating in a void~
+~
+0 4 1
+S
+#160479
+Floating in a void~
+~
+0 4 1
+S
+#160480
+Floating in a void~
+~
+0 4 1
+S
+#160481
+Floating in a void~
+~
+0 4 1
+S
+#160482
+Floating in a void~
+~
+0 4 1
+S
+#160483
+Floating in a void~
+~
+0 4 1
+S
+#160484
+Floating in a void~
+~
+0 4 1
+S
+#160485
+Floating in a void~
+~
+0 4 1
+S
+#160486
+Floating in a void~
+~
+0 4 1
+S
+#160487
+Floating in a void~
+~
+0 4 1
+S
+#160488
+Floating in a void~
+~
+0 4 1
+S
+#160489
+Floating in a void~
+~
+0 4 1
+S
+#160490
+Floating in a void~
+~
+0 4 1
+S
+#160491
+Floating in a void~
+~
+0 4 1
+S
+#160492
+Floating in a void~
+~
+0 4 1
+S
+#160493
+Floating in a void~
+~
+0 4 1
+S
+#160494
+Floating in a void~
+~
+0 4 1
+S
+#160495
+Floating in a void~
+~
+0 4 1
+S
+#160496
+Floating in a void~
+~
+0 4 1
+S
+#160497
+Floating in a void~
+~
+0 4 1
+S
+#160498
+Floating in a void~
+~
+0 4 1
+S
+#160499
+A Dark Beach~
+The sand is much lighter and finer here than on the rest of the island,
+which itself is very rocky and devoid of life.  Waves crash on the shore
+here, generated by the fury of the storm visible far off to the south. To
+the south-east, a shallow rocky land bridge extends into a misty area. 
+~
+0 0 2
+D2
+~
+~
+64 -1 160437
+D3
+~
+~
+0 -1 160501
+D8
+~
+~
+64 -1 160590
+S
+#160500
+Before the Cave~
+The sand is dark and course on the beach here, and the island is very
+rocky with few signs of life.  A cave opens into a large hill to the north,
+and is oddly well lit.  The beach extends to the east and west, and the
+violent ocean to the south causes giant waves to crash onto the beach,
+likely caused by the storm looming overhead. 
+~
+0 0 2
+D0
+~
+~
+0 -1 160503
+D1
+~
+~
+0 -1 160501
+D2
+~
+~
+64 -1 160435
+D3
+~
+~
+0 -1 160502
+S
+#160501
+A Dark Beach~
+The sand is dark and course on the beach here, and the island is very
+rocky with few signs of life. The rocky hills to the north rise and extend
+as far as the eye can see, and the beach extends to the west.  The southern
+ocean is violent and wild, huge waves crashing at the rocky shore,
+indicating a storm further along.  
+~
+0 0 2
+D1
+~
+~
+0 -1 160499
+D2
+~
+~
+64 -1 160436
+D3
+~
+~
+0 -1 160500
+S
+#160502
+A Dark Beach~
+The sand is dark and course on the beach here, and the surrounding
+island is very rocky with few signs of life.  The rocky hills to the north
+rise and extend as far as the eye can see, and the beach extends to the
+east. The southern ocean is violent and wild, huge waves crashing at the
+rocky shore, indicating a storm further along. 
+~
+0 0 2
+D1
+~
+~
+0 -1 160500
+D2
+~
+~
+64 -1 160434
+S
+#160503
+Pirate Caves~
+The entirety of the cave is a dull grey, and very smooth.  The floor has
+been evened out by someone, making it quite easy to walk on.  Other than
+that, the whole thing is very plain and nothing stands out, save for a sign
+attached to one of the walls, and a strange rock jutting out in the middle
+of the room. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160504
+D2
+~
+~
+0 -1 160500
+D5
+~
+trap door~
+2063 160302 160580
+S
+#160504
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160505
+D3
+~
+~
+0 -1 160503
+S
+#160505
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160508
+D1
+~
+~
+0 -1 160506
+D2
+~
+~
+0 -1 160504
+S
+#160506
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D2
+~
+~
+0 -1 160507
+D3
+~
+~
+0 -1 160505
+S
+#160507
+Dead End~
+The walls and ceiling of the cave are a dull grey, and very smooth, save
+for the thousands of holes drilled in a ring around the middle of the room,
+which ends abruptly at a sheer wall.  The room is kept empty by someone -
+or something - so as to make for easy traversing through the maze. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160506
+> entry_prog 100~
+mea $n Spikes shoot out of the walls as soon as you enter!
+mea $n   
+if dex($n) >= 185
+ if rand(90)
+  mea $n Miraculously, you dodge every one of them with incredible speed, not
+  mea $n setting the thing off again in the process!
+  mptrans $n 160599
+  mpat 160599 mpforce $n take 'chaos shard 2'
+  mpat 160599 mptrans $n 160507
+ else
+  mea $n Miraculously, you begin dodging the spikes one after another, but you
+  mea $n accidentally set the trap off again, and are instantly overwhelmed!
+  mpslay $n
+ endif
+else
+ mea $n You try to dodge the spikes, but don't get far before you are
+ mea $n overwhelmed and killed.
+ mpslay $n
+endif
+~
+|
+S
+#160508
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160509
+D2
+~
+~
+0 -1 160505
+S
+#160509
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160510
+D2
+~
+~
+0 -1 160508
+D3
+~
+~
+0 -1 160517
+S
+#160510
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160513
+D2
+~
+~
+0 -1 160509
+D3
+~
+~
+0 -1 160511
+S
+#160511
+Spiral Staircase~
+The walls here, unlike elsewhere in the maze, seem to have been built
+extra within the cave system, and wooden supports are bolted to the rough
+rocky wall.  A small steel staircase leads downward into a dark room. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160510
+D5
+~
+~
+0 -1 160512
+S
+#160512
+Dead End~
+This room is just like the one above - artificial, with wooden supports
+against the walls.  The floor here is a metal grate, and beyond it is
+darkness.  A steel staircase leads upwards through a very clear-cut hole in
+the ceiling. 
+~
+0 0 1
+D4
+~
+~
+0 -1 160511
+> entry_prog 100~
+mea $n &YAs soon as your feet touch the ground, the hole above snaps shut, and a
+if pl($n) >= 40000000000000
+ if rand(90)
+  mea $n &Yhuge blast of energy explodes from the grated floor! You meet the
+  mea $n &Yincredible force of the energy and begin pushing it back with your own,
+  mea $n &Yeventually overcoming it.&D
+  mptrans $n 160599
+  mpat 160599 mpforce $n take 'chaos shard 5'
+  mpat 160599 mptrans $n 160512
+ else
+  mea $n &Yhuge blast of energy explodes from the grated floor! You meet the 
+  mea $n &Yincredible force of the energy and begin pushing it back with your own,
+  mea $n &Yhowever you slip and the blast tears through you, killing you almost
+  mea $n &Yinstantly.&D
+  mpslay $n
+ endif
+else
+ mea $n &Yhuge blast of energy explodes from the grated floor, tearing through 
+ mea $n &Yyou with incredible force, and killing you instantly.&D
+ mpslay $n
+endif
+~
+|
+S
+#160513
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160514
+D3
+~
+~
+0 -1 160510
+S
+#160514
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160515
+D3
+~
+~
+0 -1 160513
+S
+#160515
+Dead End~
+The walls and ceiling of the cave are a dull grey, and very smooth. 
+Jutting out of the wall on either side is a small black barrel, and the
+room ends abruptly at a bare wall.  The room is kept empty by someone - or
+something - so as to make for easy traversing through the maze.  
+~
+0 0 1
+D2
+~
+~
+0 -1 160514
+> entry_prog 100~
+mea $n &RFire shoots out of the walls as you enter the room, creating a blazing
+if con ($n) >= 185
+ if rand(90)
+  mea $n &RInferno! Despite the unbelievably intense heat and pain searing through
+  mea $n &Ryour body, you manage to hold together until the fire finally subsides.&D
+  mptrans $n 160599
+  mpat 160599 mpforce $n take 'chaos shard 3'
+  mpat 160599 mptrans $n 160515
+ else
+  mea $n &RInferno! You manage to hold together against the impossibly strong heat 
+  mea $n &Rfor a moment, but collapse onto the floor in pain and are quickly 
+  mea $n &Rengulfed in the flames.&D
+  mpslay $n
+ endif
+else
+ mea $n &RInferno! You are quickly engulfed by the fire, every inch of your body
+ mea $n &Rburning and tearing at once until you lose consciousness in pain, 
+ mea $n &Reverything finally going black...&D
+ mpslay $n
+endif
+~
+|
+S
+#160516
+Pirate Maze~
+~
+0 4 1
+S
+#160517
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D1
+~
+~
+0 -1 160509
+D2
+~
+~
+0 -1 160518
+D7
+~
+~
+0 -1 160520
+S
+#160518
+Pirate Maze~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  
+~
+0 0 1
+D0
+~
+~
+0 -1 160517
+D8
+~
+~
+0 -1 160519
+S
+#160519
+Dead End~
+The walls and ceiling of the cave are a dull grey, and very smooth, like
+the entrance.  The room is kept empty by someone - or something - so as to
+make for easy traversing through the maze.  The path ends here abruptly at
+a bare wall. 
+~
+0 0 1
+D7
+~
+~
+0 -1 160518
+> entry_prog 100~
+mea $n &wYou hear a bizzarre clicking noise as you enter, but nothing happens...
+~
+> leave_prog 100~
+if int($n) >= 185
+ if rand(90)
+  mea $n An elaborate array of axes, spikes, laser beams, and dozens of other
+  mea $n traps all fire off at once, with you caught in the middle of it all!
+  mea $n Your mind races for a way out, and you miraculously find it, reflecting
+  mea $n one of the lasers with an axeblade, and leaving the rest of the system
+  mea $n in shambles.
+  mptrans $n 160599
+  mpat 160599 mpforce $n take 'chaos shard 4'
+  mpat 160599 mptrans $n 160519
+ else
+  mea $n An elaborate array of axes, spikes, laser beams, and dozens of other
+  mea $n traps all fire off at once, with you caught in the middle of it all!
+  mea $n Your mind races for a way out, and you miraculously find it, however
+  mea $n few shreds of a second too late, killed before you could react.
+  mpslay $n
+ endif
+else
+ mea $n An elaborate array of axes, spikes, laser beams, and dozens of other
+ mea $n traps all fire off at once, with you caught in the middle of it all!
+ mea $n Completely overwhelmed by the complexity of the situation, you are
+ mea $n maimed twelve different ways before everything goes black...
+ mpslay $n
+endif
+~
+|
+S
+#160520
+Spiral Staircase~
+The walls here, unlike elsewhere in the maze, seem to have been built
+extra within the cave system, and wooden supports are bolted to the rough
+rocky wall.  A small steel staircase leads upward into a dark room. 
+~
+0 0 1
+D4
+~
+~
+0 -1 160521
+D8
+~
+~
+0 -1 160517
+S
+#160521
+Dead End~
+This room is just like the one above - artificial, with wooden supports
+against the walls.  In between supports is a thick, dark cut into the wall,
+which also seem to appear on the ceiling. A steel staircase leads back down
+into the room before. 
+~
+0 0 1
+D5
+~
+~
+0 -1 160520
+> entry_prog 100~
+if lck($n) >= 32
+ if rand(90)
+  mea $n &zDozens of saws, axes, and every manner of bladed object slice through 
+  mea $n &zthe air all around you, and by some amazing feat of luck, they all
+  mea $n &zcompletely miss you.&D
+  mptrans $n 160599
+  mpat 160599 mpforce $n take 'chaos shard 6'
+  mpat 160599 mptrans $n 160521
+ else
+  mea $n &zDozens of saws, axes, and every manner of bladed object slice through 
+  mea $n &zthe air all around you, missing you by some miraculous feat of luck... 
+  mea $n &zexcept for the last one, which cuts your head clean off. Damn.&D
+  mpslay $n
+ endif
+else
+ mea $n &zDozens of saws, axes, and every manner of bladed object slice through
+ mea $n &zthe air all around you, cutting every inch of your body and killing you
+ mea $n &zalmost instantly in the most painful death you could likely imagine.&D
+ mpslay $n
+endif
+~
+|
+S
+#160522
+Floating in a void~
+~
+0 4 1
+S
+#160523
+Floating in a void~
+~
+0 4 1
+S
+#160524
+Floating in a void~
+~
+0 4 1
+S
+#160525
+Secret Passage~
+From the looks of it, the only way into this dark room was coming in
+from the entrance to the cave.  Go figure, huh?  A small spiral staircase
+leads up to a bright, loud hall, and nothing else can be immediately seen
+within the bare stone walls of this room. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160503
+D4
+~
+~
+0 -1 160526
+S
+#160526
+The Pirate Stronghold~
+This huge hallway is the main hub of pirate activity within the
+stronghold.  Figures of all kinds stand around the massive grandiose of the
+hall conversing at the several tables scattered about the floor.  The
+hallway continues to the north, and two smaller ones extend to the east and
+west. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160535
+D1
+~
+~
+0 -1 160529
+D3
+~
+~
+0 -1 160527
+D5
+~
+~
+16777216 -1 160525
+S
+#160527
+A Hallway~
+This hallway branches off from the main hall to the east.  Leading to
+several shops and other pirate utilities, many people can be found making
+their way around here.  The hall is made entirely of wood, with several
+paintings of famous pirates and what-not hanging off of it. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160532
+D1
+~
+~
+0 -1 160526
+D3
+~
+~
+0 -1 160528
+S
+#160528
+A Hallway~
+This hallway branches off from the main hall to the east.  Leading to
+several shops and other pirate utilities, many people can be found making
+their way around here.  The hall is made entirely of wood, with several
+paintings of famous pirates and what-not hanging off of it. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160531
+D1
+~
+~
+0 -1 160527
+S
+#160529
+A Hallway~
+This hallway branches off from the main hall to the west.  Leading to
+several shops and other pirate utilities, many people can be found making
+their way around here.  The hall is made entirely of wood, with several
+paintings of famous pirates and what-not hanging off of it.  
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160533
+D1
+~
+~
+0 -1 160530
+D3
+~
+~
+0 -1 160526
+S
+#160530
+A Hallway~
+This hallway branches off from the main hall to the west.  Leading to
+several shops and other pirate utilities, many people can be found making
+their way around here.  The hall is made entirely of wood, with several
+paintings of famous pirates and what-not hanging off of it.  
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160534
+D3
+~
+~
+0 -1 160529
+S
+#160531
+Scurvy Bert's Cutlass Emporium~
+All sorts of hooks and rusty swords are nailed to the walls of this
+room.  The walls themselves are dark and wooden.  A large counter sits in
+the middle of the room, where a few more impressive weapons are cased. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160528
+S
+#160532
+Peg-Leg Pete's Pirate Plaza~
+Stands and shelves crowd this small shop, filled with a number of
+different things.  This is where most of the stronghold's pirates get their
+clothing and equipment (as well as their odd sense of style).  The walls
+are a plain light wood, and several lights hang from the ceiling over the
+counter in the corner of the room. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160527
+S
+#160533
+An Empty Room~
+This small, simple wooden room is almost completely bare.  A hole in the
+ground leads further into the stronghold, and a ladder allows access there.
+~
+0 0 1
+D2
+~
+~
+0 -1 160529
+D5
+~
+~
+0 -1 160562
+S
+#160534
+Honest John's Bar and Pawn Shop~
+This smokey establishment is one of the most vile one could imagine. 
+Wooden tables and stools cover the main floor, many of them tipped over to
+make room for a bar-fight.  The counter circles a huge shelf of various
+items and alot of beer.  The walls are concrete, and many paintings of
+pirates, treasure and ships are hung on them. Finally, the lighting is dim
+and it smells bad.  It's no wonder there are so many pirates here. 
+~
+0 0 1
+D2
+~
+~
+16777216 -1 160530
+S
+#160535
+Grand Hall~
+This huge hallway is the main hub of pirate activity within the
+stronghold.  Figures of all kinds stand around the massive grandiose of the
+hall conversing at the several tables scattered about the floor.  Further
+north, the hall ceiling opens up to the sky and branches off to the docks,
+and Blue Beard's audience chamber can be seen beyond that. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160536
+D2
+~
+~
+0 -1 160526
+S
+#160536
+Grand Hall~
+This huge hallway is the main hub of pirate activity within the
+stronghold.  Figures of all kinds stand around the massive grandiose of the
+hall conversing at the several tables scattered about the floor.  The
+ceiling here is open to the sky, and a narrow ramp leads to the docks to
+the west.  Further down, the hall ends at Blue Beard's audience chamber. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160537
+D2
+~
+~
+0 -1 160535
+D3
+~
+~
+16777216 -1 160538
+S
+#160537
+Blue-Beard's Audience Room~
+This room is where Blue Beard is confined for the day.  Dubbed the 'King
+of Pirates', Blue Beard attained his place here more out of the nessesity
+of the stronghold than out of his own will.  Though he'd rather be out
+pillaging or leading his crew, a complex organization like this doesn't run
+without a leader, and being the soul living founder, he has filled that
+place. The room is furnished with a number of chairs, all arced around that
+of Blue Beard, and several small tables and a number of paintings also
+furnish the room. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160536
+S
+#160538
+A Narrow Ramp~
+This rickety wooden ramp leads down to the docks of the Pirate
+Stronghold.  A number of ships can be seen from here, most of them modern,
+but a few old-style ships can be seen.  The main hallway is located to the
+east, and the ramp continues north. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160539
+D1
+~
+~
+0 -1 160536
+S
+#160539
+A Narrow Ramp~
+To the east, the stronghold storage is located, further along which are
+the sleeping chambers.  The dock itself extends northward through a sealed
+gate.  To the west, a huge old-style ship is preparing to sail, and the
+immediate area is very busy with crew-members preparing the ship and
+themselves. 
+~
+0 0 1
+D1
+~
+~
+16777216 -1 160551
+D2
+~
+~
+0 -1 160538
+D3
+~
+~
+0 -1 160549
+S
+#160540
+Pirate Ship - Deck~
+~
+0 0 1
+D0
+~
+~
+0 -1 160441
+D1
+~
+~
+0 -1 160539
+D2
+~
+~
+0 -1 160442
+S
+#160541
+Floating in a void~
+~
+0 4 1
+S
+#160542
+Floating in a void~
+~
+0 4 1
+S
+#160543
+Pirate Ship - Stern~
+From here, the ancient charm of this mighty vessel is shaken.  At the
+helm, a small electronic control panel is located, with several small
+buttons and guages.  Out at the back end of the ship, looking down, two
+large engine tubes jut out of the wooden face; no doubt retrofit to make
+this ship still capable compared to it's modern replacements. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160549
+S
+#160544
+Pirate Ship - Lower Deck~
+Stairs lead up to the deck of the ship, and this doors lead from here to
+other rooms in the ship.  A small table sites at one corner of the room,
+with a flowered pot sitting on top of it, and a number of paintings serve
+to make the area less dull. 
+~
+0 0 1
+D0
+~
+~
+16777216 -1 160548
+D1
+~
+~
+0 -1 160547
+D2
+~
+~
+0 -1 160545
+D3
+~
+~
+0 -1 160546
+D4
+~
+~
+0 -1 160549
+S
+#160545
+Pirate Ship - Storage~
+This is where the pirates store their on-voyage treasure and supplies. 
+Right now, only a few boxes leave this room rather empty, and no one seems
+to loading anything. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160544
+S
+#160546
+Pirate Ship - Crew Quarters~
+Three stacks of three bunks make up the crew quarters here.  A small
+chest is located in the middle of the mess, for clothes and personal items,
+but otherwise, the room is bare. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160544
+S
+#160547
+Pirate Ship - Crew Quarters~
+Three stacks of three bunks make up the crew quarters here.  A small
+chest is located in the middle of the mess, for clothes and personal items,
+but otherwise, the room is bare. 
+~
+0 0 1
+D3
+~
+~
+0 -1 160544
+S
+#160548
+Pirate Ship - Captain's Quarters~
+Portholes open to the outside ocean on either wall of the room, which is
+the most well furnished of the ship.  Amidst the tables and paintings and
+chests is a simple wooden desk, with a large map layed out on top of it,
+and several arcs and lines penciled on it. A grand looking chair sits in
+front of the desc, likely where the captain sits. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160544
+S
+#160549
+Pirate Ship - Deck~
+One of the few such ships around, this is truly a beuty.  Put together
+with nothing but wood, metal, rope and a few thousand worker-hours, it's
+amazing such detail was put into the mighty vessel, and it's even more
+amazing the thing still floats from how old it must be!  A staircase leads
+down further into the ship, and many people are scurring up and down it
+trying to ready the ship. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160550
+D1
+~
+~
+16777216 -1 160539
+D2
+~
+~
+0 -1 160543
+D5
+~
+~
+0 -1 160544
+S
+#160550
+Pirate Ship - Bow~
+This is the front of the ship, and it extends all the way out to a sharp
+point, which extends a few more feet.  From here, the massive ship can be
+seen at it's full splendor.  The wood is all hand placed and hammered into
+place, making for painful detail for such an ancient ship. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160549
+S
+#160551
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160552
+D2
+~
+~
+0 -1 160554
+D3
+~
+~
+16777216 -1 160539
+S
+#160552
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160553
+D3
+~
+~
+0 -1 160551
+S
+#160553
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160556
+D3
+~
+~
+0 -1 160552
+S
+#160554
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160551
+D1
+~
+~
+0 -1 160555
+D2
+~
+~
+0 -1 160557
+S
+#160555
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160556
+D3
+~
+~
+0 -1 160554
+S
+#160556
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160553
+D2
+~
+~
+0 -1 160559
+D3
+~
+~
+0 -1 160555
+S
+#160557
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160554
+D1
+~
+~
+0 -1 160558
+S
+#160558
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160559
+D3
+~
+~
+0 -1 160557
+S
+#160559
+Lower Storage~
+The storage area here is massive, the walls ceiling and floor made of
+concrete.  Dozens of boxes and crates are stacked up high here, most of
+which unmarked, and workers are constantly searching things or moving them
+around. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160556
+D1
+~
+~
+0 -1 160560
+D3
+~
+~
+0 -1 160558
+S
+#160560
+An Open Hallway~
+This hallway, like the others, is made entirely of wood.  It connects
+the sleeping area to the storage, and ultimately the docks, the heart of
+pirate living.  Many people scurry through this area, so it is kept clear
+for smooth travel. 
+~
+0 0 1
+D1
+~
+~
+0 -1 160561
+D3
+~
+~
+0 -1 160559
+S
+#160561
+An Open Hallway~
+This hallway leads to various parts of the stronghold.  The whole thing
+is made of wood, and a small table sits in it's southwest corner.  Three
+doors lead to several sleeping areas for the strongholds men, and west the
+hallway continues into storage. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160563
+D1
+~
+~
+0 -1 160565
+D2
+~
+~
+0 -1 160562
+D3
+~
+~
+0 -1 160560
+D6
+~
+~
+0 -1 160564
+S
+#160562
+An Empty Room~
+This small, simple wooden room is almost completely bare.  A hole in the
+ceiling leads further into the stronghold, and a ladder allows access
+there. 
+~
+0 0 1
+D0
+~
+~
+0 -1 160561
+D4
+~
+~
+16777216 -1 160533
+S
+#160563
+Sleeping Quarters~
+This huge room is filled with cots, hammocks, and bunks all cluttered
+amidst a mess of clothes and other personal belongings.  It smells of beer
+and sweat here, and since nothing else could, this is where the pirates
+live. 
+~
+0 0 1
+D2
+~
+~
+0 -1 160561
+S
+#160564
+Sleeping Quarters~
+This huge room is filled with cots, hammocks, and bunks all cluttered
+amidst a mess of clothes and other personal belongings.  It smells of beer
+and sweat here, and since nothing else could, this is where the pirates
+live.  
+~
+0 0 1
+D9
+~
+~
+0 -1 160561
+S
+#160565
+Sleeping Quarters~
+This huge room is filled with cots, hammocks, and bunks all cluttered
+amidst a mess of clothes and other personal belongings.  It smells of beer
+and sweat here, and since nothing else could, this is where the pirates
+live.  
+~
+0 0 1
+D3
+~
+~
+0 -1 160561
+S
+#160566
+Floating in a void~
+~
+0 4 1
+S
+#160567
+Floating in a void~
+~
+0 4 1
+S
+#160568
+Floating in a void~
+~
+0 4 1
+S
+#160569
+Floating in a void~
+~
+0 4 1
+S
+#160570
+A Small Island~
+The fog stops dead here, revealing a lush green island scene.  Trees and
+shrubs and all sorts of other plants cover the land beyond this small,
+beutiful beach.  Quite out of place amidst this greenery is a thin trail of
+smoke rising from the southeast.  
+~
+0 0 2
+D1
+~
+~
+0 -1 160571
+D7
+~
+~
+64 -1 160594
+S
+#160571
+Amidst Some Wreckage~
+The beutiful greenery of the island is further broken here by dozens of
+small metal shards and burnt plants dotting the sandy ground.  Further
+along, skid marks seem to be headed to the east, and a thin trail of smoke
+rises from that direction. 
+~
+0 0 2
+D3
+~
+~
+0 -1 160570
+D8
+~
+~
+0 -1 160572
+S
+#160572
+Before a Crater~
+The island scene is now totally broken here, as all of the trees have
+been blown away or knocked over, and everything seems to have caught fire
+and burned up.  Large scraps of metal are scattered around the area, and to
+the east, an enormous crater has developed from whatever it was that hit
+the island. 
+~
+0 0 2
+D1
+~
+~
+0 -1 160573
+D7
+~
+~
+0 -1 160571
+S
+#160573
+Burning Crater~
+The ground is totally scarred here, at the center of a huge crater. 
+Nothing but dirt exists here; even the scraps of metal before have been
+obliterated in the impact.  Several smaller craters have formed on the side
+of this massive one, oddly, and seem to have come from different angles. 
+~
+0 512 2
+D3
+~
+~
+0 -1 160572
+S
+#160574
+Floating in a void~
+~
+0 4 1
+S
+#160575
+Floating in a void~
+~
+0 4 1
+S
+#160576
+Floating in a void~
+~
+0 4 1
+S
+#160577
+Floating in a void~
+~
+0 4 1
+S
+#160578
+Floating in a void~
+~
+0 4 1
+S
+#160579
+Floating in a void~
+~
+0 4 1
+S
+#160580
+A Hole~
+The walls around are smooth and round, leaving no place to hide from the
+massive boulder coming down on you!  
+~
+0 2097152&16 13
+D5
+~
+~
+0 -1 160581
+> act_prog 'sits down.'~
+mpforce $n stand
+mea $n &RYou can't sit down at a time like this!&D
+~
+> act_prog 'collapses into a deep sleep.'~
+mpforce $n stand
+mea $n &RYou can't sleep at a time like this!&D
+~
+> act_prog 'sprawls out haphazardly.'~
+mpforce $n stand
+mea $n &RYou can't rest at a time like this!&D
+~
+> entry_prog 100~
+mpsleep 8
+if inroom($n) == 160580
+ mea $n &wThe weight of the boulder forces you down!&D
+ mpforce $n d
+endif
+~
+|
+S
+#160581
+A Hole~
+The walls around are smooth and round, leaving no place to hide from the
+massive boulder coming down on you!  
+~
+0 2097152&16 13
+D5
+~
+~
+0 -1 160582
+> act_prog 'sits down.'~
+mpforce $n stand
+mea $n &RYou can't sit down at a time like this!&D
+~
+> act_prog 'collapses into a deep sleep.'~
+mpforce $n stand
+mea $n &RYou can't sleep at a time like this!&D
+~
+> act_prog 'sprawls out haphazardly.'~
+mpforce $n stand
+mea $n &RYou can't rest at a time like this!&D
+~
+> entry_prog 100~
+mpsleep 8
+mea $n The weight of the boulder forces you down!&D
+mpforce $n d
+~
+|
+S
+#160582
+A Hole~
+The walls around are smooth and round, leaving no place to hide from the
+massive boulder coming down on you!  
+~
+0 2097152&16 13
+D5
+~
+~
+0 -1 160583
+> act_prog 'sits down.'~
+mpforce $n stand
+mea $n &RYou can't sit down at a time like this!&D
+~
+> act_prog 'collapses into a deep sleep.'~
+mpforce $n stand
+mea $n &RYou can't sleep at a time like this!&D
+~
+> act_prog 'sprawls out haphazardly.'~
+mpforce $n stand
+mea $n &RYou can't rest at a time like this!&D
+~
+> entry_prog 100~
+mpsleep 8
+if inroom($n) == 160582
+ mea $n &wThe weight of the boulder forces you down!&D
+ mpforce $n d
+endif
+~
+|
+S
+#160583
+A Hole~
+The walls around are smooth and round, leaving no place to hide from the
+massive boulder coming down on you!  
+~
+0 2097152&16 13
+D5
+~
+~
+0 -1 160584
+> act_prog 'sits down.'~
+mpforce $n stand
+mea $n &RYou can't sit down at a time like this!&D
+~
+> act_prog 'collapses into a deep sleep.'~
+mpforce $n stand
+mea $n &RYou can't sleep at a time like this!&D
+~
+> act_prog 'sprawls out haphazardly.'~
+mpforce $n stand
+mea $n &RYou can't rest at a time like this!&D
+~
+> entry_prog 100~
+mpsleep 8
+if inroom($n) == 160583
+ mea $n &wThe weight of the boulder forces you down!&D
+ mpforce $n d
+endif
+~
+|
+S
+#160584
+Bottom of the Hole~
+The walls around are smooth and round, leaving no place to hide from the
+massive boulder coming down on you, and this being the bottom of the hole,
+the only thing left to do is die!  
+~
+0 4 13
+> entry_prog 100~
+mpsleep 8
+if str($n) >= 185
+ if rand(90)
+  mea $n &zThe enourmous weight of the boulder bears down on you, however you
+  mea $n &zmanage to hold it up with your incredible strength! In one powerful
+  mea $n &zcharge, you shatter the boulder, shards of rock raining down.&D
+  mptransfer $n 160585
+  mpat 160585 mpforce $n take shard
+ else
+  mea $n &zThe enourmous weight of the boulder bears down on you, however you
+  mea $n &zmanage to hold it up with your incredible strength! But unfortunately,
+  mea $n &zthat's ALL you manage to do, and before long your arms give way and you
+  mea $n &zare crushed under the incredible weight bearing down on you.&D
+  mpslay $n
+ endif
+else
+ mea $n &zThe massive boulder bears down on you, and you make a feeble attempt to
+ mea $n &zhold it up. Unable to lift such a massive weight, you are slowly
+ mea $n &zbrought to your knees and crushed to death.&D
+ mpslay $n
+endif
+~
+|
+S
+#160585
+Bottom of the Hole~
+WHEW!  Somehow, you managed to escape the crushing rock, it's broken
+remains now lying scattered on the floor.  With it gone, the hole is now
+open back to the entrance of the cave. 
+~
+0 0 1
+D4
+~
+~
+0 -1 160503
+> time_prog 3 25~
+if ovnumroom(160571) == 0
+ mpoload 160571
+endif
+~
+|
+S
+#160586
+Floating in a void~
+~
+0 4 1
+S
+#160587
+Floating in a void~
+~
+0 4 1
+S
+#160588
+Floating in a void~
+~
+0 4 1
+S
+#160589
+Floating in a void~
+~
+0 4 1
+S
+#160590
+A Narrow Strait~
+A few dark rocks jut up from the ocean, making a small bridge.  Huge
+waves crash into the rocks and splatter water everywhere, making the air
+very damp.  The natural bridge slowly sinks as it extends along, eventually
+into a bizzarre misty void. 
+~
+0 0 7
+D7
+~
+~
+0 -1 160499
+D8
+~
+~
+0 -1 160591
+S
+#160591
+A Watery Pass~
+The land bridge is totally submerged now under the calmer but still
+violent ocean, though one can still stabalize along the shallow rocks with
+effort.  Farther along, a thin sandy strait can be made out, and eventually
+followed into a deep foggy mist, which seems to begin here. 
+~
+0 0 7
+D7
+~
+~
+0 -1 160590
+D8
+~
+~
+0 -1 160592
+S
+#160592
+A Narrow Strait~
+A moderate fog has set in here, severely cutting visibility and making
+this thin sandy strait hard to make out.  The now calm ocean waves are
+stopped dead by an underwater rift, keeping the sand here mostly in tact,
+though it is still bizzarre for such a thing to exist for very long. 
+Further along, an impenetrable fog seems to have set in. 
+~
+0 0 7
+D7
+~
+~
+0 -1 160591
+D8
+~
+~
+0 -1 160593
+S
+#160593
+Lost in the Fog!~
+&WThe fog here is so thick, it's impossible to see even one's own feet! 
+The best anyone could do to navigate this would be to wander along and
+hopefully find land.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160593
+D1
+~
+~
+0 -1 160593
+D2
+~
+~
+0 -1 160593
+D3
+~
+~
+0 -1 160593
+D6
+~
+~
+0 -1 160594
+D7
+~
+~
+0 -1 160592
+D8
+~
+~
+0 -1 160593
+D9
+~
+~
+0 -1 160593
+S
+#160594
+Lost in the Fog!~
+&WThe fog here is so thick, it's impossible to see even one's own feet! 
+The best anyone could do to navigate this would be to wander along and
+hopefully find land.&D 
+~
+0 0 7
+D0
+~
+~
+0 -1 160596
+D1
+~
+~
+0 -1 160593
+D2
+~
+~
+0 -1 160593
+D3
+~
+~
+0 -1 160593
+D6
+~
+~
+0 -1 160593
+D7
+~
+~
+0 -1 160593
+D8
+~
+~
+0 -1 160570
+D9
+~
+~
+0 -1 160593
+S
+#160595
+Floating in a void~
+~
+0 4 1
+> rand_prog 100~
+mpforce 'utility mob' mpat 160368 push 1k
+mpforce 'utility mob' mpat 160368 push 10k
+mpforce 'utility mob' mpat 160368 push 100k
+mpforce 'utility mob' mpat 160378 push lever
+mpforce 'utility mob' mpat 160380 push handle
+~
+|
+S
+#160596
+In A Misty Void~
+&WThe ground is oddly solid here, and the fog seems to have cleared
+around an odd, solid white box.  Everything else around here is empty and
+featureless; even the sky is hidden under the dense, white mass of clouds. 
+~
+0 4 1
+D2
+~
+~
+0 -1 160594
+> act_prog drops~
+if ovnumroom(160570) >= 1
+if ovnumroom(160571) >= 1
+if ovnumroom(160572) >= 1
+if ovnumroom(160573) >= 1
+if ovnumroom(160574) >= 1
+if ovnumroom(160575) >= 1
+if ovnumroom(160576) >= 1
+if ovnumroom(160577) >= 1
+if ovnumroom(160578) >= 1
+if ovnumroom(160579) >= 1
+if isevil($n)
+mppurge 'chaos shard 1'
+mppurge 'chaos shard 2'
+mppurge 'chaos shard 3'
+mppurge 'chaos shard 4'
+mppurge 'chaos shard 5'
+mppurge 'chaos shard 6'
+mppurge 'chaos shard 7'
+mppurge 'chaos shard 8'
+mppurge 'chaos shard 9'
+mppurge 'chaos shard 10'
+mpe &PThe shards all come together at once, and a brilliant light consumes&D
+mea $n &Pthem, growing to consume you as well!&D
+mer $n &Pthem, growing to consume $n as well!&D
+mpsleep 8
+mpoload 160550 $n
+mpoload 160551 $n
+mpoload 160552 $n
+mpoload 160553 $n
+mpoload 160554 $n
+mpoload 160554 $n
+mpoload 160555 $n
+mpoload 160556 $n
+mpoload 160557 $n
+mpoload 160558 $n
+mpoload 160559 $n
+mpoload 160559 $n
+mpoload 160560 $n
+mpoload 160561 $n
+mpoload 160561 $n
+mpoload 160562 $n
+mpoload 160563 $n
+mpoload 160564 $n
+mpoload 160564 $n
+mpoload 160565 $n
+mpoload 160566 $n
+mea $n &PWhen the light subsides, you are surrounded by a chaotic torrent of&D
+mea $n &Pblack and purple energy.&D
+mer $n &PWhen the light subsides, the shards are gone, and $n is covered in a&D
+mer $n &Pchaotic torrent of black and purple energy.&D
+mpforce $n inv
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+~
+|
+S
+#160597
+Floating in a void~
+~
+0 4 1
+S
+#160598
+Floating in a void~
+~
+0 4 1
+S
+#160599
+Quest Object Spawning Room~
+This is the room where the Chaos Shards spawn randomly every 24 hours. 
+Otherwise you guys would get WAY too many of them :| Yeah.  If you're
+reading this, you are either an imm or in REALLY big trouble!  
+~
+0 2097156 1
+S
+#160600
+Floating in a void~
+~
+0 4 1
+> speech_prog test~
+mposet aura affect strength 1
+mposet aura value4 1500
+mposet aura value5 1500
+~
+|
+S
+#0
+
+
+#RESETS
+O 0 160310 1 160503
+O 0 160311 1 160503
+M 0 160599 1 160503
+G 1 160302 1
+M 0 160590 1 160531
+G 1 160514 1
+G 1 160515 1
+G 1 160516 1
+G 1 160517 1
+G 1 160518 1
+G 1 160519 1
+G 1 160520 1
+M 0 160591 1 160532
+G 1 160501 1
+G 1 160502 1
+G 1 160503 1
+G 1 160504 1
+G 1 160505 1
+G 1 160506 1
+G 1 160507 1
+G 1 160508 1
+G 1 160509 1
+G 1 160510 1
+G 1 160511 1
+G 1 160512 1
+G 1 160513 1
+M 0 160592 1 160370
+G 1 160400 1
+G 1 160401 1
+G 1 160402 1
+G 1 160403 1
+M 0 160593 1 160382
+G 1 160420 1
+G 1 160424 1
+G 1 160421 1
+G 1 160422 1
+G 1 160423 1
+M 0 160599 1 160380
+O 0 160309 1 160380
+M 0 160599 1 160378
+O 0 160308 1 160378
+M 0 160599 1 160376
+O 0 160307 1 160376
+M 0 160599 1 160383
+O 0 160305 1 160383
+O 0 160306 1 160383
+O 0 160304 1 160405
+O 0 160304 1 160403
+O 0 160304 1 160400
+M 0 160594 1 160375
+O 0 160312 1 160368
+O 0 160313 1 160368
+O 0 160314 1 160368
+M 0 160598 1 160368
+M 0 160550 1 160573
+M 0 160343 1 160408
+M 0 160342 1 160408
+M 0 160340 1 160401
+M 0 160340 1 160402
+M 0 160340 1 160405
+M 0 160341 1 160400
+M 0 160341 1 160403
+M 0 160341 1 160404
+M 0 160345 1 160402
+M 0 160530 1 160420
+M 0 160505 1 160546
+M 0 160505 1 160547
+M 0 160506 1 160546
+M 0 160506 1 160547
+M 0 160505 1 160540
+M 0 160506 1 160544
+M 0 160507 1 160548
+M 0 160508 1 160550
+M 0 160500 1 160528
+M 0 160500 1 160530
+M 0 160503 1 160526
+M 0 160502 1 160536
+M 0 160501 1 160537
+M 0 160500 1 160563
+M 0 160503 1 160563
+M 0 160500 1 160564
+M 0 160501 1 160564
+M 0 160502 1 160565
+M 0 160503 1 160565
+M 0 160501 1 160563
+M 0 160502 1 160565
+M 0 160504 1 160551
+M 0 160504 1 160553
+M 0 160504 1 160555
+M 0 160503 1 160557
+M 0 160500 1 160559
+M 0 160306 1 160306
+M 0 160311 1 160307
+M 0 160313 1 160308
+M 0 160302 1 160309
+M 0 160313 1 160310
+M 0 160305 1 160318
+M 0 160310 1 160319
+M 0 160309 1 160320
+M 0 160313 1 160321
+M 0 160302 1 160322
+M 0 160302 1 160323
+M 0 160306 1 160324
+M 0 160302 1 160325
+M 0 160313 1 160326
+M 0 160319 1 160306
+M 0 160302 1 160307
+M 0 160302 1 160308
+M 0 160314 1 160309
+M 0 160302 1 160310
+M 0 160307 1 160318
+M 0 160303 1 160319
+M 0 160303 1 160320
+M 0 160304 1 160321
+M 0 160304 1 160322
+M 0 160305 1 160323
+M 0 160302 1 160324
+M 0 160308 1 160325
+M 0 160320 1 160326
+M 0 160316 1 160333
+M 0 160313 1 160334
+M 0 160314 1 160335
+M 0 160302 1 160336
+M 0 160324 1 160337
+M 0 160315 1 160338
+M 0 160302 1 160339
+M 0 160302 1 160340
+M 0 160309 1 160341
+M 0 160313 1 160342
+M 0 160323 1 160343
+M 0 160315 1 160333
+M 0 160303 1 160334
+M 0 160302 1 160335
+M 0 160304 1 160336
+M 0 160302 1 160337
+M 0 160304 1 160338
+M 0 160303 1 160339
+M 0 160305 1 160340
+M 0 160304 1 160341
+M 0 160312 1 160342
+M 0 160303 1 160343
+M 0 160314 1 160327
+M 0 160318 1 160328
+M 0 160316 1 160329
+M 0 160314 1 160330
+M 0 160315 1 160331
+M 0 160318 1 160332
+M 0 160314 1 160327
+M 0 160324 1 160328
+M 0 160323 1 160329
+M 0 160324 1 160330
+M 0 160323 1 160331
+M 0 160315 1 160332
+M 0 160312 1 160344
+M 0 160323 1 160345
+M 0 160306 1 160346
+M 0 160311 1 160347
+M 0 160310 1 160348
+M 0 160324 1 160349
+M 0 160310 1 160344
+M 0 160310 1 160345
+M 0 160305 1 160346
+M 0 160303 1 160347
+M 0 160311 1 160348
+M 0 160305 1 160349
+M 0 160303 1 160350
+M 0 160321 1 160351
+M 0 160302 1 160352
+M 0 160319 1 160353
+M 0 160314 1 160354
+M 0 160318 1 160360
+M 0 160304 1 160361
+M 0 160321 1 160362
+M 0 160302 1 160363
+M 0 160320 1 160350
+M 0 160318 1 160351
+M 0 160307 1 160352
+M 0 160303 1 160353
+M 0 160308 1 160354
+M 0 160304 1 160360
+M 0 160304 1 160361
+M 0 160304 1 160362
+M 0 160302 1 160363
+M 0 160318 1 160355
+M 0 160302 1 160356
+M 0 160305 1 160357
+M 0 160310 1 160358
+M 0 160319 1 160359
+M 0 160302 1 160360
+M 0 160304 1 160355
+M 0 160303 1 160356
+M 0 160305 1 160357
+M 0 160302 1 160358
+M 0 160309 1 160359
+M 0 160309 1 160360
+M 0 160515 1 160537
+E 1 160525 1 16
+M 0 160597 1 160599
+M 0 160596 1 160534
+G 1 160325 1
+G 1 160326 1
+G 1 160327 1
+G 1 160328 1
+G 1 160329 1
+G 1 160330 1
+O 0 160340 1 160595
+O 0 160341 1 160595
+O 0 160342 1 160595
+O 0 160343 1 160595
+O 0 160344 1 160595
+O 0 160345 1 160595
+O 0 160346 1 160595
+O 0 160347 1 160595
+O 0 160348 1 160595
+O 0 160349 1 160595
+O 0 160350 1 160595
+O 0 160450 2 160534
+O 0 160451 3 160534
+O 0 160451 3 160534
+O 0 160450 2 160534
+O 0 160451 3 160534
+O 0 160452 1 160534
+O 0 160453 1 160534
+O 0 160450 2 160526
+O 0 160451 4 160526
+O 0 160451 4 160526
+O 0 160450 2 160526
+O 0 160451 4 160526
+O 0 160451 4 160526
+O 0 160450 1 160535
+O 0 160451 2 160535
+O 0 160451 2 160535
+O 0 160450 1 160536
+O 0 160451 2 160536
+O 0 160451 2 160536
+O 0 160455 1 160320
+O 0 160455 1 160310
+O 0 160455 1 160332
+O 0 160455 1 160324
+O 0 160455 1 160340
+O 0 160455 1 160354
+O 0 160458 1 160385
+O 0 160458 1 160386
+O 0 160458 1 160390
+O 0 160458 1 160388
+O 0 160457 1 160389
+O 0 160459 1 160387
+O 0 160460 1 160387
+O 0 160461 1 160367
+O 0 160462 1 160365
+O 0 160463 4 160365
+O 0 160463 4 160365
+O 0 160463 4 160365
+O 0 160463 4 160365
+O 0 160465 1 160379
+M 0 160404 1 160385
+M 0 160404 1 160386
+M 0 160404 1 160388
+M 0 160404 1 160390
+M 0 160405 1 160389
+M 0 160400 3 160365
+M 0 160400 3 160365
+M 0 160400 3 160365
+M 0 160401 1 160367
+M 0 160402 3 160367
+M 0 160402 3 160367
+M 0 160402 3 160367
+M 0 160403 2 160379
+M 0 160403 2 160379
+M 0 160406 2 160534
+M 0 160406 2 160534
+M 0 160500 1 160535
+M 0 160502 1 160535
+M 0 160501 1 160536
+M 0 160503 1 160536
+M 0 160500 1 160526
+M 0 160501 1 160526
+M 0 160502 1 160526
+M 0 160599 1 160420
+G 1 160302 1
+M 0 160599 1 160424
+G 1 160302 1
+M 0 160595 1 160392
+G 1 160380 1
+G 1 160381 1
+G 1 160382 1
+G 1 160385 1
+M 0 160445 1 160315
+E 1 160535 1 5
+M 0 160325 1 160439
+M 0 160326 1 160441
+M 0 160327 1 160443
+M 0 160327 1 160438
+M 0 160325 1 160314
+M 0 160327 1 160313
+M 0 160325 1 160316
+M 0 160599 1 160595
+M 0 160340 1 160373
+M 0 160340 1 160373
+M 0 160341 1 160371
+M 0 160341 1 160371
+M 0 160340 1 160372
+M 0 160340 1 160372
+O 0 160450 1 160408
+O 0 160470 1 160596
+O 0 160315 1 160368
+S
+
+
+#SHOPS
+ 160590    5  0  0  0  0   100  10         0 23    ; Scurvy Bert
+ 160591    0  9  0  0  0   100  10         0 23    ; Peg-Leg Pete
+ 160592    0  0  0  0  0   100  90         0 23    ; The Store Owner
+ 160593    0  0  0  0  0   100  90         0 23    ; The Factory Owner
+ 160595    0  0  0  0  0   100  90         0 23    ; A Cheese-Store Cashier
+ 160596    0  0  0  0  0   100  90         0 23    ; Honest John
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

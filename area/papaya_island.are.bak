@@ -1,0 +1,3077 @@
+#AREA   Papaya Island~
+
+
+
+#VERSION 252
+#AUTHOR Veritas~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#FLAGS
+6
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#16000
+janitor~
+The Janitor~
+The elderly janitor leans up against his broom.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+sigh
+say That durn vending machine is broken again. Damn kids!
+say I've fixed that thing hunnerds...no thousends a times!
+hrm
+~
+> act_prog 'gives you A Goku Action Figure.'~
+say How did you get this?! I've been lookin all over fer it!
+hug $n
+say Here, you can have these, and my gratitude.
+mpoload 16290
+give bracers $n
+mpsleep 18
+emote giggles and puts his new figure in line with the rest.
+mpjunk all.goku
+~
+|
+#16001
+budokai fighter~
+A Budokai Fighter~
+A trained Budokai fighter stands here, hopeful to win the tournament.
+~
+~
+67 0 0 C
+1 0 100 1d20+4 1d4+1
+30 50000000
+112 112 1
+70 70 65 60 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+gallic gun
+~
+> death_prog 15~
+mpmload 16001
+mea $n &YAs the Budokai fighter falls, another appears out of the stands to take his place!&D
+mer $n &YAs the Budokai fighter falls, another appears out of the stands to take his place!&D
+~
+|
+#16002
+carnival family~
+A family~
+A family wanders around the carnival.
+~
+~
+65 0 0 C
+1 0 100 1d4+1 2d5+0
+50 50000
+112 112 0
+40 55 50 55 0
+0 0 0 0 0
+0 0 0 0 1 1 4
+0 0 0 0 0 0 0 0
+#16003
+carnival child~
+A child~
+A child runs excitedly around the carnival.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 1d5+0
+10 10000
+112 112 1
+30 30 35 40 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#16004
+boat vendor~
+The Boat Vendor~
+The operator of the shop sits behind the counter.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome to my Boat shop $n, you're welcome to look around.
+~
+|
+#16044
+vendor~
+The Ball Vendor~
+A greasy ball vendor sits behind the counter here.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog play~
+say Well then, that'll be five zeni to play
+~
+> bribe_prog 5~
+say Here you go then. You get three chances, make em count.
+mpoload 16297
+mpoload 16297
+mpoload 16297
+give ball $n
+give ball $n
+give ball $n
+~
+> act_prog 'drops A Carnival Ball.' 100~
+MPPURGE ball
+~
+|
+#16045
+blinking vending machine~
+A blinking vending machine~
+A blinking vending machine stands here.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> bribe_prog 5000~
+MPOLOAD 16295
+dro ring
+~
+|
+#16047
+beeping vending machine~
+A beeping vending machine~
+A beeping vending machine sits in the corner here.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> bribe_prog 10000~
+MPOLOAD 16294
+mpecho _yel The machine beeps and spits out a prize.
+dro figure
+~
+|
+#16048
+broken vending machine~
+a broken vending machine~
+A derelict vending machine sits here, long forgotten.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> bribe_prog 100000~
+MPOLOAD 16293
+MPECHO _yel The broken vending machine emits a tired beep.
+dro patch
+~
+|
+#16049
+ticket trader~
+Ticket Trader~
+The Token Trader lounges behind the counter.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog what~
+emote leans towards you.
+whisper $n you should try unloading that token on someone else.
+whisper $n but remember, you didn't hear that from me.
+emote lounges back nonchalantly
+~
+> speech_prog trade~
+smile
+say I'm sorry, our tokens have recently been a victim of fraud!
+say We no longer accept tokens, but there is something else you could do with it.
+~
+|
+#16055
+drunk man terrance~
+Terrance~
+A drunken man stumbles around, slurring something lewdly.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'Sit down ya dolt, yur gonna fall over!'~
+mpsleep 9
+say Shet up, Iy'll do whet I want!
+~
+> speech_prog whatevr~
+mpsleep 18
+say wha'd ya just called me?
+~
+> speech_prog def~
+mpsleep 18
+say Whut? I've had enuffa yu. First you feck up my nice garfiiti on da wall, den you call me yella?
+hrm
+~
+> speech_prog bastad~
+mpsleep 9
+slap jason
+mpsleep 18
+mpforce jason burp
+~
+> rand_prog 7~
+burp
+~
+|
+#16056
+drunk man jason~
+Jason~
+Another drunken man sits underneath his shelter, sipping rum.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog Shet~
+mpsleep 9
+say Whatevr ya yella lizard.
+laugh
+~
+> speech_prog called~
+mpsleep 9
+laugh
+say A yella lizerd, ya def too?
+~
+> speech_prog garfiiti~
+mpsleep 18
+say Ya deserved it!
+mpsleep 9
+say yella bastad
+~
+> rand_prog 5~
+fart
+~
+|
+#16057
+ferris wheel operator~
+The Ferris Wheel operator~
+The Ferris Wheel operator leans over the controls.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpsleep 9
+say Step right up! Go for a ride on the famous Papaya Ferris Wheel!
+~
+|
+#16299
+david~
+David~
+A young boy stands here, looking upset.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 75~
+sniff
+say I never get to win anything. Everyone always wins before I do.
+sniff
+~
+> act_prog 'gives you A Carnival Token.' 100~
+say WHOA! Thanks!
+smile
+MPOLOAD 16292
+say Here, you can have this. I found it earlier.
+give key $n
+MPJUNK all.token
+~
+|
+#0
+
+
+#OBJECTS
+#16000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#16001
+boot flippers~
+A pair of boot flippers~
+A pair of flippers sit here, dripping with water~
+~
+22 0 65
+0 0 0 0 0 0
+1 100 10
+ 0
+#16290
+ankle bracers~
+&WA &wP&Wa&wi&Wr &wo&Wf &wA&Wn&wk&Wl&we &WB&wr&Wa&wc&We&wr&Ws&D~
+A glowing pair of ankle bracers lie here.~
+~
+9 0 2097153
+0 0 0 0 25 25
+1 0 0
+ 0
+A
+2 6
+#16291
+balloon note~
+&WA &GBalloon&D~
+A balloon with something inside it is floating in mid-air~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+balloon~
+For some reason, there is a small note inside the balloon. It reads:
+
+&WGive the man what he wants, and your reward will come.&D
+~
+#16292
+key~
+A Shed Key~
+A small key lies forgotten here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#16293
+budokai patch~
+A Budokai Patch~
+A patch detailing the Budokai Tournament logo lies here.~
+~
+9 0 257 32
+0 0 0 0 25 25
+1 0 0
+ 0
+A
+1 1
+A
+2 1
+A
+4 1
+A
+3 1
+#16294
+goku action figure~
+A Goku Action Figure~
+A small action figure of a legendary warrior lies on the ground here~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+A
+1 2
+A
+18 5
+#16295
+fake plastic ring~
+Plastic Ring~
+A small imitation ring lies here.~
+~
+9 0 3
+0 0 0 0 25 25
+1 0 0
+ 0
+#16296
+carnival token~
+A Carnival Token~
+A forgotten token lies here on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#16297
+ball~
+A Carnival Ball~
+A blue and yellow carnival ball~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+> use_prog 100~
+MPECHO &YThe ball hurtles towards the bottles.&D
+mpforce o.$n remove ball
+mpforce o.$n drop ball
+if rand(20)
+MPECHO &YThe bottles topple over!&D
+mpforce vendor say Well then $n, I guess you win. Here's your token.
+mpforce vendor mpoload 16296
+mpforce vendor give token $n
+endif
+~
+|
+#16298
+Veritas' Golden Cape~
+a newly created Veritas' Golden Cape~
+&WVeritas' &Ygolden cape &Wlies in a heap on the ground here.~
+~
+13 0 524289
+0 0 0 0 5000 5000
+1 0 0
+ 0
+#16299
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#16000
+Papaya Island Docks~
+The wooden dock and the entrance to Papaya Island is a very busy, but
+well organized place. The wood of the docks is very weathered and in
+need of repairs in a few places, thanks to a few errant boats no doubt.
+These docks have been in use for a long time, with many hopeful Budokai
+fighters rejoicing at their first step onto the isle. The Budokai Stadium
+rises up in the distance, its upper rim a harsh juxtaposition to the blue
+of the tropical sky. A few sea birds sqwauk at the apparent invasion of
+their feeding grounds as ships continually dock and leave.
+~
+0 4 1
+D0
+~
+~
+0 -1 16001
+D2
+~
+~
+0 -1 16066
+S
+#16001
+Papaya Boardwalk~
+The famous Papaya Boardwalk houses the many shops and inns that island
+offers to its many visitors, tourists and fighters alike. Thick grey wood
+creaks as the bustle of people going about their business rises to a low
+drone. The Papaya Fairgrounds are nearby, as the smell of baked goods and
+carnival food wafts over the entire boardwalk.
+~
+0 4 1
+D0
+~
+~
+0 -1 16004
+D1
+~
+~
+0 -1 16003
+D2
+~
+~
+0 -1 16000
+D3
+~
+~
+0 -1 16002
+S
+#16002
+Papaya Boardwalk~
+The famous Papaya Boardwalk houses the many shops and inns that island
+offers to its many visitors, tourists and fighters alike. Thick grey wood
+creaks as the bustle of people going about their business rises to a low
+drone. The Papaya Fairgrounds are nearby, as the smell of baked goods and
+carnival food wafts over the entire boardwalk.
+~
+0 4 1
+D1
+~
+~
+0 -1 16001
+D3
+~
+~
+0 -1 16007
+S
+#16003
+Papaya Boardwalk~
+The famous Papaya Boardwalk houses the many shops and inns that island
+offers to its many visitors, tourists and fighters alike. Thick grey wood
+creaks as the bustle of people going about their business rises to a low
+drone. The Papaya Fairgrounds are nearby, as the smell of baked goods and
+carnival food wafts over the entire boardwalk.
+~
+0 4 1
+D3
+~
+~
+0 -1 16001
+S
+#16004
+Before the Stadium~
+The full splendor of the stadium rears its beautiful head out of the
+boardwalk. The entire stadium is made of some sort of white metal or
+stone. The cheers of the crowd spill out over the rim of the stadium,
+easily drowning out the now faint cry of the gulls. The boardwalk splits
+into two paths that lead directly to the entrance of the stadium. Each
+path ends at a ticket booth, the lines stretching back for a short ways.
+~
+0 4 1
+D0
+~
+~
+0 -1 16038
+D1
+~
+~
+0 -1 16006
+D2
+~
+~
+0 -1 16001
+D3
+~
+~
+0 -1 16005
+D4
+~
+~
+0 -1 16023
+S
+#16005
+Before the Stadium~
+The landscaping in this area has obviously been someone's big project,
+because the area is very well kept and decorated. There are a few benches
+that surround a small fountain, along with a very well kept small garden.
+A tourist occupies a painted phonebooth, while a family shares a meal of
+popcorn and cola.
+~
+0 4 1
+D1
+~
+~
+0 -1 16004
+E
+fountain~
+&gThere is an uplifting inscription on the side of the fountain:
+
+&zSometimes the star that blinks the least, is worth 5000 times the ones that blink the most.
+&D
+~
+S
+#16006
+Before the Stadium~
+A sudden plague of filth appears here, with many homeless beggars
+making their home near the entrance to the stadium, hoping to collect
+a handout from a passing tournament attendee. The air smells of liquor
+and cigarette smoke. The ground is covered with cardboard in some places,
+torn up turf in others. Graffiti is scrawled all over the white wall
+of the stadium, unchecked for a long time.
+~
+0 0 1
+D3
+~
+~
+0 -1 16004
+E
+graffiti~
+&BThe World is a &R*beeping* &BHELLHOLE!&g
+
+Obviously some down and out person had the audacity to etch this onto
+the wall with some spray-paint. This must be the graffiti that the man
+was complaining got tampered with. Whoever actually designed this art
+also left their tag underneath the pearl of wisdom
+
+&YDrachma10000 baybee!&D
+~
+> entry_prog 50~
+mpforce jason say Sit down ya dolt, yur gonna fall over!
+~
+|
+S
+#16007
+Entrance to the Papaya Fair~
+The smell of mini-donuts and other carnival foods rises to new heights
+at the entrance to the fair itself. Flashing lights assault the blue of
+the sky as the carnival rides peddle their wares to young children and
+thrill-seekers. The ground is very well worn, with two especially visible
+paths leading up to the entrance booths that guard the opening to the fair,
+their bright colors tempting many a passerby.
+~
+0 0 1
+D1
+~
+~
+0 -1 16002
+D3
+~
+~
+0 -1 16008
+S
+#16008
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D1
+~
+~
+0 -1 16007
+D2
+~
+~
+0 -1 16011
+D3
+~
+~
+0 -1 16009
+D8
+~
+~
+0 -1 16012
+D9
+~
+~
+0 -1 16010
+S
+#16009
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16055
+D1
+~
+~
+0 -1 16008
+D2
+~
+~
+0 -1 16010
+D8
+~
+~
+0 -1 16011
+S
+#16010
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16009
+D1
+~
+~
+0 -1 16011
+D2
+~
+~
+0 -1 16013
+D6
+~
+~
+0 -1 16008
+D8
+~
+~
+0 -1 16014
+S
+#16011
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16008
+D1
+~
+~
+0 -1 16012
+D2
+~
+~
+0 -1 16014
+D3
+~
+~
+0 -1 16010
+D7
+~
+~
+0 -1 16009
+D8
+~
+~
+0 -1 16015
+D9
+~
+~
+0 -1 16013
+S
+#16012
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D2
+~
+~
+0 -1 16015
+D3
+~
+~
+0 -1 16011
+D7
+~
+~
+0 -1 16008
+D9
+~
+~
+0 -1 16014
+S
+#16013
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16010
+D1
+~
+~
+0 -1 16014
+D2
+~
+~
+0 -1 16016
+D6
+~
+~
+0 -1 16011
+S
+#16014
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16011
+D1
+~
+~
+0 -1 16015
+D2
+~
+~
+0 -1 16017
+D3
+~
+~
+0 -1 16013
+D6
+~
+~
+0 -1 16012
+D7
+~
+~
+0 -1 16010
+S
+#16015
+Papaya Fairgrounds~
+The ground is even more packed down here, with odd patches of grass
+dotting then entire area. The bright carnival colors are in full bloom
+here, with each booth a new kaleidascope of blues, reds and yellows.
+Young children surround the many rides that are available, all begging
+their parents for more zeni to partake of the attractions one last time.
+~
+0 0 1
+D0
+~
+~
+0 -1 16012
+D2
+~
+~
+0 -1 16018
+D3
+~
+~
+0 -1 16014
+D7
+~
+~
+0 -1 16011
+S
+#16016
+Knock Over the Bottles!~
+This small both consists of a simple counter separating the player
+from the straw filled playing section on the game. A small stool sits
+a few feet back from the counter, and on it are stacked three bottles
+in a pyramid form. The booth is lined with the many prizes that may
+be claimed at the gift shop, if enough tokens are traded in of course.
+A small sign sits on the counter, reading: 3 Tries, 5 zeni.
+~
+0 0 1
+D0
+~
+~
+0 -1 16013
+S
+#16017
+The Token Tent~
+This tent houses the trade in center for tokens. Many prizes hang
+from the roof and sides of the tent, along with a few smaller ones
+inside a glass counter. The prizes range from stuffed teddy bears
+to ride tokens, with the odd throwable sticky substance added in.
+There are also a few Papaya Island souvenirs available to trade for.
+~
+0 0 1
+D0
+~
+~
+0 -1 16014
+S
+#16018
+Vending Machine Tent~
+This small tent seems to be used a fair amount by the fair visitors,
+each child hoping that their gift of zeni will appease a vending machine
+and net them a new toy. The floor is covered in straw and the machines
+are quite old. There is a small sign posted on the inside of the tent.
+~
+0 0 1
+D0
+~
+~
+0 -1 16015
+E
+sign~
+****************************
+
+Vending Machines
+
+Put in your zeni!
+Hope for a prize!
+
+
+- Notice -
+
+Machines malfunctioning
+Payaya Carnival Inc. not
+responsible for lost zeni.
+*****************************
+~
+> rand_prog 2~
+mea $r _yel The lights on the vending machine flash on and off.
+~
+|
+S
+#16019
+The Fortune-Teller~
+pay money, tell fortune, fortune adds + to stat for time?
+~
+0 4 1
+S
+#16020
+Floating in a void~
+~
+0 4 1
+S
+#16021
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually qutie full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16035
+D1
+~
+~
+0 -1 16022
+S
+#16022
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually qutie full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16023
+D3
+~
+~
+0 -1 16021
+S
+#16023
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually qutie full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16024
+D3
+~
+~
+0 -1 16022
+D5
+~
+~
+0 -1 16004
+S
+#16024
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually qutie full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16025
+D3
+~
+~
+0 -1 16023
+S
+#16025
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually qutie full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16026
+D3
+~
+~
+0 -1 16024
+S
+#16026
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16036
+D2
+~
+~
+0 -1 16025
+S
+#16027
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16028
+D2
+~
+~
+0 -1 16036
+S
+#16028
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D2
+~
+~
+0 -1 16027
+D3
+~
+~
+0 -1 16029
+S
+#16029
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16028
+D3
+~
+~
+0 -1 16030
+D5
+~
+~
+7 16292 16054
+S
+#16030
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat. There are also a set of stairs leading to a
+room below.
+~
+0 4 1
+D1
+~
+~
+0 -1 16029
+D3
+~
+~
+0 -1 16031
+S
+#16031
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16030
+D3
+~
+~
+0 -1 16032
+S
+#16032
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D1
+~
+~
+0 -1 16031
+D2
+~
+~
+0 -1 16033
+S
+#16033
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16032
+D2
+~
+~
+0 -1 16034
+S
+#16034
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat. The stands change a small amount here, as a
+set of stairs leads down onto the main stadium battle ground.
+~
+0 4 1
+D0
+~
+~
+0 -1 16033
+D2
+~
+~
+0 -1 16035
+D5
+~
+~
+0 -1 16040
+S
+#16035
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat.
+~
+0 4 1
+D0
+~
+~
+0 -1 16034
+D2
+~
+~
+0 -1 16021
+S
+#16036
+The Stands~
+The stands surrounding the Budokai Stadium are filled with cheering
+fans and tourists, all itching to see an unlucky fighter meet his match.
+Empty cola cups and snack containers line the aisles and the walkways,
+while vendors mill about the crowd distributing more of their tasty
+wares. The stands are usually quite full, so it will be a task just
+to find an empty seat. The stands change a small amount here, as a
+set of stairs leads down onto the main stadium battle ground.
+~
+0 4 1
+D0
+~
+~
+0 -1 16027
+D2
+~
+~
+0 -1 16026
+D5
+~
+~
+0 -1 16042
+S
+#16037
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16040
+D1
+~
+~
+0 -1 16038
+D6
+~
+~
+0 -1 16041
+S
+#16038
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16041
+D1
+~
+~
+0 -1 16039
+D2
+~
+~
+0 -1 16004
+D3
+~
+~
+0 -1 16037
+S
+#16039
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16042
+D3
+~
+~
+0 -1 16038
+D7
+~
+~
+0 -1 16041
+S
+#16040
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16043
+D1
+~
+~
+0 -1 16041
+D2
+~
+~
+0 -1 16037
+D4
+~
+~
+0 -1 16034
+S
+#16041
+The Center Battleground~
+The center of the stadium is the showcase for the most intense battles
+of the Budokai tournaments. Many fighters have fell to the ground here,
+their strength ebbing. Many more have risen their arms in victory. The
+Budokai symbol is prevalent on the ground here, if a little faded. This
+is where the Budokai winner is immortalized each time, his name engraved
+on the trophy.
+~
+0 0 1
+D0
+~
+~
+0 -1 16050
+D1
+~
+~
+0 -1 16042
+D2
+~
+~
+0 -1 16038
+D3
+~
+~
+0 -1 16040
+D6
+~
+~
+0 -1 16051
+D7
+~
+~
+0 -1 16043
+D8
+~
+~
+0 -1 16039
+D9
+~
+~
+0 -1 16037
+S
+#16042
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16051
+D2
+~
+~
+0 -1 16039
+D3
+~
+~
+0 -1 16041
+D4
+~
+~
+0 -1 16036
+S
+#16043
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D1
+~
+~
+0 -1 16050
+D2
+~
+~
+0 -1 16040
+D8
+~
+~
+0 -1 16041
+S
+#16044
+Floating in a void~
+~
+0 4 1
+S
+#16045
+Floating in a void~
+~
+0 4 1
+S
+#16046
+Floating in a void~
+~
+0 4 1
+S
+#16047
+Floating in a void~
+~
+0 4 1
+S
+#16048
+Floating in a void~
+~
+0 4 1
+S
+#16049
+Floating in a void~
+~
+0 4 1
+S
+#16050
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D0
+~
+~
+0 -1 16053
+D1
+~
+~
+0 -1 16051
+D2
+~
+~
+0 -1 16041
+D3
+~
+~
+0 -1 16043
+S
+#16051
+The Stadium Battlegrounds~
+The floor of the stadium is very well packed down thanks to the many
+battles that have taken place. There are small culverts that run like
+a map grid on the ground, used for carrying away unwanted liquids from
+the battlefield. Medics line the outside of the ring, interspersed with
+reporters and cameramen from many tv companies.
+~
+0 0 1
+D2
+~
+~
+0 -1 16042
+D3
+~
+~
+0 -1 16050
+D9
+~
+~
+0 -1 16041
+S
+#16052
+The Janitor's Closet~
+Even more mops and other cleaning tools line the walls of this room,
+the smell of bleach and pine suddenly over-powering. There is a stack
+of buckets in the corner along with a cart full of garbage bags. Posters
+of the saiyan hero Goku line the walls, joined by a small lineup of action
+figures on the janitor's desk.
+~
+0 0 1
+D1
+~
+~
+7 16292 16053
+S
+#16053
+The Utility Shed~
+Many tools line the walls of of this small shed-like room adjacent
+to the tournament grounds. A landscaper would have no problem finding
+the tool he needs with the plethora of shovels and other instruments
+of work available. A small table with a chair sits in the corner, a
+radio happily blaring a local station sharing to tabletop with a half
+eaten sandwich.
+~
+0 4 0
+D1
+~
+~
+0 -1 16054
+D2
+~
+~
+0 -1 16050
+D3
+~
+~
+7 16292 16052
+S
+#16054
+Another Entrance~
+This seems to be a service exit to the stands from the utility shed.
+Stairs lead up from the utility area to a door that opens up onto
+the stands. These must be used by the janitor to respond quickly to
+major spills and problems in the stands themselves. The door is a
+grey metal and there is a small handrail lining the wall. The steps
+have a worn path of metal up and down.
+~
+0 4 1
+D3
+~
+~
+0 16292 16053
+D4
+~
+~
+7 16292 16029
+S
+#16055
+The Ferris Wheel~
+A small line of people are lined up here for the Papaya Ferris Wheel,
+either in couples or lonely singles looking for someone to share the
+ride with. The Ferris Wheel rises up like a ruler over its flashing
+carnival kingdom, its crown well deserved. A plucky, yet romantic,
+tune fills the air, seemingly moving in time with the revolutions of
+the wheel.
+~
+0 0 1
+D2
+~
+~
+0 -1 16009
+> speech_prog okay~
+MPFORCE ferris say Great! Get ready for a fun ride $n.
+mpechoat $n &YThe Ferris Wheel begins to turn.&D
+MPTRANS $n 16056
+mpat 16056 mpechoat $n &YThe Ferris Wheel continues its climb.&D
+mpat 16056 mpforce $n look
+mpsleep 27
+MPTRANS $n 16057
+mpat 16057 mpechoat $n &YThe people on the ground begin to appear quite a bit smaller.&D
+mpat 16057 mpforce $n look
+mpsleep 27
+MPTRANS $n 16058 
+mpat 16058 mpechoat $n &YThe Ferris Wheel is almost at the top of its journey.&D
+mpat 16058 mpforce $n look
+mpsleep 27
+MPTRANS $n 16059
+mpat 16059 mpechoat $n &YThe Ferris Wheel starts its descent.&D
+mpat 16059 mpforce $n look
+if rand(3)
+mpsleep 9
+mpat 16059 mpoload 16291
+mpat 16059 mpechoat $n &YLook! A balloon is floating up into the sky. Grab it quick!&D
+endif
+mpsleep 27
+MPTRANS $n 16060
+mpat 16060 mpechoat $n &YThe bucket rocks a small amount as the wheel continues downwards.&D
+mpat 16060 mpforce $n look
+mpsleep 27
+MPTRANS $n 16061
+mpat 16061 mpechoat $n &YThe Ferris wheel creaks a small amount, the journey downward now half over.&D
+mpat 16061 mpforce $n look
+mpsleep 27
+MPTRANS $n 16062
+mpat 16062 mpechoat $n &YThe bucket is now back underneath the wheel as the ride is almost over.&D
+mpat 16062 mpforce $n look
+mptrans $n 16055
+mpechoat $n &YThe basket creaks to a halt as the ride ends.&D
+mpforce $n look
+~
+|
+S
+#16056
+Lifting Off The Ground~
+The people on the ground seem a tad bit smaller as the wheel starts
+its ascent. The bucket you are in is quite small, and would probably
+lend itself well in forcing someone else to sit close. The hustle and
+bustle of the carnival continues one below you.
+~
+0 4 1
+S
+#16057
+Further Off The Ground~
+The wind has a little more power up at this height, rocking the basket
+a little. A young child below is waving up at you like a madman, or just
+waving at the wheel itself. Across the way a lucky carnival goer succeeds
+at the bottle toppling game and the buzzers are easily heard from your
+position in the air.
+~
+0 4 1
+S
+#16058
+Almost At The Top~
+The basket starts to swing back towards the center of the wheel as
+it nears the top of the rotation. The ocean surrounding the island is
+fairly visible from here, as are the docks and the boats landing at it.
+The music is starting to drown out up this high, interrupted by ooo's and
+aah's at the beautiful view
+~
+0 4 1
+S
+#16059
+The Zenith~
+The arms of the sky fully embrace you at the top of the Ferris Wheel
+journey. From here, the ocean around the island becomes a maze of waves
+and refracting light. The inside of the stadium is even visible from here,
+its white walls enveloping the inner fighting ring. The carnival below
+continues on, looking more and more like an ant farm every second.
+~
+0 4 1
+S
+#16060
+The Descent~
+The basket swings back and forth as the descent begins. The innards of
+the wheel are fully revealed to you as you slowly drop, your basket facing
+the inner section of the wheel. Many cables and beams hold the wheel together,
+most of the time accented by blinking lights.
+~
+0 4 1
+S
+#16061
+Halfway Down~
+The ants on the ground reveal themselves once again to be human, their
+cotton candy and balloons held up like torches for all to see. The music
+is once again becoming more prevelant, along with the screams of want from
+the children below.
+~
+0 4 1
+S
+#16062
+Almost Back~
+As the basket rounds the bottom corner of the wheel, the operator smiles
+at you from his post. The ride is almost over and the safety bar starts to
+unlock, releasing its death grip from your midsection.
+~
+0 4 1
+S
+#16063
+Floating Above The Water~
+The water roils beneath you, its power held back only by the grace of
+the wind and tide. The clarity and blue hue of the water is astounding,
+the small fish swimming underneath easily seen. The smell of salt fills
+the air and many gulls screech at the sky.
+~
+0 4 7
+D1
+~
+~
+0 -1 16064
+D3
+~
+~
+0 -1 16067
+S
+#16064
+Floating Above The Water~
+The water roils beneath you, its power held back only by the grace of
+the wind and tide. The clarity and blue hue of the water is astounding,
+the small fish swimming underneath easily seen. The smell of salt fills
+the air and many gulls screech at the sky.
+~
+0 4 7
+D1
+~
+~
+0 -1 16065
+D3
+~
+~
+0 -1 16063
+S
+#16065
+Floating Above The Water~
+The water roils beneath you, its power held back only by the grace of
+the wind and tide. The clarity and blue hue of the water is astounding,
+the small fish swimming underneath easily seen. The smell of salt fills
+the air and many gulls screech at the sky.
+~
+0 4 7
+D1
+~
+~
+0 -1 16066
+D3
+~
+~
+0 -1 16064
+S
+#16066
+Floating Above The Water~
+The water roils beneath you, its power held back only by the grace of
+the wind and tide. The clarity and blue hue of the water is astounding,
+the small fish swimming underneath easily seen. The smell of salt fills
+the air and many gulls screech at the sky.
+~
+0 4 7
+D0
+~
+~
+0 -1 16000
+D3
+~
+~
+0 -1 16065
+S
+#16067
+The Boathouse~
+Boat pieces and accessories are on display in every visual form and way
+conceivable in this shop. Rudders and tack line the walls, while wood
+order forms are prevelant. The entire shop is made of strong wood and
+is very solid. Many customers have bandanas and eyepatches, seemingly
+ignorant of the cliches they provide. A large notice is posted next
+to the store's counter.
+~
+0 4 1
+D1
+~
+~
+0 -1 16063
+D3
+~
+~
+0 -1 9111
+E
+notice~
+&RAttention Boathouse Customers&D
+
+&WDue to extreme supply shortages, we have been forced to reduce
+our stock of boat supplies to mere swimming aids for awhile. Please
+bear with us and we will get new supples as soon as possible.
+
+Thank you
+Management&D
+~
+S
+#16068
+Floating in a void~
+~
+0 4 1
+S
+#16069
+Floating in a void~
+~
+0 4 1
+S
+#16070
+Floating in a void~
+~
+0 4 1
+S
+#16071
+Floating in a void~
+~
+0 4 1
+S
+#16072
+Floating in a void~
+~
+0 4 1
+S
+#16073
+Floating in a void~
+~
+0 4 1
+S
+#16074
+Floating in a void~
+~
+0 4 1
+S
+#16075
+Floating in a void~
+~
+0 4 1
+S
+#16076
+Floating in a void~
+~
+0 4 1
+S
+#16077
+Floating in a void~
+~
+0 4 1
+S
+#16078
+Floating in a void~
+~
+0 4 1
+S
+#16079
+Floating in a void~
+~
+0 4 1
+S
+#16080
+Floating in a void~
+~
+0 4 1
+S
+#16081
+Floating in a void~
+~
+0 4 1
+S
+#16082
+Floating in a void~
+~
+0 4 1
+S
+#16083
+Floating in a void~
+~
+0 4 1
+S
+#16084
+Floating in a void~
+~
+0 4 1
+S
+#16085
+Floating in a void~
+~
+0 4 1
+S
+#16086
+Floating in a void~
+~
+0 4 1
+S
+#16087
+Floating in a void~
+~
+0 4 1
+S
+#16088
+Floating in a void~
+~
+0 4 1
+S
+#16089
+Floating in a void~
+~
+0 4 1
+S
+#16090
+Floating in a void~
+~
+0 4 1
+S
+#16091
+Floating in a void~
+~
+0 4 1
+S
+#16092
+Floating in a void~
+~
+0 4 1
+S
+#16093
+Floating in a void~
+~
+0 4 1
+S
+#16094
+Floating in a void~
+~
+0 4 1
+S
+#16095
+Floating in a void~
+~
+0 4 1
+S
+#16096
+Floating in a void~
+~
+0 4 1
+S
+#16097
+Floating in a void~
+~
+0 4 1
+S
+#16098
+Floating in a void~
+~
+0 4 1
+S
+#16099
+Floating in a void~
+~
+0 4 1
+S
+#16100
+Floating in a void~
+~
+0 4 1
+S
+#16101
+Floating in a void~
+~
+0 4 1
+S
+#16102
+Floating in a void~
+~
+0 4 1
+S
+#16103
+Floating in a void~
+~
+0 4 1
+S
+#16104
+Floating in a void~
+~
+0 4 1
+S
+#16105
+Floating in a void~
+~
+0 4 1
+S
+#16106
+Floating in a void~
+~
+0 4 1
+S
+#16107
+Floating in a void~
+~
+0 4 1
+S
+#16108
+Floating in a void~
+~
+0 4 1
+S
+#16109
+Floating in a void~
+~
+0 4 1
+S
+#16110
+Floating in a void~
+~
+0 4 1
+S
+#16111
+Floating in a void~
+~
+0 4 1
+S
+#16112
+Floating in a void~
+~
+0 4 1
+S
+#16113
+Floating in a void~
+~
+0 4 1
+S
+#16114
+Floating in a void~
+~
+0 4 1
+S
+#16115
+Floating in a void~
+~
+0 4 1
+S
+#16116
+Floating in a void~
+~
+0 4 1
+S
+#16117
+Floating in a void~
+~
+0 4 1
+S
+#16118
+Floating in a void~
+~
+0 4 1
+S
+#16119
+Floating in a void~
+~
+0 4 1
+S
+#16120
+Floating in a void~
+~
+0 4 1
+S
+#16121
+Floating in a void~
+~
+0 4 1
+S
+#16122
+Floating in a void~
+~
+0 4 1
+S
+#16123
+Floating in a void~
+~
+0 4 1
+S
+#16124
+Floating in a void~
+~
+0 4 1
+S
+#16125
+Floating in a void~
+~
+0 4 1
+S
+#16126
+Floating in a void~
+~
+0 4 1
+S
+#16127
+Floating in a void~
+~
+0 4 1
+S
+#16128
+Floating in a void~
+~
+0 4 1
+S
+#16129
+Floating in a void~
+~
+0 4 1
+S
+#16130
+Floating in a void~
+~
+0 4 1
+S
+#16131
+Floating in a void~
+~
+0 4 1
+S
+#16132
+Floating in a void~
+~
+0 4 1
+S
+#16133
+Floating in a void~
+~
+0 4 1
+S
+#16134
+Floating in a void~
+~
+0 4 1
+S
+#16135
+Floating in a void~
+~
+0 4 1
+S
+#16136
+Floating in a void~
+~
+0 4 1
+S
+#16137
+Floating in a void~
+~
+0 4 1
+S
+#16138
+Floating in a void~
+~
+0 4 1
+S
+#16139
+Floating in a void~
+~
+0 4 1
+S
+#16140
+Floating in a void~
+~
+0 4 1
+S
+#16141
+Floating in a void~
+~
+0 4 1
+S
+#16142
+Floating in a void~
+~
+0 4 1
+S
+#16143
+Floating in a void~
+~
+0 4 1
+S
+#16144
+Floating in a void~
+~
+0 4 1
+S
+#16145
+Floating in a void~
+~
+0 4 1
+S
+#16146
+Floating in a void~
+~
+0 4 1
+S
+#16147
+Floating in a void~
+~
+0 4 1
+S
+#16148
+Floating in a void~
+~
+0 4 1
+S
+#16149
+Floating in a void~
+~
+0 4 1
+S
+#16150
+Floating in a void~
+~
+0 4 1
+S
+#16151
+Floating in a void~
+~
+0 4 1
+S
+#16152
+Floating in a void~
+~
+0 4 1
+S
+#16153
+Floating in a void~
+~
+0 4 1
+S
+#16154
+Floating in a void~
+~
+0 4 1
+S
+#16155
+Floating in a void~
+~
+0 4 1
+S
+#16156
+Floating in a void~
+~
+0 4 1
+S
+#16157
+Floating in a void~
+~
+0 4 1
+S
+#16158
+Floating in a void~
+~
+0 4 1
+S
+#16159
+Floating in a void~
+~
+0 4 1
+S
+#16160
+Floating in a void~
+~
+0 4 1
+S
+#16161
+Floating in a void~
+~
+0 4 1
+S
+#16162
+Floating in a void~
+~
+0 4 1
+S
+#16163
+Floating in a void~
+~
+0 4 1
+S
+#16164
+Floating in a void~
+~
+0 4 1
+S
+#16165
+Floating in a void~
+~
+0 4 1
+S
+#16166
+Floating in a void~
+~
+0 4 1
+S
+#16167
+Floating in a void~
+~
+0 4 1
+S
+#16168
+Floating in a void~
+~
+0 4 1
+S
+#16169
+Floating in a void~
+~
+0 4 1
+S
+#16170
+Floating in a void~
+~
+0 4 1
+S
+#16171
+Floating in a void~
+~
+0 4 1
+S
+#16172
+Floating in a void~
+~
+0 4 1
+S
+#16173
+Floating in a void~
+~
+0 4 1
+S
+#16174
+Floating in a void~
+~
+0 4 1
+S
+#16175
+Floating in a void~
+~
+0 4 1
+S
+#16176
+Floating in a void~
+~
+0 4 1
+S
+#16177
+Floating in a void~
+~
+0 4 1
+S
+#16178
+Floating in a void~
+~
+0 4 1
+S
+#16179
+Floating in a void~
+~
+0 4 1
+S
+#16180
+Floating in a void~
+~
+0 4 1
+S
+#16181
+Floating in a void~
+~
+0 4 1
+S
+#16182
+Floating in a void~
+~
+0 4 1
+S
+#16183
+Floating in a void~
+~
+0 4 1
+S
+#16184
+Floating in a void~
+~
+0 4 1
+S
+#16185
+Floating in a void~
+~
+0 4 1
+S
+#16186
+Floating in a void~
+~
+0 4 1
+S
+#16187
+Floating in a void~
+~
+0 4 1
+S
+#16188
+Floating in a void~
+~
+0 4 1
+S
+#16189
+Floating in a void~
+~
+0 4 1
+S
+#16190
+Floating in a void~
+~
+0 4 1
+S
+#16191
+Floating in a void~
+~
+0 4 1
+S
+#16192
+Floating in a void~
+~
+0 4 1
+S
+#16193
+Floating in a void~
+~
+0 4 1
+S
+#16194
+Floating in a void~
+~
+0 4 1
+S
+#16195
+Floating in a void~
+~
+0 4 1
+S
+#16196
+Floating in a void~
+~
+0 4 1
+S
+#16197
+Floating in a void~
+~
+0 4 1
+S
+#16198
+Floating in a void~
+~
+0 4 1
+S
+#16199
+Floating in a void~
+~
+0 4 1
+S
+#16200
+Floating in a void~
+~
+0 4 1
+S
+#16201
+Floating in a void~
+~
+0 4 1
+S
+#16202
+Floating in a void~
+~
+0 4 1
+S
+#16203
+Floating in a void~
+~
+0 4 1
+S
+#16204
+Floating in a void~
+~
+0 4 1
+S
+#16205
+Floating in a void~
+~
+0 4 1
+S
+#16206
+Floating in a void~
+~
+0 4 1
+S
+#16207
+Floating in a void~
+~
+0 4 1
+S
+#16208
+Floating in a void~
+~
+0 4 1
+S
+#16209
+Floating in a void~
+~
+0 4 1
+S
+#16210
+Floating in a void~
+~
+0 4 1
+S
+#16211
+Floating in a void~
+~
+0 4 1
+S
+#16212
+Floating in a void~
+~
+0 4 1
+S
+#16213
+Floating in a void~
+~
+0 4 1
+S
+#16214
+Floating in a void~
+~
+0 4 1
+S
+#16215
+Floating in a void~
+~
+0 4 1
+S
+#16216
+Floating in a void~
+~
+0 4 1
+S
+#16217
+Floating in a void~
+~
+0 4 1
+S
+#16218
+Floating in a void~
+~
+0 4 1
+S
+#16219
+Floating in a void~
+~
+0 4 1
+S
+#16220
+Floating in a void~
+~
+0 4 1
+S
+#16221
+Floating in a void~
+~
+0 4 1
+S
+#16222
+Floating in a void~
+~
+0 4 1
+S
+#16223
+Floating in a void~
+~
+0 4 1
+S
+#16224
+Floating in a void~
+~
+0 4 1
+S
+#16225
+Floating in a void~
+~
+0 4 1
+S
+#16226
+Floating in a void~
+~
+0 4 1
+S
+#16227
+Floating in a void~
+~
+0 4 1
+S
+#16228
+Floating in a void~
+~
+0 4 1
+S
+#16229
+Floating in a void~
+~
+0 4 1
+S
+#16230
+Floating in a void~
+~
+0 4 1
+S
+#16231
+Floating in a void~
+~
+0 4 1
+S
+#16232
+Floating in a void~
+~
+0 4 1
+S
+#16233
+Floating in a void~
+~
+0 4 1
+S
+#16234
+Floating in a void~
+~
+0 4 1
+S
+#16235
+Floating in a void~
+~
+0 4 1
+S
+#16236
+Floating in a void~
+~
+0 4 1
+S
+#16237
+Floating in a void~
+~
+0 4 1
+S
+#16238
+Floating in a void~
+~
+0 4 1
+S
+#16239
+Floating in a void~
+~
+0 4 1
+S
+#16240
+Floating in a void~
+~
+0 4 1
+S
+#16241
+Floating in a void~
+~
+0 4 1
+S
+#16242
+Floating in a void~
+~
+0 4 1
+S
+#16243
+Floating in a void~
+~
+0 4 1
+S
+#16244
+Floating in a void~
+~
+0 4 1
+S
+#16245
+Floating in a void~
+~
+0 4 1
+S
+#16246
+Floating in a void~
+~
+0 4 1
+S
+#16247
+Floating in a void~
+~
+0 4 1
+S
+#16248
+Floating in a void~
+~
+0 4 1
+S
+#16249
+Floating in a void~
+~
+0 4 1
+S
+#16250
+Floating in a void~
+~
+0 4 1
+S
+#16251
+Floating in a void~
+~
+0 4 1
+S
+#16252
+Floating in a void~
+~
+0 4 1
+S
+#16253
+Floating in a void~
+~
+0 4 1
+S
+#16254
+Floating in a void~
+~
+0 4 1
+S
+#16255
+Floating in a void~
+~
+0 4 1
+S
+#16256
+Floating in a void~
+~
+0 4 1
+S
+#16257
+Floating in a void~
+~
+0 4 1
+S
+#16258
+Floating in a void~
+~
+0 4 1
+S
+#16259
+Floating in a void~
+~
+0 4 1
+S
+#16260
+Floating in a void~
+~
+0 4 1
+S
+#16261
+Floating in a void~
+~
+0 4 1
+S
+#16262
+Floating in a void~
+~
+0 4 1
+S
+#16263
+Floating in a void~
+~
+0 4 1
+S
+#16264
+Floating in a void~
+~
+0 4 1
+S
+#16265
+Floating in a void~
+~
+0 4 1
+S
+#16266
+Floating in a void~
+~
+0 4 1
+S
+#16267
+Floating in a void~
+~
+0 4 1
+S
+#16268
+Floating in a void~
+~
+0 4 1
+S
+#16269
+Floating in a void~
+~
+0 4 1
+S
+#16270
+Floating in a void~
+~
+0 4 1
+S
+#16271
+Floating in a void~
+~
+0 4 1
+S
+#16272
+Floating in a void~
+~
+0 4 1
+S
+#16273
+Floating in a void~
+~
+0 4 1
+S
+#16274
+Floating in a void~
+~
+0 4 1
+S
+#16275
+Floating in a void~
+~
+0 4 1
+S
+#16276
+Floating in a void~
+~
+0 4 1
+S
+#16277
+Floating in a void~
+~
+0 4 1
+S
+#16278
+Floating in a void~
+~
+0 4 1
+S
+#16279
+Floating in a void~
+~
+0 4 1
+S
+#16280
+Floating in a void~
+~
+0 4 1
+S
+#16281
+Floating in a void~
+~
+0 4 1
+S
+#16282
+Floating in a void~
+~
+0 4 1
+S
+#16283
+Floating in a void~
+~
+0 4 1
+S
+#16284
+Floating in a void~
+~
+0 4 1
+S
+#16285
+Floating in a void~
+~
+0 4 1
+S
+#16286
+Floating in a void~
+~
+0 4 1
+S
+#16287
+Floating in a void~
+~
+0 4 1
+S
+#16288
+Floating in a void~
+~
+0 4 1
+S
+#16289
+Floating in a void~
+~
+0 4 1
+S
+#16290
+Floating in a void~
+~
+0 4 1
+S
+#16291
+Floating in a void~
+~
+0 4 1
+S
+#16292
+Floating in a void~
+~
+0 4 1
+S
+#16293
+Floating in a void~
+~
+0 4 1
+S
+#16294
+Floating in a void~
+~
+0 4 1
+S
+#16295
+Floating in a void~
+~
+0 4 1
+S
+#16296
+Floating in a void~
+~
+0 4 1
+S
+#16297
+Floating in a void~
+~
+0 4 1
+S
+#16298
+Floating in a void~
+~
+0 4 1
+S
+#16299
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 16044 1 16016
+M 0 16049 1 16017
+M 0 16045 1 16018
+M 0 16047 1 16018
+M 0 16048 1 16018
+M 0 16002 2 16007
+M 0 16003 2 16007
+M 0 16002 2 16008
+M 0 16002 2 16009
+M 0 16002 2 16010
+M 0 16002 2 16011
+M 0 16002 2 16012
+M 0 16002 2 16013
+M 0 16002 2 16014
+M 0 16002 2 16015
+M 0 16003 2 16008
+M 0 16003 2 16009
+M 0 16003 2 16010
+M 0 16003 2 16011
+M 0 16003 2 16012
+M 0 16003 2 16013
+M 0 16003 2 16014
+M 0 16003 2 16015
+M 0 16055 1 16006
+M 0 16056 1 16006
+M 0 16299 1 16011
+M 0 16057 1 16055
+M 0 16001 1 16037
+M 0 16001 1 16038
+M 0 16001 1 16039
+M 0 16001 1 16040
+M 0 16001 1 16041
+M 0 16001 1 16042
+M 0 16001 1 16043
+M 0 16001 1 16050
+M 0 16001 1 16051
+M 0 16004 1 16067
+G 1 16001 1
+D 0 16029 5 2
+D 0 16054 4 2
+D 0 16053 3 2
+M 1 16000 1 16052
+D 0 16052 1 2
+S
+
+
+#SHOPS
+ 16004   22  0  0  0  0   100  90         0 23    ; The Boat Vendor
+ 16045    0  0  0  0  0   100  90         0 23    ; A blinking vending machine
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

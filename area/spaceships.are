@@ -1,0 +1,2217 @@
+#AREA   Space Ships~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 3
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#1000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+0 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1001
+ship pilot~
+The Ships Pilot~
+The Ships Pilot is sitting here pushing buttons.
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+0 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+mpecho _yel $I yells, 'AAAHHH, WE'RE ALL GONNA DIE!!!'
+~
+> rand_prog 10~
+mpecho _whi $I mumbles, 'Ugh, I shouldn't have drank so much last night...'
+~
+> rand_prog 10~
+mpecho _whi $I says, 'Oops!'
+~
+> rand_prog 10~
+mpecho _whi $I says, 'Hmm, now where's that button...'
+~
+|
+#1002
+grand grandmaster master trainer teacher~
+The GrandMaster~
+The GrandMaster holds centuries of wisdom in combat.
+~
+~
+1027 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1003
+exelion cargo inspector~
+Exelion Cargo Inspector~
+The cargo inspector for the Exelion is keeping close track of the cargo.
+~
+~
+67242051 0 0 C
+1 0 100 1d20+0 2d5+0
+0 500000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+0 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#1001
+kazama exelion cargo bay key~
+&RExelion AccessKey&D~
+A red keycard is gathering dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1002
+tv television ~
+A Liquid-Crystal Television~
+A massive liquid-crystal television provides crystal clear entertainment.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#1133
+Kazama's House Key~
+Kazama's House Key~
+Some god dropped a newly created Kazama's House Key here.~
+~
+8 0 16385
+1133 0 0 0 0 0
+1 0 0
+ 1
+#1136
+Avery's House Key~
+Avery's House Key~
+Some god dropped a newly created Avery's House Key here.~
+~
+8 0 16385
+1136 0 0 0 0 0
+1 0 0
+ 1
+#1160
+Gordan's House Key~
+Gordan's House Key~
+Some god dropped a newly created Gordan's House Key here.~
+~
+8 0 16385
+1160 0 0 0 0 0
+1 0 0
+ 1
+#1199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#1000
+Mobile Training Fortress~
+You are inside a very small cramped space pod.
+~
+0 536871180 0 0 0 1
+S
+#1001
+The Home World Transport Ship~
+You are in the cockpit of this space ship.  There is a man sitting at the
+controls, pushing buttons.
+
+~
+0 1032 0
+D5
+~
+~
+0 -1 1002
+S
+#1002
+Passenger Section~
+There are many small seats in this small room.
+
+~
+0 1032 0
+D4
+~
+~
+0 -1 1001
+S
+#1003
+The Reverse Home World Transport Ship~
+You are in the cockpit of this space ship.  There is a man sitting at the
+controls, pushing buttons.
+
+~
+0 12 0
+D5
+~
+~
+0 -1 1004
+S
+#1004
+Passenger Section~
+There are many small seats in this small room.
+
+~
+0 12 0
+D4
+~
+~
+0 -1 1003
+S
+#1005
+Inside Space Pod P-001~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1006
+Inside Space Pod P-002~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1007
+Inside Space Pod P-003~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1008
+Inside Space Pod P-004~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1009
+Inside Space Pod P-005~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1010
+Inside Space Pod P-006~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1011
+Inside Space Pod P-007~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1012
+Inside Space Pod P-008~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1013
+Inside Space Pod P-009~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1014
+Inside Space Pod P-010~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1015
+Inside Space Pod P-011~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1016
+Inside Space Pod P-012~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1017
+Inside Space Pod P-013~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1018
+Inside Space Pod P-014~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1019
+Inside Space Pod P-015~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1020
+Inside Space Pod P-016~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1021
+Inside Space Pod P-017~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1022
+Inside Space Pod P-018~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1023
+Inside Space Pod P-019~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1024
+Inside Space Pod P-020~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1025
+Inside Space Pod P-021~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1026
+Inside Space Pod P-022~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1027
+Inside Space Pod P-023~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1028
+Inside Space Pod P-024~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1029
+Inside Space Pod P-025~
+This is a very small, but comfortable space pod.  There is only
+enough room for a single passenger to fit.  There are a lot of little
+display panels, lights, buttons and switches that cover the inside of
+the ship.
+~
+0 1610613004 1 0 0 1
+S
+#1030
+Inside Space Pod PXL-001~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1031
+Inside Space Pod PXL-002~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1032
+Inside Space Pod PXL-003~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1033
+Inside Space Pod PXL-004~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1034
+Inside Space Pod PXL-005~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1035
+Inside Space Pod PXL-006~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1036
+Inside Space Pod PXL-007~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1037
+Inside Space Pod PXL-008~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1038
+Inside Space Pod PXL-009~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1039
+Inside Space Pod PXL-010~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1040
+Inside Space Pod PXL-011~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1041
+Inside Space Pod PXL-012~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1042
+Inside Space Pod PXL-013~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1043
+Inside Space Pod PXL-014~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1044
+Inside Space Pod PXL-015~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1045
+Inside Space Pod PXL-016~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1046
+Inside Space Pod PXL-017~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1047
+Inside Space Pod PXL-018~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1048
+Inside Space Pod PXL-019~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1049
+Inside Space Pod PXL-020~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1050
+Inside Space Pod PXL-021~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1051
+Inside Space Pod PXL-022~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1052
+Inside Space Pod PXL-023~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1053
+Inside Space Pod PXL-024~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1054
+Inside Space Pod PXL-025~
+This is a large and spacious space pod.  There is a lot of room in
+side here for many passengers.  There are a lot of little display
+panels, lights, buttons and switches that cover the inside of the
+ship.
+~
+0 1610612748 1
+S
+#1055
+Inside Light Fighter Ship FS1-001~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1056
+Inside Light Fighter Ship FS1-002~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1057
+Inside Light Fighter Ship FS1-003~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1058
+Inside Light Fighter Ship FS1-004~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1059
+Inside Light Fighter Ship FS1-005~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1060
+Inside Light Fighter Ship FS1-006~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1061
+Inside Light Fighter Ship FS1-007~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1062
+Inside Light Fighter Ship FS1-008~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1063
+Inside Light Fighter Ship FS1-009~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1064
+Inside Light Fighter Ship FS1-010~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1065
+Inside Light Fighter Ship FS1-011~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1066
+Inside Light Fighter Ship FS1-012~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1067
+Inside Light Fighter Ship FS1-013~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1068
+Inside Light Fighter Ship FS1-014~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1069
+Inside Light Fighter Ship FS1-015~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1070
+Inside Light Fighter Ship FS1-016~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1071
+Inside Light Fighter Ship FS1-017~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1072
+Inside Light Fighter Ship FS1-018~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1073
+Inside Light Fighter Ship FS1-019~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1074
+Inside Light Fighter Ship FS1-020~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1075
+Inside Light Fighter Ship FS1-021~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1076
+Inside Light Fighter Ship FS1-022~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1077
+Inside Light Fighter Ship FS1-023~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1078
+Inside Light Fighter Ship FS1-024~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1079
+Inside Light Fighter Ship FS1-025~
+This is a small light fighter ship.  There is enough room for three
+or four persons to control all the systems in the ship.  There are a
+lot of little display panels, lights, buttons and switches that cover
+the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1080
+Inside Heavy Fighter Ship FS4-001~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1081
+Inside Heavy Fighter Ship FS4-002~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1082
+Inside Heavy Fighter Ship FS4-003~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1083
+Inside Heavy Fighter Ship FS4-004~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1084
+Inside Heavy Fighter Ship FS4-005~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1085
+Inside Heavy Fighter Ship FS4-006~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1086
+Inside Heavy Fighter Ship FS4-007~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1087
+Inside Heavy Fighter Ship FS4-008~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1088
+Inside Heavy Fighter Ship FS4-009~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1089
+Inside Heavy Fighter Ship FS4-010~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1090
+Inside Heavy Fighter Ship FS4-011~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1091
+Inside Heavy Fighter Ship FS4-012~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1092
+Inside Heavy Fighter Ship FS4-013~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1093
+Inside Heavy Fighter Ship FS4-014~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1094
+Inside Heavy Fighter Ship FS4-015~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1095
+Inside Heavy Fighter Ship FS4-016~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1096
+Inside Heavy Fighter Ship FS4-017~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1097
+Inside Heavy Fighter Ship FS4-018~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1098
+Inside Heavy Fighter Ship FS4-019~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1099
+Inside Heavy Fighter Ship FS4-020~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1100
+Inside Heavy Fighter Ship FS4-021~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1101
+Inside Heavy Fighter Ship FS4-022~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1102
+Inside Heavy Fighter Ship FS4-023~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1103
+Inside Heavy Fighter Ship FS4-024~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1104
+Inside Heavy Fighter Ship FS4-025~
+This is a heavily armored fighter ship.  There is enough room for
+three or four persons to control all the systems in the ship.  There
+are a lot of little display panels, lights, buttons and switches that
+cover the inside of the ship, including the weapon systems controls.
+~
+0 1610613004 1 0 0 4
+S
+#1105
+Earth Turbocar~
+This is the earth turbocar.
+~
+0 1073742860 1
+S
+#1106
+Cockpit of Capital Ship: Exelion~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 1119
+S
+#1107
+Floating in a void~
+~
+0 1073741824 1
+D7
+~
+~
+0 -1 1119
+S
+#1108
+Floating in a void~
+~
+0 1073741824 1
+D6
+~
+~
+0 -1 1119
+S
+#1109
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 1119
+D2
+~
+~
+0 -1 1111
+D8
+~
+~
+0 -1 1110
+D9
+~
+~
+0 -1 1112
+S
+#1110
+Floating in a void~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 1111
+D7
+~
+~
+0 -1 1109
+S
+#1111
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 1109
+D1
+~
+~
+0 -1 1110
+D2
+~
+~
+0 -1 1115
+D3
+~
+~
+0 -1 1112
+D8
+~
+~
+0 -1 1113
+D9
+~
+~
+0 -1 1114
+S
+#1112
+Floating in a void~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 1111
+D6
+~
+~
+0 -1 1109
+S
+#1113
+Floating in a void~
+~
+0 1073741824 1
+D7
+~
+~
+0 -1 1111
+S
+#1114
+Floating in a void~
+~
+0 1073741824 1
+D6
+~
+~
+0 -1 1111
+S
+#1115
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 1111
+D1
+~
+~
+0 -1 1116
+D2
+~
+~
+0 -1 1118
+D3
+~
+~
+0 -1 1117
+S
+#1116
+Floating in a void~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 1115
+S
+#1117
+Floating in a void~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 1115
+S
+#1118
+Floating in a void~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 1115
+S
+#1119
+Floating in a void~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 1109
+D4
+~
+~
+0 -1 1106
+D8
+~
+~
+0 -1 1107
+D9
+~
+~
+0 -1 1108
+S
+#1120
+Cockpit of the Exelion~
+A complex control panel takes up the entire room.  The ramp in the
+center of the room is the only exit out.  
+~
+0 1032&24 1
+D5
+~
+~
+0 -1 1121
+S
+#1121
+Before the Cockpit~
+The only noticable thing in this room is the ramp that leads upwards,
+towards the cockpit. 
+~
+0 1032&24 1
+D2
+~
+~
+0 -1 1126
+D4
+~
+~
+0 -1 1120
+D8
+~
+~
+25166887 1133 1133
+D9
+~
+~
+0 -1 1122
+S
+#1122
+Guest Room~
+This room is every bit as fancy as the Captains quarters.  A monstrous
+bed lies in the center of the room, circled by an electronic curtain that
+surrounds the bed, giving the sleeper their utmost privacy. 
+~
+0 1073742856&24 1
+D6
+~
+~
+0 -1 1121
+S
+#1123
+Regeneration Chamber~
+Several tanks filled with a clear blue liquid line the edge of this
+circular room.  If someone were to be badly injured in the sparring
+arena's, they would need only to enter one of the tanks to heal themselves
+quickly. 
+~
+0 536871944&24 1
+D8
+~
+~
+0 -1 1124
+D9
+~
+~
+0 -1 1125
+S
+#1124
+&RZe&Wro G&wr&Rav&Wi&wty S&Rpar&zri&Wng &zAre&Rna&D~
+The gravity in this room is nonexistant, making it difficult to spar. 
+Although, it is most definitely a great place for a good cardiovascular
+workout. 
+~
+0 67108872&24 1
+D3
+~
+~
+0 -1 1126
+D7
+~
+~
+0 -1 1123
+S
+#1125
+&zTh&we &WDa&zr&wkne&zss &WSpa&wrrin&zg &wA&Wr&ze&Wn&wa&D~
+This sparring arena is nearly pitch black.  Barely able to see
+opponents, one has to use all of his senses to be able to defend himself,
+as well as go on offense. 
+~
+0 67108872&24 1
+D1
+~
+~
+0 -1 1126
+D6
+~
+~
+0 -1 1123
+S
+#1126
+Hallway~
+To the east and west are two sparring arena's, and to the southeast is a
+gravity chamber.  To the southwest is a GrandMaster, who can teach you
+nearly anything you wish to learn. 
+~
+0 1032&24 1
+D0
+~
+~
+0 -1 1121
+D1
+~
+~
+0 -1 1124
+D2
+~
+~
+0 -1 1129
+D3
+~
+~
+0 -1 1125
+D8
+~
+~
+0 -1 1127
+D9
+~
+~
+0 -1 1128
+S
+#1127
+&W&uGravitational Chamber&D~
+A gravity control device stands in the center of the room.  A control
+panel faces the entrance to the room, giving quick access to those who are
+eager to begin their training. 
+~
+0 268436488&24 1
+D7
+~
+~
+0 -1 1126
+S
+#1128
+&W&uGrandMaster Dojo&D~
+An aged, wise looking man stands in the center of the room.  His gi is
+in flawless condition, although his body is not.  Many scars adorn his
+face, signs that he knows very well what he is doing in combat. 
+~
+0 1032&24 1
+D6
+~
+~
+0 -1 1126
+S
+#1129
+Access Hatch~
+To the west lies a lounge, where the owner of the Exelion and his
+friends can go to relax.  To the south lies a meditation chamber, giving
+anyone an opportunity to expand their knowledge of whatever they choose. 
+To the east lies an empty cargo bay. 
+~
+0 1032&24 1
+D0
+~
+~
+0 -1 1126
+D1
+~
+~
+7 1001 1130
+D2
+~
+~
+0 -1 1132
+D3
+~
+~
+0 -1 1131
+S
+#1130
+Exelion's Empty Cargo Bay~
+This cargo bay is completely void of anything interesting.  Steel
+plating makes up the walls and the floor, and a lockable door keeps any
+unwanted stowaways out. 
+~
+0 8 1
+D3
+~
+~
+7 1001 1129
+S
+#1131
+Lounge~
+A massive television sits against the northern wall.  Several gaming
+consoles have been placed in front of the TV, providing entertainment and
+pleasure for all.  A large black leather couch sits in the center of the
+room, facing the TV, with a mini-refridgerator on either side, each one
+filled with refreshments.  A giant cooler sits at the southern end of the
+room, filled with food and other edible objects. 
+~
+0 1032&24 1
+D1
+~
+~
+0 -1 1129
+S
+#1132
+&RMed&witati&Ron C&whamb&Rer&D~
+This room is filled with peaceful, serene items.  The sound of trickling
+water echoes from a miniature fountain slightly behind the center of the
+room, and several trees have been artificially planted along the walls.
+Living amongst the trees are several birds and other wild animals, and an
+artificial weather machine controls the climate to perfection.  Apparently,
+this room is completely self-reliant. 
+~
+0 536871944&24 1
+D0
+~
+~
+0 -1 1129
+S
+#1133
+&W&uK&Razama's&D &W&uC&Rhamber&D~
+The chamber of the owner of Exelion
+~
+0 3145732&8 0
+D7
+~
+~
+25166887 1133 1121
+S
+#1134
+Cockpit of the Luxion~
+A massive control panel hums quietly as power courses its way through
+the circuits and conduits required for the ship to run smoothly.  This
+being the room where the ship is controlled, a certain level of maintenance
+is required here to keep things in optimal condition. 
+~
+0 1032 1
+D5
+~
+~
+0 -1 1144
+> entry_prog 100~
+mpechoat $n A female voice begins to speak through the comm system as you enter the room.
+mpechoat $n &CWelcome, $n. This is the cockpit of the Luxion. Here is where any and all control of the ship is performed. This includes advanced space combat maneuvers, as well as hyperspace calculations and course plotting.
+mpechoat $n &C Launching and landing of the Luxion is performed here as well.
+~
+|
+S
+#1135
+Guest Chamber~
+This room is every bit as fancy as the Captains quarters.  A monstrous
+bed lies in the center of the room, circled by an electronic curtain that
+surrounds the bed, giving the sleeper their utmost privacy. 
+~
+0 1032 1
+D2
+~
+~
+0 -1 1149
+S
+#1136
+Avery's House~
+This is your desc. You can edit this with HOUSE DESC.
+~
+0 3146752 0
+D3
+~
+~
+25166887 1136 1149
+S
+#1137
+Cargo Bay~
+A few empty storage crates are scattered about, although nothing else
+really seems to be sticking out in this empty room. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 1149
+S
+#1138
+Lounge~
+A massive television sits against the northern wall.  Several gaming
+consoles have been placed in front of the TV, providing entertainment and
+pleasure for all.  A large black leather couch sits in the center of the
+room, facing the TV, with a mini-refridgerator on either side, each one
+filled with refreshments.  A giant cooler sits at the southern end of the
+room, filled with food and other edible objects.  
+~
+0 1032 1
+D1
+~
+~
+0 -1 1149
+S
+#1139
+Training Deck/Sickbay~
+This is the center of the training area of the Luxion.  In the corners
+of the room are healing tanks, allowing anyone who becomes too severely
+injured in their training to heal as quickly as possible.  To the east and
+west are the sparring arena's, and to the south is the gravity chamber.  To
+the north is the practicing room, where a trainer is patiently awaiting any
+and all students. 
+~
+0 536871944 1
+D0
+~
+~
+0 -1 1140
+D1
+~
+~
+0 -1 1141
+D2
+~
+~
+0 -1 1142
+D3
+~
+~
+0 -1 1143
+D4
+~
+~
+0 -1 1144
+D5
+~
+~
+0 -1 1149
+> entry_prog 100~
+mpechoat $n As you enter the room, a speaker system hums to life, and a female voice begins to speak.
+mpechoat $n &CWelcome, $n. This is the Training Deck of the Luxion. To the east and west are the sparring arenas, and to the south lies the gravity chamber. To the north is our GrandMaster, who will teach you anything you need to learn about fighting.
+~
+|
+S
+#1140
+&W&uTraining Room&D~
+An aged, wise looking man stands in the center of the room.  His gi is
+in flawless condition, although his body is not.  Many scars adorn his
+face, signs that he knows very well what he is doing in combat.
+~
+0 536871944 1
+D2
+~
+~
+0 -1 1139
+D8
+~
+~
+0 -1 1141
+D9
+~
+~
+0 -1 1143
+S
+#1141
+&RD&zeat&Rh&r Sparring Room&D~
+&zThis room is painted to resemble the idea of death.  Black and red
+paint is splattered all over the walls, and the sparring ring is as black
+as midnight.  A hidden hologram machine generates swiftly-moving shadowy
+figures that dart between the beams of light that are lighting this room. 
+Every once in a while, a horrified scream can be heard, signifying the evil
+that is portrayed in this room.  
+~
+0 8 1
+D3
+~
+~
+0 -1 1139
+D7
+~
+~
+0 -1 1140
+D9
+~
+~
+0 -1 1142
+S
+#1142
+&W&uGravity Chamber&D~
+A gravity control device stands in the center of the room.  A control
+panel faces the entrance to the room, giving quick access to those who are
+eager to begin their training. 
+~
+0 268436488 1
+D0
+~
+~
+0 -1 1139
+D6
+~
+~
+0 -1 1141
+D7
+~
+~
+0 -1 1143
+S
+#1143
+&CL&Wif&Ce &wSparring Room&D~
+&CA massive mural of a clear blue sky with random puffy clouds has been
+painted on the walls.  A hidden hologram machine is generating actual
+clouds above the sparring ring, as well as the birds and other wild animals
+that appear to "live" here.  
+~
+0 67108872 1
+D1
+~
+~
+0 -1 1139
+D6
+~
+~
+0 -1 1140
+D8
+~
+~
+0 -1 1142
+S
+#1144
+Space Combat/Ship Maintenance Deck~
+A faint scent of oil and grease drifts in from the north and the south,
+but is immediately sucked into the ventilation shafts in the corners of the
+room.  To the east and west are the ships laser turrets, and to the south
+is the engine room. To the north is the Engineer's Lounge. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 1145
+D1
+~
+~
+0 -1 1146
+D2
+~
+~
+0 -1 1147
+D3
+~
+~
+0 -1 1148
+D4
+~
+~
+0 -1 1134
+D5
+~
+~
+0 -1 1139
+> entry_prog 100~
+mpechoat $n As you enter the room, a speaker system hums to life, and a female voice begins to speak.
+mpechoat $n &CWelcome, $n. This is the Space Combat and Ship Maintenance deck. To the east and west are the laser turrets, and to the south is our Engine Room. To the north is the Engineer's Lounge, where the engineers of the ship can go to rest.
+~
+|
+S
+#1145
+Engineer's Lounge~
+Dozens of tools are neatly hung on the walls of the lounge, and several
+bottles of oil and cans of grease are stacked neatly in a corner.  A shower
+stands in the corner, surrounded by a tile wall so that a respectable
+amount of privacy is attained. 
+~
+0 1032 1
+D2
+~
+~
+0 -1 1144
+D8
+~
+~
+0 -1 1146
+D9
+~
+~
+0 -1 1148
+S
+#1146
+Laser Turret~
+Through the transparisteel window, you can see anything in the immediate
+vicinity of the ship.  The laser turrets outside are polished and shined to
+perfection, although enough laserfire should dull them up soon enough. 
+~
+0 1032 1
+D3
+~
+~
+0 -1 1144
+D7
+~
+~
+0 -1 1145
+D9
+~
+~
+0 -1 1147
+S
+#1147
+Engine Room~
+A loud hum echoes throughout the room as the engines send massive
+amounts of power throughout the ship.  Every once in a while, a small bolt
+of electricity will jump between the engines, but with such raw power being
+generated, that effect is to be expected. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 1144
+D6
+~
+~
+0 -1 1146
+D7
+~
+~
+0 -1 1148
+S
+#1148
+Laser Turret~
+Through the transparisteel window, you can see anything in the immediate
+vicinity of the ship.  The laser turrets outside are polished and shined to
+perfection, although enough laserfire should dull them up soon enough. 
+~
+0 1032 1
+D1
+~
+~
+0 -1 1144
+D6
+~
+~
+0 -1 1145
+D8
+~
+~
+0 -1 1147
+S
+#1149
+Entry Hatch/Living Quarters~
+To the west lies a lounge, where the owner of the Luxion and his friends
+can go to relax.  To the south lies a cargo bay, although from here it
+appears to be quite empty.  To the north and east are the living quarters. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 1135
+D1
+~
+~
+25166887 1136 1136
+D2
+~
+~
+0 -1 1137
+D3
+~
+~
+0 -1 1138
+D4
+~
+~
+0 -1 1139
+S
+#1150
+&rCockpit of the B.M.L. Darkstar&D~
+&zThe cockpit isn't really much of a cockpit..  Infact, it seems to seat
+several people, or aliens, if you will.  Though the seats are comfortable,
+during spaceflight, they actually stiffen up so people at the consoles
+won't fall asleep.  Besides that, there's a ton of buttons, levers, and
+gizmos that don't seem to be of much importance. 
+~
+0 1073742856&24 1
+D8
+~
+~
+0 -1 1157
+D9
+~
+~
+0 -1 1151
+S
+#1151
+&rShips Lounge&D~
+&zThe lounge seems to have alot more color than the rest of the ship. 
+Meant for the utmost comfort for those visiting and resting, the couches
+surrounding the television look futuristic and comfortable.  A pool table
+near the corner offers a bit of entertainment for those uninterested in
+television.  Also showcased nearby are several weapons, once used by the
+great Gordan Freeman in the Black Mesa incident. 
+~
+0 1073742856&24 1
+D1
+~
+~
+0 -1 1158
+D6
+~
+~
+0 -1 1150
+D9
+~
+~
+0 -1 1152
+S
+#1152
+&rEnvironmental Variable Chamber&D~
+&zThis chamber seems to be large and circular, leaving no corners.  It's
+smooth, and seems to be kept relatively clean.  Some weights sit nearby,
+but the main attraction here is the environmental holographics.  Extremely
+advanced for its time, the holographic devices can change the surroundings
+to match those of any environment, providing it's in the system, of course.
+Meaning, you can visit Earth while you're at the other end of the galaxy. 
+Even so, this room also acts as a gravity chamber, and mixed with the
+hologram environments, is quite a spectacle to behold. 
+~
+0 1342178312&24 1
+D1
+~
+~
+0 -1 1163
+D6
+~
+~
+0 -1 1151
+D8
+~
+~
+0 -1 1153
+S
+#1153
+&rHazardous Environment (Sparring&D~
+&zHazardous indeed.  This was the environment that the HEV Suit was
+created for.  Toxic waste lines the floor, leaving only a few barrels,
+large and small crates, to float just above the edge of the waste.  A small
+spout nearby dumps out the radioactive fluids into the already toxic soup
+beneath you.  An excellent place to spar, but best not in large, unhealthy
+doses.  Cancer is bad for you. 
+~
+0 1140851720&24 1
+D1
+~
+~
+0 -1 1154
+D7
+~
+~
+0 -1 1152
+S
+#1154
+&rSurgeon's Quarters&D~
+&zThe surgeon's quarters are half living space, half surgery room,
+incase something goes amiss..  Like a fighter gets injured.  Seems that the
+surgeon's a little crazy, and you're not quite sure you can trust him with
+a scalpel.  Eitherways, there's plenty of exits to retreat to, unless you
+REALLY need medical attention. 
+~
+0 1073742856&24 1
+D0
+~
+~
+0 -1 1162
+D1
+~
+~
+0 -1 1155
+D3
+~
+~
+0 -1 1153
+> entry_prog 100~
+mpecho The surgeon mutters from behind his washroom curtain "Patients... chop them up... little pieces..."
+~
+|
+S
+#1155
+&rHazard Course (Sparring)&D~
+&zJust as the name implies, there's alot of 'hazards'.. basically, large
+cylinders of concrete, walls, barrels, and crates line the walls and the
+middle of the floor, along with other things that might be used as
+projectiles.  The walls are covered with the same metal used to absorb
+stray blasts, to avoid the ship being destroyed. 
+~
+0 1140851720&24 1
+D3
+~
+~
+0 -1 1154
+D6
+~
+~
+0 -1 1156
+S
+#1156
+&rFusion Reactor Core&D~
+&zA similar core to the one used on the high tech spaceships of today,
+this one seems to be the top of the line model.  Several aliens wander
+around, checking gauges and making sure the fusion process is taken care
+of, incase things go horribly wrong.  This room is painted a bright
+orange-yellow, except for the floor, with is that same metallic grey. 
+~
+0 1073742856&24 1
+D3
+~
+~
+0 -1 1159
+D7
+~
+~
+0 -1 1157
+D9
+~
+~
+0 -1 1155
+S
+#1157
+&rCargo Hold&D~
+~
+0 1073742856&24 1
+D3
+~
+~
+0 -1 1158
+D7
+~
+~
+0 -1 1150
+D8
+~
+~
+0 -1 1156
+S
+#1158
+&rEntry Hatch&D~
+&zThe entry hatch isn't anything incredibly special.. just a long ramp
+leading down to the ground.  For now, however, it's closed once you're
+inside the collosus that is the B.M.L.  Darkstar.  Small screens near every
+corner, offers directions to specific parts of the ship.  The ship doesn't
+seem to have a whole lot of color, though. 
+~
+0 1073742856&24 1
+D1
+~
+~
+0 -1 1157
+D2
+~
+~
+0 -1 1162
+D3
+~
+~
+0 -1 1151
+S
+#1159
+&rLong Corridor&D~
+&z There isn't much to be seen here.  However, a large ladder in the
+middle of the corridor seem to lead you to the upper or lower turrets,
+cleverly placed to guard against starship attack. 
+~
+0 1073742856&24 1
+D1
+~
+~
+0 -1 1156
+D3
+~
+~
+0 -1 1162
+S
+#1160
+The Afterlife Transport Ship~
+You are in the cockpit of this space ship. There is a man sitting at the
+controls, pushing buttons.
+~
+0 1076888584&24 0
+D5
+~
+~
+0 -1 1161
+S
+#1161
+Passenger Section~
+There are many small seats in this small room.
+~
+0 1073742856&24 1
+D4
+~
+~
+0 -1 1160
+S
+#1162
+&rTraining Quarters&D~
+~
+0 1073742856&24 1
+D0
+~
+~
+0 -1 1158
+D1
+~
+~
+0 -1 1159
+D2
+~
+~
+0 -1 1154
+D3
+~
+~
+0 -1 1163
+S
+#1163
+&rLong Corridor&D~
+&z There isn't much to be seen here.  However, a large ladder in the
+middle of the corridor seem to lead you to the upper or lower turrets,
+cleverly placed to guard against starship attack. 
+~
+0 1073742856&24 1
+D1
+~
+~
+0 -1 1162
+D3
+~
+~
+0 -1 1152
+D4
+~
+~
+0 -1 1164
+D5
+~
+~
+0 -1 1165
+S
+#1164
+&rLaser Turret&D~
+&zThese turrets are the pinnacle of current technology. Designed to be
+sat in and aimed manually, or by the computer, these turrets are not only
+comfortable, but can also dish out some damage to any sort of ship. 
+~
+0 1073742856&24 1
+D5
+~
+~
+0 -1 1163
+S
+#1165
+&rLaser Turret&D~
+&zThese turrets are the pinnacle of current technology. Designed to be
+sat in and aimed manually, or by the computer, these turrets are not only
+comfortable, but can also dish out some damage to any sort of ship. 
+~
+0 1073742856&24 1
+D4
+~
+~
+0 -1 1163
+S
+#1199
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 1001 1 1001
+M 0 1001 1 1003
+M 0 1002 1 1128
+O 0 1002 1 1131
+O 0 1002 1 1138
+M 0 1002 1 1140
+M 0 1002 1 1162
+M 0 1003 1 1130
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

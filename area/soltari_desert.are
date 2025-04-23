@@ -1,0 +1,3345 @@
+#AREA   Soltari Desert~
+
+
+
+#VERSION 252
+#AUTHOR Ranmyaku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 6
+
+#RESETMSG Scorching waves of heat warm the desert as the sun blazes overhead.~
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#220000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#220001
+retired old man~
+An old hermit~
+A melancholy looking old man with long unkempt hair swings in his chair here.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote takes a long swig from his sake-bottle and mutters something about the decline in martial arts standards.
+say I cant believe it...He hid them..all three!
+hiccup
+say You dont believe it either..right?
+~
+> speech_prog 'I believe'~
+say Wow..
+emote almost falls out of the chair after yet another swig and aloud hiccup
+say Then let me tell you!..You kill dem fwee..goleems..giveses me dem evils..
+burp
+say I giveses you somefin or two!
+~
+> give_prog evil 100~
+say Dis is the *hic* wrong..theeng! Other goleem!
+~
+> act_prog 'gives you The evil of man.'~
+say Deez is the *HIC* wrong..theeng!..Other goleem!
+mppurge evil
+say Kep lookining!
+~
+> act_prog 'gives you The Evil of Saiyans.'~
+cough
+say Ahem..ahem..I thank you for avenging my men..I trained them..but could not spare them the wrath of an air golem.
+say I thank you, and humbly over you this..
+mpoload 220009
+give sword $n
+mppurge evil
+~
+|
+#220002
+small snake~
+A small sand-viper~
+A small snake blends in with the sand near it and hisses closeby
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 900000
+112 112 0
+15 10 15 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#220003
+large mutated snake ~
+A large mutant snake~
+A hideously disfigured python like creature is coiled in the corner here
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 0
+17 10 17 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#220004
+saiyan smuggler~
+A saiyan smuggler~
+A smuggler wearing black armor and covered in scars shifts crates in the arena
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000000
+112 112 0
+25 10 50 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+say We found this old arena..Our ancestors..which means we can store our goods here!
+'kamehameha'
+~
+|
+#220005
+sand golem creature~
+A mass of sand~
+A large flowing mass of sand blocks the way here
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5500000000
+112 112 0
+35 10 25 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 20~
+mpechoat $n &PThe sand form melts and reshapes into a large wolf like creature! &D
+mpmload 220006
+~
+|
+#220006
+sand warg wolf~
+A sand warg~
+A large wolf like creature made of sand growls here
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 10000000000
+112 112 0
+50 10 30 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpechoat $n &cThe sand warg crumbles but once again reforms, this time into a giant, terrifying sand golem! &D
+mpechoaround &cThe sand warg reforms into a huge golem!&D
+mpmload 220007
+~
+|
+#220007
+sand golem~
+The sand golem~
+A hulking human-like mass of sand lurks around here
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+0 55000000000
+112 112 0
+50 10 35 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mpechoat $n &GThe sand golem lurches forward rearing it's head back before slamming
+mpechoat $n &GThe sand golem lurches forward rearing it's head back before slamming it right into yours, it may be made of sand, but it really hurts! &W[10]&D
+mpechoaround $n &GThe sand golem lurches forward, reading it's head back before slamming it into $n, it looks painful! &W[10]&D
+mpdamage $n 10
+~
+> death_prog 2~
+mpoload 220004
+~
+|
+#220008
+rock golem~
+The rock golem~
+A creature made of stones and boulders with bright glowing eyes sits peacefully atop the stack
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 45000000000
+112 112 0
+40 10 40 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 5~
+say Why hurt golem?
+~
+> greet_prog 100~
+say Golems stack..Golem like here!..quiet..
+smile
+say Sit with Golem?
+~
+|
+#220009
+Pterodactyl~
+Pterodactyl~
+A huge fearsome looking winged dinosaur is perched here
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 254000000
+112 112 0
+10 10 45 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#220010
+saiyan warrior~
+An injured saiyan~
+A hulky and injured saiyan warrior crawls over the panels here
+~
+~
+1 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 4000000000
+112 112 0
+40 10 40 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 10~
+say It..it..destroyed..everything..n-n-now..we..des-troy...you!
+~
+> death_prog 5~
+mpmload 220010
+mpecho The saiyan, though leaking guts, gets back up in a rush of adrenaline!
+~
+|
+#220011
+insane saiyan warrior~
+A cowering saiyan~
+A fully equipped saiyan sits whimpering in the corner
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I can't believe..I can't believe..
+cower
+say It's happened so fast!
+~
+> speech_prog 'what happened'~
+say The..air..golem..THE AIR GOLEM!
+shake
+emote begins shaking his head nervously, muttering and convulsing
+say We were elite..ELITE!..We were..the air golem!..We were..destroying..rock golems..
+say Expanding base..the air golem..it killed them all..we are ki masters..
+~
+|
+#220012
+female saiyan warrior~
+A female saiyan fighter~
+A lithe-framed saiyan woman in armor rests in her room here
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 4000000000
+112 112 0
+35 10 67 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+'kamehameha'
+~
+> death_prog 10~
+emote screams in rage, "The air golem..how dare it spare the women..and now you insult me!?"
+scream
+mpmload 220013
+~
+|
+#220013
+supersaiyn female saiyan warrior~
+A female super-saiyan~
+A female soldier hovers ominously here surrounded by golden ki
+~
+~
+35 524288&64 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000
+112 112 0
+45 10 75 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 2~
+mpoload 220006
+~
+|
+#220014
+husky female saiyan~
+A butch saiyan female~
+A considerably husky voiced female watches over her room.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2500000000
+112 112 0
+50 10 20 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 5~
+'final flash'
+~
+|
+#220015
+air elemental golem~
+The air golem~
+A mass of air surrounded by swirling dust trapped within it's winds hovers around
+~
+~
+1 0 0 C
+1 0 75 1d20+0 2d5+0
+0 75000000000
+112 112 0
+60 10 80 120 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mpechoat $n The air golem throws a strong gust of wind at you, you're
+mpechoat $n knocked back into a shower. OUCH! &W[15]&D
+mpdamage $n 15
+mpechoaround $n The air golem throws a massive gust of air at it's opponent!
+~
+> act_prog 'gives you The evil of man.'~
+roar
+emote speaks in a raspy, deep and eerie voice, "Defeat me..for the true evil!"
+~
+> death_prog 100~
+if rand(75)
+if rand(1)
+if carryingvnum($n) 220004
+mppurge evil
+mpoload 220007
+endif
+endif
+endif
+~
+|
+#220199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#220000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#220001
+rocking chair~
+A rocking chair~
+An old-fashioned rocking chair rests in the darkest corner.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#220002
+corpse scientist~
+A scientists corpse~
+A saiyan scientists corpse rots nearby~
+~
+15 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#220003
+science notes~
+Scientists Translation Notes~
+A Scientists Translation Notes have been discarded here~
+~
+13 0 0
+0 0 0 0 0 0
+2 0 0
+ 0
+E
+Test~
+The notes have alot of doodle drawings on them, but the majority of
+the pages and pages of notes are about these sand tunnels.
+ "These tunnels were our saiyan ancestors private training grounds,
+  unlike the elite class, us 3rd class saiyans has to find our own
+  means of training. For the older saiyans, this was just that means
+  I can only hope my notes help another saiyan find an area to train."
+
+ Our saiyan ancestors found something sinister down here..I began
+translating the inscriptions on one of the northen tunnel walls,
+DWIN HOFFI talks of the deserts abundance and "NAGOES TOSTIFI" speaks
+of nourishment. Something..needs feeding..it's some kind of passcode
+for the technologies hidden in these sandstone walls!
+
+ The notes here on are ripped and stained..
+~
+E
+exam~
+~
+E
+notes~
+The notes have alot of doodle drawings on them, but the majority of
+the pages and pages of notes are about these sand tunnels.
+ "These tunnels were our saiyan ancestors private training grounds,
+  unlike the elite class, us 3rd class saiyans has to find our own
+  means of training. For the older saiyans, this was just that means
+  I can only hope my notes help another saiyan find an area to train."
+
+ Our saiyan ancestors found something sinister down here..I began
+translating the inscriptions on one of the northen tunnel walls,
+DWIN HOFFI talks of the deserts abundance and NAGOES TOSTIFI speaks
+of nourishment. Something..needs feeding..it's some kind of passcode
+for the technologies hidden in these sandstone walls!
+
+ The notes here on are ripped and stained..
+~
+#220004
+evil~
+The evil of man~
+A small sculpture of a man holding a sword has been discarder here~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#220005
+plaque~
+A plaque~
+A large rectangular plaque made of brass is fixed to the wall here~
+exam~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+exam~
+"Sparring Arena - This way!. Enter at Own Risk!"
+~
+E
+exam plaque~
+"Sparring Arena - This way!. Enter at Own Risk!"
+~
+#220006
+bandana~
+A red bandana~
+A long blood red bandana has been discarded nearby~
+~
+9 0 17
+100 100 100 100 100 100
+1 0 0
+ 0
+A
+1 10
+A
+2 5
+> wear_prog 100~
+mpechoat $n You are suddenly filled with gruesome flashbacks involving a young saiyan woman!
+mpechoaround $n $n convulses in pain.
+~
+|
+#220007
+The evil of saiyans~
+The Evil of Saiyans~
+A small statue of a saiyan standing over a tombstone has been left on the ground here~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#220009
+rusty katana sword~
+A rusty katana~
+A long thin rusty katana with a saiyan insignia pommel rests on the ground nearby~
+~
+5 0 8193
+0 3 4 1 0 0
+45 1000000 100000
+ 155000000
+#220198
+kilan costume~
+&BA &zK&wil&Wa&zn &WC&wos&Wt&Bum&ze&D~
+A costume resembling an extremely sexy immortal is looking for an owner.~
+~
+9 0 1025 256
+0 0 0 0 250 250
+1 0 0
+ 0
+A
+29 2
+#220199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#220000
+Soltari Desert~
+ The large gate of steel and stone, stands as tall and proud this side
+as it does on the city-side. For what looks like miles are sand dunes
+and boulders. Through the sheets of sand blowing across the arid desert
+screams boom, some sound saiyan-like and others sound too sinister to be
+any real creature. Two burly guards stand aside the gate here with
+menacing grins.
+~
+0 0 10
+D0
+~
+gate~
+3 -1 60007
+D2
+~
+~
+0 -1 220001
+S
+#220001
+One way to go~
+ As thick waves of sand seem to blow in every direction, it's hard to
+know where the boulders are and which way is toward Soltari's gates. A
+thin path is barely visible through the blowing sand, where it leads is
+almost impossible to tell.
+~
+0 0 10
+D0
+~
+~
+0 -1 220000
+D2
+~
+~
+0 -1 220002
+S
+#220002
+One way to go~
+ As thick waves of sand seem to blow in every direction, it's hard to
+know where the boulders are and which way is toward Soltari's gates. A
+thin path is barely visible through the blowing sand, where it leads is
+almost impossible to tell.
+~
+0 0 10
+D0
+~
+~
+0 -1 220001
+D2
+~
+~
+0 -1 220019
+D8
+~
+~
+0 -1 220003
+S
+#220003
+Quicksand!~
+ Suddenly the sand storm thickens and the sheets of yellow surround
+blowing in every possible direction. Beneath a sloped sand dune is
+a large, slow moving pool of sludge like quick sand which rapidly pulls 
+any weight near it into the pool.
+~
+0 0 10
+D5
+~
+~
+0 -1 220004
+> entry_prog 50~
+mpechoat $n &YThe sand beneath your feet starts to sink..it twists your leg! &D
+mpdamage $n 5
+~
+|
+S
+#220004
+A dim sand tunnel~
+ The sand trap leads into a small labrynith of sandy tunnels, the only
+source of light is what little of the outsides blazing sun breaches the
+quicksand pits. This tunnel being the brightest it seems to seperate
+towards a dark tunnel and at least two others.
+~
+0 8 10
+D0
+~
+~
+0 -1 220005
+D1
+~
+~
+0 -1 220006
+S
+#220005
+Beady eyes~
+ When a source of light is finally found, it's noticable that the tunnel
+has haulted at the entrance of a large circular room below the desert
+within the walls of sand are small holes, in each hole are small beady
+crimson eyes staring piercingly out mainly into the darkness. What
+lurks in the holes?
+~
+0 1 10
+D2
+~
+~
+0 -1 220004
+S
+#220006
+Descending into the labyrinth~
+ A sandy slope descends gradually down into inter-connecting tunnels
+even further beneath the Soltari Desert. It's dark in some parts and
+light in others, a foul stench drifts through the tunnels hand in hand
+with eerie noises.
+~
+0 8 10
+D0
+~
+~
+0 -1 220007
+D2
+~
+~
+0 -1 220011
+D3
+~
+~
+0 -1 220004
+D4
+~
+~
+0 -1 220017
+D6
+~
+~
+0 -1 220029
+D7
+~
+~
+0 -1 220012
+D8
+~
+~
+0 -1 220013
+S
+#220007
+Catacombs~
+ The labyrinth continues which way one would have to walk to go
+deeper in or even get back is difficult to tell as the winding
+catacombs stretch this direction..and that direction. They continue
+to the dark north and narrow to the east.
+~
+0 8 10
+D0
+~
+~
+0 -1 220008
+D1
+~
+~
+0 -1 220010
+D2
+~
+~
+0 -1 220006
+S
+#220008
+Crawl Space~
+ The tunnel narrows and becomes so short it's almost acting as a vent
+for the many tunnels in this dark, sand labyrinth. The crawl space
+when looked at using a light can be seen to only continue for a few
+more yards before once again becoming a large tunnel.
+~
+0 9 10
+D2
+~
+~
+0 -1 220007
+D9
+~
+~
+0 -1 220009
+S
+#220009
+A Curve~
+ The tunnel takes a severe change of direction and curves sharply
+back towards the light. The walls here seem to be waterfalls of
+constantly flowing sand.
+~
+0 8 10
+D6
+~
+~
+0 -1 220008
+D8
+~
+~
+0 -1 220006
+S
+#220010
+Narrow catacombs~
+ The tunnel suddenly tightens and becomes too thin to continue walking
+even if there were a creature small enough to sidle through this
+narrow a tunnel it'd be almost impossible to know where it widened
+again in such a dark area.
+~
+0 8 10
+D3
+~
+~
+0 -1 220007
+S
+#220011
+Catacombs~
+ The labyrinth continues, which way one would have to walk to go
+deeper in or even get back is difficult to tell as the winding
+catacombs stretch this direction..and that direction. They continue
+to the dark north and narrow to the east.
+~
+0 8 10
+D0
+~
+~
+0 -1 220006
+D2
+~
+~
+0 -1 220012
+S
+#220012
+Dips, turns and darkness~
+ As the labyrinth goes in yet another direction it now begins to darken
+further and bend in every direction, sometimes sloping and other times
+dipping almost vertical before curling around and ascending back up
+it's hard to tell where the tunnel leads.
+~
+0 1 10
+D0
+~
+~
+0 -1 220011
+D8
+~
+~
+0 -1 220006
+S
+#220013
+Catacombs~
+ The labyrinth continues, which way one would have to walk to go
+deeper in or even get back is difficult to tell as the winding
+catacombs stretch this direction..and that direction. They continue
+to the dark north and narrow to the east.
+~
+0 8 10
+D2
+~
+~
+0 -1 220014
+D7
+~
+~
+0 -1 220006
+S
+#220014
+Sandy Tunnel~
+ The tunnel leads straight into a wall, still engulfed in darkness, it
+isn't extremely noticable that at an almost perfect right angle the
+tunnel leads further into the darkness. In the tunnels just passed are
+the faint sounds of creatures.
+~
+0 8 10
+D0
+~
+~
+0 -1 220013
+D1
+~
+~
+0 -1 220015
+S
+#220015
+Sand falls~
+ The walls in this part of the tunnels are all similar to waterfalls
+only and oddly enough, sand, the sand hits the floor and instantly
+blends in with the other sand. The ceiling above seems to be slowly
+caving causing pillars of sand to fall from the tunnels roof to the
+tunnels fall.
+~
+0 8 10
+D2
+~
+~
+0 -1 220016
+D3
+~
+~
+0 -1 220014
+S
+#220016
+Dead End~
+ Fooled by the twisting tunnels, the sand labyrinth has led straight
+into another waterfall of rapidly flowing sand. The darkness here is
+literally pitch black, and nothing from down the tunnels can be heard
+not even a single faint sound of the above desert.
+~
+0 8 10
+D0
+~
+~
+0 -1 220015
+S
+#220017
+Slope~
+ As sand caves in at the bottom of the slope, it seems the only way
+this tunnel leads is up towards sunlight. The slope is pretty steep
+and the sand doesn't look awfully steady.
+~
+0 0 10
+D4
+~
+~
+0 -1 220018
+> entry_prog 100~
+mpecho &YThe sand behind you caves in and the only way left is up!&D
+~
+|
+S
+#220018
+Top of the slope~
+ As the slope nears the source of the sunlight, a gaping hole in the
+sand is now clearly visible. The sun light beams down the collapsed
+tunnel and the sand storming desert outside is once again easy to
+hear and see.
+~
+0 0 10
+D4
+~
+~
+0 -1 220002
+> entry_prog 100~
+mpecho &YThe whole tunnel shakes and once again the way down is blocked by sand!&D
+~
+|
+S
+#220019
+Eye of the storm~
+ The sand storm around this area of the desert seems un-naturally calm
+and many paths over the dunes and through the rows of eroded boulders
+are visible. There may be a few rock stacks and cliffs in the distance
+but since the storm starts up again close to here it's hard to tell
+what exactly awaits one in the distance.
+~
+0 12 10
+D0
+~
+~
+0 -1 220002
+D1
+~
+~
+0 -1 220020
+D2
+~
+~
+0 -1 220044
+S
+#220020
+Boulder Rows~
+ As did the eastern area, this 'path' seems a safe haven from the
+raging storm. It could be an odd wind pattern which moved the boulders
+into the pattern they now rest in, but it looks almost like they've
+been deliberately placed in two rows creating a mock pathway towards
+the east.
+~
+0 8 10
+D1
+~
+~
+0 -1 220021
+D3
+~
+~
+0 -1 220019
+S
+#220021
+Further along the row~
+ The rows of boulders seem bigger, surely the wind didn't blow these
+dozens of boulders into these messy makeshift rows. Far to the north
+east is a small shack..or a large run down shed. The boulders continue
+eastward.
+~
+0 8 10
+D1
+~
+~
+0 -1 220022
+D3
+~
+~
+0 -1 220020
+S
+#220022
+Boulder rows~
+ The rows of boulders seem bigger, surely the wind didn't blow these
+dozens of boulders into these messy makeshift rows. Far to the north
+east is a small shack..or a large run down shed. The boulders continue
+eastward.
+~
+0 12 10
+D0
+~
+~
+0 -1 220023
+D3
+~
+~
+0 -1 220021
+S
+#220023
+Toward the shack~
+ The rows of boulders come to an abrupt hault, but the sandstorm is
+still very calm here. Nothing more then a breeze sweeps the sand into
+small swirls. Not very far to the north is a small shack, it looks
+pretty bad from here.
+~
+0 12 10
+D0
+~
+~
+0 -1 220024
+D2
+~
+~
+0 -1 220022
+S
+#220024
+Closer to the Shack~
+ The rows of boulders come to an abrupt hault, but the sandstorm is
+still very calm here. Nothing more then a breeze sweeps the sand into
+small swirls. Not very far to the north is a small shack, it looks
+even worse now.
+~
+0 12 10
+D2
+~
+~
+0 -1 220023
+D6
+~
+~
+0 -1 220025
+S
+#220025
+Outside a run-down shack~
+ In the middle of an isolated desert, awhile away from the Soltari
+City outskirts, miles from anywhere. Is this small shack. It's windows
+are hanging on losely and the door is covered in woodrot. It has blotches
+of faded wood varnish and looks very ill-kept.
+~
+0 12 10
+D0
+~
+~
+0 -1 220026
+D9
+~
+~
+0 -1 220024
+S
+#220026
+Inside the shack~
+ The inside of the shack looks almost as bad as the outside did, only
+worse. There is a smell drifting around which smells like medicine and
+burnt food mixed with the strongest alcohol available. There are some
+creaky, hole filled stairs on one side and on the other some moth-eating
+curtains leading into a room.
+~
+0 4 0
+D0
+~
+~
+0 -1 220028
+D1
+~
+torn-curtains~
+1 -1 220027
+D2
+~
+~
+0 -1 220025
+S
+#220027
+Dimly lit room~
+ This room has no windows and all the walls holes, lose wooden planks
+or anything that may let light in has been boarded up or taped over with
+thick duck tape. In the corner sits a man in a rocking chair which creaks
+back and for, he is in a torn orange karate ki with the Crane school
+crest and a bottle of sake in his hand.
+~
+0 4 0
+D3
+~
+torn-curtains~
+1 -1 220026
+S
+#220028
+Just a..toilet~
+ Phew! The smell was clearly coming from this small room upstairs
+there is a toilet in a cubicle sized room with a medicine cabinet
+above it. The medicine bottles are all empty and look old, the toilet
+is covered in unspeakable stains.
+~
+0 4 0
+D2
+~
+~
+0 -1 220026
+S
+#220029
+Putrid-Smelling Tunnel~
+ The foul stench is now more obviously coming from along this long
+dark corridor. There's also indication that the noises are coming
+from this direction too.
+~
+0 1 10
+D0
+~
+~
+0 -1 220030
+D9
+~
+~
+0 -1 220006
+S
+#220030
+Thin Bridge~
+ The sound of creatures is now clearly the pit of sand snakes, some
+mutated and others just simply, big. Each hissing under a thin plank
+which acts as a bridge over the pit in the path of sand leading through
+the dark tunnel.
+~
+0 0 10
+D0
+~
+~
+0 -1 220032
+D2
+~
+~
+0 -1 220029
+> entry_prog 20~
+mpechoat $n The planks snap under your weight and you fall into a pit of snakes!!
+mptransfer $n 220031
+~
+|
+S
+#220031
+Snake Pit~
+ The sand has a large gaping hole in it half way across the tunnel
+and has become a breeding ground for a range of large snakes, sand
+snakes and mutated snakes. It looks like quite a climb up, especially
+with hissing snakes snapping everywhere.
+~
+0 13 10
+D4
+~
+~
+0 -1 220030
+S
+#220032
+Towards the oda~
+ The tunnel only smells worse as it travels further toward the source
+of the smell, something can be heard further ahead. With the snakepit
+back a few yards, what could the new noise be, only the continuously
+stretching sand tunnel will tell.
+~
+0 4 10
+D0
+~
+~
+0 -1 220034
+D1
+~
+~
+0 -1 220033
+D2
+~
+~
+0 -1 220030
+S
+#220033
+Dead End~
+ A wall of sandstone blocks the tunnel which may used to have been
+the way east. Wait, that's well made sandstone, though it looks very
+well made and yet dented in parts. The small eastern tunnel here is
+dark just like the other tunnels.
+~
+0 5 10
+D3
+~
+~
+0 -1 220032
+S
+#220034
+Inscriptions~
+ This room isn't like the sand tunnels, the cieling, floor and walls
+are made out of thick, rugged sand stone which is dented in parts but
+has a clean far wall which has dozens of carved inscriptions on it, they
+read "Dwin Hoffi Un Coffi Acos Nagoes Tostifi"
+~
+0 4 10
+D2
+~
+~
+0 -1 220032
+> speech_prog 'The sand is hungry'~
+mpechoat $n &YThe sand swallows you before the hole fills up immediately!!&D
+mptransfer $n 220035
+~
+|
+S
+#220035
+A sandstone arena~
+ Beneath the tunnels, which were already beneath the tunnels, is what
+looks to be an arena. This is it. It's walls are made of sandstone with
+pictures of snakes and large holes in it. Littering the sand littered
+ground are snake corpses and human bones. The arena is massive. Perhaps
+a saiyans hidden arena?
+~
+0 67108876 10
+D0
+~
+~
+0 -1 220038
+D1
+~
+~
+0 -1 220036
+D3
+~
+~
+0 -1 220037
+S
+#220036
+Crates~
+ If there were a Soltari, or even a Planet Vegeta, black market it
+would obviously be supplied here. Crates, piles and piles, of crates
+have been stacked here with ornaments, art work even weapons, armor
+and high class scouters.
+~
+0 12 10
+D0
+~
+~
+0 -1 220039
+D3
+~
+~
+0 -1 220035
+S
+#220037
+Crates~
+If there were a Soltari, or even a Planet Vegeta, black market it
+would obviously be supplied here. Crates, piles and piles, of crates
+have been stacked here with ornaments, art work even weapons, armor
+and high class scouters.
+~
+0 12 10
+D1
+~
+~
+0 -1 220035
+S
+#220038
+Sandstone Arena~
+ Beneath the tunnels, which were already beneath the tunnels, is what
+looks to be an arena. This is it. It's walls are made of sandstone with
+pictures of snakes and large holes in it. Littering the sand littered
+ground are snake corpses and human bones. The arena is massive. Perhaps
+a saiyans hidden arena?
+~
+0 67108876 10
+D1
+~
+~
+0 -1 220039
+D2
+~
+~
+0 -1 220035
+D3
+~
+~
+0 -1 220040
+S
+#220039
+Crates~
+If there were a Soltari, or even a Planet Vegeta, black market it
+would obviously be supplied here. Crates, piles and piles, of crates
+have been stacked here with ornaments, art work even weapons, armor
+and high class scouters.
+~
+0 12 10
+D2
+~
+~
+0 -1 220036
+D3
+~
+~
+0 -1 220038
+S
+#220040
+Crates~
+If there were a Soltari, or even a Planet Vegeta, black market it
+would obviously be supplied here. Crates, piles and piles, of crates
+have been stacked here with ornaments, art work even weapons, armor
+and high class scouters.
+~
+0 12 10
+D1
+~
+~
+0 -1 220038
+D6
+~
+~
+0 -1 220041
+S
+#220041
+Sandstone room~
+ This room is built similarly to the sandstone arena, that is, the walls
+ceiling and floor are made of strong sandstone. The most noticable
+differance is the size, this room is considerably smaller and has a
+small intercom like machine built into the sandstone. Next to it is
+a small plaque reading, "Danger : Password Required".
+~
+0 12 10
+D9
+~
+~
+0 -1 220040
+> speech_prog 'The sand is hungry'~
+mpechoat $n &BA thin glass-like door swings open causing a cloud of sand to swirl up, you're sucked in!
+mptransfer $n 220042
+~
+|
+S
+#220042
+Golem's Lair~
+ This is yet another sand stone corridor, the glass door leading here
+has closed and is blanketed by sand. This tunnel of sandstone seems to
+be alot wider and taller than the others, maybe because there is a
+large creature made of oozing sand blocking the way.
+~
+0 12 10
+D0
+~
+~
+0 -1 220043
+S
+#220043
+A tunnel up~
+ The only way to go is once again, up, from here a little light shines 
+down from what looks like wood. The slope leading up isn't too steep
+and should be easily walkable. But what lies up ahead isn't very easily
+made out.
+~
+0 12 10
+D2
+~
+~
+0 -1 220042
+D4
+~
+~
+0 -1 220026
+S
+#220044
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D0
+~
+~
+0 -1 220019
+D1
+~
+~
+0 -1 220045
+D2
+~
+~
+0 -1 220076
+S
+#220045
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D1
+~
+~
+0 -1 220046
+D3
+~
+~
+0 -1 220044
+S
+#220046
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D1
+~
+~
+0 -1 220047
+D3
+~
+~
+0 -1 220045
+S
+#220047
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D1
+~
+~
+0 -1 220048
+D3
+~
+~
+0 -1 220046
+S
+#220048
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D1
+~
+~
+0 -1 220049
+D3
+~
+~
+0 -1 220047
+S
+#220049
+Desert~
+ As the sandstorm makes everything look like one giant landscape of sand
+and the desert itself it simply miles of sand. It's easy to get lost here
+as it's impossible to tell which easy is east, what direction could be
+north. The blazing sun overhead doesn't help matters.
+~
+0 4 10
+D1
+~
+~
+0 -1 220050
+D3
+~
+~
+0 -1 220048
+S
+#220050
+Eastern Stacks~
+ Finally the ever-expanding desert stops at far to the east, and now
+within the dying sandstorm are piles of boulders, crumbled stacks and
+still-standing rock stacks. The rocks and stacks are littered randomly
+around the large space that is, the Eastern Desert.
+~
+0 4 10
+D3
+~
+~
+0 -1 220049
+D8
+~
+~
+0 -1 220051
+S
+#220051
+Below a stack~
+ This is the first one of many stacks in the area nearby, this one
+looks pretty small but still stretches up considerably far. The bottom
+has loads of pebble scattered around it and the top appears to have
+plant-life growing on it.
+~
+0 0 10
+D2
+~
+~
+0 -1 220057
+D4
+~
+~
+0 -1 220052
+D7
+~
+~
+0 -1 220050
+S
+#220052
+Halfway up the stack~
+ The ground and the stacks zenith seem to be equally distanced from here
+so assumably this is the middle point. There are almost elaborate holes
+and ledges in the stack which make it easy to climb without the help of
+any equipment.
+~
+0 4 10
+D4
+~
+~
+0 -1 220053
+D5
+~
+~
+0 -1 220051
+S
+#220053
+Top of the Stack~
+ Small, mal-nourished cacti are growing here, though many dead sprouts
+can be seen. The moisture up here must be at very odd levels. From here
+most of the sandstorm that is Soltari Desert can be seen, a small rundown
+shack, a sand pit and the rest is clouded in sand.
+~
+0 4 10
+D1
+~
+~
+0 -1 220054
+D5
+~
+~
+0 -1 220052
+S
+#220054
+Top of the Stack~
+ Small, mal-nourished cacti are growing here, though many dead sprouts
+can be seen. The moisture up here must be at very odd levels. From here
+most of the sandstorm that is Soltari Desert can be seen, a small rundown
+shack, a sand pit and the rest is clouded in sand.
+~
+0 4 10
+D3
+~
+~
+0 -1 220053
+D5
+~
+~
+0 -1 220056
+S
+#220055
+Floating in a void~
+~
+0 4 10
+S
+#220056
+Above rocks~
+ This side of the stack is blocked by rocks which down look stable
+enough to climb down without being crushed, but there are more stacks
+visible from this side of the previous stack.
+~
+0 4 10
+D4
+~
+~
+0 -1 220054
+S
+#220057
+Crumbled Stacks~
+ All around here are the crumbled remains of what once were proud
+stacks, the eroded rocks lie in piles, some are made up of large
+boulders and others crumbled to mere foot tall pebble groups. The
+stacks seem to be the only thing around the eastern desert.
+~
+0 4 10
+D0
+~
+~
+0 -1 220051
+D3
+~
+~
+0 -1 220058
+D8
+~
+~
+0 -1 220063
+S
+#220058
+Tallest Stack's Bottom~
+ Looking up, this is definately the tallest stack in the whole desert
+it ascends almost completely to the clouds and looks like quite a tough
+climb, it's wide enough to withstand the battering of the other crumbling
+stacks and sandstorm.
+~
+0 4 10
+D1
+~
+~
+0 -1 220057
+D4
+~
+~
+0 -1 220059
+S
+#220059
+Long way up~
+ The stack doesn't look any smaller here then it did at the bottom
+the trechous climbing hasn't even started and it's hard already. The
+stack though steady is surrounding by a forboding sense of danger, here
+and there are small desert-weeds trying to stagger through the small
+cracks in the rock.
+~
+0 4 10
+D4
+~
+~
+0 -1 220060
+D5
+~
+~
+0 -1 220058
+S
+#220060
+Still climbing~
+ The stack still ascends, up and up it goes with the top seeming to
+go further skyward the more the stack is climbed. Still desert-weed
+sproutlings struggle out of even the smallest crevice seeking sunlight
+only to lose nutrients.
+~
+0 4 10
+D4
+~
+~
+0 -1 220061
+D5
+~
+~
+0 -1 220059
+S
+#220061
+Getting closer!~
+ This might be half way up the stack, but the climb has become fuch
+more perilous and the heat makes it all the more exhausting to do so
+carefully. Looking down, nothing can be seen except a yellowish blur
+and rocky coloured hazes. This point in the climb must be really high
+up now.
+~
+0 0 10
+D4
+~
+~
+0 -1 220062
+D5
+~
+~
+0 -1 220060
+> entry_prog 15~
+mpechoat $n A rock under your foot slides down the stack, oh-no! You're falling!
+mpechoaround $n &R$n slips and falls to his doom..or will he make it!?&D
+mpdamage $n 25
+mptransfer $n 220058
+~
+|
+S
+#220062
+Top of the desert~
+ From the peak of the stack it feels like this is the top of the
+whole desert. There are many flourishing cacti here, some with bright
+pink flowers, from here also, there is some sort of military base
+visible far into the southern desert area.
+~
+0 4 10
+D5
+~
+~
+0 -1 220061
+S
+#220063
+Rocky Piles~
+ Once more, all over the ground are piles of rock and stone not to
+mention the abundance of sand everywhere. There are still some small
+stacks and some pretty big stacks, scattered randomly on the surrounding
+landscape.
+~
+0 4 10
+D7
+~
+~
+0 -1 220057
+D9
+~
+~
+0 -1 220064
+S
+#220064
+Between stacks~
+ The rock piles are suddenly dwarved as they become shadowed next to
+three tall pillars of stone, more rock stacks, each one seems pretty 
+much teh same size, perhaps they were all once part of a once great
+desert cliff, perhaps this wasn't always desert at all.
+~
+0 4 10
+D1
+~
+~
+0 -1 220065
+D2
+~
+~
+0 -1 220072
+D3
+~
+~
+0 -1 220066
+D6
+~
+~
+0 -1 220063
+S
+#220065
+Another stack~
+ This stack is tall, wide, rocky and unfortunately unclimbable. Every
+few seconds a few rocks fall down and smash into the ground. Around
+the stack are the scorched remains of some misfortunate animals, they
+seem to be the bones of snakes and coyotes.
+~
+0 4 10
+D3
+~
+~
+0 -1 220064
+> rand_prog 20~
+mpecho A rock rolls down and crashes into the ground, spraying debris everywhere.
+~
+|
+S
+#220066
+Rocky Pillar~
+ Yet another mundane, ordinary desert stack is here, it's made of 
+rock like the others and it's about as tall as most of the others
+but this one has something on top, a noisy something on top.
+~
+0 4 10
+D1
+~
+~
+0 -1 220064
+D4
+~
+~
+0 -1 220067
+S
+#220067
+Ascending stack~
+ The cacti here are blooming beautifully almost like they have been
+well fertilized. The stack continues with ledges and stepping stones
+leading up and up, closer to the noises at the top, something can be
+seen peeking over the peak, it's undistinguishable from here though.
+~
+0 4 10
+D1
+~
+~
+0 -1 220068
+D4
+~
+~
+0 -1 220069
+D5
+~
+~
+0 -1 220066
+S
+#220068
+Manure Ledge~
+ The ledge on this eastern face of the cliff is covered in steaming
+piles of fresh dung, as disgusting as it is, one cant help notice how
+big a creature would need to be to excrete such large dung. It's now
+suddenly more easily distinguished whats able to be seen on the stacks
+top
+~
+0 4 10
+D3
+~
+~
+0 -1 220067
+S
+#220069
+Gales and Climbing~
+ Blinding waves of sand from the storm sweep across the stack and
+once again the creature or creatures, on top disappear from view
+due to this barrage of sand attacking the pillar like stack. The
+noises are now alot louder.
+~
+0 4 10
+D4
+~
+~
+0 -1 220071
+D5
+~
+~
+0 -1 220067
+S
+#220070
+Dinosaurs Nest~
+ Finally as the stack ends the creature is in full view, it's a
+huge Pterodactyl perched over a nest made of dry sticks and stones
+which dont look all too comfortable. There are no eggs visible but
+the cacti here, like those on the stack itself, are blooming with
+flowers.
+~
+0 4 10
+D5
+~
+~
+0 -1 220071
+S
+#220071
+Nearing the top~
+ What was peeking over the top is finally clearly visible, and it
+looks like some kind of leathery wing. Whatever it belongs to is
+still making alot of noise. The climb still seems full of flower
+covered cacti and stepping stones.
+~
+0 4 10
+D4
+~
+~
+0 -1 220070
+D5
+~
+~
+0 -1 220069
+S
+#220072
+Rounded Stack~
+ This stack is just another stack, just like all the others filling up
+the eastern desert and yet it in it's own way differs. The sand storm
+has left it well rounded so this stack is more like a pillar then any
+of the others, but as a result is impossible to climb without damaging
+and causing an avalanche.
+~
+0 4 10
+D0
+~
+~
+0 -1 220064
+D1
+~
+~
+0 -1 220073
+D3
+~
+~
+0 -1 220075
+S
+#220073
+Around the stack~
+ This is the pillar-like stacks eastern face, the rock piles make
+sliding across the stack the only on, also due to the boulder piles
+what's behind the pillar cannot be seen from here.
+~
+0 4 10
+D3
+~
+~
+0 -1 220072
+D9
+~
+~
+0 -1 220074
+S
+#220074
+Behind the stack~
+ With the pillar behind and the rock piles now thinning, it can now
+be seen that there is something new blocking the rocky path. A large
+metallic wall worn away by the deserts tremendous heat and shifting
+stacks. It stretches extremely far both high and in length.
+~
+0 4 10
+D6
+~
+~
+0 -1 220073
+D7
+~
+~
+0 -1 220075
+S
+#220075
+Around the stack~
+ This is the pillar-like stacks western face, the rock piles make
+sliding across the stack the only on, also due to the boulder piles
+what's behind the pillar cannot be seen from here.
+~
+0 4 10
+D1
+~
+~
+0 -1 220072
+D8
+~
+~
+0 -1 220074
+S
+#220076
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D0
+~
+~
+0 -1 220044
+D1
+~
+~
+0 -1 220077
+D8
+~
+~
+0 -1 220083
+S
+#220077
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220078
+D3
+~
+~
+0 -1 220076
+S
+#220078
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D3
+~
+~
+0 -1 220077
+D8
+~
+~
+0 -1 220079
+S
+#220079
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220081
+D3
+~
+~
+0 -1 220080
+D7
+~
+~
+0 -1 220078
+S
+#220080
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220079
+S
+#220081
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220082
+D3
+~
+~
+0 -1 220079
+S
+#220082
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D3
+~
+~
+0 -1 220081
+S
+#220083
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D0
+~
+~
+0 -1 220084
+D3
+~
+~
+0 -1 220085
+D7
+~
+~
+0 -1 220076
+D9
+~
+~
+0 -1 220086
+S
+#220084
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D2
+~
+~
+0 -1 220083
+S
+#220085
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220083
+S
+#220086
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220087
+D6
+~
+~
+0 -1 220083
+D9
+~
+~
+0 -1 220088
+S
+#220087
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D3
+~
+~
+0 -1 220086
+S
+#220088
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D1
+~
+~
+0 -1 220089
+D6
+~
+~
+0 -1 220086
+S
+#220089
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D0
+~
+~
+0 -1 220090
+D3
+~
+~
+0 -1 220088
+D9
+~
+~
+0 -1 220091
+S
+#220090
+Desert Plains~
+ As the storm shields most of the desert landscape from view and
+the ever expansive desert seems to be never-ending, there is nothing
+to be seen anywhere but desert. Through the storm dotted here and
+there are green blotches which as assumably cacti, if one were to
+strain ones eyes it may be noticed that there is a huge structure
+of some sort far off into the distance.
+~
+0 4 10
+D2
+~
+~
+0 -1 220089
+S
+#220091
+Nearing a structure~
+ Finally with the deserts sand storm once again dying to a calm breeze
+and the sand movement at a minimum, the large structure seen from a
+distance is revealed to be some sort of large, metal-build base perhaps
+the Soltari City's battle outpost. On the side are the fading insignia
+of the Saiyan Militia core.
+~
+0 4 10
+D6
+~
+~
+0 -1 220089
+D9
+~
+~
+0 -1 220092
+S
+#220092
+Enclosing on the structure~
+ The structure is slowly becoming bigger and bigger, it's massive size
+becomes easily apparent. Though through the thick, dusty windows little
+to no activity can be seen and there are noticable dents around the
+militia insignia on the large steel walls.
+~
+0 4 10
+D1
+~
+~
+0 -1 220093
+D6
+~
+~
+0 -1 220091
+S
+#220093
+Enclosing on the structure~
+ The structure is slowly becoming bigger and bigger, it's massive size
+becomes easily apparent. Though through the thick, dusty windows little
+to no activity can be seen and there are noticable dents around the
+militia insignia on the large steel walls.
+~
+0 4 10
+D2
+~
+~
+0 -1 220094
+D3
+~
+~
+0 -1 220092
+S
+#220094
+Outside the structure~
+ The structure suddenly overshadows the surrounding area, looking up
+it seems to touch the sky and it's just as wide as it is large. The 
+door is noticably battered, dented and yet very cleanly so as if it
+were blown off, though it seems to be made of extremely thick, durable
+steel.
+~
+0 4 10
+D0
+~
+~
+0 -1 220093
+D1
+~
+~
+0 -1 220095
+D2
+~
+~
+0 -1 220099
+D3
+~
+~
+0 -1 220097
+S
+#220095
+Along the wall~
+ The wall, much like the door, is covered in clean, smooth dents but
+no scratches, burnt areas where ki could have penetrated. Just dents
+as if hit my gale-force winds. The insignia on the other hand, show
+many signs of aging and seem to have been worn down by the sand.
+~
+0 4 10
+D1
+~
+~
+0 -1 220096
+D3
+~
+~
+0 -1 220094
+S
+#220096
+Along the wall~
+ The wall, much like the door, is covered in clean, smooth dents but
+no scratches, burnt areas where ki could have penetrated. Just dents
+as if hit my gale-force winds. The insignia on the other hand, show
+many signs of aging and seem to have been worn down by the sand.
+~
+0 4 10
+D3
+~
+~
+0 -1 220095
+S
+#220097
+Along the wall~
+ The wall, much like the door, is covered in clean, smooth dents but
+no scratches, burnt areas where ki could have penetrated. Just dents
+as if hit my gale-force winds. The insignia on the other hand, show
+many signs of aging and seem to have been worn down by the sand.
+~
+0 4 10
+D1
+~
+~
+0 -1 220094
+D3
+~
+~
+0 -1 220098
+S
+#220098
+Along the wall~
+ The wall, much like the door, is covered in clean, smooth dents but
+no scratches, burnt areas where ki could have penetrated. Just dents
+as if hit my gale-force winds. The insignia on the other hand, show
+many signs of aging and seem to have been worn down by the sand.
+~
+0 4 10
+D1
+~
+~
+0 -1 220097
+S
+#220099
+Before a battered door~
+ The door is in a terrible state and hanging on by a few lose bolts
+and wires, sparks are flying everywhere in bright yellow showers of
+electricity. The panel next to the door constantly repeats the phrase
+"Keycode needed", though the door seems to be damaged enough to simply
+walk through.
+~
+0 4 10
+D0
+~
+~
+0 -1 220094
+D2
+~
+~
+0 -1 220100
+> rand_prog 15~
+mpecho &BS&Yparks &Bfly everywhere&Y!&D
+~
+|
+S
+#220100
+Ruins!~
+ It looks like the saiyans blinked when the tornado tore through thier
+base, there are more sparking wires exposed everywhere, metal panels
+lie dented on the floor, wholes in the wall and yet not a corpse is
+in sight. There are corridors in various directions as well as holes
+leading into other rooms.
+~
+0 4 1
+D0
+~
+~
+0 -1 220099
+D1
+~
+~
+0 -1 220101
+D4
+~
+~
+0 -1 220118
+D9
+~
+~
+0 -1 220120
+S
+#220101
+Corridor~
+ The carnage continues along this corridor, with wires outstrechted
+everywhere and holes sparking brightly. The destruction is everywhere
+not an inch of the structure has been left undamaged. A keypad is
+blinking next to a large hole with the words, "Failure to open".
+~
+0 4 1
+D1
+~
+~
+0 -1 220103
+D3
+~
+~
+0 -1 220100
+D6
+~
+~
+0 -1 220102
+S
+#220102
+Hole in the Wall~
+ The tight wires here hang down like vines in an exotic jungle, only
+these vines aren't as friendly becuase they are swimming in unstable
+electricity. The space here isn't even big enough to try and crawl
+through.
+~
+0 4 1
+D9
+~
+~
+0 -1 220101
+S
+#220103
+Junction~
+ As the ravaged corridor continues, it suddenly hits an abrupt junction
+with a corridor leading north, a corridor leading southeast and one
+continuing eastbound. The damage along each of these corridors seems
+even worse. There are plaques on each wall but they are currently
+over shadowed by wires in the corridors.
+~
+0 4 1
+D0
+~
+~
+0 -1 220114
+D1
+~
+~
+0 -1 220117
+D3
+~
+~
+0 -1 220101
+D8
+~
+~
+0 -1 220104
+S
+#220104
+Corridor to Arena~
+ This corridor doesn't look very long, it goes on a few meters south-
+east leading into what looks like a massive room covered in odd looking
+metallic plates. There is a large brass plaque on the wall with something
+inscribed on it.
+~
+0 4 1
+D7
+~
+~
+0 -1 220103
+D8
+~
+~
+0 -1 220105
+S
+#220105
+Sparring Corridor~
+ As the path of destruction which is the corridor continues the door
+way into the arena looks bigger and so does the destroyed arena itself
+there are more panels now plainly damaged and on the floor.
+~
+0 4 1
+D7
+~
+~
+0 -1 220104
+D8
+~
+~
+0 -1 220106
+S
+#220106
+Sparring Corridor~
+ As the path of destruction which is the corridor continues the door
+way into the arena looks bigger and so does the destroyed arena itself
+there are more panels now plainly damaged and on the floor.
+~
+0 0 1
+D1
+~
+~
+0 -1 220107
+D7
+~
+~
+0 -1 220105
+S
+#220107
+Torn-Up Arena~
+ Energy absorbing plates imported from the Center of the Universe's
+space station have either fallen off and smashed into the floor or
+been blown off somehow, they litter the ground. Dust now blankets
+the arena and none of the power gauges, gravity switches or lights
+are on..or working. Injured, enraged looking warriors crawl around
+over the plates.
+~
+0 4 1
+D0
+~
+~
+0 -1 220110
+D1
+~
+~
+0 -1 220108
+D2
+~
+~
+0 -1 220113
+D3
+~
+~
+0 -1 220106
+S
+#220108
+Woebegone Arena~
+ This once great sparring arena was the stage for some sort of masacre
+as it's once formiddable technology has become a mess of spare parts and
+broken electronics. The whole arena has it's on layer of dust which may
+have been swept in from the desert, this can be confirmed by the gaping
+hole in the wall.
+~
+0 4 1
+D0
+~
+~
+0 -1 220111
+D1
+~
+~
+0 -1 220109
+D3
+~
+~
+0 -1 220107
+S
+#220109
+Bedraggled Arena~
+ The desert's windy sand storm blows through the wide gap in the wall
+and the lighter metal panels and wires and thrown across the arena
+around the room. The bases automatic repair systems constantly struggle
+to gather the metal and try to fix the wall, but the deserts rage and
+the bases ripped technology over power it causing more mess.
+~
+0 4 1
+D0
+~
+~
+0 -1 220112
+D3
+~
+~
+0 -1 220108
+S
+#220110
+Glum Arena~
+ A whole walls panel have been thrown into a pile of wreckage here
+and are covered in most the rooms busted technology. There seems
+to be a dead saiyan or two under the panels, they've been ignored
+and this mistreated arena show now signs of repair.
+~
+0 4 1
+D1
+~
+~
+0 -1 220111
+D2
+~
+~
+0 -1 220107
+S
+#220111
+Impaired Arena~
+ The more of this arena that is seen, the worse it looks, even more
+panels that have been bent and blown around are crumbled on the
+floor sprawled out all over the place. The spoiled arena looks as
+bad here as it does everywhere else.
+~
+0 4 1
+D1
+~
+~
+0 -1 220112
+D2
+~
+~
+0 -1 220108
+D3
+~
+~
+0 -1 220110
+S
+#220112
+Balled-up Arena~
+ The arena in this north eastern corner is as bad as any other part
+or corner of the arena, though this is the only corner that shows
+signs of ki battling with burnt panels still attached to the wall
+and smouldering ruins rather then piles of ruin.
+~
+0 4 1
+D2
+~
+~
+0 -1 220109
+D3
+~
+~
+0 -1 220111
+S
+#220113
+Totalled Arena~
+ The hellish mess of the arena is truly apparent in this isolated
+corner with it's dust, sand-covered panels and it's not even sparking
+wires and keypads. This corner is stained with the blood, presumably,
+of the saiyans moving around near here.
+~
+0 4 1
+D0
+~
+~
+0 -1 220107
+S
+#220114
+Corridor~
+ This long corridor has shattered glass all over the un-polished steel
+tile floor and at regular intervals on either side of the wall are
+healing tanks which have all suffered identical fates, that's a large
+hole smashed into the thick glass and the panels ripped from the
+wall. No healing liquid has been spilled over the floor so perhaps
+none of the tanks were in use when smashed.
+~
+0 4 1
+D0
+~
+~
+0 -1 220115
+D2
+~
+~
+0 -1 220103
+S
+#220115
+Glass-covered Corridor~
+ This long corridor has shattered glass all over the un-polished steel
+tile floor and at regular intervals on either side of the wall are
+healing tanks which have all suffered identical fates, that's a large
+hole smashed into the thick glass and the panels ripped from the
+wall. No healing liquid has been spilled over the floor so perhaps
+none of the tanks were in use when smashed.
+~
+0 4 1
+D0
+~
+~
+0 -1 220116
+D2
+~
+~
+0 -1 220114
+S
+#220116
+Wrecked Tanks~
+ This long corridor has shattered glass all over the un-polished steel
+tile floor and at regular intervals on either side of the wall are
+healing tanks which have all suffered identical fates, that's a large
+hole smashed into the thick glass and the panels ripped from the
+wall. No healing liquid has been spilled over the floor so perhaps
+none of the tanks were in use when smashed.
+~
+0 4 1
+D2
+~
+~
+0 -1 220115
+S
+#220117
+Blocked Corridor~
+ A whole chunk of six-inch steel has fallen from the ceiling and
+onto the corridor, a small water leak trickles down from the hole
+then down the pile of shrapnel blocking further travel into the
+tunnel.
+~
+0 4 1
+D3
+~
+~
+0 -1 220103
+S
+#220118
+Broken Stairs~
+ A glass tube elevator running up and down next to the stairs has
+become frantic, bobbing up and down at amazing speeds and throwing
+shards everywhere. Every few steps there is a step missing.
+~
+0 4 1
+D4
+~
+~
+0 -1 220119
+D5
+~
+~
+0 -1 220100
+S
+#220119
+Upper Floor~
+ The corridors here are littered mainly with clothes, bed sheets and
+things that look like solider 'essentials' such as scouters, ration
+packs and so on, though most are broken. There are some doors lying
+dented on the floor too. The top floor seems to be some kind of
+barracks.
+~
+0 12 1
+D1
+~
+~
+0 -1 220121
+D3
+~
+~
+0 -1 220131
+D5
+~
+~
+0 -1 220118
+D6
+~
+~
+0 -1 220135
+S
+#220120
+Gravity Chamber~
+ The gravity rooms center is a large white pillar with a large set
+of key pannels on it. There is a large digital display with numbers
+fluxating rapidly, the gravity dial has been broken meaning the
+gravity has become unstable and perfect for unexpected boosts in
+training.
+~
+0 268435460 1
+D6
+~
+~
+0 -1 220100
+S
+#220121
+Corridor - Male Dormitories~
+ In black on the wall, "Male Dormitories - Keep out", has been roughly
+scrawled on the wall in spray paint. There are many water bottles and
+trampled scouters here and yet no signs of life that one could asoci-
+ate with a male soldiers dorm.
+~
+0 12 1
+D0
+~
+~
+0 -1 220122
+D1
+~
+~
+0 -1 220123
+D3
+~
+~
+0 -1 220119
+S
+#220122
+Dormitory #01~
+ This dormitory's bed has been upturned and the walls are tainted
+with patches of damp. There are two suits of armor here both broken
+to pieces and scattered all over the floor. A small sink in the corner
+has been snapped, shattered and left as a small indoor water fountain.
+~
+0 12 1
+D2
+~
+~
+0 -1 220121
+S
+#220123
+Corridor - Male Dormitories~
+ In black on the wall, "Male Dormitories - Keep out", has been roughly
+scrawled on the wall in spray paint. There are many water bottles and
+trampled scouters here and yet no signs of life that one could asoci-
+ate with a male soldiers dorm.
+~
+0 12 1
+D0
+~
+~
+0 -1 220124
+D1
+~
+~
+0 -1 220125
+D3
+~
+~
+0 -1 220121
+S
+#220124
+Dormitory #02~
+ This dormitory seems to have been spared from the masacre that
+tore apart the rest of the dorms. The bed has been made, with the 
+sheets smoothly placed and cleans. The contents of the room mainly
+stored in a large cupboard
+~
+0 12 1
+D2
+~
+~
+0 -1 220123
+S
+#220125
+Corridor - Male Dormitories~
+ In black on the wall, "Male Dormitories - Keep out", has been roughly
+scrawled on the wall in spray paint. There are many water bottles and
+trampled scouters here and yet no signs of life that one could asoci-
+ate with a male soldiers dorm.
+~
+0 8 1
+D0
+~
+~
+0 -1 220126
+D1
+~
+~
+0 -1 220127
+D3
+~
+~
+0 -1 220123
+S
+#220126
+Dormitory #03~
+ Whatever used to be in this room is now gone, perhaps the majority
+of this dorm is now in the heaps of mess outside in the long corridor
+all over the walls are scribbles which are undistinguishable. In the
+corner is a saiyan soldier in full armor.
+~
+0 12 1
+D2
+~
+~
+0 -1 220125
+S
+#220127
+Corridor - Male Dormitories~
+ In black on the wall, "Male Dormitories - Keep out", has been roughly
+scrawled on the wall in spray paint. There are many water bottles and
+trampled scouters here and yet no signs of life that one could asoci-
+ate with a male soldiers dorm.
+~
+0 12 1
+D0
+~
+~
+0 -1 220128
+D1
+~
+~
+0 -1 220129
+D3
+~
+~
+0 -1 220125
+S
+#220128
+Dormitory #04~
+ This dormitory has been left in immaculate condition, not a single
+speck of dust is in sight. The walls and floor are gleaming with
+polish and the bed looks as though it were never slept in, the only
+thing out of place is the door, which is half in the corridor and
+half in the room bent way out of shape.
+~
+0 12 1
+D2
+~
+~
+0 -1 220127
+S
+#220129
+Corridor - Male Dormitories~
+ In black on the wall, "Male Dormitories - Keep out", has been roughly
+scrawled on the wall in spray paint. There are many water bottles and
+trampled scouters here and yet no signs of life that one could asoci-
+ate with a male soldiers dorm.
+~
+0 12 1
+D0
+~
+~
+0 -1 220130
+D3
+~
+~
+0 -1 220127
+S
+#220130
+Dormitory #05~
+ This is by far the messiest of the five main dormitories, it's filled
+with debris from somewhere and a large saiyans corpse decorates the
+top of the pile. There are ripped up papers, an overturned bed and
+broken cabinets all over the room. Mess everywhere.
+~
+0 12 1
+D2
+~
+~
+0 -1 220129
+S
+#220131
+Corridor - Female Dormitories~
+ This corridor is the complete opposite of the male dormitory corridor
+because there is not a single thing out of place in the corridor and
+the sliding doors are fixed perfectly on the frames. Instead of graffiti
+on the walls, "Female Dormitories", has been officially painted on the 
+walls.
+~
+0 12 1
+D0
+~
+~
+0 -1 220132
+D1
+~
+~
+0 -1 220119
+D3
+~
+~
+0 -1 220133
+S
+#220132
+Dormitory #06~
+ This contrary to the male dormitories is in immaculate condition
+with nothing out of place and everything well cleaned. On the wall
+are posters depicting burly saiyan men and rather violent scenes with
+slogons like, "War - A way of life" and "Saiyan Pride - Without, you're
+nothing!".
+~
+0 12 1
+D2
+~
+~
+0 -1 220131
+S
+#220133
+Corridor - Female Dormitories~
+ This corridor is the complete opposite of the male dormitory corridor
+because there is not a single thing out of place in the corridor and
+the sliding doors are fixed perfectly on the frames. Instead of graffiti
+on the walls, "Female Dormitories", has been officially painted on the 
+walls.
+~
+0 4 1
+D0
+~
+~
+0 -1 220134
+D1
+~
+~
+0 -1 220131
+S
+#220134
+Dormitory #07~
+ This room is a mess, but nothing is too badly damaged, a speaker
+roughly forced into the wall is playing rock music and clothes are
+lying idly around, the bed sheets are in disarray and standing
+menacingly in the center of the room is a butch saiyan soldier build
+as muscular as any male soldier.
+~
+0 12 1
+D2
+~
+~
+0 -1 220133
+S
+#220135
+Corridor - Shower Block~
+ This corridor's flooring has been torn up, and so tiles are tilted
+and smashed all over the corridor. The walls have symmetrical and
+parallel damage on the walls, on either side is a row where something
+has smashed through the wall.
+~
+0 8 1
+D0
+~
+~
+0 -1 220136
+D9
+~
+~
+0 -1 220119
+S
+#220136
+Shower Block~
+ The shower block, suprisingly, is made up of numerous showers on
+either sides of the room in the form of small cubicles and shower
+heads protruding from the china-tiled walls. The floor is the cliche
+black and white tiles. There are some sinks and mirrors on the far
+wall. Nothing is destroyed, but a monstrous mass of air swirls
+around the room ready for destruction.
+~
+0 12 1
+D2
+~
+~
+0 -1 220135
+S
+#220137
+Floating in a void~
+~
+0 4 1
+S
+#220138
+Floating in a void~
+~
+0 4 1
+S
+#220139
+Floating in a void~
+~
+0 4 1
+S
+#220140
+Floating in a void~
+~
+0 4 1
+S
+#220141
+Floating in a void~
+~
+0 4 1
+S
+#220142
+Floating in a void~
+~
+0 4 1
+S
+#220143
+Floating in a void~
+~
+0 4 1
+S
+#220144
+Floating in a void~
+~
+0 4 1
+S
+#220145
+Floating in a void~
+~
+0 4 1
+S
+#220146
+Floating in a void~
+~
+0 4 1
+S
+#220147
+Floating in a void~
+~
+0 4 1
+S
+#220148
+Floating in a void~
+~
+0 4 1
+S
+#220149
+Floating in a void~
+~
+0 4 1
+S
+#220150
+Floating in a void~
+~
+0 4 1
+S
+#220151
+Floating in a void~
+~
+0 4 1
+S
+#220152
+Floating in a void~
+~
+0 4 1
+S
+#220153
+Floating in a void~
+~
+0 4 1
+S
+#220154
+Floating in a void~
+~
+0 4 1
+S
+#220155
+Floating in a void~
+~
+0 4 1
+S
+#220156
+Floating in a void~
+~
+0 4 1
+S
+#220157
+Floating in a void~
+~
+0 4 1
+S
+#220158
+Floating in a void~
+~
+0 4 1
+S
+#220159
+Floating in a void~
+~
+0 4 1
+S
+#220160
+Floating in a void~
+~
+0 4 1
+S
+#220161
+Floating in a void~
+~
+0 4 1
+S
+#220162
+Floating in a void~
+~
+0 4 1
+S
+#220163
+Floating in a void~
+~
+0 4 1
+S
+#220164
+Floating in a void~
+~
+0 4 1
+S
+#220165
+Floating in a void~
+~
+0 4 1
+S
+#220166
+Floating in a void~
+~
+0 4 1
+S
+#220167
+Floating in a void~
+~
+0 4 1
+S
+#220168
+Floating in a void~
+~
+0 4 1
+S
+#220169
+Floating in a void~
+~
+0 4 1
+S
+#220170
+Floating in a void~
+~
+0 4 1
+S
+#220171
+Floating in a void~
+~
+0 4 1
+S
+#220172
+Floating in a void~
+~
+0 4 1
+S
+#220173
+Floating in a void~
+~
+0 4 1
+S
+#220174
+Floating in a void~
+~
+0 4 1
+S
+#220175
+Floating in a void~
+~
+0 4 1
+S
+#220176
+Floating in a void~
+~
+0 4 1
+S
+#220177
+Floating in a void~
+~
+0 4 1
+S
+#220178
+Floating in a void~
+~
+0 4 1
+S
+#220179
+Floating in a void~
+~
+0 4 1
+S
+#220180
+Floating in a void~
+~
+0 4 1
+S
+#220181
+Floating in a void~
+~
+0 4 1
+S
+#220182
+Floating in a void~
+~
+0 4 1
+S
+#220183
+Floating in a void~
+~
+0 4 1
+S
+#220184
+Floating in a void~
+~
+0 4 1
+S
+#220185
+Floating in a void~
+~
+0 4 1
+S
+#220186
+Floating in a void~
+~
+0 4 1
+S
+#220187
+Floating in a void~
+~
+0 4 1
+S
+#220188
+Floating in a void~
+~
+0 4 1
+S
+#220189
+Floating in a void~
+~
+0 4 1
+S
+#220190
+Floating in a void~
+~
+0 4 1
+S
+#220191
+Floating in a void~
+~
+0 4 1
+S
+#220192
+Floating in a void~
+~
+0 4 1
+S
+#220193
+Floating in a void~
+~
+0 4 1
+S
+#220194
+Floating in a void~
+~
+0 4 1
+S
+#220195
+Floating in a void~
+~
+0 4 1
+S
+#220196
+Floating in a void~
+~
+0 4 1
+S
+#220197
+Floating in a void~
+~
+0 4 1
+S
+#220198
+Floating in a void~
+~
+0 4 1
+S
+#220199
+&B(&rF&Ol&ra&Om&ri&On&rg&B) &RRanmyaku's Lair&D~
+ If your here..you're dead..and in trouble. Ranmyaku rules.
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+D 0 220026 1 0
+M 1 220002 1 220031
+M 1 220002 1 220031
+M 1 220002 1 220031
+M 1 220003 1 220031
+M 1 220004 1 220039
+M 1 220004 1 220039
+M 1 220004 1 220039
+O 1 220002 1 220016
+M 1 220005 1 220042
+M 1 220001 1 220027
+O 1 220001 1 220027
+D 0 220027 3 0
+M 1 220002 1 220044
+M 1 220002 1 220044
+M 1 220002 1 220045
+M 1 220003 1 220005
+M 1 220003 1 220005
+M 1 220003 1 220005
+M 1 220008 1 220062
+O 1 220005 1 220104
+M 1 220010 1 220109
+M 1 220010 1 220109
+M 1 220010 1 220110
+M 1 220010 1 220110
+M 1 220011 1 220126
+M 1 220012 1 220132
+M 1 220014 1 220134
+M 1 220015 1 220136
+D 0 220000 0 1
+D 0 60007 2 1
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,4219 @@
+#AREA   Yardrat Moon~
+
+
+
+#VERSION 252
+#AUTHOR Kilan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 9
+
+#RESETMSG &wA mechanized voice crackles over the intercom - &R'Intruder Alert! Intruder Alert!'&D~
+
+#FLAGS
+4
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#155800
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155801
+green Light Master~
+&GGreen Light Master&D~
+A green-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog key~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &GThe Green Light Master closes his eyes, his flesh evaporating into a cloud of green light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Green Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Green Light Master filling your mind.&D
+mpechoat $n &zWithout the Light Master, Baals plan to destroy the universe would not be possible. He intends on using the energy of the Light Master to somehow atomize everything in existence.&D
+mpoload 155804 $n
+mpgoto 155999
+endif
+~
+|
+#155802
+purple Light Master~
+&pPurple Light Master&D~
+A purple-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog p i will~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &pThe Purple Light Master closes his eyes, his flesh evaporating into a cloud of purple light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Purple Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Purple Light Master filling your mind.&D
+mpechoat $n &zIf Instant Destruction comes forth, not only will all of Yardrat be doomed, so will everything else in existence. The true power of this evil being is unknown, so it is best to prevent it from surfacing.&D
+mpoload 155806 $n
+mpgoto 155999
+endif
+~
+|
+#155803
+blue Light Master~
+&BBlue Light Master&D~
+A blue-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog evil~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &BThe Blue Light Master closes his eyes, his flesh evaporating into a cloud of blue light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Blue Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Blue Light Master filling your mind.&D
+mpechoat $n &zBaal does not know of the evil properties of Instant Transmission. &RInstant Destruction&z is uncontrollable, and his plan will undoubtedly bring this living being of destructive power into existence.&D
+mpoload 155805 $n
+mpgoto 155999
+endif
+~
+|
+#155804
+orange Light Master~
+&OOrange Light Master&D~
+An orange-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog how~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &OThe Orange Light Master closes his eyes, his flesh evaporating into a cloud of orange light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Orange Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Orange Light Master filling your mind.&D
+mpechoat $n &zBaal has several bodyguards and henchmen, each with their own genetic ID. This base can detect whether or not you're part of Baals team.&D
+mpoload 155802 $n
+mpgoto 155999
+endif
+~
+|
+#155805
+red Light Master~
+&RRed Light Master&D~
+A red-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog who~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &RThe Red Light Master closes his eyes, his flesh evaporating into a cloud of red light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Red Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Red Light Master filling your mind.&D
+mpechoat $n &zA human named Baal built this base as part of his plan to take over the universe. At this point, his method of doing so is unclear.&D
+mpoload 155801 $n
+mpgoto 155999
+endif
+~
+|
+#155806
+yellow Light Master~
+&YYellow Light Master&D~
+A yellow-skinned Yardrat is being drained of his power.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog destruction~
+if ispc($n)
+say My life is to end soon. I shall sacrifice myself to give you the knowlege I possess.
+mpecho &YThe Yellow Light Master closes his eyes, his flesh evaporating into a cloud of yellow light.&D
+mpechoaround $n &WThe light cloud engulfs $n, a bright glow casting itself upon the room. The cloud slowly sinks into $n's body, the knowledge of the Yellow Light Master now belonging to $m.&D
+mpechoat $n &WThe light cloud engulfs you, a bright glow casting itself upon the room. The cloud slowly sinks into your body, the knowledge of the Yellow Light Master filling your mind.&D
+mpechoat $n &zEverything in the universe has good and evil potential. The energy that Instant Transmission harnesses can be warped into a destructive energy with immeasurable power.&D
+mpoload 155803 $n
+mpgoto 155999
+endif
+~
+|
+#155807
+instant destruction final~
+Instant Destruction~
+Instant Destruction is on the verge of death.
+~
+~
+16908355 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &WYou sense Instant Destructions life signature completely vanish from existence.&D
+mpforce $n say Finally... It's over.
+mpechoat $n &WAs though it is reacting to the end of Instant Destruction, the Light Essence pulsates brightly before hovering into the air.&D
+mpforce $n drop 'light essence'
+mppurge 'light essence'
+mpechoat $n &WThe Light Essence hovers just inches in front of you, then sinks into your chest.&D
+mpechoat $n &CAn incredible feeling of enhanced speed and power surges through your body!&D
+mppractice $n 'instant transmission' 100
+mpechoat $n &WBefore you realize it, you find yourself back in the Temple Village.
+mptransfer $n 155408
+mpat $n mpforce $n look
+~
+|
+#155808
+automated defense robot~
+An Automated Defense Robot~
+A small robot is darting around at incredible speeds.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+0 12000000
+112 112 0
+10 125 100 15 0
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 21~
+mpecho &RAn Automated Defense Robot leaps backwards and fixes itself to the floor.&D
+mpechoat $n &rA small laser aperture slides out of its ocular lens and targets you, firing a beam that etches painful burns into your flesh!&D
+mpechoaround $n &rA small laser aperture slides out of its ocular lens and targets $n, firing a beam that etches painful burns into $s flesh!&D
+mpdamage $n 5
+~
+> fight_prog 10~
+mpecho &zSeveral hatches slide open on the Defense Robot, revealing a vast array of missile ports and launchers.&D
+mpechoat $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with your body!&D
+mpechoaround $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with $n's body!&D
+mppldamage $n 30
+~
+> death_prog 100~
+mpecho &WA small hatch in the side of the room slides open, another Defense Robot emerging!
+mpmload 155815
+mpforce 2.automated mpkill $n
+~
+|
+#155809
+sage Ghetti~
+Sage~
+A Ghetti blocks the door behind him.
+~
+~
+131139 0 -375 C
+1 0 100 1d20+0 2d5+0
+0 30000000
+112 112 0
+70 20 150 60 0
+0 0 0 0 0
+8 8 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 6~
+'belly blast'
+~
+> fight_prog 10~
+'obliteration cannon'
+~
+> fight_prog 25~
+'energy beam'
+~
+> death_prog 100~
+mpechoat $n &GYou search Sages corpse, discovering a keycard. You search the room and find a card reader located next to a door to the south.&D
+mpoload 155815 $n
+~
+|
+#155810
+heral Saiyan~
+Heral~
+A large Saiyan is powered up, ready for a fight.
+~
+~
+131139 0 -550 C
+1 0 100 1d20+0 2d5+0
+0 35000000
+112 112 1
+75 25 20 60 0
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 4~
+'final shine'
+~
+> fight_prog 11~
+'super kamehameha'
+~
+> fight_prog 21~
+'kamehameha'
+~
+> death_prog 100~
+mpechoat $n &GYou search Herals corpse, discovering a keycard. You search the room and find a card reader located next to a door to the south.&D
+mpoload 155816 $n
+~
+|
+#155811
+electrolyte bio-android bioandroid android~
+Electrolyte~
+A bright blue Bio-Android is surrounded by arcing electricity.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000
+112 112 0
+35 25 20 45 0
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 4~
+'ki burst'
+~
+> fight_prog 12~
+'trap ball'
+~
+> fight_prog 22~
+'special beam cannon'
+~
+> death_prog 100~
+mpechoat $n &GYou search Electrolytes corpse, discovering a keycard on a chain wrapped around its neck. You search the room and find a card reader located next to a door to the south.&D
+mpoload 155817 $n
+~
+|
+#155812
+Baal human~
+Baal~
+A human has had demonic horns implanted into his skull.
+~
+~
+131139 0&16777216 0 C
+1 0 100 1d20+0 2d5+0
+0 75000000
+112 112 1
+35 25 25 50 0
+0 0 0 0 0
+0 0 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 7~
+'tri-beam'
+~
+> fight_prog 13~
+'spirit ball'
+~
+> fight_prog 28~
+'dodon ray'
+~
+> death_prog 100~
+mpechoat $n &WAs Baal clutches his wounds, he soon realizes that he has no hope of defeating you. He turns to flee, but before he can take a single step, his entire body is engulfed in a dark, evil aura.&D
+mpechoaround $n &WAs Baal clutches his wounds, he soon realizes that he has no hope of defeating $n. He turns to flee, but before he can take a single step, his entire body is engulfed in a dark, evil aura.&D
+say What is this?! No... no! It can't be! Instant Destruction was inside me?! How!?
+mpecho &zBaal explodes into a shower of blood and body parts. When everything clears, a black pulsating sphere of incredibly evil energy hovers in the middle of the room. Without provocation, it launches a devastating attack at you!
+mpmload 155813
+mpforce 'instant destruction' mpkill $n
+~
+|
+#155813
+demon instant destruction~
+Instant Destruction~
+An evil glow surrounds a cluster of dark light.
+~
+~
+131139 524416 -1000 C
+1 0 100 1d20+0 2d5+0
+0 80000000
+112 112 0
+20 100 25 20 0
+0 0 0 0 0
+8 8 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 3~
+mpechoat $n &zInstant Destruction absorbs all light in the room, temporarily blinding you. Warped laughter fills your thoughts as Instant Destruction sinks into your body!&D
+mpechoat $n &zThe presence of such evil within your body is too much for you to bear, and your cellular structure begins breaking down!&D
+mpechoaround $n &zInstant Destruction absorbs all light in the room, temporarily blinding you.&D
+if rand(50)
+mpechoat $n &WSummoning all of your strength, you manage to force the creature from your body!&D
+mpechoaround $n &WThe light returns, revealing $n straining to keep alive. Instant Destruction has invaded $s body!&D
+mpechoaround $n &WSummoning all of $s strength, $n manages to force the creature from $s body!&D
+mppldamage $n 50
+else
+mpechoat $n &RBefore you are even able to scream, your entire body breaks down into a watery substance!&D
+mpechoaround $n &RBefore $e is even able to scream, $n's entire body breaks down into a watery substance!&D
+mpslay $n
+endif
+~
+> fight_prog 13~
+mpechoat $n &zSilent as death itself, Instant Destruction raises its palm to face you. A small, dark sphere of destructive energy rockets forth from its hand, burning a hole straight through your chest!&D
+mpechoaround $n &zSilent as death itself, Instant Destruction raises its palm to face $n. A small, dark sphere of destructive energy rockets forth from its hand, burning a hole straight through $n's chest!&D
+mppldamage $n 15
+~
+> fight_prog 20~
+mpechoat $n &zInstant Destruction vaporizes a chunk of reality itself, and steps through the gaping hole that remains. It exits just inches in front of you, its forearm extended, aimed for your face.&D
+mpechoat $n &zIts open palm grasps onto your head, layers of your own flesh evaporating, leaving sections of your skull exposed!&D
+mpechoaround $n &zInstant Destruction vaporizes a chunk of reality itself, and steps through the gaping hole that remains. It exits just inches in front of $n, its forearm extended, aimed for $s face.&D
+mpechoaround $n &zIts open palm grasps onto $n's head, layers of $s own flesh evaporating, leaving sections of $s skull exposed!&D
+mpdamage $n 6
+~
+> death_prog 100~
+mpecho &zInstant Destruction floats high into the air, convulsing in pain as its body shrinks and morphs into a pulsing black sphere.&D
+mpecho &RThe sphere begins to expand, everything it touches completely ceasing to exist!&D
+mpechoat $n &WSuddenly, an unknown voice speaks to you, although you cannot see who is talking. 'You must escape! Quickly!'&D
+mpecho &GThe access hatch on the energy cores generator opens.&D
+mpopenpassage 155947 155948 2
+mpjunk 'instant destruction corpse'
+~
+|
+#155814
+soldier baal~
+A Soldier of Baal~
+A soldier patrols the station, searching for intruders.
+~
+~
+65 0 -200 C
+1 0 100 1d20+0 2d5+0
+0 10000000
+112 112 0
+15 20 30 15 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#155815
+automated defense robot~
+An Automated Defense Robot~
+A small robot is darting around at incredible speeds.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+0 12000000
+112 112 0
+10 125 100 15 0
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 21~
+mpecho &RAn Automated Defense Robot leaps backwards and fixes itself to the floor.&D
+mpechoat $n &rA small laser aperture slides out of its ocular lens and targets you, firing a beam that etches painful burns into your flesh!&D
+mpechoaround $n &rA small laser aperture slides out of its ocular lens and targets $n, firing a beam that etches painful burns into $s flesh!&D
+mpdamage $n 5
+~
+> fight_prog 10~
+mpecho &zSeveral hatches slide open on the Defense Robot, revealing a vast array of missile ports and launchers.&D
+mpechoat $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with your body!&D
+mpechoaround $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with $n's body!&D
+mppldamage $n 30
+~
+> death_prog 100~
+mpecho &WA small hatch in the side of the room slides open, another Defense Robot emerging!&D
+mpmload 155816
+mpforce 2.automated mpkill $n
+~
+|
+#155816
+automated defense robot~
+An Automated Defense Robot~
+A small robot is darting around at incredible speeds.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+0 12000000
+112 112 0
+10 125 100 15 0
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 21~
+mpecho &RAn Automated Defense Robot leaps backwards and fixes itself to the floor.&D
+mpechoat $n &rA small laser aperture slides out of its ocular lens and targets you, firing a beam that etches painful burns into your flesh!&D
+mpechoaround $n &rA small laser aperture slides out of its ocular lens and targets $n, firing a beam that etches painful burns into $s flesh!&D
+mpdamage $n 5
+~
+> fight_prog 10~
+mpecho &zSeveral hatches slide open on the Defense Robot, revealing a vast array of missile ports and launchers.&D
+mpechoat $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with your body!&D
+mpechoaround $n &YDozens upon dozens of missiles launch from their miniature silos, exploding rather heatedly upon contact with $n's body!&D
+mppldamage $n 30
+~
+> death_prog 100~
+mpecho &YThe Defense Robot turns to run, but shorts out before it manages to escape.&D
+mpecho &RIt explodes, blowing a massive hole in the door to the south.&D
+mpechoat $n &WYou quickly jump through the hole before the Station activates its automatic repair mechanisms.&D
+mpechoaround $n &W$n quickly jumps through the hole before the Station activates its automatic repair mechanisms.&D
+mpopenpassage 155853 155852 2
+mpforce $n south
+mpclosepassage 155853 2
+mpat $n mpechoat $n &wYou tuck and roll as you land. You look back at the door only to find it repaired and closed, with no visible means of opening it.&D
+mpat $n mpechoaround $n &w$n tucks and rolls as $e lands. $n looks back at the door only to find it repaired and closed, with no visible means of opening it.&D
+mpat $n mpforce $n say Damn... I guess the only way I can go is up.
+~
+|
+#155817
+invisible defense sector moderator~
+Invisible Defense Sector Moderator~
+An invis dude is locking doorz. l33t.
+~
+~
+92405827 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'flies south.'~
+close south
+lock south
+if carryingvnum($n) == 155815
+mpat $n mpforce $n drop 'sage keycard'
+mpat $n mpechoat $n &RYou toss the keycard aside, no longer needing it.&D
+endif
+if carryingvnum($n) == 155816
+mpat $n mpforce $n drop 'heral keycard'
+mpat $n mpechoat $n &RYou toss the keycard aside, no longer needing it.&D
+endif
+if carryingvnum($n) == 155817
+mpat $n mpforce $n drop 'electrolyte keycard'
+mpat $n mpechoat $n &RYou toss the keycard aside, no longer needing it.&D
+endif
+~
+> act_prog 'leaves south.'~
+close south
+lock south
+~
+|
+#155818
+invisible defense sector moderator~
+Invisible Defense Sector Moderator~
+An invis dude is locking doorz. l33t.
+~
+~
+8388609 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'leaves southwest.'~
+mpat $n mpforce $n drop 'baals keycard'
+close sw
+lock sw
+~
+> act_prog 'flies southwest.'~
+mpat $n mpforce $n drop 'baals keycard'
+close sw
+lock sw
+~
+|
+#155820
+invisible defense sector moderator~
+Invisible Defense Sector Moderator~
+An invis dude is locking doorz. l33t.
+~
+~
+8388609 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'leaves southeast.'~
+mpat $n mpforce $n drop 'baals keycard'
+close se
+lock se
+~
+> act_prog 'flies southeast.'~
+mpat $n mpforce $n drop 'baals keycard'
+close se
+lock se
+~
+|
+#155821
+invis mob jerking off on STUPID TIME PROGS~
+a newly created invis mob jerking off on STUPID TIME PROGS~
+Some god abandoned a newly created invis mob jerking off on STUPID TIME PROGS here.
+~
+~
+1082130433 0 0 C
+50 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#155999
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#155800
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#155801
+red essence~
+&RRed Essence&D~
+Red light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155802
+orange essence~
+&OOrange Essence&D~
+Orange light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155803
+yellow essence~
+&YYellow Essence&D~
+Yellow light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155804
+green essence~
+&GGreen Essence&D~
+Green light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155805
+blue essence~
+&BBlue Essence&D~
+Blue light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155806
+purple essence~
+&pPurple Essence&D~
+Purple light particles glow brightly, hovering in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155807
+Restraining Table~
+A Restraining Table~
+A restraining table has several needles and tubes attached to it.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#155808
+vortex treasure chest~
+&BA Vortex Treasure Chest&D~
+A treasure chest is composed of swirling energies.~
+~
+15 0 0
+100000 5 0 0 0 0
+1 0 0
+ 0
+#155809
+vortex bracelet~
+&BVortex Bracelet&D~
+A bracelet is composed of swirling energies.~
+~
+9 0 4097
+0 0 0 0 90 90
+5 0 0
+ 0
+A
+2 -1
+A
+3 2
+#155810
+vortex body armor~
+&BVortex Body Armor&D~
+A set of body armor is composed of swirling energies.~
+~
+9 0 9 16
+0 0 0 0 200 200
+15 0 0
+ 0
+A
+2 -1
+A
+4 4
+#155811
+vortex armguards~
+&BVortex Armguards&D~
+A pair of armguards is composed of swirling energies.~
+~
+9 0 257 64
+0 0 0 0 70 70
+1 0 0
+ 0
+A
+1 3
+A
+2 -1
+#155812
+vortex boots~
+&BVortex Boots&D~
+A pair of boots is composed of swirling energies.~
+~
+9 0 65 96
+0 0 0 0 40 40
+1 0 0
+ 0
+A
+2 10
+A
+3 3
+#155813
+vortex earrings~
+&BVortex Earrings&D~
+A pair of earrings is composed of swirling energies.~
+~
+9 0 65537
+0 0 0 0 25 25
+2 0 0
+ 0
+A
+2 -2
+A
+29 1
+#155814
+vortex ring~
+&BVortex Ring&D~
+A ring is composed of swirling energies.~
+~
+9 0 3
+0 0 0 0 10 10
+1 0 0
+ 0
+A
+1 2
+A
+2 -1
+#155815
+sage keycard~
+&RSage's Keycard&D~
+A small, red keycard rests on the ground.~
+~
+18 0&4 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155816
+heral keycard~
+&RHeral's Keycard&D~
+A small, red keycard rests on the ground.~
+~
+18 0&4 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155817
+electrolyte keycard~
+&RElectrolyte's Keycard&D~
+A small, red keycard rests on the ground.~
+~
+18 0&4 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155818
+light essence~
+&WLight Essence&D~
+A white orb of light hovers in mid-air.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155819
+baals keycard~
+&rBaals Keycard&D~
+A small, red keycard has been tossed aside.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155999
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#155800
+Moon Station Entrance~
+The sounds of soldiers marching echoes through the base as they go about
+their business, waiting for their bosses plan to reach completion. An erie
+feeling of evil is completely dominant, but it is not a normal evil... 
+~
+0 12 0
+D2
+~
+~
+0 -1 155801
+S
+#155801
+Moon Station~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155800
+D1
+~
+~
+0 -1 155816
+D2
+~
+~
+0 -1 155830
+D3
+~
+~
+0 -1 155802
+S
+#155802
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155801
+D3
+~
+~
+0 -1 155803
+S
+#155803
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155802
+D3
+~
+~
+0 -1 155804
+S
+#155804
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155803
+D3
+~
+~
+0 -1 155805
+S
+#155805
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155804
+D3
+~
+~
+0 -1 155806
+S
+#155806
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155805
+D3
+~
+~
+0 -1 155807
+S
+#155807
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155806
+D9
+~
+~
+0 -1 155808
+S
+#155808
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155807
+D9
+~
+~
+0 -1 155809
+S
+#155809
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155808
+D8
+~
+~
+0 -1 155838
+D9
+~
+~
+0 -1 155810
+S
+#155810
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155809
+D9
+~
+~
+0 -1 155811
+S
+#155811
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155812
+D6
+~
+~
+0 -1 155810
+S
+#155812
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155811
+D2
+~
+~
+0 -1 155813
+S
+#155813
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155812
+D2
+~
+~
+0 -1 155814
+S
+#155814
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155813
+D2
+~
+~
+0 -1 155815
+S
+#155815
+&PTeleportation Platform&D~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155814
+> speech_prog teleport~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to another section of the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to another section of the base.
+mptransfer $n 155882
+mpat $n mpforce $n look
+mpat $n mpechoat $n &WThe lights fade as you arrive on the second level of the base.&D
+mpat $n mpechoaround $n &WBright lights flare up momentarily as $n is teleported in.&D
+~
+|
+S
+#155816
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155817
+D3
+~
+~
+0 -1 155801
+S
+#155817
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155818
+D3
+~
+~
+0 -1 155816
+S
+#155818
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155819
+D3
+~
+~
+0 -1 155817
+S
+#155819
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155820
+D3
+~
+~
+0 -1 155818
+S
+#155820
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155821
+D3
+~
+~
+0 -1 155819
+S
+#155821
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155820
+D8
+~
+~
+0 -1 155822
+S
+#155822
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155821
+D8
+~
+~
+0 -1 155823
+S
+#155823
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155822
+D8
+~
+~
+0 -1 155824
+D9
+~
+~
+0 -1 155845
+S
+#155824
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155823
+D8
+~
+~
+0 -1 155825
+S
+#155825
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155826
+D7
+~
+~
+0 -1 155824
+S
+#155826
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155825
+D2
+~
+~
+0 -1 155827
+S
+#155827
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155826
+D2
+~
+~
+0 -1 155828
+S
+#155828
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155827
+D2
+~
+~
+0 -1 155829
+S
+#155829
+&PTeleportation Platform&D~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 1036 0
+D0
+~
+~
+0 -1 155828
+> speech_prog teleport~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to another section of the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to another section of the base.
+mptransfer $n 155868
+mpat $n mpforce $n look
+mpat $n mpechoat $n &WThe lights fade as you arrive on the second level of the base.&D
+mpat $n mpechoaround $n &WBright lights flare up momentarily as $n is teleported in.&D
+~
+|
+S
+#155830
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155801
+D2
+~
+~
+0 -1 155831
+S
+#155831
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155830
+D2
+~
+~
+0 -1 155832
+S
+#155832
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155831
+D2
+~
+~
+0 -1 155833
+S
+#155833
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155832
+D2
+~
+~
+0 -1 155834
+S
+#155834
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155833
+D2
+~
+~
+0 -1 155835
+S
+#155835
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155834
+D2
+~
+~
+0 -1 155836
+S
+#155836
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155835
+D2
+~
+~
+0 -1 155837
+S
+#155837
+&GGreen Light Reactor Core&D~
+Green light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155836
+> entry_prog 100~
+if mobinroom(155801) == 0
+if carryingvnum($n) == 155804
+mpechoat $n &GYour entire body glows green as the essence of the Green Light Master flows through your veins.&D
+mpechoaround $n &G$n's entire body glows green as the essence of the Green Light Master flows through $s veins.&D
+else
+if carryingvnum($n) == 155801
+if carryingvnum($n) == 155802
+if carryingvnum($n) == 155803
+mpechoat $n &GAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpechoat $n &GThe glow of the table dies down, as does the screaming. Gazing upon the table, you see a green-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155801
+mpforce 'green light master' say The Light Master... is key... to his plan...
+else
+mpechoat $n &GThe flow of green light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &GThe flow of green light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &GThe flow of green light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &GThe flow of green light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &GThe flow of green light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &GThe flow of green light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+endif
+endif
+~
+|
+S
+#155838
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155809
+D8
+~
+~
+0 -1 155839
+S
+#155839
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155838
+D8
+~
+~
+0 -1 155840
+S
+#155840
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155839
+D8
+~
+~
+0 -1 155841
+S
+#155841
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155840
+D8
+~
+~
+0 -1 155842
+S
+#155842
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155841
+D8
+~
+~
+0 -1 155843
+S
+#155843
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155842
+D8
+~
+~
+0 -1 155844
+S
+#155844
+&pPurple Light Reactor Core&D~
+Purple light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155843
+> entry_prog 100~
+if mobinroom(155802) == 0
+if carryingvnum($n) == 155806
+mpechoat $n &pYour entire body glows purple as the essence of the Purple Light Master flows through your veins.&D
+mpechoaround $n &p$n's entire body glows purple as the essence of the Purple Light Master flows through $s veins.&D
+else
+if carryingvnum($n) == 155801
+if carryingvnum($n) == 155802
+if carryingvnum($n) == 155803
+if carryingvnum($n) == 155804
+if carryingvnum($n) == 155805
+mpechoat $n &pAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpechoat $n &pThe glow of the table dies down, as does the screaming. Gazing upon the table, you see a purple-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155802
+mpforce 'purple light master' say Save...the universe...
+else
+mpechoat $n &pThe flow of purple light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &pThe flow of purple light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &pThe flow of purple light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &pThe flow of purple light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &pThe flow of purple light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &pThe flow of purple light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &pThe flow of purple light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &pThe flow of purple light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &pThe flow of purple light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &pThe flow of purple light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+endif
+endif
+~
+|
+S
+#155845
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155823
+D9
+~
+~
+0 -1 155846
+S
+#155846
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155845
+D9
+~
+~
+0 -1 155847
+S
+#155847
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155846
+D9
+~
+~
+0 -1 155848
+S
+#155848
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155847
+D9
+~
+~
+0 -1 155849
+S
+#155849
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155848
+D9
+~
+~
+0 -1 155850
+S
+#155850
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155849
+D9
+~
+~
+0 -1 155851
+S
+#155851
+&BBlue Light Reactor Core&D~
+Blue light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155850
+> entry_prog 100~
+if mobinroom(155803) == 0
+if carryingvnum($n) == 155805
+mpechoat $n &BYour entire body glows blue as the essence of the Blue Light Master flows through your veins.&D
+mpechoaround $n &B$n's entire body glows blue as the essence of the Blue Light Master flows through $s veins.&D
+else
+if carryingvnum($n) == 155801
+if carryingvnum($n) == 155802
+if carryingvnum($n) == 155803
+if carryingvnum($n) == 155804
+mpechoat $n &BAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpechoat $n &BThe glow of the table dies down, as does the screaming. Gazing upon the table, you see a blue-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155803
+mpforce 'blue light master' say Baal... evil within...
+else
+mpechoat $n &BThe flow of blue light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &BThe flow of blue light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &BThe flow of blue light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &BThe flow of blue light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &BThe flow of blue light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &BThe flow of blue light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &BThe flow of blue light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &BThe flow of blue light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+endif
+endif
+~
+|
+S
+#155852
+Teleportation Elevator~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 12 0
+> speech_prog p Damn... I guess the only way I can go is up.~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to another section of the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to another section vel of the base.
+mptransfer $n 155905
+mpat $n mpforce $n look
+mpat $n mpechoat $n &WThe lights fade as you arrive on the second level of the base.&D
+mpat $n mpechoaround $n &WBright lights flare up momentarily as $n is teleported in.&D
+~
+|
+S
+#155853
+&zDefense Sector&R Delta&D~
+Security cameras are placed in either corner of the ceiling, tracking
+everything done in here.  The walls and doors are comprised of reinforced
+tempered steel, so it would be quite difficult to do any damage to the
+room.  A small card reader sits next to a massive door to the south, and in
+front of it lies a small teleportation pad. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155854
+> entry_prog 100~
+if carryingvnum($n) == 155801
+ if carryingvnum($n) == 155802
+  if carryingvnum($n) == 155803
+   if carryingvnum($n) == 155804
+    if carryingvnum($n) == 155805
+     if carryingvnum($n) == 155806
+mpechoat $n &RAs you approach the teleportation elevator to the south, sirens sound and alarms blare, signalling your intrusion!&D
+mpecho &WA massive hatchway opens in one of the walls, sending a huge combat droid out to deal with you!&D
+mpmload 155808
+mpforce 'automated defense robot' mpkill $n
+     endif
+    endif
+   endif
+  endif
+ endif
+endif
+~
+|
+S
+#155854
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155890
+D1
+~
+~
+0 -1 155869
+D2
+~
+~
+0 -1 155853
+D3
+~
+~
+0 -1 155855
+S
+#155855
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155854
+D3
+~
+~
+0 -1 155856
+S
+#155856
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155855
+D3
+~
+~
+0 -1 155857
+S
+#155857
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155856
+D3
+~
+~
+0 -1 155858
+S
+#155858
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155857
+D3
+~
+~
+0 -1 155859
+S
+#155859
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155858
+D3
+~
+~
+0 -1 155860
+S
+#155860
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155859
+D7
+~
+~
+0 -1 155861
+S
+#155861
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155862
+D8
+~
+~
+0 -1 155860
+S
+#155862
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155898
+D7
+~
+~
+0 -1 155863
+D8
+~
+~
+0 -1 155861
+S
+#155863
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155864
+D8
+~
+~
+0 -1 155862
+S
+#155864
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155865
+D8
+~
+~
+0 -1 155863
+S
+#155865
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155866
+D2
+~
+~
+0 -1 155864
+S
+#155866
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155867
+D2
+~
+~
+0 -1 155865
+S
+#155867
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155868
+D2
+~
+~
+0 -1 155866
+S
+#155868
+&PTeleportation Platform&D~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 1036 0
+D2
+~
+~
+0 -1 155867
+> speech_prog teleport~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to another section of the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to another section of the base.
+mptransfer $n 155829
+mpat $n mpforce $n look
+mpat $n mpechoat $n &WThe lights fade as you arrive on the second level of the base.&D
+mpat $n mpechoaround $n &WBright lights flare up momentarily as $n is teleported in.&D
+~
+|
+S
+#155869
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155870
+D3
+~
+~
+0 -1 155854
+S
+#155870
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155871
+D3
+~
+~
+0 -1 155869
+S
+#155871
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155872
+D3
+~
+~
+0 -1 155870
+S
+#155872
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155873
+D3
+~
+~
+0 -1 155871
+S
+#155873
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155874
+D3
+~
+~
+0 -1 155872
+S
+#155874
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155873
+D6
+~
+~
+0 -1 155875
+S
+#155875
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155876
+D9
+~
+~
+0 -1 155874
+S
+#155876
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155877
+D7
+~
+~
+0 -1 155883
+D9
+~
+~
+0 -1 155875
+S
+#155877
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155878
+D9
+~
+~
+0 -1 155876
+S
+#155878
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155879
+D9
+~
+~
+0 -1 155877
+S
+#155879
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155880
+D2
+~
+~
+0 -1 155878
+S
+#155880
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155881
+D2
+~
+~
+0 -1 155879
+S
+#155881
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155882
+D2
+~
+~
+0 -1 155880
+S
+#155882
+&PTeleportation Platform&D~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 1036 0
+D2
+~
+~
+0 -1 155881
+> speech_prog teleport~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to another section of the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to another section of the base.
+mptransfer $n 155815
+mpat $n mpforce $n look
+mpat $n mpechoat $n &WThe lights fade as you arrive on the second level of the base.&D
+mpat $n mpechoaround $n &WBright lights flare up momentarily as $n is teleported in.&D
+~
+|
+S
+#155883
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155884
+D8
+~
+~
+0 -1 155876
+S
+#155884
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155885
+D8
+~
+~
+0 -1 155883
+S
+#155885
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155886
+D8
+~
+~
+0 -1 155884
+S
+#155886
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155887
+D8
+~
+~
+0 -1 155885
+S
+#155887
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155888
+D8
+~
+~
+0 -1 155886
+S
+#155888
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155889
+D8
+~
+~
+0 -1 155887
+S
+#155889
+&OOrange Light Reactor Core&D~
+Orange light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D8
+~
+~
+0 -1 155888
+> entry_prog 100~
+if mobinroom(155804) == 0
+if carryingvnum($n) == 155802
+mpechoat $n &OYour entire body glows orange as the essence of the Orange Light Master flows through your veins.&D
+mpechoaround $n &O$n's entire body glows orange as the essence of the Orange Light Master flows through $s veins.&D
+else
+if carryingvnum($n) == 155801
+mpechoat $n &OAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpechoat $n &OThe glow of the table dies down, as does the screaming. Gazing upon the table, you see an orange-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155804
+mpforce 'orange light master' say Please.... he..help...
+else
+mpechoat $n &OThe flow of orange light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &OThe flow of orange light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+endif
+endif
+~
+|
+S
+#155890
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155891
+D2
+~
+~
+0 -1 155854
+S
+#155891
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155892
+D2
+~
+~
+0 -1 155890
+S
+#155892
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155893
+D2
+~
+~
+0 -1 155891
+S
+#155893
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155894
+D2
+~
+~
+0 -1 155892
+S
+#155894
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155895
+D2
+~
+~
+0 -1 155893
+S
+#155895
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155896
+D2
+~
+~
+0 -1 155894
+S
+#155896
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D0
+~
+~
+0 -1 155897
+D2
+~
+~
+0 -1 155895
+S
+#155897
+&RRed Light Reactor Core&D~
+Red light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155896
+> entry_prog 100~
+if mobinroom(155805) == 0
+if carryingvnum($n) == 155801
+mpechoat $n &RYour entire body glows red as the essence of the Red Light Master flows through your veins.&D
+mpechoaround $n &R$n's entire body glows red as the essence of the Red Light Master flows through $s veins.&D
+else
+mpechoat $n &RAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpechoat $n &RThe glow of the table dies down, as does the screaming. Gazing upon the table, you see an orange-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155805
+mpechoat $n &CRed Light Master says 'Universe... danger... stop him...please...'&D
+endif
+endif
+~
+|
+S
+#155898
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155899
+D9
+~
+~
+0 -1 155862
+S
+#155899
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155900
+D9
+~
+~
+0 -1 155898
+S
+#155900
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155901
+D9
+~
+~
+0 -1 155899
+S
+#155901
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155902
+D9
+~
+~
+0 -1 155900
+S
+#155902
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155903
+D9
+~
+~
+0 -1 155901
+S
+#155903
+&zDimly Lit Portway&D~
+Much in contrast to the rest of the base, this hallway is almost
+completely dark.  It is still comprised of the same materials as the other
+walkways, but it's as though something is stealing the energy it would take
+to power the lights... 
+~
+0 12 0
+D6
+~
+~
+0 -1 155904
+D9
+~
+~
+0 -1 155902
+S
+#155904
+&YYellow Light Reactor Core&D~
+Yellow light swirls randomly through the air, a small power core connected
+to a restraining table in the center of the chamber. A low hum radiates
+from the core as it transfers energy to another section of the base. 
+~
+0 12 0
+D9
+~
+~
+0 -1 155903
+> entry_prog 100~
+if mobinroom(155806) == 0
+if carryingvnum($n) == 155803
+mpechoat $n &YYour entire body glows yellow as the essence of the Yellow Light Master flows through your veins.&D
+mpechoaround $n &Y$n's entire body glows yellow as the essence of the Yellow Light Master flows through $s veins.&D
+else
+if carryingvnum($n) == 155801
+if carryingvnum($n) == 155802
+mpechoat $n &YAs you enter the room, the restraining table flares brightly, the tortured scream of a living being filling your ears.&D
+mpecho &YThe glow of the table dies down, as does the screaming. Gazing upon the table, you see a yellow-skinned Yardrat connected to all the implements on the table, inches from death.&D
+mpmload 155806
+mpforce 'yellow light master' say Instant trans...no. Destruction...
+else
+mpechoat $n &YThe flow of yellow light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &YThe flow of yellow light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+else
+mpechoat $n &YThe flow of yellow light in this room collides with the erratic flow of energy within your body!&D
+mpechoaround $n &YThe flow of yellow light in this room collides with the erratic flow of energy within $n's body!&D
+endif
+endif
+endif
+~
+|
+S
+#155905
+Teleportation Elevator~
+A large circular platform stands in the center of the room, large enough
+to hold a small group of people.  The base of the platform emits a dim
+white glow, most likely due to the power being supplied to the teleporter. 
+A small computer console stands outside the platform, a small microphone
+built in. 
+~
+0 1036 0
+D0
+~
+~
+0 -1 155906
+> speech_prog teleport~
+mpechoat $n &WBright beams of light disassemble your body at the molecular level, transporting you to the entrance to the base.
+mpechoaround $n &WBright beams of light disassemble $n's body at the molecular level, transporting $m to the entrance to the base.
+mptransfer $n 155800
+~
+|
+S
+#155906
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155907
+D2
+~
+~
+0 -1 155905
+S
+#155907
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155916
+D2
+~
+~
+0 -1 155906
+D3
+~
+~
+0 -1 155908
+S
+#155908
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155907
+D3
+~
+~
+0 -1 155909
+S
+#155909
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155908
+D3
+~
+~
+0 -1 155910
+S
+#155910
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155909
+D3
+~
+~
+0 -1 155911
+S
+#155911
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155941
+D1
+~
+~
+0 -1 155910
+D3
+~
+~
+0 -1 155912
+S
+#155912
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155911
+D3
+~
+~
+0 -1 155913
+S
+#155913
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155912
+D7
+~
+~
+0 -1 155914
+S
+#155914
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155915
+D8
+~
+~
+0 -1 155913
+S
+#155915
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155932
+D8
+~
+~
+0 -1 155914
+S
+#155916
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155917
+D3
+~
+~
+0 -1 155907
+S
+#155917
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155918
+D3
+~
+~
+0 -1 155916
+S
+#155918
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155919
+D3
+~
+~
+0 -1 155917
+S
+#155919
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155942
+D1
+~
+~
+0 -1 155920
+D3
+~
+~
+0 -1 155918
+S
+#155920
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155921
+D3
+~
+~
+0 -1 155919
+S
+#155921
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155920
+D6
+~
+~
+0 -1 155922
+S
+#155922
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155923
+D9
+~
+~
+0 -1 155921
+S
+#155923
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155924
+D9
+~
+~
+0 -1 155922
+S
+#155924
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155925
+D8
+~
+~
+0 -1 155923
+S
+#155925
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155926
+D8
+~
+~
+0 -1 155924
+S
+#155926
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155927
+D8
+~
+~
+0 -1 155925
+S
+#155927
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155928
+D8
+~
+~
+0 -1 155926
+D9
+~
+~
+0 -1 155943
+S
+#155928
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155929
+D8
+~
+~
+0 -1 155927
+S
+#155929
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155930
+D8
+~
+~
+0 -1 155928
+S
+#155930
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155931
+D8
+~
+~
+0 -1 155929
+S
+#155931
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155939
+D8
+~
+~
+0 -1 155930
+D9
+~
+~
+7 155819 155944
+S
+#155932
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155933
+D9
+~
+~
+0 -1 155915
+S
+#155933
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155934
+D9
+~
+~
+0 -1 155932
+S
+#155934
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155935
+D9
+~
+~
+0 -1 155933
+S
+#155935
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155936
+D8
+~
+~
+0 -1 155940
+D9
+~
+~
+0 -1 155934
+S
+#155936
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155937
+D9
+~
+~
+0 -1 155935
+S
+#155937
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155938
+D9
+~
+~
+0 -1 155936
+S
+#155938
+&WChrome-Plated Walkway&D~
+The walkway is one long, shiny tube of chrome-plated metal.  There is
+not a single flat surface in sight, except for the platform placed on the
+floor in which to walk on. Every few dozen yards, a light is inserted into
+the top of the walkway.  Lights are not needed much here, due to the fact
+that the reflection of the light off of the shiny chrome gives off more
+than enough light to allow one to see where they are going. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155939
+D8
+~
+~
+1 155819 155944
+D9
+~
+~
+0 -1 155937
+S
+#155939
+&RChamber of &rBaal&D~
+~
+0 12 0
+D8
+~
+~
+0 -1 155931
+D9
+~
+~
+0 -1 155938
+> entry_prog 100~
+if carryingvnum($n) == 155801
+ if carryingvnum($n) == 155802
+  if carryingvnum($n) == 155803
+   if carryingvnum($n) == 155804
+    if carryingvnum($n) == 155805
+     if carryingvnum($n) == 155806
+if carryingvnum($n) == 155819
+else
+mpechoat $n &rYou glance around the room, spotting a small keycard hanging on the northern wall.&D
+mpechoat $n &wYou take the keycard.&D
+mpoload 155819 $n
+endif
+     endif
+    endif
+   endif
+  endif
+ endif
+endif
+~
+|
+S
+#155940
+&BEnergy Vortex&D~
+The chrome hallways of the base come to an abrupt halt, being replaced
+by erratic vortexes of swirling blue ki.  The only possible explanation is
+that such great forces are at work here that the power required to execute
+whatever scheme is being planned is outputting enough exhaust energy that
+it is distorting pieces of reality itself. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155935
+S
+#155941
+&BEnergy Vortex&D~
+The chrome hallways of the base come to an abrupt halt, being replaced
+by erratic vortexes of swirling blue ki.  The only possible explanation is
+that such great forces are at work here that the power required to execute
+whatever scheme is being planned is outputting enough exhaust energy that
+it is distorting pieces of reality itself. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155911
+S
+#155942
+&BEnergy Vortex&D~
+The chrome hallways of the base come to an abrupt halt, being replaced
+by erratic vortexes of swirling blue ki.  The only possible explanation is
+that such great forces are at work here that the power required to execute
+whatever scheme is being planned is outputting enough exhaust energy that
+it is distorting pieces of reality itself. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155919
+S
+#155943
+&BEnergy Vortex&D~
+The chrome hallways of the base come to an abrupt halt, being replaced
+by erratic vortexes of swirling blue ki.  The only possible explanation is
+that such great forces are at work here that the power required to execute
+whatever scheme is being planned is outputting enough exhaust energy that
+it is distorting pieces of reality itself. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155927
+S
+#155944
+&zDefense Sector: &RGamma&D~
+Security cameras are placed in either corner of the ceiling, tracking
+everything done in here.  The walls and doors are comprised of reinforced
+tempered steel, so it would be quite difficult to do any damage to the
+room.  A small card reader sits next to a massive door to the south, and in
+front of it lies a small teleportation pad. 
+~
+0 12 0
+D2
+~
+~
+7 155815 155945
+D6
+~
+~
+7 155819 155931
+D7
+~
+~
+5 155819 155938
+> entry_prog 100~
+if carryingvnum($n) == 155801
+ if carryingvnum($n) == 155802
+  if carryingvnum($n) == 155803
+   if carryingvnum($n) == 155804
+    if carryingvnum($n) == 155805
+     if carryingvnum($n) == 155806
+mpechoat $n &WUpon entering the room, you glance around for any signs of opposition. Suddenly, a large Ghetti appears in the center of a small teleportation pad.&D
+mpmload 155809
+mpforce 'sage ghetti' say So, you got past the combat droids. I commend you. But you will not get past me!
+mpforce 'sage ghetti' mpkill $n
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+     endif
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+    endif
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+   endif
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+  endif
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+ endif
+else
+mpechoat $n &RYou are not prepared for the challenges ahead...&D
+mptransfer $n 155931
+endif
+~
+|
+S
+#155945
+&zDefense Sector: &RBeta&D~
+Security cameras are placed in either corner of the ceiling, tracking
+everything done in here.  The walls and doors are comprised of reinforced
+tempered steel, so it would be quite difficult to do any damage to the
+room.  A small card reader sits next to a massive door to the south, and in
+front of it lies a small teleportation pad. 
+~
+0 12 0
+D2
+~
+~
+7 155816 155946
+> entry_prog 100~
+mpechoat $n &WUpon entering the room, you glance around for any signs of opposition. Suddenly, a Saiyan warrior appears in the center of a small teleportation pad.&D
+mpmload 155810
+mpforce 'heral saiyan' say Sage was weak. You stand no chance against me.
+mpforce 'heral saiyan' mpkill $n
+~
+|
+S
+#155946
+&zDefense Sector: &RAlpha&D~
+Security cameras are placed in either corner of the ceiling, tracking
+everything done in here.  The walls and doors are comprised of reinforced
+tempered steel, so it would be quite difficult to do any damage to the
+room.  A small card reader sits next to a massive door to the south, and in
+front of it lies a small teleportation pad. 
+~
+0 12 0
+D2
+~
+~
+7 155817 155947
+> entry_prog 100~
+mpechoat $n &WUpon entering the room, you glance around for any signs of opposition. Suddenly, a large Bio-Android appears in the center of a small teleportation pad.&D
+mpmload 155811
+mpforce 'electrolyte bio-android bioandroid android' say You defeated both Sage AND Heral?! Unreal! But know this - your power is no match for mine!
+mpforce 'electrolyte bio-android bioandroid android' mpkill $n
+~
+|
+S
+#155947
+&zEnergy Core&D~
+A deafening roar fills the room, the energy core working its hardest to
+do whatever job it's supposed to be doing.  The amount of light in this
+room is dismal, allowing almost no being the ability to see without their
+own light source. There is a small hatch on the side of the energy core,
+but it is closed. 
+~
+0 12 0
+> entry_prog 100~
+mpmload 155812
+mpechoat $n &WUpon entering the room, you glance around for any signs of opposition.&D
+mpechoat $n &RStanding in the very center of the room is the mastermind behind this evil scheme of death and destruction, &rBaal.&D
+mpechoat $n &RHe appears to be human, but has demonic horns protruding from his forehead...&D
+mpforce 'baal human' say I will not let you ruin my dream of dominating this universe! Die!
+mpforce 'baal human' mpkill $n
+~
+|
+S
+#155948
+&CWithin The Energy Core&D~
+Much in contrast to the outside of the core, it is deathly quiet inside.
+Tubing, conduits, and highly advanced machinery all glow with power as the
+energy is channeled to what appears to be a massive energy cannon.  Given
+the amount of power being channeled into it, it could quite easily destroy
+an entire planet, or a galaxy, depending on what was fired upon. 
+~
+0 12 0
+> entry_prog 100~
+mpclosepassage 155947 2
+mpecho &RAn explosion outside the energy core causes the ceiling to collapse! You're trapped!&D
+mpsleep 18
+mpechoat $n &WA white glow emanates from the center of the energy core. Inside, you can see the silhouette of a Yardrat, spread-eagled in mid-air, hooked up to some strange device that, no doubt, drains the Yardrats power.&D
+mpechoat $n &CYou quickly take aim and fire two ki blasts at the leg restraints, and two more at the arm restraints, freeing the trapped slave of the late Baal. He collapses to the ground with a loud thud.&D
+mpechoat $n &WThe dying Yardrat slowly stands up, and begins to hobble over to you. &C'You... You must escape... You are in far more danger than you realize!'
+mpechoat $n &RThe &WLight Particle Master&R collapses to the ground, face first.&D
+mpsleep 9
+mpechoat $n &WHis body glows with a brilliant white light, and slowly hovers into the air. The light grows brighter and brighter, the body disappearing, being replaced by a glowing orb of purity.&D
+mpforce $n drop 'red essence'
+mpforce $n drop 'orange essence'
+mpforce $n drop 'yellow essence'
+mpforce $n drop 'green essence'
+mpforce $n drop 'blue essence'
+mpforce $n drop 'purple essence'
+mppurge 'red essence'
+mppurge 'orange essence'
+mppurge 'yellow essence'
+mppurge 'green essence'
+mppurge 'blue essence'
+mppurge 'purple essence'
+mpecho &WThe six &Rc&Oo&Yl&Go&Br&ps&W of the light spectrum float into the air, surrounding the seventh Essence.&D
+mpsleep 9
+mpechoat $n &RA massive explosion rocks the station as the final death-throes of the energy core rupture the casing, raw burning energy wreaking havoc on the collapsing base.&D
+mpechoat $n &WThe Seven Essences slowly merge into a single, final Light Essence, which slowly glides into your hands.&D
+mpoload 155818 $n
+mpsleep 9
+mpechoat $n &WThe instant the Light Essence touches your hands, you feel yourself being moved at an incredible speed. Everything is a blur of randomized colors of light.&D
+mpechoat $n &RThe moment you disappear from the Moon Base, you sense an incredible explosion...&D
+mpat 155408 mpechozone &RA massive explosion erupts forth on Yardrat Moon, so large that it can be viewed from the planet itself.&D
+mpat 155217 mpecho &RA massive explosion erupts forth on Yardrat Moon, so large that it can be viewed from the planet itself.&D
+mptransfer $n 155949
+mpat $n mpforce $n look
+mpat $n mpechoat $n &RSuddenly, an all too familiar apparition of death and destruction appears before you! Its energy signature is erratic, and its power is much weaker than before...&D
+mpat $n mpmload 155807
+mpat $n mpforce 'instant destruction final' mpkill $n
+~
+|
+S
+#155949
+&RI&On&Ys&Gt&Ba&pn&Rt &OT&Yr&Ga&Bn&ps&Rm&Oi&Ys&Gs&Bi&po&Rn &OS&Yp&Ga&Bc&Pe&D~
+Rainbows of color are the only real thing visible here.  Billions of
+light particles dart around in all directions, their speed seeming sluggish
+due to the extreme speed in which everything here is moving. 
+~
+0 12 0
+S
+#155950
+Floating in a void~
+~
+0 4 1
+S
+#155951
+Floating in a void~
+~
+0 4 1
+S
+#155952
+Floating in a void~
+~
+0 4 1
+S
+#155953
+Floating in a void~
+~
+0 4 1
+S
+#155954
+Floating in a void~
+~
+0 4 1
+S
+#155955
+Floating in a void~
+~
+0 4 1
+S
+#155956
+Floating in a void~
+~
+0 4 1
+S
+#155957
+Floating in a void~
+~
+0 4 1
+S
+#155958
+Floating in a void~
+~
+0 4 1
+S
+#155959
+Floating in a void~
+~
+0 4 1
+S
+#155960
+Floating in a void~
+~
+0 4 1
+S
+#155961
+Floating in a void~
+~
+0 4 1
+S
+#155962
+Floating in a void~
+~
+0 4 1
+S
+#155963
+Floating in a void~
+~
+0 4 1
+S
+#155964
+Floating in a void~
+~
+0 4 1
+S
+#155965
+Floating in a void~
+~
+0 4 1
+S
+#155966
+Floating in a void~
+~
+0 4 1
+S
+#155967
+Floating in a void~
+~
+0 4 1
+S
+#155968
+Floating in a void~
+~
+0 4 1
+S
+#155969
+Floating in a void~
+~
+0 4 1
+S
+#155970
+Floating in a void~
+~
+0 4 1
+S
+#155971
+Floating in a void~
+~
+0 4 1
+S
+#155972
+Floating in a void~
+~
+0 4 1
+S
+#155973
+Floating in a void~
+~
+0 4 1
+S
+#155974
+Floating in a void~
+~
+0 4 1
+S
+#155975
+Floating in a void~
+~
+0 4 1
+S
+#155976
+Floating in a void~
+~
+0 4 1
+S
+#155977
+Floating in a void~
+~
+0 4 1
+S
+#155978
+Floating in a void~
+~
+0 4 1
+S
+#155979
+Floating in a void~
+~
+0 4 1
+S
+#155980
+Floating in a void~
+~
+0 4 1
+D0
+~
+~
+0 -1 155981
+S
+#155981
+Floating in a void~
+~
+0 4 1
+D2
+~
+~
+0 -1 155980
+S
+#155982
+Floating in a void~
+~
+0 4 1
+S
+#155983
+Floating in a void~
+~
+0 4 1
+S
+#155984
+Floating in a void~
+~
+0 4 1
+S
+#155985
+Floating in a void~
+~
+0 4 1
+S
+#155986
+Floating in a void~
+~
+0 4 1
+S
+#155987
+Floating in a void~
+~
+0 4 1
+S
+#155988
+Floating in a void~
+~
+0 4 1
+S
+#155989
+Floating in a void~
+~
+0 4 1
+S
+#155990
+Floating in a void~
+~
+0 4 1
+S
+#155991
+Floating in a void~
+~
+0 4 1
+S
+#155992
+Floating in a void~
+~
+0 4 1
+S
+#155993
+Floating in a void~
+~
+0 4 1
+S
+#155994
+Floating in a void~
+~
+0 4 1
+S
+#155995
+Floating in a void~
+~
+0 4 1
+S
+#155996
+Floating in a void~
+~
+0 4 1
+S
+#155997
+Floating in a void~
+~
+0 4 1
+S
+#155998
+Floating in a void~
+~
+0 4 1
+S
+#155999
+Floating in a void~
+~
+0 4 1
+> rand_prog 2~
+mppurge
+mpecho The room eats all the Light Masters with a spork!
+~
+|
+S
+#0
+
+
+#RESETS
+M 0 155814 1 155802
+M 0 155814 1 155804
+M 0 155814 1 155806
+M 0 155814 1 155808
+M 0 155814 1 155810
+M 0 155814 1 155812
+M 0 155814 1 155814
+M 0 155814 1 155816
+M 0 155814 1 155818
+M 0 155814 1 155820
+M 0 155814 1 155822
+M 0 155814 1 155824
+M 0 155814 1 155826
+M 0 155814 1 155828
+M 0 155814 1 155854
+M 0 155814 1 155856
+M 0 155814 1 155858
+M 0 155814 1 155860
+M 0 155814 1 155862
+M 0 155814 1 155864
+M 0 155814 1 155866
+M 0 155814 1 155870
+M 0 155814 1 155872
+M 0 155814 1 155874
+M 0 155814 1 155876
+M 0 155814 1 155878
+M 0 155814 1 155880
+M 0 155814 1 155906
+M 0 155814 1 155909
+M 0 155814 1 155912
+M 0 155814 1 155915
+M 0 155814 1 155918
+M 0 155814 1 155921
+M 0 155814 1 155924
+M 0 155814 1 155927
+M 0 155814 1 155930
+M 0 155814 1 155933
+M 0 155814 1 155936
+O 1 155808 1 155940
+P 0 155809 2 0
+O 1 155808 1 155941
+P 0 155814 2 0
+O 1 155808 1 155942
+P 0 155811 1 0
+P 0 155810 1 0
+O 1 155808 1 155943
+P 0 155812 1 0
+P 0 155813 1 0
+D 0 155931 9 2
+D 0 155938 8 1
+D 0 155944 2 2
+D 0 155944 6 2
+D 0 155944 7 2
+D 0 155945 2 2
+D 0 155946 2 2
+M 0 155817 1 155944
+G 1 155815 1
+M 0 155817 1 155945
+G 1 155816 1
+M 0 155817 1 155946
+G 1 155817 1
+O 0 155807 1 155837
+O 0 155807 1 155844
+O 0 155807 1 155851
+O 0 155807 1 155889
+O 0 155807 1 155897
+O 0 155807 1 155904
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

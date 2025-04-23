@@ -1,0 +1,7396 @@
+#AREA   Yardrat Temple~
+
+
+
+#VERSION 252
+#AUTHOR Kilan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 9
+
+#RESETMSG &BMeditative energy invades your senses.&D~
+
+#FLAGS
+5
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#155000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155001
+yardrat temple guard~
+A Temple Guard~
+A short Yardrat being is standing watch before the entrance to the temple.
+~
+~
+1157759043 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if level($n) < 5
+say You are not powerful enough to survive the trials of the Temple.
+else
+if carryingvnum($n) 155030
+if ispc($n)
+mpechoat $n &cThe Temple Guard peers deep into your eyes, as if trying to search your feelings.&D
+mpechoaround $n &cThe Temple Guard stares at $n momentarily.&D
+say I will allow you to enter the temple, $n. Please, come with me.
+mpforce $n give flower guard
+mpjunk flower
+mpsleep 3
+mpechoat $n &WThe Temple Guard walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Temple Guard walks over to $n and places her hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are inside the temple!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Temple Guard appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat 155004 mpecho &RThe Temple Guard disappears.&D
+mpecho &RThe Temple Guard suddenly reappears and resumes his post in front of the temple.&D
+endif
+else
+say You are not worthy of entering the temple. I must ask you to leave.
+endif
+endif
+~
+|
+#155002
+blue yardrat master~
+Blue Yardrat Master~
+A Yardrat wearing blue robes meditates peacefully.
+~
+~
+84017155 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n. If I could ask a favor of you...
+say My wife and I have been getting in quite a few fights lately, and she doesn't understand the point I'm trying to make.
+say Could you help me out? I just need you to help me get my point across.
+say If you don't want to, just say you wish to remain neutral.
+~
+> speech_prog yes~
+nod
+say Thanks. Here, you can have this for your trouble.
+mpoload 155016
+give sphere $n
+mpechoat $n &WThe Blue Yardrat Master walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Blue Yardrat Master walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Blue Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Blue Yardrat Master disappears.&D
+mpecho &RThe Blue Yardrat Master suddenly reappears.&D
+~
+> speech_prog neutral~
+sigh
+say Oh well. I'm sure we'll work our differences out by ourselves.
+say Here, you can have this for taking time out of your day to listen to me.
+mpoload 155007
+give sphere $n
+mpechoat $n &WThe Blue Yardrat Master walks over to you and places her hand on your shoulder.&D
+mpechoaround $n &WThe Blue Yardrat Master walks over to $n and places her hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Blue Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Blue Yardrat Master disappears.&D
+mpecho &RThe Blue Yardrat Master suddenly reappears.&D
+~
+|
+#155003
+green yardrat master~
+Green Yardrat Master~
+A Yardrat wearing green robes meditates peacefully.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hmm... $n, I'm curious...
+say If your entire world were on the verge of destruction, and you had the power to save it, would you fight?
+say Or would you do nothing?
+~
+> speech_prog fight~
+say How very noble of you. Here you go... consider it a symbol of your nobility.
+mpoload 155008
+give sphere $n
+mpechoat $n &WThe Green Yardrat Master walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Green Yardrat Master walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Green Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Green Yardrat Master disappears.&D
+mpecho &RThe Green Yardrat Master suddenly reappears.&D
+~
+> speech_prog nothing~
+say You would let everything as you know it - everything you live for - be destroyed?
+say Then I am glad that I don't live in your world.
+mpoload 155017
+give sphere $n
+mpechoat $n &WThe Green Yardrat Master walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Green Yardrat Master walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Green Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Green Yardrat Master disappears.&D
+mpecho &RThe Green Yardrat Master suddenly reappears.&D
+~
+|
+#155004
+yellow yardrat master~
+Yellow Yardrat Master~
+A Yardrat wearing yellow robes meditates peacefully.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ah, the sun. Such a wondrous thing. The heat... the light...
+say Don't you love the sun, $n?
+say Or are you one of those people who forsakes everything about it?
+~
+> speech_prog love~
+say Yes... the sun makes life possible. Without it, all would surely freeze.
+mpoload 155009
+give sphere $n
+mpechoat $n &WThe Yellow Yardrat Master walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Yellow Yardrat Master walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone!&D
+mpat 155004 mpecho &W$n and The Yellow Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Yellow Yardrat Master disappears.&D
+mpecho &RThe Yellow Yardrat Master suddenly reappears.&D
+~
+> speech_prog forsake~
+say Pity... I'm sure you would care if it disappeared and you were on the brink of freezing to death.
+mpoload 155018
+give sphere $n
+mpechoat $n &WThe Yellow Yardrat Master walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Yellow Yardrat Master walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155004 mpecho &W$n and The Yellow Yardrat Master appear in a flash of light!&D
+mptransfer $n 155004
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Yellow Yardrat Master disappears.&D
+mpecho &RThe Yellow Yardrat Master suddenly reappears.&D
+~
+|
+#155005
+pink yardrat master~
+Pink Yardrat Master~
+A Yardrat wearing pink robes meditates peacefully.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n.
+blush
+say Could I ask a favor of you?
+say I saw my ex-boyfriend the other day with his new girlfriend. I want to make him jealous.
+say Could you act as my pseudo-boyfriend?
+say If you don't want to, just say you wish to remain neutral.
+~
+> speech_prog yes~
+nod
+say Thanks. Here, you can have this for your trouble.
+mpoload 155019
+give sphere $n
+mpechoat $n &WThe Pink Yardrat Master walks over to you and places her hand on your shoulder.&D
+  mpechoaround $n &WThe Pink Yardrat Master walks over to $n and places her hand on $s shoulder.&D
+mpsleep 3
+  mpechoat $n &YSuddenly, you are back in the antechamber!&D
+  mpechoaround $n &YSuddenly, both are gone.&D
+  mpat 155004 mpecho &W$n and The Pink Yardrat Master appear in a flash of light!&D
+  mptransfer $n 155004
+  mpat $n mpforce $n look
+  mpsleep 6
+  mpat $n mpecho &RThe Pink Yardrat Master disappears.&D
+  mpecho &RThe Pink Yardrat Master suddenly reappears.&D
+~
+> speech_prog neutral~
+sigh
+say Oh well. It's probably better that I don't sink to that level anyway. Thanks for your time.
+mpoload 155010
+give sphere $n
+mpechoat $n &WThe Pink Yardrat Master walks over to you and places her hand on your shoulder.&D
+  mpechoaround $n &WThe Pink Yardrat Master walks over to $n and places her hand on $s 
+shoulder.&D
+mpsleep 3
+  mpechoat $n &YSuddenly, you are back in the antechamber!&D
+  mpechoaround $n &YSuddenly, both are gone.&D
+  mpat 155004 mpecho &W$n and The Pink Yardrat Master appear in a flash of light!&D
+  mptransfer $n 155004
+  mpat $n mpforce $n look
+  mpsleep 6
+  mpat $n mpecho &RThe Pink Yardrat Master disappears.&D
+  mpecho &RThe Pink Yardrat Master suddenly reappears.&D
+~
+|
+#155006
+neutrality yardrat master~
+Neutrality Yardrat Master~
+A Yardrat wearing grey robes meditates peacefully.
+~
+~
+84017219 524416 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if carryingvnum($n) 155016
+say You have not learned the true meaning of neutrality... you have failed this test.
+mpforce $n drop all.arghilwriwo
+get all
+mpjunk all
+get all
+mpjunk all
+mptransfer $n 155004
+mpat $n mpforce $n look
+endif
+if carryingvnum($n) 155017
+say You have not learned the true meaning of neutrality... you have failed this test.
+mpforce $n drop all.arghilwriwo
+get all
+mpjunk all
+get all
+mpjunk all
+mptransfer $n 155004
+mpat $n mpforce $n look
+endif
+if carryingvnum($n) 155018
+say You have not learned the true meaning of neutrality... you have failed this test.
+mpforce $n drop all.arghilwriwo
+get all
+mpjunk all
+get all
+mpjunk all
+mptransfer $n 155004
+mpat $n mpforce $n look
+endif
+if carryingvnum($n) 155019
+say You have not learned the true meaning of neutrality... you have failed this test.
+mpforce $n drop all.arghilwriwo
+get all
+mpjunk all
+get all
+mpjunk all
+mptransfer $n 155004
+mpat $n mpforce $n look
+endif
+mpedit master add greet 100
+if carryingvnum($n) 155007
+  if carryingvnum($n) 155008
+    if carryingvnum($n) 155009
+      if carryingvnum($n) 155010
+        mpecho &wThe Neutrality Master nods his head slightly, then slowly opens his eyes.
+        say I see you were able to successfully gain the approval of the four Color Masters.
+        say In doing so, you have also gained my approval. I will now take your spheres and present you with the Neutrality Sphere. You have earned it.
+        mpforce $n drop 'blue sphere'
+        mpforce $n drop 'green sphere'
+        mpforce $n drop 'yellow sphere'
+        mpforce $n drop 'pink sphere'
+        get 'blue sphere'
+        get 'green sphere'
+        get 'yellow sphere'
+        get 'pink sphere'
+        mpjunk all
+        mpsleep 18
+        mpecho &WThe Neutrality Master holds the four spheres into the air, and closes his eyes. The spheres begin spinning very quickly, and soon merge together into a single grey sphere.&D
+        mpoload 155011
+        give neutrality $n
+        say Your test is not over yet. Remember that neutrality does not necessarily mean you aren't good or evil. It means that you do not meddle in the affairs of others.
+        mpechoat $n &WThe Neutrality Master leads you back to the Temple Antechamber.&D
+        mptransfer $n 155004
+        mpat $n mpforce $n look
+      else
+        say You have not yet gained the approval of the four Color Masters. Come back when you have succeeded in doing so.
+        mpechoat $n &WThe Neutrality Master leads you back to the Temple Antechamber.&D
+        mptransfer $n 155004
+        mpat $n mpforce $n look
+      endif
+    else
+      say You have not yet gained the approval of the four Color Masters. Come back when you have succeeded in doing so.
+        mpechoat $n &WThe Neutrality Master leads you back to the Temple Antechamber.&D
+        mptransfer $n 155004
+        mpat $n mpforce $n look
+    endif
+  else
+    say You have not yet gained the approval of the four Color Masters. Come back when you have succeeded in doing so.
+    mpechoat $n &WThe Neutrality Master leads you back to the Temple Antechamber.&D
+    mptransfer $n 155004
+    mpat $n mpforce $n look
+  endif
+else
+  say You have not yet gained the approval of the four Color Masters. Come back when you have succeeded in doing so.
+  mpechoat $n &WThe Neutrality Master leads you back to the Temple Antechamber.&D
+  mptransfer $n 155004
+  mpat $n mpforce $n look
+endif
+~
+|
+#155007
+invisible neutrality sphere moderator~
+Invisible Neutrality Sphere Moderator~
+Some god abandoned a newly created invisible neutrality sphere moderator here.
+~
+~
+92405827 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'puts &wNeutrality Sphere&D in &wGrey Pedestal&D.'~
+if isneutral($n)
+ mpechoat $n &WCongratulations. You have passed the test by demonstrating the actions of neutrality, as well as the knowledge of the definition of Neutrality.&D
+ get 'neutrality sphere' 'neutral grey pedestal'
+ mpjunk 'neutrality sphere'
+ mpoload 155012
+ give orb $n
+ mpechoat $n &WGive the glowing orb to the guard in the Antechamber in order to proceed.&D
+else
+ mpechoat $n &RYou have failed. You obviously do not understand the meaning of Neutrality.&D
+ get 'neutrality sphere' 'neutral grey pedestal'
+ mpjunk 'neutrality sphere'
+endif
+~
+> act_prog 'puts &wNeutrality Sphere&D in &RRed Pedestal&D.'~
+if isevil($n)
+ mpechoat $n &WCongratulations. You have passed the test by demonstrating knowledge of the definition of Neutrality.&D
+ get 'neutrality sphere' 'evil red pedestal'
+ mpjunk 'neutrality sphere'
+ mpoload 155012
+ give orb $n
+ mpechoat $n &WGive the glowing orb to the guard in the Antechamber in order to proceed.&D
+else
+ mpechoat $n &RYou have failed. You obviously do not understand the meaning of Neutrality.&D
+ get 'neutrality sphere' 'evil red pedestal'
+ mpjunk 'neutrality sphere'
+endif
+~
+> act_prog 'puts &wNeutrality Sphere&D in &CLight Blue Pedestal&D.'~
+if isgood($n)
+ mpechoat $n &WCongratulations. You have passed the test by demonstrating knowledge of the definition of Neutrality.&D
+ get 'neutrality sphere' 'good light blue pedestal'
+ mpjunk 'neutrality sphere'
+ mpoload 155012
+ give orb $n
+ mpechoat $n &WGive the glowing orb to the guard in the Antechamber in order to proceed.&D
+else
+ mpechoat $n &RYou have failed. You obviously do not understand the meaning of Neutrality.&D
+ get 'neutrality sphere' 'good light blue pedestal'
+ mpjunk 'neutrality sphere'
+endif
+~
+|
+#155008
+temple antechamber1 guard~
+Temple Antechamber Guard~
+A Yardrat Temple guard paces about, keeping an eye on things.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'gives you &WWhite Orb&D.'~
+mpjunk 'white orb'
+mpecho &wThe Temple Antechamber Guard nods and looks at you with a pleased smile on his face.&D
+mpechoat $n &CTemple Antechamber Guard says 'Good... you realized that neutrality means the lack of involvement in affairs that aren't your own, rather than whether you are good, or evil, or in between.'
+nod
+say I shall take you to the second floor of our Temple.
+mpechoat $n &WThe Antechamber Guard walks over to you and places his hand on your shoulder.&D
+mpsleep 3
+mpechoat $n &YSuddenly, you are in the antechamber of the second floor!&D
+mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155159 mpecho &W$n and the Antechamber Guard appear in a flash of light!&D
+mptransfer $n 155159
+mpat $n mpforce $n look
+mpsleep 6
+mpat 155159 mpecho &RThe Antechamber Guard disappears.&D
+mpecho &RThe Antechamber Guard suddenly reappears and resumes his pacing about the antechamber.&D
+~
+|
+#155009
+yardrat temple antechamber2 guard~
+Temple Antechamber Guard~
+A Yardrat Temple guard paces about, keeping an eye on things.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'Did... those wings save me?'~
+if carryingvnum($n) 155023
+mpsleep 12
+say Ah, you must be talking about the Swift Angel's Wings. Yes... those wings have been blessed by our Gods to protect us from the evils that threaten our very existence.
+say It is not surprising they would save someone other than us... our Gods are gracious beings.
+mpsleep 9
+say The fact that you're still alive for me to be saying this to you means you've passed the tests of our Master of Swiftness... you must have amazing speed. I shall take you to the next... the final... antechamber.
+mpsleep 5
+mpechoat $n &WThe Yardrat Temple Guard walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Yardrat Temple Guard walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpat $n mpechoat $n &YSuddenly, you are in the final antechamber!&D
+mpat $n mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155217 mpecho &W$n and The Yardrat Temple Guard appear in a flash of light!&D
+mpat $n mptransfer $n 155217
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Yardrat Temple Guard disappears.&D
+mpecho &RThe Master of Swiftness suddenly reappears.&D
+mpat $n mpechoat $n &YIf you wish to leave, simply say 'return'.&D
+endif
+~
+|
+#155010
+yardrat swiftness master~
+Master of Swiftness~
+A Yardrat stands in the center of the chamber.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ah, $n. I have been monitoring your progress through my tests. As you have no doubt guessed, I have been testing your speed.
+say You masterfully sprinted through my maze and avoided certain doom, as well as found a way to make it to me before I resumed my work. I must commend you.
+mpsleep 9
+say I want you to take these as a symbol of your abilities.
+mpoload 155021
+give wings $n
+say Again, I commend you on your skills. But now, you must go. I have much work to do.
+mpechoat $n &WThe Master of Swiftness walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Master of Swiftness walks over to $n and places his hand on $s shoulder.&D
+mpsleep 3
+mpat $n mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpat $n mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155159 mpecho &W$n and The Master of Swiftness appear in a flash of light!&D
+mpat $n mptransfer $n 155159
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Master of Swiftness disappears.&D
+mpecho &RThe Master of Swiftness suddenly reappears.&D
+~
+|
+#155011
+yardrat swiftness assistant~
+Swiftness Assistant~
+A Yardrat watches your every movement.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I'm sorry, but the Master of Swiftness is very busy, and does not have time to speak with you at the moment. You'll have to come back later.
+mpechoat $n &WThe Swiftness Assistant walks over to you and places his hand on your shoulder.&D
+mpechoaround $n &WThe Swiftness Assistant walks over to $n and places his hand on $n's shoulder.&D
+mpsleep 3
+mpat $n mpechoat $n &YSuddenly, you are back in the antechamber!&D
+mpat $n mpechoaround $n &YSuddenly, both are gone.&D
+mpat 155159 mpecho &W$n and The Swiftness Assistant appear in a flash of light!&D
+mpat $n mptransfer $n 155159
+mpat $n mpforce $n look
+mpsleep 6
+mpat $n mpecho &RThe Swiftness Assistant disappears.&D
+mpecho &RThe Swiftness Assistant suddenly reappears.&D
+~
+|
+#155012
+swiftness test management mob~
+Swiftness Test Management Mob~
+A mob is here, monitoring the room.
+~
+~
+92405827 0 0 C
+50 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'puts &WWings &Cof the &WSwift Angel&D in &RBurn&zing Pede&Rstal&D.'~
+mppurge 'burning pedestal'
+mpoload 155022
+mpjunk all
+mpecho &CThe Angelic Wings cast their holy glow upon the flames, quickly smothering the fire.&D
+mpecho &RThe pedestal erupts in an explosion of hellish fire, quickly engulfing the entire room!&D
+mpechoat $n &WA holy light protrudes from the center of the pedestal, quickly surrounding you and shielding you from the destructive demonic flames.&D
+mpechoaround $n &WA holy light protrudes from the center of the pedestal, quickly surrounding $n and shielding $m from the destructive demonic flames.&D
+mpecho &RThe fire explodes outward, turning everything in sight into glowing cinders!&D
+mptransfer $n 155159
+mpat $n mpechoat $n &RThe force of the explosion sends you careening out of the room at break-neck speeds!&D
+mpat $n mpforce $n look
+mpat $n mpechoat $n &CThe holy shield protecting you slowly gathers itself in your hands, forming into a single wing of a fallen angel.&D
+mpat $n mpechoaround $n &CThe holy shield protecting $n slowly gathers itself in $s hands, forming into a single wing of a fallen angel.&D
+mpat $n mpoload 155023 $n
+mpat $n mpforce $n say Did... those wings save me?
+~
+|
+#155013
+yardrat temple antechamber3 guard~
+Temple Antechamber Guard~
+A Yardrat Temple guard paces about, keeping an eye on things.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog space~
+Say You want to go to the Space Temple?
+mpsleep 6
+ponder
+say Well, you've already made it this far. I might as well tell you how to get there.
+mpsleep 5
+say All you need to do is step into this pillar of light, and it'll carry you to the Space Temple.
+mpsleep 5
+mpforce $n nod
+mpforce $n say Thanks.
+mpechoat $n &WYou turn and gaze upon the pillar of light, taking a deep breath.&D
+mpechoaround $n &W$n turns and gazes upon the pillar of light, taking a deep breath.&D
+mpsleep 9
+mpechoat $n &WYou step into the bright beam of light. You instantly feel something pulling you upwards, and in the next moment, you find yourself staring down the corridor of an object that seems to be orbitting the planet.
+mpechoaround $n &W$n steps into the beam of light.&D
+mptransfer $n 155237
+mpat $n mpforce $n look
+~
+|
+#155014
+time prog mob~
+a newly created time prog mob~
+Some god abandoned a newly created time prog mob here.
+~
+~
+8388609 0 0 C
+50 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155399
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#155000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#155001
+temple guard combat robes~
+&WWhite Yardrat Robes&D~
+White cloth has been neatly folded.~
+~
+9 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155002
+blue master robes~
+&BBlue Master Robes&D~
+Blue cloth has been neatly folded.~
+~
+9 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155003
+green master robes~
+&GGreen Master Robes&D~
+Green cloth has been folded neatly.~
+~
+9 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155004
+yellow master robes~
+&YYellow Master Robes&D~
+Yellow cloth has been folded neatly.~
+~
+9 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155005
+pink master robes~
+&PPink Master Robes&D~
+Pink cloth has been folded neatly.~
+~
+8 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155006
+neutrality master robes~
+&wNeutrality Master Robes&D~
+Grey cloth has been folded neatly.~
+~
+9 0 1025
+0 0 0 0 0 0
+1 0 0
+ 0
+#155007
+blue sphere arghilwriwo~
+&BBlue Sphere&D~
+A small sphere is radiating a blue glow.~
+~
+8 1&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155008
+green sphere arghilwriwo~
+&GGreen Sphere&D~
+A small sphere is radiating a green glow.~
+~
+8 1&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155009
+yellow sphere arghilwriwo~
+&YYellow Sphere&D~
+A small sphere is radiating a yellow glow.~
+~
+8 1&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155010
+pink sphere arghilwriwo~
+&PPink Sphere&D~
+A small sphere is radiating a pink glow.~
+~
+8 1&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155011
+neutrality sphere~
+&wNeutrality Sphere&D~
+A small sphere is dull and radiates no light.~
+~
+8 1 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155012
+white orb~
+&WWhite Orb&D~
+A large sphere is radiating a bright white glow.~
+~
+8 1&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155013
+evil red pedestal~
+&RRed Pedestal&D~
+&RA tall, red pedestal surrounded by &zdemons&R glows darkly.&D~
+~
+15 0 0
+35 0 0 0 0 0
+1 0 0
+ 0
+#155014
+neutral grey pedestal~
+&wGrey Pedestal&D~
+&wA tall, grey pedestal with &ggreen vines&w surrounding it radiates no light.&D~
+~
+15 0 0
+35 0 0 0 0 0
+1 0 0
+ 0
+#155015
+good light blue pedestal~
+&CLight Blue Pedestal&D~
+&CA tall, light blue pedestal is surrounded by &Wangels&C, glowing brightly.&D~
+~
+15 0 0
+35 0 0 0 0 0
+1 0 0
+ 0
+#155016
+dull blue sphere arghilwriwo~
+&bDull Blue Sphere&D~
+A dull round sphere emits no light at all.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155017
+dull green sphere arghilwriwo~
+&gDull Green Sphere&D~
+A dull round sphere emits no light at all.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155018
+dull yellow sphere arghilwriwo~
+&ODull Yellow Sphere&D~
+A dull round sphere emits no light at all.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155019
+dull pink sphere arghilwriwo~
+&pDull Pink Sphere&D~
+A dull round sphere emits no light at all.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155020
+Sprint Boots~
+&CS&wp&Cr&wi&Cn&wt &CB&wo&Co&wt&Cs&D~
+A pair of boots has wings on the outer sides of each boot.~
+~
+9 262145&772 65
+0 0 0 0 50 50
+1 0 0
+ 0
+A
+2 10
+> wear_prog 100~
+mpechoat $n &CThe boots adjust their own size, fitting your feet perfectly!
+mpechoaround $n &CThe boots adjust their own size, fitting $n's feet perfectly!
+mpecho &WThe wings on the boots begin to flap slowly.&D
+~
+> rand_prog 15~
+mpecho &WThe sound of wings flapping enters your ears.&D
+~
+|
+#155021
+Swift Angel Wings~
+&WWings &Cof the &WSwift Angel&D~
+A pair of angelic wings glows with a holy light.~
+~
+8 1 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155022
+burning pedestal~
+&RBurn&zing Pede&Rstal&D~
+&zA charred black pedestal is engulfed in &Rflame&z.~
+~
+15 0 0
+50 0 0 0 0 0
+1 0 0
+ 0
+#155023
+fallen angel wing~
+&WWing of the Fallen Angel&D~
+A single angelic wing rests peacefully on the ground.~
+~
+9 0 524289
+0 0 0 0 150 150
+1 0 0
+ 0
+A
+2 10
+> wear_prog 100~
+mpechoaround $n &WThe wing sinks into $n's back and spreads itself out, engulfing $s body with an angelic glow.&D
+mpechoat $n &WThe wing sinks into your back and spreads itself out, engulfing your body with an angelic glow.&D
+~
+|
+#155024
+Red Energy Orb~
+&REnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155025
+Blue Energy Orb~
+&BEnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155026
+Yellow Energy Orb~
+&YEnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155027
+Green Energy Orb~
+&GEnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155028
+Orange Energy Orb~
+&OEnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155029
+Purple Energy Orb~
+&pEnergy Orb&D~
+A small orb of pure energy hovers in mid-air.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155030
+beautiful flower~
+&WA Beautiful Flower&D~
+Some god dropped a newly created beautiful flower here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155031
+beam light~
+&WA Massive Beam of Light&D~
+&WA massive beam of light is erupting from the ground, seemingly connecting with something high in the sky.&D~
+~
+8 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+light beam~
+This bright pillar of light is reaching upwards toward the sky,
+interlocking with something so high up it only appears as a small, dark
+speck. 
+~
+#155399
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#155000
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away. 
+~
+0 0 3
+D0
+~
+~
+0 -1 155001
+D2
+~
+~
+0 -1 155475
+S
+#155001
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away. 
+~
+0 0 3
+D0
+~
+~
+0 -1 155002
+D2
+~
+~
+0 -1 155000
+S
+#155002
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away. 
+~
+0 0 3
+D0
+~
+~
+0 -1 155003
+D2
+~
+~
+0 -1 155001
+S
+#155003
+&wTemple Entrance&D~
+The massive Yardrat Temple looms over the forest to the south, a sense
+of peace emanating from it. There seems to be no actual entrance to the
+temple itself, leaving one wondering how to get inside.  A lone yardrat
+stands before the temple, monitoring any activity in the general area. 
+~
+0 0 3
+D2
+~
+~
+0 -1 155002
+S
+#155004
+&OTemple Antechamber&D~
+The room is barely lit by a few torches mounted on either side of each
+exit in the antechamber.  A Yardrat guard stands in the center of the room,
+assisting those who are ready to proceed to the next level. 
+~
+0 8 0
+D0
+~
+~
+0 -1 155006
+D2
+~
+~
+0 -1 155158
+D6
+~
+~
+0 -1 155005
+D7
+~
+~
+0 -1 155007
+D8
+~
+~
+0 -1 155009
+D9
+~
+~
+0 -1 155008
+> speech_prog return~
+mptransfer $n 155003
+mpat $n mpforce $n look
+~
+> entry_prog 100~
+mpechoat $n &RIf you wish to leave, simply say 'return'.&D
+~
+|
+S
+#155005
+&WBlue Antechamber&D~
+&BThis room is painted completely blue, with absolutely no uniqueness to
+any part of it whatsoever.  The only things that stand out at all in here
+are the exits that lead to different parts of the temple.&D 
+~
+0 8 0
+D4
+~
+~
+0 -1 155010
+D9
+~
+~
+0 -1 155004
+> entry_prog 100~
+if carryingvnum($n) 155007
+mpforce $n sw
+mpat $n mpechoat $n &BYou have already obtained the Blue Master's sphere.&D
+endif
+if carryingvnum($n) 155016
+mpforce $n sw
+mpat $n mpechoat $n &BYou have already obtained the Blue Master's sphere.&D
+endif
+if carryingvnum($n) 155012
+mpforce $n sw
+mpat $n mpechoat $n &WYou have already passed each test on this level.&D
+endif
+if carryingvnum($n) 155011
+mpforce $n sw
+mpat $n mpechoat $n &wYou have already obtained the Neutrality Master's sphere.&D
+endif
+~
+|
+S
+#155006
+&WGrey Antechamber&D~
+&wThis antechamber is completely devoid of any color, except for the
+dullness of the grey stone in which the walls, ceiling, and floor are made
+up of.  The exits stand out rather boldly, being that they're the only
+things in here that have any color to them whatsoever.&D 
+~
+0 8 0
+D2
+~
+~
+0 -1 155004
+D4
+~
+~
+0 -1 155131
+> entry_prog 100~
+if carryingvnum($n) 155011
+mpforce $n s
+mpat $n mpechoat $n &wYou have already obtained the Neutrality Master's sphere.&D
+endif
+if carryingvnum($n) 155012
+mpforce $n s
+mpat $n mpechoat $n &WYou have already passed each test on this level.&D
+endif
+~
+|
+S
+#155007
+&WPink Antechamber&D~
+&PThis room is painted completely pink, with absolutely no uniqueness to
+any part of it whatsoever.  The only things that stand out at all in here
+are the exits that lead to different parts of the temple.&D 
+~
+0 8 0
+D4
+~
+~
+0 -1 155101
+D8
+~
+~
+0 -1 155004
+> entry_prog 100~
+if carryingvnum($n) 155010
+mpforce $n se
+mpat $n mpechoat $n &PYou have already obtained the Pink Master's sphere.&D
+endif
+if carryingvnum($n) 155019
+mpforce $n se
+mpat $n mpechoat $n &PYou have already obtained the Pink Master's sphere.&D
+endif
+if carryingvnum($n) 155012
+mpforce $n se
+mpat $n mpechoat $n &WYou have already passed each test on this level.&D
+endif
+if carryingvnum($n) 155011
+mpforce $n se
+mpat $n mpechoat $n &wYou have already obtained the Neutrality Master's sphere.&D
+endif
+~
+|
+S
+#155008
+&WYellow Antechamber&D~
+&YThis room is painted completely yellow, with absolutely no uniqueness
+to any part of it whatsoever.  The only things that stand out at all in
+here are the exits that lead to different parts of the temple.&D 
+~
+0 8 0
+D4
+~
+~
+0 -1 155070
+D6
+~
+~
+0 -1 155004
+> entry_prog 100~
+if carryingvnum($n) 155009
+mpforce $n ne
+mpat $n mpechoat $n &YYou have already obtained the Yellow Master's sphere.&D
+endif
+if carryingvnum($n) 155018
+mpforce $n ne
+mpat $n mpechoat $n &YYou have already obtained the Yellow Master's sphere.&D
+endif
+if carryingvnum($n) 155012
+mpforce $n ne
+mpat $n mpechoat $n &WYou have already passed each test on this level.&D
+endif
+if carryingvnum($n) 155011
+mpforce $n ne
+mpat $n mpechoat $n &wYou have already obtained the Neutrality Master's sphere.&D
+endif
+~
+|
+S
+#155009
+&WGreen Antechamber&D~
+&GThis room is painted completely green, with absolutely no uniqueness
+to any part of it whatsoever.  The only things that stand out at all in
+here are the exits that lead to different parts of the temple.&D 
+~
+0 8 0
+D4
+~
+~
+0 -1 155037
+D7
+~
+~
+0 -1 155004
+> entry_prog 100~
+if carryingvnum($n) 155008
+mpforce $n nw
+mpat $n mpechoat $n &GYou have already obtained the Green Master's sphere.&D
+endif
+if carryingvnum($n) 155017
+mpforce $n nw
+mpat $n mpechoat $n &GYou have already obtained the Green Master's sphere.&D
+endif
+if carryingvnum($n) 155012
+mpforce $n nw
+mpat $n mpechoat $n &WYou have already passed each test on this level.&D
+endif
+if carryingvnum($n) 155011
+mpforce $n nw
+mpat $n mpechoat $n &wYou have already obtained the Neutrality Master's sphere.&D
+endif
+~
+|
+S
+#155010
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155011
+S
+#155011
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155012
+D3
+~
+~
+0 -1 155010
+S
+#155012
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155013
+D2
+~
+~
+0 -1 155011
+S
+#155013
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155015
+D1
+~
+~
+0 -1 155014
+D3
+~
+~
+0 -1 155012
+S
+#155014
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155016
+D3
+~
+~
+0 -1 155013
+S
+#155015
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155016
+D2
+~
+~
+0 -1 155013
+S
+#155016
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155018
+D1
+~
+~
+0 -1 155017
+D2
+~
+~
+0 -1 155014
+D3
+~
+~
+0 -1 155015
+S
+#155017
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155019
+D3
+~
+~
+0 -1 155016
+S
+#155018
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155019
+D2
+~
+~
+0 -1 155016
+S
+#155019
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155021
+D1
+~
+~
+0 -1 155020
+D2
+~
+~
+0 -1 155017
+D3
+~
+~
+0 -1 155018
+S
+#155020
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155022
+D3
+~
+~
+0 -1 155019
+S
+#155021
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155024
+D1
+~
+~
+0 -1 155022
+D2
+~
+~
+0 -1 155019
+S
+#155022
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155023
+D2
+~
+~
+0 -1 155020
+D3
+~
+~
+0 -1 155021
+S
+#155023
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155022
+D3
+~
+~
+0 -1 155024
+S
+#155024
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155025
+D1
+~
+~
+0 -1 155023
+D2
+~
+~
+0 -1 155021
+S
+#155025
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155024
+D3
+~
+~
+0 -1 155026
+S
+#155026
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155027
+D1
+~
+~
+0 -1 155025
+S
+#155027
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155026
+D3
+~
+~
+0 -1 155028
+S
+#155028
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155027
+D3
+~
+~
+0 -1 155029
+S
+#155029
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155030
+D1
+~
+~
+0 -1 155028
+D3
+~
+~
+0 -1 155031
+S
+#155030
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155029
+D3
+~
+~
+0 -1 155032
+S
+#155031
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155032
+D1
+~
+~
+0 -1 155029
+S
+#155032
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155030
+D2
+~
+~
+0 -1 155031
+D3
+~
+~
+0 -1 155033
+S
+#155033
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155032
+D3
+~
+~
+0 -1 155034
+S
+#155034
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155035
+D1
+~
+~
+0 -1 155033
+S
+#155035
+&BBlue Hall&D~
+&WThis incredibly long hal&Blway is lined with bri&Wght blue carpeting.  The
+&Wwalls are a bright white&B, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Bing so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155034
+D3
+~
+~
+0 -1 155036
+S
+#155036
+&BBlue Master&D~
+&WThe walls and floor in this room &Bare&W almost completely white, save the
+&Bblue lines that stretch across the walls and the floor. In the center of
+&Wthe room, where the blue lines in&Bter&Wsect, sits a lone male Yardrat.&D
+~
+0 12 0
+D1
+~
+~
+0 -1 155035
+S
+#155037
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155038
+S
+#155038
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155039
+D3
+~
+~
+0 -1 155037
+S
+#155039
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155038
+D1
+~
+~
+0 -1 155040
+S
+#155040
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155041
+D3
+~
+~
+0 -1 155039
+S
+#155041
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155040
+D1
+~
+~
+0 -1 155042
+S
+#155042
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155043
+D2
+~
+~
+0 -1 155044
+D3
+~
+~
+0 -1 155041
+S
+#155043
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155047
+D2
+~
+~
+0 -1 155045
+D3
+~
+~
+0 -1 155042
+S
+#155044
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155042
+D1
+~
+~
+0 -1 155045
+S
+#155045
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155043
+D1
+~
+~
+0 -1 155046
+D3
+~
+~
+0 -1 155044
+S
+#155046
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155047
+D3
+~
+~
+0 -1 155045
+S
+#155047
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155048
+D2
+~
+~
+0 -1 155046
+D3
+~
+~
+0 -1 155043
+S
+#155048
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155051
+D1
+~
+~
+0 -1 155049
+D3
+~
+~
+0 -1 155047
+S
+#155049
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155050
+D3
+~
+~
+0 -1 155048
+S
+#155050
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155052
+D2
+~
+~
+0 -1 155049
+D3
+~
+~
+0 -1 155051
+S
+#155051
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155050
+D2
+~
+~
+0 -1 155048
+S
+#155052
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155053
+D1
+~
+~
+0 -1 155054
+D2
+~
+~
+0 -1 155050
+S
+#155053
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155055
+D2
+~
+~
+0 -1 155052
+S
+#155054
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155055
+D3
+~
+~
+0 -1 155052
+S
+#155055
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155056
+D2
+~
+~
+0 -1 155054
+D3
+~
+~
+0 -1 155053
+S
+#155056
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155058
+D1
+~
+~
+0 -1 155057
+D2
+~
+~
+0 -1 155055
+S
+#155057
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155059
+D3
+~
+~
+0 -1 155056
+S
+#155058
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155061
+D1
+~
+~
+0 -1 155059
+D2
+~
+~
+0 -1 155056
+S
+#155059
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155060
+D2
+~
+~
+0 -1 155057
+D3
+~
+~
+0 -1 155058
+S
+#155060
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155059
+D3
+~
+~
+0 -1 155061
+S
+#155061
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155062
+D1
+~
+~
+0 -1 155060
+D2
+~
+~
+0 -1 155058
+S
+#155062
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155064
+D2
+~
+~
+0 -1 155061
+D3
+~
+~
+0 -1 155063
+S
+#155063
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155065
+D1
+~
+~
+0 -1 155062
+S
+#155064
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155062
+D3
+~
+~
+0 -1 155065
+S
+#155065
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155066
+D1
+~
+~
+0 -1 155064
+D2
+~
+~
+0 -1 155063
+S
+#155066
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155065
+D3
+~
+~
+0 -1 155067
+S
+#155067
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155068
+D1
+~
+~
+0 -1 155066
+S
+#155068
+&GGreen Hall&D~
+&WThis incredibly long hal&Glway is lined with bri&Wght green carpeting.  The
+&Wwalls are a bright white&G, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ging so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155067
+D3
+~
+~
+0 -1 155069
+S
+#155069
+&GGreen Master&D~
+&WThe walls and floor in this room &Gare&W almost completely white, save the
+&Ggreen lines that stretch across the walls and the floor. In the center of
+&Wthe room, where the green lines i&Gnte&Wrsect, sits a lone male Yardrat.&D
+~
+0 12 0
+D1
+~
+~
+0 -1 155068
+S
+#155070
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155071
+S
+#155071
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155070
+D1
+~
+~
+0 -1 155072
+S
+#155072
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155073
+D3
+~
+~
+0 -1 155071
+S
+#155073
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155072
+D2
+~
+~
+0 -1 155074
+S
+#155074
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155073
+D2
+~
+~
+0 -1 155075
+S
+#155075
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155074
+D1
+~
+~
+0 -1 155076
+D2
+~
+~
+0 -1 155077
+S
+#155076
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155078
+D3
+~
+~
+0 -1 155075
+S
+#155077
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155075
+D1
+~
+~
+0 -1 155078
+S
+#155078
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155076
+D1
+~
+~
+0 -1 155080
+D2
+~
+~
+0 -1 155079
+D3
+~
+~
+0 -1 155077
+S
+#155079
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155078
+D1
+~
+~
+0 -1 155081
+S
+#155080
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155081
+D3
+~
+~
+0 -1 155078
+S
+#155081
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155080
+D1
+~
+~
+0 -1 155082
+D2
+~
+~
+0 -1 155083
+D3
+~
+~
+0 -1 155079
+S
+#155082
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155084
+D3
+~
+~
+0 -1 155081
+S
+#155083
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155081
+D1
+~
+~
+0 -1 155084
+S
+#155084
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155082
+D1
+~
+~
+0 -1 155086
+D2
+~
+~
+0 -1 155085
+D3
+~
+~
+0 -1 155083
+S
+#155085
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155084
+D1
+~
+~
+0 -1 155087
+S
+#155086
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155089
+D2
+~
+~
+0 -1 155087
+D3
+~
+~
+0 -1 155084
+S
+#155087
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155086
+D1
+~
+~
+0 -1 155088
+D3
+~
+~
+0 -1 155085
+S
+#155088
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155089
+D3
+~
+~
+0 -1 155087
+S
+#155089
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155090
+D2
+~
+~
+0 -1 155088
+D3
+~
+~
+0 -1 155086
+S
+#155090
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155091
+D3
+~
+~
+0 -1 155089
+S
+#155091
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155093
+D1
+~
+~
+0 -1 155092
+D2
+~
+~
+0 -1 155090
+S
+#155092
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155094
+D3
+~
+~
+0 -1 155091
+S
+#155093
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155094
+D2
+~
+~
+0 -1 155091
+S
+#155094
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155096
+D1
+~
+~
+0 -1 155095
+D2
+~
+~
+0 -1 155092
+D3
+~
+~
+0 -1 155093
+S
+#155095
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155097
+D3
+~
+~
+0 -1 155094
+S
+#155096
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155097
+D2
+~
+~
+0 -1 155094
+S
+#155097
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155098
+D2
+~
+~
+0 -1 155095
+D3
+~
+~
+0 -1 155096
+S
+#155098
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155099
+D2
+~
+~
+0 -1 155097
+S
+#155099
+&YYellow Hall&D~
+&WThis incredibly long hal&Ylway is lined with bri&Wght yellow carpeting.  The
+&Wwalls are a bright white&Y, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ying so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155100
+D3
+~
+~
+0 -1 155098
+S
+#155100
+&YYellow Master&D~
+&WThe walls and floor in this room &Yare&W almost completely white, save the
+&Yyellow lines that stretch across the walls and the floor. In the center of
+&Wthe room, where the yellow lines &Yint&Wersect, sits a lone male Yardrat.
+~
+0 12 0
+D2
+~
+~
+0 -1 155099
+S
+#155101
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155102
+S
+#155102
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155101
+D3
+~
+~
+0 -1 155103
+S
+#155103
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155102
+D3
+~
+~
+0 -1 155104
+S
+#155104
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155103
+D2
+~
+~
+0 -1 155106
+D3
+~
+~
+0 -1 155105
+S
+#155105
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155104
+D2
+~
+~
+0 -1 155107
+S
+#155106
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155104
+D3
+~
+~
+0 -1 155107
+S
+#155107
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155105
+D1
+~
+~
+0 -1 155106
+D2
+~
+~
+0 -1 155108
+D3
+~
+~
+0 -1 155109
+S
+#155108
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155107
+D3
+~
+~
+0 -1 155110
+S
+#155109
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155107
+D2
+~
+~
+0 -1 155110
+S
+#155110
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155109
+D1
+~
+~
+0 -1 155108
+D2
+~
+~
+0 -1 155112
+D3
+~
+~
+0 -1 155111
+S
+#155111
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155110
+D2
+~
+~
+0 -1 155113
+S
+#155112
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155110
+D2
+~
+~
+0 -1 155115
+D3
+~
+~
+0 -1 155113
+S
+#155113
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155111
+D1
+~
+~
+0 -1 155112
+D2
+~
+~
+0 -1 155114
+S
+#155114
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155113
+D1
+~
+~
+0 -1 155115
+S
+#155115
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155112
+D2
+~
+~
+0 -1 155116
+D3
+~
+~
+0 -1 155114
+S
+#155116
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155115
+D1
+~
+~
+0 -1 155117
+D2
+~
+~
+0 -1 155118
+S
+#155117
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155119
+D3
+~
+~
+0 -1 155116
+S
+#155118
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155116
+D1
+~
+~
+0 -1 155119
+S
+#155119
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155117
+D2
+~
+~
+0 -1 155120
+D3
+~
+~
+0 -1 155118
+S
+#155120
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155119
+D1
+~
+~
+0 -1 155121
+S
+#155121
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155122
+D2
+~
+~
+0 -1 155123
+D3
+~
+~
+0 -1 155120
+S
+#155122
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155124
+D3
+~
+~
+0 -1 155121
+S
+#155123
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155121
+D1
+~
+~
+0 -1 155124
+S
+#155124
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155122
+D1
+~
+~
+0 -1 155125
+D3
+~
+~
+0 -1 155123
+S
+#155125
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155127
+D2
+~
+~
+0 -1 155126
+D3
+~
+~
+0 -1 155124
+S
+#155126
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155125
+D1
+~
+~
+0 -1 155128
+S
+#155127
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D2
+~
+~
+0 -1 155128
+D3
+~
+~
+0 -1 155125
+S
+#155128
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D0
+~
+~
+0 -1 155127
+D1
+~
+~
+0 -1 155129
+D3
+~
+~
+0 -1 155126
+S
+#155129
+&PPink Hall&D~
+&WThis incredibly long hal&Plway is lined with bri&Wght pink carpeting.  The
+&Wwalls are a bright white&P, accentuating the flo&Wor even further.  The hallway
+&Wis truly massive, extend&Ping so far that it is &Wimpossible to see the end. &D
+~
+0 12 0
+D1
+~
+~
+0 -1 155130
+D3
+~
+~
+0 -1 155128
+S
+#155130
+&PPink Master&D~
+&WThe walls and floor in this room &Pare&W almost completely white, save the
+&Ppink lines that stretch across the walls and the floor. In the center of
+&Wthe room, where the pink lines in&Pter&Wsect, sits a lone female Yardrat.
+~
+0 12 0
+D3
+~
+~
+0 -1 155129
+S
+#155131
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D3
+~
+~
+0 -1 155132
+S
+#155132
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155133
+D1
+~
+~
+0 -1 155131
+S
+#155133
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155134
+D2
+~
+~
+0 -1 155132
+S
+#155134
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D2
+~
+~
+0 -1 155133
+D3
+~
+~
+0 -1 155135
+S
+#155135
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155136
+D1
+~
+~
+0 -1 155134
+S
+#155136
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155137
+D2
+~
+~
+0 -1 155135
+D3
+~
+~
+0 -1 155138
+S
+#155137
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D2
+~
+~
+0 -1 155136
+D3
+~
+~
+0 -1 155139
+S
+#155138
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155139
+D1
+~
+~
+0 -1 155136
+S
+#155139
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155140
+D1
+~
+~
+0 -1 155137
+D2
+~
+~
+0 -1 155138
+D3
+~
+~
+0 -1 155141
+S
+#155140
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D2
+~
+~
+0 -1 155139
+D3
+~
+~
+0 -1 155142
+S
+#155141
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155142
+D1
+~
+~
+0 -1 155139
+D3
+~
+~
+0 -1 155144
+S
+#155142
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155140
+D2
+~
+~
+0 -1 155141
+D3
+~
+~
+0 -1 155143
+S
+#155143
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155142
+D2
+~
+~
+0 -1 155144
+S
+#155144
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155143
+D1
+~
+~
+0 -1 155141
+D3
+~
+~
+0 -1 155145
+S
+#155145
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155144
+D2
+~
+~
+0 -1 155147
+D3
+~
+~
+0 -1 155146
+S
+#155146
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155145
+D2
+~
+~
+0 -1 155148
+S
+#155147
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155145
+D3
+~
+~
+0 -1 155148
+S
+#155148
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155146
+D1
+~
+~
+0 -1 155147
+D2
+~
+~
+0 -1 155149
+S
+#155149
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155148
+D3
+~
+~
+0 -1 155150
+S
+#155150
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155149
+D2
+~
+~
+0 -1 155151
+S
+#155151
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155150
+D2
+~
+~
+0 -1 155152
+S
+#155152
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155151
+D2
+~
+~
+0 -1 155154
+D3
+~
+~
+0 -1 155153
+S
+#155153
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D1
+~
+~
+0 -1 155152
+D2
+~
+~
+0 -1 155155
+S
+#155154
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155152
+D3
+~
+~
+0 -1 155155
+S
+#155155
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155153
+D1
+~
+~
+0 -1 155154
+D2
+~
+~
+0 -1 155156
+S
+#155156
+&WHall of Neutrality&D~
+&wThis hallway is just as boring as the antechamber.  Nothing stands out
+at all.  There isn't even any carpeting on the floor - just the same stone
+that makes up the walls.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155155
+D2
+~
+~
+0 -1 155157
+S
+#155157
+&WMaster of Neutrality&D~
+&wThis room is just as bland as the antechamber and the hallway,
+possibly even more so...  If it's possible.  The only thing that stands out
+in this room is the solitary Yardrat hovering in the center of the room.&D 
+~
+0 12 0
+D0
+~
+~
+0 -1 155156
+S
+#155158
+Test Of Neutrality~
+This room is one of the few normal looking rooms in this entire temple. 
+It is made of stone, and has no bright colors popping out by any means. 
+There are three pedestals sitting in the center of the room, each one with
+a drastically different appearance than the others. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155004
+S
+#155159
+&WTemple Antechamber&D~
+The room is barely lit by a few torches mounted on either side of each
+exit in the antechamber.  A Yardrat guard stands in the center of the room,
+assisting those who are ready to proceed to the next level. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155160
+D3
+~
+~
+0 -1 155212
+D6
+~
+~
+0 -1 155161
+> speech_prog return~
+mptransfer $n 155003
+mpat $n mpforce $n look
+~
+> entry_prog 100~
+mpechoat $n &RIf you wish to leave, simply say 'return'.&D
+~
+|
+S
+#155160
+&WPedestal Of Speed&D~
+A single pedestal sits in the center of the chamber, ablaze with a
+demonic fire.  The flame flares up momentarily every once in a while,
+brightening the room while darkening the scorches upon the pedestal. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155159
+> entry_prog 100~
+if carryingvnum($n) 155021
+mpechoat $n &RA demonic voice booms loudly in your mind. "You shall never quell the flames of destruction!"&D
+mpsleep 9
+mpechoat $n &CAn angelic voice fills your thoughts. "Quickly! You must find a way to eliminate the demonfire!"&D
+endif
+~
+|
+S
+#155161
+&wStone Tunnel Entrance&D~
+A long tunnel extends deep into the temple to the northeast.  A large
+machine lies in an alcove in the eastern section of the room, with
+hydraulics extending into the walls of the tunnel.  What could it be for?  
+~
+0 12 0
+D6
+~
+~
+0 -1 155162
+D9
+~
+~
+0 -1 155159
+> entry_prog 100~
+if carryingvnum($n) 155020
+mpechoat $n &CA powerful barrier erupts forth, ejecting you from the room!&D
+mpechoaround $n &CA powerful barrier erupts forth, ejecting $n from the room!&D
+mpforce $n sw
+endif
+~
+> entry_prog 100~
+if ovnumwear(155020) >= 1
+mpechoat $n &CA powerful barrier erupts forth, ejecting you from the room!&D
+mpechoaround $n &CA powerful barrier erupts forth, ejecting $n from the room!&D
+mpforce $n sw
+endif
+~
+|
+S
+#155162
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155163
+> entry_prog 100~
+mpsleep 8
+if inroom($n) == 155162
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155163
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155164
+D6
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155163
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155164
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155165
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155164
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155165
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155166
+D7
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155165
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155166
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155167
+D7
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155166
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155167
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155168
+D3
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155167
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155168
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155169
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155168
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155169
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155170
+D6
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155169
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155170
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155171
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155170
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155171
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155172
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155171
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155172
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155173
+D7
+~
+~
+0 -1 155174
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155172
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155173
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155187
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155173
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155174
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155175
+D6
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155174
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155175
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155176
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155175
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155176
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155177
+D6
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155176
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155177
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155178
+D7
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155177
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155178
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D8
+~
+~
+0 -1 155179
+D9
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155178
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155179
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D9
+~
+~
+0 -1 155180
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155179
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155180
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155181
+D7
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155180
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155181
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155182
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155181
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155182
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155183
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155182
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155183
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155184
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155183
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155184
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155185
+D8
+~
+~
+0 -1 155218
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155184
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155185
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155186
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+if carryingvnum($n) 155020
+mpechoat $n &RA trap door opens beneath you, bringing you back to the entrance to the maze!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+if wearingvnum($n) 155020
+mpechoat $n &RA trap door opens beneath you, bringing you back to the entrance to the maze!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+mpsleep 8
+if inroom($n) == 155185
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155186
+&WMarble Dome&D~
+Sprint Boots spawn here This room is just as bland as the antechamber
+and the hallway, possibly even more so...  If it's possible.  The only
+thing that stands out in this room is the solitary Yardrat hovering in the
+center of the room. 
+~
+0 12 0
+D9
+~
+~
+0 -1 155200
+> entry_prog 100~
+mpat $n mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpat $n mpechoat $n &WA bright light floods the room, a dark silhouette hovering in the center.&D
+mpsleep 9
+mpat $n mpechoat $n &wThe light fades, revealing a pair of boots!&D
+mpsleep 9
+mpat $n mpechoat $n &WThe boots float downward, coming to a rest in your hands.&D
+mpat $n mpechoat $n &RWhen worn in the correct location, these boots can grant the wearer extreme speed...&D
+mpat $n mpoload 155020 $n
+mpat $n mpechoat $n &CA Heavenly Voice echoes softly 'The one you must seek only rarely shows himself... you must discover when.'&D
+~
+|
+S
+#155187
+&wStone Tunnel&D~
+The walls in this room seem different from the floor and ceiling...  Are
+they even stone?  It's very difficult to tell.  Dust floats around in the
+air, piles of small stones and rockdust littering the ground. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155188
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155187
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155188
+&wStone Tunnel&D~
+~
+0 12 0
+D8
+~
+~
+0 -1 155189
+> entry_prog 100~
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpsleep 8
+if inroom($n) == 155188
+mpechoat $n &RThe walls suddenly begin to slam together.
+mpechoat $n &WSuddenly, someone appears out of thin air, grabbing you by the arm!&D
+mpechoat $n &WIn the next instant, you are back at the beginning of the maze, safe from harm!&D
+mpechoaround $n &wSuddenly, someone appears out of thin air, grabbing $n by the arm!&D
+mpechoaround $n &w$n and the mysterious being disappear from sight!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+endif
+~
+|
+S
+#155189
+&wTunnel Overpass&D~
+~
+0 12 0
+D2
+~
+~
+0 -1 155190
+> entry_prog 100~
+if wasinroom($n) == 155188
+mpechoat $n &YThe walls of the previous room slam together, barely missing you!&D
+mpechoat $n &WIt seems this overpass is safe...&D
+endif
+~
+|
+S
+#155190
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155189
+D2
+~
+~
+0 -1 155191
+S
+#155191
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155190
+D2
+~
+~
+0 -1 155192
+S
+#155192
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155191
+D2
+~
+~
+0 -1 155193
+S
+#155193
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155192
+D2
+~
+~
+0 -1 155194
+S
+#155194
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155193
+D2
+~
+~
+0 -1 155195
+S
+#155195
+&wTunnel Overpass&D~
+~
+0 12 0
+D0
+~
+~
+0 -1 155194
+D9
+~
+~
+0 -1 155196
+S
+#155196
+&wTunnel Overpass&D~
+~
+0 12 0
+D6
+~
+~
+0 -1 155195
+D9
+~
+~
+0 -1 155197
+S
+#155197
+&wTunnel Overpass&D~
+~
+0 12 0
+D6
+~
+~
+0 -1 155196
+D9
+~
+~
+0 -1 155198
+S
+#155198
+&wTunnel Overpass&D~
+~
+0 12 0
+D3
+~
+~
+0 -1 155199
+D6
+~
+~
+0 -1 155197
+S
+#155199
+&wTunnel Overpass&D~
+~
+0 12 0
+D1
+~
+~
+0 -1 155198
+D5
+~
+~
+0 -1 155161
+S
+#155200
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155201
+S
+#155201
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155200
+D2
+~
+~
+0 -1 155202
+S
+#155202
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155201
+D8
+~
+~
+0 -1 155203
+S
+#155203
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155202
+D8
+~
+~
+0 -1 155204
+S
+#155204
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155203
+D8
+~
+~
+0 -1 155205
+S
+#155205
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155204
+D8
+~
+~
+0 -1 155206
+S
+#155206
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155207
+D7
+~
+~
+0 -1 155205
+S
+#155207
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155206
+D2
+~
+~
+0 -1 155208
+S
+#155208
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155207
+D2
+~
+~
+0 -1 155209
+S
+#155209
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155208
+D2
+~
+~
+0 -1 155210
+S
+#155210
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155209
+D2
+~
+~
+0 -1 155211
+S
+#155211
+&CSafe Passage&D~
+The floor, as well as the arch that sits on top of it, is made entirely
+of a transparent energy.  A quiet hum fills the air, a side-effect of the
+powerful energy passage. Small pulses of energy travel along the floor
+every once in a while, sending small arcs of electricity across the
+passage. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155210
+D2
+~
+~
+0 -1 155159
+S
+#155212
+&RGrand Entranceway&D~
+A massive red archway with arcane symbols looms overhead, the entrance
+to a truly long hallway.  The hallway itself is the same shade of red as
+the entranceway, with torches lined along the walls. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155159
+D7
+~
+~
+0 -1 155213
+> act_prog 'wears &CS&wp&Cr&wi&Cn&wt &CB&wo&Co&wt&Cs&D on his feet.'~
+mpechoaround $n &W$n loses control of his movements and zooms off in a blur!&D
+mpechoat $n &WEverything around you becomes a blur as the boots take control of you!&D
+mpechoat $n &WThe boots guide you through the seemingly endless tunnel!&D
+mptransfer $n 155216
+mpsleep 27
+mpat $n mpechoat $n &wYou finally begin to slow down, landing on the ground and skidding into the next room.
+mpat $n mptransfer $n 155214
+mpat $n mpforce $n look
+mpat $n mpforce $n se
+mpat $n mpechoat $n &wYou skid into the last room of the tunnel, nearly colliding with someone!&D
+~
+> act_prog 'wears &CS&wp&Cr&wi&Cn&wt &CB&wo&Co&wt&Cs&D on her feet.'~
+mpechoaround $n &W$n loses control of his movements and zooms off in a blur!&D
+mpechoat $n &WEverything around you becomes a blur as the boots take control of you!&D
+mpechoat $n &WThe boots guide you through the seemingly endless tunnel!&D
+mptransfer $n 155216
+mpsleep 27
+mpat $n mpechoat $n &wYou finally begin to slow down, landing on the ground and skidding into the next room.
+mpat $n mptransfer $n 155214
+mpat $n mpforce $n look
+mpat $n mpforce $n se
+mpat $n mpechoat $n &wYou skid into the last room of the tunnel, nearly colliding with someone!&D
+~
+> act_prog 'wears &CS&wp&Cr&wi&Cn&wt &CB&wo&Co&wt&Cs&D on its feet.'~
+mpechoaround $n &W$n loses control of his movements and zooms off in a blur!&D
+mpechoat $n &WEverything around you becomes a blur as the boots take control of you!&D
+mpechoat $n &WThe boots guide you through the seemingly endless tunnel!&D
+mptransfer $n 155216
+mpsleep 27
+mpat $n mpechoat $n &wYou finally begin to slow down, landing on the ground and skidding into the next room.
+mpat $n mptransfer $n 155214
+mpat $n mpforce $n look
+mpat $n mpforce $n se
+mpat $n mpechoat $n &wYou skid into the last room of the tunnel, nearly colliding with someone!&D
+~
+|
+S
+#155213
+&REverlasting Hallway&D~
+The hallway continues onward, never seeming to end.  The same design
+continues every few dozen feet, quickly making this hallway rather dull. 
+There has to be some way to get through it... 
+~
+0 12 0
+D7
+~
+~
+0 -1 155213
+D8
+~
+~
+0 -1 155212
+S
+#155214
+&WBefore The Chamber&D~
+The hallway finally comes to an end, bringing into view a large chamber
+to the south-east with a single yardrat standing in the center of the room.
+Who could it be?  
+~
+0 12 0
+D8
+~
+~
+0 -1 155215
+S
+#155215
+&WChamber Of Swiftness&D~
+The Master of Swiftness is otherwise known as the the most intelligent
+being when it comes to speed.  This is the chamber he meets people in from
+time to time.  Most of the time, though, he's in his private quarters,
+working. 
+~
+0 1073741836 0
+D7
+~
+~
+0 -1 155214
+> time_prog 6~
+mpecho &WThe Master of Swiftness emerges from his workroom.&D
+mpecho &YThe Swiftness Assistant bows, then exits the room.&D
+mppurge 'yardrat swiftness assistant'
+mpmload 155010
+if mobinroom(155011) >= 1
+mppurge 'yardrat swiftness assistant'
+endif
+~
+> time_prog 7~
+if mobinroom(155010) >= 1
+mpecho &YThe Master of Swiftness enters his workroom.&D
+mppurge 'yardrat swiftness master'
+mpecho &WThe Swiftness Assistant emerges to watch over the chamber.&D
+mpmload 155011
+endif
+if mobinroom(155011) >= 2
+mppurge 'yardrat swiftness assistant'
+endif
+~
+> time_prog 18~
+mpecho &WThe Master of Swiftness emerges from his workroom.&D
+mpecho &YThe Swiftness Assistant bows, then exits the room.&D
+mppurge 'yardrat swiftness assistant'
+mpmload 155010
+if mobinroom(155011) >= 1
+mppurge 'yardrat swiftness assistant'
+endif
+~
+> time_prog 19~
+if mobinroom(155010) >= 1
+mpecho &YThe Master of Swiftness enters his workroom.&D
+mppurge 'yardrat swiftness master'
+mpecho &WThe Swiftness Assistant emerges to watch over the chamber.&D
+mpmload 155011
+endif
+if mobinroom(155011) >= 2
+mppurge 'yardrat swiftness assistant'
+endif
+~
+> time_prog 0~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 1~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 2~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 3~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 4~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 5~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 8~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 9~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 10~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 11~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 12~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 13~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 14~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 15~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 16~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 17~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 20~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 21~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 22~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 23~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+> time_prog 24~
+if mobinroom(155011) == 0
+mpmload 155011
+endif
+~
+|
+S
+#155216
+&RA Blur Of Stone&D~
+The red hallway is nothing but a blur now, unless you include the
+torches, which add a streak of glowing orange to the blurs.  The end of the
+hallway finally begins to come into view... 
+~
+0 12 0
+S
+#155217
+&CO&Wu&wt&Wd&Co&Wo&wr&Ws &CA&Wn&wt&We&Cc&Wh&wa&Wm&Cb&We&wr&D~
+Mob that teleports mortals to the space temple The view atop the Yardrat
+Temple is truly magnificent - Yardrat Village, as well as the lush
+landscape that makes up Yardrat as a whole can be seen.  Above, something
+that appears only as a small speck is being held in place by a beam of
+light energy that is being projected from the top of the temple.  The light
+must be keeping whatever the speck is from drifting too far into space... 
+~
+0 4 1
+> speech_prog return~
+if rand(30)
+mpecho &wThe clouds part momentarily, giving you a brief glimpse of the stars, floating in &zspace&w.&D
+endif
+~
+> rand_prog 35~
+mpecho &zClouds begin to gather, thunder clapping loudly as a bolt of lightning streaks across the sky... it's as if the weather is warning the planet of a foreboding danger...&D
+if rand(30)
+mpecho &wThe clouds part momentarily, giving you a brief glimpse of the stars, floating in &zspace&w.&D
+endif
+~
+|
+S
+#155218
+&zTrap Door!&D~
+This room is completely devoid of any light at all.  A thin outline of
+light shines through the floor where the trap door meets the walls.  Large
+hinges line a section of the walls, as well as a miniature hydraulic system
+that closes the trap door once it drops open. 
+~
+0 12 0
+> entry_prog 100~
+mpechoat $n &RA trap door opens beneath you, dropping you - quite hard - onto a stone slide!&D
+mpechoat $n &RYou slide around, following the stone path that lay beneath the trap door.&D
+mpechoat $n &RFinally, you are unceremoniously dumped back at the beginning of the maze!&D
+mptransfer $n 155161
+mpat $n mpforce $n look
+mpat $n mpechoaround $n &R$n falls in from a hole in the ceiling.&D
+~
+|
+S
+#155219
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155220
+D2
+~
+~
+0 -1 155288
+D3
+~
+~
+0 -1 155234
+D4
+~
+~
+0 -1 155278
+D5
+~
+~
+0 -1 155277
+S
+#155220
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155219
+D6
+~
+~
+0 -1 155221
+S
+#155221
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155222
+D9
+~
+~
+0 -1 155220
+S
+#155222
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155223
+D9
+~
+~
+0 -1 155221
+S
+#155223
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155224
+D1
+~
+~
+0 -1 155284
+D2
+~
+~
+0 -1 155222
+D3
+~
+~
+0 -1 155239
+D4
+~
+~
+0 -1 155241
+D5
+~
+~
+0 -1 155262
+S
+#155224
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155223
+D7
+~
+~
+0 -1 155225
+S
+#155225
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155226
+D8
+~
+~
+0 -1 155224
+S
+#155226
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155227
+D8
+~
+~
+0 -1 155225
+S
+#155227
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155287
+D1
+~
+~
+0 -1 155226
+D3
+~
+~
+0 -1 155228
+D4
+~
+~
+0 -1 155267
+D5
+~
+~
+0 -1 155268
+S
+#155228
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155227
+D9
+~
+~
+0 -1 155229
+S
+#155229
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D6
+~
+~
+0 -1 155228
+D9
+~
+~
+0 -1 155230
+S
+#155230
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155231
+D6
+~
+~
+0 -1 155229
+S
+#155231
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155230
+D1
+~
+~
+0 -1 155235
+D2
+~
+~
+0 -1 155232
+D3
+~
+~
+0 -1 155286
+D4
+~
+~
+0 -1 155251
+D5
+~
+~
+0 -1 155252
+S
+#155232
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155231
+D8
+~
+~
+0 -1 155233
+S
+#155233
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D7
+~
+~
+0 -1 155232
+D8
+~
+~
+0 -1 155234
+S
+#155234
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155219
+D7
+~
+~
+0 -1 155233
+S
+#155235
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155236
+D3
+~
+~
+0 -1 155231
+S
+#155236
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155237
+D3
+~
+~
+0 -1 155235
+S
+#155237
+Space Antechamber~
+The light that connects this place to Yardrat Temple down on the planet
+itself shines halfway through the floor, acting as an anchor.  The
+structure itself is made entirely of metal, and has several of the same
+symbols and glyphs etched in that were seen in the temple itself.  The hull
+of the Space Temple itself is most likely blackened steel, or some type of
+metal that is extremely rare. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155238
+D3
+~
+~
+0 -1 155236
+D4
+~
+~
+0 -1 155240
+D5
+~
+~
+0 -1 155289
+> speech_prog return~
+mptransfer $n 155217
+mpat $n mpforce $n look
+~
+|
+S
+#155238
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155239
+D3
+~
+~
+0 -1 155237
+S
+#155239
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155223
+D3
+~
+~
+0 -1 155238
+S
+#155240
+Instant Transmission Master's Chamber~
+Small orbs of light hover aimlessly through the room for some unknown
+reason.  The Master of Instant Transmission is nowhere to be seen, leaving
+a feeling of emptiness in the chamber.  A small meditation circle sits in
+the center of the room, most likely where the Master delved into his own
+knowledge to further train his mastery. 
+~
+0 12 0
+D5
+~
+~
+0 -1 155237
+> entry_prog 100~
+mpechoat $n &WYou look around the room, searching for the Instant Transmission Master.&D
+mpechoat $n &wYou curse loudly, seeing as he isn't here.&D
+mpechoaround $n &c$n swears loudly.&D
+~
+|
+S
+#155241
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155242
+D5
+~
+~
+0 -1 155223
+S
+#155242
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155243
+D5
+~
+~
+0 -1 155241
+S
+#155243
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155244
+D5
+~
+~
+0 -1 155242
+S
+#155244
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155243
+D3
+~
+~
+0 -1 155245
+S
+#155245
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155244
+D3
+~
+~
+0 -1 155246
+S
+#155246
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155263
+D1
+~
+~
+0 -1 155245
+D2
+~
+~
+0 -1 155282
+D3
+~
+~
+0 -1 155247
+D4
+~
+~
+0 -1 155283
+S
+#155247
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155246
+D3
+~
+~
+0 -1 155248
+S
+#155248
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155247
+D3
+~
+~
+0 -1 155249
+S
+#155249
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155248
+D5
+~
+~
+0 -1 155250
+S
+#155250
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155249
+D5
+~
+~
+0 -1 155251
+S
+#155251
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155250
+D5
+~
+~
+0 -1 155231
+S
+#155252
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155231
+D5
+~
+~
+0 -1 155253
+S
+#155253
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155252
+D5
+~
+~
+0 -1 155254
+S
+#155254
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155255
+D4
+~
+~
+0 -1 155253
+S
+#155255
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155256
+D3
+~
+~
+0 -1 155254
+S
+#155256
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155257
+D3
+~
+~
+0 -1 155255
+S
+#155257
+Intersection~
+The paths split into multiple directions, giving the illusion that this
+place is just a giant endless maze.  Faint glows of energy fill the room,
+flooding in from any direction.  A loud hum vibrates the walls, but it's
+impossible to tell where it's coming from due to the reverberations of the
+soundwaves off the metal walls. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155272
+D1
+~
+~
+0 -1 155258
+D2
+~
+~
+0 -1 155273
+D3
+~
+~
+0 -1 155256
+D5
+~
+~
+0 -1 155285
+S
+#155258
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155259
+D3
+~
+~
+0 -1 155257
+S
+#155259
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155260
+D3
+~
+~
+0 -1 155258
+S
+#155260
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155259
+D4
+~
+~
+0 -1 155261
+S
+#155261
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155262
+D5
+~
+~
+0 -1 155260
+S
+#155262
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155223
+D5
+~
+~
+0 -1 155261
+S
+#155263
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155264
+D2
+~
+~
+0 -1 155246
+S
+#155264
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155265
+D2
+~
+~
+0 -1 155263
+S
+#155265
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155264
+D5
+~
+~
+0 -1 155266
+S
+#155266
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155265
+D5
+~
+~
+0 -1 155267
+S
+#155267
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155266
+D5
+~
+~
+0 -1 155227
+S
+#155268
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155227
+D5
+~
+~
+0 -1 155269
+S
+#155269
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155268
+D5
+~
+~
+0 -1 155270
+S
+#155270
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155271
+D4
+~
+~
+0 -1 155269
+S
+#155271
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155270
+D2
+~
+~
+0 -1 155272
+S
+#155272
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155271
+D2
+~
+~
+0 -1 155257
+S
+#155273
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155257
+D2
+~
+~
+0 -1 155274
+S
+#155274
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155273
+D2
+~
+~
+0 -1 155275
+S
+#155275
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155274
+D4
+~
+~
+0 -1 155276
+S
+#155276
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155277
+D5
+~
+~
+0 -1 155275
+S
+#155277
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155219
+D5
+~
+~
+0 -1 155276
+S
+#155278
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155279
+D5
+~
+~
+0 -1 155219
+S
+#155279
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155280
+D5
+~
+~
+0 -1 155278
+S
+#155280
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155281
+D5
+~
+~
+0 -1 155279
+S
+#155281
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155282
+D2
+~
+~
+0 -1 155280
+S
+#155282
+&zSpace Temple&D~
+This section of the Temple is nothing but a hollowed out hunk of metal
+with religious symbols etched into it at regular intervals.  There must
+also be some semblance of an air purifier, or there would be no breathable
+air.  The glyphs in the hull occasionally glow brightly, then dim back down
+and conform to the color of the black metal Temple. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155246
+D2
+~
+~
+0 -1 155281
+S
+#155283
+&RRed Apprentice's Chamber&D~
+Red energy fills the air, flowing into the room from an unknown source. 
+The air in here is stale, and static from the energy is giving the room a
+slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D5
+~
+~
+0 -1 155246
+> entry_prog 100~
+if carryingvnum($n) == 155024
+mpforce $n east
+mpat $n mpechoat $n &RThe Red Energy Orb pulses brightly.&D
+else
+mpechoat $n &RRed energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &RThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155024 $n
+endif
+~
+|
+S
+#155284
+&BBlue Apprentice's Chamber&D~
+Blue energy fills the air, flowing into the room from an unknown source.
+The air in here is stale, and static from the energy is giving the room a
+slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D3
+~
+~
+0 -1 155223
+> entry_prog 100~
+if carryingvnum($n) == 155025
+mpforce $n east
+mpat $n mpechoat $n &BThe Blue Energy Orb pulses brightly.&D
+else
+mpechoat $n &BBlue energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &BThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155025 $n
+endif
+~
+|
+S
+#155285
+&YYellow Apprentice's Chamber&D~
+Yellow energy fills the air, flowing into the room from an unknown
+source.  The air in here is stale, and static from the energy is giving the
+room a slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155257
+> entry_prog 100~
+if carryingvnum($n) == 155026
+mpforce $n east
+mpat $n mpechoat $n &YThe Yellow Energy Orb pulses brightly.&D
+else
+mpechoat $n &YYellow energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &YThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155026 $n
+endif
+~
+|
+S
+#155286
+&GGreen Apprentice's Chamber&D~
+Green energy fills the air, flowing into the room from an unknown
+source.  The air in here is stale, and static from the energy is giving the
+room a slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D1
+~
+~
+0 -1 155231
+> entry_prog 100~
+if carryingvnum($n) == 155027
+mpforce $n east
+mpat $n mpechoat $n &GThe Green Energy Orb pulses brightly.&D
+else
+mpechoat $n &GGreen energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &GThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155027 $n
+endif
+~
+|
+S
+#155287
+&OOrange Apprentice's Chamber&D~
+Pink energy fills the air, flowing into the room from an unknown source.
+The air in here is stale, and static from the energy is giving the room a
+slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D2
+~
+~
+0 -1 155227
+> entry_prog 100~
+if carryingvnum($n) == 155028
+mpforce $n east
+mpat $n mpechoat $n &OThe Orange Energy Orb pulses brightly.&D
+else
+mpechoat $n &OOrange energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &OThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155028 $n
+endif
+~
+|
+S
+#155288
+&pPurple Apprentice's Chamber&D~
+Light Blue energy fills the air, flowing into the room from an unknown
+source.  The air in here is stale, and static from the energy is giving the
+room a slight electric charge.  The chamber itself is made of thick glass,
+allowing Yardrat's sun to light the room. 
+~
+0 12 0
+D0
+~
+~
+0 -1 155219
+> entry_prog 100~
+if carryingvnum($n) == 155029
+mpforce $n east
+mpat $n mpechoat $n &pThe Purple Energy Orb pulses brightly.&D
+else
+mpechoat $n &pPurple energy forms in the air and collects itself into a marble-sized orb.&D
+mpechoat $n &pThe orb hovers in mid-air momentarily before making its way into your hands.&D
+mpoload 155029 $n
+endif
+~
+|
+S
+#155289
+&wEnergy Collection Grid&D~
+The floor has a large plexi-glass circle in the center of it, six small
+ripples of liquid glass arranged evenly in the glass itself.  Large
+conduits extend from the ripples to the center of the plexi-glass, where a
+small dome juts upward. 
+~
+0 12 0
+D4
+~
+~
+0 -1 155237
+> entry_prog 100~
+if carryingvnum($n) == 155024
+ if carryingvnum($n) == 155025
+  if carryingvnum($n) == 155026
+   if carryingvnum($n) == 155027
+    if carryingvnum($n) == 155028
+     if carryingvnum($n) == 155029
+     mpforce $n drop 'red energy orb'
+     mpforce $n drop 'blue energy orb'
+     mpforce $n drop 'yellow energy orb'
+     mpforce $n drop 'green energy orb'
+     mpforce $n drop 'orange energy orb'
+     mpforce $n drop 'purple energy orb'
+     mppurge 'red energy orb'
+     mppurge 'blue energy orb'
+     mppurge 'yellow energy orb'
+     mppurge 'green energy orb'
+     mppurge 'orange energy orb'
+     mppurge 'purple energy orb'
+     mpecho &WThe orbs sink into the ground, forming a large glyph on the ground.&D
+mpsleep 9
+     mpat $n mpechoat $n &WA powerful blast of energy erupts from the center of the glyph, tearing your body apart at the molecular level.&D
+     mpat $n mpechoat $n &RYou are DEAD!!&D
+     mptransfer $n 155800
+mpsleep 18
+     mpat $n mpechoat $n &GOr... are you?&D
+     mpat $n mpechoat $n &YYou look around, examining your surroundings. You seem to be on a completely different planet...&D
+     endif
+    endif
+   endif
+  endif
+ endif
+endif
+~
+|
+S
+#155290
+Floating in a void~
+~
+0 4 1
+S
+#155291
+Floating in a void~
+~
+0 4 1
+S
+#155292
+Floating in a void~
+~
+0 4 1
+S
+#155293
+Floating in a void~
+~
+0 4 1
+S
+#155294
+Floating in a void~
+~
+0 4 1
+S
+#155295
+Floating in a void~
+~
+0 4 1
+S
+#155296
+Floating in a void~
+~
+0 4 1
+S
+#155297
+Floating in a void~
+~
+0 4 1
+S
+#155298
+Floating in a void~
+~
+0 4 1
+S
+#155299
+Floating in a void~
+~
+0 4 1
+S
+#155300
+Floating in a void~
+~
+0 12 1
+S
+#155301
+Floating in a void~
+~
+0 4 1
+S
+#155302
+Floating in a void~
+~
+0 4 1
+S
+#155303
+Floating in a void~
+~
+0 4 1
+S
+#155304
+Floating in a void~
+~
+0 4 1
+S
+#155305
+Floating in a void~
+~
+0 4 1
+S
+#155306
+Floating in a void~
+~
+0 4 1
+S
+#155307
+Floating in a void~
+~
+0 4 1
+S
+#155308
+Floating in a void~
+~
+0 4 1
+S
+#155309
+Floating in a void~
+~
+0 4 1
+S
+#155310
+Floating in a void~
+~
+0 4 1
+S
+#155311
+Floating in a void~
+~
+0 4 1
+S
+#155312
+Floating in a void~
+~
+0 4 1
+S
+#155313
+Floating in a void~
+~
+0 4 1
+S
+#155314
+Floating in a void~
+~
+0 4 1
+S
+#155315
+Floating in a void~
+~
+0 4 1
+S
+#155316
+Floating in a void~
+~
+0 4 1
+S
+#155317
+Floating in a void~
+~
+0 4 1
+S
+#155318
+Floating in a void~
+~
+0 4 1
+S
+#155319
+Floating in a void~
+~
+0 4 1
+S
+#155320
+Floating in a void~
+~
+0 4 1
+S
+#155321
+Floating in a void~
+~
+0 4 1
+S
+#155322
+Floating in a void~
+~
+0 4 1
+S
+#155323
+Floating in a void~
+~
+0 4 1
+S
+#155324
+Floating in a void~
+~
+0 4 1
+S
+#155325
+Floating in a void~
+~
+0 4 1
+S
+#155326
+Floating in a void~
+~
+0 4 1
+S
+#155327
+Floating in a void~
+~
+0 4 1
+S
+#155328
+Floating in a void~
+~
+0 4 1
+S
+#155329
+Floating in a void~
+~
+0 4 1
+S
+#155330
+Floating in a void~
+~
+0 4 1
+S
+#155331
+Floating in a void~
+~
+0 4 1
+S
+#155332
+Floating in a void~
+~
+0 4 1
+S
+#155333
+Floating in a void~
+~
+0 4 1
+S
+#155334
+Floating in a void~
+~
+0 4 1
+S
+#155335
+Floating in a void~
+~
+0 4 1
+S
+#155336
+Floating in a void~
+~
+0 4 1
+S
+#155337
+Floating in a void~
+~
+0 4 1
+S
+#155338
+Floating in a void~
+~
+0 4 1
+S
+#155339
+Floating in a void~
+~
+0 4 1
+S
+#155340
+Floating in a void~
+~
+0 4 1
+S
+#155341
+Floating in a void~
+~
+0 4 1
+S
+#155342
+Floating in a void~
+~
+0 4 1
+S
+#155343
+Floating in a void~
+~
+0 4 1
+S
+#155344
+Floating in a void~
+~
+0 4 1
+S
+#155345
+Floating in a void~
+~
+0 4 1
+S
+#155346
+Floating in a void~
+~
+0 4 1
+S
+#155347
+Floating in a void~
+~
+0 4 1
+S
+#155348
+Floating in a void~
+~
+0 4 1
+S
+#155349
+Floating in a void~
+~
+0 4 1
+S
+#155350
+Floating in a void~
+~
+0 4 1
+S
+#155351
+Floating in a void~
+~
+0 4 1
+S
+#155352
+Floating in a void~
+~
+0 4 1
+S
+#155353
+Floating in a void~
+~
+0 4 1
+S
+#155354
+Floating in a void~
+~
+0 4 1
+S
+#155355
+Floating in a void~
+~
+0 4 1
+S
+#155356
+Floating in a void~
+~
+0 4 1
+S
+#155357
+Floating in a void~
+~
+0 4 1
+S
+#155358
+Floating in a void~
+~
+0 4 1
+S
+#155359
+Floating in a void~
+~
+0 4 1
+S
+#155360
+Floating in a void~
+~
+0 4 1
+S
+#155361
+Floating in a void~
+~
+0 4 1
+S
+#155362
+Floating in a void~
+~
+0 4 1
+S
+#155363
+Floating in a void~
+~
+0 4 1
+S
+#155364
+Floating in a void~
+~
+0 4 1
+S
+#155365
+Floating in a void~
+~
+0 4 1
+S
+#155366
+Floating in a void~
+~
+0 4 1
+S
+#155367
+Floating in a void~
+~
+0 4 1
+S
+#155368
+Floating in a void~
+~
+0 4 1
+S
+#155369
+Floating in a void~
+~
+0 4 1
+S
+#155370
+Floating in a void~
+~
+0 4 1
+S
+#155371
+Floating in a void~
+~
+0 4 1
+S
+#155372
+Floating in a void~
+~
+0 4 1
+S
+#155373
+Floating in a void~
+~
+0 4 1
+S
+#155374
+Floating in a void~
+~
+0 4 1
+S
+#155375
+Floating in a void~
+~
+0 4 1
+S
+#155376
+Floating in a void~
+~
+0 4 1
+S
+#155377
+Floating in a void~
+~
+0 4 1
+S
+#155378
+Floating in a void~
+~
+0 4 1
+S
+#155379
+Floating in a void~
+~
+0 4 1
+S
+#155380
+Floating in a void~
+~
+0 4 1
+S
+#155381
+Floating in a void~
+~
+0 4 1
+S
+#155382
+Floating in a void~
+~
+0 4 1
+S
+#155383
+Floating in a void~
+~
+0 4 1
+S
+#155384
+Floating in a void~
+~
+0 4 1
+S
+#155385
+Floating in a void~
+~
+0 4 1
+S
+#155386
+Floating in a void~
+~
+0 4 1
+S
+#155387
+Floating in a void~
+~
+0 4 1
+S
+#155388
+Floating in a void~
+~
+0 4 1
+S
+#155389
+Floating in a void~
+~
+0 4 1
+S
+#155390
+Floating in a void~
+~
+0 4 1
+S
+#155391
+Floating in a void~
+~
+0 4 1
+S
+#155392
+Floating in a void~
+~
+0 4 1
+S
+#155393
+Floating in a void~
+~
+0 4 1
+S
+#155394
+Floating in a void~
+~
+0 4 1
+S
+#155395
+Floating in a void~
+~
+0 4 1
+S
+#155396
+Floating in a void~
+~
+0 4 1
+S
+#155397
+Floating in a void~
+~
+0 4 1
+S
+#155398
+Floating in a void~
+~
+0 4 1
+S
+#155399
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 155001 1 155003
+E 1 155001 1 12
+M 0 155002 1 155036
+E 1 155002 1 12
+M 0 155003 1 155069
+E 1 155003 1 12
+M 0 155004 1 155100
+M 0 155005 1 155130
+E 1 155005 1 12
+M 0 155006 1 155157
+E 1 155006 1 12
+O 0 155013 1 155158
+O 0 155014 1 155158
+O 0 155015 1 155158
+M 0 155007 1 155158
+M 0 155008 1 155004
+E 1 155001 1 12
+M 0 155009 1 155159
+E 1 155001 1 12
+O 0 155022 1 155160
+M 0 155012 1 155160
+M 0 155013 1 155217
+E 1 155001 1 12
+O 0 155031 1 155217
+M 0 155014 1 155215
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

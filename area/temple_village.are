@@ -1,0 +1,2785 @@
+#AREA   Temple Village~
+
+
+
+#VERSION 252
+#AUTHOR Kilan~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 9
+
+#RESETMSG &WA feeling of peace and content sinks in...&D~
+
+#FLAGS
+5
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#155400
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155401
+Yardrat Food Stand Owner~
+Food Stand Owner~
+A short Yardrat stands behind his shop counter.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n! What would you like to eat?
+~
+|
+#155402
+yardrat clothing shop owner~
+Clothing Shop Owner~
+A Yardrat stands behind his shop counter.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n! Can I interest you in a nice robe?
+~
+|
+#155403
+yardrat repair shop owner~
+Repair Shop Owner~
+A Yardrat is sitting behind his sewing machine, repairing clothing.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n! Need something fixed?
+if carryingvnum($n) 155448
+say Oh, you have a Raz'N'Lak fur! You must be the one who saved Volk from that retchid beast! Here, let me see that.
+mpforce $n give fur repair
+mpjunk fur
+mpecho &wThe yardrat quickly snips the loose ends on the fur and designs it into a fluffy piece of clothing.
+mpoload 155447
+give cape $n
+say There ya go, a nice cape for you. Don't worry about the price, it's on me.
+endif
+~
+|
+#155404
+yardrat healer~
+The Healer~
+A Yardrat is wandering about, tending to the wounds of others.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+5000000 1
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n! Feel free to rest anywhere you like.
+say If you want a quick heal, the price is 1000 zeni.
+say I'm only so skilled though....
+~
+> bribe_prog 1000~
+if level($n) < 7
+say Please stand still. I need to concentrate.
+mpechoat &WThe Healer lays her palms upon your wounds, a soft white glow forming as she uses her energy to heal you.&D
+mpechoaround &WThe Healer lays her palms upon $n's wounds, a soft white glow forming as she uses her energy to heal $m.&D
+mprestore $n 100
+say There you go, much better!
+else
+say You are too powerful for my skills to have any effect on you. I am sorry.
+mpjunk all.zeni
+mpwithdraw 1000
+give 1000 zeni $n
+endif
+~
+|
+#155405
+yardrat accessory shop owner~
+Accessory Shop Owner~
+A Yardrat is sitting behind her stand, showing off her jewelry.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Oh my, a customer! Can I help you find anything, $n?
+~
+|
+#155406
+female mother yardrat~
+A Yardrat Mother~
+A female Yardrat is doing housework.
+~
+~
+83886145 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155407
+yardrat kid Volk~
+Volk~
+A small yardrat child is running around, having fun.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155408
+volks mother~
+Volks Mother~
+A female Yardrat is constantly worrying about her child.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155409
+yardrat field worker~
+Yardrat Field Worker~
+A Yardrat is working hard in the fields.
+~
+~
+16777219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if rand(50)
+mpecho The Field Worker kneels down and plants a seed.
+else
+say Whoo! Field work sure is hard!
+endif
+~
+|
+#155410
+yardrat village chief~
+Yardrat Village Chief~
+The Chief of the village is wandering the village.
+~
+~
+83888129 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n! Please feel to roam anywhere you like in our village. We are a kind, peaceful people, and treat everyone equally.
+~
+|
+#155411
+injured yardrat~
+An Injured Yardrat~
+A yardrat is lying on the ground, bleeding profusely.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if carryingvnum($n) 155448
+if wasinroom($n) == 155481
+mpechoat $n &YThe injured Yardrat manages to stand himself up.&D
+say If it is not too much trouble, could you help me to the healers place? I will turn that beasts fur of yours into a pretty nice article of clothing in return for your generosity.
+mpechoat $n &WYou put your arm around the injured Yardrat and help him over to the healer.&D
+mpechoaround $n &W$n puts $s arm around the injured Yardrat and helps him over to the healer.&D
+endif
+endif
+~
+|
+#155412
+beast raz'n'lak~
+The Raz'N'Lak~
+A massive red beast is preparing to devour its meal.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000
+112 112 0
+70 50 80 70 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WVolk screams at the top of his lungs and runs from the lair.&D
+mpforce 'kidnapped volk' north
+mpat 155480 mppurge 'kidnapped volk'
+mpat 155480 mpmload 155414
+mpat 155480 mpmload 155416
+mpechoat $n &YYour final attack hits the Raz'N'Lak with such force that it rips the fur right off of its body!&D
+mpoload 155448
+~
+|
+#155413
+kidnapped volk~
+Volk~
+Volk is cowering in fear at the sight of the Raz'N'Lak.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#155414
+rescued volk~
+Volk~
+Volk is clutching onto his mothers leg.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if carryingvnum($n) 155448
+if wasinroom($n) == 155481
+mpechoat $n &wVolk walks up to you and hands you a small flower.&D
+mpechoaround $n &wVolk walks up to $n and hands $m a small flower.&D
+say I found this when I was out playing... you can have it if you want. Thank you for saving me.
+mpoload 155030
+give flower $n
+endif
+endif
+~
+|
+#155415
+yardrat cook~
+Yardrat Cook~
+A Yardrat is working magic with his meals.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say So much food to cook, so little time...
+sigh
+~
+|
+#155416
+grateful mother~
+Volk's Mother~
+Volk's Mother is comforting Volk.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if carryingvnum($n) 155448
+if wasinroom($n) == 155481
+mpechoat $n &WVolks mother sheds tears of joy for her sons safety. &C"Thank you.... thank you so much..."
+mpechoat $n &WVolk and his mother leave, heading back home.&D
+endif
+endif
+~
+|
+#155499
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#155400
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#155401
+white yardrat robes~
+&WWhite Yardrat Robes&D~
+White cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155402
+blue yardrat robes~
+&BBlue Yardrat Robes&D~
+Blue cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155403
+red yardrat robes~
+&RRed Yardrat Robes&D~
+Red cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155404
+green yardrat robes~
+&GGreen Yardrat Robes&D~
+Green cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155405
+yellow yardrat robes~
+&YYellow Yardrat Robes&D~
+Yellow cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155406
+pink yardrat robes~
+&PPink Yardrat Robes&D~
+Pink cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155407
+purple yardrat robes~
+&pPurple Yardrat Robes&D~
+Purple cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155408
+black yardrat robes~
+&zBlack Yardrat Robes&D~
+Black cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155409
+grey yardrat robes~
+&wGrey Yardrat Robes&D~
+Grey cloth has been neatly folded.~
+~
+9 0 1025 24
+0 0 0 0 300 300
+1 3000 300
+ 200000000
+A
+2 3
+#155410
+silver ring~
+&WSilver Ring&D~
+A small silver band of metal shines brightly.~
+~
+9 0 3
+0 0 0 0 25 25
+1 10000 1000
+ 500000000
+A
+3 1
+A
+2 2
+#155411
+black ring~
+&zBlack Ring&D~
+A small black band of metal shines brightly.~
+~
+9 0 3
+0 0 0 0 25 25
+1 10000 1000
+ 500000000
+A
+3 1
+A
+2 2
+#155412
+light particle pendant~
+&WLight Particle&w Pendant&D~
+A small pendant beckons to be taken.~
+~
+9 0 5
+0 0 0 0 50 50
+1 90000 9000
+ 550000000
+E
+light particle pendant~
+This silver necklace is designed in chain link form, and bears a
+medium-sized silver particle of light. 
+~
+A
+3 2
+A
+2 2
+#155413
+ancient earring replica~
+&Y(&WRelic&Y) &BAncient Earring Replica&D~
+A mimicry of relic earrings is nearly flawless.~
+~
+9 0 65537
+0 0 0 0 220 220
+1 230000 23000
+ 600000000
+A
+3 5
+A
+2 -15
+A
+4 -4
+#155414
+magnetized wristlet~
+&zM&wa&zg&wn&ze&wt&zi&wz&ze&wd &zW&wr&zi&ws&zt&wl&ze&wt&D~
+A small wristlet has no owner.~
+~
+13 0 4097
+0 0 0 0 80 80
+1 3300000 330000
+ 1200000000
+A
+4 6
+A
+1 4
+A
+3 2
+#155415
+magnetized anklet~
+&wM&za&wg&zn&we&zt&wi&zz&we&zd &wA&zn&wk&zl&we&zt&D~
+A small anklet fits snugly around all ankles.~
+~
+13 0 2097153
+0 0 0 0 80 80
+1 980000 98000
+ 1200000000
+A
+2 8
+#155416
+white yardrat pants~
+&WWhite Yardrat Pants&D~
+White cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155417
+white yardrat pants~
+&BBlue Yardrat Pants&D~
+Blue cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155418
+Red yardrat pants~
+&RRed Yardrat Pants&D~
+Red cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155419
+green yardrat pants~
+&GGreen Yardrat Pants&D~
+Green cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155420
+Yellow yardrat pants~
+&YYellow Yardrat Pants&D~
+Yellow cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155421
+pink yardrat pants~
+&PPink Yardrat Pants&D~
+Pink cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155422
+purple yardrat pants&D~
+&pPurple Yardrat Pants&D~
+Purple cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155423
+black yardrat pants~
+&zBlack Yardrat Pants&D~
+Black cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155424
+grey yardrat pants~
+&wGrey Yardrat Pants&D~
+Grey cloth pants have been neatly folded.~
+~
+9 0 33 8
+0 0 0 0 100 100
+1 100000 10000
+ 200000000
+A
+2 1
+#155425
+white yardrat boots~
+&WWhite Yardrat Boots&D~
+White boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155426
+blue yardrat boots~
+&BBlue Yardrat Boots&D~
+Blue boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155427
+red yardrat boots~
+&RRed Yardrat Boots&D~
+Red boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155428
+green yardrat boots~
+&GGreen Yardrat Boots&D~
+Green boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155429
+yellow yardrat boots~
+&YYellow Yardrat Boots&D~
+Yellow boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155430
+pink yardrat boots~
+&PPink Yardrat Boots&D~
+Pink boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155431
+purple yardrat boots~
+&pPurple Yardrat Boots&D~
+Purple boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155432
+black yardrat boots~
+&zBlack Yardrat Boots&D~
+Black boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155433
+grey yardrat boots~
+&wGrey Yardrat Boots&D~
+Grey boots sit on the ground.~
+~
+9 0 65 96
+0 0 0 0 125 125
+1 80000 8000
+ 200000000
+A
+2 2
+#155434
+raz'n'lak beast steak~
+&RRaz'N'&WLak Beas&Rt Steak&D~
+A massive slab of meat is grilled to perfection.~
+~
+19 0 1
+40 0 0 0 0 0
+1 3258 325
+ 0
+#155435
+pink corn~
+&PP&Yi&Pn&Yk &PC&Yo&Pr&Yn&D~
+An ear of corn has pink and yellow kernels.~
+~
+19 0 0
+3 0 0 0 0 0
+1 40 4
+ 0
+#155436
+water jug~
+A Jug of Water~
+A jug is filled with a clear liquid.~
+~
+17 0 1
+20 20 0 0 0 0
+1 30 3
+ 0
+#155437
+rice pilaf bowl~
+A Bowl of Rice Pilaf~
+A bowl is filled with steaming rice.~
+~
+19 0 1
+6 0 0 0 0 0
+1 50 5
+ 0
+#155438
+underripened ripened melon~
+An Under Ripened Melon~
+A melon is not quite ripe yet.~
+~
+19 0 1
+10 0 0 0 0 0
+1 110 11
+ 0
+#155439
+oriental salad~
+An Oriental Salad~
+An oriental salad has chunks of chicken in it.~
+~
+13 0 1
+11 0 0 0 0 0
+1 200 20
+ 0
+#155440
+citrus vegetable dish~
+A Citrus Vegetable Dish~
+A dish has vegetables piled on, laced with citrus seasoning.~
+~
+13 0 1
+23 0 0 0 0 0
+1 800 80
+ 0
+#155441
+yardrat gi pants~
+&rYardrat Gi Pants&D~
+A pair of red pants is loose and baggy.~
+~
+9 0 33 8
+0 0 0 0 75 75
+1 400000 40000
+ 800000000
+A
+2 2
+A
+3 2
+A
+1 2
+A
+4 2
+#155442
+white yardrat shirt sleeves~
+&WYardrat Shirt Sleeves&D~
+A set of shirt sleeves needs to find a shirt to be worn with.~
+~
+9 0 257 8
+0 0 0 0 50 50
+1 400000 40000
+ 800000000
+A
+1 2
+A
+4 2
+A
+2 2
+A
+3 2
+#155443
+yardrat body armor~
+&YY&ba&Yrd&brat &YBody A&brmo&Yr&D~
+A set of armor covers only the top part of the torso.~
+~
+9 0 9 32
+0 0 0 0 400 400
+1 500000 50000
+ 800000000
+A
+1 1
+A
+3 3
+A
+4 2
+A
+2 1
+#155444
+white yardrat shirt~
+&WYardrat Gi Shirt&D~
+Some god dropped a newly created white yardrat shirt here.~
+~
+9 0 9 4
+0 0 0 0 50 50
+1 300000 30000
+ 800000000
+A
+2 2
+A
+3 2
+A
+1 2
+A
+4 2
+#155445
+loose fitting yardrat belt~
+&YL&zoose Fitting Yardrat Bel&Yt&D~
+Some god dropped a newly created loose fitting belt here.~
+~
+9 0 2049 24
+0 0 0 0 35 35
+1 300000 30000
+ 800000000
+A
+1 2
+A
+2 2
+A
+3 2
+A
+4 2
+#155446
+yardrat combat boots~
+&YY&zar&Yd&zra&Yt C&zo&Ymb&za&Yt B&zo&Yo&zt&Ys&D~
+Some god dropped a newly created yardrat combat boots here.~
+~
+9 0 65 96
+0 0 0 0 70 70
+1 400000 40000
+ 800000000
+A
+1 2
+A
+2 2
+A
+3 2
+A
+4 2
+#155447
+raz'n'lak fur cape~
+&rRaz'N'Lak Fur Cape&D~
+A cloak made from the fur of the Raz'N'Lak offers much protection.~
+~
+9 0 1025 64
+0 0 0 0 175 175
+1 0 0
+ 0
+A
+1 5
+A
+3 -2
+A
+4 5
+#155448
+raz'n'lak fur~
+&rFur of the Raz'N'Lak&D~
+A Raz'N'Lak fur pelt is stained in blood.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#155496
+test armor two~
+a newly created test armor two~
+Some god dropped a newly created test armor two here.~
+~
+13 0 1025 1
+0 0 0 0 50 50
+1 0 0
+ 0
+#155497
+test armor~
+a newly created test armor~
+Some god dropped a newly created test armor here.~
+~
+13 0 1025 255
+0 0 0 0 50 50
+1 0 0
+ 0
+#155498
+keyring~
+A large metal keyring~
+A small circle of metal is carrying a few keys.~
+~
+62 0 1
+20 0 0 0 0 0
+1 20 2
+ 0
+#155499
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#155400
+Crater~
+The soil has been obliterated, one of the effects of something that
+landed here recently.  Every once in a while, a small pebble bounces down
+the concave incline of the crater, coming to a rest near the bottom.  A
+small path of footprints has made a pseudo-staircase, allowing easy exit
+from the confines of the deep basin. 
+~
+0 0 2
+D7
+~
+~
+0 -1 155401
+S
+#155401
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth. 
+~
+0 0 2
+D3
+~
+~
+0 -1 155402
+D8
+~
+~
+0 -1 155400
+S
+#155402
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155401
+D7
+~
+~
+0 -1 155403
+S
+#155403
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth. 
+~
+0 0 2
+D7
+~
+~
+0 -1 155404
+D8
+~
+~
+0 -1 155402
+S
+#155404
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155405
+D8
+~
+~
+0 -1 155403
+S
+#155405
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth. 
+~
+0 0 2
+D2
+~
+~
+0 -1 155404
+D7
+~
+~
+0 -1 155406
+S
+#155406
+Path To The Village~
+Tall stalks of bluegrass surround the beaten-down path, swaying gently
+in a slight breeze.  Small patches of dirt show through the trail where the
+grass has stopped growing.  Signs of subterranean wildlife are apparent, as
+random holes in the ground show themselves momentarily as the grass sways
+back and forth.  
+~
+0 0 2
+D7
+~
+~
+0 -1 155407
+D8
+~
+~
+0 -1 155405
+S
+#155407
+Before The Village~
+A small village slowly comes into view, the tops of little huts poking
+above the tops of the tall grass.  The grass itself gradually becomes
+shorter and shorter, apparently having been used to create the roofs for
+the huts. Up ahead, small figures of living beings pass by the path as they
+go about their daily lives. 
+~
+0 0 2
+D7
+~
+~
+0 -1 155408
+D8
+~
+~
+0 -1 155406
+S
+#155408
+Village Square~
+Several paths lead away from the Village Square, each one leading to a
+different section of the village itself.  To the north and east are the
+huts, in which the inhabitants of this village eat, sleep, and generally
+live in.  To the south lies the crop field, the main source of food in the
+village.  The west houses the shop district, and to the northwest lies the
+entrance to Yardrat's Temple. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155453
+D1
+~
+~
+0 -1 155442
+D2
+~
+~
+0 -1 155420
+D3
+~
+~
+0 -1 155409
+D7
+~
+~
+0 -1 155468
+D8
+~
+~
+0 -1 155407
+> entry_prog 100~
+if mobinarea(155412) == 0
+else
+mpechozone &RThe sound of terrified screams echo through the village.&D
+mpechozone &WSomeone yells loudly &Y'Someone help! The Raz'N'Lak is going to eat Volk!'
+endif
+~
+|
+S
+#155409
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D1
+~
+~
+0 -1 155408
+D3
+~
+~
+0 -1 155410
+S
+#155410
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D1
+~
+~
+0 -1 155409
+D3
+~
+~
+0 -1 155411
+S
+#155411
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. The fence has a small break in it where the path leads to a
+nearby shop-owners stand. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155415
+D1
+~
+~
+0 -1 155410
+D3
+~
+~
+0 -1 155412
+S
+#155412
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. The fence has a small break in it where the path leads to a
+nearby shop-owners stand. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155411
+D2
+~
+~
+0 -1 155416
+D3
+~
+~
+0 -1 155413
+S
+#155413
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. The fence has a small break in it where the path leads to a
+nearby shop-owners stand. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155417
+D1
+~
+~
+0 -1 155412
+D3
+~
+~
+0 -1 155414
+S
+#155414
+Village Shopping Center~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. The fence has a small break in it where the path leads to a
+nearby shop-owners stand. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155413
+D2
+~
+~
+0 -1 155418
+D3
+~
+~
+0 -1 155419
+S
+#155415
+Small Food Stand~
+A small stand offers minimal protection from harsh weather, but it is
+the ideal setup for shops in this village.  Wares hang from hooks placed on
+the roof of the stand and sit on the counter, with only a single cleared
+off space for exchange of goods between the shop owner and the buyer. 
+~
+0 8 0
+D2
+~
+~
+0 -1 155411
+S
+#155416
+Clothing Stand~
+A small stand offers minimal protection from harsh weather, but it is
+the ideal setup for shops in this village.  Wares hang from hooks placed on
+the roof of the stand and sit on the counter, with only a single cleared
+off space for exchange of goods between the shop owner and the buyer. 
+~
+0 8 0
+D0
+~
+~
+0 -1 155412
+S
+#155417
+Sewing Stand~
+A small stand offers minimal protection from harsh weather, but it is
+the ideal setup for shops in this village.  Wares hang from hooks placed on
+the roof of the stand and sit on the counter, with only a single cleared
+off space for exchange of goods between the shop owner and the buyer. 
+~
+0 8 0
+D2
+~
+~
+0 -1 155413
+S
+#155418
+Healing Ward~
+Small straw beds are neatly lined up against the walls of this small
+hut, giving the Healer optimal view of her patients.  A small table holds
+few medical items, mainly wraps and bandages.  The medical technology of
+this planet is obviously far underdeveloped. 
+~
+0 536870920 0
+D0
+~
+~
+0 -1 155414
+S
+#155419
+Accessory Stand~
+A small stand offers minimal protection from harsh weather, but it is
+the ideal setup for shops in this village.  Wares hang from hooks placed on
+the roof of the stand and sit on the counter, with only a single cleared
+off space for exchange of goods between the shop owner and the buyer. 
+~
+0 8 0
+D1
+~
+~
+0 -1 155414
+S
+#155420
+Path To The Fields~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155408
+D2
+~
+~
+0 -1 155421
+S
+#155421
+Path To The Fields~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155420
+D2
+~
+~
+0 -1 155422
+S
+#155422
+Path To The Fields~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155421
+D2
+~
+~
+0 -1 155423
+S
+#155423
+Path To The Fields~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155422
+D2
+~
+~
+0 -1 155424
+S
+#155424
+Path To The Fields~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155423
+D2
+~
+~
+0 -1 155425
+S
+#155425
+Before The Fields~
+Racks lined with farming tools sit on either side of the path, leaning
+against the small fences.  Hoes, shovels, soil-tillers - anything related
+to farming can most likely be found here.  The path quickly comes to an
+halt to the south, being replaced by thick layers of black crop soil. 
+~
+0 0 1
+D0
+~
+~
+0 -1 155424
+D2
+~
+~
+16777216 -1 155426
+S
+#155426
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+16777216 -1 155425
+D1
+~
+~
+0 -1 155430
+D2
+~
+~
+0 -1 155435
+D3
+~
+~
+0 -1 155427
+S
+#155427
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155426
+D2
+~
+~
+0 -1 155436
+D3
+~
+~
+0 -1 155428
+S
+#155428
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155427
+D2
+~
+~
+0 -1 155437
+D3
+~
+~
+0 -1 155429
+S
+#155429
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155428
+S
+#155430
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155431
+D2
+~
+~
+0 -1 155434
+D3
+~
+~
+0 -1 155426
+S
+#155431
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D1
+~
+~
+0 -1 155432
+D2
+~
+~
+0 -1 155433
+D3
+~
+~
+0 -1 155430
+S
+#155432
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D3
+~
+~
+0 -1 155431
+S
+#155433
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155431
+D3
+~
+~
+0 -1 155434
+S
+#155434
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155430
+D1
+~
+~
+0 -1 155433
+D2
+~
+~
+0 -1 155440
+D3
+~
+~
+0 -1 155435
+S
+#155435
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155426
+D1
+~
+~
+0 -1 155434
+D2
+~
+~
+0 -1 155439
+D3
+~
+~
+0 -1 155436
+S
+#155436
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155427
+D1
+~
+~
+0 -1 155435
+D2
+~
+~
+0 -1 155438
+D3
+~
+~
+0 -1 155437
+S
+#155437
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field.  A
+small path leading into a darkened forest sits a few yards outside the crop
+field.  Where it leads is anyones guess, as the menacing appearance of the
+forest itself would require a being with nerves of steel to even attempt
+entering the forest without collapsing in a heap, paralyzed with fear. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155428
+D1
+~
+~
+0 -1 155436
+D9
+~
+~
+16777216 -1 155476
+S
+#155438
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155436
+D1
+~
+~
+0 -1 155439
+S
+#155439
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155435
+D1
+~
+~
+0 -1 155440
+D2
+~
+~
+16777216 -1 155441
+D3
+~
+~
+0 -1 155438
+S
+#155440
+Crop Field~
+Rows of crop soil have been enriched with nutrients, allowing for
+optimal crop growth and quality.  Several field workers tend to the crops,
+planting seeds and tilling the soil, preparing for the next crop season.
+The types of crops that are being grown range greatly, so it is nearly
+impossible for one to tell what to expect when examining the field. 
+~
+0 0 2
+D0
+~
+~
+0 -1 155434
+D3
+~
+~
+0 -1 155439
+S
+#155441
+Unused Crop Field~
+Unused patch of the crop field, rocks in the way The soil here has been
+rendered completely useless for crops, huge stones and countless smaller
+rocks littering the ground both above and below the surface.  Weeds and
+other plant lifeforms have found themselves a home here, solidifying the
+uselessness this place has. 
+~
+0 67108864 1
+D0
+~
+~
+0 -1 155439
+S
+#155442
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155443
+D3
+~
+~
+0 -1 155408
+S
+#155443
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155444
+D3
+~
+~
+0 -1 155442
+S
+#155444
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155445
+D3
+~
+~
+0 -1 155443
+S
+#155445
+Before A Large Hut~
+A fairly large hut looms to the north.  It is considerably larger than
+the other huts of the village, which means it must be one of the community
+huts.  The path continues to the east, leading to one final hut...  At
+least on this path.  The road to the west leads back to the Village Square.
+~
+0 0 1
+D0
+~
+~
+3 -1 155448
+D1
+~
+~
+0 -1 155446
+D3
+~
+~
+0 -1 155444
+S
+#155446
+Between The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts.  Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.  The community hut to the west and the Village Chief's hut
+to the east stand side by side, with only a small gap between them.  Far to
+the north, a section of the community hut stretches out with a small
+chimney standing atop the roof. 
+~
+0 0 1
+D1
+~
+~
+0 -1 155447
+D3
+~
+~
+0 -1 155445
+S
+#155447
+Before The Chiefs Hut~
+The Village Chiefs hut sits to the north.  It is larger than the other
+huts of the village, but not as large as the hut to the west.  The path to
+the west leads back to the community hut, then to the village square. 
+~
+0 0 1
+D0
+~
+~
+3 -1 155451
+D3
+~
+~
+0 -1 155446
+S
+#155448
+Village Gathering Hut~
+A long table stretches to the north, lined with several plates, glasses,
+and sets of silverware.  Several chairs are arranged neatly next to the
+table, pushed underneath as to not pose a hazard to anyone walking by. 
+~
+0 8 0
+D0
+~
+~
+0 -1 155449
+D2
+~
+~
+3 -1 155445
+S
+#155449
+Village Gathering Hut~
+A long table stretches to the south, lined with several plates, glasses,
+and sets of silverware.  Several chairs are arranged neatly next to the
+table, pushed underneath as to not pose a hazard to anyone walking by. 
+~
+0 8 0
+D2
+~
+~
+0 -1 155448
+D6
+~
+~
+0 -1 155450
+S
+#155450
+Kitchen~
+Cooking utensils and ingredients cover nearly every inch of this
+kitchen.  Several log stoves line the northern wall, multiple pots sitting
+atop them, delicious food cooking inside. A single being works feverishly,
+cooking meals for the village day in and day out. 
+~
+0 8 0
+D9
+~
+~
+0 -1 155449
+S
+#155451
+Village Chiefs Hut~
+The Village Chiefs hut, although slightly larger than the villagers
+huts, has hardly any decor to it whatsoever.  A few books are stacked on a
+table in the north-eastern corner, and two chairs sit in the center of the
+room, most likely so the Chief can speak to anyone about any issues or
+problems that need to be conversed over. 
+~
+0 8 0
+D0
+~
+~
+0 -1 155452
+D2
+~
+~
+3 -1 155447
+S
+#155452
+Chiefs Bedroom~
+Not too different from the main room of the hut, this room has the bare
+essentials.  There is a straw bed in the corner, and a small table behind
+it.  On the table lies a small booklet, most likely containing issues
+taking place in the village that require tending to. 
+~
+0 8 0
+D2
+~
+~
+0 -1 155451
+S
+#155453
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D0
+~
+~
+0 -1 155454
+D2
+~
+~
+0 -1 155408
+S
+#155454
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D0
+~
+~
+0 -1 155455
+D2
+~
+~
+0 -1 155453
+S
+#155455
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D0
+~
+~
+0 -1 155456
+D2
+~
+~
+0 -1 155454
+S
+#155456
+Path To The Huts~
+The path itself is dirt, the grass having been worn away by constantly
+being tread upon.  Short, white wooden fences line the path on either side,
+unkempt plantlife growing wildly around the fenceposts. Small dips in the
+path pose a slight hazard, but the threat is so slight that it hardly
+warrants worry.
+~
+0 0 1
+D1
+~
+~
+0 -1 155457
+D2
+~
+~
+0 -1 155455
+S
+#155457
+Cluster Of Huts~
+Small huts line the path to the north and the south.  The huts sit right
+next to each other, with next to no gap between them at all.  The path
+itself is the same dirt path seen all through the village.  The fences seen
+throughout the village are not in place here, being that the only time
+anyone is ever in this section of the village is if they're sleeping or
+sick. 
+~
+0 0 1
+D0
+~
+~
+3 -1 155460
+D1
+~
+~
+0 -1 155458
+D2
+~
+~
+3 -1 155461
+D3
+~
+~
+0 -1 155456
+S
+#155458
+Cluster Of Huts~
+Small huts line the path to the north and the south.  The huts sit right
+next to each other, with next to no gap between them at all.  The path
+itself is the same dirt path seen all through the village.  The fences seen
+throughout the village are not in place here, being that the only time
+anyone is ever in this section of the village is if they're sleeping or
+sick. 
+~
+0 0 1
+D0
+~
+~
+3 -1 155462
+D1
+~
+~
+0 -1 155459
+D2
+~
+~
+3 -1 155463
+D3
+~
+~
+0 -1 155457
+S
+#155459
+Cluster Of Huts~
+Small huts line the path to the north and the south.  The huts sit right
+next to each other, with next to no gap between them at all.  The path
+itself is the same dirt path seen all through the village.  The fences seen
+throughout the village are not in place here, being that the only time
+anyone is ever in this section of the village is if they're sleeping or
+sick. 
+~
+0 0 1
+D0
+~
+~
+3 -1 155465
+D1
+~
+~
+3 -1 155466
+D2
+~
+~
+3 -1 155467
+D3
+~
+~
+0 -1 155458
+S
+#155460
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D2
+~
+~
+3 -1 155457
+> entry_prog 100~
+if carryingvnum($n) 155030
+else
+if mobinarea(155413) == 0
+mpmload 155407
+mpechoat $n &WA small Yardrat child skips into the room.
+mpforce volk say Mommy! Can I go play in the woods?
+mpechoat $n &wThe childs mother turns her head toward her child. &C"That's fine, dear. Just don't go near the Raz'N'Lak's lair. You know how dangerous that beast is."
+mpechoat $n &WVolk runs at top speed out of the room, heading for the forest near the crop fields.&D
+mpforce 'yardrat kid volk' south
+mpat 155457 mppurge 'yardrat kid volk'
+mpat 155481 mpmload 155413
+mpat 155481 mpmload 155412
+mpat 155480 mpmload 155411
+else
+mpechoat $n &RVolk is already out in the woods!&D
+endif
+endif
+~
+|
+S
+#155461
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D0
+~
+~
+3 -1 155457
+S
+#155462
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D2
+~
+~
+3 -1 155458
+S
+#155463
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D0
+~
+~
+3 -1 155458
+S
+#155464
+Living Hut~
+~
+0 8 0
+D3
+~
+~
+0 -1 155459
+S
+#155465
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D2
+~
+~
+16777219 -1 155459
+S
+#155466
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D3
+~
+~
+3 -1 155459
+S
+#155467
+Living Hut~
+The hut bears only the essentials a person would need for shelter.  A
+small number of straw beds line the walls, and a small table sits in the
+center of the hut, holding sets of clothing for each member of the
+household.  There is no sign of any cooking utensils, suggesting that the
+entire village eats together in a community hut. 
+~
+0 8 0
+D0
+~
+~
+3 -1 155459
+S
+#155468
+Path To The Temple~
+This path is by far the "fanciest" one in the village.  Stones pave the
+road, suggesting that the destination is highly revered by the inhabitants
+of this planet. Lush forest trees surround the ancient stone pathway, small
+beams of sunlight jutting through the breaks in the leaves.  The sounds of
+birds chirping and the wind blowing fill the forest, giving this place a
+sense of peace. 
+~
+0 0 3
+D7
+~
+~
+0 -1 155469
+D8
+~
+~
+0 -1 155408
+S
+#155469
+Path To The Temple~
+This path is by far the "fanciest" one in the village.  Stones pave the
+road, suggesting that the destination is highly revered by the inhabitants
+of this planet. Lush forest trees surround the ancient stone pathway, small
+beams of sunlight jutting through the breaks in the leaves.  The sounds of
+birds chirping and the wind blowing fill the forest, giving this place a
+sense of peace. 
+~
+0 0 3
+D7
+~
+~
+0 -1 155470
+D8
+~
+~
+0 -1 155468
+S
+#155470
+Path To The Temple~
+This path is by far the "fanciest" one in the village.  Stones pave the
+road, suggesting that the destination is highly revered by the inhabitants
+of this planet. Lush forest trees surround the ancient stone pathway, small
+beams of sunlight jutting through the breaks in the leaves.  The sounds of
+birds chirping and the wind blowing fill the forest, giving this place a
+sense of peace. 
+~
+0 0 3
+D7
+~
+~
+0 -1 155471
+D8
+~
+~
+0 -1 155469
+S
+#155471
+Path To The Temple~
+This path is by far the "fanciest" one in the village.  Stones pave the
+road, suggesting that the destination is highly revered by the inhabitants
+of this planet. Lush forest trees surround the ancient stone pathway, small
+beams of sunlight jutting through the breaks in the leaves.  The sounds of
+birds chirping and the wind blowing fill the forest, giving this place a
+sense of peace. 
+~
+0 0 3
+D3
+~
+~
+0 -1 155472
+D8
+~
+~
+0 -1 155470
+S
+#155472
+Path To The Temple~
+This path is by far the "fanciest" one in the village.  Stones pave the
+road, suggesting that the destination is highly revered by the inhabitants
+of this planet. Lush forest trees surround the ancient stone pathway, small
+beams of sunlight jutting through the breaks in the leaves.  The sounds of
+birds chirping and the wind blowing fill the forest, giving this place a
+sense of peace. 
+~
+0 0 3
+D1
+~
+~
+0 -1 155471
+D7
+~
+~
+0 -1 155473
+S
+#155473
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away.  
+~
+0 0 1
+D0
+~
+~
+0 -1 155474
+D8
+~
+~
+0 -1 155472
+S
+#155474
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away.  
+~
+0 0 1
+D0
+~
+~
+0 -1 155475
+D2
+~
+~
+0 -1 155473
+> entry_prog 100~
+if carryingvnum($n) 155030
+if wasinroom($n) == 155473
+mpat 'yardrat village chief' mpecho &WThe Chief disappears in a flash of light!&D
+mpat 'yardrat village chief' mpforce 'yardrat village chief' mpgoto $n
+mpecho &WThe Yardrat Village Chief appears in a flash of light!&D
+mpforce chief say I see you are going to the Temple...
+mpforce chief say Be warned. The trials of the temple are quite difficult. Only one who has incredible patience and perseverance will be able to make it through the Temple.
+mpecho &WThe Yardrat Village Chief disappears in a flash of light!&D
+mpforce 'yardrat village chief' mpgoto 155408
+mpat 155408 mpecho &WThe Yardrat Village Chief appears in a flash of light!&D
+endif
+endif
+~
+|
+S
+#155475
+&OTemple Pathway&D~
+Lush forest trees surround the ancient stone pathway, small beams of
+sunlight jutting through the breaks in the leaves.  The sounds of birds
+chirping and the wind blowing fill the forest, giving this place a sense of
+peace.  The walkway is extremely old, most of the stones having corroded
+away.  
+~
+0 0 1
+D0
+~
+~
+0 -1 155000
+D2
+~
+~
+0 -1 155474
+S
+#155476
+&zD&ga&zr&gk &zF&go&zr&ge&zs&gt &zP&ga&zt&gh&D~
+The darkness of this forest is mind-boggling.  Sunlight is barely able
+to penetrate through the thickness of the trees, and even then it is only
+in small portions, giving the forest a truly evil and sinister feel. Wind
+is nonexistant, the thickness of the trees blocking out all motion of air,
+allowing nothing but silence to dominate. 
+~
+0 0 3
+D6
+~
+~
+16777216 -1 155437
+D9
+~
+~
+0 -1 155477
+S
+#155477
+&zD&ga&zr&gk &zF&go&zr&ge&zs&gt &zP&ga&zt&gh&D~
+The darkness of this forest is mind-boggling.  Sunlight is barely able
+to penetrate through the thickness of the trees, and even then it is only
+in small portions, giving the forest a truly evil and sinister feel. Wind
+is nonexistant, the thickness of the trees blocking out all motion of air,
+allowing nothing but silence to dominate. 
+~
+0 0 3
+D2
+~
+~
+0 -1 155478
+D6
+~
+~
+0 -1 155476
+S
+#155478
+&zD&ga&zr&gk &zF&go&zr&ge&zs&gt &zP&ga&zt&gh&D~
+The darkness of this forest is mind-boggling.  Sunlight is barely able
+to penetrate through the thickness of the trees, and even then it is only
+in small portions, giving the forest a truly evil and sinister feel. Wind
+is nonexistant, the thickness of the trees blocking out all motion of air,
+allowing nothing but silence to dominate. 
+~
+0 0 3
+D0
+~
+~
+0 -1 155477
+D9
+~
+~
+0 -1 155479
+S
+#155479
+&zD&ga&zr&gk &zF&go&zr&ge&zs&gt &zP&ga&zt&gh&D~
+The darkness of this forest is mind-boggling.  Sunlight is barely able
+to penetrate through the thickness of the trees, and even then it is only
+in small portions, giving the forest a truly evil and sinister feel. Wind
+is nonexistant, the thickness of the trees blocking out all motion of air,
+allowing nothing but silence to dominate. 
+~
+0 0 3
+D3
+~
+~
+0 -1 155480
+D6
+~
+~
+0 -1 155478
+S
+#155480
+&zD&ga&zr&gk &zF&go&zr&ge&zs&gt &zP&ga&zt&gh&D~
+The darkness of this forest is mind-boggling.  Sunlight is barely able
+to penetrate through the thickness of the trees, and even then it is only
+in small portions, giving the forest a truly evil and sinister feel. Wind
+is nonexistant, the thickness of the trees blocking out all motion of air,
+allowing nothing but silence to dominate. 
+~
+0 0 3
+D1
+~
+~
+0 -1 155479
+D2
+~
+~
+0 -1 155481
+> entry_prog 100~
+mpsleep 18
+if carryingvnum($n) 155448
+if wasinroom($n) == 155481
+if mobinroom(155411) > 0
+if mobinroom(155414) > 0
+if mobinroom(155416) > 0
+mppurge injured
+mpforce grateful east
+mpforce rescued east
+mpat 155479 mppurge grateful
+mpat 155479 mppurge rescued
+mptransfer $n 155418
+mpat 155418 mpforce $n look
+mpat 155418 mpmload 155411
+mpat 155418 mpforce healer say Oh my... such severe injuries! Quickly, lie down.
+mpat 155418 mpecho &WThe Healer lays her palms upon the injured Yardrats wounds, a soft white glow forming as she uses her energy to heal him.&D
+mpat 155418 mpforce healer say There... that is a little trick a Namekian friend of mine taught me. Handy, eh?
+mpat 155418 mpechoat $n The newly-healed Yardrat says "I will tell the owner of the sewing stand to be expecting you. He will whip you up something nice."
+mpat 155418 mpecho &wThe newly-healed Yardrat leaves north.&D
+mpat 155418 mppurge injured yardrat
+endif
+endif
+endif
+endif
+endif
+~
+|
+S
+#155481
+&rBeasts Lair&D~
+Large hunks of fur are scattered about the lair, having been shed from
+what is undoubtedly a truly massive beast.  Bones of multiple types of
+creatures are scattered everywhere, having been crushed and splintered into
+hundreds of miniscule pieces.  One would have to be extremely powerful to
+wander in here without fear... 
+~
+0 0 1
+D0
+~
+~
+0 -1 155480
+S
+#155482
+Floating in a void~
+~
+0 4 1
+S
+#155483
+Floating in a void~
+~
+0 4 1
+S
+#155484
+Floating in a void~
+~
+0 4 1
+S
+#155485
+Floating in a void~
+~
+0 4 1
+S
+#155486
+Floating in a void~
+~
+0 4 1
+S
+#155487
+Floating in a void~
+~
+0 4 1
+S
+#155488
+Floating in a void~
+~
+0 4 1
+S
+#155489
+Floating in a void~
+~
+0 4 1
+S
+#155490
+Floating in a void~
+~
+0 4 1
+S
+#155491
+Floating in a void~
+~
+0 4 1
+S
+#155492
+Floating in a void~
+~
+0 4 1
+S
+#155493
+Floating in a void~
+~
+0 4 1
+S
+#155494
+Floating in a void~
+~
+0 4 1
+S
+#155495
+Floating in a void~
+~
+0 4 1
+S
+#155496
+Floating in a void~
+~
+0 4 1
+S
+#155497
+Floating in a void~
+~
+0 4 1
+S
+#155498
+Floating in a void~
+~
+0 4 1
+S
+#155499
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+D 0 155457 0 1
+D 0 155457 2 1
+D 0 155458 0 1
+D 0 155458 2 1
+D 0 155459 0 1
+D 0 155459 1 1
+D 0 155459 2 1
+M 0 155401 1 155415
+G 1 155440 1
+G 1 155439 1
+G 1 155438 1
+G 1 155437 1
+G 1 155436 1
+G 1 155435 1
+G 1 155434 1
+M 0 155402 1 155416
+G 1 155446 1
+G 1 155445 1
+G 1 155444 1
+G 1 155443 1
+G 1 155442 1
+G 1 155441 1
+G 1 155433 1
+G 1 155432 1
+G 1 155431 1
+G 1 155430 1
+G 1 155429 1
+G 1 155428 1
+G 1 155427 1
+G 1 155426 1
+G 1 155425 1
+G 1 155424 1
+G 1 155423 1
+G 1 155422 1
+G 1 155421 1
+G 1 155420 1
+G 1 155419 1
+G 1 155418 1
+G 1 155417 1
+G 1 155416 1
+G 1 155409 1
+G 1 155408 1
+G 1 155407 1
+G 1 155406 1
+G 1 155405 1
+G 1 155404 1
+G 1 155403 1
+G 1 155402 1
+G 1 155401 1
+M 0 155403 1 155417
+M 0 155404 1 155418
+M 0 155405 1 155419
+G 1 155498 1
+G 1 155415 1
+G 1 155414 1
+G 1 155413 1
+G 1 155412 1
+G 1 155411 1
+G 1 155410 1
+M 0 155409 1 155429
+M 0 155409 1 155427
+M 0 155409 1 155430
+M 0 155409 1 155432
+M 0 155409 1 155434
+M 0 155409 1 155436
+M 0 155409 1 155439
+M 0 155410 1 155408
+D 0 155445 0 1
+D 0 155447 0 1
+M 0 155415 1 155450
+D 0 155448 2 1
+D 0 155451 2 1
+D 0 155466 3 1
+D 0 155467 0 1
+D 0 155465 2 1
+D 0 155462 2 1
+D 0 155463 0 1
+D 0 155460 2 1
+D 0 155461 0 1
+M 0 155408 1 155460
+M 0 155406 1 155465
+S
+
+
+#SHOPS
+ 155401    0  0  0  0  0    96  90         0 23    ; Food Stand Owner
+ 155402    0  0  0  0  0   100  90         0 23    ; Clothing Shop Owner
+ 155403    0  0  0  0  0   100  90         0 23    ; Repair Shop Owner
+ 155404    0  0  0  0  0   100  90         0 23    ; The Healer
+ 155405    0  0  0  0  0   100  90         0 23    ; Accessory Shop Owner
+0
+
+
+#REPAIRS
+ 155403    9  0  0          30   1         0 23    ; Repair Shop Owner
+0
+
+
+#SPECIALS
+S
+
+
+#$

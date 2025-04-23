@@ -1,0 +1,4064 @@
+#AREA   Western Forest~
+
+
+
+#VERSION 252
+#AUTHOR Hao~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG Echoes of roaring and howling bounce off the trees, causing weak and defenseless creatures to cower in fear.~
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#160000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#160001
+moose~
+a moose~
+A moose stands here, eating tall grass.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 0
+20 10 20 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 18~
+mea $n &OA moose charges at you with it's large antlers!
+mppldamage $n 12
+~
+> death_prog 1~
+mpoload 160018
+~
+|
+#160002
+brown fox~
+a brown fox~
+Wandering around the forest, a brown fox looks for food.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000
+112 112 0
+10 19 30 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+mea $n &wA brown fox bites you!
+mppldamage $n 5
+~
+> death_prog 5~
+mpoload 160001
+~
+|
+#160003
+fox red~
+a red fox~
+A red fox slinks around the forest.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2750000
+112 112 0
+20 15 35 10 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mea $n &OA red fox takes off running! As you chase it around a few moments, it suddenly stops, and you lunge to attack. Just before you connect, a red fox jumps out of the way and you hit a tree!
+mppldamage $n 20
+~
+> death_prog 5~
+mpoload 160002
+~
+|
+#160004
+wolf~
+a wolf~
+A wolf is hiding in the underbrush.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000
+112 112 0
+40 10 25 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+mea $n &wa wolf bites you!
+mppldamage $n 5
+~
+> death_prog 5~
+mpoload 160003
+~
+|
+#160005
+bear~
+a brown bear~
+Looking for something to eat, a brown bear wanders throughout the forest.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 7000000
+112 112 0
+40 10 20 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mea $n &OA brown bear pins you to the ground, and swipes at you furiously!
+mppldamage $n 20
+~
+> death_prog 5~
+mpoload 160004
+~
+|
+#160006
+wolverine~
+a wolverine~
+A dangerous looking wolverine snarls and growls.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 9000000
+112 112 0
+40 10 25 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mea $n &OA wolverine lunges at you! You fall to the ground, and a wolverine tears at you with it's teeth before you manage to push him off.
+mppldamage $n 20
+~
+> death_prog 5~
+mpoload 160006
+~
+|
+#160007
+shadow wolf~
+a shadow wolf~
+A wolf with pitch black fur stalks about, snarling at the lesser creatures.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 11000000
+112 112 0
+40 10 35 25 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mea $n &zA shadow wolf quickly dashes behind trees and other objects, moving almost too quickly to see. Out of nowhere, it lunges at you, knocking you over!
+mppldamage $n 24
+~
+> death_prog 5~
+mpoload 160005
+~
+|
+#160008
+bear~
+a huge bear~
+A huge bear is here, looking for something to kill.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 15000000
+112 112 0
+60 10 15 35 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+mea $n &OA huge bear swipes at you!
+mppldamage $n 6
+~
+> death_prog 5~
+mpoload 160007
+~
+|
+#160015
+squid~
+a squid~
+A squid swims oddly through the waters.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1250000
+112 112 0
+10 10 40 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &CA squid grabs ahold of you with it's six arms, and squeezes you tightly before you manage to get free.
+mppldamage $n 5
+~
+|
+#160016
+jellyfish~
+a jellyfish~
+A jellyfish glides along with the current.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000
+112 112 0
+160 10 5 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 6~
+mea $n &RA jellyfish stings you, and your vision blurs for a moment.
+mppldamage $n 32
+~
+|
+#160017
+stingray~
+a stingray~
+A stingray swims around, chasing other fish.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000
+112 112 0
+30 10 20 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &CA stingray rams into you!
+mppldamage $n 7
+~
+|
+#160018
+eel ~
+an eel~
+A huge eel swims through the coral.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 8000000
+112 112 0
+50 10 18 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mea $n &CAn eel wraps itself around you and squeezes tightly before you manage to break free.
+mppldamage $n 9
+~
+|
+#160019
+shark~
+a small shark~
+A small shark swims around, looking for food.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 12000000
+112 112 0
+30 10 30 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 40~
+mea $n &wA small shark bites you!
+mppldamage $n 5
+~
+> death_prog 8~
+mpoload 160019
+~
+|
+#160020
+shark ~
+a shark~
+A shark prowls around the depths.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 17000000
+112 112 0
+40 10 25 35 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 9~
+mea $n &CA shark charges at you, knocking you back and tearing at you with it's teeth!
+mppldamage $n 24
+~
+> death_prog 9~
+mpoload 160019
+~
+|
+#160021
+octopus~
+an octopus~
+A huge octopus slinks across the floor.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 18000000
+112 112 0
+20 10 20 20 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+mea $n &CAn octopus whaps you with one of it's arms!
+mppldamage $n 4
+~
+|
+#160022
+white shark~
+a great white shark~
+Swimming in circles, a great white shark shows off it's sharp teeth.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 27000000
+112 112 0
+80 10 40 40 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+mea $n &wA great white shark thrashes you with it's teeth!
+mppldamage $n 8
+~
+> death_prog 10~
+mpoload 160019
+~
+|
+#160023
+sea monster ~
+a sea monster~
+A humongous sea monster prowls around the depths.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000
+112 112 0
+60 10 16 40 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mea $n &CA sea monster swims quickly away from you, turns around, and charges at you with incredible speed! It slams into you hard, then continues with you downward, slamming you back-first into the jagged sea floor.
+mppldamage $n 26
+~
+|
+#160025
+small dinosaur ~
+a small dinosaur~
+A small dinosaur wanders lost around the cave.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 27500000
+112 112 0
+20 30 40 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &YA small dinosaur opens it's mouth, and a yellow beam of energy shoots out at you!
+mppldamage $n 8
+~
+> death_prog 4~
+mpoload 160020
+~
+|
+#160026
+dinosaur ~
+a dinosaur~
+Flapping it's small wings, a dinosaur hunts for food.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000
+112 112 0
+30 30 30 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &YA dinosaur opens it's mouth, and a yellow beam of energy shoots out at you!
+mppldamage $n 8
+~
+> death_prog 6~
+mpoload 160020
+~
+|
+#160027
+large dinosaur ~
+a large dinosaur~
+A large dinosaur towers here.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 75000000
+112 112 0
+50 30 25 40 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &YA large dinosaur opens it's mouth, and a yellow beam of energy shoots out at you!
+mppldamage $n 9
+~
+> death_prog 8~
+mpoload 160015
+~
+|
+#160028
+huge dinosaur~
+a huge dinosaur~
+A behemoth of a dinosaur towers above everything else.
+~
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+0 100000000
+112 112 0
+100 30 30 100 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mea $n &YA huge dinosaur opens it's mouth, and a yellow beam of energy shoots out at you!
+mppldamage $n 9
+~
+> death_prog 10~
+mpoload 160015
+~
+|
+#160050
+arlen~
+Arlen~
+A tall, muscular man stands cross-armed in the middle of the room, wearing various furs and pelts.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+500 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'gives you a brown fox pelt.'~
+if ovnuminv(160001) == 1
+ if goldamt($n) >= 8000
+  tell $n That'll cost 8000 zeni.
+  mpforce $n give 8000 zeni arlen
+  tell $n Thank you.
+  mpoload 160008
+  give belt $n
+  mpjunk pelt
+ else
+  tell $n You don't have enough zeni! I'll need 8000 zeni to do anything with that.
+ endif
+endif
+~
+> act_prog 'gives you a red fox pelt.'~
+if ovnuminv(160002) == 1
+ tell $n That'll cost 15000 zeni. 
+ if goldamt($n) >= 15000
+  mpforce $n give 15000 zeni arlen
+  tell $n Thank you.
+  mpoload 160009
+  give cape $n
+  mpjunk pelt
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> act_prog 'gives you a wolf pelt.'~
+if ovnuminv(160003) == 1
+ tell $n That'll cost 20000 zeni. 
+ if goldamt($n) >= 20000
+  mpforce $n give 20000 zeni arlen
+  tell $n Thank you.
+  mpoload 160010
+  give pants $n
+  mpjunk pelt
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> act_prog 'gives you a brown bear hide.'~
+if ovnuminv(160004) == 1
+ tell $n That'll cost 10000 zeni. 
+ if goldamt($n) >= 10000
+  mpforce $n give 10000 zeni arlen
+  tell $n Thank you.
+  mpoload 160014
+  give boots $n
+  mpjunk hide
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> act_prog 'gives you a wolverine pelt.'~
+if ovnuminv(160006) == 1
+ tell $n That'll cost 18000 zeni. 
+ if goldamt($n) >= 18000
+  mpforce $n give 18000 zeni arlen
+  tell $n Thank you.
+  mpoload 160012
+  give sleeves $n
+  mpjunk pelt
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> act_prog 'gives you a shadow wolf pelt.'~
+if ovnuminv(160005) == 1
+ tell $n That'll cost 28000 zeni. 
+ if goldamt($n) >= 28000
+  mpforce $n give 28000 zeni arlen
+  tell $n Thank you.
+  mpoload 160013
+  give jacket $n
+  mpjunk pelt
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> act_prog 'gives you a large bear hide.'~
+if ovnuminv(160007) == 1
+ tell $n That'll cost 25000 zeni. 
+ if goldamt($n) >= 25000
+  mpforce $n give 25000 zeni arlen
+  tell $n Thank you.
+  mpoload 160011
+  give shirt $n
+  mpjunk hide
+ else
+  tell $n You don't have enough zeni!
+ endif
+endif
+~
+> greet_prog 100~
+say Hello, $n. Welcome to my house.
+mea $n &wArlen looks at you.
+say The forest is a dangerous place, $n. For a small price, and provided the right materials, I could tailor you some clothes to help protect you.
+~
+> act_prog 'gives you a sharp tooth.'~
+if ovnuminv(160019) < 10
+ tell $n I can't do much with this. Maybe if I had a few more?
+else
+ tell $n That'll cost 10000 zeni.
+ if goldamt($n) >= 10000
+  mpforce $n give 10000 zeni arlen
+  tell $n Thank you.
+  mpoload 160017
+  give neck $n
+  mpjunk all.tooth
+ else
+  tell $n You don't have enough zeni for that!
+  give all.tooth $n
+ endif
+endif
+~
+> act_prog 'gives you a small bone.'~
+if ovnuminv(160020) < 10
+ tell $n I can't do much with this. Maybe if I had a few more?
+else
+ tell $n That'll cost 20000 zeni.
+ if goldamt($n) >= 20000
+  mpforce $n give 20000 zeni arlen
+  tell $n Thank you.
+  mpoload 160016
+  give brace $n
+  mpjunk all.bone
+ else
+  tell $n You don't have enough zeni for that!
+  give all.bone $n
+ endif
+endif
+~
+> rand_prog 1~
+mpecho Arlen puts some things into a small safe.
+mpjunk all
+~
+> speech_prog 'I need a bag'~
+if goldamt($n) > 2500
+tell $n Got a lot of animal pelts, do ya? Here ya go, this should help.
+mpforce $n give 2500 zeni arlen
+mpoload 160021
+give bag $n
+else
+tell $n I'd love to help you out, but you don't have enough money to pay for it.
+endif
+~
+> act_prog 'gives you A Bag of Bones.'~
+get all bag
+if ovnuminv(160020) < 10
+tell $n I can't do much with this. Maybe if I had a few more?
+put all bag
+give bag $n
+else
+tell $n That'll cost 20000 zeni
+if goldamt($n) > 20000
+mpforce $n give 20000 zeni arlen
+tell $n Thank you.
+mpoload 160016
+give brace $n
+give bag $n
+mpjunk all.bone
+else
+tell $n You don't have enough zeni for that!
+put all bag
+give bag $n
+endif
+endif
+~
+|
+#160051
+assistant man revan~
+Revan~
+A thin, short man sits here, sorting things into boxes.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+6000000 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog 'gives you a brown fox pelt.'~
+if ovnuminv(160001) == 1
+  mpwithdraw 2000
+ give 2000 zeni $n
+ tell $n Thank you!
+ mpjunk pelt
+endif
+~
+> act_prog 'gives you a red fox pelt.'~
+if ovnuminv(160002) == 1
+ mpwithdraw 3750
+ give 3750 zeni $n
+ tell $n Thank you!
+ mpjunk pelt
+endif
+~
+> act_prog 'gives you a wolf pelt.'~
+if ovnuminv(160003) == 1
+ mpwithdraw 5000
+ give 5000 zeni $n
+ tell $n Thank you!
+ mpjunk pelt
+endif
+~
+> act_prog 'gives you a brown bear hide.'~
+if ovnuminv(160004) == 1
+ mpwithdraw 2500
+ give 2500 zeni $n
+ tell $n Thank you!
+ mpjunk hide
+endif
+~
+> act_prog 'gives you a wolverine pelt.'~
+if ovnuminv(160006) == 1
+ mpwithdraw 4500
+ give 4500 zeni $n
+ tell $n Thank you!
+ mpjunk pelt
+endif
+~
+> act_prog 'gives you a large bear hide.'~
+if ovnuminv(160007) == 1
+ mpwithdraw 6250
+ give 6250 zeni $n
+ tell $n Thank you!
+ mpjunk hide
+endif
+~
+> act_prog 'gives you a sharp tooth.'~
+if ovnuminv(160019) == 1
+ tell $n Well, it's not exactly the most useful find ever, but I suppose I could give you something for it...
+ mpwithdraw 100
+ give 100 zeni $n
+ tell $n Thank you!
+ mpjunk tooth
+endif
+~
+> act_prog 'gives you a small bone.'~
+if ovnuminv(160020) == 1
+ tell $n Well, it's not exactly the most useful find ever, but I suppose I could give you something for it...
+ mpwithdraw 200
+ give 200 zeni $n
+ tell $n Thank you!
+ mpjunk bone
+endif
+~
+> greet_prog 100~
+say Hello, $n. If you have any extra hides or pelts you'd like to sell, just give them to me.
+~
+> rand_prog 1~
+mpecho Revan sorts some things into various crates and boxes.
+mpjunk all
+~
+> act_prog 'gives you a shadow wolf pelt.'~
+if ovnuminv(160005) == 1
+ mpwithdraw 7000
+ give 7000 zeni $n
+ tell $n Thank you!
+ mpjunk pelt
+endif
+~
+|
+#160300
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#160000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#160001
+fox pelt brown~
+a brown fox pelt~
+A discarded brown fox pelt lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160002
+fox pelt red~
+a red fox pelt~
+A discarded red fox pelt lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160003
+wolf pelt~
+a wolf pelt~
+A discarded wolf pelt lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160004
+bear hide brown~
+a brown bear hide~
+A discarded bear hide lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160005
+shadow wolf pelt~
+a shadow wolf pelt~
+A discarded shadow wolf pelt lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160006
+wolverine pelt~
+a wolverine pelt~
+A discarded wolverine pelt lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160007
+bear hide large~
+a large bear hide~
+A discarded large bear hide lies forgotten in a pile of dust.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160008
+fox skin belt~
+&Oa fox skin belt&D~
+A belt made of brown fox skin lies strewn about.~
+~
+9 4194304 2049 24
+0 0 0 0 75 75
+3 0 0
+ 5000000
+A
+3 -1
+A
+2 2
+#160009
+fox skin cape~
+&Oa fox skin cape&D~
+A finely crafted cape of red fur lies in a wrinkled mess.~
+~
+9 4194304 1025 64
+0 0 0 0 100 100
+9 0 0
+ 5000000
+A
+4 1
+A
+3 -1
+A
+2 1
+#160010
+wolf skin pants~
+&wa pair of wolf skin pants&D~
+A pair of grey fur pants has been carelessly thrown into a corner.~
+~
+9 4194304 33 8
+0 0 0 0 200 200
+6 0 0
+ 5000000
+A
+4 1
+A
+3 -1
+A
+2 1
+#160011
+bear skin shirt~
+&za shirt of bear hide&D~
+A shirt of tough, brown hide sits stiffly on the ground.~
+~
+9 4194304 9 28
+0 0 0 0 650 650
+15 0 0
+ 10000000
+A
+1 2
+A
+4 2
+A
+3 -3
+#160012
+wolverine skin sleeves~
+&Osleeves of wolverine skin&D~
+Lying in a pile, two sleeves of long, light-brown fur attract moths.~
+~
+9 4194304 257 127
+0 0 0 0 300 300
+7 0 0
+ 10000000
+A
+1 2
+A
+4 2
+A
+3 -3
+#160013
+shadow wolf skin jacket~
+&za jacket of black wolf skin&D~
+A near-black coat of wolf skin has been carelessly thrown to the ground.~
+~
+9 4194304 1025 56
+0 0 0 0 400 400
+13 0 0
+ 10000000
+A
+1 2
+A
+2 2
+A
+4 2
+A
+3 -3
+#160014
+bear skin boots~
+&Oa pair of bear hide boots&D~
+A pair of finely made bear skin boots have lost their owner.~
+~
+9 4194304 65 96
+0 0 0 0 100 100
+4 0 0
+ 10000000
+A
+1 4
+A
+3 -1
+#160015
+dinosaur skull~
+&wa dinosaur skull~
+The removed skull of a large dinosaur lies ominously in a corner.~
+~
+9 0 1048577
+0 0 0 0 200 200
+20 0 0
+ 50000000
+A
+1 2
+A
+4 2
+A
+3 -3
+#160016
+dinosaur bone bracelet~
+&wa bracelet of dinosaur bones~
+A string of small bones are scattered about.~
+~
+9 0 2101249
+0 0 0 0 25 25
+2 0 0
+ 50000000
+A
+1 1
+A
+4 1
+A
+3 -1
+#160017
+necklace teeth~
+&wa necklace of teeth&D~
+A long string of varying sized teeth is strewn about the floor.~
+~
+9 0 5
+0 0 0 0 50 50
+4 0 0
+ 50000000
+A
+1 1
+A
+4 3
+A
+3 -2
+#160018
+moose antlers~
+&Omoose antlers&D~
+A pair of moose antlers are without a moose.~
+~
+9 4194304 17
+0 0 0 0 100 100
+10 0 0
+ 1000000
+A
+4 7
+#160019
+tooth~
+a sharp tooth~
+A sharp tooth glints in the sunlight.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#160020
+bone~
+a small bone~
+A small bone lies in the dust.~
+~
+13 0 1
+0 0 0 0 0 0
+3 0 0
+ 0
+#160021
+bag bones~
+A Bag of Bones~
+A clear bag filled with the bones of dinosaurs can help carry things.~
+~
+15 0 16385
+32 0 0 0 0 0
+1 0 0
+ 0
+#160069
+bottiger bomb~
+&Rthe bottiger bomb&D~
+A shiny black bomb lies on the ground, it's fuse crackling and fizzling.~
+~
+13 1073741824 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> rand_prog 10~
+if isimmort != 1
+ mpforce $n yell I'm a stupid bottiger!! HAhahAHhAHhHAHhAHha!!! *explodes*
+ mpecho &RAs the fuse on the bottiger bomb goes down, $n just stands there, like an idiot. If he weren't bottig, he might be able to avoid BLOWING UP. Haha, too bad!&D
+ mpdamage $n 31337
+endif
+~
+|
+#160300
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#160000
+Change of Scenery~
+The road goes on to the north and south. A large green sign can be seen
+off to the side, indicating the Satan City limits.  To the south, the
+Western Forest begins, and to the north, the hustle and bustle of Satan
+City can be seen and heard; people going to and from work, traffic jams,
+police sirens - all part of the daily life of it's citizens.  
+~
+0 0 3
+D0
+~
+~
+0 -1 3700
+D2
+~
+~
+0 -1 160001
+S
+#160001
+Start of a Path~
+The road to the north ends, and a dirt path begins south into the
+Western Forest.  To the north, the sounds of Satan City are almost faded
+into the forest background. The trees loom high overhead, blocking out the
+view of the sky almost entirely. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160000
+D2
+~
+~
+0 -1 160002
+S
+#160002
+A Dirt Path~
+To the north, the edge of the forest can be seen, with the Satan City
+Limits just beyond.  Despite that, the area here feels quite calm and the
+natural forest sounds drown out any other noise.  
+~
+0 0 3
+D0
+~
+~
+0 -1 160001
+D2
+~
+~
+0 -1 160003
+S
+#160003
+A Dirt Path~
+A natural forest trail intersects the path here.  The intersection is
+weathered out, and all manner of animal tracks are imprinted in the dirt. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160002
+D1
+~
+~
+0 -1 160017
+D2
+~
+~
+0 -1 160004
+D3
+~
+~
+0 -1 160022
+S
+#160004
+A Dirt Path~
+A small bridge has been contructed from wooden planks crossing over a
+small creek.  The water rushes down, creating a light trickling sound and
+adding to the atmosphere of the forest. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160003
+D2
+~
+~
+0 -1 160005
+S
+#160005
+A Dirt Path~
+This part of the path is quite plain.  It continues to the north and
+south, and trees can be seen all around.  Birds chirp and wolves howl,
+reminding you that you are, indeed, still in a forest. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160004
+D2
+~
+~
+0 -1 160006
+S
+#160006
+A Dirt Path~
+The forest is thick here, and many branches loom oddly low overhead,
+making travel difficult.  Even worse, a large tree has fallen across the
+path, and further hinders travel. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160005
+D2
+~
+~
+0 -1 160007
+S
+#160007
+A Dirt Path~
+The path turns sharply here, avoiding a steep slope going west.  The
+trees here are smaller and farther apart than elsewhere, and because of
+that the sky can clearly be seen. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160006
+D1
+~
+~
+0 -1 160008
+S
+#160008
+A Dirt Path~
+The path bends sharply here.  To the north, another path can be seen in
+the underbrush.  It obviously hasn't been used in a very long time, as
+apparant by it's weathered state, and the growth covering it. 
+~
+0 0 3
+D2
+~
+~
+0 -1 160009
+D3
+~
+~
+0 -1 160007
+S
+#160009
+A Dirt Path~
+The path continues on here.  The forest's edge can be seen to the south,
+and beyond that the road continues through a rocky mountain area.  The
+trees here are particularly thick, and the sky can't be seen at all. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160008
+D2
+~
+~
+0 -1 160010
+S
+#160010
+A Dirt Path~
+A dirt path starts into the forest here.  Trees block the view all
+around, and the sky can hardly be seen through the leaves and branches. 
+The path continues to the north, with a natural trail leading just right of
+it, and the mountains seperating the forest and the desert behind. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160009
+D2
+~
+~
+0 -1 160011
+D6
+~
+~
+0 -1 160013
+S
+#160011
+Entering the Forest~
+The path here is rocky and dusty, as is most of the area surrounding it.
+To the south, a line of mountains seperate the forest to the north and the
+desert to the south. Contrast to the lifeless scene south of here, the
+forest to the north is quite beutiful.  Miles upon miles of trees, stopping
+only to the west at a small bay, leading into the ocean, and far off to the
+north, where Satan City is located. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160010
+D2
+~
+~
+16777216 -1 160012
+S
+#160012
+A Rocky Path~
+The road here slopes upward, leading north through the mountains, which
+dominate most of the sky to the east and west.  At the foot of the
+mountains are the sands of the western desert, which seem to go on forever.
+The whole area here is lifeless; not even the vultures fly overhead. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160011
+D2
+~
+~
+0 -1 70067
+S
+#160013
+Western Forest~
+All around are trees, and whatever trail one would be traveling here is
+all but lost in the thick wood.  The sky is hardly visible above, and to
+the southwest, the main path is even harder to spot. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160014
+D9
+~
+~
+0 -1 160010
+> entry_prog 5~
+if ispc($n)
+mea $n &GYou get dizzy as the whole forest seems to spin and whir about you!&D
+mer $n &G$n seems to lose $s balance as $e stumbles off the trail.&D
+mptrans $n 160080
+endif
+~
+|
+S
+#160014
+Western Forest~
+A thin trail of smoke rises up from a charred pit in the middle of this
+clearing, indicating that someone was recently camped here.  Indeed, most
+of the leaves and twigs that would normally make up the forest floor here
+are gone, and hard earth covers most of the clearing. 
+~
+0 0 3
+D3
+~
+~
+0 -1 160013
+D6
+~
+~
+0 -1 160015
+D8
+~
+~
+0 -1 160016
+S
+#160015
+Western Forest~
+A fallen tree has blocked the trail here.  The area immediately
+surrounding the log is well grown in, further hindering passage, and
+indicating the trail had been blocked like this for quite some time. 
+~
+0 0 3
+D9
+~
+~
+0 -1 160014
+S
+#160016
+Western Forest~
+The trail leading from the clearing to the northwest ends here in a
+scattered mess of footprints.  Someone was probably just gathering firewood
+here, as there are no signs of travel in any other direction. 
+~
+0 0 3
+D7
+~
+~
+0 -1 160014
+S
+#160017
+Western Forest~
+A line of animal tracks, clear of twigs and leaves, makes out a natural
+trail through the forest.  As on the main path to the west, trees surround
+the area and hinder sight too deep into the forest, but unlike on the main
+path, the trees here are much closer to the trail, and one could easily
+lose it with a wrong turn. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160018
+D3
+~
+~
+16777216 -1 160003
+S
+#160018
+Western Forest~
+The trail east and west also branches off to the northeast.  The
+convergence of so much forest traffic has cleared the area out here a bit,
+giving a greater view of the surrounding area. Despite this, your view ends
+where it always has - with trees - except far off to the east, where a
+large grey rock stands in the middle of the forest. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160020
+D3
+~
+~
+0 -1 160017
+D6
+~
+~
+0 -1 160019
+> entry_prog 5~
+if ispc($n)
+mea $n &GYou get dizzy as the whole forest seems to spin and whir about you!&D
+mer $n &G$n seems to lose $s balance as $e stumbles off the trail.&D
+mptrans $n 160080
+endif
+~
+|
+S
+#160019
+Western Forest~
+The trail leading from the southwest branches off into smaller trails in
+various directions, most of which too small to even make out among the
+leaves and twigs of the forest floor. Unable to go much deeper, this may as
+well be a dead end. 
+~
+0 0 3
+D9
+~
+~
+0 -1 160018
+S
+#160020
+Western Forest~
+The path seems to get wider coming from the west, as twigs and leaves
+cover less and less of the ground, and understandably so: the trees are
+much farther apart around here, giving a very clear view of the large grey
+rock that seems to draw attention constant attention to the east. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160021
+D3
+~
+~
+0 -1 160018
+S
+#160021
+Western Forest~
+The trail ends in a small clearing in front of a large grey rock. 
+Standing at about eleven feet, and almost completely featureless, the large
+grey dome seems rather unspectacular as a rock. In-between gusts of wind,
+faint growls; snarls; and whines can be heard, seemingly from a distance. 
+~
+0 0 3
+D3
+~
+~
+0 -1 160020
+S
+#160022
+Western Forest~
+This western part of the forest is alot different from the eastern part.
+Trees are farther apart, the ground is softer, and small hills rise and
+fall deeper down the trail. 
+~
+0 0 3
+D1
+~
+~
+16777216 -1 160003
+D3
+~
+~
+0 -1 160023
+S
+#160023
+Western Forest~
+A large hill rises up to the north, and the normal trail goes on
+southwest.  Trees are taller and thinner, brush dominates less and less of
+the area, and one can actually see deeper into the forest - though there's
+still nothing to see. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160024
+D1
+~
+~
+0 -1 160022
+D9
+~
+~
+0 -1 160026
+> entry_prog 5~
+if ispc($n)
+mea $n &GYou get dizzy as the whole forest seems to spin and whir about you!&D
+mer $n &G$n seems to lose $s balance as $e stumbles off the trail.&D
+mptransfer $n 160080
+endif
+~
+|
+S
+#160024
+Western Forest~
+Not so much a trail as a convenient clearing of trees and leaves, this
+path goes up a steep hill; probably responsible for the clearing in the
+first place. The convenience ends to the northwest, but another clearing
+can be seen further up the hill to the northeast, and the brush seperating
+it from here would be easy to overcome. 
+~
+0 0 3
+D2
+~
+~
+0 -1 160023
+D6
+~
+~
+0 -1 160025
+S
+#160025
+Western Forest~
+This clearing, and top of the hill, overlooks much of the eastern part
+of the forest. The sky can be seen above, and the trees and paths can be
+seen below; not quite so confusing from up here. 
+~
+0 0 3
+D9
+~
+~
+0 -1 160024
+S
+#160026
+Western Forest~
+The trail widens and straitens up a bit from the northeast.  Further
+down the path there is a clear view of water, and beyond that, a bare
+cliff.  However, the view does little to penetrate anywhere else. 
+~
+0 0 3
+D3
+~
+~
+0 -1 160027
+D6
+~
+~
+0 -1 160023
+S
+#160027
+Western Forest~
+The edge of the forest to the west is now visible through the
+underbrush, and the glassy waters of the lake it stops for can be clearly
+seen just a bit further down the path. All kinds of animals can be seen at
+clearings drinking from the lake, and an aura of calmness envelopes on the
+area. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160026
+D3
+~
+~
+0 -1 160028
+S
+#160028
+Western Forest~
+The path ends here in a circular clearing in front of the lake to the
+west.  The whole lake extends further west, to a steep cliff, to the south,
+back into the forest, and north into a larger lake. The sight of the clear
+blue lake ahead and the clear blue sky above is really refreshing -
+particularly the part where they aren't trees. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160027
+D3
+~
+~
+16777216 -1 160030
+S
+#160029
+On the Water~
+The trees back off from the lake here a bit, creating a small beach. 
+From the diversity of the tracks on the beach, as well as the many small
+trails converging there, it appears to be a favorite spot of forest
+inhabitants for water. 
+~
+0 16777216 6
+D2
+~
+~
+0 -1 160030
+D3
+~
+~
+0 -1 160032
+D5
+~
+~
+0 -1 160038
+S
+#160030
+On the Water~
+The deep blue waters below are calm, and the sky is clearly reflected in
+it.  The trees on the southeast edge of the lake are too tall and thick to
+see past, and the cliff to the west isn't much better. To the north,
+though, the larger lake this one extends into can be seen, and fog blocks
+view of whatever lies beyond that. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160029
+D1
+~
+~
+16777216 -1 160028
+D2
+~
+~
+0 -1 160031
+D3
+~
+~
+0 -1 160033
+D5
+~
+~
+0 -1 160039
+S
+#160031
+On the Water~
+Thick wood surrounds this corner of the lake.  The sandy shore is rather
+steep, and ends right at the treeline, creating something of a wall into
+the forest here. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160030
+D3
+~
+~
+0 -1 160034
+D5
+~
+~
+0 -1 160040
+S
+#160032
+On the Water~
+The current picks up a bit here, extending into the larger lake to the
+north.  A thick blanket of fog hovers over the larger lake, and the waters
+there seem much more unstable. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160083
+D1
+~
+~
+0 -1 160029
+D2
+~
+~
+0 -1 160033
+D3
+~
+~
+0 -1 160035
+D5
+~
+~
+0 -1 160041
+S
+#160033
+On the Water~
+This is the middle of the small lake between the cliffs to the west and
+the forest to the east.  To the south, the forest stretches out into the
+mountains that curve up from farther south into the cliffs to the west.  To
+the north, the larger lake this one extends into is visible, with a thick
+wall of fog hindering sight much past. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160032
+D1
+~
+~
+0 -1 160030
+D2
+~
+~
+0 -1 160034
+D3
+~
+~
+0 -1 160036
+D5
+~
+~
+0 -1 160042
+S
+#160034
+On the Water~
+Like the rest of the lake, this particular part of it is unspectacular. 
+The water is still calm and fish can still be seen swimming in it.  The
+only thing of note here is that a small cave can just barely be seen a ways
+up the cliff to the west. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160033
+D1
+~
+~
+0 -1 160031
+D3
+~
+~
+0 -1 160037
+D5
+~
+~
+0 -1 160043
+S
+#160035
+On the Water~
+As in the east, the waters here move more rapidly than normal, extending
+north into a much larger lake.  The fog present to the north seems to have
+creeped up into the area, and it seems much more chilly here. To the west,
+the sandy shore of the lake stretches all the way into the rocky foot of a
+bare cliff. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160082
+D1
+~
+~
+0 -1 160032
+D2
+~
+~
+0 -1 160036
+D3
+~
+~
+0 -1 160049
+D5
+~
+~
+0 -1 160044
+S
+#160036
+On the Water~
+The sandy shores of the lake jut into the cliff surrounding it to the
+west.  Looking up the cliff, the mouth of a small cave can be seen after
+some distance.  The other side of the forest is visible to the east, and
+the far north edge of the forest, across the larger lake this one extends
+into, is barely visible through the fog. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160035
+D1
+~
+~
+0 -1 160033
+D2
+~
+~
+0 -1 160037
+D3
+~
+~
+0 -1 160050
+D5
+~
+~
+0 -1 160045
+S
+#160037
+On the Water~
+The woods end to the southwest, where the mountains that once made up
+the forest's southern border curve up.  To the west, a cliff shoots up
+right at the waters edge, and to the northeast, the rest of the lake
+extends out to the other side of the forest. 
+~
+0 16777216 6
+D0
+~
+~
+0 -1 160036
+D1
+~
+~
+0 -1 160034
+D5
+~
+~
+0 -1 160046
+S
+#160038
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D2
+~
+~
+0 -1 160039
+D3
+~
+~
+0 -1 160041
+D4
+~
+~
+16777216 -1 160029
+S
+#160039
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160038
+D2
+~
+~
+0 -1 160040
+D3
+~
+~
+0 -1 160042
+D4
+~
+~
+16777216 -1 160030
+S
+#160040
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160039
+D3
+~
+~
+0 -1 160043
+D4
+~
+~
+16777216 -1 160031
+S
+#160041
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D1
+~
+~
+0 -1 160038
+D2
+~
+~
+0 -1 160042
+D3
+~
+~
+0 -1 160044
+D4
+~
+~
+16777216 -1 160032
+S
+#160042
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160041
+D1
+~
+~
+0 -1 160039
+D2
+~
+~
+0 -1 160043
+D3
+~
+~
+0 -1 160045
+D4
+~
+~
+16777216 -1 160033
+S
+#160043
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160042
+D1
+~
+~
+0 -1 160040
+D3
+~
+~
+0 -1 160046
+D4
+~
+~
+16777216 -1 160034
+S
+#160044
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D1
+~
+~
+0 -1 160041
+D2
+~
+~
+0 -1 160045
+D4
+~
+~
+16777216 -1 160035
+S
+#160045
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160044
+D1
+~
+~
+0 -1 160042
+D2
+~
+~
+0 -1 160046
+D4
+~
+~
+16777216 -1 160036
+S
+#160046
+Underwater~
+Light gleaming through the water's surface dances on the sandy lake
+floor.  Aside from a few small aquatic plants and the many creatures
+inhabiting the murky water, there isn't much to distinguish one part of the
+lake floor with any other. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160045
+D1
+~
+~
+0 -1 160043
+D4
+~
+~
+16777216 -1 160037
+S
+#160047
+Floating in a void~
+~
+0 4 1
+S
+#160048
+Floating in a void~
+~
+0 4 1
+S
+#160049
+On the Shore~
+The stillness of the lake to the east has left small rocks and other
+debris mixed in with the sand here, making it quite a bother to walk on. 
+The whole thing only worsens to the west, where the small beach meets the
+rocky foot of a bare cliff. 
+~
+0 0 5
+D1
+~
+~
+0 -1 160035
+D2
+~
+~
+0 -1 160050
+D3
+~
+~
+0 -1 160051
+S
+#160050
+On the Shore~
+The stillness of the lake to the east has left small rocks and other
+debris mixed in with the sand here, making it quite a bother to walk on. 
+The sands end to the southwest, where a large rock makes for one in the
+hundreds comprising the barren rocky wasteland beyond it. 
+~
+0 0 5
+D0
+~
+~
+0 -1 160049
+D1
+~
+~
+0 -1 160036
+D7
+~
+~
+0 -1 160051
+S
+#160051
+Rocky Cliff~
+Progressively larger rocks poke out of the sandy beach making the
+transition into this barren landscape.  Not a single spot of green can be
+seen looking out at the rocks cliffs and mountains to the west. With the
+cliff surrounding the area, the only place to go now is up, far to which
+the mouth of a cave can be seen. 
+~
+0 0 5
+D1
+~
+~
+0 -1 160049
+D4
+~
+~
+64 -1 160053
+D8
+~
+~
+0 -1 160050
+S
+#160052
+Floating in a void~
+~
+0 4 5
+S
+#160053
+Cliff Face~
+Flying up the side of the cliff, the whole forest area comes into view. 
+The lakes to the east and the forest beyond that, and the outskirts of
+Satan City north of that are all visible. The view around here isn't quite
+as colorful, however.  Bare cliffs and jagged rocks make out much of the
+immediate landscape, with the mountains some distance farther west. 
+~
+0 16777216 5
+D4
+~
+~
+64 -1 160054
+D5
+~
+~
+0 -1 160051
+S
+#160054
+Further up~
+From here, the entirety of the Western Forest is visible.  The various
+winding paths and trails, as well as all the small forest landmarks
+scattered about can be seen. Further up, the cliff continues in it's
+featureless fashion, and the jagged rocks down below remind you that it
+would not be a good idea to stop flying. 
+~
+0 16777216 5
+D4
+~
+~
+64 -1 160055
+D5
+~
+~
+64 -1 160053
+S
+#160055
+Nearing a cave~
+From this high up, the details of the forest are no longer possible to
+make out.  The fog covering the larger lake to the northeast becomes quite
+apparant from this height, hindering sight of the forest surrounding it, as
+well as much of the lake itself. The bare face of the cliff begins to turn
+jagged and rocky as many small ledges start to form, and looking further
+up, the mouth of a cave can be seen. 
+~
+0 16777216 5
+D4
+~
+~
+64 -1 160056
+D5
+~
+~
+64 -1 160054
+S
+#160056
+Mouth of a Cave~
+Almost near the top of the cliff, the cave to the west is about the only
+obscurity in this otherwise featureless wasteland.  The cave looks
+impenetrably dark, and even the light shining in from the mouth seems to
+cut off abruptly. From here, the otherwise unnoticeable layer of fog
+blanketing the forest becomes quite apparant, blurring out most of it's
+view. 
+~
+0 16777216 5
+D3
+~
+~
+0 -1 160057
+D5
+~
+~
+64 -1 160055
+S
+#160057
+Within a cave~
+To the west, the cave descends into a thick darkness, and even with the
+light coming from the mouth of the cave, you can only see a few feet in
+front of you. 
+~
+0 1 1
+D1
+~
+~
+16777216 -1 160056
+D3
+~
+~
+0 -1 160058
+S
+#160058
+Within a cave~
+A thick blanket of darkness covers the area, and even with light, you
+can only see a few feet in front of you, and the walls of the cave you can
+only make out by nearly running into them.  
+~
+0 1 1
+D0
+~
+~
+0 -1 160059
+D1
+~
+~
+0 -1 160057
+D2
+~
+~
+0 -1 160065
+D3
+~
+~
+0 -1 160062
+S
+#160059
+Within a cave~
+A thick blanket of darkness covers the area, and even with light, you
+can only see a few feet in front of you, and the walls of the cave you can
+only make out by nearly running into them.  
+~
+0 1 1
+D2
+~
+~
+0 -1 160058
+D7
+~
+~
+0 -1 160060
+S
+#160060
+Within a cave~
+The cave opens up here, getting much wider and taller.  Stalacites drip
+water onto the ground, and your light reflects off of their shiny surfaces,
+illuminating the whole room. The rocks here are a deep purple-blue, and the
+whole thing is quite glorious. 
+~
+0 1 1
+D3
+~
+~
+0 -1 160061
+D8
+~
+~
+0 -1 160059
+S
+#160061
+Within a cave~
+The cavern comes to an abrupt end here, stopping at a featurless flat
+wall.  The wall seems to clash with the rest of the cave here, which
+appeared much more majestic before.  But whether it belongs or not, there
+is a wall, and it doesn't look like it's moving any time soon. 
+~
+0 1 1
+D1
+~
+~
+0 -1 160060
+S
+#160062
+Within a cave~
+A thick blanket of darkness covers the area, and even with light, you
+can only see a few feet in front of you, and the walls of the cave you can
+only make out by nearly running into them. 
+~
+0 1 1
+D1
+~
+~
+0 -1 160058
+D3
+~
+~
+0 -1 160063
+S
+#160063
+Within a cave~
+As in the rest of the cave, everything around you is pitch black, save
+for the small circle of light surrounding you.  Here, though, there is a
+small hole in the ground, with what appears to be torch light shining
+through it. 
+~
+0 1 1
+D1
+~
+~
+0 -1 160062
+D5
+~
+~
+0 -1 160064
+S
+#160064
+Within a cave~
+On each of the four walls of this box-like room hangs a torch, lighting
+the whole room and allowing you to see the walls of the cave without
+running into them first. Small crates are piled in the corners of the room,
+and on the ground, loose dirt is easily scraped away revealing a rusted
+metal plate built into the floor. 
+~
+0 0 1
+D4
+~
+~
+0 -1 160063
+S
+#160065
+Within a cave~
+A thick blanket of darkness covers the area, and even with light, you
+can only see a few feet in front of you, and the walls of the cave you can
+only make out by nearly running into them.  
+~
+0 1 1
+D0
+~
+~
+0 -1 160058
+D8
+~
+~
+0 -1 160066
+S
+#160066
+Within a cave~
+This passageway is much narrower than elsewhere in the cave, and it's as
+dark as ever here.  The passage twists and turns suddenly, forcing you to
+keep your hands on the walls to avoid falling into them. 
+~
+0 1 1
+D7
+~
+~
+0 -1 160065
+D9
+~
+~
+0 -1 160067
+S
+#160067
+Within a cave~
+This passageway is much narrower than elsewhere in the cave, and it's as
+dark as ever here.  The passage twists and turns suddenly, forcing you to
+keep your hands on the walls to avoid falling into them. 
+~
+0 1 1
+D3
+~
+~
+0 -1 160068
+D6
+~
+~
+0 -1 160066
+S
+#160068
+Within a cave~
+You find out the hard way that this passage is a dead end; by running
+into it.  Aside from a small puddle on the ground formed by dripping
+stalacites above, there isn't really much here. 
+~
+0 1 1
+D1
+~
+~
+0 -1 160067
+S
+#160069
+Floating in a void~
+~
+0 4 1
+S
+#160070
+Floating in a void~
+~
+0 4 1
+S
+#160071
+Floating in a void~
+~
+0 4 1
+S
+#160072
+Floating in a void~
+~
+0 4 1
+S
+#160073
+Floating in a void~
+~
+0 4 1
+S
+#160074
+Floating in a void~
+~
+0 4 1
+S
+#160075
+Floating in a void~
+~
+0 4 1
+S
+#160076
+Floating in a void~
+~
+0 4 1
+S
+#160077
+A Storage Area~
+This is just a storage room.  It's a rather tight fit in here, with
+boxes piled up in all corners and other pieces of useless junk scattered
+and piled all over. 
+~
+0 0 0
+D2
+~
+~
+0 -1 160078
+S
+#160078
+A Living Room~
+This room has a very cozy feel to it; without windows, the only source
+of light is a huge stone fireplace in the corner, which also gives off a
+comfortable warmth.  Illuminated by the fire are dozens of hunting
+trophies, proudly displayed all along the walls.  In the center of the room
+is a leather armchair, and a simple tray standing next to it, on top of
+which is a fine pipe. 
+~
+0 0 0
+D0
+~
+~
+0 -1 160077
+D3
+~
+~
+0 -1 160079
+S
+#160079
+A Log Cabin~
+This whole area has been cleared out; twigs, leaves, brush, and even
+trees, all removed to make the front yard of the log cabin to the east. An
+axe leans against the side of the house, with freshly chopped wood lining
+the wall next to it.  The front porch consists of a set of concrete steps
+and a door, which appears to be open. Smoke rises from the stone fireplace
+on the side of the house, as well, indicating that someone must be home. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160080
+D1
+~
+~
+0 -1 160078
+S
+#160080
+Somewhere in the Forest~
+You seem to have lost your way in the forest.  The area is thick with
+bushes and trees, making normal movement almost impossible.  Everytime you
+turn your head, you seem to see another unfamiliar scene.  The only thing
+that stands out here is a trail of smoke rising from the southeast. 
+~
+0 0 3
+D0
+~
+~
+0 -1 160081
+D2
+~
+~
+0 -1 160079
+S
+#160081
+Somewhere in the Forest~
+Having wandered deeper into the forest, you find yourself even more lost
+than before.  To the east, a familiar path can almost be made out, though
+it's never exactly in the same place twice. To the northwest, a trail can
+be seen clearly going through the forest, and you can almost establish your
+sense of direction again. 
+~
+0 0 3
+D1
+~
+~
+0 -1 160007
+D2
+~
+~
+0 -1 160080
+D7
+~
+~
+0 -1 160023
+S
+#160082
+A Shallow Waterway~
+Water rushes north through this shallow stream into a larger lake.  A
+huge cloud of mist hovers on the rough water, shrouding the view of the
+forest surrounding it. 
+~
+0 0 6
+D0
+~
+~
+0 -1 160085
+D1
+~
+~
+0 -1 160083
+D2
+~
+~
+0 -1 160035
+S
+#160083
+A Shallow Waterway~
+Water rushes north through this shallow stream into a larger lake.  A
+huge cloud of mist hovers on the rough water, shrouding the view of the
+forest surrounding it. 
+~
+0 0 6
+D0
+~
+~
+0 -1 160086
+D2
+~
+~
+0 -1 160032
+D3
+~
+~
+0 -1 160082
+S
+#160084
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D0
+~
+~
+0 -1 160088
+D1
+~
+~
+0 -1 160085
+D5
+~
+~
+0 -1 160092
+S
+#160085
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D0
+~
+~
+0 -1 160089
+D1
+~
+~
+0 -1 160086
+D2
+~
+~
+0 -1 160082
+D3
+~
+~
+0 -1 160084
+D5
+~
+~
+0 -1 160093
+S
+#160086
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D0
+~
+~
+0 -1 160090
+D1
+~
+~
+0 -1 160087
+D2
+~
+~
+0 -1 160083
+D3
+~
+~
+0 -1 160085
+D5
+~
+~
+0 -1 160094
+S
+#160087
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D0
+~
+~
+0 -1 160091
+D3
+~
+~
+0 -1 160086
+D5
+~
+~
+0 -1 160095
+S
+#160088
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D1
+~
+~
+0 -1 160089
+D2
+~
+~
+0 -1 160084
+D5
+~
+~
+0 -1 160096
+S
+#160089
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D1
+~
+~
+0 -1 160090
+D2
+~
+~
+0 -1 160085
+D3
+~
+~
+0 -1 160088
+D5
+~
+~
+0 -1 160097
+S
+#160090
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D1
+~
+~
+0 -1 160091
+D2
+~
+~
+0 -1 160086
+D3
+~
+~
+0 -1 160089
+D5
+~
+~
+0 -1 160098
+S
+#160091
+A Foggy Lake~
+The air is cold and still, yet the water below is rough, and small waves
+crash against eachother all around.  A thick blanket of mist envelopes
+everything, shrouding the rest of the lake and the forest beyond in every
+direction. 
+~
+0 16777216 7
+D2
+~
+~
+0 -1 160087
+D3
+~
+~
+0 -1 160090
+D5
+~
+~
+0 -1 160099
+S
+#160092
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160096
+D1
+~
+~
+0 -1 160093
+D4
+~
+~
+16777216 -1 160084
+S
+#160093
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160097
+D1
+~
+~
+0 -1 160094
+D3
+~
+~
+0 -1 160092
+D4
+~
+~
+16777216 -1 160085
+S
+#160094
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160098
+D1
+~
+~
+0 -1 160095
+D3
+~
+~
+0 -1 160093
+D4
+~
+~
+16777216 -1 160086
+S
+#160095
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D0
+~
+~
+0 -1 160099
+D3
+~
+~
+0 -1 160094
+D4
+~
+~
+16777216 -1 160087
+S
+#160096
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D1
+~
+~
+0 -1 160097
+D2
+~
+~
+0 -1 160092
+D4
+~
+~
+16777216 -1 160088
+S
+#160097
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D1
+~
+~
+0 -1 160098
+D2
+~
+~
+0 -1 160093
+D3
+~
+~
+0 -1 160096
+D4
+~
+~
+16777216 -1 160089
+S
+#160098
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D1
+~
+~
+0 -1 160099
+D2
+~
+~
+0 -1 160094
+D3
+~
+~
+0 -1 160097
+D4
+~
+~
+16777216 -1 160090
+S
+#160099
+Underwater~
+Despite the rough waters at the surface above, things are pretty calm
+down here.  But not unlike above, the water is both cloudy and salty, so
+even if you could see anything, you wouldn't want to for very long. 
+~
+0 0 8
+D2
+~
+~
+0 -1 160095
+D3
+~
+~
+0 -1 160098
+D4
+~
+~
+16777216 -1 160091
+S
+#160100
+Floating in a void~
+~
+0 4 1
+S
+#160101
+Floating in a void~
+~
+0 4 1
+S
+#160102
+Floating in a void~
+~
+0 4 1
+S
+#160103
+Floating in a void~
+~
+0 4 1
+S
+#160104
+Floating in a void~
+~
+0 4 1
+S
+#160105
+Floating in a void~
+~
+0 4 1
+S
+#160106
+Floating in a void~
+~
+0 4 1
+S
+#160107
+Floating in a void~
+~
+0 4 1
+S
+#160108
+Floating in a void~
+~
+0 4 1
+S
+#160109
+Floating in a void~
+~
+0 4 1
+S
+#160110
+Floating in a void~
+~
+0 4 1
+S
+#160111
+Floating in a void~
+~
+0 4 1
+S
+#160112
+Floating in a void~
+~
+0 4 1
+S
+#160113
+Floating in a void~
+~
+0 4 1
+S
+#160114
+Floating in a void~
+~
+0 4 1
+S
+#160115
+Floating in a void~
+~
+0 4 1
+S
+#160116
+Floating in a void~
+~
+0 4 1
+S
+#160117
+Floating in a void~
+~
+0 4 1
+S
+#160118
+Floating in a void~
+~
+0 4 1
+S
+#160119
+Floating in a void~
+~
+0 4 1
+S
+#160120
+Floating in a void~
+~
+0 4 1
+S
+#160121
+Floating in a void~
+~
+0 4 1
+S
+#160122
+Floating in a void~
+~
+0 4 1
+S
+#160123
+Floating in a void~
+~
+0 4 1
+S
+#160124
+Floating in a void~
+~
+0 4 1
+S
+#160125
+Floating in a void~
+~
+0 4 1
+S
+#160126
+Floating in a void~
+~
+0 4 1
+S
+#160127
+Floating in a void~
+~
+0 4 1
+S
+#160128
+Floating in a void~
+~
+0 4 1
+S
+#160129
+Floating in a void~
+~
+0 4 1
+S
+#160130
+Floating in a void~
+~
+0 4 1
+S
+#160131
+Floating in a void~
+~
+0 4 1
+S
+#160132
+Floating in a void~
+~
+0 4 1
+S
+#160133
+Floating in a void~
+~
+0 4 1
+S
+#160134
+Floating in a void~
+~
+0 4 1
+S
+#160135
+Floating in a void~
+~
+0 4 1
+S
+#160136
+Floating in a void~
+~
+0 4 1
+S
+#160137
+Floating in a void~
+~
+0 4 1
+S
+#160138
+Floating in a void~
+~
+0 4 1
+S
+#160139
+Floating in a void~
+~
+0 4 1
+S
+#160140
+Floating in a void~
+~
+0 4 1
+S
+#160141
+Floating in a void~
+~
+0 4 1
+S
+#160142
+Floating in a void~
+~
+0 4 1
+S
+#160143
+Floating in a void~
+~
+0 4 1
+S
+#160144
+Floating in a void~
+~
+0 4 1
+S
+#160145
+Floating in a void~
+~
+0 4 1
+S
+#160146
+Floating in a void~
+~
+0 4 1
+S
+#160147
+Floating in a void~
+~
+0 4 1
+S
+#160148
+Floating in a void~
+~
+0 4 1
+S
+#160149
+Floating in a void~
+~
+0 4 1
+S
+#160150
+Floating in a void~
+~
+0 4 1
+S
+#160151
+Floating in a void~
+~
+0 4 1
+S
+#160152
+Floating in a void~
+~
+0 4 1
+S
+#160153
+Floating in a void~
+~
+0 4 1
+S
+#160154
+Floating in a void~
+~
+0 4 1
+S
+#160155
+Floating in a void~
+~
+0 4 1
+S
+#160156
+Floating in a void~
+~
+0 4 1
+S
+#160157
+Floating in a void~
+~
+0 4 1
+S
+#160158
+Floating in a void~
+~
+0 4 1
+S
+#160159
+Floating in a void~
+~
+0 4 1
+S
+#160160
+Floating in a void~
+~
+0 4 1
+S
+#160161
+Floating in a void~
+~
+0 4 1
+S
+#160162
+Floating in a void~
+~
+0 4 1
+S
+#160163
+Floating in a void~
+~
+0 4 1
+S
+#160164
+Floating in a void~
+~
+0 4 1
+S
+#160165
+Floating in a void~
+~
+0 4 1
+S
+#160166
+Floating in a void~
+~
+0 4 1
+S
+#160167
+Floating in a void~
+~
+0 4 1
+S
+#160168
+Floating in a void~
+~
+0 4 1
+S
+#160169
+Floating in a void~
+~
+0 4 1
+S
+#160170
+Floating in a void~
+~
+0 4 1
+S
+#160171
+Floating in a void~
+~
+0 4 1
+S
+#160172
+Floating in a void~
+~
+0 4 1
+S
+#160173
+Floating in a void~
+~
+0 4 1
+S
+#160174
+Floating in a void~
+~
+0 4 1
+S
+#160175
+Floating in a void~
+~
+0 4 1
+S
+#160176
+Floating in a void~
+~
+0 4 1
+S
+#160177
+Floating in a void~
+~
+0 4 1
+S
+#160178
+Floating in a void~
+~
+0 4 1
+S
+#160179
+Floating in a void~
+~
+0 4 1
+S
+#160180
+Floating in a void~
+~
+0 4 1
+S
+#160181
+Floating in a void~
+~
+0 4 1
+S
+#160182
+Floating in a void~
+~
+0 4 1
+S
+#160183
+Floating in a void~
+~
+0 4 1
+S
+#160184
+Floating in a void~
+~
+0 4 1
+S
+#160185
+Floating in a void~
+~
+0 4 1
+S
+#160186
+Floating in a void~
+~
+0 4 1
+S
+#160187
+Floating in a void~
+~
+0 4 1
+S
+#160188
+Floating in a void~
+~
+0 4 1
+S
+#160189
+Floating in a void~
+~
+0 4 1
+S
+#160190
+Floating in a void~
+~
+0 4 1
+S
+#160191
+Floating in a void~
+~
+0 4 1
+S
+#160192
+Floating in a void~
+~
+0 4 1
+S
+#160193
+Floating in a void~
+~
+0 4 1
+S
+#160194
+Floating in a void~
+~
+0 4 1
+S
+#160195
+Floating in a void~
+~
+0 4 1
+S
+#160196
+Floating in a void~
+~
+0 4 1
+S
+#160197
+Floating in a void~
+~
+0 4 1
+S
+#160198
+Floating in a void~
+~
+0 4 1
+S
+#160199
+Floating in a void~
+~
+0 4 1
+S
+#160200
+Floating in a void~
+~
+0 4 1
+S
+#160201
+Floating in a void~
+~
+0 4 1
+S
+#160202
+Floating in a void~
+~
+0 4 1
+S
+#160203
+Floating in a void~
+~
+0 4 1
+S
+#160204
+Floating in a void~
+~
+0 4 1
+S
+#160205
+Floating in a void~
+~
+0 4 1
+S
+#160206
+Floating in a void~
+~
+0 4 1
+S
+#160207
+Floating in a void~
+~
+0 4 1
+S
+#160208
+Floating in a void~
+~
+0 4 1
+S
+#160209
+Floating in a void~
+~
+0 4 1
+S
+#160210
+Floating in a void~
+~
+0 4 1
+S
+#160211
+Floating in a void~
+~
+0 4 1
+S
+#160212
+Floating in a void~
+~
+0 4 1
+S
+#160213
+Floating in a void~
+~
+0 4 1
+S
+#160214
+Floating in a void~
+~
+0 4 1
+S
+#160215
+Floating in a void~
+~
+0 4 1
+S
+#160216
+Floating in a void~
+~
+0 4 1
+S
+#160217
+Floating in a void~
+~
+0 4 1
+S
+#160218
+Floating in a void~
+~
+0 4 1
+S
+#160219
+Floating in a void~
+~
+0 4 1
+S
+#160220
+Floating in a void~
+~
+0 4 1
+S
+#160221
+Floating in a void~
+~
+0 4 1
+S
+#160222
+Floating in a void~
+~
+0 4 1
+S
+#160223
+Floating in a void~
+~
+0 4 1
+S
+#160224
+Floating in a void~
+~
+0 4 1
+S
+#160225
+Floating in a void~
+~
+0 4 1
+S
+#160226
+Floating in a void~
+~
+0 4 1
+S
+#160227
+Floating in a void~
+~
+0 4 1
+S
+#160228
+Floating in a void~
+~
+0 4 1
+S
+#160229
+Floating in a void~
+~
+0 4 1
+S
+#160230
+Floating in a void~
+~
+0 4 1
+S
+#160231
+Floating in a void~
+~
+0 4 1
+S
+#160232
+Floating in a void~
+~
+0 4 1
+S
+#160233
+Floating in a void~
+~
+0 4 1
+S
+#160234
+Floating in a void~
+~
+0 4 1
+S
+#160235
+Floating in a void~
+~
+0 4 1
+S
+#160236
+Floating in a void~
+~
+0 4 1
+S
+#160237
+Floating in a void~
+~
+0 4 1
+S
+#160238
+Floating in a void~
+~
+0 4 1
+S
+#160239
+Floating in a void~
+~
+0 4 1
+S
+#160240
+Floating in a void~
+~
+0 4 1
+S
+#160241
+Floating in a void~
+~
+0 4 1
+S
+#160242
+Floating in a void~
+~
+0 4 1
+S
+#160243
+Floating in a void~
+~
+0 4 1
+S
+#160244
+Floating in a void~
+~
+0 4 1
+S
+#160245
+Floating in a void~
+~
+0 4 1
+S
+#160246
+Floating in a void~
+~
+0 4 1
+S
+#160247
+Floating in a void~
+~
+0 4 1
+S
+#160248
+Floating in a void~
+~
+0 4 1
+S
+#160249
+Floating in a void~
+~
+0 4 1
+S
+#160250
+Floating in a void~
+~
+0 4 1
+S
+#160251
+Floating in a void~
+~
+0 4 1
+S
+#160252
+Floating in a void~
+~
+0 4 1
+S
+#160253
+Floating in a void~
+~
+0 4 1
+S
+#160254
+Floating in a void~
+~
+0 4 1
+S
+#160255
+Floating in a void~
+~
+0 4 1
+S
+#160256
+Floating in a void~
+~
+0 4 1
+S
+#160257
+Floating in a void~
+~
+0 4 1
+S
+#160258
+Floating in a void~
+~
+0 4 1
+S
+#160259
+Floating in a void~
+~
+0 4 1
+S
+#160260
+Floating in a void~
+~
+0 4 1
+S
+#160261
+Floating in a void~
+~
+0 4 1
+S
+#160262
+Floating in a void~
+~
+0 4 1
+S
+#160263
+Floating in a void~
+~
+0 4 1
+S
+#160264
+Floating in a void~
+~
+0 4 1
+S
+#160265
+Floating in a void~
+~
+0 4 1
+S
+#160266
+Floating in a void~
+~
+0 4 1
+S
+#160267
+Floating in a void~
+~
+0 4 1
+S
+#160268
+Floating in a void~
+~
+0 4 1
+S
+#160269
+Floating in a void~
+~
+0 4 1
+S
+#160270
+Floating in a void~
+~
+0 4 1
+S
+#160271
+Floating in a void~
+~
+0 4 1
+S
+#160272
+Floating in a void~
+~
+0 4 1
+S
+#160273
+Floating in a void~
+~
+0 4 1
+S
+#160274
+Floating in a void~
+~
+0 4 1
+S
+#160275
+Floating in a void~
+~
+0 4 1
+S
+#160276
+Floating in a void~
+~
+0 4 1
+S
+#160277
+Floating in a void~
+~
+0 4 1
+S
+#160278
+Floating in a void~
+~
+0 4 1
+S
+#160279
+Floating in a void~
+~
+0 4 1
+S
+#160280
+Floating in a void~
+~
+0 4 1
+S
+#160281
+Floating in a void~
+~
+0 4 1
+S
+#160282
+Floating in a void~
+~
+0 4 1
+S
+#160283
+Floating in a void~
+~
+0 4 1
+S
+#160284
+Floating in a void~
+~
+0 4 1
+S
+#160285
+Floating in a void~
+~
+0 4 1
+S
+#160286
+Floating in a void~
+~
+0 4 1
+S
+#160287
+Floating in a void~
+~
+0 4 1
+S
+#160288
+Floating in a void~
+~
+0 4 1
+S
+#160289
+Floating in a void~
+~
+0 4 1
+S
+#160290
+Floating in a void~
+~
+0 4 1
+S
+#160291
+Floating in a void~
+~
+0 4 1
+S
+#160292
+Floating in a void~
+~
+0 4 1
+S
+#160293
+Floating in a void~
+~
+0 4 1
+S
+#160294
+Floating in a void~
+~
+0 4 1
+S
+#160295
+Floating in a void~
+~
+0 4 1
+S
+#160296
+Floating in a void~
+~
+0 4 1
+S
+#160297
+Floating in a void~
+~
+0 4 1
+S
+#160298
+Floating in a void~
+~
+0 4 1
+S
+#160299
+Floating in a void~
+~
+0 4 1
+S
+#160300
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 0 160001 1 160013
+M 0 160002 1 160013
+M 0 160003 1 160013
+M 0 160004 1 160014
+M 0 160005 1 160014
+M 0 160006 1 160014
+M 0 160007 1 160015
+M 0 160008 1 160015
+M 0 160001 1 160015
+M 0 160002 1 160016
+M 0 160003 1 160016
+M 0 160004 1 160016
+M 0 160005 1 160017
+M 0 160006 1 160017
+M 0 160007 1 160017
+M 0 160008 1 160018
+M 0 160001 1 160018
+M 0 160002 1 160018
+M 0 160003 1 160019
+M 0 160004 1 160019
+M 0 160005 1 160019
+M 0 160006 1 160020
+M 0 160007 1 160020
+M 0 160008 1 160020
+M 0 160001 1 160021
+M 0 160002 1 160021
+M 0 160003 1 160021
+M 0 160004 1 160022
+M 0 160005 1 160022
+M 0 160006 1 160022
+M 0 160007 1 160023
+M 0 160008 1 160023
+M 0 160001 1 160023
+M 0 160002 1 160024
+M 0 160003 1 160024
+M 0 160004 1 160024
+M 0 160005 1 160025
+M 0 160006 1 160025
+M 0 160007 1 160025
+M 0 160008 1 160026
+M 0 160001 1 160026
+M 0 160002 1 160026
+M 0 160003 1 160027
+M 0 160004 1 160027
+M 0 160005 1 160027
+M 0 160006 1 160028
+M 0 160007 1 160028
+M 0 160008 1 160028
+M 0 160017 1 160038
+M 0 160018 1 160038
+M 0 160019 1 160038
+M 0 160016 1 160039
+M 0 160017 1 160039
+M 0 160018 1 160039
+M 0 160019 1 160040
+M 0 160016 1 160040
+M 0 160017 1 160040
+M 0 160018 1 160041
+M 0 160019 1 160041
+M 0 160016 1 160041
+M 0 160017 1 160042
+M 0 160018 1 160042
+M 0 160019 1 160042
+M 0 160016 1 160043
+M 0 160017 1 160043
+M 0 160018 1 160043
+M 0 160019 1 160044
+M 0 160016 1 160044
+M 0 160017 1 160044
+M 0 160018 1 160045
+M 0 160019 1 160045
+M 0 160016 1 160045
+M 0 160017 1 160046
+M 0 160018 1 160046
+M 0 160019 1 160046
+M 0 160015 1 160092
+M 0 160020 1 160092
+M 0 160021 1 160092
+M 0 160022 1 160093
+M 0 160023 1 160093
+M 0 160015 1 160093
+M 0 160020 1 160094
+M 0 160021 1 160094
+M 0 160022 1 160094
+M 0 160023 1 160095
+M 0 160015 1 160095
+M 0 160020 1 160095
+M 0 160021 1 160096
+M 0 160022 1 160096
+M 0 160023 1 160096
+M 0 160015 1 160097
+M 0 160020 1 160097
+M 0 160021 1 160097
+M 0 160022 1 160098
+M 0 160023 1 160098
+M 0 160015 1 160098
+M 0 160020 1 160099
+M 0 160021 1 160099
+M 0 160022 1 160099
+M 0 160025 1 160057
+M 0 160026 1 160057
+M 0 160027 1 160058
+M 0 160028 1 160058
+M 0 160025 1 160059
+M 0 160026 1 160059
+M 0 160027 1 160060
+M 0 160028 1 160060
+M 0 160025 1 160061
+M 0 160026 1 160061
+M 0 160027 1 160062
+M 0 160028 1 160062
+M 0 160025 1 160063
+M 0 160026 1 160063
+M 0 160027 1 160064
+M 0 160028 1 160064
+M 0 160025 1 160065
+M 0 160026 1 160065
+M 0 160027 1 160066
+M 0 160028 1 160066
+M 0 160025 1 160067
+M 0 160026 1 160067
+M 0 160027 1 160068
+M 0 160028 1 160068
+M 0 160050 1 160078
+M 1 160051 1 160077
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$
