@@ -1,0 +1,124 @@
+Wed Apr 23 10:15:21 2025 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Wed Apr 23 10:15:21 2025 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Wed Apr 23 10:15:21 2025 :: Loading commands
+Wed Apr 23 10:15:21 2025 :: Loading sysdata configuration...
+Wed Apr 23 10:15:21 2025 :: [*****] BUG: Fread_sysdata: no match: Supremekai
+Wed Apr 23 10:15:21 2025 :: Loading socials
+Wed Apr 23 10:15:21 2025 :: Loading skill table
+Wed Apr 23 10:15:21 2025 :: Sorting skill table...
+Wed Apr 23 10:15:21 2025 :: Remapping slots to sns
+Wed Apr 23 10:15:21 2025 :: Loading classes
+Wed Apr 23 10:15:21 2025 :: Loading races
+Wed Apr 23 10:15:21 2025 :: Loading herb table
+Wed Apr 23 10:15:21 2025 :: Loading tongues
+Wed Apr 23 10:15:21 2025 :: Making wizlist
+Wed Apr 23 10:15:21 2025 :: Building wizinfo
+Wed Apr 23 10:15:21 2025 :: Initializing request pipe
+Wed Apr 23 10:15:21 2025 :: Initializing random number generator
+Wed Apr 23 10:15:21 2025 :: Setting time and weather
+Wed Apr 23 10:15:21 2025 :: Assigning gsn's
+ASSIGN_GSN: Skill thunder flash not found.
+ASSIGN_GSN: Skill double kick not found.
+ASSIGN_GSN: Skill double punch not found.
+ASSIGN_GSN: Skill kakusandan not found.
+ASSIGN_GSN: Skill genocide not found.
+ASSIGN_GSN: Skill super oozaru not found.
+ASSIGN_GSN: Skill essj not found.
+ASSIGN_GSN: Skill hssj not found.
+ASSIGN_GSN: Skill super symbiote not found.
+ASSIGN_GSN: Skill super symbiote 2 not found.
+ASSIGN_GSN: Skill super symbiote 3 not found.
+ASSIGN_GSN: Skill super symbiote 4 not found.
+ASSIGN_GSN: Skill enhanced form not found.
+ASSIGN_GSN: Skill superior form not found.
+ASSIGN_GSN: Skill giant form not found.
+ASSIGN_GSN: Skill namekfuse not found.
+ASSIGN_GSN: Skill fusion dance not found.
+ASSIGN_GSN: Skill desperation not found.
+ASSIGN_GSN: Skill vanishing ball not found.
+ASSIGN_GSN: Skill daichiretsuzan not found.
+ASSIGN_GSN: Skill honoo not found.
+ASSIGN_GSN: Skill buuball not found.
+ASSIGN_GSN: Skill mouth blast not found.
+ASSIGN_GSN: Skill mouth cannon not found.
+ASSIGN_GSN: Skill tuffle blow not found.
+ASSIGN_GSN: Skill shakkahou not found.
+ASSIGN_GSN: Skill raizou not found.
+ASSIGN_GSN: Skill raikyuu not found.
+ASSIGN_GSN: Skill riku not found.
+ASSIGN_GSN: Skill devil flash not found.
+ASSIGN_GSN: Skill acid burn not found.
+ASSIGN_GSN: Skill acid slash not found.
+ASSIGN_GSN: Skill claw strike not found.
+ASSIGN_GSN: Skill jibaku not found.
+ASSIGN_GSN: Skill energy ring not found.
+ASSIGN_GSN: Skill wolf fang fist not found.
+ASSIGN_GSN: Skill super nova not found.
+ASSIGN_GSN: Skill lssj not found.
+ASSIGN_GSN: Skill majin not found.
+ASSIGN_GSN: Skill negative spirit bomb not found.
+ASSIGN_GSN: Skill satellite jump not found.
+ASSIGN_GSN: Skill earth line blast not found.
+ASSIGN_GSN: Skill t3 not found.
+ASSIGN_GSN: Skill t2 not found.
+ASSIGN_GSN: Skill t1 not found.
+ASSIGN_GSN: Skill vm1 not found.
+ASSIGN_GSN: Skill vm2 not found.
+ASSIGN_GSN: Skill sentient chip not found.
+ASSIGN_GSN: Skill ultra namek not found.
+ASSIGN_GSN: Skill mechaicer not found.
+ASSIGN_GSN: Skill demonic embrace not found.
+ASSIGN_GSN: Skill angelic rapture not found.
+ASSIGN_GSN: Skill nephalims torment not found.
+ASSIGN_GSN: Skill consume not found.
+ASSIGN_GSN: Skill breaking point not found.
+ASSIGN_GSN: Skill radiated growth not found.
+ASSIGN_GSN: Skill accelerated mutation not found.
+ASSIGN_GSN: Skill molecular degeneration not found.
+ASSIGN_GSN: Skill biohazard not found.
+ASSIGN_GSN: Skill meta-mutation not found.
+ASSIGN_GSN: Skill sharingan not found.
+ASSIGN_GSN: Skill cleanse not found.
+ASSIGN_GSN: Skill judgement day not found.
+ASSIGN_GSN: Skill wrath of god not found.
+ASSIGN_GSN: Skill ddmb not found.
+ASSIGN_GSN: Skill manifest potara not found.
+ASSIGN_GSN: Skill deathbeam not found.
+ASSIGN_GSN: Skill overdrive mode not found.
+ASSIGN_GSN: Skill divine strike not found.
+ASSIGN_GSN: Skill devious assault not found.
+ASSIGN_GSN: Skill shield bash not found.
+ASSIGN_GSN: Skill bomb not found.
+ASSIGN_GSN: Skill bomb arrow not found.
+ASSIGN_GSN: Skill arrow of light not found.
+ASSIGN_GSN: Skill arrow of fire not found.
+ASSIGN_GSN: Skill arrow of ice not found.
+ASSIGN_GSN: Skill song of creation not found.
+ASSIGN_GSN: Skill song of time not found.
+ASSIGN_GSN: Skill deku mask not found.
+ASSIGN_GSN: Skill goron mask not found.
+ASSIGN_GSN: Skill zora mask not found.
+ASSIGN_GSN: Skill fierce deity not found.
+ASSIGN_GSN: Skill hover boots not found.
+ASSIGN_GSN: Skill hook shot not found.
+ASSIGN_GSN: Skill farores wind not found.
+ASSIGN_GSN: Skill fireball not found.
+ASSIGN_GSN: Skill firestorm not found.
+ASSIGN_GSN: Skill magma touch not found.
+ASSIGN_GSN: Skill eruption not found.
+ASSIGN_GSN: Skill superflame1 not found.
+ASSIGN_GSN: Skill superflame2 not found.
+ASSIGN_GSN: Skill superflame3 not found.
+ASSIGN_GSN: Skill ultraflame not found.
+ASSIGN_GSN: Skill novawave not found.
+ASSIGN_GSN: Skill fireforge not found.
+ASSIGN_GSN: Skill heavens torch not found.
+ASSIGN_GSN: Skill puppet not found.
+ASSIGN_GSN: Skill copy ability not found.
+ASSIGN_GSN: Skill scan transformation not found.
+ASSIGN_GSN: Skill reflection not found.
+ASSIGN_GSN: Skill forget not found.
+Wed Apr 23 10:15:21 2025 :: Loading DNS cache...
+Wed Apr 23 10:15:21 2025 :: Reading in area files...
+(help.are)
