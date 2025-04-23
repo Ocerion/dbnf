@@ -1,0 +1,135 @@
+#PLAYER
+Version        4
+Name           Sinai~
+Creation_date  1745158158
+C_date_word    Sun Apr 20 10:09:18 2025
+~
+Sex            1
+Class          0
+Race           0
+Languages      1 1
+Level          6
+UpgradeL       18
+Played         104090
+Room           1500
+HpManaMove     100 100 11243 11243 100 100
+Zeni           1263662
+Exp            297434524
+PL             297434524
+Rage           11983
+Corespl	0
+Cores 0 0 0
+Canmajin       0
+Fusionflags  0
+Fusions 0
+Fusiontimer  0
+Evilmod	 0
+Height         60
+Weight         152
+Act            570426984&32768
+AffectedBy     0&131072
+Position       112
+Style          2
+Train          40
+MaxTrain       29
+XTrain         0
+TotalXTrain    0
+MaxEnergy      294
+Powerup        0
+SavingThrows   0 0 0 0 0
+Alignment      1000
+Favor          0
+Glory          0
+MGlory         0
+Hitroll        0
+Damroll        0
+Armor          100
+NaturalAC      0
+Deaf           -2147483648
+ICEListen      ~
+Mentalstate    0
+Password       s~
+Title          the Fighter in Training~
+Boards         13 Announce 0 General 0 Clan 0 RP 0 Ideas 0 Bugs 0 Personal 0 Admin 0 Building 0 Coding 0 Punish 0 TopAdmin 0 Quests 0 
+Flags          163842
+LastTax	 1745158158
+PKills         0
+PDeaths        0
+MKills         12161
+MDeaths        3
+IllegalPK      0
+SparWins       0
+SparLoss       0
+Sparcount	   0
+Bounty         0
+Bowed          0
+Bkills         0
+B_timeleft     0
+BountyBy       ~
+Hunting        ~
+Silence        0
+PK_timer       0
+Age            18
+Build          3
+Haircolor      0
+Orignalhaircolor 0
+Eyes           0
+Orignaleyes    0
+AuraPowerUp	 -1
+Complexion     3
+Secondarycolor 0
+Hairstyle      0
+Hairlen        0
+Tail           1
+Suppress       50000000
+Spouse         ~
+Auction_PL     0
+NPromptCFG     0
+BPromptCFG     0
+AttrPerm       50 80 115 40 37
+AttrAdd       0 0 0 0 0
+PermTStats     10 10 10 10
+AttrTrain      0 0 0 0
+AttrMod        0 0 0 0 0
+Condition      0 11 11 0
+LastIntrest    0 0
+Site           127.0.0.1
+LastOn         1745377818
+Skill        10.000000 'aggressive style'
+Skill        10.000000 'aid'
+Skill        10.000000 'berserk style'
+Skill        95.000000 'block'
+Skill        10.000000 'charge L1'
+Skill        10.000000 'charge L2'
+Skill        10.000000 'charge L3'
+Skill        10.000000 'charge L4'
+Skill        10.028090 'dcd'
+Skill        10.000000 'defensive style'
+Skill        95.000000 'dodge'
+Skill        10.000000 'evasive style'
+Skill        10.000000 'kick'
+Skill        10.000000 'meditate'
+Skill        10.000000 'punch'
+Skill        95.000000 'second attack'
+Ability      10.000000 'destructive wave'
+Ability      10.000000 'energy ball'
+Ability      10.000000 'fakemoon'
+Ability      10.000000 'fly'
+Ability      10.000000 'gallic gun'
+Ability      12.675703 'kaioken'
+Ability      10.000000 'oozaru mouth cannon'
+Ability      10.000000 'scatter shot'
+Ability      10.000000 'sense'
+Ability      13.377892 'ssj1'
+Ability      10.000000 'super dragon fist'
+Ability      12.684111 'suppress'
+Ability      10.000000 'ussj1'
+Tongue       100 'common'
+Tongue       100 'saiyan'
+Killed       209 50
+Killed       208 50
+Killed       207 50
+Killed       206 50
+End
+
+#END

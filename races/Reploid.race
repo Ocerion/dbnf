@@ -1,0 +1,59 @@
+Name        XSeries~
+Race        4
+Classes     0
+MaxArmor    10000
+Str_Plus    0
+Dex_Plus    0
+Int_Plus    0
+Con_Plus    0
+Lck_Plus    0
+Hit         0
+Mana        0
+Affected    0
+Resist      0
+Suscept     0
+Language    16
+Align       0
+Min_Align   -1000
+Max_Align	 1000
+AC_Plus     0
+Exp_Mult    100
+Attacks     0
+Defenses    0
+Height      66
+Weight      150
+Hunger_Mod  0
+Thirst_mod  0
+Mana_Regen  -25456
+HP_Regen    2568
+Race_Recall 200
+WhereName   &B<&Cintegrated power module&B>           &w~
+WhereName   &B<&Cworn on data‐node port&B>            &w~
+WhereName   &B<&Cworn on data‐node port&B>            &w~
+WhereName   &B<&Cworn on neural uplink&B>             &w~
+WhereName   &B<&Cworn on neural uplink&B>             &w~
+WhereName   &B<&Cinstalled in chassis core&B>         &w~
+WhereName   &B<&Cinterface on cranial port&B>         &w~
+WhereName   &B<&Cstabilizers on leg actuators&B>      &w~
+WhereName   &B<&Crotors on foot modules&B>            &w~
+WhereName   &B<&Cgrips on manipulator units&B>        &w~
+WhereName   &B<&Cservos on arm actuators&B>           &w~
+WhereName   &B<&Cdeployed as energy shield&B>         &w~
+WhereName   &B<&Cdistributed mounting harness&B>      &w~
+WhereName   &B<&Cgraviton‐belt housing&B>             &w~
+WhereName   &B<&Csynaptic tether port&B>              &w~
+WhereName   &B<&Csynaptic tether port&B>              &w~
+WhereName   &B<&Cequipped in primary manipulator&B>   &w~
+WhereName   &B<&Cheld in auxiliary grip&B>            &w~
+WhereName   &B<&Cdual actuator nodes engaged&B>       &w~
+WhereName   &B<&Caudio receptor implant&B>            &w~
+WhereName   &B<&Coptic sensor array&B>                &w~
+WhereName   &B<&Cmissile‐launcher port&B>             &w~
+WhereName   &B<&Cdorsal rack mount&B>                 &w~
+WhereName   &B<&Cfrontal sensor shroud&B>             &w~
+WhereName   &B<&Cankle‐servo harness&B>               &w~
+WhereName   &B<&Cankle‐servo harness&B>               &w~
+WhereName   &B<&Ccore access panel&B>                 &w~
+WhereName   <BUG Inform Immortal>  ~
+WhereName   <BUG Inform Immortal>  ~
+End
