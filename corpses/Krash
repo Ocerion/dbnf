@@ -1,0 +1,17 @@
+#CORPSE
+Vnum         11
+Origin       4, UNKNOWN~
+Room         100028
+ExtraFlags   67108864
+Timer        30
+Values       0 0 3 0 7 0
+End
+
+#OBJECT
+Nest         1
+Vnum         100002
+Origin       2, mob100006@room100049~
+End
+
+#END
+
